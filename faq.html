@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ — Ink Vial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #faf3e8; --surface: #ffffff;
+      --purple-deep: #3d2458; --purple-dark: #5c3a9a; --purple-mid: #8b68cc;
+      --lavender-light: #d4c4ee; --lavender-pale: #ede6f8;
+      --text: #3d2458; --muted: rgba(61,36,88,0.50);
+      --border: rgba(176,154,216,0.25);
+      --radius-sm: 8px; --radius: 14px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+
+    .blobs { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.11; animation: drift 22s ease-in-out infinite alternate; }
+    .blob-1 { width: 500px; height: 500px; background: #c4b0e4; top: -10%; left: -10%; animation-duration: 28s; }
+    .blob-2 { width: 300px; height: 300px; background: #f5a0b0; bottom: -5%; right: -5%; animation-duration: 20s; animation-delay: -9s; }
+    @keyframes drift { 0% { transform: translate(0,0); } 100% { transform: translate(20px,-16px); } }
+
+    /* NAV */
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(250,243,232,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .nav-logo { text-decoration: none; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 700; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--purple-dark); }
+    .btn-outline { padding: 9px 20px; border: 2px solid var(--purple-dark); color: var(--purple-dark); font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: var(--radius-sm); text-decoration: none; transition: all 0.2s; }
+    .btn-outline:hover { background: var(--purple-dark); color: white; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple-dark) 60%, var(--purple-mid) 100%); color: white; text-align: center; padding: 64px 24px 52px; position: relative; z-index: 1; }
+    .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; margin-bottom: 10px; }
+    .hero p { opacity: 0.88; font-size: 1rem; max-width: 500px; margin: 0 auto; }
+
+    /* MAIN */
+    .main { max-width: 800px; margin: 0 auto; padding: 56px 24px 80px; position: relative; z-index: 1; }
+
+    .faq-section { margin-bottom: 48px; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--lavender-light); display: flex; align-items: center; gap: 10px; }
+
+    /* ACCORDION — CSS only, no JS */
+    .faq-list { display: flex; flex-direction: column; gap: 8px; }
+    details.faq-item { background: var(--surface); border: 1.5px solid var(--lavender-light); border-radius: var(--radius); overflow: hidden; transition: box-shadow 0.2s; }
+    details.faq-item:hover { box-shadow: 0 2px 14px rgba(92,58,154,0.10); }
+    details.faq-item[open] { box-shadow: 0 4px 20px rgba(92,58,154,0.13); border-color: var(--purple-mid); }
+    summary.faq-q { cursor: pointer; list-style: none; padding: 16px 20px; font-weight: 700; font-size: 0.97rem; color: var(--purple-deep); display: flex; justify-content: space-between; align-items: center; gap: 16px; user-select: none; transition: background 0.15s; }
+    summary.faq-q::-webkit-details-marker { display: none; }
+    summary.faq-q::after { content: ''; flex-shrink: 0; width: 20px; height: 20px; background: var(--lavender-pale) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235c3a9a' stroke-width='2.5' stroke-linecap='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") center/14px no-repeat; border-radius: 50%; border: 1px solid var(--lavender-light); transition: transform 0.25s, background-color 0.15s; }
+    details.faq-item[open] > summary.faq-q::after { transform: rotate(180deg); background-color: var(--purple-pale); }
+    details.faq-item[open] > summary.faq-q { background: var(--lavender-pale); color: var(--purple-dark); }
+    .faq-a { padding: 0 20px 18px; color: var(--muted); font-size: 0.93rem; line-height: 1.75; border-top: 1px solid var(--lavender-light); animation: fadeIn 0.2s ease; }
+    .faq-a p + p { margin-top: 8px; }
+    .faq-a strong { color: var(--text); }
+    .faq-a ul { margin: 8px 0 4px 18px; display: flex; flex-direction: column; gap: 3px; }
+    .faq-a a { color: var(--purple-dark); }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* CTA */
+    .cta { background: linear-gradient(135deg, var(--purple-deep), var(--purple-dark)); border-radius: var(--radius); padding: 48px 32px; text-align: center; color: white; margin-top: 24px; }
+    .cta h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 10px; }
+    .cta p { opacity: 0.85; margin-bottom: 24px; }
+    .btn-white { display: inline-block; background: white; color: var(--purple-deep); font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.9rem; padding: 12px 28px; border-radius: 50px; text-decoration: none; letter-spacing: 0.04em; transition: all 0.2s; }
+    .btn-white:hover { background: var(--lavender-pale); transform: translateY(-2px); }
+
+    /* FOOTER */
+    footer { background: #2a1840; padding: 48px 24px 32px; color: rgba(240,232,216,0.55); position: relative; z-index: 1; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    .footer-tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.85rem; color: rgba(240,232,216,0.38); margin-top: 10px; }
+    .footer-col h4 { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(240,232,216,0.32); margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { font-size: 0.88rem; color: rgba(240,232,216,0.55); text-decoration: none; transition: color 0.2s; }
+    .footer-col a:hover { color: #d4c4ee; }
+    .footer-bottom { max-width: 1100px; margin: 0 auto; padding-top: 24px; border-top: 1px solid rgba(240,232,216,0.08); display: flex; justify-content: space-between; font-size: 0.75rem; color: rgba(240,232,216,0.25); flex-wrap: wrap; gap: 12px; }
+
+    @media (max-width: 768px) { .nav-links { display: none; } .footer-inner { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
+    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .nav-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
+  @media(max-width:480px){.nav-brand{font-size:1.1rem;}}
+  .nav-actions{display:flex;align-items:center;gap:10px;}
+  .btn-suggest{display:inline-flex;align-items:center;gap:6px;padding:9px 15px;border-radius:8px;background:var(--lavender-pale);color:var(--purple-dark);font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;border:1px solid var(--lavender-light);transition:background .2s,transform .1s;white-space:nowrap;cursor:pointer;}
+  .btn-suggest:hover{background:var(--lavender-light);transform:translateY(-1px);}
+  @media(max-width:600px){.btn-suggest .lbl{display:none;}.btn-suggest{padding:9px 11px;}}
+</style>
+</head>
+<body>
+<style>
+  .announce-bar{background:var(--purple-deep,#3d2458);overflow:hidden;white-space:nowrap;position:relative;z-index:101;}
+  .announce-track{display:inline-flex;align-items:center;padding:9px 0;animation:announce-scroll 38s linear infinite;}
+  .announce-bar:hover .announce-track{animation-play-state:paused;}
+  .announce-item{font-family:'Nunito',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.02em;color:#f0e8d8;padding:0 30px;}
+  .announce-sep{color:rgba(240,232,216,0.35);font-size:0.7rem;}
+  @keyframes announce-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  @media (prefers-reduced-motion: reduce){.announce-track{animation:none;justify-content:center;width:100%;}.announce-track .announce-dupe{display:none;}}
+</style>
+<div class="announce-bar" aria-label="Announcements">
+  <div class="announce-track">
+    <span class="announce-item">✨ Free UK delivery on orders over £40</span><span class="announce-sep">◆</span>
+    <span class="announce-item">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep">◆</span>
+    <span class="announce-item">💜 Over 300 fountain pen inks to explore</span><span class="announce-sep">◆</span>
+    <span class="announce-item announce-dupe">✨ Free UK delivery on orders over £40</span><span class="announce-sep announce-dupe">◆</span>
+    <span class="announce-item announce-dupe">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep announce-dupe">◆</span>
+    <span class="announce-item announce-dupe">💜 Over 300 fountain pen inks to explore</span><span class="announce-sep announce-dupe">◆</span>
+  </div>
+</div>
+
+
+<div class="blobs" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/"><img src="inkvial-logo-icon.png" alt="Ink Vial" style="height:46px;width:auto;" /><span class="nav-brand">Ink Vial</span></a>
+    <ul class="nav-links">
+      <li><a href="shop">Shop</a></li>
+      <li><a href="how-it-works">How It Works</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="faq" class="active">FAQ</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions"><a href="contact#suggest" class="btn-suggest" title="Suggest an ink"><span aria-hidden="true">💡</span><span class="lbl">Suggest an Ink</span></a><a href="shop" class="btn-outline">Shop Now</a></div>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Frequently Asked Questions</h1>
+  <p>Everything you need to know about our inks, vials, ordering, and delivery.</p>
+</div>
+
+<main class="main">
+
+  <!-- ORDERING -->
+  <section class="faq-section">
+    <h2 class="section-title">🛒 Ordering</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">What size are the samples?</summary>
+        <div class="faq-a"><p>Each sample is a <strong>2ml plastic vial</strong> — enough to fill most converters at least once and give you a proper feel for the ink's colour, shading, sheen, and flow before committing to a full bottle.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How many inks do you stock?</summary>
+        <div class="faq-a"><p>We currently stock <strong>300+ inks across 25+ brands</strong>, with new additions arriving regularly. If there's an ink you're hoping to find, <a href="mailto:hello@inkvial.co.uk">drop us a message</a> — we're always open to expanding the range.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Can I order multiple samples?</summary>
+        <div class="faq-a"><p>Absolutely. Add as many samples to your basket as you like — there's no maximum. Ordering a handful at once is a brilliant way to explore a colour palette or compare brands side by side.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Is there a minimum order?</summary>
+        <div class="faq-a"><p>No minimum at all. Order one vial or twenty — entirely up to you. We want trying new inks to be as low-commitment as possible.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">What brands do you stock?</summary>
+        <div class="faq-a">
+          <p>A wide and ever-growing range, including:</p>
+          <ul>
+            <li>Diamine</li><li>Pilot Iroshizuku</li><li>Ferris Wheel Press</li>
+            <li>Wearingeul</li><li>Robert Oster</li><li>J.Herbin</li>
+            <li>Sailor</li><li>KWZ Ink</li><li>Colorverse</li>
+            <li>Taccia</li><li>Vinta</li><li>Laban</li>
+            <li>Dominant Industry</li><li>The Birmingham Pen Company</li><li>…and more</li>
+          </ul>
+          <p>Browse the full selection in the <a href="shop">shop</a>.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="faq-section">
+    <h2 class="section-title">💷 Pricing</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">Why do samples have different prices?</summary>
+        <div class="faq-a">
+          <p>Each ink is priced individually based on what its full bottle costs us — so an everyday Diamine isn't charged at the same rate as a premium bottle of Pilot Iroshizuku. Most samples fall between <strong>£1.75 and £3.00</strong>, with a few rarer inks up to £5.00. The price is shown clearly on every ink, so there are no surprises at checkout.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- VIALS & INK -->
+  <section class="faq-section">
+    <h2 class="section-title">🧪 Vials &amp; Ink</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">Are the samples safe for my fountain pen?</summary>
+        <div class="faq-a"><p>Yes, completely. The ink in your vial is exactly the same ink from the full-size bottle — we simply decant a 2ml portion. No additives, no dilution. If the ink is safe from the original bottle, it's safe from ours.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How is the ink filled?</summary>
+        <div class="faq-a"><p>Every vial is <strong>freshly filled by hand to order</strong>. We don't pre-fill batches and leave them sitting on a shelf. That means you receive the freshest possible ink every time.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How is the vial sealed?</summary>
+        <div class="faq-a"><p>Each vial has a tightly fitted cap that creates a secure seal for transit. It's also clearly labelled with the ink name and brand, so you always know exactly what's inside.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How long does the ink last in a vial?</summary>
+        <div class="faq-a"><p>A sealed, unopened vial keeps well for <strong>6–12 months</strong> when stored away from direct sunlight and heat. Once opened, use it fairly promptly — ideally within a few weeks.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Can I use a vial to refill a converter?</summary>
+        <div class="faq-a"><p>Yes! A 2ml vial holds roughly the same amount as a standard converter. Use a blunt syringe or dip-fill directly — whichever method you prefer.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- DELIVERY -->
+  <section class="faq-section">
+    <h2 class="section-title">📦 Delivery</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">How long until my order is filled and sent?</summary>
+        <div class="faq-a">
+          <p>Because every vial is hand-filled fresh to order rather than pulled off a shelf, please allow <strong>3–5 working days</strong> for us to fill, label and pack your order before it's posted.</p>
+          <p>This processing time is separate from delivery — once your order is on its way, Royal Mail tracked delivery typically adds another 1–3 working days.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How long does delivery take once it's posted?</summary>
+        <div class="faq-a"><p>Once your order leaves us it's sent via <strong>Royal Mail tracked delivery</strong>, which usually arrives within <strong>1–3 working days</strong>. You'll get a tracking number as soon as it ships. (Remember to add the 3–5 working day filling time above when estimating when your inks will land.)</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Do you offer free shipping?</summary>
+        <div class="faq-a"><p>Yes — <strong>UK delivery is free on orders over £40</strong>. Below that, a flat £3.50 Royal Mail tracked rate applies. Your basket shows how close you are to free shipping as you add inks.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Do you ship outside the UK?</summary>
+        <div class="faq-a"><p>We're <strong>UK only for now</strong>. International shipping with liquid goods involves additional complexity, but it's something we're keen to explore as we grow. Watch this space!</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">How is my order packaged?</summary>
+        <div class="faq-a"><p>Your vials are tucked into a sealed bag and posted in a protective, fully recyclable padded mailer, with each vial secured to prevent movement and leaks. Plastic-free packaging wherever we can — better for your inks and for the planet. 💜</p></div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">What if my order arrives damaged?</summary>
+        <div class="faq-a"><p>We're sorry if that happens — it's rare, but we'll always put it right. <a href="mailto:hello@inkvial.co.uk">Get in touch</a> with your order number and a photo, and we'll resend your order as soon as possible.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- RETURNS -->
+  <section class="faq-section">
+    <h2 class="section-title">↩️ Returns</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">Can I return an ink sample?</summary>
+        <div class="faq-a"><p>Because our samples are filled fresh to order, we're unable to accept returns on opened vials. However, if something has gone wrong — wrong ink sent, vial arrived damaged — please <a href="mailto:hello@inkvial.co.uk">get in touch</a> and we'll sort it out.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Still have a question?</h2>
+    <p>We're always happy to help — drop us a message and we'll get back to you.</p>
+    <a class="btn-white" href="mailto:hello@inkvial.co.uk">Get in touch</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="inkvial-logo-nobg.png" alt="Ink Vial" style="height:54px;width:54px;object-fit:contain;filter:brightness(0) invert(1) opacity(0.85);" />
+      <p class="footer-tagline">Curated ink samples for the fountain pen curious.</p>
+    </div>
+    <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop">All Inks</a></li></ul></div>
+    <div class="footer-col"><h4>Info</h4><ul><li><a href="how-it-works">How It Works</a></li><li><a href="faq">FAQ</a></li><li><a href="about">About</a></li></ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul><li><a href="#">Instagram</a></li><li><a href="contact">Contact</a></li><li><a href="contact#suggest">Suggest an Ink</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Ink Vial — United Kingdom</span>
+    <span>Made with love for the fountain pen community</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — Ink Vial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{--bg:#faf3e8;--purple-deep:#3d2458;--purple-dark:#5c3a9a;--purple-mid:#8b68cc;--lavender:#b09ad8;--lavender-light:#d4c4ee;--lavender-pale:#ede6f8;--text:#3d2458;--muted:rgba(61,36,88,0.55);}
+    body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;}
+    .card{max-width:520px;}
+    .tick{width:88px;height:88px;border-radius:50%;background:linear-gradient(160deg,var(--purple-mid),var(--purple-dark));display:flex;align-items:center;justify-content:center;margin:0 auto 28px;box-shadow:0 8px 30px rgba(140,100,210,0.3);animation:pop .5s ease;}
+    .tick svg{width:44px;height:44px;stroke:#fff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+    @keyframes pop{0%{transform:scale(0);}60%{transform:scale(1.15);}100%{transform:scale(1);}}
+    h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,2.8rem);font-weight:700;color:var(--purple-deep);margin-bottom:14px;}
+    p{font-size:1.05rem;color:var(--muted);line-height:1.7;margin-bottom:14px;}
+    .sub{font-size:0.92rem;}
+    .btn{display:inline-block;margin-top:18px;padding:14px 30px;background:var(--purple-dark);color:#fff;font-weight:800;font-size:0.9rem;letter-spacing:0.06em;text-transform:uppercase;border-radius:8px;text-decoration:none;transition:background .2s,transform .1s;}
+    .btn:hover{background:var(--purple-mid);transform:translateY(-1px);}
+    .logo{height:56px;width:auto;margin-bottom:36px;}
+    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .nav-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
+  @media(max-width:480px){.nav-brand{font-size:1.1rem;}}
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="inkvial-logo-nobg.png" alt="Ink Vial" />
+    <div class="tick"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+    <h1>Thank you!</h1>
+    <p>Your order is confirmed and a receipt is on its way to your inbox.</p>
+    <p class="sub">Every vial is hand-filled fresh to order, so we'll get yours packed and posted within 1–2 working days via Royal Mail tracked. 💜</p>
+    <a class="btn" href="/shop">Continue Shopping</a>
+  </div>
+  <script>
+    // Clear the saved basket now the order is paid
+    try { localStorage.removeItem('inkvial_cart_v1'); } catch(e) {}
+  </script>
+</body>
+</html>

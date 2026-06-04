@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop All Inks — Ink Vial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:             #faf3e8;
+      --surface:        #ffffff;
+      --purple-deep:    #3d2458;
+      --purple-dark:    #5c3a9a;
+      --purple-mid:     #8b68cc;
+      --lavender:       #b09ad8;
+      --lavender-light: #d4c4ee;
+      --lavender-pale:  #ede6f8;
+      --pink:           #f5a0b0;
+      --text:           #3d2458;
+      --muted:          rgba(61,36,88,0.48);
+      --border:         rgba(176,154,216,0.25);
+      --radius-sm:      8px;
+      --radius:         14px;
+      --radius-lg:      20px;
+
+      /* Snipcart brand overrides */
+      --color-buttonPrimary-background: #5c3a9a;
+      --color-buttonPrimary-hover-background: #8b68cc;
+      --color-buttonPrimary-foreground: #ffffff;
+      --color-badge-background: #5c3a9a;
+      --color-modalBackground: #faf3e8;
+      --color-snow: #faf3e8;
+      --color-link: #5c3a9a;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+    .blobs { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.11; animation: drift 22s ease-in-out infinite alternate; }
+    .blob-1 { width: 500px; height: 500px; background: #c4b0e4; top: -10%; left: -10%; animation-duration: 28s; }
+    .blob-2 { width: 340px; height: 340px; background: #f5a0b0; bottom: -10%; right: -5%; animation-duration: 20s; animation-delay: -9s; }
+    @keyframes drift { 0% { transform: translate(0,0); } 100% { transform: translate(20px,-16px); } }
+
+    /* NAV */
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(250,243,232,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 700; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--purple-dark); }
+    .btn-primary { display: inline-flex; align-items: center; gap: 6px; padding: 10px 22px; background: var(--purple-dark); color: #fff; font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: var(--radius-sm); text-decoration: none; transition: background 0.2s, transform 0.1s; border: none; cursor: pointer; }
+    .btn-primary:hover { background: var(--purple-mid); transform: translateY(-1px); }
+
+    /* PAGE HEADER */
+    .page-header { position: relative; z-index: 1; padding: 48px 24px 32px; text-align: center; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; color: var(--purple-deep); margin-bottom: 8px; }
+    .page-header p { color: var(--muted); font-size: 1rem; }
+    .ink-count { display: inline-block; margin-top: 6px; font-size: 0.78rem; font-weight: 700; color: var(--purple-mid); letter-spacing: 0.08em; }
+
+    /* FILTERS */
+    .filter-bar { position: sticky; top: 68px; z-index: 90; background: rgba(250,243,232,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 14px 24px; }
+    .filter-inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .filter-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .search-box { flex: 1; min-width: 200px; max-width: 340px; position: relative; }
+    .search-box input { width: 100%; padding: 9px 14px 9px 36px; border: 1.5px solid var(--lavender-light); border-radius: var(--radius-sm); background: var(--surface); font-family: 'Nunito', sans-serif; font-size: 0.88rem; color: var(--text); outline: none; transition: border-color 0.2s; }
+    .search-box input:focus { border-color: var(--purple-mid); }
+    .search-box svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; stroke: var(--muted); fill: none; stroke-width: 2; stroke-linecap: round; }
+    .filter-pills { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+    .filter-label { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); white-space: nowrap; margin-right: 2px; }
+    .pill { padding: 5px 12px; border-radius: 20px; border: 1.5px solid var(--lavender-light); background: transparent; font-family: 'Nunito', sans-serif; font-size: 0.75rem; font-weight: 700; color: var(--muted); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+    .pill:hover { border-color: var(--purple-mid); color: var(--purple-dark); }
+    .pill.active { background: var(--purple-dark); border-color: var(--purple-dark); color: #fff; }
+    .filter-select { padding: 7px 28px 7px 12px; border-radius: var(--radius-sm); border: 1.5px solid var(--lavender-light); background: var(--surface); font-family: 'Nunito', sans-serif; font-size: 0.82rem; color: var(--text); cursor: pointer; outline: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238b68cc'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 10px center; transition: border-color 0.2s; }
+    .filter-select:focus { border-color: var(--purple-mid); }
+    .results-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .results-count { font-size: 0.78rem; font-weight: 700; color: var(--muted); }
+    .active-filters { display: flex; gap: 6px; flex-wrap: wrap; }
+    .active-chip { display: flex; align-items: center; gap: 5px; padding: 3px 10px; background: var(--lavender-pale); border: 1px solid var(--lavender-light); border-radius: 20px; font-size: 0.72rem; font-weight: 700; color: var(--purple-dark); }
+    .active-chip button { background: none; border: none; cursor: pointer; padding: 0; line-height: 1; color: var(--purple-mid); font-size: 0.9rem; display: flex; align-items: center; }
+
+    /* COLOUR DOTS for filter */
+    .colour-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 4px; border: 1px solid rgba(0,0,0,0.1); vertical-align: middle; }
+
+    /* GRID */
+    .shop-layout { max-width: 1200px; margin: 0 auto; padding: 28px 24px 80px; position: relative; z-index: 1; }
+    .ink-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+
+    /* INK CARD */
+    .ink-card { background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 2px 12px rgba(140,100,210,0.06); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+    .ink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(140,100,210,0.14); }
+    .ink-card:hover .card-overlay { opacity: 1; }
+    .card-swatch { height: 130px; position: relative; overflow: hidden; flex-shrink: 0; }
+    .card-swatch a { display: block; height: 100%; }
+    .card-shine { position: absolute; top: 6px; left: 8px; width: 16px; height: 48px; background: rgba(255,255,255,0.18); border-radius: 8px; transform: rotate(-15deg); pointer-events: none; }
+    .card-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.18); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s; }
+    .card-overlay span { background: rgba(255,255,255,0.9); color: var(--purple-dark); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.10em; text-transform: uppercase; padding: 6px 14px; border-radius: 20px; }
+    .card-body { padding: 12px 13px 13px; display: flex; flex-direction: column; flex: 1; }
+    .card-brand { font-size: 0.60rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+    .card-name { font-family: 'Playfair Display', serif; font-size: 0.92rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 6px; line-height: 1.25; flex: 1; }
+    .card-stat { display: inline-flex; align-items: center; gap: 5px; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 10px; }
+    .card-stat::before { content: ''; width: 7px; height: 7px; border-radius: 50%; }
+    .card-stat.in  { color: #2d7a3a; } .card-stat.in::before  { background: #2d7a3a; }
+    .card-stat.low { color: #c08a1a; } .card-stat.low::before { background: #d49a2a; }
+    .card-stat.out { color: var(--muted); } .card-stat.out::before { background: rgba(61,36,88,0.35); }
+    .card-soldout-ribbon { position: absolute; inset: 0; background: rgba(250,243,232,0.62); display: flex; align-items: center; justify-content: center; }
+    .card-soldout-ribbon span { background: var(--purple-deep); color: #fff; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 16px; border-radius: 20px; }
+    .ink-card.is-out .card-swatch img, .ink-card.is-out .card-shine { filter: saturate(0.6) opacity(0.85); }
+    .btn-add-sm.disabled { background: var(--lavender-light); cursor: not-allowed; pointer-events: none; }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+    .card-price { font-size: 0.88rem; font-weight: 800; color: var(--purple-dark); }
+    .card-tier { font-size: 0.60rem; font-weight: 700; padding: 2px 6px; border-radius: 10px; background: var(--lavender-pale); color: var(--purple-mid); border: 1px solid var(--lavender-light); }
+    .btn-add-sm {
+      width: 30px; height: 30px; border-radius: 50%; background: var(--purple-dark); border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+      transition: background 0.15s, transform 0.1s; color: white;
+    }
+    .btn-add-sm:hover { background: var(--purple-mid); transform: scale(1.1); }
+    .btn-add-sm svg { width: 14px; height: 14px; stroke: white; fill: none; stroke-width: 2.5; stroke-linecap: round; }
+
+    /* EMPTY / LOADING */
+    .state-msg { text-align: center; padding: 80px 24px; }
+    .state-msg h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--purple-deep); margin-bottom: 8px; }
+    .state-msg p { color: var(--muted); font-size: 0.9rem; }
+
+    /* FOOTER */
+    footer { background: #2a1840; padding: 48px 24px 32px; color: rgba(240,232,216,0.55); position: relative; z-index: 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    .footer-brand { display: flex; flex-direction: column; gap: 12px; }
+    .footer-tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.85rem; color: rgba(240,232,216,0.38); }
+    .footer-col h4 { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(240,232,216,0.32); margin-bottom: 16px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { font-size: 0.88rem; color: rgba(240,232,216,0.55); text-decoration: none; transition: color 0.2s; }
+    .footer-col a:hover { color: #d4c4ee; }
+    .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 24px; border-top: 1px solid rgba(240,232,216,0.08); display: flex; justify-content: space-between; font-size: 0.75rem; color: rgba(240,232,216,0.25); flex-wrap: wrap; gap: 12px; }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .filter-select { font-size: 0.78rem; }
+      .ink-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .ink-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .nav-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
+  @media(max-width:480px){.nav-brand{font-size:1.1rem;}}
+  .nav-actions{display:flex;align-items:center;gap:10px;}
+  .btn-suggest{display:inline-flex;align-items:center;gap:6px;padding:9px 15px;border-radius:8px;background:var(--lavender-pale);color:var(--purple-dark);font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;border:1px solid var(--lavender-light);transition:background .2s,transform .1s;white-space:nowrap;cursor:pointer;}
+  .btn-suggest:hover{background:var(--lavender-light);transform:translateY(-1px);}
+  @media(max-width:600px){.btn-suggest .lbl{display:none;}.btn-suggest{padding:9px 11px;}}
+</style>
+</head>
+<body>
+<style>
+  .announce-bar{background:var(--purple-deep,#3d2458);overflow:hidden;white-space:nowrap;position:relative;z-index:101;}
+  .announce-track{display:inline-flex;align-items:center;padding:9px 0;animation:announce-scroll 38s linear infinite;}
+  .announce-bar:hover .announce-track{animation-play-state:paused;}
+  .announce-item{font-family:'Nunito',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.02em;color:#f0e8d8;padding:0 30px;}
+  .announce-sep{color:rgba(240,232,216,0.35);font-size:0.7rem;}
+  @keyframes announce-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  @media (prefers-reduced-motion: reduce){.announce-track{animation:none;justify-content:center;width:100%;}.announce-track .announce-dupe{display:none;}}
+</style>
+<div class="announce-bar" aria-label="Announcements">
+  <div class="announce-track">
+    <span class="announce-item">✨ Free UK delivery on orders over £40</span><span class="announce-sep">◆</span>
+    <span class="announce-item">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep">◆</span>
+    <span class="announce-item">💜 Over 300 fountain pen inks to explore</span><span class="announce-sep">◆</span>
+    <span class="announce-item announce-dupe">✨ Free UK delivery on orders over £40</span><span class="announce-sep announce-dupe">◆</span>
+    <span class="announce-item announce-dupe">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep announce-dupe">◆</span>
+    <span class="announce-item announce-dupe">💜 Over 300 fountain pen inks to explore</span><span class="announce-sep announce-dupe">◆</span>
+  </div>
+</div>
+
+
+<div class="blobs" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">
+      <img src="inkvial-logo-icon.png" alt="Ink Vial" style="height:46px;width:auto;" /><span class="nav-brand">Ink Vial</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="shop" class="active">Shop</a></li>
+      <li><a href="how-it-works">How It Works</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="faq">FAQ</a></li>
+      <li><a href="contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions"><a href="contact#suggest" class="btn-suggest" title="Suggest an ink"><span aria-hidden="true">💡</span><span class="lbl">Suggest an Ink</span></a><button class="snipcart-checkout btn-primary">Basket (<span class="snipcart-items-count">0</span>)</button></div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Shop All Inks</h1>
+  <p>2ml samples, freshly filled to order — try before you commit to the bottle.</p>
+  <span class="ink-count" id="ink-count">Loading…</span>
+</div>
+
+<!-- FILTERS -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <div class="filter-row">
+      <!-- Search -->
+      <div class="search-box">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="search" placeholder="Search inks…" autocomplete="off" />
+      </div>
+
+      <!-- Brand -->
+      <select class="filter-select" id="brand-filter">
+        <option value="">All Brands</option>
+      </select>
+
+      <!-- Sort -->
+      <select class="filter-select" id="sort">
+        <option value="brand">Brand A–Z</option>
+        <option value="name">Name A–Z</option>
+        <option value="price-asc">Price: Low–High</option>
+        <option value="price-desc">Price: High–Low</option>
+      </select>
+    </div>
+
+    <div class="filter-row">
+      <span class="filter-label">Colour</span>
+      <div class="filter-pills" id="colour-filters">
+        <button class="pill active" data-colour="">All</button>
+        <button class="pill" data-colour="Red">Red</button>
+        <button class="pill" data-colour="Pink">Pink</button>
+        <button class="pill" data-colour="Orange">Orange</button>
+        <button class="pill" data-colour="Yellow">Yellow</button>
+        <button class="pill" data-colour="Green">Green</button>
+        <button class="pill" data-colour="Teal">Teal</button>
+        <button class="pill" data-colour="Blue">Blue</button>
+        <button class="pill" data-colour="Purple">Purple</button>
+        <button class="pill" data-colour="Brown">Brown</button>
+        <button class="pill" data-colour="Grey">Grey</button>
+        <button class="pill" data-colour="Black">Black</button>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <span class="filter-label">Features</span>
+      <div class="filter-pills" id="feature-filters">
+        <button class="pill active" data-feature="">All</button>
+        <button class="pill" data-feature="sheen">✦ Sheen</button>
+        <button class="pill" data-feature="shimmer">✧ Shimmer</button>
+        <button class="pill" data-feature="water">💧 Water-resistant</button>
+      </div>
+      <div class="results-bar" style="margin-left:auto">
+        <span class="results-count" id="results-count"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GRID -->
+<div class="shop-layout">
+  <div id="ink-grid" class="ink-grid"></div>
+  <div id="state-msg" class="state-msg" style="display:none">
+    <h3>No inks found</h3>
+    <p>Try adjusting your filters or search term.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="inkvial-logo-nobg.png" alt="Ink Vial" style="height:54px;width:54px;object-fit:contain;filter:brightness(0) invert(1) opacity(0.85);" />
+      <p class="footer-tagline">Curated ink samples for the fountain pen curious.</p>
+    </div>
+    <div class="footer-col"><h4>Shop</h4><ul>
+      <li><a href="shop">All Inks</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Info</h4><ul>
+      <li><a href="how-it-works">How It Works</a></li>
+      <li><a href="faq">FAQ</a></li>
+      <li><a href="about">About</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="contact">Contact</a></li><li><a href="contact#suggest">Suggest an Ink</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Ink Vial — United Kingdom</span>
+    <span>Made with love for the fountain pen community</span>
+  </div>
+</footer>
+<script src="inks.js"></script>
+<script src="prices.js"></script>
+<script src="cart.js"></script>
+<script>
+  // ── State ──────────────────────────────────────────────
+  let activeColour   = '';
+  let activeFeature  = '';
+  let activeBrand    = '';
+  let activeSearch   = '';
+  let activeSort     = 'brand';
+
+  // ── Feature detection ──────────────────────────────────
+  function hasFeature(ink, feature) {
+    const p = ink.properties || {};
+    if (feature === 'sheen')   return (p.sheen || 0) >= 3;
+    if (feature === 'shimmer') return /shimmer|shimmering|sparkl|glitter/i.test((ink.description||'') + (ink.tagline||''));
+    if (feature === 'water')   return /medium|high/i.test(p.waterResistance || '');
+    return true;
+  }
+
+  // ── Build brand list ───────────────────────────────────
+  function buildBrandFilter() {
+    const brands = [...new Set(INKS.map(i => i.brand))].sort();
+    const sel = document.getElementById('brand-filter');
+    brands.forEach(b => {
+      const opt = document.createElement('option');
+      opt.value = b; opt.textContent = b;
+      sel.appendChild(opt);
+    });
+  }
+
+  // ── Filter + sort ──────────────────────────────────────
+  function getFiltered() {
+    return INKS
+      .filter(ink => {
+        const price = getInkPrice(ink);
+        const colour = getColourFamily(ink.colorPrimary);
+        const search = activeSearch.toLowerCase();
+        if (activeBrand    && ink.brand !== activeBrand) return false;
+        if (activeColour   && colour !== activeColour)  return false;
+        if (activeFeature  && !hasFeature(ink, activeFeature)) return false;
+        if (search && !ink.name.toLowerCase().includes(search) && !ink.brand.toLowerCase().includes(search)) return false;
+        return true;
+      })
+      .sort((a, b) => {
+        if (activeSort === 'brand') return a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name);
+        if (activeSort === 'name')  return a.name.localeCompare(b.name);
+        if (activeSort === 'price-asc')  return getInkPrice(a) - getInkPrice(b);
+        if (activeSort === 'price-desc') return getInkPrice(b) - getInkPrice(a);
+        return 0;
+      });
+  }
+
+  // ── Render grid ────────────────────────────────────────
+  function renderGrid() {
+    const inks = getFiltered();
+    const grid  = document.getElementById('ink-grid');
+    const msg   = document.getElementById('state-msg');
+    const count = document.getElementById('results-count');
+
+    count.textContent = `${inks.length} ink${inks.length !== 1 ? 's' : ''}`;
+
+    if (!inks.length) {
+      grid.innerHTML = '';
+      msg.style.display = 'block';
+      return;
+    }
+    msg.style.display = 'none';
+
+    grid.innerHTML = inks.map(ink => {
+      const price = getInkPrice(ink);
+      const stat = getStockStatus(ink);
+      const statLabel = stat === 'out' ? 'Sold out' : (stat === 'low' ? 'Low stock' : 'Available');
+      const isOut = stat === 'out';
+      return `
+        <div class="ink-card${isOut ? ' is-out' : ''}" onclick="window.location='product?id=${ink.id}'" role="link" tabindex="0" aria-label="View ${ink.brand} ${ink.name}">
+          <div class="card-swatch" style="background:linear-gradient(160deg,${ink.colorPrimary},${ink.colorDark})">
+            ${ink.image ? `<img src="${ink.image}" alt="${ink.brand} ${ink.name}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />` : '<div class="card-shine"></div>'}
+            ${isOut ? '<div class="card-soldout-ribbon"><span>Sold out</span></div>' : '<div class="card-overlay"><span>View Details</span></div>'}
+          </div>
+          <div class="card-body">
+            <div class="card-brand">${ink.brand}</div>
+            <div class="card-name">${ink.name}</div>
+            <div class="card-stat ${stat}">${statLabel}</div>
+            <div class="card-footer">
+              <div>
+                <div class="card-price">£${price.toFixed(2)} <span style="font-size:0.62rem;font-weight:600;color:var(--muted)">/ 2ml</span></div>
+              </div>
+              <button
+                class="btn-add-sm ${isOut ? 'disabled' : 'snipcart-add-item'}"
+                onclick="event.stopPropagation()"
+                ${isOut ? 'disabled aria-label="Sold out"' : `aria-label="Add ${ink.name} to basket"`}
+                data-item-id="${ink.id}"
+                data-item-price="${price.toFixed(2)}"
+                data-item-url="product?id=${ink.id}"
+                data-item-name="${ink.brand} ${ink.name}"
+                data-item-description="2ml plastic vial — ${(ink.tagline||'').replace(/"/g,'&quot;')}"
+                data-item-categories="${ink.brand}"
+              >
+                <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // ── Event listeners ────────────────────────────────────
+  document.getElementById('search').addEventListener('input', e => {
+    activeSearch = e.target.value;
+    renderGrid();
+  });
+
+  document.getElementById('brand-filter').addEventListener('change', e => {
+    activeBrand = e.target.value;
+    renderGrid();
+  });
+
+  document.getElementById('sort').addEventListener('change', e => {
+    activeSort = e.target.value;
+    renderGrid();
+  });
+
+  document.querySelectorAll('#colour-filters .pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#colour-filters .pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      activeColour = btn.dataset.colour;
+      renderGrid();
+    });
+  });
+
+  document.querySelectorAll('#feature-filters .pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#feature-filters .pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      activeFeature = btn.dataset.feature;
+      renderGrid();
+    });
+  });
+
+  // ── Live stock (from /api/stock) — falls back to built-in if unavailable ──
+  function loadLiveStock() {
+    fetch('/api/stock', { headers: { 'Accept': 'application/json' } })
+      .then(r => r.ok ? r.json() : null)
+      .then(d => { if (d && d.statuses) { window.LIVE_STOCK = d.statuses; renderGrid(); } })
+      .catch(() => { /* keep built-in stock */ });
+  }
+
+  // ── Boot ───────────────────────────────────────────────
+  if (typeof INKS !== 'undefined' && INKS.length) {
+    document.getElementById('ink-count').textContent = `${INKS.length} inks available`;
+    buildBrandFilter();
+    renderGrid();
+    loadLiveStock();
+  } else {
+    document.getElementById('ink-count').textContent = '';
+    document.getElementById('state-msg').style.display = 'block';
+    document.getElementById('state-msg').querySelector('h3').textContent = 'Coming soon';
+    document.getElementById('state-msg').querySelector('p').textContent = 'Our full ink catalogue is being prepared. Check back soon!';
+  }
+</script>
+</body>
+</html>

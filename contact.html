@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Ink Vial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{--bg:#faf3e8;--surface:#ffffff;--purple-deep:#3d2458;--purple-dark:#5c3a9a;--purple-mid:#8b68cc;--lavender:#b09ad8;--lavender-light:#d4c4ee;--lavender-pale:#ede6f8;--pink:#f5a0b0;--text:#3d2458;--muted:rgba(61,36,88,0.50);--border:rgba(176,154,216,0.25);--radius-sm:8px;--radius:14px;--radius-lg:20px;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
+    .blobs{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0;}
+    .blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:0.11;animation:drift 22s ease-in-out infinite alternate;}
+    .blob-1{width:500px;height:500px;background:#c4b0e4;top:-10%;left:-10%;animation-duration:28s;}
+    .blob-2{width:300px;height:300px;background:#f5a0b0;bottom:-5%;right:-5%;animation-duration:20s;animation-delay:-9s;}
+    @keyframes drift{0%{transform:translate(0,0);}100%{transform:translate(20px,-16px);}}
+    /* NAV */
+    .nav{position:sticky;top:0;z-index:100;background:rgba(250,243,232,0.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);}
+    .nav-inner{max-width:1100px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px;}
+    .nav-logo{text-decoration:none;}
+    .nav-links{display:flex;gap:28px;list-style:none;}
+    .nav-links a{font-size:0.85rem;font-weight:700;color:var(--muted);text-decoration:none;letter-spacing:0.04em;transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:var(--purple-dark);}
+    .btn-outline{padding:9px 20px;border:2px solid var(--purple-dark);color:var(--purple-dark);font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;border-radius:var(--radius-sm);text-decoration:none;transition:all 0.2s;}
+    .btn-outline:hover{background:var(--purple-dark);color:white;}
+    /* HERO */
+    .hero{background:linear-gradient(135deg,var(--purple-deep) 0%,var(--purple-dark) 60%,var(--purple-mid) 100%);color:white;text-align:center;padding:64px 24px 52px;position:relative;z-index:1;}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3rem);font-weight:700;margin-bottom:10px;}
+    .hero p{opacity:0.88;font-size:1rem;max-width:520px;margin:0 auto;}
+    .hero a{color:#fff;font-weight:700;text-decoration:underline;}
+    /* MAIN */
+    .main{max-width:980px;margin:0 auto;padding:56px 24px 80px;position:relative;z-index:1;}
+    .forms-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px 30px;box-shadow:0 4px 20px rgba(140,100,210,0.06);}
+    .card.suggest{background:var(--lavender-pale);border-color:var(--lavender-light);}
+    .card-tag{font-size:0.72rem;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:var(--purple-mid);margin-bottom:8px;}
+    .card h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--purple-deep);margin-bottom:8px;}
+    .card .intro{font-size:0.9rem;color:var(--muted);margin-bottom:24px;line-height:1.65;}
+    .field{margin-bottom:16px;}
+    .field label{display:block;font-size:0.78rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--purple-dark);margin-bottom:6px;}
+    .field input,.field textarea,.field select{
+      width:100%;padding:11px 14px;border:1.5px solid var(--lavender-light);border-radius:var(--radius-sm);
+      background:#fff;font-family:'Nunito',sans-serif;font-size:0.92rem;color:var(--text);outline:none;transition:border-color 0.2s,box-shadow 0.2s;
+    }
+    .card.suggest .field input,.card.suggest .field textarea{background:#fff;}
+    .field input:focus,.field textarea:focus,.field select:focus{border-color:var(--purple-mid);box-shadow:0 0 0 3px rgba(139,104,204,0.12);}
+    .field textarea{resize:vertical;min-height:110px;line-height:1.6;}
+    .btn-submit{
+      width:100%;padding:14px 24px;background:var(--purple-dark);color:#fff;border:none;cursor:pointer;
+      font-family:'Nunito',sans-serif;font-size:0.9rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;
+      border-radius:var(--radius-sm);transition:background 0.2s,transform 0.1s;margin-top:4px;
+    }
+    .btn-submit:hover{background:var(--purple-mid);transform:translateY(-1px);}
+    .form-note{font-size:0.75rem;color:var(--muted);margin-top:12px;text-align:center;}
+    .form-status{display:none;margin-top:14px;padding:12px 16px;border-radius:var(--radius-sm);font-size:0.85rem;font-weight:700;text-align:center;}
+    .form-status.success{display:block;background:#e3f5e8;color:#2d7a3a;border:1px solid #b8e0c4;}
+    .form-status.error{display:block;background:#fce8ec;color:#c0405a;border:1px solid #f0c0cc;}
+    /* OTHER WAYS */
+    .ways{margin-top:48px;text-align:center;}
+    .ways h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--purple-deep);margin-bottom:16px;}
+    .ways-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+    .way-chip{display:flex;align-items:center;gap:8px;padding:12px 20px;background:var(--surface);border:1px solid var(--border);border-radius:50px;font-size:0.9rem;font-weight:700;color:var(--purple-dark);text-decoration:none;transition:all 0.2s;}
+    .way-chip:hover{border-color:var(--purple-mid);transform:translateY(-2px);}
+    .way-chip svg{width:18px;height:18px;stroke:var(--purple-mid);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+    /* FOOTER */
+    footer{background:#2a1840;padding:48px 24px 32px;color:rgba(240,232,216,0.55);position:relative;z-index:1;}
+    .footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+    .footer-tagline{font-family:'Playfair Display',serif;font-style:italic;font-size:0.85rem;color:rgba(240,232,216,0.38);margin-top:10px;}
+    .footer-col h4{font-size:0.72rem;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:rgba(240,232,216,0.32);margin-bottom:14px;}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+    .footer-col a{font-size:0.88rem;color:rgba(240,232,216,0.55);text-decoration:none;transition:color 0.2s;}
+    .footer-col a:hover{color:#d4c4ee;}
+    .footer-bottom{max-width:1100px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(240,232,216,0.08);display:flex;justify-content:space-between;font-size:0.75rem;color:rgba(240,232,216,0.25);flex-wrap:wrap;gap:12px;}
+    @media(max-width:768px){.nav-links{display:none;}.forms-grid{grid-template-columns:1fr;}.footer-inner{grid-template-columns:1fr 1fr;}}
+    @media(max-width:480px){.footer-inner{grid-template-columns:1fr;}}
+    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+  .nav-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
+  @media(max-width:480px){.nav-brand{font-size:1.1rem;}}
+  .nav-actions{display:flex;align-items:center;gap:10px;}
+  .btn-suggest{display:inline-flex;align-items:center;gap:6px;padding:9px 15px;border-radius:8px;background:var(--lavender-pale);color:var(--purple-dark);font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;border:1px solid var(--lavender-light);transition:background .2s,transform .1s;white-space:nowrap;cursor:pointer;}
+  .btn-suggest:hover{background:var(--lavender-light);transform:translateY(-1px);}
+  @media(max-width:600px){.btn-suggest .lbl{display:none;}.btn-suggest{padding:9px 11px;}}
+</style>
+</head>
+<body>
+<style>
+  .announce-bar{background:var(--purple-deep,#3d2458);overflow:hidden;white-space:nowrap;position:relative;z-index:101;}
+  .announce-track{display:inline-flex;align-items:center;padding:9px 0;animation:announce-scroll 38s linear infinite;}
+  .announce-bar:hover .announce-track{animation-play-state:paused;}
+  .announce-item{font-family:'Nunito',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.02em;color:#f0e8d8;padding:0 30px;}
+  .announce-sep{color:rgba(240,232,216,0.35);font-size:0.7rem;}
+  @keyframes announce-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+  @media (prefers-reduced-motion: reduce){.announce-track{animation:none;justify-content:center;width:100%;}.announce-track .announce-dupe{display:none;}}
+</style>
+<div class="announce-bar" aria-label="Announcements">
+  <div class="announce-track">
+    <span class="announce-item">✨ Free UK delivery on orders over £40</span><span class="announce-sep">◆</span>
+    <span class="announce-item">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep">◆</span>
+    <span class="announce-item">💜 Over 300 fountain pen inks to explore</span><span class="announce-sep">◆</span>
+    <span class="announce-item announce-dupe">✨ Free UK delivery on orders over £40</span><span class="announce-sep announce-dupe">◆</span>
+    <span class="announce-item announce-dupe">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep announce-dupe">◆</span>
+    <span class="announce-item announce-dupe">💜 Over 300 fountain pen inks to explore</span><span class="announce-sep announce-dupe">◆</span>
+  </div>
+</div>
+
+<div class="blobs" aria-hidden="true"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/"><img src="inkvial-logo-icon.png" alt="Ink Vial" style="height:46px;width:auto;" /><span class="nav-brand">Ink Vial</span></a>
+    <ul class="nav-links">
+      <li><a href="shop">Shop</a></li>
+      <li><a href="how-it-works">How It Works</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="faq">FAQ</a></li>
+      <li><a href="contact" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions"><a href="contact#suggest" class="btn-suggest" title="Suggest an ink"><span aria-hidden="true">💡</span><span class="lbl">Suggest an Ink</span></a><a href="shop" class="btn-outline">Shop Now</a></div>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>Get in Touch</h1>
+  <p>Questions, feedback, or an ink you'd love us to stock? We'd genuinely love to hear from you. Email us any time at <a href="mailto:hello@inkvial.co.uk">hello@inkvial.co.uk</a>.</p>
+</div>
+
+<main class="main">
+  <div class="forms-grid">
+
+    <!-- CONTACT FORM -->
+    <div class="card">
+      <div class="card-tag">Say hello</div>
+      <h2>Contact Us</h2>
+      <p class="intro">Got a question about an order, an ink, or anything else? Drop us a message and we'll get back to you as soon as we can.</p>
+      <form id="contact-form" action="https://formspree.io/f/YOUR_CONTACT_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="New contact message — Ink Vial" />
+        <div class="field">
+          <label for="c-name">Your name</label>
+          <input type="text" id="c-name" name="name" required placeholder="Jane Smith" />
+        </div>
+        <div class="field">
+          <label for="c-email">Email address</label>
+          <input type="email" id="c-email" name="email" required placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="c-subject">Subject</label>
+          <input type="text" id="c-subject" name="subject" placeholder="Order enquiry, feedback…" />
+        </div>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" required placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+        <p class="form-note">We usually reply within 1–2 working days.</p>
+        <div class="form-status" id="contact-status"></div>
+      </form>
+    </div>
+
+    <!-- SUGGESTION BOX -->
+    <div class="card suggest" id="suggest">
+      <div class="card-tag">Wishlist & ideas</div>
+      <h2>Suggest an Ink</h2>
+      <p class="intro">Is there an ink you wish we stocked? A brand we're missing? Tell us — we're always growing the collection and your suggestions genuinely shape what we add next.</p>
+      <form id="suggest-form" action="https://formspree.io/f/YOUR_SUGGEST_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="New ink suggestion — Ink Vial" />
+        <div class="field">
+          <label for="s-ink">Ink or brand you'd love to see</label>
+          <input type="text" id="s-ink" name="ink_suggestion" required placeholder="e.g. Diamine Inkvent, Sailor Ink Studio…" />
+        </div>
+        <div class="field">
+          <label for="s-note">Anything else? (optional)</label>
+          <textarea id="s-note" name="note" placeholder="Why you love it, where you've seen it, a colour you're chasing…"></textarea>
+        </div>
+        <div class="field">
+          <label for="s-email">Your email (optional — so we can let you know if we stock it)</label>
+          <input type="email" id="s-email" name="email" placeholder="you@example.com" />
+        </div>
+        <button type="submit" class="btn-submit">Send Suggestion</button>
+        <p class="form-note">Every suggestion is read by a real human who loves ink as much as you do. 💜</p>
+        <div class="form-status" id="suggest-status"></div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="ways">
+    <h3>Other ways to reach us</h3>
+    <div class="ways-row">
+      <a class="way-chip" href="mailto:hello@inkvial.co.uk">
+        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+        hello@inkvial.co.uk
+      </a>
+      <a class="way-chip" href="#">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        Instagram
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <img src="inkvial-logo-nobg.png" alt="Ink Vial" style="height:54px;width:54px;object-fit:contain;filter:brightness(0) invert(1) opacity(0.85);" />
+      <p class="footer-tagline">Curated ink samples for the fountain pen curious.</p>
+    </div>
+    <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop">All Inks</a></li></ul></div>
+    <div class="footer-col"><h4>Info</h4><ul><li><a href="how-it-works">How It Works</a></li><li><a href="faq">FAQ</a></li><li><a href="about">About</a></li></ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul><li><a href="#">Instagram</a></li><li><a href="contact">Contact</a></li><li><a href="contact#suggest">Suggest an Ink</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Ink Vial — United Kingdom</span>
+    <span>Made with love for the fountain pen community</span>
+  </div>
+</footer>
+
+<script>
+  // Submit forms via fetch so the user stays on the page and sees a thank-you message
+  function handleForm(formId, statusId, successMsg) {
+    const form = document.getElementById(formId);
+    const status = document.getElementById(statusId);
+    if (!form) return;
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.className = 'form-status';
+      const action = form.getAttribute('action');
+      // If the Formspree ID hasn't been set yet, fall back to mailto
+      if (action.includes('YOUR_')) {
+        const data = new FormData(form);
+        const lines = [];
+        data.forEach((v, k) => { if (!k.startsWith('_') && v) lines.push(k + ': ' + v); });
+        window.location.href = 'mailto:hello@inkvial.co.uk?subject='
+          + encodeURIComponent(form.querySelector('[name=_subject]').value)
+          + '&body=' + encodeURIComponent(lines.join('\n'));
+        return;
+      }
+      try {
+        const res = await fetch(action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          status.textContent = successMsg;
+          status.classList.add('success');
+        } else {
+          throw new Error('submit failed');
+        }
+      } catch (err) {
+        status.textContent = 'Something went wrong — please email us directly at hello@inkvial.co.uk.';
+        status.classList.add('error');
+      }
+    });
+  }
+  handleForm('contact-form', 'contact-status', 'Thank you! Your message is on its way — we’ll be in touch soon. 💜');
+  handleForm('suggest-form', 'suggest-status', 'Thank you for the suggestion! We genuinely read every one. 💜');
+</script>
+</body>
+</html>

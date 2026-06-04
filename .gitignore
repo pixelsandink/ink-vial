@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+.claude/
+
+# Build / working files (not needed on the live site)
+inkvial-site.zip
+inks_chunk*.js
+generate-*.js
+build_checklist.py
+create_ink_checklist.py
+filling-checklist.txt
+
+# Private business data — must NOT be published on the public site
+*.docx
+*.xlsx
+ink-filling-checklist.csv
+shopify-products.csv
+
+# Node
+node_modules/
+
+# Legacy mockups / unused logo variants
+ink-vial-*.html
+swatches-contact-sheet.html
+ink-vial-icon.svg
+ink-vial-logo.svg
+inkvial-logo.png
