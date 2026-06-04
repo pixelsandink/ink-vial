@@ -34,6 +34,7 @@
   .btn-suggest{display:inline-flex;align-items:center;gap:6px;padding:9px 15px;border-radius:8px;background:var(--lavender-pale);color:var(--purple-dark);font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;border:1px solid var(--lavender-light);transition:background .2s,transform .1s;white-space:nowrap;cursor:pointer;}
   .btn-suggest:hover{background:var(--lavender-light);transform:translateY(-1px);}
   @media(max-width:600px){.btn-suggest .lbl{display:none;}.btn-suggest{padding:9px 11px;}}
+  .footer-wordmark{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;font-weight:700;color:#f0e8d8;letter-spacing:0.01em;line-height:1;}
 </style>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -110,6 +111,7 @@
     .swatch-shine { position: absolute; top: 5%; left: 5%; width: 22%; height: 60%; background: rgba(255,255,255,0.12); border-radius: 50%; filter: blur(12px); }
     .swatch-shimmer { position: absolute; bottom: 10%; right: 8%; width: 30%; height: 18%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.10), transparent); border-radius: 50%; filter: blur(8px); }
     .swatch-label { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,0.14); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.22); border-radius: 20px; padding: 5px 14px; font-size: 0.75rem; font-weight: 700; color: rgba(255,255,255,0.85); letter-spacing: 0.08em; white-space: nowrap; }
+    .swatch-credit { margin-top: 12px; font-size: 0.72rem; line-height: 1.5; color: var(--muted); text-align: center; font-style: italic; }
     .writing-sample { margin-top: 20px; background: white; border-radius: var(--radius); padding: 18px 20px; border: 1px solid var(--border); }
     .writing-sample-label { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
     .writing-lines { display: flex; flex-direction: column; gap: 6px; }
@@ -235,10 +237,10 @@
   <div class="announce-track">
     <span class="announce-item">✨ Free UK delivery on orders over £40</span><span class="announce-sep">◆</span>
     <span class="announce-item">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep">◆</span>
-    <span class="announce-item">💜 Over 300 fountain pen inks to explore</span><span class="announce-sep">◆</span>
+    <span class="announce-item">💜 Over 300 inks to explore</span><span class="announce-sep">◆</span>
     <span class="announce-item announce-dupe">✨ Free UK delivery on orders over £40</span><span class="announce-sep announce-dupe">◆</span>
     <span class="announce-item announce-dupe">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep announce-dupe">◆</span>
-    <span class="announce-item announce-dupe">💜 Over 300 fountain pen inks to explore</span><span class="announce-sep announce-dupe">◆</span>
+    <span class="announce-item announce-dupe">💜 Over 300 inks to explore</span><span class="announce-sep announce-dupe">◆</span>
   </div>
 </div>
 
@@ -289,17 +291,17 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <div class="footer-logo">
-        <img src="inkvial-logo-nobg.png" alt="Ink Vial" style="height:54px;width:54px;object-fit:contain;filter:brightness(0) invert(1) opacity(0.85);" />
+        <span class="footer-wordmark">Ink Vial</span>
       </div>
-      <p class="footer-tagline">Curated ink samples for the fountain pen curious.</p>
+      <p class="footer-tagline">Curated ink samples for ink lovers.</p>
     </div>
     <div class="footer-col"><h4>Shop</h4><ul><li><a href="shop">All Inks</a></li></ul></div>
     <div class="footer-col"><h4>Info</h4><ul><li><a href="#">How It Works</a></li><li><a href="#">FAQ</a></li><li><a href="#">Shipping</a></li></ul></div>
-    <div class="footer-col"><h4>Connect</h4><ul><li><a href="#">Instagram</a></li><li><a href="contact">Contact</a></li><li><a href="contact#suggest">Suggest an Ink</a></li></ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul><li><a href="contact">Contact</a></li><li><a href="contact#suggest">Suggest an Ink</a></li></ul></div>
   </div>
   <div class="footer-bottom">
     <span>&copy; 2026 Ink Vial — United Kingdom</span>
-    <span>Made with love for the fountain pen community</span>
+    <span>Made with love for ink lovers everywhere</span>
   </div>
 </footer>
 
@@ -376,7 +378,9 @@
                    <span class="zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>`
                 : `<div class="swatch-shine"></div><div class="swatch-shimmer"></div><span class="swatch-label">${ink.brand} ${ink.name}</span>`}
             </div>
-            ${ink.image ? '' : `<div class="writing-sample">
+            ${ink.image
+              ? `<p class="swatch-credit">All swatches written on SAKAEテクニカルペーパー Tomoe River FP 52gsm using a dip pen.</p>`
+              : `<div class="writing-sample">
               <div class="writing-sample-label">Ink on cream paper</div>
               <div class="writing-lines">
                 <div class="writing-line"></div>

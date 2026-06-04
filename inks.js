@@ -4967,13 +4967,13 @@ const INKS = [
     "stock": 22
   },
   {
-    "id": "robert-oster-motorola",
+    "id": "robert-oster-motor-oil",
     "brand": "Robert Oster",
-    "name": "Motorola",
-    "colorPrimary": "#1a7a8a",
-    "colorDark": "#0a5a6a",
-    "tagline": "A vivid, electric teal with a bold, modern edge.",
-    "description": "Motorola is a bright, saturated teal that sits confidently between blue and green. Bold and modern, it has a vivid energy that makes ordinary writing feel exciting.",
+    "name": "Motor Oil",
+    "colorPrimary": "#3a3e2a",
+    "colorDark": "#1c1d12",
+    "tagline": "A dark, murky olive-green the colour of used engine oil.",
+    "description": "Motor Oil is a deep, murky olive-green — exactly the shade its name suggests, like oil drained from an engine. Industrial and mysterious, it dries dark with a green-grey cast, surprising shading in lighter strokes and a subtle sheen at the edges.",
     "properties": {
       "shading": 4,
       "sheen": 3,
@@ -4996,7 +4996,7 @@ const INKS = [
         "body": "Spectacular in a broad nib. One of Robert Oster's most loved sheening inks."
       }
     ],
-    "image": "images/robert-oster-motorola.jpg",
+    "image": "images/robert-oster-motor-oil.jpg",
     "stock": 22
   },
   {
@@ -6219,70 +6219,6 @@ const INKS = [
     ],
     "image": "images/sailor-eastern-blue.jpg",
     "stock": 22
-  },
-  {
-    "id": "sailor-shikori-kamoshika",
-    "brand": "Sailor",
-    "name": "Shikori Kamoshika",
-    "colorPrimary": "#7a6a5a",
-    "colorDark": "#5a4a3a",
-    "tagline": "A soft, muted taupe-grey inspired by the Japanese serow.",
-    "description": "From Sailor's painterly Shikori series, Kamoshika is a soft, muted taupe-grey — the colour of the shy mountain serow's coat. Understated and beautifully subtle.",
-    "properties": {
-      "shading": 3,
-      "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White or cream paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Soft taupe-grey with surprising shading for such a muted colour."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The painterly quality suits textured paper beautifully."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the soft shading shows."
-      }
-    ],
-    "stock": 9
-  },
-  {
-    "id": "sailor-shikori-shikoku",
-    "brand": "Sailor",
-    "name": "Shikori Shikoku",
-    "colorPrimary": "#3a6a5a",
-    "colorDark": "#1a4a3a",
-    "tagline": "A soft, muted blue-green inspired by the island of Shikoku.",
-    "description": "From the Shikori series, Shikoku is a muted, painterly blue-green — soft and atmospheric, like distant island hills seen through morning haze. Gentle and sophisticated.",
-    "properties": {
-      "shading": 3,
-      "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White or cream paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Soft blue-green with gentle, painterly shading."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The atmospheric quality suits textured paper well."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
-      }
-    ],
-    "stock": 9
   },
   {
     "id": "sailor-shikori-tokiwamatsu",
