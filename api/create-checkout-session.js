@@ -5,8 +5,7 @@
 const Stripe = require('stripe');
 const catalog = require('../catalog.json');
 const seed = require('../stock-seed.json');
-let kv = null;
-try { kv = require('@vercel/kv').kv; } catch (e) { /* KV optional */ }
+const redis = require('./_redis');
 
 const SHIPPING_PENCE = 350;     // £3.50 flat UK shipping
 const FREE_SHIP_OVER = 40;      // free over £40 subtotal
@@ -33,9 +32,9 @@ module.exports = async (req, res) => {
 
     // ── Live stock check (block overselling) ──────────────
     let stock = null;
-    if (kv) {
+    if (redis.isConfigured()) {
       try {
-        stock = await kv.hgetall('inkvial:stock');
+        stock = await redis.hgetall('inkvial:stock');
         if (!stock || !Object.keys(stock).length) stock = { ...seed };
       } catch (e) { stock = null; }
     }
@@ -75,8 +74,8 @@ module.exports = async (req, res) => {
 
     // Stash the order so the webhook can decrement stock after payment
     const token = crypto.randomUUID();
-    if (kv) {
-      try { await kv.set('order:' + token, JSON.stringify(orderItems), { ex: 172800 }); } catch (e) {}
+    if (redis.isConfigured()) {
+      try { await redis.set('order:' + token, JSON.stringify(orderItems), 172800); } catch (e) {}
     }
 
     const freeShip = subtotalPence >= FREE_SHIP_OVER * 100;

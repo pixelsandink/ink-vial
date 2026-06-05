@@ -5,7 +5,6 @@
   "description": "Ink Vial — fountain pen ink sampling shop",
   "type": "commonjs",
   "dependencies": {
-    "stripe": "^14.25.0",
-    "@vercel/kv": "^2.0.0"
+    "stripe": "^14.25.0"
   }
 }

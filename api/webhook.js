@@ -1,11 +1,11 @@
 // Stripe webhook — fires after a successful payment and subtracts the
-// purchased quantities from live stock in KV. Fully automatic; no manual upkeep.
+// purchased quantities from live stock. Fully automatic; no manual upkeep.
 //
 // Env vars needed: STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET
-// (Vercel KV vars are injected automatically when you connect a KV store.)
+// (Redis/Upstash vars are injected automatically when you connect the store.)
 
 const Stripe = require('stripe');
-const { kv } = require('@vercel/kv');
+const redis = require('./_redis');
 
 // Stripe needs the RAW request body to verify the signature
 module.exports.config = { api: { bodyParser: false } };
@@ -38,17 +38,17 @@ module.exports = async (req, res) => {
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object;
     const token = session.metadata && session.metadata.order_token;
-    if (token) {
+    if (token && redis.isConfigured()) {
       try {
-        const raw = await kv.get('order:' + token);
+        const raw = await redis.get('order:' + token);
         const items = typeof raw === 'string' ? JSON.parse(raw) : raw;
         if (Array.isArray(items)) {
           for (const it of items) {
             // atomic decrement — never lets two orders double-spend the same vial
-            await kv.hincrby('inkvial:stock', it.id, -Math.abs(it.qty || 1));
+            await redis.hincrby('inkvial:stock', it.id, -Math.abs(it.qty || 1));
           }
         }
-        await kv.del('order:' + token);   // one-time use
+        await redis.del('order:' + token);   // one-time use
       } catch (e) {
         console.error('Stock decrement error:', e);
       }
