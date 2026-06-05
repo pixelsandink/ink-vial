@@ -30,7 +30,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-iron-ore.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "birmingham-weathered-penny",
@@ -63,7 +63,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-weathered-penny.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "birmingham-megalodon",
@@ -96,7 +96,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-megalodon.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "birmingham-flagstone",
@@ -129,7 +129,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-flagstone.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "birmingham-saltmarsh",
@@ -162,7 +162,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-saltmarsh.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "birmingham-gumball",
@@ -195,7 +195,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-gumball.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "birmingham-washed-lavender",
@@ -228,7 +228,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-washed-lavender.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "birmingham-firebox",
@@ -261,7 +261,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-firebox.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "birmingham-waterbear",
@@ -294,7 +294,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-waterbear.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "colorverse-brunch-date",
@@ -327,7 +327,7 @@ const INKS = [
       }
     ],
     "image": "images/colorverse-brunch-date.jpg",
-    "stock": 29
+    "stock": 26
   },
   {
     "id": "colorverse-walk-the-dog",
@@ -360,7 +360,7 @@ const INKS = [
       }
     ],
     "image": "images/colorverse-walk-the-dog.jpg",
-    "stock": 29
+    "stock": 26
   },
   {
     "id": "colorverse-delicious-sleep",
@@ -393,7 +393,7 @@ const INKS = [
       }
     ],
     "image": "images/colorverse-delicious-sleep.jpg",
-    "stock": 29
+    "stock": 26
   },
   {
     "id": "colorverse-under-the-shade",
@@ -426,7 +426,7 @@ const INKS = [
       }
     ],
     "image": "images/colorverse-under-the-shade.jpg",
-    "stock": 29
+    "stock": 26
   },
   {
     "id": "colorverse-rainy-day",
@@ -459,7 +459,7 @@ const INKS = [
       }
     ],
     "image": "images/colorverse-rainy-day.jpg",
-    "stock": 29
+    "stock": 26
   },
   {
     "id": "colorverse-mystic-mountain",
@@ -492,7 +492,7 @@ const INKS = [
       }
     ],
     "image": "images/colorverse-mystic-mountain.jpg",
-    "stock": 29
+    "stock": 26
   },
   {
     "id": "colorverse-pillars-of-creation",
@@ -525,7 +525,7 @@ const INKS = [
       }
     ],
     "image": "images/colorverse-pillars-of-creation.jpg",
-    "stock": 29
+    "stock": 26
   },
   {
     "id": "colorverse-sea-europa",
@@ -557,7 +557,7 @@ const INKS = [
         "body": "Excellent in all nibs. Particularly eye-catching in a broad or italic nib where the colour saturation is maximised."
       }
     ],
-    "stock": 29,
+    "stock": 26,
     "image": "images/colorverse-sea-europa.jpg"
   },
   {
@@ -590,7 +590,7 @@ const INKS = [
         "body": "Particularly beautiful in broad nibs. Fine nibs give a clean, distinctive orange-amber line."
       }
     ],
-    "stock": 29,
+    "stock": 26,
     "image": "images/colorverse-and.jpg"
   },
   {
@@ -623,7 +623,7 @@ const INKS = [
         "body": "Well-behaved across all nib widths. Medium nibs hit the sweet spot for colour and character."
       }
     ],
-    "stock": 29,
+    "stock": 26,
     "image": "images/colorverse-dirty-red.jpg"
   },
   {
@@ -656,7 +656,7 @@ const INKS = [
         "body": "Best in medium to broad nibs where the depth and sheen can show. A statement ink for special writing."
       }
     ],
-    "stock": 29,
+    "stock": 26,
     "image": "images/colorverse-deep-purple.jpg"
   },
   {
@@ -689,7 +689,7 @@ const INKS = [
         "body": "Performs well in all nib sizes. A great choice if you want a warm pink without anything too bright or bold."
       }
     ],
-    "stock": 22,
+    "stock": 20,
     "image": "images/diamine-petra.jpg"
   },
   {
@@ -722,7 +722,7 @@ const INKS = [
         "body": "A joy in broad and italic nibs where the teal saturation is at its most dramatic. Flows smoothly in all sizes."
       }
     ],
-    "stock": 22,
+    "stock": 20,
     "image": "images/diamine-chichen-itza.jpg"
   },
   {
@@ -755,7 +755,7 @@ const INKS = [
         "body": "Best in medium to broad nibs where the colour shows well. In a fine nib it can appear quite pale against white paper."
       }
     ],
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-7-sinners-lust",
@@ -788,7 +788,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-lust.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-7-sinners-wrath",
@@ -821,7 +821,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-wrath.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-7-sinners-greed",
@@ -854,7 +854,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-greed.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-7-sinners-sloth",
@@ -887,7 +887,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-sloth.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-7-sinners-gluttony",
@@ -920,7 +920,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-gluttony.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-7-sinners-envy",
@@ -953,7 +953,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-envy.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-7-sinners-pride",
@@ -986,7 +986,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-pride.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-tariff-teal",
@@ -1019,7 +1019,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-tariff-teal.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-canalside",
@@ -1052,7 +1052,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-canalside.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-lady-grey",
@@ -1085,7 +1085,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-lady-grey.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-a-jug-of-sangria",
@@ -1118,7 +1118,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-a-jug-of-sangria.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-summer-sunset",
@@ -1151,7 +1151,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-summer-sunset.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-cashmere-rose",
@@ -1184,7 +1184,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-cashmere-rose.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-rosewood",
@@ -1217,7 +1217,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-rosewood.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-raise-a-glass",
@@ -1249,7 +1249,7 @@ const INKS = [
         "body": "Broad nibs show the shimmer best. Shake before use and clean your pen thoroughly after."
       }
     ],
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-oh-betty",
@@ -1282,7 +1282,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-oh-betty.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-blue-monday",
@@ -1315,7 +1315,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-blue-monday.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-lavender-frost",
@@ -1348,7 +1348,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-lavender-frost.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-toe-in-the-ocean",
@@ -1381,7 +1381,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-toe-in-the-ocean.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-the-great-wall-of-china",
@@ -1414,7 +1414,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-the-great-wall-of-china.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "diamine-colosseum",
@@ -1447,7 +1447,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-colosseum.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "ferris-wheel-press-blushing-mushrooms",
@@ -1480,7 +1480,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-blushing-mushrooms.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-terracotta-canyon",
@@ -1513,7 +1513,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-terracotta-canyon.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-chidori-cherry-blossom",
@@ -1546,7 +1546,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-chidori-cherry-blossom.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-pink-eraser",
@@ -1579,7 +1579,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-pink-eraser.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-blue-grass-velvet",
@@ -1612,7 +1612,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-blue-grass-velvet.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-queen-allium",
@@ -1645,7 +1645,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-queen-allium.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-spadina-rose",
@@ -1678,7 +1678,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-spadina-rose.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-peter-moss",
@@ -1711,7 +1711,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-peter-moss.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-unfettered-flight",
@@ -1744,7 +1744,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-unfettered-flight.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-storied-blue",
@@ -1777,7 +1777,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-storied-blue.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-oyster-hour",
@@ -1810,7 +1810,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-oyster-hour.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-dancing-thyme",
@@ -1843,7 +1843,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-dancing-thyme.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-candy-marsala",
@@ -1876,7 +1876,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-candy-marsala.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-madam-mulberry",
@@ -1909,7 +1909,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-madam-mulberry.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-royal-rhubarb",
@@ -1942,7 +1942,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-royal-rhubarb.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-bayou-berry-mist",
@@ -1975,7 +1975,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-bayou-berry-mist.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-dusk-in-bloom",
@@ -2008,7 +2008,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-dusk-in-bloom.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-moonbeam-meadows",
@@ -2041,7 +2041,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-moonbeam-meadows.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-beaver-dam-brown",
@@ -2074,7 +2074,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-beaver-dam-brown.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-highland-smoke",
@@ -2107,7 +2107,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-highland-smoke.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "ferris-wheel-press-leadcase-letters",
@@ -2140,7 +2140,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-leadcase-letters.jpg",
-    "stock": 17
+    "stock": 15
   },
   {
     "id": "jherbin-vert-empire",
@@ -2173,7 +2173,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-vert-empire.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-gris-nuage",
@@ -2206,7 +2206,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-gris-nuage.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-cafe-des-iles",
@@ -2239,7 +2239,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-cafe-des-iles.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-poussiere-de-lune",
@@ -2272,7 +2272,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-poussiere-de-lune.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-rouille-dancre",
@@ -2305,7 +2305,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-rouille-dancre.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-cacao-du-bresil",
@@ -2338,7 +2338,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-cacao-du-bresil.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-vert-de-gris",
@@ -2371,7 +2371,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-vert-de-gris.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-rouge-opera",
@@ -2404,7 +2404,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-rouge-opera.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-vert-cactus",
@@ -2436,7 +2436,7 @@ const INKS = [
         "body": "Reliable and pleasant in all nib sizes."
       }
     ],
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-corail-des-tropiques",
@@ -2469,7 +2469,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-corail-des-tropiques.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-larmes-de-cassis",
@@ -2502,7 +2502,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-larmes-de-cassis.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-bouquet-dantan",
@@ -2535,7 +2535,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-bouquet-dantan.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-vert-olive",
@@ -2568,7 +2568,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-vert-olive.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-bleu-nuit",
@@ -2601,7 +2601,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-bleu-nuit.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-perle-noire",
@@ -2634,7 +2634,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-perle-noire.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-vert-atlantide",
@@ -2667,7 +2667,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-vert-atlantide.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-emerald-of-chivor",
@@ -2700,7 +2700,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-emerald-of-chivor.jpg",
-    "stock": 13
+    "stock": 6
   },
   {
     "id": "jherbin-stormy-grey",
@@ -2733,7 +2733,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-stormy-grey.jpg",
-    "stock": 13
+    "stock": 6
   },
   {
     "id": "jherbin-hematite-red",
@@ -2766,7 +2766,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-hematite-red.jpg",
-    "stock": 13
+    "stock": 6
   },
   {
     "id": "jherbin-caroube-de-chypre",
@@ -2799,7 +2799,7 @@ const INKS = [
       }
     ],
     "image": "images/jherbin-caroube-de-chypre.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-lie-de-the",
@@ -2831,7 +2831,7 @@ const INKS = [
         "body": "Consistent and pleasant in all nib sizes."
       }
     ],
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "jherbin-rouge-grenat",
@@ -2863,7 +2863,7 @@ const INKS = [
         "body": "Excellent in all sizes. Broad nibs reveal the full shading and occasional sheen."
       }
     ],
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "kaweco-midnight-blue",
@@ -2896,7 +2896,7 @@ const INKS = [
       }
     ],
     "image": "images/kaweco-midnight-blue.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "kaweco-smokey-grey",
@@ -2928,7 +2928,7 @@ const INKS = [
         "body": "Smooth and reliable in all sizes — Kaweco quality throughout."
       }
     ],
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "kaweco-caramel-brown",
@@ -2960,7 +2960,7 @@ const INKS = [
         "body": "Consistent and pleasant in all sizes."
       }
     ],
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "kwz-brown-pink",
@@ -2993,7 +2993,7 @@ const INKS = [
       }
     ],
     "image": "images/kwz-brown-pink.jpg",
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "kwz-grey-plum",
@@ -3026,7 +3026,7 @@ const INKS = [
       }
     ],
     "image": "images/kwz-grey-plum.jpg",
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "kwz-cherry",
@@ -3059,7 +3059,7 @@ const INKS = [
       }
     ],
     "image": "images/kwz-cherry.jpg",
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "kwz-gummiberry",
@@ -3092,7 +3092,7 @@ const INKS = [
       }
     ],
     "image": "images/kwz-gummiberry.jpg",
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "kwz-brown-3",
@@ -3124,7 +3124,7 @@ const INKS = [
         "body": "Reliable in all nib sizes. A genuinely good everyday brown."
       }
     ],
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "kwz-warsaw-dreaming",
@@ -3156,7 +3156,7 @@ const INKS = [
         "body": "Excellent in all sizes. Medium nibs show the full character best."
       }
     ],
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "kwz-grey-lux",
@@ -3188,7 +3188,7 @@ const INKS = [
         "body": "Smooth and reliable in all sizes."
       }
     ],
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "kwz-maroon",
@@ -3220,7 +3220,7 @@ const INKS = [
         "body": "Excellent in all sizes. One of the most satisfying dark reds available."
       }
     ],
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "kwz-cappuccino",
@@ -3252,7 +3252,7 @@ const INKS = [
         "body": "Well-behaved and pleasant in all sizes."
       }
     ],
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "kwz-berry",
@@ -3284,7 +3284,7 @@ const INKS = [
         "body": "Best in medium or broad nibs where the sheen and depth really show."
       }
     ],
-    "stock": 27,
+    "stock": 25,
     "image": "images/kwz-berry.jpg"
   },
   {
@@ -3317,7 +3317,7 @@ const INKS = [
         "body": "Consistent and well-behaved in all nib sizes."
       }
     ],
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "laban-hera-green",
@@ -3349,7 +3349,7 @@ const INKS = [
         "body": "Excellent in all sizes. Broad nibs reveal the full depth."
       }
     ],
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "laban-artemis-navy",
@@ -3381,7 +3381,7 @@ const INKS = [
         "body": "Reliable in all nib sizes — an excellent daily writer."
       }
     ],
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "laban-athena-grey",
@@ -3413,7 +3413,7 @@ const INKS = [
         "body": "Well-behaved in all nib sizes."
       }
     ],
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "laban-apollo-orange",
@@ -3446,7 +3446,7 @@ const INKS = [
       }
     ],
     "image": "images/laban-apollo-orange.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "laban-demeter-brown",
@@ -3479,7 +3479,7 @@ const INKS = [
       }
     ],
     "image": "images/laban-demeter-brown.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "laban-hermes-sky-blue",
@@ -3512,7 +3512,7 @@ const INKS = [
       }
     ],
     "image": "images/laban-hermes-sky-blue.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "laban-ares-red",
@@ -3545,7 +3545,7 @@ const INKS = [
       }
     ],
     "image": "images/laban-ares-red.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "laban-zeus-purple",
@@ -3578,7 +3578,7 @@ const INKS = [
       }
     ],
     "image": "images/laban-zeus-purple.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "lennon-tool-bar-sesame-oil",
@@ -3611,7 +3611,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-sesame-oil.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-dried-longan",
@@ -3644,7 +3644,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-dried-longan.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-misona-tea",
@@ -3677,7 +3677,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-misona-tea.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-purple-rice",
@@ -3709,7 +3709,7 @@ const INKS = [
         "body": "Best in medium and broad nibs where the depth shows fully."
       }
     ],
-    "stock": 13,
+    "stock": 12,
     "image": "images/lennon-tool-bar-purple-rice.jpg"
   },
   {
@@ -3743,7 +3743,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-red-beans.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-jujube",
@@ -3776,7 +3776,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-jujube.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-island-wood",
@@ -3809,7 +3809,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-island-wood.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-catfish-spirit",
@@ -3842,7 +3842,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-catfish-spirit.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-pen-fairy",
@@ -3875,7 +3875,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-pen-fairy.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-fortune-teller-168-light",
@@ -3908,7 +3908,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-fortune-teller-168-light.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-tortoise-and-serpent",
@@ -3941,7 +3941,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-tortoise-and-serpent.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-firament",
@@ -3974,7 +3974,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-firament.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-black-hound",
@@ -4007,7 +4007,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-black-hound.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "lennon-tool-bar-outback-forest",
@@ -4040,7 +4040,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-outback-forest.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "nagasawa-strawberry-chocolate",
@@ -4073,7 +4073,7 @@ const INKS = [
       }
     ],
     "image": "images/nagasawa-strawberry-chocolate.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "nagasawa-milk-chocolate",
@@ -4106,7 +4106,7 @@ const INKS = [
       }
     ],
     "image": "images/nagasawa-milk-chocolate.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "nagasawa-bitter-chocolate",
@@ -4139,7 +4139,7 @@ const INKS = [
       }
     ],
     "image": "images/nagasawa-bitter-chocolate.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "octopus-fluids-unicorn",
@@ -4172,7 +4172,7 @@ const INKS = [
       }
     ],
     "image": "images/octopus-fluids-unicorn.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "octopus-fluids-mermaid",
@@ -4205,7 +4205,7 @@ const INKS = [
       }
     ],
     "image": "images/octopus-fluids-mermaid.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "octopus-fluids-fairy",
@@ -4238,7 +4238,7 @@ const INKS = [
       }
     ],
     "image": "images/octopus-fluids-fairy.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "pelikan-brilliant-brown",
@@ -4271,7 +4271,7 @@ const INKS = [
       }
     ],
     "image": "images/pelikan-brilliant-brown.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "pelikan-blue-black",
@@ -4304,7 +4304,7 @@ const INKS = [
       }
     ],
     "image": "images/pelikan-blue-black.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "pentonote-susuki-milk",
@@ -4337,7 +4337,7 @@ const INKS = [
       }
     ],
     "image": "images/pentonote-susuki-milk.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "pilot-iroshizuku-yama-budo",
@@ -4370,7 +4370,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-yama-budo.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "pilot-iroshizuku-kon-peki",
@@ -4403,7 +4403,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-kon-peki.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "pilot-iroshizuku-ku-jaku",
@@ -4436,7 +4436,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-ku-jaku.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "pilot-iroshizuku-fuyu-syogun",
@@ -4469,7 +4469,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-fuyu-syogun.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "pilot-iroshizuku-ajisai",
@@ -4502,7 +4502,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-ajisai.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "pilot-iroshizuku-syo-ro",
@@ -4535,7 +4535,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-syo-ro.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "pilot-iroshizuku-sui-gyoku",
@@ -4568,7 +4568,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-sui-gyoku.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "pilot-iroshizuku-hana-ikada",
@@ -4601,7 +4601,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-hana-ikada.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "pilot-iroshizuku-syun-gyo",
@@ -4634,7 +4634,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-syun-gyo.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "pilot-iroshizuku-murasaki-shikibu",
@@ -4667,7 +4667,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-murasaki-shikibu.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-detox",
@@ -4700,7 +4700,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-detox.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-choc-pudding",
@@ -4733,7 +4733,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-choc-pudding.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-dusty-pink",
@@ -4766,7 +4766,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-dusty-pink.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-sushi",
@@ -4799,7 +4799,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-sushi.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-sydney-lavender",
@@ -4832,7 +4832,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-sydney-lavender.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-storm-summer",
@@ -4865,7 +4865,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-storm-summer.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-caffe-crema",
@@ -4898,7 +4898,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-caffe-crema.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-wind",
@@ -4931,7 +4931,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-wind.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-sydney-darling-harbour",
@@ -4964,7 +4964,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-sydney-darling-harbour.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-motor-oil",
@@ -4997,7 +4997,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-motor-oil.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-tiverton-rust",
@@ -5030,7 +5030,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-tiverton-rust.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-sinners-blood",
@@ -5063,7 +5063,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-sinners-blood.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-sinners-heart",
@@ -5096,7 +5096,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-sinners-heart.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-melon-tea",
@@ -5129,7 +5129,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-melon-tea.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-viola",
@@ -5162,7 +5162,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-viola.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-charcoal",
@@ -5195,7 +5195,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-charcoal.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-black-violet",
@@ -5228,7 +5228,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-black-violet.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-australian-opal-blue",
@@ -5261,7 +5261,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-australian-opal-blue.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-midnight-sapphire",
@@ -5294,7 +5294,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-midnight-sapphire.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-turquoise",
@@ -5327,7 +5327,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-turquoise.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-frankly-blue",
@@ -5360,7 +5360,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-frankly-blue.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-avocado",
@@ -5393,7 +5393,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-avocado.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-green-at-night",
@@ -5426,7 +5426,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-green-at-night.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-crocodile-green",
@@ -5459,7 +5459,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-crocodile-green.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-cherry-blossom",
@@ -5492,7 +5492,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-cherry-blossom.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-australian-opal-pink",
@@ -5525,7 +5525,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-australian-opal-pink.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-river-of-fire",
@@ -5558,7 +5558,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-river-of-fire.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-lemon-grass",
@@ -5591,7 +5591,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-lemon-grass.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-smokescreen",
@@ -5624,7 +5624,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-smokescreen.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-copper",
@@ -5657,7 +5657,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-copper.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-claret",
@@ -5690,7 +5690,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-claret.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-royal-red",
@@ -5723,7 +5723,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-royal-red.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-burgundy",
@@ -5756,7 +5756,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-burgundy.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-burgundy-chocolate-notes",
@@ -5789,7 +5789,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-burgundy-chocolate-notes.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "robert-oster-blood-crimson",
@@ -5822,7 +5822,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-blood-crimson.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "rohrer-klingner-salix",
@@ -5855,7 +5855,7 @@ const INKS = [
       }
     ],
     "image": "images/rohrer-klingner-salix.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "rohrer-klingner-verdigris",
@@ -5888,7 +5888,7 @@ const INKS = [
       }
     ],
     "image": "images/rohrer-klingner-verdigris.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "rohrer-klingner-sepia",
@@ -5921,7 +5921,7 @@ const INKS = [
       }
     ],
     "image": "images/rohrer-klingner-sepia.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "rohrer-klingner-scabiosa",
@@ -5954,7 +5954,7 @@ const INKS = [
       }
     ],
     "image": "images/rohrer-klingner-scabiosa.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-kitsune-biyori",
@@ -5987,7 +5987,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-kitsune-biyori.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-kyokkou",
@@ -6020,7 +6020,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-kyokkou.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-kangyou",
@@ -6053,7 +6053,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-kangyou.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-guma",
@@ -6086,7 +6086,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-guma.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-hanagokoro",
@@ -6119,7 +6119,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-hanagokoro.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-faded-orange",
@@ -6152,7 +6152,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-faded-orange.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-dark-beige",
@@ -6185,7 +6185,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-dark-beige.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-eastern-blue",
@@ -6218,7 +6218,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-eastern-blue.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-shikori-tokiwamatsu",
@@ -6251,7 +6251,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-tokiwamatsu.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-shikori-sube-rakashi",
@@ -6284,7 +6284,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-sube-rakashi.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-shikori-yozakura",
@@ -6317,7 +6317,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-yozakura.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-shikori-yutsubame",
@@ -6350,7 +6350,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-yutsubame.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-shikori-hara-hara",
@@ -6383,7 +6383,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-hara-hara.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-shikori-potsu",
@@ -6416,7 +6416,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-potsu.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-shikori-shimoyo",
@@ -6449,7 +6449,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-shimoyo.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-shikori-okuyama",
@@ -6482,7 +6482,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-okuyama.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-shikori-kasagi",
@@ -6515,7 +6515,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-kasagi.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-manyo-aka-mai",
@@ -6548,7 +6548,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-manyo-aka-mai.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-manyo-kuri",
@@ -6581,7 +6581,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-manyo-kuri.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-manyo-nekoyanagi",
@@ -6614,7 +6614,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-manyo-nekoyanagi.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "sailor-studio-123",
@@ -6647,7 +6647,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-studio-123.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-studio-173",
@@ -6680,7 +6680,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-studio-173.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-studio-237",
@@ -6713,7 +6713,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-studio-237.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-studio-273",
@@ -6746,7 +6746,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-studio-273.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-studio-252",
@@ -6779,7 +6779,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-studio-252.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-studio-673",
@@ -6812,7 +6812,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-studio-673.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-studio-224",
@@ -6845,7 +6845,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-studio-224.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-studio-973",
@@ -6878,7 +6878,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-studio-973.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-shikori-souten",
@@ -6911,7 +6911,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-shikori-souten.jpg",
-    "stock": 9
+    "stock": 8
   },
   {
     "id": "sailor-dategokoro",
@@ -6944,7 +6944,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-dategokoro.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "tag-kyo-no-oto-sakuranezumi",
@@ -6977,7 +6977,7 @@ const INKS = [
       }
     ],
     "image": "images/tag-kyo-no-oto-sakuranezumi.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "tag-kyo-no-oto-nurebairo",
@@ -7010,7 +7010,7 @@ const INKS = [
       }
     ],
     "image": "images/tag-kyo-no-oto-nurebairo.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "tag-kyo-no-oto-adzukiiro",
@@ -7043,7 +7043,7 @@ const INKS = [
       }
     ],
     "image": "images/tag-kyo-no-oto-adzukiiro.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "tag-kyo-no-oto-ochiguriiro",
@@ -7076,7 +7076,7 @@ const INKS = [
       }
     ],
     "image": "images/tag-kyo-no-oto-ochiguriiro.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-akasakura",
@@ -7109,7 +7109,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-akasakura.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-nakamurasaki",
@@ -7142,7 +7142,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-nakamurasaki.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-fukakihanada",
@@ -7175,7 +7175,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-fukakihanada.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-sabimidori",
@@ -7208,7 +7208,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-sabimidori.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-koiai",
@@ -7241,7 +7241,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-koiai.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-aka",
@@ -7274,7 +7274,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-aka.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-murasaki",
@@ -7307,7 +7307,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-murasaki.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-momo",
@@ -7340,7 +7340,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-momo.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-ebi",
@@ -7373,7 +7373,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-ebi.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-sunaoiro-cha",
@@ -7406,7 +7406,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-cha.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "taccia-ukiyoe-hokusai-benitsuchi",
@@ -7439,7 +7439,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-ukiyoe-hokusai-benitsuchi.jpg",
-    "stock": 18
+    "stock": 16
   },
   {
     "id": "tono-lims-miss-u",
@@ -7472,7 +7472,7 @@ const INKS = [
       }
     ],
     "image": "images/tono-lims-miss-u.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "tono-lims-protect-u",
@@ -7505,7 +7505,7 @@ const INKS = [
       }
     ],
     "image": "images/tono-lims-protect-u.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "tono-lims-mizumanju",
@@ -7538,7 +7538,7 @@ const INKS = [
       }
     ],
     "image": "images/tono-lims-mizumanju.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "tono-lims-heart",
@@ -7571,7 +7571,7 @@ const INKS = [
       }
     ],
     "image": "images/tono-lims-heart.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "tono-lims-joker",
@@ -7604,7 +7604,7 @@ const INKS = [
       }
     ],
     "image": "images/tono-lims-joker.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "tono-lims-dream-purple",
@@ -7637,7 +7637,7 @@ const INKS = [
       }
     ],
     "image": "images/tono-lims-dream-purple.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "de-atramentis-document-grey",
@@ -7670,7 +7670,7 @@ const INKS = [
       }
     ],
     "image": "images/de-atramentis-document-grey.jpg",
-    "stock": 20
+    "stock": 18
   },
   {
     "id": "de-atramentis-document-blue-grey",
@@ -7703,7 +7703,7 @@ const INKS = [
       }
     ],
     "image": "images/de-atramentis-document-blue-grey.jpg",
-    "stock": 20
+    "stock": 18
   },
   {
     "id": "dominant-industry-evening",
@@ -7736,7 +7736,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-evening.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-earl-grey-tea",
@@ -7769,7 +7769,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-earl-grey-tea.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-romania-red",
@@ -7802,7 +7802,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-romania-red.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-tsavorite",
@@ -7835,7 +7835,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-tsavorite.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-soleil-couchant-a-etretat",
@@ -7868,7 +7868,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-soleil-couchant-a-etretat.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-unknown-land",
@@ -7901,7 +7901,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-unknown-land.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-tanzanite",
@@ -7934,7 +7934,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-tanzanite.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-sunset",
@@ -7967,7 +7967,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-sunset.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-periwinkle-twinkle",
@@ -8000,7 +8000,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-periwinkle-twinkle.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-october-leaves",
@@ -8033,7 +8033,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-october-leaves.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-natural-green",
@@ -8066,7 +8066,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-natural-green.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-milky-way-blue",
@@ -8099,7 +8099,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-milky-way-blue.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-goryeo-celadon",
@@ -8132,7 +8132,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-goryeo-celadon.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-les-falaises-a-etretat",
@@ -8165,7 +8165,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-les-falaises-a-etretat.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-autumn-forest",
@@ -8198,7 +8198,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-autumn-forest.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-dusk",
@@ -8231,7 +8231,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-dusk.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "dominant-industry-dawn",
@@ -8264,7 +8264,7 @@ const INKS = [
       }
     ],
     "image": "images/dominant-industry-dawn.jpg",
-    "stock": 11
+    "stock": 10
   },
   {
     "id": "troublemaker-gold-dust-shimmer",
@@ -8297,7 +8297,7 @@ const INKS = [
       }
     ],
     "image": "images/troublemaker-gold-dust-shimmer.jpg",
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "troublemaker-abalone",
@@ -8330,7 +8330,7 @@ const INKS = [
       }
     ],
     "image": "images/troublemaker-abalone.jpg",
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "troublemaker-starry-night-blue",
@@ -8363,7 +8363,7 @@ const INKS = [
       }
     ],
     "image": "images/troublemaker-starry-night-blue.jpg",
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "troublemaker-simoun",
@@ -8396,7 +8396,7 @@ const INKS = [
       }
     ],
     "image": "images/troublemaker-simoun.jpg",
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "troublemaker-lam-ang",
@@ -8429,7 +8429,7 @@ const INKS = [
       }
     ],
     "image": "images/troublemaker-lam-ang.jpg",
-    "stock": 27
+    "stock": 25
   },
   {
     "id": "vinta-blue-blood",
@@ -8461,7 +8461,7 @@ const INKS = [
         "body": "Spectacular in broad nibs where the sheen shows."
       }
     ],
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-lakambini",
@@ -8494,7 +8494,7 @@ const INKS = [
       }
     ],
     "image": "images/vinta-lakambini.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-sailfin-green",
@@ -8526,7 +8526,7 @@ const INKS = [
         "body": "Spectacular in broad nibs."
       }
     ],
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-elusive-blue",
@@ -8558,7 +8558,7 @@ const INKS = [
         "body": "Broad nibs reveal the depth and sheen beautifully."
       }
     ],
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-liquid-sepia",
@@ -8590,7 +8590,7 @@ const INKS = [
         "body": "Smooth and pleasant in all sizes."
       }
     ],
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-pink-afterglow",
@@ -8622,7 +8622,7 @@ const INKS = [
         "body": "Spectacular in broad nibs where the sheen shows."
       }
     ],
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-armada",
@@ -8655,7 +8655,7 @@ const INKS = [
       }
     ],
     "image": "images/vinta-armada.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-kayangan",
@@ -8688,7 +8688,7 @@ const INKS = [
       }
     ],
     "image": "images/vinta-kayangan.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-ubi",
@@ -8721,7 +8721,7 @@ const INKS = [
       }
     ],
     "image": "images/vinta-ubi.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-london-grey",
@@ -8753,7 +8753,7 @@ const INKS = [
         "body": "Smooth in all sizes; broad nibs reveal the sheen."
       }
     ],
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-pitik-papel",
@@ -8786,7 +8786,7 @@ const INKS = [
       }
     ],
     "image": "images/vinta-pitik-papel.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-unang-araw",
@@ -8819,7 +8819,7 @@ const INKS = [
       }
     ],
     "image": "images/vinta-unang-araw.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-sulyap",
@@ -8852,7 +8852,7 @@ const INKS = [
       }
     ],
     "image": "images/vinta-sulyap.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-huling-kampana",
@@ -8885,7 +8885,7 @@ const INKS = [
       }
     ],
     "image": "images/vinta-huling-kampana.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "vinta-takipsilim",
@@ -8918,7 +8918,7 @@ const INKS = [
       }
     ],
     "image": "images/vinta-takipsilim.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-resurrection",
@@ -8951,7 +8951,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-resurrection.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-geppetto",
@@ -8984,7 +8984,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-geppetto.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-metamorphosis",
@@ -9017,7 +9017,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-metamorphosis.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-a-watery-star",
@@ -9050,7 +9050,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-a-watery-star.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-a-grape-coloured-night",
@@ -9083,7 +9083,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-a-grape-coloured-night.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-floating-cloud",
@@ -9116,7 +9116,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-floating-cloud.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-exile-of-flower",
@@ -9149,7 +9149,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-exile-of-flower.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-jane-eyre",
@@ -9182,7 +9182,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-jane-eyre.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-no-longer-human",
@@ -9215,7 +9215,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-no-longer-human.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-purgatori",
@@ -9248,7 +9248,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-purgatori.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-white-rabbit",
@@ -9281,7 +9281,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-white-rabbit.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-don-quixote",
@@ -9314,7 +9314,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-don-quixote.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-adventures-of-tom-sawyer",
@@ -9347,7 +9347,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-adventures-of-tom-sawyer.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-tsukuyami",
@@ -9380,7 +9380,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-tsukuyami.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-mad-hatter",
@@ -9413,7 +9413,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-mad-hatter.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-wendy-darling",
@@ -9446,7 +9446,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-wendy-darling.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-human-issues",
@@ -9479,7 +9479,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-human-issues.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-crime-and-punishment",
@@ -9512,7 +9512,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-crime-and-punishment.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-carmilla",
@@ -9545,7 +9545,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-carmilla.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-valley-of-fear",
@@ -9578,7 +9578,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-valley-of-fear.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-tinker-bell",
@@ -9611,7 +9611,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-tinker-bell.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-captain-hook",
@@ -9644,7 +9644,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-captain-hook.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-queen-of-hearts",
@@ -9677,7 +9677,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-queen-of-hearts.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-alice",
@@ -9710,7 +9710,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-alice.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-vayu",
@@ -9743,7 +9743,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-vayu.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-sedna",
@@ -9776,7 +9776,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-sedna.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-persephone",
@@ -9809,7 +9809,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-persephone.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-heimdall",
@@ -9842,7 +9842,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-heimdall.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-the-great-sage-heavens-equal",
@@ -9875,7 +9875,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-the-great-sage-heavens-equal.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-enki",
@@ -9908,7 +9908,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-enki.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "wearingeul-hades",
@@ -9941,7 +9941,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-hades.jpg",
-    "stock": 13
+    "stock": 12
   },
   {
     "id": "monteverde-purple-mist",
@@ -9974,7 +9974,7 @@ const INKS = [
       }
     ],
     "image": "images/monteverde-purple-mist.jpg",
-    "stock": 22
+    "stock": 20
   },
   {
     "id": "inkebara-pale-violet",
@@ -10007,6 +10007,6 @@ const INKS = [
       }
     ],
     "image": "images/inkebara-pale-violet.jpg",
-    "stock": 22
+    "stock": 20
   }
 ];

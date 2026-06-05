@@ -12,7 +12,7 @@ function getInkPrice(ink) {
   if (id.includes('sailor-studio')) return 3.50;
 
   // ── J.Herbin 1670 £4.00 ───────────────────────────────
-  if (id.includes('jherbin') && id.includes('1670')) return 4.00;
+  if (id.includes('jherbin') && (id.includes('1670') || id.includes('emerald-of-chivor') || id.includes('stormy-grey') || id.includes('hematite-red'))) return 4.00;
 
   // ── Pilot Iroshizuku £3.75 ────────────────────────────
   if (brand.includes('pilot iroshizuku') || id.startsWith('pilot-iroshizuku')) return 3.75;
