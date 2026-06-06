@@ -689,7 +689,7 @@ const INKS = [
         "body": "Performs well in all nib sizes. A great choice if you want a warm pink without anything too bright or bold."
       }
     ],
-    "stock": 20,
+    "stock": 12,
     "image": "images/diamine-petra.jpg"
   },
   {
@@ -722,40 +722,8 @@ const INKS = [
         "body": "A joy in broad and italic nibs where the teal saturation is at its most dramatic. Flows smoothly in all sizes."
       }
     ],
-    "stock": 20,
+    "stock": 12,
     "image": "images/diamine-chichen-itza.jpg"
-  },
-  {
-    "id": "diamine-celadon-cat",
-    "brand": "Diamine",
-    "name": "Celadon Cat",
-    "colorPrimary": "#8aba9a",
-    "colorDark": "#6a9a7a",
-    "tagline": "A soft, pale green like glazed porcelain in afternoon light.",
-    "description": "Celadon Cat is a delicate, muted grey-green reminiscent of traditional celadon pottery glaze. It's gentle, refined, and somehow timeless — a green that whispers rather than shouts.",
-    "properties": {
-      "shading": 2,
-      "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Pale and soft with a cool grey-green tone. Minimal shading but very consistent and elegant."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The grey undertones emerge more on textured stock, giving a vintage, antique quality."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Best in medium to broad nibs where the colour shows well. In a fine nib it can appear quite pale against white paper."
-      }
-    ],
-    "stock": 20
   },
   {
     "id": "diamine-7-sinners-lust",
@@ -788,7 +756,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-lust.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-7-sinners-wrath",
@@ -821,7 +789,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-wrath.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-7-sinners-greed",
@@ -854,7 +822,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-greed.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-7-sinners-sloth",
@@ -887,7 +855,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-sloth.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-7-sinners-gluttony",
@@ -920,7 +888,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-gluttony.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-7-sinners-envy",
@@ -953,7 +921,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-envy.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-7-sinners-pride",
@@ -986,7 +954,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-7-sinners-pride.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-tariff-teal",
@@ -1019,7 +987,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-tariff-teal.jpg",
-    "stock": 20
+    "stock": 30
   },
   {
     "id": "diamine-canalside",
@@ -1052,7 +1020,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-canalside.jpg",
-    "stock": 20
+    "stock": 30
   },
   {
     "id": "diamine-lady-grey",
@@ -1085,7 +1053,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-lady-grey.jpg",
-    "stock": 20
+    "stock": 32
   },
   {
     "id": "diamine-a-jug-of-sangria",
@@ -1118,7 +1086,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-a-jug-of-sangria.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-summer-sunset",
@@ -1151,7 +1119,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-summer-sunset.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-cashmere-rose",
@@ -1217,7 +1185,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-rosewood.jpg",
-    "stock": 20
+    "stock": 30
   },
   {
     "id": "diamine-raise-a-glass",
@@ -1249,7 +1217,7 @@ const INKS = [
         "body": "Broad nibs show the shimmer best. Shake before use and clean your pen thoroughly after."
       }
     ],
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-oh-betty",
@@ -1282,7 +1250,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-oh-betty.jpg",
-    "stock": 20
+    "stock": 32
   },
   {
     "id": "diamine-blue-monday",
@@ -1381,7 +1349,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-toe-in-the-ocean.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-the-great-wall-of-china",
@@ -1414,7 +1382,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-the-great-wall-of-china.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "diamine-colosseum",
@@ -1447,7 +1415,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-colosseum.jpg",
-    "stock": 20
+    "stock": 12
   },
   {
     "id": "ferris-wheel-press-blushing-mushrooms",
