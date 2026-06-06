@@ -729,8 +729,8 @@ const INKS = [
     "id": "diamine-7-sinners-lust",
     "brand": "Diamine",
     "name": "7 Sinners Lust",
-    "colorPrimary": "#9a1a2a",
-    "colorDark": "#7a0a0a",
+    "colorPrimary": "#2a3a8f",
+    "colorDark": "#1a2459",
     "tagline": "Deep crimson desire — seductive, dangerous, and unforgettable.",
     "description": "Lust burns a deep, rich crimson — darker than red, with a hint of purple that makes it feel more dangerous than a simple bright red. One of the most dramatic inks in the Sinners series.",
     "properties": {
