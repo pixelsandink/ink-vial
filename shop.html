@@ -331,10 +331,12 @@
     return INKS
       .filter(ink => {
         const price = getInkPrice(ink);
-        const colour = getColourFamily(ink.colorPrimary);
+        const colours = Array.isArray(ink.colours) && ink.colours.length
+          ? ink.colours
+          : [getColourFamily(ink.colorPrimary)];
         const search = activeSearch.toLowerCase();
         if (activeBrand    && ink.brand !== activeBrand) return false;
-        if (activeColour   && colour !== activeColour)  return false;
+        if (activeColour   && !colours.includes(activeColour)) return false;
         if (activeFeature  && !hasFeature(ink, activeFeature)) return false;
         if (search && !ink.name.toLowerCase().includes(search) && !ink.brand.toLowerCase().includes(search)) return false;
         return true;
