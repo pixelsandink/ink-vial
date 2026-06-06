@@ -5499,8 +5499,8 @@ const INKS = [
     "id": "robert-oster-river-of-fire",
     "brand": "Robert Oster",
     "name": "River of Fire",
-    "colorPrimary": "#c84a2a",
-    "colorDark": "#a82a0a",
+    "colorPrimary": "#2f6b54",
+    "colorDark": "#1c4033",
     "tagline": "A blazing orange-red with a dramatic gold-green sheen.",
     "description": "River of Fire is a vivid orange-red with an extraordinary sheen — gold-green erupting at stroke edges like molten lava cooling. One of the most spectacular inks in the range.",
     "properties": {
@@ -8760,8 +8760,8 @@ const INKS = [
     "id": "vinta-unang-araw",
     "brand": "Vinta",
     "name": "Unang Araw",
-    "colorPrimary": "#d47a3a",
-    "colorDark": "#b45a1a",
+    "colorPrimary": "#3a6ab0",
+    "colorDark": "#22406a",
     "tagline": "First day — a warm, hopeful orange like a new dawn.",
     "description": "Unang Araw (first day) is a warm, glowing orange that captures the hope of a new beginning. Bright and optimistic, with good shading and a subtle sheen.",
     "properties": {
@@ -9585,8 +9585,8 @@ const INKS = [
     "id": "wearingeul-captain-hook",
     "brand": "Wearingeul",
     "name": "Captain Hook",
-    "colorPrimary": "#1a2a4a",
-    "colorDark": "#0a1a2a",
+    "colorPrimary": "#9a2e26",
+    "colorDark": "#5c1b16",
     "tagline": "A deep, villainous navy with a menacing sheen.",
     "description": "From the Peter Pan series, Captain Hook is a deep, dark navy with a menacing sheen — the colour of the villain's coat and the dark waters below his ship. Dramatic and dangerous.",
     "properties": {
