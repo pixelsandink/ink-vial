@@ -195,6 +195,26 @@
     .nav-actions .btn-primary{padding:9px 12px;font-size:0.72rem;letter-spacing:0.02em;}
     .nav-logo img{height:38px !important;}
   }
+  /* Filters: inline on desktop, slide-in drawer on mobile */
+  .filters-trigger{display:none;}
+  .filter-controls{display:contents;}
+  .drawer-head,.drawer-done,.filter-backdrop{display:none;}
+  @media(max-width:768px){
+    .filter-bar{backdrop-filter:none;-webkit-backdrop-filter:none;}
+    .filter-top{flex-wrap:nowrap;}
+    .search-box{max-width:none;}
+    .filters-trigger{display:inline-flex;align-items:center;gap:7px;padding:10px 16px;border:1.5px solid var(--lavender-light);border-radius:var(--radius-sm);background:var(--surface);color:var(--purple-dark);font-family:'Nunito',sans-serif;font-weight:800;font-size:0.8rem;letter-spacing:0.02em;cursor:pointer;white-space:nowrap;}
+    .filter-controls{display:flex;flex-direction:column;gap:16px;position:fixed;top:0;left:0;bottom:0;width:84%;max-width:330px;background:var(--bg);z-index:200;padding:20px;overflow-y:auto;transform:translateX(-100%);transition:transform .3s ease;box-shadow:0 0 50px rgba(60,36,88,0.28);}
+    .filter-controls.open{transform:translateX(0);}
+    .filter-controls .filter-row{flex-direction:column;align-items:stretch;gap:10px;flex-wrap:wrap;}
+    .filter-controls .filter-select{width:100%;}
+    .filter-controls .filter-pills{flex-wrap:wrap;}
+    .drawer-head{display:flex;justify-content:space-between;align-items:center;font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--purple-deep);padding-bottom:4px;border-bottom:1px solid var(--border);}
+    .drawer-x{background:none;border:none;font-size:1.7rem;line-height:1;color:var(--muted);cursor:pointer;padding:0 4px;}
+    .drawer-done{display:block;margin-top:auto;position:sticky;bottom:0;padding:15px;background:var(--purple-dark);color:#fff;border:none;border-radius:var(--radius-sm);font-family:'Nunito',sans-serif;font-weight:800;font-size:0.85rem;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;}
+    .filter-backdrop{display:block;position:fixed;inset:0;background:rgba(42,24,64,0.5);z-index:199;opacity:0;visibility:hidden;transition:opacity .3s;}
+    .filter-backdrop.open{opacity:1;visibility:visible;}
+  }
 </style>
 <header class="site-header" id="site-header">
 <div class="announce-bar" aria-label="Announcements">
@@ -240,43 +260,56 @@
 <!-- FILTERS -->
 <div class="filter-bar">
   <div class="filter-inner">
-    <div class="filter-row">
+    <div class="filter-row filter-top">
       <!-- Search -->
       <div class="search-box">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <input type="text" id="search" placeholder="Search inks…" autocomplete="off" />
       </div>
-
-      <!-- Brand -->
-      <select class="filter-select" id="brand-filter">
-        <option value="">All Brands</option>
-      </select>
-
-      <!-- Sort -->
-      <select class="filter-select" id="sort">
-        <option value="brand">Brand A–Z</option>
-        <option value="name">Name A–Z</option>
-        <option value="price-asc">Price: Low–High</option>
-        <option value="price-desc">Price: High–Low</option>
-      </select>
+      <!-- Mobile filters trigger -->
+      <button class="filters-trigger" id="filters-trigger" type="button" aria-label="Open filters">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h18M6 12h12M10 19h4"/></svg>
+        <span>Filters</span>
+      </button>
     </div>
 
-    <div class="filter-row">
-      <span class="filter-label">Colour</span>
-      <div class="filter-pills" id="colour-filters">
-        <button class="pill active" data-colour="">All</button>
-        <button class="pill" data-colour="Red">Red</button>
-        <button class="pill" data-colour="Pink">Pink</button>
-        <button class="pill" data-colour="Orange">Orange</button>
-        <button class="pill" data-colour="Yellow">Yellow</button>
-        <button class="pill" data-colour="Green">Green</button>
-        <button class="pill" data-colour="Teal">Teal</button>
-        <button class="pill" data-colour="Blue">Blue</button>
-        <button class="pill" data-colour="Purple">Purple</button>
-        <button class="pill" data-colour="Brown">Brown</button>
-        <button class="pill" data-colour="Grey">Grey</button>
-        <button class="pill" data-colour="Black">Black</button>
+    <div class="filter-controls" id="filter-controls">
+      <div class="drawer-head"><span>Filters</span><button class="drawer-x" id="filters-close-x" type="button" aria-label="Close filters">&times;</button></div>
+
+      <div class="filter-row">
+        <!-- Brand -->
+        <select class="filter-select" id="brand-filter">
+          <option value="">All Brands</option>
+        </select>
+
+        <!-- Sort -->
+        <select class="filter-select" id="sort">
+          <option value="brand">Brand A–Z</option>
+          <option value="name">Name A–Z</option>
+          <option value="price-asc">Price: Low–High</option>
+          <option value="price-desc">Price: High–Low</option>
+        </select>
       </div>
+
+      <div class="filter-row">
+        <span class="filter-label">Colour</span>
+        <div class="filter-pills" id="colour-filters">
+          <button class="pill active" data-colour="">All</button>
+          <button class="pill" data-colour="Red">Red</button>
+          <button class="pill" data-colour="Pink">Pink</button>
+          <button class="pill" data-colour="Orange">Orange</button>
+          <button class="pill" data-colour="Yellow">Yellow</button>
+          <button class="pill" data-colour="Green">Green</button>
+          <button class="pill" data-colour="Teal">Teal</button>
+          <button class="pill" data-colour="Blue">Blue</button>
+          <button class="pill" data-colour="Purple">Purple</button>
+          <button class="pill" data-colour="Brown">Brown</button>
+          <button class="pill" data-colour="Grey">Grey</button>
+          <button class="pill" data-colour="Black">Black</button>
+        </div>
+      </div>
+
+      <button class="drawer-done" id="filters-done" type="button">Done · <span id="drawer-count"></span></button>
     </div>
 
     <div class="filter-row">
@@ -286,6 +319,7 @@
     </div>
   </div>
 </div>
+<div class="filter-backdrop" id="filter-backdrop"></div>
 
 <!-- GRID -->
 <div class="shop-layout">
@@ -383,6 +417,8 @@
     const count = document.getElementById('results-count');
 
     count.textContent = `${inks.length} ink${inks.length !== 1 ? 's' : ''}`;
+    const dc = document.getElementById('drawer-count');
+    if (dc) dc.textContent = `Show ${inks.length}`;
 
     if (!inks.length) {
       grid.innerHTML = '';
@@ -513,6 +549,17 @@
     t.addEventListener('click',function(){ var o=links.classList.toggle('open'); t.setAttribute('aria-expanded',o?'true':'false'); });
     links.addEventListener('click',function(e){ if(e.target.closest('a')){ links.classList.remove('open'); t.setAttribute('aria-expanded','false'); } });
   }
+  /* Filters drawer (mobile) */
+  var fTrigger=document.getElementById('filters-trigger'),
+      fPanel=document.getElementById('filter-controls'),
+      fBack=document.getElementById('filter-backdrop'),
+      fDone=document.getElementById('filters-done'),
+      fX=document.getElementById('filters-close-x');
+  var fHome=fPanel?fPanel.parentNode:null, fAnchor=fPanel?fPanel.nextSibling:null;
+  function openF(){ if(!fPanel)return; if(fPanel.parentNode!==document.body){ document.body.appendChild(fPanel); } fPanel.classList.add('open'); if(fBack)fBack.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeF(){ if(!fPanel)return; fPanel.classList.remove('open'); if(fBack)fBack.classList.remove('open'); document.body.style.overflow=''; setTimeout(function(){ if(!fPanel.classList.contains('open')&&fHome){ fHome.insertBefore(fPanel,fAnchor); } },340); }
+  if(fTrigger)fTrigger.addEventListener('click',openF);
+  [fDone,fX,fBack].forEach(function(el){ if(el)el.addEventListener('click',closeF); });
 })();
 </script>
 </body>
