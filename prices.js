@@ -15,8 +15,9 @@ function getInkPrice(ink) {
   if (brand.includes('tono & lims') || brand.includes('lims') ||
       id.startsWith('tono-lims') || id.startsWith('tono-and-lims')) return 4.25;
 
-  // ── J.Herbin 1670 £4.00 ───────────────────────────────
-  if (id.includes('jherbin') && (id.includes('1670') || id.includes('emerald-of-chivor') || id.includes('stormy-grey') || id.includes('hematite-red'))) return 4.00;
+  // ── J.Herbin 1670 / 350 Anniversary (shimmer) £4.00 ───
+  if ((id.includes('jherbin') || brand.includes('j.herbin') || brand.includes('jherbin')) &&
+      (ink.shimmer === true || id.includes('1670') || id.includes('emerald-of-chivor') || id.includes('stormy-grey') || id.includes('hematite-red'))) return 4.00;
 
   // ── Pilot Iroshizuku £4.00 ────────────────────────────
   if (brand.includes('pilot iroshizuku') || id.startsWith('pilot-iroshizuku')) return 4.00;
