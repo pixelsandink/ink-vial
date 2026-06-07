@@ -22,9 +22,15 @@ export const config = {
   ]
 };
 
+// Auto-launch: the gate opens itself at this moment (8 June 2026, 08:00 BST).
+const LAUNCH = Date.parse('2026-06-08T07:00:00Z');
+
 export default function middleware(request) {
-  // Launch switch - once set, everyone gets in
+  // Launch switch - manual override to open early
   if (process.env.SITE_OPEN === 'true') return;
+
+  // Automatic launch - once the clock passes 8am BST on launch day, everyone gets in
+  if (Date.now() >= LAUNCH) return;
 
   const token = process.env.SITE_ACCESS_TOKEN || 'inkvial-early';
   const cookie = request.headers.get('cookie') || '';

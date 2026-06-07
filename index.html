@@ -408,6 +408,8 @@
     if (diff <= 0) {
       Object.keys(els).forEach(k => els[k].textContent = '00');
       document.getElementById('launched-msg').style.display = 'block';
+      // We're live - send visitors straight into the shop
+      location.replace('/shop');
       return;
     }
     pulse(els.days,    pad(Math.floor(diff / 86400000)));
