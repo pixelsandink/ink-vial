@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ink Vial — Coming Soon</title>
+  <title>Ink Vial - Coming Soon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -337,7 +337,7 @@
     </div>
   </div>
 
-  <p class="launched-msg" id="launched-msg">We're live — welcome to Ink Vial!</p>
+  <p class="launched-msg" id="launched-msg">We're live - welcome to Ink Vial!</p>
 
   <!-- Early-access unlock -->
   <div class="early-access">
@@ -381,7 +381,7 @@
         const r=await fetch('/api/unlock',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:pass.value})});
         if(r.ok){ msg.className='ea-msg ok'; msg.textContent='Welcome in! Taking you to the shop…'; setTimeout(()=>{location.href='/shop';},700); }
         else { msg.className='ea-msg err'; msg.textContent='Sorry, that password isn\'t right.'; }
-      }catch(err){ msg.className='ea-msg err'; msg.textContent='Something went wrong — please try again.'; }
+      }catch(err){ msg.className='ea-msg err'; msg.textContent='Something went wrong - please try again.'; }
     });
   })();
 </script>

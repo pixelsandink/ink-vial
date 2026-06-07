@@ -1,4 +1,4 @@
-// Private stock admin — seed, view and restock without editing files.
+// Private stock admin - seed, view and restock without editing files.
 // Protected by the ADMIN_KEY env var. Use from your browser or a bookmark.
 //
 //   Seed everything from defaults (run once after creating the store):

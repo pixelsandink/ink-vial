@@ -261,10 +261,10 @@
 <div class="announce-bar" aria-label="Announcements">
   <div class="announce-track">
     <span class="announce-item">✨ Free UK delivery on orders over £40</span><span class="announce-sep">◆</span>
-    <span class="announce-item">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep">◆</span>
+    <span class="announce-item">🖋️ Every vial is hand-filled fresh to order - please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep">◆</span>
     <span class="announce-item">💜 Over 300 inks to explore</span><span class="announce-sep">◆</span>
     <span class="announce-item announce-dupe">✨ Free UK delivery on orders over £40</span><span class="announce-sep announce-dupe">◆</span>
-    <span class="announce-item announce-dupe">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep announce-dupe">◆</span>
+    <span class="announce-item announce-dupe">🖋️ Every vial is hand-filled fresh to order - please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep announce-dupe">◆</span>
     <span class="announce-item announce-dupe">💜 Over 300 inks to explore</span><span class="announce-sep announce-dupe">◆</span>
   </div>
 </div>
@@ -324,7 +324,7 @@
     <div class="footer-col"><h4>Connect</h4><ul><li><a href="contact">Contact</a></li><li><a href="contact#suggest">Suggest an Ink</a></li></ul></div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2026 Ink Vial — United Kingdom</span>
+    <span>&copy; 2026 Ink Vial - United Kingdom</span>
     <span>Made with love for ink lovers everywhere</span>
   </div>
 </footer>
@@ -351,7 +351,7 @@
     const isOut   = stat === 'out';
     const statLabel = isOut ? 'Sold out' : (stat === 'low' ? 'Low stock' : 'Available');
     ink._price    = price;
-    document.title = `${ink.name} — ${ink.brand} | Ink Vial`;
+    document.title = `${ink.name} - ${ink.brand} | Ink Vial`;
     document.getElementById('breadcrumb-name').textContent = `${ink.brand} ${ink.name}`;
 
     // Apply ink colours to CSS vars
@@ -486,10 +486,10 @@
                   data-item-price="${price.toFixed(2)}"
                   data-item-url="product?id=${ink.id}"
                   data-item-name="${ink.brand} ${ink.name}"
-                  data-item-description="2ml plastic vial — ${ink.tagline}"
+                  data-item-description="2ml plastic vial - ${ink.tagline}"
                   data-item-categories="${ink.brand}"
                   data-item-quantity="1"
-                >Add to Basket — £${price.toFixed(2)}</button>
+                >Add to Basket - £${price.toFixed(2)}</button>
                 <button class="btn-wishlist" aria-label="Save to wishlist">
                   <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
                 </button>
@@ -532,7 +532,7 @@
       ${relatedHtml}
     `;
 
-    // Qty buttons — update quantity attribute (only present when in stock)
+    // Qty buttons - update quantity attribute (only present when in stock)
     const qMinus = document.getElementById('qty-minus');
     const qPlus  = document.getElementById('qty-plus');
     if (qMinus && qPlus) {
@@ -542,7 +542,7 @@
         if (+inp.value > 1) {
           inp.value = +inp.value - 1;
           btn.dataset.itemQuantity = inp.value;
-          btn.textContent = `Add to Basket — £${(+inp.value * price).toFixed(2)}`;
+          btn.textContent = `Add to Basket - £${(+inp.value * price).toFixed(2)}`;
         }
       });
       qPlus.addEventListener('click', () => {
@@ -551,14 +551,14 @@
         if (+inp.value < 10) {
           inp.value = +inp.value + 1;
           btn.dataset.itemQuantity = inp.value;
-          btn.textContent = `Add to Basket — £${(+inp.value * price).toFixed(2)}`;
+          btn.textContent = `Add to Basket - £${(+inp.value * price).toFixed(2)}`;
         }
       });
     }
   }
 
   function renderNotFound(id) {
-    document.title = 'Ink not found — Ink Vial';
+    document.title = 'Ink not found - Ink Vial';
     document.getElementById('product-root').innerHTML = `
       <div class="not-found">
         <h2>Ink not found</h2>
@@ -601,7 +601,7 @@
   if (typeof INKS === 'undefined' || !INKS.length) {
     renderNotFound(inkId);
   } else if (!inkId) {
-    // No ID supplied — render first ink directly (no redirect flash)
+    // No ID supplied - render first ink directly (no redirect flash)
     renderInk(INKS[0]);
   } else {
     const ink = INKS.find(i => i.id === inkId);

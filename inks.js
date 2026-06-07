@@ -7,7 +7,7 @@ const INKS = [
     "colorPrimary": "#6b6b5a",
     "colorDark": "#4a4a3d",
     "tagline": "A brooding, industrial grey with the weight of steel.",
-    "description": "Iron Ore is a deep, muted grey-green that calls to mind forged metal and factory smoke. It writes with quiet authority — not flashy, but impossible to ignore once it's on the page.",
+    "description": "Iron Ore is a deep, muted grey-green that calls to mind forged metal and factory smoke. It writes with quiet authority - not flashy, but impossible to ignore once it's on the page.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -19,7 +19,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Shading comes through beautifully — lighter strokes reveal a warm khaki, heavy strokes go almost charcoal. Dry time is impressively fast."
+        "body": "Shading comes through beautifully - lighter strokes reveal a warm khaki, heavy strokes go almost charcoal. Dry time is impressively fast."
       },
       {
         "title": "On textured paper",
@@ -40,7 +40,7 @@ const INKS = [
     "colorPrimary": "#7a9a6a",
     "colorDark": "#5a7a4a",
     "tagline": "The soft verdigris of copper left out in the English rain.",
-    "description": "Weathered Penny captures that particular shade of aged copper — not quite green, not quite brown, but something perfectly in between. It's an earthy, grounded ink with gentle shading and real character.",
+    "description": "Weathered Penny captures that particular shade of aged copper - not quite green, not quite brown, but something perfectly in between. It's an earthy, grounded ink with gentle shading and real character.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -56,7 +56,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Textured paper brings out the earthy, organic quality — it almost looks like actual patina on the page. Shading is pronounced and lovely."
+        "body": "Textured paper brings out the earthy, organic quality - it almost looks like actual patina on the page. Shading is pronounced and lovely."
       },
       {
         "title": "Nib behaviour",
@@ -73,7 +73,7 @@ const INKS = [
     "colours": ["Grey"],
     "colorPrimary": "#2a5a7a",
     "colorDark": "#1a3a5a",
-    "tagline": "Deep ocean blue — vast, cold, and utterly compelling.",
+    "tagline": "Deep ocean blue - vast, cold, and utterly compelling.",
     "description": "Megalodon plunges into the deep end of blue, a rich teal-navy that conjures the crushing depths of the open ocean. It's dark enough for serious writing but vivid enough to turn heads.",
     "properties": {
       "shading": 3,
@@ -107,7 +107,7 @@ const INKS = [
     "colorPrimary": "#7a7a8a",
     "colorDark": "#5a5a6a",
     "tagline": "The calm, dependable grey of an old stone path.",
-    "description": "Flagstone is a refined, neutral grey with the faintest hint of blue — like slate pulled from a Midlands quarry. It's understated in the best way: professional, readable, and surprisingly characterful.",
+    "description": "Flagstone is a refined, neutral grey with the faintest hint of blue - like slate pulled from a Midlands quarry. It's understated in the best way: professional, readable, and surprisingly characterful.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -123,7 +123,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Holds up beautifully on rough stock — no feathering, good contrast against cream or white paper."
+        "body": "Holds up beautifully on rough stock - no feathering, good contrast against cream or white paper."
       },
       {
         "title": "Nib behaviour",
@@ -141,7 +141,7 @@ const INKS = [
     "colorPrimary": "#6a8a6a",
     "colorDark": "#4a6a4a",
     "tagline": "A hazy grey-green like coastal grass at low tide.",
-    "description": "Saltmarsh is a muted, atmospheric grey-green — the colour of sea-meadow grasses rather than a bright forest. Earthy, calming, and entirely unique, it's the kind of ink that makes people ask what you're writing with.",
+    "description": "Saltmarsh is a muted, atmospheric grey-green - the colour of sea-meadow grasses rather than a bright forest. Earthy, calming, and entirely unique, it's the kind of ink that makes people ask what you're writing with.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -153,7 +153,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "The grey and green elements shift depending on stroke weight — lighter strokes go grey, heavier strokes reveal more green. Very pleasant to write with."
+        "body": "The grey and green elements shift depending on stroke weight - lighter strokes go grey, heavier strokes reveal more green. Very pleasant to write with."
       },
       {
         "title": "On textured paper",
@@ -175,7 +175,7 @@ const INKS = [
     "colorPrimary": "#e87a8a",
     "colorDark": "#c85a6a",
     "tagline": "Bright, cheerful pink that brings joy to every word.",
-    "description": "Gumball is an unapologetically fun bubblegum pink — warm, vivid and immediately likeable. It's the ink you reach for when you want your writing to make someone smile.",
+    "description": "Gumball is an unapologetically fun bubblegum pink - warm, vivid and immediately likeable. It's the ink you reach for when you want your writing to make someone smile.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -195,7 +195,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Works best in fine to medium nibs — broad nibs can make it look a bit heavy. Flows beautifully and dries quickly."
+        "body": "Works best in fine to medium nibs - broad nibs can make it look a bit heavy. Flows beautifully and dries quickly."
       }
     ],
     "image": "images/birmingham-gumball.jpg",
@@ -209,7 +209,7 @@ const INKS = [
     "colorPrimary": "#9a8abf",
     "colorDark": "#7a6a9a",
     "tagline": "Soft, faded lavender like dried flowers pressed between pages.",
-    "description": "Washed Lavender is exactly as promised — a gentle, muted purple with grey undertones that feels vintage and refined. Not a loud purple, but a quiet, considered one.",
+    "description": "Washed Lavender is exactly as promised - a gentle, muted purple with grey undertones that feels vintage and refined. Not a loud purple, but a quiet, considered one.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -221,7 +221,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "The muted, dusty quality is most apparent here — it reads as a true washed-out lavender with subtle depth. Lovely and subtle."
+        "body": "The muted, dusty quality is most apparent here - it reads as a true washed-out lavender with subtle depth. Lovely and subtle."
       },
       {
         "title": "On textured paper",
@@ -242,7 +242,7 @@ const INKS = [
     "colorPrimary": "#9a3a1a",
     "colorDark": "#7a1a0a",
     "tagline": "The deep, ember glow of a cast-iron furnace door.",
-    "description": "Firebox is a dark, smouldering red-orange that evokes burning coals and foundry heat. It's a shade unique to Birmingham's industrial heritage — earthy, warm, and full of character.",
+    "description": "Firebox is a dark, smouldering red-orange that evokes burning coals and foundry heat. It's a shade unique to Birmingham's industrial heritage - earthy, warm, and full of character.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -296,7 +296,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent across nib sizes — particularly striking in a broad or stub where the shading and saturation are fully on show."
+        "body": "Excellent across nib sizes - particularly striking in a broad or stub where the shading and saturation are fully on show."
       }
     ],
     "image": "images/birmingham-waterbear.jpg",
@@ -309,7 +309,7 @@ const INKS = [
     "colours": ["Orange","Brown"],
     "colorPrimary": "#c8856a",
     "colorDark": "#a86a4a",
-    "tagline": "A warm terracotta blush — like mimosas and morning light.",
+    "tagline": "A warm terracotta blush - like mimosas and morning light.",
     "description": "Brunch Date is a warm, rosy terracotta that falls somewhere between salmon and burnt coral. It's sociable, upbeat, and glows beautifully on cream paper.",
     "properties": {
       "shading": 3,
@@ -344,7 +344,7 @@ const INKS = [
     "colorPrimary": "#9a8a78",
     "colorDark": "#7a6a58",
     "tagline": "A warm, grounded taupe for everyday adventures.",
-    "description": "Walk the Dog is a satisfying warm taupe — brown-leaning, with enough grey to keep it sophisticated. It's the ink equivalent of a comfortable routine: reliable, pleasant, and quietly lovely.",
+    "description": "Walk the Dog is a satisfying warm taupe - brown-leaning, with enough grey to keep it sophisticated. It's the ink equivalent of a comfortable routine: reliable, pleasant, and quietly lovely.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -378,7 +378,7 @@ const INKS = [
     "colorPrimary": "#7a8aaa",
     "colorDark": "#5a6a8a",
     "tagline": "The hazy blue-grey of that perfect deep sleep.",
-    "description": "Delicious Sleep is a dreamy, soft blue-grey — like the colour behind closed eyes just before you drift off. It's calming, gentle, and genuinely lovely on the page.",
+    "description": "Delicious Sleep is a dreamy, soft blue-grey - like the colour behind closed eyes just before you drift off. It's calming, gentle, and genuinely lovely on the page.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -412,7 +412,7 @@ const INKS = [
     "colorPrimary": "#5a8a5a",
     "colorDark": "#3a6a3a",
     "tagline": "Cool, dappled green like forest shadow on a summer afternoon.",
-    "description": "Under the Shade is a medium forest green with cool, leafy undertones. It's refreshing and natural — the kind of green that makes you want to sit down and write something meaningful.",
+    "description": "Under the Shade is a medium forest green with cool, leafy undertones. It's refreshing and natural - the kind of green that makes you want to sit down and write something meaningful.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -446,7 +446,7 @@ const INKS = [
     "colorPrimary": "#7a8a9a",
     "colorDark": "#5a6a7a",
     "tagline": "The cool, steady grey of rain against a windowpane.",
-    "description": "Rainy Day is a calm, cool grey-blue — not sad, just contemplative. It's the perfect writing ink for slow afternoons and quiet thoughts.",
+    "description": "Rainy Day is a calm, cool grey-blue - not sad, just contemplative. It's the perfect writing ink for slow afternoons and quiet thoughts.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -480,7 +480,7 @@ const INKS = [
     "colorPrimary": "#4a5a9a",
     "colorDark": "#2a3a7a",
     "tagline": "Deep cosmic blue with the mystery of distant peaks.",
-    "description": "Mystic Mountain is a rich, dark blue with purple undertones — the kind of blue that looks black at first glance but reveals its true character on closer inspection. Named after the Hubble Space Telescope image, it carries the vastness of that namesake.",
+    "description": "Mystic Mountain is a rich, dark blue with purple undertones - the kind of blue that looks black at first glance but reveals its true character on closer inspection. Named after the Hubble Space Telescope image, it carries the vastness of that namesake.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -514,7 +514,7 @@ const INKS = [
     "colorPrimary": "#6a4a7a",
     "colorDark": "#4a2a5a",
     "tagline": "A nebula purple born from starlight and cosmic dust.",
-    "description": "Pillars of Creation captures the dusty purple-brown of that iconic NASA image — an otherworldly colour that's part deep space, part crushed velvet. Genuinely unlike any other ink.",
+    "description": "Pillars of Creation captures the dusty purple-brown of that iconic NASA image - an otherworldly colour that's part deep space, part crushed velvet. Genuinely unlike any other ink.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -526,7 +526,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "A rich purple-brown with excellent depth. A copper or red sheen appears dramatically at stroke edges on coated papers — stunning."
+        "body": "A rich purple-brown with excellent depth. A copper or red sheen appears dramatically at stroke edges on coated papers - stunning."
       },
       {
         "title": "On textured paper",
@@ -548,7 +548,7 @@ const INKS = [
     "colorPrimary": "#2a7a9a",
     "colorDark": "#1a5a7a",
     "tagline": "The vast, icy blue of Jupiter's most mysterious moon.",
-    "description": "Sea Europa is a vivid teal-blue inspired by the subsurface ocean of Europa. It's bright, clean, and energetic — the kind of blue that makes ordinary writing feel extraordinary.",
+    "description": "Sea Europa is a vivid teal-blue inspired by the subsurface ocean of Europa. It's bright, clean, and energetic - the kind of blue that makes ordinary writing feel extraordinary.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -582,7 +582,7 @@ const INKS = [
     "colorPrimary": "#c87a3a",
     "colorDark": "#a85a1a",
     "tagline": "A warm, amber-orange sunset that bridges day and night.",
-    "description": "And is a rich, warm amber-orange — the colour of the sky in that liminal moment between afternoon and evening. It's vivid without being harsh, warm without being overwhelming.",
+    "description": "And is a rich, warm amber-orange - the colour of the sky in that liminal moment between afternoon and evening. It's vivid without being harsh, warm without being overwhelming.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -615,7 +615,7 @@ const INKS = [
     "colorPrimary": "#9a3a2a",
     "colorDark": "#7a1a0a",
     "tagline": "An earthy, smudged red with grit and depth.",
-    "description": "Dirty Red is a muted, earthy red — not the bright crimson of a British post box, but something more raw and grounded, like red clay or faded brick. It's full of character.",
+    "description": "Dirty Red is a muted, earthy red - not the bright crimson of a British post box, but something more raw and grounded, like red clay or faded brick. It's full of character.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -627,7 +627,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep earthy red with warm brown shading in lighter strokes. More terracotta than crimson — interesting and organic-feeling."
+        "body": "Deep earthy red with warm brown shading in lighter strokes. More terracotta than crimson - interesting and organic-feeling."
       },
       {
         "title": "On textured paper",
@@ -649,7 +649,7 @@ const INKS = [
     "colorPrimary": "#4a1a6a",
     "colorDark": "#2a0a4a",
     "tagline": "A rich, velvety purple with the depth of a night sky.",
-    "description": "Deep Purple is exactly what it promises — a dark, luscious purple that sits in the space between violet and indigo. Saturated, dramatic, and completely beautiful.",
+    "description": "Deep Purple is exactly what it promises - a dark, luscious purple that sits in the space between violet and indigo. Saturated, dramatic, and completely beautiful.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -683,7 +683,7 @@ const INKS = [
     "colorPrimary": "#b87060",
     "colorDark": "#98504a",
     "tagline": "The rose-pink sandstone of an ancient desert city.",
-    "description": "Petra is a warm, dusty rose — not quite pink, not quite terracotta, but somewhere beautifully between the two. Like the famous rose-red city of Jordan, it's warm, ancient-feeling, and quietly spectacular.",
+    "description": "Petra is a warm, dusty rose - not quite pink, not quite terracotta, but somewhere beautifully between the two. Like the famous rose-red city of Jordan, it's warm, ancient-feeling, and quietly spectacular.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -716,7 +716,7 @@ const INKS = [
     "colorPrimary": "#3a8a7a",
     "colorDark": "#1a6a5a",
     "tagline": "A vivid teal-jade green from the heart of the Mayan world.",
-    "description": "Chichen Itza is a striking teal-green that evokes jade carvings and tropical forest light. Rich, saturated, and wonderfully distinctive — it's a colour that takes a stand.",
+    "description": "Chichen Itza is a striking teal-green that evokes jade carvings and tropical forest light. Rich, saturated, and wonderfully distinctive - it's a colour that takes a stand.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -749,8 +749,8 @@ const INKS = [
     "name": "7 Sinners Lust",
     "colorPrimary": "#2a3a8f",
     "colorDark": "#1a2459",
-    "tagline": "Deep crimson desire — seductive, dangerous, and unforgettable.",
-    "description": "Lust burns a deep, rich crimson — darker than red, with a hint of purple that makes it feel more dangerous than a simple bright red. One of the most dramatic inks in the Sinners series.",
+    "tagline": "Deep crimson desire - seductive, dangerous, and unforgettable.",
+    "description": "Lust burns a deep, rich crimson - darker than red, with a hint of purple that makes it feel more dangerous than a simple bright red. One of the most dramatic inks in the Sinners series.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -783,8 +783,8 @@ const INKS = [
     "name": "7 Sinners Wrath",
     "colorPrimary": "#c83a1a",
     "colorDark": "#a81a0a",
-    "tagline": "Burning orange-red — the fury of something finally unleashed.",
-    "description": "Wrath is an angry, vivid red-orange that feels like it's constantly about to boil over. It's bold, hot-tempered, and demands attention — exactly what it should be.",
+    "tagline": "Burning orange-red - the fury of something finally unleashed.",
+    "description": "Wrath is an angry, vivid red-orange that feels like it's constantly about to boil over. It's bold, hot-tempered, and demands attention - exactly what it should be.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -800,7 +800,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Slightly tempered on textured stock — the orange quality softens a little and it reads closer to a bold red."
+        "body": "Slightly tempered on textured stock - the orange quality softens a little and it reads closer to a bold red."
       },
       {
         "title": "Nib behaviour",
@@ -818,8 +818,8 @@ const INKS = [
     "colours": ["Yellow"],
     "colorPrimary": "#2a6a2a",
     "colorDark": "#0a4a0a",
-    "tagline": "A dark, covetous green — wanting more with every word.",
-    "description": "Greed is a deep, forest green with cool undertones — the green of money, envy, and wanting what you can't have. Rich, dark, and quietly menacing.",
+    "tagline": "A dark, covetous green - wanting more with every word.",
+    "description": "Greed is a deep, forest green with cool undertones - the green of money, envy, and wanting what you can't have. Rich, dark, and quietly menacing.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -839,7 +839,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent across nib sizes. Broad nibs make the shading — and occasional sheen — really sing."
+        "body": "Excellent across nib sizes. Broad nibs make the shading - and occasional sheen - really sing."
       }
     ],
     "image": "images/diamine-7-sinners-greed.jpg",
@@ -853,7 +853,7 @@ const INKS = [
     "colorPrimary": "#6a6a6a",
     "colorDark": "#4a4a4a",
     "tagline": "A grey so unbothered it barely has time for your expectations.",
-    "description": "Sloth is a flat, neutral grey that couldn't care less about standing out. And that, oddly, is exactly what makes it interesting — it's the most honest grey in the collection.",
+    "description": "Sloth is a flat, neutral grey that couldn't care less about standing out. And that, oddly, is exactly what makes it interesting - it's the most honest grey in the collection.",
     "properties": {
       "shading": 1,
       "sheen": 0,
@@ -888,8 +888,8 @@ const INKS = [
     "colours": ["Red","Orange"],
     "colorPrimary": "#5a1a5a",
     "colorDark": "#3a0a3a",
-    "tagline": "Indulgent, excessive purple — more is never enough.",
-    "description": "Gluttony is a dark, rich purple that feels opulent and excessive in the best way. It's deep, saturated, and refuses to be subtle — fitting for its namesake sin.",
+    "tagline": "Indulgent, excessive purple - more is never enough.",
+    "description": "Gluttony is a dark, rich purple that feels opulent and excessive in the best way. It's deep, saturated, and refuses to be subtle - fitting for its namesake sin.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -909,7 +909,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "A broad or medium nib really does this ink justice. One of the most showy in the collection — in a good way."
+        "body": "A broad or medium nib really does this ink justice. One of the most showy in the collection - in a good way."
       }
     ],
     "image": "images/diamine-7-sinners-gluttony.jpg",
@@ -922,8 +922,8 @@ const INKS = [
     "name": "7 Sinners Envy",
     "colorPrimary": "#1a5a1a",
     "colorDark": "#0a3a0a",
-    "tagline": "A bitter, deep green — the colour of wanting what you can't have.",
-    "description": "Envy is a very dark, cool green — almost bottle green, with a slight chill to it that feels appropriately resentful. Deeply saturated and full of presence.",
+    "tagline": "A bitter, deep green - the colour of wanting what you can't have.",
+    "description": "Envy is a very dark, cool green - almost bottle green, with a slight chill to it that feels appropriately resentful. Deeply saturated and full of presence.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -939,7 +939,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Deepens and darkens on textured stock — almost black-green in heavy lines. Striking."
+        "body": "Deepens and darkens on textured stock - almost black-green in heavy lines. Striking."
       },
       {
         "title": "Nib behaviour",
@@ -958,8 +958,8 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#c8a01a",
     "colorDark": "#a87a0a",
-    "tagline": "Golden and self-assured — the king of all the sins.",
-    "description": "Pride is a warm, rich gold — not yellow, not orange, but a regal amber-gold that announces itself without apology. It's the sin that started it all, and this ink does it full justice.",
+    "tagline": "Golden and self-assured - the king of all the sins.",
+    "description": "Pride is a warm, rich gold - not yellow, not orange, but a regal amber-gold that announces itself without apology. It's the sin that started it all, and this ink does it full justice.",
     "properties": {
       "shading": 2,
       "sheen": 3,
@@ -979,7 +979,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium to broad nibs. Fine nibs can make this ink look simply yellow — go wide to see the gold."
+        "body": "Best in medium to broad nibs. Fine nibs can make this ink look simply yellow - go wide to see the gold."
       }
     ],
     "image": "images/diamine-7-sinners-pride.jpg",
@@ -992,7 +992,7 @@ const INKS = [
     "colorPrimary": "#1a7a7a",
     "colorDark": "#0a5a5a",
     "tagline": "A bold, vivid teal with the confidence to go its own way.",
-    "description": "Tariff Teal is a punchy, saturated blue-green — not quite cyan, not quite turquoise, but a strong, opinionated teal with serious presence. A modern classic in the making.",
+    "description": "Tariff Teal is a punchy, saturated blue-green - not quite cyan, not quite turquoise, but a strong, opinionated teal with serious presence. A modern classic in the making.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1025,7 +1025,7 @@ const INKS = [
     "colorPrimary": "#3a7a8a",
     "colorDark": "#1a5a6a",
     "tagline": "The deep, reflective blue-green of still water in an old city canal.",
-    "description": "Canalside is a beautiful teal with blue and green in perfect balance — dark enough to be serious, vivid enough to be interesting. It evokes brick walls and water reflections on a quiet morning.",
+    "description": "Canalside is a beautiful teal with blue and green in perfect balance - dark enough to be serious, vivid enough to be interesting. It evokes brick walls and water reflections on a quiet morning.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1058,7 +1058,7 @@ const INKS = [
     "colorPrimary": "#9a9aaa",
     "colorDark": "#7a7a8a",
     "tagline": "A refined, silvery grey with just a whisper of lavender.",
-    "description": "Lady Grey is a soft, muted grey with the faintest lavender undertone — elegant, understated, and completely distinctive from a plain grey. It's the colour of old silver and morning fog.",
+    "description": "Lady Grey is a soft, muted grey with the faintest lavender undertone - elegant, understated, and completely distinctive from a plain grey. It's the colour of old silver and morning fog.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -1070,7 +1070,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Pale, soft, and consistent with a very gentle lavender lean. Highly legible despite its lightness — surprisingly readable."
+        "body": "Pale, soft, and consistent with a very gentle lavender lean. Highly legible despite its lightness - surprisingly readable."
       },
       {
         "title": "On textured paper",
@@ -1093,7 +1093,7 @@ const INKS = [
     "colorPrimary": "#6a1a3a",
     "colorDark": "#4a0a1a",
     "tagline": "Deep wine-red with the warmth of summer evenings in Spain.",
-    "description": "A Jug of Sangria is a deeply saturated red-purple that evokes exactly its namesake — dark, complex, and full of warmth. It sits between wine and burgundy, with shimmer that adds a festive sparkle.",
+    "description": "A Jug of Sangria is a deeply saturated red-purple that evokes exactly its namesake - dark, complex, and full of warmth. It sits between wine and burgundy, with shimmer that adds a festive sparkle.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -1113,7 +1113,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "A broad or medium nib does this ink justice. Shake before use and flush pen after — shimmer inks need care."
+        "body": "A broad or medium nib does this ink justice. Shake before use and flush pen after - shimmer inks need care."
       }
     ],
     "image": "images/diamine-a-jug-of-sangria.jpg",
@@ -1159,7 +1159,7 @@ const INKS = [
     "colorPrimary": "#d4849a",
     "colorDark": "#b46478",
     "tagline": "A soft, dusty rose as gentle and warm as cashmere itself.",
-    "description": "Cashmere Rose is a warm, muted pink — not bright or candy-like, but refined and grown-up. The dusty quality gives it real character, and it sits beautifully on cream paper.",
+    "description": "Cashmere Rose is a warm, muted pink - not bright or candy-like, but refined and grown-up. The dusty quality gives it real character, and it sits beautifully on cream paper.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -1192,7 +1192,7 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#8a3a3a",
     "colorDark": "#6a1a1a",
-    "tagline": "Warm and woody — the rich red-brown of polished rosewood grain.",
+    "tagline": "Warm and woody - the rich red-brown of polished rosewood grain.",
     "description": "Rosewood is a warm, muted red-brown that feels like the inside of a fine instrument workshop. It's not quite red, not quite brown, but something beautifully between the two.",
     "properties": {
       "shading": 3,
@@ -1229,7 +1229,7 @@ const INKS = [
     "colorPrimary": "#c8a04a",
     "colorDark": "#a8802a",
     "tagline": "The warm champagne-gold of a raised glass catching the light.",
-    "description": "Raise a Glass is a festive, warm gold with shimmer that genuinely sparkles on the page. It's celebratory in character — made for special letters, toasts, and memorable moments.",
+    "description": "Raise a Glass is a festive, warm gold with shimmer that genuinely sparkles on the page. It's celebratory in character - made for special letters, toasts, and memorable moments.",
     "properties": {
       "shading": 2,
       "sheen": 4,
@@ -1262,7 +1262,7 @@ const INKS = [
     "colorPrimary": "#e07a8a",
     "colorDark": "#c05a6a",
     "tagline": "Bright, fun coral-pink with the energy of a retro diner.",
-    "description": "Oh Betty is a warm, vivid coral-pink — more peach than candy, with just enough orange to keep it from being a straight-up pink. Fun, retro, and completely cheerful.",
+    "description": "Oh Betty is a warm, vivid coral-pink - more peach than candy, with just enough orange to keep it from being a straight-up pink. Fun, retro, and completely cheerful.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -1274,7 +1274,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm coral-pink that reads as distinctly different from standard pink inks — more alive and energetic."
+        "body": "Warm coral-pink that reads as distinctly different from standard pink inks - more alive and energetic."
       },
       {
         "title": "On textured paper",
@@ -1295,7 +1295,7 @@ const INKS = [
     "colorPrimary": "#4a6a8a",
     "colorDark": "#2a4a6a",
     "tagline": "A deep, muted slate-blue with a quiet, contemplative mood.",
-    "description": "Blue Monday is a sophisticated slate-blue — darker and more serious than a sky blue, with grey undertones that make it feel genuinely thoughtful. Not named after the day of the week for nothing.",
+    "description": "Blue Monday is a sophisticated slate-blue - darker and more serious than a sky blue, with grey undertones that make it feel genuinely thoughtful. Not named after the day of the week for nothing.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -1363,8 +1363,8 @@ const INKS = [
     "colours": ["Blue"],
     "colorPrimary": "#3a8a9a",
     "colorDark": "#1a6a7a",
-    "tagline": "That perfect moment of cold water on warm sand — vivid, refreshing teal.",
-    "description": "Toe in the Ocean is a bright, clean teal that's exactly the colour of shallow sea water in sunlight. It's energetic and refreshing — one of those inks that makes you want to write more.",
+    "tagline": "That perfect moment of cold water on warm sand - vivid, refreshing teal.",
+    "description": "Toe in the Ocean is a bright, clean teal that's exactly the colour of shallow sea water in sunlight. It's energetic and refreshing - one of those inks that makes you want to write more.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1398,7 +1398,7 @@ const INKS = [
     "colorPrimary": "#9a5a3a",
     "colorDark": "#7a3a1a",
     "tagline": "The warm, ancient terracotta of stone walls stretching across mountains.",
-    "description": "The Great Wall of China is a warm, dusty terracotta-brown — earthy and ancient-feeling. It evokes the colour of the wall itself: warm stone, red clay, and centuries of history.",
+    "description": "The Great Wall of China is a warm, dusty terracotta-brown - earthy and ancient-feeling. It evokes the colour of the wall itself: warm stone, red clay, and centuries of history.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -1414,7 +1414,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "The earthy quality deepens on cream paper — feels right at home on aged or handmade stock."
+        "body": "The earthy quality deepens on cream paper - feels right at home on aged or handmade stock."
       },
       {
         "title": "Nib behaviour",
@@ -1432,7 +1432,7 @@ const INKS = [
     "colorPrimary": "#9a8a6a",
     "colorDark": "#7a6a4a",
     "tagline": "The warm, sun-bleached stone of ancient Rome.",
-    "description": "Colosseum is a sophisticated warm grey-beige — the colour of old travertine stone bleached by centuries of sun. It's subtle, refined, and completely unlike anything else in the Diamine catalogue.",
+    "description": "Colosseum is a sophisticated warm grey-beige - the colour of old travertine stone bleached by centuries of sun. It's subtle, refined, and completely unlike anything else in the Diamine catalogue.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -1444,11 +1444,11 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm stone-beige with the faintest green lean. Consistent and muted — a very sophisticated neutral."
+        "body": "Warm stone-beige with the faintest green lean. Consistent and muted - a very sophisticated neutral."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper it almost disappears into the stock — use white paper for best contrast."
+        "body": "On cream paper it almost disappears into the stock - use white paper for best contrast."
       },
       {
         "title": "Nib behaviour",
@@ -1466,8 +1466,8 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#c8907a",
     "colorDark": "#a8705a",
-    "tagline": "A warm, dusty mushroom-pink — earthy, soft, and completely unique.",
-    "description": "Blushing Mushrooms sits at the intersection of terracotta, blush, and mushroom — a warm, dusty pink-brown that feels organic and tactile. Ferris Wheel Press at their most creative.",
+    "tagline": "A warm, dusty mushroom-pink - earthy, soft, and completely unique.",
+    "description": "Blushing Mushrooms sits at the intersection of terracotta, blush, and mushroom - a warm, dusty pink-brown that feels organic and tactile. Ferris Wheel Press at their most creative.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1487,7 +1487,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "FWP inks are well-lubricated — glides across all nib sizes. Medium and broad nibs show the shading best."
+        "body": "FWP inks are well-lubricated - glides across all nib sizes. Medium and broad nibs show the shading best."
       }
     ],
     "image": "images/ferris-wheel-press-blushing-mushrooms.jpg",
@@ -1520,7 +1520,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent FWP ink quality — very smooth. Best in medium or broad nibs."
+        "body": "Excellent FWP ink quality - very smooth. Best in medium or broad nibs."
       }
     ],
     "image": "images/ferris-wheel-press-terracotta-canyon.jpg",
@@ -1533,8 +1533,8 @@ const INKS = [
     "colours": ["Pink"],
     "colorPrimary": "#e8aab8",
     "colorDark": "#c88a98",
-    "tagline": "Delicate, pale cherry blossom pink — fleeting and beautiful.",
-    "description": "Chidori Cherry Blossom is a soft, pale pink inspired by Japanese spring. It's light and delicate, with just enough colour to be readable — perfect for personal writing and sketching.",
+    "tagline": "Delicate, pale cherry blossom pink - fleeting and beautiful.",
+    "description": "Chidori Cherry Blossom is a soft, pale pink inspired by Japanese spring. It's light and delicate, with just enough colour to be readable - perfect for personal writing and sketching.",
     "properties": {
       "shading": 2,
       "sheen": 1,
@@ -1546,7 +1546,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft and pale, with gentle shading. Delicate and beautiful — very true to cherry blossom."
+        "body": "Soft and pale, with gentle shading. Delicate and beautiful - very true to cherry blossom."
       },
       {
         "title": "On textured paper",
@@ -1566,8 +1566,8 @@ const INKS = [
     "name": "Pink Eraser",
     "colorPrimary": "#e87a9a",
     "colorDark": "#c85a7a",
-    "tagline": "A fun, retro pink — exactly like a brand-new pencil eraser.",
-    "description": "Pink Eraser is a bright, cheerful pink that's warm without being coral. It's a nod to the nostalgic pink of school erasers — playful, vivid, and completely fun to write with.",
+    "tagline": "A fun, retro pink - exactly like a brand-new pencil eraser.",
+    "description": "Pink Eraser is a bright, cheerful pink that's warm without being coral. It's a nod to the nostalgic pink of school erasers - playful, vivid, and completely fun to write with.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -1579,7 +1579,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright and consistent — a proper, vivid pink. Good contrast against white paper."
+        "body": "Bright and consistent - a proper, vivid pink. Good contrast against white paper."
       },
       {
         "title": "On textured paper",
@@ -1587,7 +1587,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and well-lubricated across all nib sizes — typical FWP quality."
+        "body": "Smooth and well-lubricated across all nib sizes - typical FWP quality."
       }
     ],
     "image": "images/ferris-wheel-press-pink-eraser.jpg",
@@ -1616,7 +1616,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Darkens slightly on textured stock — deeply impressive on any paper."
+        "body": "Darkens slightly on textured stock - deeply impressive on any paper."
       },
       {
         "title": "Nib behaviour",
@@ -1632,8 +1632,8 @@ const INKS = [
     "name": "Queen Allium",
     "colorPrimary": "#7a4a9a",
     "colorDark": "#5a2a7a",
-    "tagline": "A vivid, regal purple — bold and beautiful like a giant allium in bloom.",
-    "description": "Queen Allium is a vivid mid-purple named after the spectacular globe-shaped flower. Saturated, bright, and completely regal — one of FWP's most striking colours.",
+    "tagline": "A vivid, regal purple - bold and beautiful like a giant allium in bloom.",
+    "description": "Queen Allium is a vivid mid-purple named after the spectacular globe-shaped flower. Saturated, bright, and completely regal - one of FWP's most striking colours.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1666,8 +1666,8 @@ const INKS = [
     "colours": ["Pink"],
     "colorPrimary": "#d46a7a",
     "colorDark": "#b44a5a",
-    "tagline": "A bold, warm rose — named for Toronto's vibrant Spadina Avenue.",
-    "description": "Spadina Rose is a confident, warm rose-pink — not delicate or pastel, but full and rich. Named for the famous Toronto street, it has urban energy and genuine warmth.",
+    "tagline": "A bold, warm rose - named for Toronto's vibrant Spadina Avenue.",
+    "description": "Spadina Rose is a confident, warm rose-pink - not delicate or pastel, but full and rich. Named for the famous Toronto street, it has urban energy and genuine warmth.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1700,7 +1700,7 @@ const INKS = [
     "colorPrimary": "#3a6a3a",
     "colorDark": "#1a4a1a",
     "tagline": "The deep, damp green of moss on a forest floor after rain.",
-    "description": "Peter Moss is a rich forest green with depth and character — not bright, not olive, but a true saturated green that feels cool and earthy simultaneously.",
+    "description": "Peter Moss is a rich forest green with depth and character - not bright, not olive, but a true saturated green that feels cool and earthy simultaneously.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1732,8 +1732,8 @@ const INKS = [
     "name": "Unfettered Flight",
     "colorPrimary": "#5a8ac8",
     "colorDark": "#3a6aa8",
-    "tagline": "A bright, open sky-blue — the colour of complete freedom.",
-    "description": "Unfettered Flight is a vivid, clean sky-blue with energy and optimism. It's not a navy or slate — it's genuinely, openly blue, like looking straight up on a clear day.",
+    "tagline": "A bright, open sky-blue - the colour of complete freedom.",
+    "description": "Unfettered Flight is a vivid, clean sky-blue with energy and optimism. It's not a navy or slate - it's genuinely, openly blue, like looking straight up on a clear day.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -1753,7 +1753,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Flows beautifully in all sizes — typical excellent FWP quality."
+        "body": "Flows beautifully in all sizes - typical excellent FWP quality."
       }
     ],
     "image": "images/ferris-wheel-press-unfettered-flight.jpg",
@@ -1765,8 +1765,8 @@ const INKS = [
     "name": "Storied Blue",
     "colorPrimary": "#2a5a8a",
     "colorDark": "#0a3a6a",
-    "tagline": "A deep, literary navy blue — serious, considered, timeless.",
-    "description": "Storied Blue is a rich, dark blue with depth and gravitas. It's the ink of bookshelves, old diaries, and careful correspondence — a blue that means business.",
+    "tagline": "A deep, literary navy blue - serious, considered, timeless.",
+    "description": "Storied Blue is a rich, dark blue with depth and gravitas. It's the ink of bookshelves, old diaries, and careful correspondence - a blue that means business.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1800,7 +1800,7 @@ const INKS = [
     "colorPrimary": "#9a8a7a",
     "colorDark": "#7a6a5a",
     "tagline": "The warm, pearlescent grey of an oyster shell at dusk.",
-    "description": "Oyster Hour is a warm, sophisticated greige — between warm grey and pale brown, with the pearlescent quality of its namesake. Understated and beautifully refined.",
+    "description": "Oyster Hour is a warm, sophisticated greige - between warm grey and pale brown, with the pearlescent quality of its namesake. Understated and beautifully refined.",
     "properties": {
       "shading": 2,
       "sheen": 1,
@@ -1833,7 +1833,7 @@ const INKS = [
     "colorPrimary": "#5a8a5a",
     "colorDark": "#3a6a3a",
     "tagline": "A fresh, herb green that dances between grey and sage.",
-    "description": "Dancing Thyme is a medium, fresh green with herbaceous character — the kind of green that makes you think of kitchen gardens and morning dew. It's neither too bright nor too dark.",
+    "description": "Dancing Thyme is a medium, fresh green with herbaceous character - the kind of green that makes you think of kitchen gardens and morning dew. It's neither too bright nor too dark.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -1865,8 +1865,8 @@ const INKS = [
     "name": "Candy Marsala",
     "colorPrimary": "#8a3a3a",
     "colorDark": "#6a1a1a",
-    "tagline": "Deep marsala wine — rich, warm, and completely sophisticated.",
-    "description": "Candy Marsala is a warm, deep red-brown — the colour of marsala wine, sitting between burgundy and terracotta. Rich, grown-up, and endlessly wearable.",
+    "tagline": "Deep marsala wine - rich, warm, and completely sophisticated.",
+    "description": "Candy Marsala is a warm, deep red-brown - the colour of marsala wine, sitting between burgundy and terracotta. Rich, grown-up, and endlessly wearable.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1886,7 +1886,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes — particularly stunning in a broad italic."
+        "body": "Excellent in all sizes - particularly stunning in a broad italic."
       }
     ],
     "image": "images/ferris-wheel-press-candy-marsala.jpg",
@@ -1899,8 +1899,8 @@ const INKS = [
     "name": "Madam Mulberry",
     "colorPrimary": "#6a2a5a",
     "colorDark": "#4a0a3a",
-    "tagline": "A deep, dramatic mulberry — dark, lush, and thoroughly glamorous.",
-    "description": "Madam Mulberry is a dark, rich purple-red — the colour of ripe mulberries. Deep, saturated, and dramatic, it's one of FWP's most opulent colours.",
+    "tagline": "A deep, dramatic mulberry - dark, lush, and thoroughly glamorous.",
+    "description": "Madam Mulberry is a dark, rich purple-red - the colour of ripe mulberries. Deep, saturated, and dramatic, it's one of FWP's most opulent colours.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -1920,7 +1920,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "A broad nib truly does this ink justice — one of FWP's showstoppers."
+        "body": "A broad nib truly does this ink justice - one of FWP's showstoppers."
       }
     ],
     "image": "images/ferris-wheel-press-madam-mulberry.jpg",
@@ -1932,8 +1932,8 @@ const INKS = [
     "name": "Royal Rhubarb",
     "colorPrimary": "#8a2a3a",
     "colorDark": "#6a0a1a",
-    "tagline": "A tart, vibrant rhubarb-red — tangy and completely distinctive.",
-    "description": "Royal Rhubarb is a vivid, warm red-pink that sits between red and magenta. It's distinctive, playful, and full of energy — the colour of rhubarb stalks ready to become pie.",
+    "tagline": "A tart, vibrant rhubarb-red - tangy and completely distinctive.",
+    "description": "Royal Rhubarb is a vivid, warm red-pink that sits between red and magenta. It's distinctive, playful, and full of energy - the colour of rhubarb stalks ready to become pie.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -1949,7 +1949,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Slightly warmer on cream paper — the rhubarb quality really comes through."
+        "body": "Slightly warmer on cream paper - the rhubarb quality really comes through."
       },
       {
         "title": "Nib behaviour",
@@ -1965,8 +1965,8 @@ const INKS = [
     "name": "Bayou Berry Mist",
     "colorPrimary": "#7a5a8a",
     "colorDark": "#5a3a6a",
-    "tagline": "A misty, atmospheric purple-grey — mysterious as a Louisiana bayou.",
-    "description": "Bayou Berry Mist is a muted, dusty purple with grey undertones — atmospheric and slightly mysterious. It's a purple for people who find straight purples too loud.",
+    "tagline": "A misty, atmospheric purple-grey - mysterious as a Louisiana bayou.",
+    "description": "Bayou Berry Mist is a muted, dusty purple with grey undertones - atmospheric and slightly mysterious. It's a purple for people who find straight purples too loud.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -1982,7 +1982,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "The muted quality suits textured paper well — feels intimate and organic."
+        "body": "The muted quality suits textured paper well - feels intimate and organic."
       },
       {
         "title": "Nib behaviour",
@@ -2000,7 +2000,7 @@ const INKS = [
     "colorPrimary": "#7a4a8a",
     "colorDark": "#5a2a6a",
     "tagline": "The warm purple of flowers silhouetted against a fading sky.",
-    "description": "Dusk in Bloom is a warm, medium purple with just enough pink to keep it from being cold. It's the colour of wisteria at dusk — romantic, evocative, and genuinely lovely.",
+    "description": "Dusk in Bloom is a warm, medium purple with just enough pink to keep it from being cold. It's the colour of wisteria at dusk - romantic, evocative, and genuinely lovely.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -2020,7 +2020,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes — a genuinely romantic ink."
+        "body": "Excellent in all sizes - a genuinely romantic ink."
       }
     ],
     "image": "images/ferris-wheel-press-dusk-in-bloom.jpg",
@@ -2033,7 +2033,7 @@ const INKS = [
     "colorPrimary": "#9aaa6a",
     "colorDark": "#7a8a4a",
     "tagline": "The soft yellow-green of meadow grass under moonlight.",
-    "description": "Moonbeam Meadows is a warm, soft yellow-green — not quite chartreuse, not quite olive, but something gently luminous in between. Unusual and completely charming.",
+    "description": "Moonbeam Meadows is a warm, soft yellow-green - not quite chartreuse, not quite olive, but something gently luminous in between. Unusual and completely charming.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -2045,7 +2045,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft yellow-green with gentle shading. Unusual and charming — unlike anything else on the market."
+        "body": "Soft yellow-green with gentle shading. Unusual and charming - unlike anything else on the market."
       },
       {
         "title": "On textured paper",
@@ -2100,7 +2100,7 @@ const INKS = [
     "colorPrimary": "#6a7a8a",
     "colorDark": "#4a5a6a",
     "tagline": "The cool, smoky blue-grey of Highland mist rolling in from the sea.",
-    "description": "Highland Smoke is a sophisticated cool blue-grey — the colour of morning mist in the Scottish Highlands. Moody, refined, and completely distinctive.",
+    "description": "Highland Smoke is a sophisticated cool blue-grey - the colour of morning mist in the Scottish Highlands. Moody, refined, and completely distinctive.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -2133,7 +2133,7 @@ const INKS = [
     "colorPrimary": "#6a6a7a",
     "colorDark": "#4a4a5a",
     "tagline": "The cool, neutral grey of lead type from an old letterpress.",
-    "description": "Leadcase Letters is a cool, neutral grey inspired by the lead type cases of vintage printers. It's functional and elegant — a grey for people who take their craft seriously.",
+    "description": "Leadcase Letters is a cool, neutral grey inspired by the lead type cases of vintage printers. It's functional and elegant - a grey for people who take their craft seriously.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -2145,7 +2145,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Clean, consistent cool grey. Highly legible and professional — a neutral that earns its place."
+        "body": "Clean, consistent cool grey. Highly legible and professional - a neutral that earns its place."
       },
       {
         "title": "On textured paper",
@@ -2165,7 +2165,7 @@ const INKS = [
     "name": "Vert Empire",
     "colorPrimary": "#2a5a2a",
     "colorDark": "#1a3a1a",
-    "tagline": "A deep, commanding imperial green — the green of empire and ambition.",
+    "tagline": "A deep, commanding imperial green - the green of empire and ambition.",
     "description": "Vert Empire is a rich, dark forest green with real depth and authority. Named after the verdant colours of imperial France, it's a classic ink for serious writing.",
     "properties": {
       "shading": 3,
@@ -2198,8 +2198,8 @@ const INKS = [
     "name": "Gris Nuage",
     "colorPrimary": "#9a9a9a",
     "colorDark": "#7a7a7a",
-    "tagline": "Cloud grey — soft, neutral, and endlessly versatile.",
-    "description": "Gris Nuage (Cloud Grey) is a clean, medium grey with cool undertones. It's J.Herbin's answer to a sophisticated neutral — calm, professional, and very pleasant to write with.",
+    "tagline": "Cloud grey - soft, neutral, and endlessly versatile.",
+    "description": "Gris Nuage (Cloud Grey) is a clean, medium grey with cool undertones. It's J.Herbin's answer to a sophisticated neutral - calm, professional, and very pleasant to write with.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -2233,7 +2233,7 @@ const INKS = [
     "colorPrimary": "#7a5a3a",
     "colorDark": "#5a3a1a",
     "tagline": "The warm, aromatic brown of coffee on a tropical island.",
-    "description": "Cafe des Iles (Island Coffee) is a warm, medium brown with golden undertones. It's the colour of strong coffee with milk — comforting, rich, and deeply satisfying.",
+    "description": "Cafe des Iles (Island Coffee) is a warm, medium brown with golden undertones. It's the colour of strong coffee with milk - comforting, rich, and deeply satisfying.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -2266,8 +2266,8 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#8a7a9a",
     "colorDark": "#6a5a7a",
-    "tagline": "Moon dust — a soft, ethereal muted lavender.",
-    "description": "Poussiere de Lune (Moon Dust) is a muted, dusty lavender-grey — soft and atmospheric, like the surface of the moon seen through gauze. Subtle and completely distinctive.",
+    "tagline": "Moon dust - a soft, ethereal muted lavender.",
+    "description": "Poussiere de Lune (Moon Dust) is a muted, dusty lavender-grey - soft and atmospheric, like the surface of the moon seen through gauze. Subtle and completely distinctive.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -2301,7 +2301,7 @@ const INKS = [
     "colours": ["Pink","Orange"],
     "colorPrimary": "#8a4a1a",
     "colorDark": "#6a2a0a",
-    "tagline": "Anchor rust — the warm, oxidised orange of old iron by the sea.",
+    "tagline": "Anchor rust - the warm, oxidised orange of old iron by the sea.",
     "description": "Rouille d'Ancre (Anchor Rust) is a warm, earthy rust-orange that evokes aged metal and maritime history. It's earthy, warm, and completely characterful.",
     "properties": {
       "shading": 3,
@@ -2318,7 +2318,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "The earthy quality suits textured paper perfectly — feels deeply organic."
+        "body": "The earthy quality suits textured paper perfectly - feels deeply organic."
       },
       {
         "title": "Nib behaviour",
@@ -2336,7 +2336,7 @@ const INKS = [
     "colorPrimary": "#6a4a2a",
     "colorDark": "#4a2a0a",
     "tagline": "The deep, rich brown of raw Brazilian cacao.",
-    "description": "Cacao du Bresil (Brazilian Cacao) is a dark, earthy brown with genuine depth — darker and richer than a standard brown, evoking the raw, complex flavour of good chocolate.",
+    "description": "Cacao du Bresil (Brazilian Cacao) is a dark, earthy brown with genuine depth - darker and richer than a standard brown, evoking the raw, complex flavour of good chocolate.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -2369,7 +2369,7 @@ const INKS = [
     "colorPrimary": "#5a8a6a",
     "colorDark": "#3a6a4a",
     "tagline": "The soft green-grey of copper left to the elements.",
-    "description": "Vert de Gris (Verdigris) is a muted, grey-green that captures the patina of aged copper. It's subtle and sophisticated — a green for those who prefer atmosphere over vibrancy.",
+    "description": "Vert de Gris (Verdigris) is a muted, grey-green that captures the patina of aged copper. It's subtle and sophisticated - a green for those who prefer atmosphere over vibrancy.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -2401,8 +2401,8 @@ const INKS = [
     "name": "Rouge Opera",
     "colorPrimary": "#c82a2a",
     "colorDark": "#a80a0a",
-    "tagline": "Opera-house red — dramatic, vivid, and made to be seen.",
-    "description": "Rouge Opera is a bold, vivid red — clean and bright, like the curtains of a grand opera house. It's J.Herbin's most confident red, with genuine presence on the page.",
+    "tagline": "Opera-house red - dramatic, vivid, and made to be seen.",
+    "description": "Rouge Opera is a bold, vivid red - clean and bright, like the curtains of a grand opera house. It's J.Herbin's most confident red, with genuine presence on the page.",
     "properties": {
       "shading": 2,
       "sheen": 1,
@@ -2414,7 +2414,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid and saturated — a true opera-curtain red. Excellent contrast on white paper."
+        "body": "Vivid and saturated - a true opera-curtain red. Excellent contrast on white paper."
       },
       {
         "title": "On textured paper",
@@ -2435,7 +2435,7 @@ const INKS = [
     "colorPrimary": "#4a7a3a",
     "colorDark": "#2a5a1a",
     "tagline": "The deep, waxy green of a desert cactus in morning light.",
-    "description": "Vert Cactus (Cactus Green) is a medium-dark green with a slightly yellow lean — like the thick, waxy flesh of a cactus. It's grounded, natural, and quietly lovely.",
+    "description": "Vert Cactus (Cactus Green) is a medium-dark green with a slightly yellow lean - like the thick, waxy flesh of a cactus. It's grounded, natural, and quietly lovely.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -2467,8 +2467,8 @@ const INKS = [
     "colours": ["Orange"],
     "colorPrimary": "#d46a5a",
     "colorDark": "#b44a3a",
-    "tagline": "Tropical coral — warm, vivid, and full of sunshine.",
-    "description": "Corail des Tropiques (Tropical Coral) is a warm, vivid coral — halfway between orange and pink, with the energy of a tropical reef. Bright, cheerful, and completely distinctive.",
+    "tagline": "Tropical coral - warm, vivid, and full of sunshine.",
+    "description": "Corail des Tropiques (Tropical Coral) is a warm, vivid coral - halfway between orange and pink, with the energy of a tropical reef. Bright, cheerful, and completely distinctive.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -2484,7 +2484,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Takes on a slightly peachier character on cream — warm and inviting."
+        "body": "Takes on a slightly peachier character on cream - warm and inviting."
       },
       {
         "title": "Nib behaviour",
@@ -2501,8 +2501,8 @@ const INKS = [
     "name": "Larmes de Cassis",
     "colorPrimary": "#3a1a4a",
     "colorDark": "#1a0a2a",
-    "tagline": "Blackcurrant tears — deep, dark purple with a bittersweet soul.",
-    "description": "Larmes de Cassis (Blackcurrant Tears) is a very dark, rich purple — almost black, revealing its true purple nature only in lighter strokes or at stroke edges. Deeply dramatic.",
+    "tagline": "Blackcurrant tears - deep, dark purple with a bittersweet soul.",
+    "description": "Larmes de Cassis (Blackcurrant Tears) is a very dark, rich purple - almost black, revealing its true purple nature only in lighter strokes or at stroke edges. Deeply dramatic.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -2518,7 +2518,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Darkens further on textured stock. Still beautiful — one of J.Herbin's darkest inks."
+        "body": "Darkens further on textured stock. Still beautiful - one of J.Herbin's darkest inks."
       },
       {
         "title": "Nib behaviour",
@@ -2535,8 +2535,8 @@ const INKS = [
     "colours": ["Pink"],
     "colorPrimary": "#9a7a8a",
     "colorDark": "#7a5a6a",
-    "tagline": "An old-fashioned bouquet — soft, dusty mauve with vintage charm.",
-    "description": "Bouquet d'Antan (Old Bouquet) is a muted, dusty mauve-rose — the colour of dried flowers in a Victorian vase. Soft, nostalgic, and completely lovely.",
+    "tagline": "An old-fashioned bouquet - soft, dusty mauve with vintage charm.",
+    "description": "Bouquet d'Antan (Old Bouquet) is a muted, dusty mauve-rose - the colour of dried flowers in a Victorian vase. Soft, nostalgic, and completely lovely.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -2548,7 +2548,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft and dusty mauve-rose. Gentle and refined — the colour of pressed petals."
+        "body": "Soft and dusty mauve-rose. Gentle and refined - the colour of pressed petals."
       },
       {
         "title": "On textured paper",
@@ -2569,7 +2569,7 @@ const INKS = [
     "colorPrimary": "#5a6a2a",
     "colorDark": "#3a4a0a",
     "tagline": "The warm, earthy green of ripe olives and Provençal sun.",
-    "description": "Vert Olive (Olive Green) is a warm, slightly yellow-green olive — earthy, grounded, and unmistakably French in character. Perfect for those who love muted, sophisticated greens.",
+    "description": "Vert Olive (Olive Green) is a warm, slightly yellow-green olive - earthy, grounded, and unmistakably French in character. Perfect for those who love muted, sophisticated greens.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -2601,8 +2601,8 @@ const INKS = [
     "name": "Bleu Nuit",
     "colorPrimary": "#1a2a5a",
     "colorDark": "#0a1a3a",
-    "tagline": "Night blue — the deep, starless indigo of 3am.",
-    "description": "Bleu Nuit (Night Blue) is a very dark navy — almost black at first glance, revealing its true deep blue nature only in lighter strokes. Authoritative and quietly beautiful.",
+    "tagline": "Night blue - the deep, starless indigo of 3am.",
+    "description": "Bleu Nuit (Night Blue) is a very dark navy - almost black at first glance, revealing its true deep blue nature only in lighter strokes. Authoritative and quietly beautiful.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -2635,8 +2635,8 @@ const INKS = [
     "colours": ["Black"],
     "colorPrimary": "#1a1a2a",
     "colorDark": "#0a0a1a",
-    "tagline": "Black pearl — the deepest, most elegant black in the J.Herbin range.",
-    "description": "Perle Noire (Black Pearl) is J.Herbin's flagship black — rich, deep, and with just a whisper of blue-black depth. It's elegant without being harsh, and writes beautifully.",
+    "tagline": "Black pearl - the deepest, most elegant black in the J.Herbin range.",
+    "description": "Perle Noire (Black Pearl) is J.Herbin's flagship black - rich, deep, and with just a whisper of blue-black depth. It's elegant without being harsh, and writes beautifully.",
     "properties": {
       "shading": 1,
       "sheen": 1,
@@ -2656,7 +2656,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all nib sizes — one of the most refined blacks available."
+        "body": "Excellent in all nib sizes - one of the most refined blacks available."
       }
     ],
     "image": "images/jherbin-perle-noire.jpg",
@@ -2671,7 +2671,7 @@ const INKS = [
     "colorPrimary": "#2a6a5a",
     "colorDark": "#1a4a3a",
     "tagline": "A deep, mysterious teal-green from a sunken world.",
-    "description": "Vert Atlantide (Atlantis Green) is a deep, complex teal with blue-green mystery. It evokes the legendary lost city — dark, deep, and carrying the weight of the ocean.",
+    "description": "Vert Atlantide (Atlantis Green) is a deep, complex teal with blue-green mystery. It evokes the legendary lost city - dark, deep, and carrying the weight of the ocean.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -2705,8 +2705,8 @@ const INKS = [
     "name": "Emerald of Chivor",
     "colorPrimary": "#1a5a3a",
     "colorDark": "#0a3a1a",
-    "tagline": "A legendary 1670 ink — deep emerald with gold shimmer and red sheen.",
-    "description": "Emerald of Chivor is one of the most famous fountain pen inks in the world. A deep, rich emerald green with gold shimmer particles and a striking red sheen — it's the ink that proves fountain pen writing can be truly spectacular.",
+    "tagline": "A legendary 1670 ink - deep emerald with gold shimmer and red sheen.",
+    "description": "Emerald of Chivor is one of the most famous fountain pen inks in the world. A deep, rich emerald green with gold shimmer particles and a striking red sheen - it's the ink that proves fountain pen writing can be truly spectacular.",
     "properties": {
       "shading": 2,
       "sheen": 5,
@@ -2775,8 +2775,8 @@ const INKS = [
     "name": "Hematite Red",
     "colorPrimary": "#6a1a1a",
     "colorDark": "#4a0a0a",
-    "tagline": "A 1670 deep red with metallic gold shimmer — like crushed iron ore.",
-    "description": "Hematite Red is a dark, rich red from the J.Herbin 1670 range — almost garnet in shade, with gold shimmer that catches the light dramatically. One of the most striking red inks available.",
+    "tagline": "A 1670 deep red with metallic gold shimmer - like crushed iron ore.",
+    "description": "Hematite Red is a dark, rich red from the J.Herbin 1670 range - almost garnet in shade, with gold shimmer that catches the light dramatically. One of the most striking red inks available.",
     "properties": {
       "shading": 2,
       "sheen": 4,
@@ -2811,7 +2811,7 @@ const INKS = [
     "colorPrimary": "#5a3a1a",
     "colorDark": "#3a1a0a",
     "tagline": "The deep, dark brown of Cypriot carob pods in autumn.",
-    "description": "Caroube de Chypre (Cypriot Carob) is a very dark brown — deeper and richer than most browns, with warmth that only emerges in lighter strokes. It's the ink equivalent of dark chocolate.",
+    "description": "Caroube de Chypre (Cypriot Carob) is a very dark brown - deeper and richer than most browns, with warmth that only emerges in lighter strokes. It's the ink equivalent of dark chocolate.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -2844,8 +2844,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#6a5a3a",
     "colorDark": "#4a3a1a",
-    "tagline": "Tea-leaf brown — the earthy, comforting colour at the bottom of the cup.",
-    "description": "Lie de Thé (Tea Leaf) is a warm, medium brown with a green-earthy lean — the colour of spent tea leaves. Comforting, natural, and quietly sophisticated.",
+    "tagline": "Tea-leaf brown - the earthy, comforting colour at the bottom of the cup.",
+    "description": "Lie de Thé (Tea Leaf) is a warm, medium brown with a green-earthy lean - the colour of spent tea leaves. Comforting, natural, and quietly sophisticated.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -2861,7 +2861,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Particularly beautiful on aged or cream paper — feels right at home."
+        "body": "Particularly beautiful on aged or cream paper - feels right at home."
       },
       {
         "title": "Nib behaviour",
@@ -2876,8 +2876,8 @@ const INKS = [
     "name": "Rouge Grenat",
     "colorPrimary": "#7a1a2a",
     "colorDark": "#5a0a1a",
-    "tagline": "Garnet red — the deep, glowing colour of a precious stone.",
-    "description": "Rouge Grenat (Garnet Red) is a deep, rich red-purple — the colour of garnet gemstones. Darker than a bright red, more complex than a simple burgundy, it's a deeply satisfying ink.",
+    "tagline": "Garnet red - the deep, glowing colour of a precious stone.",
+    "description": "Rouge Grenat (Garnet Red) is a deep, rich red-purple - the colour of garnet gemstones. Darker than a bright red, more complex than a simple burgundy, it's a deeply satisfying ink.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -2908,7 +2908,7 @@ const INKS = [
     "name": "Midnight Blue",
     "colorPrimary": "#1a2a5a",
     "colorDark": "#0a1a3a",
-    "tagline": "A deep, classic midnight blue — Kaweco's signature colour.",
+    "tagline": "A deep, classic midnight blue - Kaweco's signature colour.",
     "description": "Kaweco Midnight Blue is a rich, dark navy that leans more blue than black. It's a dependable, well-behaved classic blue-black with the Kaweco quality that makes their inks a pleasure to write with.",
     "properties": {
       "shading": 2,
@@ -2929,7 +2929,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all nib sizes — Kaweco inks are famously well-behaved."
+        "body": "Excellent in all nib sizes - Kaweco inks are famously well-behaved."
       }
     ],
     "image": "images/kaweco-midnight-blue.jpg",
@@ -2942,7 +2942,7 @@ const INKS = [
     "colorPrimary": "#5a5a6a",
     "colorDark": "#3a3a4a",
     "tagline": "A cool, smoky grey with subtle depth and understated elegance.",
-    "description": "Kaweco Smokey Grey is a cool, medium grey with a slight blue undertone — like smoke in a November sky. Sophisticated and versatile, it's the grey for writers who want something more than plain.",
+    "description": "Kaweco Smokey Grey is a cool, medium grey with a slight blue undertone - like smoke in a November sky. Sophisticated and versatile, it's the grey for writers who want something more than plain.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -2962,7 +2962,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and reliable in all sizes — Kaweco quality throughout."
+        "body": "Smooth and reliable in all sizes - Kaweco quality throughout."
       }
     ],
     "stock": 20
@@ -2975,7 +2975,7 @@ const INKS = [
     "colorPrimary": "#9a6a2a",
     "colorDark": "#7a4a0a",
     "tagline": "The warm, golden sweetness of freshly made caramel.",
-    "description": "Kaweco Caramel Brown is a warm, bright brown with golden undertones — lighter and more amber than a traditional dark brown. It's cheerful and warm, like a perfect caramel.",
+    "description": "Kaweco Caramel Brown is a warm, bright brown with golden undertones - lighter and more amber than a traditional dark brown. It's cheerful and warm, like a perfect caramel.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3007,8 +3007,8 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#9a6a5a",
     "colorDark": "#7a4a3a",
-    "tagline": "A warm, dusty blend of brown and rose — unique and quietly lovely.",
-    "description": "Brown Pink is exactly what it sounds like — a warm, muted colour that sits between dusty rose and warm brown. KWZ at their most creative, making a colour that really shouldn't work but absolutely does.",
+    "tagline": "A warm, dusty blend of brown and rose - unique and quietly lovely.",
+    "description": "Brown Pink is exactly what it sounds like - a warm, muted colour that sits between dusty rose and warm brown. KWZ at their most creative, making a colour that really shouldn't work but absolutely does.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -3040,8 +3040,8 @@ const INKS = [
     "name": "Grey Plum",
     "colorPrimary": "#6a5a7a",
     "colorDark": "#4a3a5a",
-    "tagline": "A muted, smoky purple-grey — like a plum seen through fog.",
-    "description": "Grey Plum is a sophisticated muted purple with grey undertones — the colour of a ripe plum in overcast light. It's a purple for people who find straight purples too bright.",
+    "tagline": "A muted, smoky purple-grey - like a plum seen through fog.",
+    "description": "Grey Plum is a sophisticated muted purple with grey undertones - the colour of a ripe plum in overcast light. It's a purple for people who find straight purples too bright.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -3073,8 +3073,8 @@ const INKS = [
     "name": "Cherry",
     "colorPrimary": "#9a1a2a",
     "colorDark": "#7a0a0a",
-    "tagline": "Deep, vivid cherry red — bright, bold, and completely satisfying.",
-    "description": "KWZ Cherry is a rich, vivid red with warmth and depth. It's a proper cherry red — not too dark, not too orange, just beautifully, classically red.",
+    "tagline": "Deep, vivid cherry red - bright, bold, and completely satisfying.",
+    "description": "KWZ Cherry is a rich, vivid red with warmth and depth. It's a proper cherry red - not too dark, not too orange, just beautifully, classically red.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -3108,7 +3108,7 @@ const INKS = [
     "colorPrimary": "#5a2a7a",
     "colorDark": "#3a0a5a",
     "tagline": "A fun, deep berry-purple inspired by the classic cartoon confection.",
-    "description": "Gummiberry is a rich, saturated berry-purple — vivid and playful, like the magical berry juice from the beloved animated series. Full of energy and completely fun.",
+    "description": "Gummiberry is a rich, saturated berry-purple - vivid and playful, like the magical berry juice from the beloved animated series. Full of energy and completely fun.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -3142,7 +3142,7 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#7a5a3a",
     "colorDark": "#5a3a1a",
-    "tagline": "A warm, classic brown — simple, honest, and thoroughly reliable.",
+    "tagline": "A warm, classic brown - simple, honest, and thoroughly reliable.",
     "description": "KWZ Brown 3 is a warm, medium brown that does exactly what it should. No gimmicks, just a well-made, thoroughly satisfying brown for daily writing.",
     "properties": {
       "shading": 3,
@@ -3175,7 +3175,7 @@ const INKS = [
     "name": "Warsaw Dreaming",
     "colorPrimary": "#4a5a7a",
     "colorDark": "#2a3a5a",
-    "tagline": "A moody, dreaming blue-grey — the colour of a city at dusk.",
+    "tagline": "A moody, dreaming blue-grey - the colour of a city at dusk.",
     "description": "Warsaw Dreaming is a sophisticated blue-grey that evokes the atmospheric quality of a European city in twilight. Muted, thoughtful, and deeply characterful.",
     "properties": {
       "shading": 3,
@@ -3208,8 +3208,8 @@ const INKS = [
     "name": "Grey Lux",
     "colorPrimary": "#7a7a8a",
     "colorDark": "#5a5a6a",
-    "tagline": "A luxurious, refined grey — cool, polished, and professional.",
-    "description": "Grey Lux is a cool, polished medium-grey with a subtle blue lean. 'Lux' suits it well — there's something refined and high-quality about this ink that elevates even ordinary writing.",
+    "tagline": "A luxurious, refined grey - cool, polished, and professional.",
+    "description": "Grey Lux is a cool, polished medium-grey with a subtle blue lean. 'Lux' suits it well - there's something refined and high-quality about this ink that elevates even ordinary writing.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -3241,8 +3241,8 @@ const INKS = [
     "name": "Maroon",
     "colorPrimary": "#6a1a1a",
     "colorDark": "#4a0a0a",
-    "tagline": "A deep, rich maroon — dark, warm, and completely classic.",
-    "description": "KWZ Maroon is a dark, warm red-brown with genuine depth. It's a proper maroon — not a bright red, not a plain brown, but that perfect space between them.",
+    "tagline": "A deep, rich maroon - dark, warm, and completely classic.",
+    "description": "KWZ Maroon is a dark, warm red-brown with genuine depth. It's a proper maroon - not a bright red, not a plain brown, but that perfect space between them.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -3276,7 +3276,7 @@ const INKS = [
     "colorPrimary": "#8a6a4a",
     "colorDark": "#6a4a2a",
     "tagline": "The warm, creamy brown of a perfectly made cappuccino.",
-    "description": "KWZ Cappuccino is a warm, medium-light brown with creamy character — the colour of that perfect foam-and-espresso swirl in the cup. Comforting and genuinely pleasant.",
+    "description": "KWZ Cappuccino is a warm, medium-light brown with creamy character - the colour of that perfect foam-and-espresso swirl in the cup. Comforting and genuinely pleasant.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3308,8 +3308,8 @@ const INKS = [
     "name": "Berry",
     "colorPrimary": "#5a1a4a",
     "colorDark": "#3a0a2a",
-    "tagline": "A deep, dark berry — rich, full, and brimming with character.",
-    "description": "KWZ Berry is a dark, saturated berry-purple — the colour of ripe blackberries crushed on your fingers. Deep, rich, and completely full of character.",
+    "tagline": "A deep, dark berry - rich, full, and brimming with character.",
+    "description": "KWZ Berry is a dark, saturated berry-purple - the colour of ripe blackberries crushed on your fingers. Deep, rich, and completely full of character.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -3342,7 +3342,7 @@ const INKS = [
     "name": "Aphrodite Pink",
     "colorPrimary": "#e07a9a",
     "colorDark": "#c05a7a",
-    "tagline": "Warm, goddess-worthy pink — the blush of love itself.",
+    "tagline": "Warm, goddess-worthy pink - the blush of love itself.",
     "description": "Named for the goddess of love, Aphrodite Pink is a warm, vivid pink with a coral lean. Bright and confident, it's a pink that announces itself without apology.",
     "properties": {
       "shading": 2,
@@ -3359,7 +3359,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Takes on a slightly peachy quality on cream paper — warm and inviting."
+        "body": "Takes on a slightly peachy quality on cream paper - warm and inviting."
       },
       {
         "title": "Nib behaviour",
@@ -3376,7 +3376,7 @@ const INKS = [
     "colorPrimary": "#2a7a3a",
     "colorDark": "#1a5a2a",
     "tagline": "The deep, regal green of the queen of Olympus.",
-    "description": "Named for the queen of the gods, Hera Green is a rich, saturated forest green — deep, authoritative, and completely commanding on the page.",
+    "description": "Named for the queen of the gods, Hera Green is a rich, saturated forest green - deep, authoritative, and completely commanding on the page.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -3407,7 +3407,7 @@ const INKS = [
     "name": "Artemis Navy",
     "colorPrimary": "#1a2a5a",
     "colorDark": "#0a1a3a",
-    "tagline": "Deep, moonlit navy — the colour of the hunt at midnight.",
+    "tagline": "Deep, moonlit navy - the colour of the hunt at midnight.",
     "description": "Named for the goddess of the hunt and the moon, Artemis Navy is a deep, classic navy with real depth and authority. Dark, reliable, and endlessly wearable.",
     "properties": {
       "shading": 2,
@@ -3428,7 +3428,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Reliable in all nib sizes — an excellent daily writer."
+        "body": "Reliable in all nib sizes - an excellent daily writer."
       }
     ],
     "stock": 20
@@ -3472,7 +3472,7 @@ const INKS = [
     "colorPrimary": "#c86a1a",
     "colorDark": "#a84a0a",
     "tagline": "The warm, blazing orange of the sun god in full glory.",
-    "description": "Named for the god of the sun, Apollo Orange is a bold, warm orange that radiates energy and warmth. Vivid without being garish — it's orange done properly.",
+    "description": "Named for the god of the sun, Apollo Orange is a bold, warm orange that radiates energy and warmth. Vivid without being garish - it's orange done properly.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -3505,8 +3505,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#7a5a2a",
     "colorDark": "#5a3a0a",
-    "tagline": "The warm, fertile brown of the earth goddess — grounded and nourishing.",
-    "description": "Named for the goddess of the harvest, Demeter Brown is a warm, earthy medium brown. Like good soil — grounded, natural, and deeply satisfying to write with.",
+    "tagline": "The warm, fertile brown of the earth goddess - grounded and nourishing.",
+    "description": "Named for the goddess of the harvest, Demeter Brown is a warm, earthy medium brown. Like good soil - grounded, natural, and deeply satisfying to write with.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3539,7 +3539,7 @@ const INKS = [
     "colorPrimary": "#5a9ac8",
     "colorDark": "#3a7aa8",
     "tagline": "The bright, open sky-blue of the messenger god in flight.",
-    "description": "Named for the swift messenger of the gods, Hermes Sky Blue is a clean, vivid sky-blue — open, communicative, and full of energy. The perfect blue for letters and correspondence.",
+    "description": "Named for the swift messenger of the gods, Hermes Sky Blue is a clean, vivid sky-blue - open, communicative, and full of energy. The perfect blue for letters and correspondence.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -3571,8 +3571,8 @@ const INKS = [
     "name": "Ares Red",
     "colorPrimary": "#9a1a1a",
     "colorDark": "#7a0a0a",
-    "tagline": "Bold, battle-ready red — the colour of the god of war.",
-    "description": "Named for the god of war, Ares Red is a vivid, saturated red with real intensity. Not quite as dark as oxblood or burgundy — this is a red that means business.",
+    "tagline": "Bold, battle-ready red - the colour of the god of war.",
+    "description": "Named for the god of war, Ares Red is a vivid, saturated red with real intensity. Not quite as dark as oxblood or burgundy - this is a red that means business.",
     "properties": {
       "shading": 2,
       "sheen": 1,
@@ -3604,8 +3604,8 @@ const INKS = [
     "name": "Zeus Purple",
     "colorPrimary": "#4a1a6a",
     "colorDark": "#2a0a4a",
-    "tagline": "A commanding deep purple — the imperial colour of the king of gods.",
-    "description": "Named for the king of Olympus, Zeus Purple is a deep, regal purple with genuine authority. Dark, saturated, and commanding — exactly what you'd expect of a god-king.",
+    "tagline": "A commanding deep purple - the imperial colour of the king of gods.",
+    "description": "Named for the king of Olympus, Zeus Purple is a deep, regal purple with genuine authority. Dark, saturated, and commanding - exactly what you'd expect of a god-king.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -3621,7 +3621,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Darkens slightly on textured stock — still deeply impressive."
+        "body": "Darkens slightly on textured stock - still deeply impressive."
       },
       {
         "title": "Nib behaviour",
@@ -3638,8 +3638,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#9a7a3a",
     "colorDark": "#7a5a1a",
-    "tagline": "Warm, golden tan — the colour of sesame oil catching the light.",
-    "description": "Sesame Oil is a warm, golden amber-brown that evokes the colour of pressed sesame oil in a clear bottle. Unique, warm, and grounding — a beautiful neutral with character.",
+    "tagline": "Warm, golden tan - the colour of sesame oil catching the light.",
+    "description": "Sesame Oil is a warm, golden amber-brown that evokes the colour of pressed sesame oil in a clear bottle. Unique, warm, and grounding - a beautiful neutral with character.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -3671,8 +3671,8 @@ const INKS = [
     "name": "Dried Longan",
     "colorPrimary": "#7a4a2a",
     "colorDark": "#5a2a0a",
-    "tagline": "The rich, warm brown of dried longan fruit — earthy and sweet.",
-    "description": "Dried Longan is a warm, medium-dark brown inspired by the dried tropical fruit. Earthy and warm, it's the ink equivalent of a perfectly preserved piece of fruit — complex and satisfying.",
+    "tagline": "The rich, warm brown of dried longan fruit - earthy and sweet.",
+    "description": "Dried Longan is a warm, medium-dark brown inspired by the dried tropical fruit. Earthy and warm, it's the ink equivalent of a perfectly preserved piece of fruit - complex and satisfying.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3688,7 +3688,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on aged or cream paper — feels genuinely artisanal."
+        "body": "Gorgeous on aged or cream paper - feels genuinely artisanal."
       },
       {
         "title": "Nib behaviour",
@@ -3705,7 +3705,7 @@ const INKS = [
     "colorPrimary": "#6a7a5a",
     "colorDark": "#4a5a3a",
     "tagline": "A warm grey-green like the colour of brewed miso soup.",
-    "description": "Misona Tea is a warm, muted grey-green that sits between sage and khaki. It's the colour of miso broth in soft light — earthy, comforting, and unlike anything else.",
+    "description": "Misona Tea is a warm, muted grey-green that sits between sage and khaki. It's the colour of miso broth in soft light - earthy, comforting, and unlike anything else.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3738,7 +3738,7 @@ const INKS = [
     "colorPrimary": "#6a4a6a",
     "colorDark": "#42283f",
     "tagline": "The warm, earthy purple-grey of steamed purple rice.",
-    "description": "Purple Rice is a muted, earthy purple with warm grey undertones — inspired by the nutty heritage grain. In keeping with Lennon Tool Bar's pantry-inspired range, it's comforting, organic and quietly distinctive on the page.",
+    "description": "Purple Rice is a muted, earthy purple with warm grey undertones - inspired by the nutty heritage grain. In keeping with Lennon Tool Bar's pantry-inspired range, it's comforting, organic and quietly distinctive on the page.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -3771,7 +3771,7 @@ const INKS = [
     "colorPrimary": "#6a2a1a",
     "colorDark": "#4a0a0a",
     "tagline": "The deep, earthy red of slow-cooked red beans.",
-    "description": "Red Beans is a dark, muted red-brown — the colour of the beloved East Asian ingredient after long cooking. Earthy, warm, and deeply grounding.",
+    "description": "Red Beans is a dark, muted red-brown - the colour of the beloved East Asian ingredient after long cooking. Earthy, warm, and deeply grounding.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -3804,7 +3804,7 @@ const INKS = [
     "colours": ["Orange","Red"],
     "colorPrimary": "#7a1a1a",
     "colorDark": "#5a0a0a",
-    "tagline": "The deep, dried red of a jujube fruit — ancient and warming.",
+    "tagline": "The deep, dried red of a jujube fruit - ancient and warming.",
     "description": "Jujube is a dark, rich red inspired by the traditional East Asian fruit. Deep, slightly brown-red with the warmth of centuries of use in teas and desserts.",
     "properties": {
       "shading": 3,
@@ -3838,7 +3838,7 @@ const INKS = [
     "colorPrimary": "#7a5a2a",
     "colorDark": "#5a3a0a",
     "tagline": "The warm, sun-warmed brown of tropical driftwood.",
-    "description": "Island Wood is a warm, medium brown with a golden lean — the colour of wood bleached and warmed by tropical sun. Natural, honest, and genuinely beautiful.",
+    "description": "Island Wood is a warm, medium brown with a golden lean - the colour of wood bleached and warmed by tropical sun. Natural, honest, and genuinely beautiful.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3871,7 +3871,7 @@ const INKS = [
     "colorPrimary": "#5a6a7a",
     "colorDark": "#3a4a5a",
     "tagline": "The cool, murky blue-grey of a river at dusk.",
-    "description": "Catfish Spirit is a cool, atmospheric blue-grey — the colour of the deep part of a river where catfish lurk. Moody and mysterious, it's one of the more unusual colours in the range.",
+    "description": "Catfish Spirit is a cool, atmospheric blue-grey - the colour of the deep part of a river where catfish lurk. Moody and mysterious, it's one of the more unusual colours in the range.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -3904,8 +3904,8 @@ const INKS = [
     "colours": ["Grey"],
     "colorPrimary": "#9a7aaa",
     "colorDark": "#7a5a8a",
-    "tagline": "A soft, magical lavender-purple — the ink of wishes and whimsy.",
-    "description": "Pen Fairy is a gentle, muted lavender-purple — the colour of fairy wings in soft light. It's magical without being loud, whimsical without being childish.",
+    "tagline": "A soft, magical lavender-purple - the ink of wishes and whimsy.",
+    "description": "Pen Fairy is a gentle, muted lavender-purple - the colour of fairy wings in soft light. It's magical without being loud, whimsical without being childish.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -3938,7 +3938,7 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#8a9aaa",
     "colorDark": "#6a7a8a",
-    "tagline": "A cool, misty blue-grey — mysterious as a fortune teller's crystal ball.",
+    "tagline": "A cool, misty blue-grey - mysterious as a fortune teller's crystal ball.",
     "description": "Fortune Teller 168 Light is a cool, soft blue-grey with an atmospheric, slightly otherworldly quality. Light and muted, it feels like the morning before the fortune is told.",
     "properties": {
       "shading": 2,
@@ -3973,7 +3973,7 @@ const INKS = [
     "colorPrimary": "#5a6a3a",
     "colorDark": "#3a4a1a",
     "tagline": "An earthy, ancient olive-green inspired by Chinese cosmology.",
-    "description": "Tortoise and Serpent (named for the Black Tortoise constellation) is a dark, earthy olive-green — grounded, ancient, and full of quiet power.",
+    "description": "Tortoise and Serpent (named for the Black Tortoise constellation) is a dark, earthy olive-green - grounded, ancient, and full of quiet power.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -3985,7 +3985,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dark olive-green with good shading. Earthy and distinctive — unlike standard greens."
+        "body": "Dark olive-green with good shading. Earthy and distinctive - unlike standard greens."
       },
       {
         "title": "On textured paper",
@@ -4006,8 +4006,8 @@ const INKS = [
     "colours": ["Green"],
     "colorPrimary": "#1a3a6a",
     "colorDark": "#0a1a4a",
-    "tagline": "The deep, vast blue of the night sky — infinite and awe-inspiring.",
-    "description": "Firament (Firmament) is a very dark, deep blue — the colour of the sky at its most profound depth. Rich, dark, and quietly majestic.",
+    "tagline": "The deep, vast blue of the night sky - infinite and awe-inspiring.",
+    "description": "Firament (Firmament) is a very dark, deep blue - the colour of the sky at its most profound depth. Rich, dark, and quietly majestic.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -4040,7 +4040,7 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#2a1a1a",
     "colorDark": "#0a0a0a",
-    "tagline": "Near-black with a whisper of brown — the ink of shadows.",
+    "tagline": "Near-black with a whisper of brown - the ink of shadows.",
     "description": "Black Hound is an almost-black ink with the faintest warm brown undertone. It's dark enough to read as black in normal use but reveals its true nature in the light.",
     "properties": {
       "shading": 2,
@@ -4073,8 +4073,8 @@ const INKS = [
     "name": "Outback Forest",
     "colorPrimary": "#2a5a2a",
     "colorDark": "#1a3a1a",
-    "tagline": "A deep, ancient forest green — the green of old-growth Australian bush.",
-    "description": "Outback Forest is a deep, rich green with an earthy, ancient quality. It evokes the deep Australian bush — old eucalyptus forest under a hot sky, cool in the shade.",
+    "tagline": "A deep, ancient forest green - the green of old-growth Australian bush.",
+    "description": "Outback Forest is a deep, rich green with an earthy, ancient quality. It evokes the deep Australian bush - old eucalyptus forest under a hot sky, cool in the shade.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -4107,7 +4107,7 @@ const INKS = [
     "colours": ["Pink"],
     "colorPrimary": "#7a2a2a",
     "colorDark": "#5a0a0a",
-    "tagline": "The bittersweet colour of chocolate dipped strawberries — rich and indulgent.",
+    "tagline": "The bittersweet colour of chocolate dipped strawberries - rich and indulgent.",
     "description": "Strawberry Chocolate is a deep, warm red-brown that sits between dark chocolate and dried strawberry. From Kobe's famous patisserie-inspired range, it's indulgent and completely unique.",
     "properties": {
       "shading": 3,
@@ -4124,7 +4124,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "The richness deepens on cream paper — truly indulgent."
+        "body": "The richness deepens on cream paper - truly indulgent."
       },
       {
         "title": "Nib behaviour",
@@ -4142,7 +4142,7 @@ const INKS = [
     "colorPrimary": "#9a6a3a",
     "colorDark": "#7a4a1a",
     "tagline": "The warm, creamy brown of premium milk chocolate.",
-    "description": "Milk Chocolate is a warm, medium brown with a creamy, sweet quality — the colour of fine milk chocolate from a Kobe confiserie. Rich, warm, and completely satisfying.",
+    "description": "Milk Chocolate is a warm, medium brown with a creamy, sweet quality - the colour of fine milk chocolate from a Kobe confiserie. Rich, warm, and completely satisfying.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -4175,8 +4175,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#4a2a1a",
     "colorDark": "#2a0a0a",
-    "tagline": "The deep, intense darkness of 85% cacao — rich and complex.",
-    "description": "Bitter Chocolate is a very dark, rich brown — almost black, with a warm depth that reveals itself in lighter strokes. The ink equivalent of premium dark chocolate.",
+    "tagline": "The deep, intense darkness of 85% cacao - rich and complex.",
+    "description": "Bitter Chocolate is a very dark, rich brown - almost black, with a warm depth that reveals itself in lighter strokes. The ink equivalent of premium dark chocolate.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -4210,8 +4210,8 @@ const INKS = [
     "name": "Unicorn",
     "colorPrimary": "#9a8ac8",
     "colorDark": "#7a6aa8",
-    "tagline": "A magical shimmer lavender — iridescent as a unicorn's mane.",
-    "description": "Unicorn is a soft, shimmering lavender with a magical, iridescent quality. Multi-colour shimmer particles catch the light differently at every angle — genuinely enchanting.",
+    "tagline": "A magical shimmer lavender - iridescent as a unicorn's mane.",
+    "description": "Unicorn is a soft, shimmering lavender with a magical, iridescent quality. Multi-colour shimmer particles catch the light differently at every angle - genuinely enchanting.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -4263,7 +4263,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "The teal colour remains vivid on textured stock — the shimmer effect is more subtle."
+        "body": "The teal colour remains vivid on textured stock - the shimmer effect is more subtle."
       },
       {
         "title": "Nib behaviour",
@@ -4315,8 +4315,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#8a5a2a",
     "colorDark": "#6a3a0a",
-    "tagline": "A brilliant, warm brown — classic Pelikan quality in a rich autumn shade.",
-    "description": "Pelikan Brilliant Brown is a warm, medium-dark brown with excellent flow and consistency. The 'brilliant' in the name is earned — there's a quality and depth to this ink that stands out.",
+    "tagline": "A brilliant, warm brown - classic Pelikan quality in a rich autumn shade.",
+    "description": "Pelikan Brilliant Brown is a warm, medium-dark brown with excellent flow and consistency. The 'brilliant' in the name is earned - there's a quality and depth to this ink that stands out.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -4336,7 +4336,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Outstanding in all nib sizes — Pelikan inks are among the smoothest available."
+        "body": "Outstanding in all nib sizes - Pelikan inks are among the smoothest available."
       }
     ],
     "image": "images/pelikan-brilliant-brown.jpg",
@@ -4348,8 +4348,8 @@ const INKS = [
     "name": "Blue Black",
     "colorPrimary": "#1a2a3a",
     "colorDark": "#0a1a2a",
-    "tagline": "The definitive blue-black — a hundred years of writing tradition.",
-    "description": "Pelikan Blue Black is one of the most famous fountain pen inks in history. A deep, classic blue-black that leans more blue than black — traditional, impeccably well-behaved, and beloved by generations of writers.",
+    "tagline": "The definitive blue-black - a hundred years of writing tradition.",
+    "description": "Pelikan Blue Black is one of the most famous fountain pen inks in history. A deep, classic blue-black that leans more blue than black - traditional, impeccably well-behaved, and beloved by generations of writers.",
     "properties": {
       "shading": 2,
       "sheen": 1,
@@ -4361,7 +4361,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "The platonic ideal of blue-black — deep, reliable, and beautiful. Slight water resistance from the iron gall component."
+        "body": "The platonic ideal of blue-black - deep, reliable, and beautiful. Slight water resistance from the iron gall component."
       },
       {
         "title": "On textured paper",
@@ -4383,7 +4383,7 @@ const INKS = [
     "colorPrimary": "#d4c89a",
     "colorDark": "#b4a87a",
     "tagline": "The warm, creamy ivory of milk poured through autumn grass.",
-    "description": "Susuki Milk (susuki is the Japanese pampas grass) is a soft, warm cream — not quite beige, not quite yellow, but the beautiful warm ivory of morning light on pale grass.",
+    "description": "Susuki Milk (susuki is the Japanese pampas grass) is a soft, warm cream - not quite beige, not quite yellow, but the beautiful warm ivory of morning light on pale grass.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -4395,7 +4395,7 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm, soft cream-ivory with a gentle golden lean. Very pale — best appreciated on bright white paper."
+        "body": "Warm, soft cream-ivory with a gentle golden lean. Very pale - best appreciated on bright white paper."
       },
       {
         "title": "On textured paper",
@@ -4416,8 +4416,8 @@ const INKS = [
     "name": "Yama-Budo",
     "colorPrimary": "#6a1a3a",
     "colorDark": "#4a0a1a",
-    "tagline": "Mountain grape — a deep, rich burgundy-purple from the Japanese highlands.",
-    "description": "Yama-Budo (mountain grape) is one of Iroshizuku's most celebrated inks — a deep, complex burgundy-purple with exceptional shading. It evokes wild grapes clinging to mountain slopes in autumn.",
+    "tagline": "Mountain grape - a deep, rich burgundy-purple from the Japanese highlands.",
+    "description": "Yama-Budo (mountain grape) is one of Iroshizuku's most celebrated inks - a deep, complex burgundy-purple with exceptional shading. It evokes wild grapes clinging to mountain slopes in autumn.",
     "properties": {
       "shading": 5,
       "sheen": 3,
@@ -4449,8 +4449,8 @@ const INKS = [
     "name": "Kon-peki",
     "colorPrimary": "#1a5a9a",
     "colorDark": "#0a3a7a",
-    "tagline": "Azure blue — the vivid, pure blue of a clear Japanese sky.",
-    "description": "Kon-peki (azure) is a vivid, saturated sky-blue that's consistently rated among the most beautiful inks in the world. Bright, clean, and exceptional — everything a blue should be.",
+    "tagline": "Azure blue - the vivid, pure blue of a clear Japanese sky.",
+    "description": "Kon-peki (azure) is a vivid, saturated sky-blue that's consistently rated among the most beautiful inks in the world. Bright, clean, and exceptional - everything a blue should be.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -4483,7 +4483,7 @@ const INKS = [
     "name": "Ku-jaku",
     "colorPrimary": "#1a7a7a",
     "colorDark": "#0a5a5a",
-    "tagline": "Peacock — a vivid, saturated teal as spectacular as the bird itself.",
+    "tagline": "Peacock - a vivid, saturated teal as spectacular as the bird itself.",
     "description": "Ku-jaku (peacock) is a rich, vivid teal that shifts between blue and green like actual peacock plumage. Saturated, magnificent, and completely show-stopping.",
     "properties": {
       "shading": 4,
@@ -4516,7 +4516,7 @@ const INKS = [
     "name": "Fuyu-syogun",
     "colorPrimary": "#5a6a8a",
     "colorDark": "#3a4a6a",
-    "tagline": "Winter general — the cold, steely blue-grey of a frozen battlefield.",
+    "tagline": "Winter general - the cold, steely blue-grey of a frozen battlefield.",
     "description": "Fuyu-syogun (winter general) is a cool, muted blue-grey that captures the austere quality of winter in Japan. Serious, dignified, and quietly beautiful.",
     "properties": {
       "shading": 4,
@@ -4549,7 +4549,7 @@ const INKS = [
     "name": "Ajisai",
     "colorPrimary": "#6a5a8a",
     "colorDark": "#4a3a6a",
-    "tagline": "Hydrangea — the soft, complex blue-purple of rainy season flowers.",
+    "tagline": "Hydrangea - the soft, complex blue-purple of rainy season flowers.",
     "description": "Ajisai (hydrangea) is a soft, muted blue-purple that perfectly captures the colour of hydrangeas in Japan's rainy season. Complex, gentle, and genuinely beautiful.",
     "properties": {
       "shading": 4,
@@ -4566,7 +4566,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Still beautiful on textured stock — the gentle character suits all papers."
+        "body": "Still beautiful on textured stock - the gentle character suits all papers."
       },
       {
         "title": "Nib behaviour",
@@ -4582,8 +4582,8 @@ const INKS = [
     "name": "Syo-ro",
     "colorPrimary": "#2a7a6a",
     "colorDark": "#1a5a4a",
-    "tagline": "Dew on pine needles — cool, fresh blue-green at the break of dawn.",
-    "description": "Syo-ro (dew on pine needles) is a cool, saturated blue-green — the colour of morning dew on dark evergreen branches. Fresh, clean, and deeply refreshing.",
+    "tagline": "Dew on pine needles - cool, fresh blue-green at the break of dawn.",
+    "description": "Syo-ro (dew on pine needles) is a cool, saturated blue-green - the colour of morning dew on dark evergreen branches. Fresh, clean, and deeply refreshing.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -4603,7 +4603,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Silky smooth in all sizes — a joy to write with."
+        "body": "Silky smooth in all sizes - a joy to write with."
       }
     ],
     "image": "images/pilot-iroshizuku-syo-ro.jpg",
@@ -4615,8 +4615,8 @@ const INKS = [
     "name": "Sui-gyoku",
     "colorPrimary": "#2a7a4a",
     "colorDark": "#1a5a2a",
-    "tagline": "Green jade — the cool, precious green of carved stone.",
-    "description": "Sui-gyoku (green jade) is a cool, saturated green that captures the colour of fine jade — deep, slightly blue-green, and unmistakably precious-feeling.",
+    "tagline": "Green jade - the cool, precious green of carved stone.",
+    "description": "Sui-gyoku (green jade) is a cool, saturated green that captures the colour of fine jade - deep, slightly blue-green, and unmistakably precious-feeling.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -4636,7 +4636,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Pilot smoothness — a broad nib shows the shading most dramatically."
+        "body": "Pilot smoothness - a broad nib shows the shading most dramatically."
       }
     ],
     "image": "images/pilot-iroshizuku-sui-gyoku.jpg",
@@ -4649,8 +4649,8 @@ const INKS = [
     "colours": ["Pink"],
     "colorPrimary": "#e08a9a",
     "colorDark": "#c06a7a",
-    "tagline": "Flower raft — the delicate pink of cherry blossom petals on water.",
-    "description": "Hana-ikada (flower raft) is a warm, medium pink inspired by fallen cherry blossoms floating on a stream. Warm, vivid, and graceful — one of Iroshizuku's most beloved inks.",
+    "tagline": "Flower raft - the delicate pink of cherry blossom petals on water.",
+    "description": "Hana-ikada (flower raft) is a warm, medium pink inspired by fallen cherry blossoms floating on a stream. Warm, vivid, and graceful - one of Iroshizuku's most beloved inks.",
     "properties": {
       "shading": 4,
       "sheen": 1,
@@ -4666,7 +4666,7 @@ const INKS = [
       },
       {
         "title": "On textured paper",
-        "body": "Still beautifully pink on all papers — the warmth translates perfectly."
+        "body": "Still beautifully pink on all papers - the warmth translates perfectly."
       },
       {
         "title": "Nib behaviour",
@@ -4683,7 +4683,7 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#d47a6a",
     "colorDark": "#b45a4a",
-    "tagline": "Spring dawn fish — a warm, glowing salmon-pink at sunrise.",
+    "tagline": "Spring dawn fish - a warm, glowing salmon-pink at sunrise.",
     "description": "Syun-gyo (spring dawn fish) is a warm, coral-salmon pink that glows with the quality of spring sunrise light on water. Unique, warm, and utterly beautiful.",
     "properties": {
       "shading": 4,
@@ -4716,8 +4716,8 @@ const INKS = [
     "name": "Murasaki-shikibu",
     "colorPrimary": "#5a2a7a",
     "colorDark": "#3a0a5a",
-    "tagline": "Named for the world's first novelist — a rich, literary purple.",
-    "description": "Murasaki-shikibu is named for the 11th-century Japanese author of The Tale of Genji, the world's first novel. A rich, medium-dark purple — literary, considered, and completely beautiful.",
+    "tagline": "Named for the world's first novelist - a rich, literary purple.",
+    "description": "Murasaki-shikibu is named for the 11th-century Japanese author of The Tale of Genji, the world's first novel. A rich, medium-dark purple - literary, considered, and completely beautiful.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -4750,7 +4750,7 @@ const INKS = [
     "colorPrimary": "#5a9a6a",
     "colorDark": "#3a7a4a",
     "tagline": "A fresh, clean green with a wholesome, restorative glow.",
-    "description": "Detox is a bright, fresh green with a touch of cool blue — clean and revitalising, like the first green of spring. Robert Oster's signature smooth flow makes it a pleasure to write with.",
+    "description": "Detox is a bright, fresh green with a touch of cool blue - clean and revitalising, like the first green of spring. Robert Oster's signature smooth flow makes it a pleasure to write with.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -4783,8 +4783,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#5a3a2a",
     "colorDark": "#3a1a0a",
-    "tagline": "Rich, indulgent chocolate brown — dark, warm, and delicious.",
-    "description": "Choc Pudding is a deep, warm brown with the richness of dark chocolate dessert. It shades beautifully and feels indulgent on the page — comforting and completely satisfying.",
+    "tagline": "Rich, indulgent chocolate brown - dark, warm, and delicious.",
+    "description": "Choc Pudding is a deep, warm brown with the richness of dark chocolate dessert. It shades beautifully and feels indulgent on the page - comforting and completely satisfying.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -4817,7 +4817,7 @@ const INKS = [
     "colorPrimary": "#c88a9a",
     "colorDark": "#a86a7a",
     "tagline": "A soft, muted rose with vintage charm and gentle warmth.",
-    "description": "Dusty Pink is a warm, muted rose — refined and grown-up rather than bright or candy-like. The dusty quality gives it real sophistication and makes it endlessly wearable.",
+    "description": "Dusty Pink is a warm, muted rose - refined and grown-up rather than bright or candy-like. The dusty quality gives it real sophistication and makes it endlessly wearable.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -4851,7 +4851,7 @@ const INKS = [
     "colorPrimary": "#3a8a5a",
     "colorDark": "#1a6a3a",
     "tagline": "A vivid wasabi green with a fresh, zesty bite.",
-    "description": "Sushi is a bright, vivid green with a slight yellow lean — fresh and zesty like wasabi. It's energetic and lively, one of Robert Oster's most cheerful greens.",
+    "description": "Sushi is a bright, vivid green with a slight yellow lean - fresh and zesty like wasabi. It's energetic and lively, one of Robert Oster's most cheerful greens.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -4884,7 +4884,7 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#8a7ab8",
     "colorDark": "#6a5a98",
-    "tagline": "A soft, sunlit lavender — gentle as a summer afternoon in Sydney.",
+    "tagline": "A soft, sunlit lavender - gentle as a summer afternoon in Sydney.",
     "description": "Sydney Lavender is a warm, medium lavender-purple with a gentle, sunlit quality. It's softer and warmer than a cool lavender, with genuine charm and excellent shading.",
     "properties": {
       "shading": 3,
@@ -4918,7 +4918,7 @@ const INKS = [
     "colorPrimary": "#3a5a7a",
     "colorDark": "#1a3a5a",
     "tagline": "The deep, moody blue-grey of a summer storm rolling in.",
-    "description": "Storm Summer is a deep, atmospheric blue-grey — the colour of heavy clouds before a summer downpour. Moody, sophisticated, and beautifully shaded.",
+    "description": "Storm Summer is a deep, atmospheric blue-grey - the colour of heavy clouds before a summer downpour. Moody, sophisticated, and beautifully shaded.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -4952,7 +4952,7 @@ const INKS = [
     "colorPrimary": "#9a7a5a",
     "colorDark": "#7a5a3a",
     "tagline": "The warm, creamy tan of espresso crema on a perfect shot.",
-    "description": "Caffe Crema is a warm, light-to-medium brown with a creamy, golden quality — the colour of the crema on a well-pulled espresso. Comforting, smooth, and very pleasant.",
+    "description": "Caffe Crema is a warm, light-to-medium brown with a creamy, golden quality - the colour of the crema on a well-pulled espresso. Comforting, smooth, and very pleasant.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -4984,7 +4984,7 @@ const INKS = [
     "name": "Wind",
     "colorPrimary": "#7a9aaa",
     "colorDark": "#5a7a8a",
-    "tagline": "A cool, breezy grey-blue — light and airy as a sea breeze.",
+    "tagline": "A cool, breezy grey-blue - light and airy as a sea breeze.",
     "description": "Wind is a soft, cool grey-blue with a light, airy quality. It's gentle and refreshing, with the kind of muted sophistication that makes it perfect for everyday writing.",
     "properties": {
       "shading": 3,
@@ -5020,7 +5020,7 @@ const INKS = [
     "colorPrimary": "#1a6a9a",
     "colorDark": "#0a4a7a",
     "tagline": "The vivid blue of sunlit water in Sydney's famous harbour.",
-    "description": "Sydney Darling Harbour is a bright, saturated blue with a hint of teal — the colour of harbour water sparkling in Australian sun. Vivid, clean, and full of energy.",
+    "description": "Sydney Darling Harbour is a bright, saturated blue with a hint of teal - the colour of harbour water sparkling in Australian sun. Vivid, clean, and full of energy.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -5055,7 +5055,7 @@ const INKS = [
     "colorPrimary": "#3a3e2a",
     "colorDark": "#1c1d12",
     "tagline": "A dark, murky olive-green the colour of used engine oil.",
-    "description": "Motor Oil is a deep, murky olive-green — exactly the shade its name suggests, like oil drained from an engine. Industrial and mysterious, it dries dark with a green-grey cast, surprising shading in lighter strokes and a subtle sheen at the edges.",
+    "description": "Motor Oil is a deep, murky olive-green - exactly the shade its name suggests, like oil drained from an engine. Industrial and mysterious, it dries dark with a green-grey cast, surprising shading in lighter strokes and a subtle sheen at the edges.",
     "properties": {
       "shading": 4,
       "sheen": 3,
@@ -5088,7 +5088,7 @@ const INKS = [
     "colorPrimary": "#9a4a2a",
     "colorDark": "#7a2a0a",
     "tagline": "The warm, oxidised orange-brown of weathered iron.",
-    "description": "Tiverton Rust is a warm rust-orange with brown depth — the colour of corroded iron in the rain. Earthy, warm, and full of character, it shades beautifully.",
+    "description": "Tiverton Rust is a warm rust-orange with brown depth - the colour of corroded iron in the rain. Earthy, warm, and full of character, it shades beautifully.",
     "properties": {
       "shading": 4,
       "sheen": 1,
@@ -5123,7 +5123,7 @@ const INKS = [
     "colorPrimary": "#8a1a2a",
     "colorDark": "#5a0a1a",
     "tagline": "A deep, dramatic red with a wicked gold-green sheen.",
-    "description": "Sinners Blood is a deep, dark red with one of the most dramatic sheens in the Robert Oster range — a gold-green shimmer that erupts at stroke edges. Wicked, gorgeous, and unforgettable.",
+    "description": "Sinners Blood is a deep, dark red with one of the most dramatic sheens in the Robert Oster range - a gold-green shimmer that erupts at stroke edges. Wicked, gorgeous, and unforgettable.",
     "properties": {
       "shading": 3,
       "sheen": 4,
@@ -5158,7 +5158,7 @@ const INKS = [
     "colorPrimary": "#7a1a4a",
     "colorDark": "#5a0a2a",
     "tagline": "A dark magenta-red with a seductive blue-gold sheen.",
-    "description": "Sinners Heart is a deep magenta-red — darker and more purple than Sinners Blood — with a dramatic blue-gold sheen. Seductive, complex, and completely captivating.",
+    "description": "Sinners Heart is a deep magenta-red - darker and more purple than Sinners Blood - with a dramatic blue-gold sheen. Seductive, complex, and completely captivating.",
     "properties": {
       "shading": 3,
       "sheen": 4,
@@ -5192,7 +5192,7 @@ const INKS = [
     "colorPrimary": "#d48a6a",
     "colorDark": "#b46a4a",
     "tagline": "A warm, soft melon-orange with a gentle, refreshing glow.",
-    "description": "Melon Tea is a warm, soft orange with a peachy, melon quality — gentle and refreshing rather than bold. It's a lovely, easy-wearing warm colour with good shading.",
+    "description": "Melon Tea is a warm, soft orange with a peachy, melon quality - gentle and refreshing rather than bold. It's a lovely, easy-wearing warm colour with good shading.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -5212,7 +5212,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes — best in medium or broad to show the shading."
+        "body": "Smooth in all sizes - best in medium or broad to show the shading."
       }
     ],
     "image": "images/robert-oster-melon-tea.jpg",
@@ -5225,7 +5225,7 @@ const INKS = [
     "colorPrimary": "#6a3a9a",
     "colorDark": "#4a1a7a",
     "tagline": "A rich, vivid violet with depth and a velvety quality.",
-    "description": "Viola is a saturated mid-purple with real depth and a velvety richness. It's vivid without being garish — a beautifully balanced purple that suits everyday writing and special occasions alike.",
+    "description": "Viola is a saturated mid-purple with real depth and a velvety richness. It's vivid without being garish - a beautifully balanced purple that suits everyday writing and special occasions alike.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -5245,7 +5245,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes — broad nibs show the shading and sheen best."
+        "body": "Excellent in all sizes - broad nibs show the shading and sheen best."
       }
     ],
     "image": "images/robert-oster-viola.jpg",
@@ -5293,7 +5293,7 @@ const INKS = [
     "colorPrimary": "#2a1a4a",
     "colorDark": "#0a0a2a",
     "tagline": "A near-black purple that reveals violet depths in the light.",
-    "description": "Black Violet is a very dark purple — almost black at first glance, revealing rich violet undertones in lighter strokes and at stroke edges. Dramatic and mysterious.",
+    "description": "Black Violet is a very dark purple - almost black at first glance, revealing rich violet undertones in lighter strokes and at stroke edges. Dramatic and mysterious.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -5326,7 +5326,7 @@ const INKS = [
     "colorPrimary": "#1a5aaa",
     "colorDark": "#0a3a8a",
     "tagline": "The deep, luminous blue of a precious Australian opal.",
-    "description": "Australian Opal Blue is a rich, luminous blue with depth and a slight purple lean. It evokes the glowing blue fire inside a black opal — vivid, beautiful, and full of life.",
+    "description": "Australian Opal Blue is a rich, luminous blue with depth and a slight purple lean. It evokes the glowing blue fire inside a black opal - vivid, beautiful, and full of life.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -5360,7 +5360,7 @@ const INKS = [
     "colorPrimary": "#1a2a6a",
     "colorDark": "#0a1a4a",
     "tagline": "A deep, jewelled blue-black with the glint of a sapphire.",
-    "description": "Midnight Sapphire is a very deep blue with subtle purple depth — the colour of a dark sapphire under low light. Rich, dramatic, and beautifully suited to elegant writing.",
+    "description": "Midnight Sapphire is a very deep blue with subtle purple depth - the colour of a dark sapphire under low light. Rich, dramatic, and beautifully suited to elegant writing.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -5392,8 +5392,8 @@ const INKS = [
     "name": "Turquoise",
     "colorPrimary": "#1a9aaa",
     "colorDark": "#0a7a8a",
-    "tagline": "A bright, refreshing turquoise — clean and full of life.",
-    "description": "Robert Oster Turquoise is a vivid, clean turquoise that sits perfectly between blue and green. Bright, refreshing, and beautifully behaved — a modern classic.",
+    "tagline": "A bright, refreshing turquoise - clean and full of life.",
+    "description": "Robert Oster Turquoise is a vivid, clean turquoise that sits perfectly between blue and green. Bright, refreshing, and beautifully behaved - a modern classic.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -5425,8 +5425,8 @@ const INKS = [
     "name": "Frankly Blue",
     "colorPrimary": "#2a4a9a",
     "colorDark": "#1a2a7a",
-    "tagline": "An honest, classic blue — straightforward and beautifully balanced.",
-    "description": "Frankly Blue is exactly what it says — a clean, honest, classic blue with no pretensions. Well-balanced and beautifully behaved, it's an everyday blue done exceptionally well.",
+    "tagline": "An honest, classic blue - straightforward and beautifully balanced.",
+    "description": "Frankly Blue is exactly what it says - a clean, honest, classic blue with no pretensions. Well-balanced and beautifully behaved, it's an everyday blue done exceptionally well.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -5458,8 +5458,8 @@ const INKS = [
     "name": "Avocado",
     "colorPrimary": "#6a7a3a",
     "colorDark": "#4a5a1a",
-    "tagline": "A warm, earthy olive-green — ripe, rich, and wholesome.",
-    "description": "Avocado is a warm olive-green with a yellow lean — earthy and wholesome like ripe avocado flesh. It's a grounded, natural green with excellent shading.",
+    "tagline": "A warm, earthy olive-green - ripe, rich, and wholesome.",
+    "description": "Avocado is a warm olive-green with a yellow lean - earthy and wholesome like ripe avocado flesh. It's a grounded, natural green with excellent shading.",
     "properties": {
       "shading": 4,
       "sheen": 1,
@@ -5493,7 +5493,7 @@ const INKS = [
     "colorPrimary": "#1a4a3a",
     "colorDark": "#0a2a1a",
     "tagline": "A deep, mysterious forest green with hidden depths.",
-    "description": "Green At Night is a very dark, deep green — almost black, with rich forest depths that emerge in lighter strokes. Mysterious and dramatic, with a beautiful sheen.",
+    "description": "Green At Night is a very dark, deep green - almost black, with rich forest depths that emerge in lighter strokes. Mysterious and dramatic, with a beautiful sheen.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -5526,7 +5526,7 @@ const INKS = [
     "colorPrimary": "#4a6a3a",
     "colorDark": "#2a4a1a",
     "tagline": "A deep, mossy green with reptilian depth and texture.",
-    "description": "Crocodile Green is a deep, earthy mossy green — the colour of a crocodile lurking in murky water. Rich, dark, and full of character, with excellent shading.",
+    "description": "Crocodile Green is a deep, earthy mossy green - the colour of a crocodile lurking in murky water. Rich, dark, and full of character, with excellent shading.",
     "properties": {
       "shading": 4,
       "sheen": 1,
@@ -5580,7 +5580,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes — medium or broad shows the shading best."
+        "body": "Smooth in all sizes - medium or broad shows the shading best."
       }
     ],
     "image": "images/robert-oster-cherry-blossom.jpg",
@@ -5593,7 +5593,7 @@ const INKS = [
     "colorPrimary": "#d46a8a",
     "colorDark": "#b44a6a",
     "tagline": "The luminous rose-pink fire of a pink Australian opal.",
-    "description": "Australian Opal Pink is a vivid, luminous rose-pink with the glowing quality of opal fire. Brighter and more saturated than a dusty pink — vivid, beautiful, and full of life.",
+    "description": "Australian Opal Pink is a vivid, luminous rose-pink with the glowing quality of opal fire. Brighter and more saturated than a dusty pink - vivid, beautiful, and full of life.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -5613,7 +5613,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes — broad nibs show the shading and sheen."
+        "body": "Excellent in all sizes - broad nibs show the shading and sheen."
       }
     ],
     "image": "images/robert-oster-australian-opal-pink.jpg",
@@ -5627,7 +5627,7 @@ const INKS = [
     "colorPrimary": "#2f6b54",
     "colorDark": "#1c4033",
     "tagline": "A blazing orange-red with a dramatic gold-green sheen.",
-    "description": "River of Fire is a vivid orange-red with an extraordinary sheen — gold-green erupting at stroke edges like molten lava cooling. One of the most spectacular inks in the range.",
+    "description": "River of Fire is a vivid orange-red with an extraordinary sheen - gold-green erupting at stroke edges like molten lava cooling. One of the most spectacular inks in the range.",
     "properties": {
       "shading": 3,
       "sheen": 4,
@@ -5659,7 +5659,7 @@ const INKS = [
     "name": "Lemon Grass",
     "colorPrimary": "#9aaa4a",
     "colorDark": "#7a8a2a",
-    "tagline": "A bright, zesty yellow-green — fresh as a herb garden.",
+    "tagline": "A bright, zesty yellow-green - fresh as a herb garden.",
     "description": "Lemon Grass is a bright, warm yellow-green with a fresh, zesty quality. It's lively and energetic, a cheerful chartreuse that brightens any page.",
     "properties": {
       "shading": 3,
@@ -5694,7 +5694,7 @@ const INKS = [
     "colorPrimary": "#4a4a4a",
     "colorDark": "#2a2a2a",
     "tagline": "A smoky grey with a hidden green-gold sheen.",
-    "description": "Smokescreen is a deep, smoky grey that hides a surprising green-gold sheen at stroke edges. Understated in colour but spectacular in the right light — a clever, sophisticated ink.",
+    "description": "Smokescreen is a deep, smoky grey that hides a surprising green-gold sheen at stroke edges. Understated in colour but spectacular in the right light - a clever, sophisticated ink.",
     "properties": {
       "shading": 2,
       "sheen": 3,
@@ -5728,7 +5728,7 @@ const INKS = [
     "colorPrimary": "#a06a3a",
     "colorDark": "#804a1a",
     "tagline": "The warm, metallic glow of polished copper.",
-    "description": "Copper is a warm copper-brown with a metallic quality — the colour of a freshly polished copper pot. Earthy and warm with a subtle glow, it shades beautifully.",
+    "description": "Copper is a warm copper-brown with a metallic quality - the colour of a freshly polished copper pot. Earthy and warm with a subtle glow, it shades beautifully.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -5761,8 +5761,8 @@ const INKS = [
     "colours": ["Red"],
     "colorPrimary": "#7a1a3a",
     "colorDark": "#5a0a1a",
-    "tagline": "A deep, elegant wine-red — refined and sophisticated.",
-    "description": "Claret is a deep, refined red-purple — the colour of fine Bordeaux wine. Elegant and sophisticated with beautiful shading, it's a grown-up red for serious writing.",
+    "tagline": "A deep, elegant wine-red - refined and sophisticated.",
+    "description": "Claret is a deep, refined red-purple - the colour of fine Bordeaux wine. Elegant and sophisticated with beautiful shading, it's a grown-up red for serious writing.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -5794,7 +5794,7 @@ const INKS = [
     "name": "Royal Red",
     "colorPrimary": "#a01a2a",
     "colorDark": "#80000a",
-    "tagline": "A bold, regal red — confident, vivid, and commanding.",
+    "tagline": "A bold, regal red - confident, vivid, and commanding.",
     "description": "Royal Red is a vivid, saturated red with regal confidence. Brighter and bolder than claret or burgundy, it's a proper statement red with excellent flow.",
     "properties": {
       "shading": 3,
@@ -5827,8 +5827,8 @@ const INKS = [
     "name": "Burgundy",
     "colorPrimary": "#6a1a2a",
     "colorDark": "#4a0a1a",
-    "tagline": "A classic, deep burgundy — warm, rich, and timeless.",
-    "description": "Burgundy is a deep, warm red-brown — the classic burgundy wine colour, timeless and endlessly wearable. It shades beautifully and suits any writing occasion.",
+    "tagline": "A classic, deep burgundy - warm, rich, and timeless.",
+    "description": "Burgundy is a deep, warm red-brown - the classic burgundy wine colour, timeless and endlessly wearable. It shades beautifully and suits any writing occasion.",
     "properties": {
       "shading": 4,
       "sheen": 2,
@@ -5861,7 +5861,7 @@ const INKS = [
     "colours": ["Purple","Brown"],
     "colorPrimary": "#5a2a2a",
     "colorDark": "#3a1010",
-    "tagline": "Burgundy meets chocolate — a rich, complex red-brown.",
+    "tagline": "Burgundy meets chocolate - a rich, complex red-brown.",
     "description": "Burgundy Chocolate Notes is a deep, complex blend of wine-red and dark chocolate brown. It shifts between the two depending on the light, with rich shading and genuine sophistication.",
     "properties": {
       "shading": 4,
@@ -5894,8 +5894,8 @@ const INKS = [
     "name": "Blood Crimson",
     "colorPrimary": "#8a0a1a",
     "colorDark": "#5a000a",
-    "tagline": "A deep, dramatic crimson — dark, rich, and intense.",
-    "description": "Blood Crimson is a deep, intense crimson-red — darker and more dramatic than a bright red, with the richness of fresh blood. Bold, intense, and full of character.",
+    "tagline": "A deep, dramatic crimson - dark, rich, and intense.",
+    "description": "Blood Crimson is a deep, intense crimson-red - darker and more dramatic than a bright red, with the richness of fresh blood. Bold, intense, and full of character.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -5928,7 +5928,7 @@ const INKS = [
     "colorPrimary": "#3a5a7a",
     "colorDark": "#1a3a5a",
     "tagline": "An iron gall blue-grey that darkens and endures on the page.",
-    "description": "Salix is a classic iron gall ink — it goes down as a blue-grey and darkens to a deep, permanent grey-blue as it oxidises. Water-resistant and archival, it's a beautiful, practical ink with real history.",
+    "description": "Salix is a classic iron gall ink - it goes down as a blue-grey and darkens to a deep, permanent grey-blue as it oxidises. Water-resistant and archival, it's a beautiful, practical ink with real history.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -5995,7 +5995,7 @@ const INKS = [
     "colorPrimary": "#6a4a2a",
     "colorDark": "#4a2a0a",
     "tagline": "The warm, classic brown of old photographs and letters.",
-    "description": "Sepia is a warm, medium-dark brown — the timeless colour of vintage photographs and antique correspondence. Classic, warm, and beautifully nostalgic.",
+    "description": "Sepia is a warm, medium-dark brown - the timeless colour of vintage photographs and antique correspondence. Classic, warm, and beautifully nostalgic.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6029,7 +6029,7 @@ const INKS = [
     "colorPrimary": "#6a3a5a",
     "colorDark": "#4a1a3a",
     "tagline": "An iron gall purple that matures to a muted, dusky mauve.",
-    "description": "Scabiosa is a unique iron gall purple — it goes down as a muted mauve-purple and darkens as it oxidises to a deep, dusky purple-grey. Water-resistant, archival, and completely distinctive.",
+    "description": "Scabiosa is a unique iron gall purple - it goes down as a muted mauve-purple and darkens as it oxidises to a deep, dusky purple-grey. Water-resistant, archival, and completely distinctive.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -6062,8 +6062,8 @@ const INKS = [
     "colours": ["Grey","Brown"],
     "colorPrimary": "#c87a3a",
     "colorDark": "#a85a1a",
-    "tagline": "Fox weather — a warm amber-orange like a fox's coat in autumn light.",
-    "description": "Kitsune Biyori (fox weather) is a warm amber-orange with golden depth, evoking a fox basking in autumn sun. Rich, warm, and beautifully shaded — a distinctive Sailor seasonal colour.",
+    "tagline": "Fox weather - a warm amber-orange like a fox's coat in autumn light.",
+    "description": "Kitsune Biyori (fox weather) is a warm amber-orange with golden depth, evoking a fox basking in autumn sun. Rich, warm, and beautifully shaded - a distinctive Sailor seasonal colour.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -6083,7 +6083,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Sailor inks are crisp and precise — lovely in fine and medium nibs."
+        "body": "Sailor inks are crisp and precise - lovely in fine and medium nibs."
       }
     ],
     "image": "images/sailor-kitsune-biyori.jpg",
@@ -6097,7 +6097,7 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#2a5a7a",
     "colorDark": "#1a3a5a",
-    "tagline": "Aurora — a deep blue-teal with a luminous gold shimmer.",
+    "tagline": "Aurora - a deep blue-teal with a luminous gold shimmer.",
     "description": "Kyokkou (aurora) is a deep blue-teal with a gold/copper shimmer that dances across the page like the northern lights. Atmospheric and spectacular, it's one of Sailor's most magical inks.",
     "properties": {
       "shading": 2,
@@ -6132,7 +6132,7 @@ const INKS = [
     "colorPrimary": "#1a4a6a",
     "colorDark": "#0a2a4a",
     "tagline": "A deep, cold winter blue with quiet, frosty depth.",
-    "description": "Kangyou is a deep, cool blue with a frosty, wintry quality. Dark and serious, it has the still, cold beauty of a winter morning — refined and contemplative.",
+    "description": "Kangyou is a deep, cool blue with a frosty, wintry quality. Dark and serious, it has the still, cold beauty of a winter morning - refined and contemplative.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -6152,7 +6152,7 @@ const INKS = [
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp Sailor flow — lovely in fine and medium nibs."
+        "body": "Crisp Sailor flow - lovely in fine and medium nibs."
       }
     ],
     "image": "images/sailor-kangyou.jpg",
@@ -6199,8 +6199,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#c83a5a",
     "colorDark": "#a81a3a",
-    "tagline": "Flower heart — a vivid, warm rose-red with romantic depth.",
-    "description": "Hanagokoro (flower heart) is a vivid rose-red — warm, romantic, and beautifully saturated. It sits between red and pink, with the warmth of a flower's heart in full bloom.",
+    "tagline": "Flower heart - a vivid, warm rose-red with romantic depth.",
+    "description": "Hanagokoro (flower heart) is a vivid rose-red - warm, romantic, and beautifully saturated. It sits between red and pink, with the warmth of a flower's heart in full bloom.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -6234,7 +6234,7 @@ const INKS = [
     "colorPrimary": "#c87a4a",
     "colorDark": "#a85a2a",
     "tagline": "A soft, muted orange with a warm, sun-faded quality.",
-    "description": "Faded Orange is exactly that — a warm, muted orange that looks gently sun-bleached and vintage. Softer than a bright orange, it has a comfortable, lived-in warmth.",
+    "description": "Faded Orange is exactly that - a warm, muted orange that looks gently sun-bleached and vintage. Softer than a bright orange, it has a comfortable, lived-in warmth.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -6267,8 +6267,8 @@ const INKS = [
     "colours": ["Grey","Brown"],
     "colorPrimary": "#9a8a6a",
     "colorDark": "#7a6a4a",
-    "tagline": "A warm, sophisticated greige — understated and elegant.",
-    "description": "Dark Beige is a warm grey-beige (greige) — a sophisticated, understated neutral with subtle warmth. It's the kind of refined colour that elevates everyday writing without shouting.",
+    "tagline": "A warm, sophisticated greige - understated and elegant.",
+    "description": "Dark Beige is a warm grey-beige (greige) - a sophisticated, understated neutral with subtle warmth. It's the kind of refined colour that elevates everyday writing without shouting.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -6301,7 +6301,7 @@ const INKS = [
     "colorPrimary": "#1a8aaa",
     "colorDark": "#0a6a8a",
     "tagline": "A bright, vivid cyan-blue with refreshing clarity.",
-    "description": "Eastern Blue is a bright, clean cyan-blue with refreshing energy. Vivid and clear, it sits between blue and turquoise — one of Sailor's most cheerful, eye-catching blues.",
+    "description": "Eastern Blue is a bright, clean cyan-blue with refreshing energy. Vivid and clear, it sits between blue and turquoise - one of Sailor's most cheerful, eye-catching blues.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -6333,7 +6333,7 @@ const INKS = [
     "name": "Shikori Tokiwamatsu",
     "colorPrimary": "#2a5a3a",
     "colorDark": "#1a3a1a",
-    "tagline": "Evergreen pine — a deep, muted forest green from the Shikori series.",
+    "tagline": "Evergreen pine - a deep, muted forest green from the Shikori series.",
     "description": "Tokiwamatsu (evergreen pine) is a deep, muted forest green with the soft, painterly quality of the Shikori series. Calm, natural, and beautifully restrained.",
     "properties": {
       "shading": 3,
@@ -6368,7 +6368,7 @@ const INKS = [
     "colorPrimary": "#8a7a5a",
     "colorDark": "#6a5a3a",
     "tagline": "A warm, muted golden-tan with painterly softness.",
-    "description": "From the Shikori series, Sube-rakashi is a warm, muted golden-tan — soft and earthy, with the gentle painterly quality the series is known for. Understated and lovely.",
+    "description": "From the Shikori series, Sube-rakashi is a warm, muted golden-tan - soft and earthy, with the gentle painterly quality the series is known for. Understated and lovely.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6400,8 +6400,8 @@ const INKS = [
     "name": "Shikori Yozakura",
     "colorPrimary": "#b46a8a",
     "colorDark": "#945a6a",
-    "tagline": "Night cherry blossom — a soft, dusky rose-pink under moonlight.",
-    "description": "Yozakura (night cherry blossom) is a soft, dusky rose-pink with the muted, painterly quality of the Shikori series. It evokes sakura viewed by moonlight — romantic and atmospheric.",
+    "tagline": "Night cherry blossom - a soft, dusky rose-pink under moonlight.",
+    "description": "Yozakura (night cherry blossom) is a soft, dusky rose-pink with the muted, painterly quality of the Shikori series. It evokes sakura viewed by moonlight - romantic and atmospheric.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6434,8 +6434,8 @@ const INKS = [
     "colours": ["Red"],
     "colorPrimary": "#3a4a6a",
     "colorDark": "#1a2a4a",
-    "tagline": "Evening swallow — a soft, dusky blue at twilight.",
-    "description": "Yutsubame (evening swallow) is a soft, muted dusky blue from the Shikori series — the colour of swallows wheeling against a darkening sky. Gentle and atmospheric.",
+    "tagline": "Evening swallow - a soft, dusky blue at twilight.",
+    "description": "Yutsubame (evening swallow) is a soft, muted dusky blue from the Shikori series - the colour of swallows wheeling against a darkening sky. Gentle and atmospheric.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6469,7 +6469,7 @@ const INKS = [
     "colorPrimary": "#9a8aaa",
     "colorDark": "#7a6a8a",
     "tagline": "A soft, muted lavender-grey with painterly delicacy.",
-    "description": "From the Shikori series, Hara Hara is a soft, muted lavender-grey — delicate and atmospheric, like petals drifting down. One of the gentlest colours in the series.",
+    "description": "From the Shikori series, Hara Hara is a soft, muted lavender-grey - delicate and atmospheric, like petals drifting down. One of the gentlest colours in the series.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6502,7 +6502,7 @@ const INKS = [
     "colorPrimary": "#6a5a7a",
     "colorDark": "#4a3a5a",
     "tagline": "A soft, muted grey-purple with quiet sophistication.",
-    "description": "From the Shikori series, Potsu is a muted grey-purple — soft, atmospheric, and quietly sophisticated. The painterly quality gives it a gentle, watercolour feel.",
+    "description": "From the Shikori series, Potsu is a muted grey-purple - soft, atmospheric, and quietly sophisticated. The painterly quality gives it a gentle, watercolour feel.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6535,7 +6535,7 @@ const INKS = [
     "colours": ["Blue"],
     "colorPrimary": "#5a6a7a",
     "colorDark": "#3a4a5a",
-    "tagline": "Frosty night — a cool, muted blue-grey from the Shikori series.",
+    "tagline": "Frosty night - a cool, muted blue-grey from the Shikori series.",
     "description": "Shimoyo (frosty night) is a cool, muted blue-grey with the painterly softness of the Shikori series. Calm and wintry, it has the still beauty of a frost-covered evening.",
     "properties": {
       "shading": 3,
@@ -6569,7 +6569,7 @@ const INKS = [
     "colours": ["Red"],
     "colorPrimary": "#4a5a3a",
     "colorDark": "#2a3a1a",
-    "tagline": "Deep mountains — a muted, earthy moss-green from the Shikori series.",
+    "tagline": "Deep mountains - a muted, earthy moss-green from the Shikori series.",
     "description": "Okuyama (deep mountains) is a muted, earthy moss-green with the soft painterly quality of the Shikori series. It evokes the deep, quiet green of remote mountain forests.",
     "properties": {
       "shading": 3,
@@ -6604,7 +6604,7 @@ const INKS = [
     "colorPrimary": "#7a4a3a",
     "colorDark": "#5a2a1a",
     "tagline": "A warm, muted russet-brown with painterly softness.",
-    "description": "From the Shikori series, Kasagi is a warm, muted russet-brown — soft and earthy, with the gentle watercolour quality the series is loved for. Comforting and natural.",
+    "description": "From the Shikori series, Kasagi is a warm, muted russet-brown - soft and earthy, with the gentle watercolour quality the series is loved for. Comforting and natural.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6671,8 +6671,8 @@ const INKS = [
     "colours": ["Pink","Brown"],
     "colorPrimary": "#5a3a2a",
     "colorDark": "#3a1a0a",
-    "tagline": "Chestnut — a warm, deep brown from the Manyo poetry series.",
-    "description": "Kuri (chestnut) is a warm, deep brown from the Manyo series — rich and earthy like roasted chestnuts. Classic, comforting, and beautifully shaded.",
+    "tagline": "Chestnut - a warm, deep brown from the Manyo poetry series.",
+    "description": "Kuri (chestnut) is a warm, deep brown from the Manyo series - rich and earthy like roasted chestnuts. Classic, comforting, and beautifully shaded.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -6705,8 +6705,8 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#8a8a9a",
     "colorDark": "#6a6a7a",
-    "tagline": "Pussy willow — a soft, silvery grey-lavender from the Manyo series.",
-    "description": "Nekoyanagi (pussy willow) is a soft, silvery grey with a faint lavender lean — the colour of pussy willow catkins. Gentle and refined, with the elegance the Manyo series is known for.",
+    "tagline": "Pussy willow - a soft, silvery grey-lavender from the Manyo series.",
+    "description": "Nekoyanagi (pussy willow) is a soft, silvery grey with a faint lavender lean - the colour of pussy willow catkins. Gentle and refined, with the elegance the Manyo series is known for.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7010,7 +7010,7 @@ const INKS = [
     "name": "Shikori Souten",
     "colorPrimary": "#4a7a9a",
     "colorDark": "#2a5a7a",
-    "tagline": "Blue sky — a soft, muted sky-blue from the Shikori series.",
+    "tagline": "Blue sky - a soft, muted sky-blue from the Shikori series.",
     "description": "Souten (blue sky) is a soft, muted sky-blue with the painterly quality of the Shikori series. Gentle and atmospheric, like a hazy blue sky in early morning.",
     "properties": {
       "shading": 3,
@@ -7078,7 +7078,7 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#9a7a7a",
     "colorDark": "#7a5a5a",
-    "tagline": "Cherry mouse — a soft, dusty grey-pink rooted in Kyoto tradition.",
+    "tagline": "Cherry mouse - a soft, dusty grey-pink rooted in Kyoto tradition.",
     "description": "Sakuranezumi (cherry blossom mouse-grey) is a soft, muted grey-pink from TAG's traditional Kyoto colour range. Gentle and refined, it captures a quintessentially Japanese subtlety.",
     "properties": {
       "shading": 3,
@@ -7111,7 +7111,7 @@ const INKS = [
     "name": "Nurebairo",
     "colorPrimary": "#2a2a3a",
     "colorDark": "#0a0a1a",
-    "tagline": "Wet raven — a deep, glossy blue-black with hidden depth.",
+    "tagline": "Wet raven - a deep, glossy blue-black with hidden depth.",
     "description": "Nurebairo (the glossy black of wet raven feathers) is a deep blue-black with a subtle, lustrous quality. Dark and elegant, it reveals deep blue undertones in the light.",
     "properties": {
       "shading": 2,
@@ -7144,8 +7144,8 @@ const INKS = [
     "name": "Adzukiiro",
     "colorPrimary": "#7a2a3a",
     "colorDark": "#5a0a1a",
-    "tagline": "Adzuki bean — a deep, warm red-brown rooted in Kyoto tradition.",
-    "description": "Adzukiiro (adzuki bean colour) is a deep, warm red-brown — the colour of cooked red beans, a staple of Japanese sweets. Rich, traditional, and beautifully muted.",
+    "tagline": "Adzuki bean - a deep, warm red-brown rooted in Kyoto tradition.",
+    "description": "Adzukiiro (adzuki bean colour) is a deep, warm red-brown - the colour of cooked red beans, a staple of Japanese sweets. Rich, traditional, and beautifully muted.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -7178,8 +7178,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#6a4a2a",
     "colorDark": "#4a2a0a",
-    "tagline": "Fallen chestnut — a warm, earthy brown from the Kyoto range.",
-    "description": "Ochiguriiro (fallen chestnut colour) is a warm, earthy brown — the colour of chestnuts on the autumn ground. Traditional, comforting, and beautifully grounded.",
+    "tagline": "Fallen chestnut - a warm, earthy brown from the Kyoto range.",
+    "description": "Ochiguriiro (fallen chestnut colour) is a warm, earthy brown - the colour of chestnuts on the autumn ground. Traditional, comforting, and beautifully grounded.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7211,7 +7211,7 @@ const INKS = [
     "name": "Akasakura",
     "colorPrimary": "#d46a7a",
     "colorDark": "#b44a5a",
-    "tagline": "Red cherry blossom — a warm, vivid sakura pink.",
+    "tagline": "Red cherry blossom - a warm, vivid sakura pink.",
     "description": "Akasakura (red cherry blossom) is a warm, vivid rose-pink from Taccia's Sunao-Iro range of traditional Japanese colours. Cheerful and romantic, it captures sakura at its most vibrant.",
     "properties": {
       "shading": 3,
@@ -7278,8 +7278,8 @@ const INKS = [
     "name": "Fukakihanada",
     "colorPrimary": "#1a3a6a",
     "colorDark": "#0a1a4a",
-    "tagline": "Deep indigo — the rich, traditional blue of Japanese textiles.",
-    "description": "Fukakihanada (deep indigo) is a rich, dark blue from Taccia's Sunao-Iro range — the colour of traditional Japanese indigo dye. Deep, dignified, and beautifully shaded.",
+    "tagline": "Deep indigo - the rich, traditional blue of Japanese textiles.",
+    "description": "Fukakihanada (deep indigo) is a rich, dark blue from Taccia's Sunao-Iro range - the colour of traditional Japanese indigo dye. Deep, dignified, and beautifully shaded.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -7311,8 +7311,8 @@ const INKS = [
     "name": "Sabimidori",
     "colorPrimary": "#4a6a5a",
     "colorDark": "#2a4a3a",
-    "tagline": "Rust green — a muted, antique grey-green patina.",
-    "description": "Sabimidori (rust green) is a muted, antique grey-green from Taccia's Sunao-Iro range — the colour of weathered bronze. Sophisticated and atmospheric with lovely shading.",
+    "tagline": "Rust green - a muted, antique grey-green patina.",
+    "description": "Sabimidori (rust green) is a muted, antique grey-green from Taccia's Sunao-Iro range - the colour of weathered bronze. Sophisticated and atmospheric with lovely shading.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7344,8 +7344,8 @@ const INKS = [
     "name": "Koiai",
     "colorPrimary": "#1a2a4a",
     "colorDark": "#0a1a2a",
-    "tagline": "Dark indigo — a deep, near-black traditional blue.",
-    "description": "Koiai (dark indigo) is a very deep, near-black blue from Taccia's Sunao-Iro range. Darker than Fukakihanada, it's the deepest indigo of traditional Japanese dyeing — dignified and dramatic.",
+    "tagline": "Dark indigo - a deep, near-black traditional blue.",
+    "description": "Koiai (dark indigo) is a very deep, near-black blue from Taccia's Sunao-Iro range. Darker than Fukakihanada, it's the deepest indigo of traditional Japanese dyeing - dignified and dramatic.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -7378,7 +7378,7 @@ const INKS = [
     "colours": ["Orange"],
     "colorPrimary": "#c81a2a",
     "colorDark": "#a8000a",
-    "tagline": "Red — a pure, vivid traditional Japanese red.",
+    "tagline": "Red - a pure, vivid traditional Japanese red.",
     "description": "Aka (red) is a clean, vivid traditional red from Taccia's Sunao-Iro range. Bright and confident, it's a classic Japanese red with excellent saturation.",
     "properties": {
       "shading": 2,
@@ -7412,8 +7412,8 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#5a2a8a",
     "colorDark": "#3a0a6a",
-    "tagline": "Purple — a rich, regal traditional Japanese violet.",
-    "description": "Murasaki (purple) is a rich, saturated violet from Taccia's Sunao-Iro range — the imperial purple of classical Japan. Regal and vivid with beautiful shading.",
+    "tagline": "Purple - a rich, regal traditional Japanese violet.",
+    "description": "Murasaki (purple) is a rich, saturated violet from Taccia's Sunao-Iro range - the imperial purple of classical Japan. Regal and vivid with beautiful shading.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -7446,7 +7446,7 @@ const INKS = [
     "colours": ["Pink"],
     "colorPrimary": "#e89aaa",
     "colorDark": "#c87a8a",
-    "tagline": "Peach — a soft, warm peach-pink with gentle charm.",
+    "tagline": "Peach - a soft, warm peach-pink with gentle charm.",
     "description": "Momo (peach) is a soft, warm peach-pink from Taccia's Sunao-Iro range. Gentle and delicate, it captures the soft blush of ripe peach skin.",
     "properties": {
       "shading": 2,
@@ -7479,8 +7479,8 @@ const INKS = [
     "name": "Ebi",
     "colorPrimary": "#a83a4a",
     "colorDark": "#88101a",
-    "tagline": "Shrimp — a warm, pinkish red with traditional depth.",
-    "description": "Ebi (shrimp) is a warm pinkish-red from Taccia's Sunao-Iro range — the colour of cooked shrimp shells. Warm and distinctive, sitting between red and pink with lovely shading.",
+    "tagline": "Shrimp - a warm, pinkish red with traditional depth.",
+    "description": "Ebi (shrimp) is a warm pinkish-red from Taccia's Sunao-Iro range - the colour of cooked shrimp shells. Warm and distinctive, sitting between red and pink with lovely shading.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -7513,8 +7513,8 @@ const INKS = [
     "colours": ["Red"],
     "colorPrimary": "#6a4a2a",
     "colorDark": "#4a2a0a",
-    "tagline": "Tea — a warm, classic brown the colour of steeped Japanese tea.",
-    "description": "Cha (tea) is a warm, medium-dark brown from Taccia's Sunao-Iro range — the colour of richly steeped tea. Comforting, traditional, and beautifully shaded.",
+    "tagline": "Tea - a warm, classic brown the colour of steeped Japanese tea.",
+    "description": "Cha (tea) is a warm, medium-dark brown from Taccia's Sunao-Iro range - the colour of richly steeped tea. Comforting, traditional, and beautifully shaded.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7548,7 +7548,7 @@ const INKS = [
     "colorPrimary": "#a84a3a",
     "colorDark": "#882a1a",
     "tagline": "A warm, earthy red-ochre from Taccia's Hokusai ukiyo-e collection.",
-    "description": "From Taccia's premium Ukiyo-e range honouring the artist Hokusai, Benitsuchi is a warm red-earth ochre — the colour of pigment in classic woodblock prints. Rich, artistic, and beautifully shaded.",
+    "description": "From Taccia's premium Ukiyo-e range honouring the artist Hokusai, Benitsuchi is a warm red-earth ochre - the colour of pigment in classic woodblock prints. Rich, artistic, and beautifully shaded.",
     "properties": {
       "shading": 4,
       "sheen": 1,
@@ -7583,7 +7583,7 @@ const INKS = [
     "colorPrimary": "#8a5a9a",
     "colorDark": "#6a3a7a",
     "tagline": "A wistful purple with a touch of longing and shimmer.",
-    "description": "Miss U is a soft, wistful purple with subtle shimmer — romantic and gently melancholy, like a letter to someone far away. A lovely, atmospheric ink from this creative Taiwanese maker.",
+    "description": "Miss U is a soft, wistful purple with subtle shimmer - romantic and gently melancholy, like a letter to someone far away. A lovely, atmospheric ink from this creative Taiwanese maker.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -7617,7 +7617,7 @@ const INKS = [
     "colorPrimary": "#2a6a7a",
     "colorDark": "#0a4a5a",
     "tagline": "A protective teal with depth and a gentle shimmer.",
-    "description": "Protect U is a deep teal with subtle shimmer — calm, grounding, and quietly protective in mood. A beautiful, atmospheric colour from Tono & Lims.",
+    "description": "Protect U is a deep teal with subtle shimmer - calm, grounding, and quietly protective in mood. A beautiful, atmospheric colour from Tono & Lims.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -7650,7 +7650,7 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#7a9aaa",
     "colorDark": "#5a7a8a",
-    "tagline": "Water sweet — a soft, translucent blue-grey like a summer jelly.",
+    "tagline": "Water sweet - a soft, translucent blue-grey like a summer jelly.",
     "description": "Mizumanju (water dumpling) is a soft, translucent blue-grey inspired by the cooling summer Japanese sweet. Light, refreshing, and delicately atmospheric.",
     "properties": {
       "shading": 3,
@@ -7684,7 +7684,7 @@ const INKS = [
     "colorPrimary": "#d43a6a",
     "colorDark": "#b41a4a",
     "tagline": "A warm, vivid heart-red-pink with a loving glow.",
-    "description": "Heart is a vivid, warm red-pink — bright, loving, and full of energy. It sits between red and magenta, with the cheerful warmth its name promises.",
+    "description": "Heart is a vivid, warm red-pink - bright, loving, and full of energy. It sits between red and magenta, with the cheerful warmth its name promises.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -7786,7 +7786,7 @@ const INKS = [
     "colorPrimary": "#5a5a5a",
     "colorDark": "#3a3a3a",
     "tagline": "A waterproof, archival grey for permanent documents.",
-    "description": "Document Grey is a waterproof, archival grey from De Atramentis's Document line. Once dry it's completely water-resistant and fade-resistant — perfect for important documents, art, and addressing envelopes.",
+    "description": "Document Grey is a waterproof, archival grey from De Atramentis's Document line. Once dry it's completely water-resistant and fade-resistant - perfect for important documents, art, and addressing envelopes.",
     "properties": {
       "shading": 1,
       "sheen": 0,
@@ -7819,7 +7819,7 @@ const INKS = [
     "colorPrimary": "#4a5a6a",
     "colorDark": "#2a3a4a",
     "tagline": "A waterproof, archival blue-grey for permanence and elegance.",
-    "description": "Document Blue Grey is a waterproof, archival blue-grey from De Atramentis's Document line. Elegant and permanent, it's water- and fade-resistant once dry — ideal for documents that need to last.",
+    "description": "Document Blue Grey is a waterproof, archival blue-grey from De Atramentis's Document line. Elegant and permanent, it's water- and fade-resistant once dry - ideal for documents that need to last.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -7887,7 +7887,7 @@ const INKS = [
     "colorPrimary": "#7a6a5a",
     "colorDark": "#5a4a3a",
     "tagline": "A warm, sophisticated grey-brown like a cup of bergamot tea.",
-    "description": "Earl Grey Tea is a warm grey-brown with a sophisticated, muted quality — the colour of milky Earl Grey. Comforting and refined, with gentle shading.",
+    "description": "Earl Grey Tea is a warm grey-brown with a sophisticated, muted quality - the colour of milky Earl Grey. Comforting and refined, with gentle shading.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7987,7 +7987,7 @@ const INKS = [
     "colours": ["Blue","Green"],
     "colorPrimary": "#c86a3a",
     "colorDark": "#a84a1a",
-    "tagline": "Sunset at Etretat — a warm, glowing orange inspired by Monet.",
+    "tagline": "Sunset at Etretat - a warm, glowing orange inspired by Monet.",
     "description": "Soleil Couchant à Étretat (Sunset at Étretat) is a warm, glowing orange-amber inspired by the famous Normandy coast at golden hour. Rich and luminous with beautiful shading.",
     "properties": {
       "shading": 4,
@@ -8022,7 +8022,7 @@ const INKS = [
     "colorPrimary": "#5a7a6a",
     "colorDark": "#3a5a4a",
     "tagline": "A muted, mysterious grey-green like uncharted territory.",
-    "description": "Unknown Land is a muted grey-green with an atmospheric, mysterious quality. Calm and contemplative, it evokes mist over unexplored hills — sophisticated and unusual.",
+    "description": "Unknown Land is a muted grey-green with an atmospheric, mysterious quality. Calm and contemplative, it evokes mist over unexplored hills - sophisticated and unusual.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -8194,8 +8194,8 @@ const INKS = [
     "name": "Natural Green",
     "colorPrimary": "#3a7a4a",
     "colorDark": "#1a5a2a",
-    "tagline": "A fresh, true green — clean and natural as new leaves.",
-    "description": "Natural Green is a clean, fresh true green — natural and balanced, like new spring leaves. Bright and wholesome, with excellent shading.",
+    "tagline": "A fresh, true green - clean and natural as new leaves.",
+    "description": "Natural Green is a clean, fresh true green - natural and balanced, like new spring leaves. Bright and wholesome, with excellent shading.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -8299,7 +8299,7 @@ const INKS = [
     "colours": ["Green"],
     "colorPrimary": "#5a7a9a",
     "colorDark": "#3a5a7a",
-    "tagline": "The cliffs at Etretat — a soft blue-grey of sea and stone.",
+    "tagline": "The cliffs at Etretat - a soft blue-grey of sea and stone.",
     "description": "Les Falaises à Étretat (The Cliffs at Étretat) is a soft blue-grey inspired by the famous Normandy cliffs and sea. Atmospheric and refined, with the cool quality of coastal stone.",
     "properties": {
       "shading": 3,
@@ -8335,7 +8335,7 @@ const INKS = [
     "colorPrimary": "#6a5a2a",
     "colorDark": "#4a3a0a",
     "tagline": "A warm, golden-brown green like a forest turning in autumn.",
-    "description": "Autumn Forest is a warm olive-brown that captures the transitional colours of a forest in autumn — green giving way to gold and brown. Earthy, rich, and beautifully shaded.",
+    "description": "Autumn Forest is a warm olive-brown that captures the transitional colours of a forest in autumn - green giving way to gold and brown. Earthy, rich, and beautifully shaded.",
     "properties": {
       "shading": 4,
       "sheen": 1,
@@ -8438,7 +8438,7 @@ const INKS = [
     "colorPrimary": "#9a7a2a",
     "colorDark": "#7a5a0a",
     "tagline": "A warm golden-brown saturated with brilliant gold shimmer.",
-    "description": "Gold Dust Shimmer is a warm golden-brown packed with brilliant gold shimmer particles. From Filipino maker Troublemaker, it glows like sunlight on water — genuinely dazzling.",
+    "description": "Gold Dust Shimmer is a warm golden-brown packed with brilliant gold shimmer particles. From Filipino maker Troublemaker, it glows like sunlight on water - genuinely dazzling.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -8541,7 +8541,7 @@ const INKS = [
     "colorPrimary": "#7a3a2a",
     "colorDark": "#5a1a0a",
     "tagline": "A warm, desert-storm red-brown with hidden depth.",
-    "description": "Simoun (named after a desert wind) is a warm red-brown with earthy depth — the colour of a sandstorm at sunset. Rich and atmospheric, with good shading.",
+    "description": "Simoun (named after a desert wind) is a warm red-brown with earthy depth - the colour of a sandstorm at sunset. Rich and atmospheric, with good shading.",
     "properties": {
       "shading": 4,
       "sheen": 1,
@@ -8576,7 +8576,7 @@ const INKS = [
     "colorPrimary": "#5a2a6a",
     "colorDark": "#3a0a4a",
     "tagline": "A deep, heroic purple inspired by Filipino epic legend.",
-    "description": "Lam-ang is a deep purple named for the hero of a famous Filipino epic. Rich and dramatic, with good shading and a subtle sheen — heroic and full of character.",
+    "description": "Lam-ang is a deep purple named for the hero of a famous Filipino epic. Rich and dramatic, with good shading and a subtle sheen - heroic and full of character.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -8680,7 +8680,7 @@ const INKS = [
     "colorPrimary": "#1a7a5a",
     "colorDark": "#0a5a3a",
     "tagline": "A vivid teal-green with the shimmer of tropical fish.",
-    "description": "Sailfin Green is a vivid teal-green inspired by tropical fish — bright, saturated, and full of life with a beautiful sheen. One of Vinta's most eye-catching colours.",
+    "description": "Sailfin Green is a vivid teal-green inspired by tropical fish - bright, saturated, and full of life with a beautiful sheen. One of Vinta's most eye-catching colours.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -8747,7 +8747,7 @@ const INKS = [
     "colorPrimary": "#6a4a2a",
     "colorDark": "#4a2a0a",
     "tagline": "A warm, vintage sepia-brown with antique character.",
-    "description": "Liquid Sepia is a warm sepia-brown with vintage, antique character — the colour of old letters and photographs. Rich and nostalgic, with lovely shading.",
+    "description": "Liquid Sepia is a warm sepia-brown with vintage, antique character - the colour of old letters and photographs. Rich and nostalgic, with lovely shading.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -8781,7 +8781,7 @@ const INKS = [
     "colorPrimary": "#d46a8a",
     "colorDark": "#b44a6a",
     "tagline": "A warm, glowing pink with the sheen of a sunset's last light.",
-    "description": "Pink Afterglow is a warm, glowing pink with a beautiful sheen — like the rosy light lingering in the sky after sunset. Romantic and vivid with good shading.",
+    "description": "Pink Afterglow is a warm, glowing pink with a beautiful sheen - like the rosy light lingering in the sky after sunset. Romantic and vivid with good shading.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -8814,7 +8814,7 @@ const INKS = [
     "colorPrimary": "#2a4a5a",
     "colorDark": "#0a2a3a",
     "tagline": "A deep, naval blue-grey with the weight of the sea.",
-    "description": "Armada is a deep blue-grey with naval gravitas — the colour of warships and stormy seas. Dark, dignified, and atmospheric with good shading.",
+    "description": "Armada is a deep blue-grey with naval gravitas - the colour of warships and stormy seas. Dark, dignified, and atmospheric with good shading.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -8914,7 +8914,7 @@ const INKS = [
     "colorPrimary": "#5a5a6a",
     "colorDark": "#3a3a4a",
     "tagline": "A cool, sophisticated grey like an overcast London sky.",
-    "description": "London Grey is a cool, refined grey with a subtle blue lean — the colour of an overcast city sky. Sophisticated and understated, with a touch of sheen.",
+    "description": "London Grey is a cool, refined grey with a subtle blue lean - the colour of an overcast city sky. Sophisticated and understated, with a touch of sheen.",
     "properties": {
       "shading": 2,
       "sheen": 2,
@@ -8947,7 +8947,7 @@ const INKS = [
     "colorPrimary": "#c84a3a",
     "colorDark": "#a82a1a",
     "tagline": "A warm, vivid red-orange with playful energy.",
-    "description": "Pitik Papel is a warm, vivid red-orange with playful energy and a beautiful sheen. Bright and cheerful, with good shading — a lively, joyful colour.",
+    "description": "Pitik Papel is a warm, vivid red-orange with playful energy and a beautiful sheen. Bright and cheerful, with good shading - a lively, joyful colour.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -8979,7 +8979,7 @@ const INKS = [
     "name": "Unang Araw",
     "colorPrimary": "#3a6ab0",
     "colorDark": "#22406a",
-    "tagline": "First day — a warm, hopeful orange like a new dawn.",
+    "tagline": "First day - a warm, hopeful orange like a new dawn.",
     "description": "Unang Araw (first day) is a warm, glowing orange that captures the hope of a new beginning. Bright and optimistic, with good shading and a subtle sheen.",
     "properties": {
       "shading": 3,
@@ -9012,7 +9012,7 @@ const INKS = [
     "name": "Sulyap",
     "colorPrimary": "#3a6a7a",
     "colorDark": "#1a4a5a",
-    "tagline": "A glimpse — a soft, fleeting teal-blue with quiet beauty.",
+    "tagline": "A glimpse - a soft, fleeting teal-blue with quiet beauty.",
     "description": "Sulyap (a glimpse or glance) is a soft teal-blue with a fleeting, atmospheric quality. Gentle and contemplative, with good shading and a subtle sheen.",
     "properties": {
       "shading": 3,
@@ -9046,7 +9046,7 @@ const INKS = [
     "colours": ["Green"],
     "colorPrimary": "#7a2a3a",
     "colorDark": "#5a0a1a",
-    "tagline": "The last bell — a deep, resonant burgundy-red.",
+    "tagline": "The last bell - a deep, resonant burgundy-red.",
     "description": "Huling Kampana (the last bell) is a deep, resonant burgundy-red with an evocative, elegiac mood. Rich and dramatic, with good shading and a sheen.",
     "properties": {
       "shading": 3,
@@ -9081,7 +9081,7 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#4a3a6a",
     "colorDark": "#2a1a4a",
-    "tagline": "Twilight — a deep purple-blue as day surrenders to night.",
+    "tagline": "Twilight - a deep purple-blue as day surrenders to night.",
     "description": "Takipsilim (twilight) is a deep purple-blue that captures the moment day turns to night. Atmospheric and romantic, with good shading and a beautiful sheen.",
     "properties": {
       "shading": 3,
@@ -9185,7 +9185,7 @@ const INKS = [
     "colorPrimary": "#3a5a3a",
     "colorDark": "#1a3a1a",
     "tagline": "A dark, transformative green with a hidden red sheen.",
-    "description": "From Wearingeul's Special Collection, Metamorphosis is a deep, dark green inspired by Kafka — with a dramatic red sheen that transforms the colour at stroke edges. Mysterious and unsettling in the best way.",
+    "description": "From Wearingeul's Special Collection, Metamorphosis is a deep, dark green inspired by Kafka - with a dramatic red sheen that transforms the colour at stroke edges. Mysterious and unsettling in the best way.",
     "properties": {
       "shading": 3,
       "sheen": 4,
@@ -9253,7 +9253,7 @@ const INKS = [
     "colorPrimary": "#3a1a5a",
     "colorDark": "#1a0a3a",
     "tagline": "A deep, dark grape purple with the depth of midnight.",
-    "description": "A Grape Coloured Night is a very dark purple — near-black, with rich grape-purple depths and a subtle shimmer. Dramatic and mysterious, it captures the colour of a moonless night.",
+    "description": "A Grape Coloured Night is a very dark purple - near-black, with rich grape-purple depths and a subtle shimmer. Dramatic and mysterious, it captures the colour of a moonless night.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -9288,7 +9288,7 @@ const INKS = [
     "colorPrimary": "#8a8a9a",
     "colorDark": "#6a6a7a",
     "tagline": "A soft, drifting grey with a gentle silver shimmer.",
-    "description": "Floating Cloud is a soft, light grey with a gentle silver shimmer — atmospheric and dreamy, like clouds drifting across a pale sky. Delicate and refined.",
+    "description": "Floating Cloud is a soft, light grey with a gentle silver shimmer - atmospheric and dreamy, like clouds drifting across a pale sky. Delicate and refined.",
     "properties": {
       "shading": 2,
       "sheen": 1,
@@ -9357,7 +9357,7 @@ const INKS = [
     "colorPrimary": "#3a4a6a",
     "colorDark": "#1a2a4a",
     "tagline": "A muted, literary blue-grey with quiet strength.",
-    "description": "From Wearingeul's literature series, Jane Eyre is a muted blue-grey with quiet dignity and strength — a bookish, contemplative colour befitting Brontë's resilient heroine. Lovely subtle shading.",
+    "description": "From Wearingeul's literature series, Jane Eyre is a muted blue-grey with quiet dignity and strength - a bookish, contemplative colour befitting Brontë's resilient heroine. Lovely subtle shading.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -9391,7 +9391,7 @@ const INKS = [
     "colorPrimary": "#2a2a3a",
     "colorDark": "#0a0a1a",
     "tagline": "A dark, brooding blue-black inspired by Dazai's masterpiece.",
-    "description": "No Longer Human is a very dark blue-black with a brooding, melancholy depth — inspired by Osamu Dazai's haunting novel. Near-black with subtle blue undertones, it's profound and atmospheric.",
+    "description": "No Longer Human is a very dark blue-black with a brooding, melancholy depth - inspired by Osamu Dazai's haunting novel. Near-black with subtle blue undertones, it's profound and atmospheric.",
     "properties": {
       "shading": 2,
       "sheen": 2,
@@ -9426,7 +9426,7 @@ const INKS = [
     "colorPrimary": "#7a2a1a",
     "colorDark": "#5a0a00",
     "tagline": "A smouldering red-orange with an infernal gold sheen.",
-    "description": "From Wearingeul's Special Collection, Purgatori is a smouldering red-orange with a dramatic gold sheen — the colour of purgatorial fire. Intense and dramatic with excellent character.",
+    "description": "From Wearingeul's Special Collection, Purgatori is a smouldering red-orange with a dramatic gold sheen - the colour of purgatorial fire. Intense and dramatic with excellent character.",
     "properties": {
       "shading": 3,
       "sheen": 4,
@@ -9461,7 +9461,7 @@ const INKS = [
     "colorPrimary": "#8a8a9a",
     "colorDark": "#6a6a7a",
     "tagline": "A soft, hurried grey with a glint of silver shimmer.",
-    "description": "From the Alice in Wonderland series, White Rabbit is a soft grey with silver shimmer — light, quick, and a little anxious, like the perpetually late rabbit. Delicate and charming.",
+    "description": "From the Alice in Wonderland series, White Rabbit is a soft grey with silver shimmer - light, quick, and a little anxious, like the perpetually late rabbit. Delicate and charming.",
     "properties": {
       "shading": 2,
       "sheen": 1,
@@ -9494,8 +9494,8 @@ const INKS = [
     "colours": ["Pink","Brown"],
     "colorPrimary": "#7a5a2a",
     "colorDark": "#5a3a0a",
-    "tagline": "A warm, weathered gold-brown — noble, faded, and dreaming.",
-    "description": "From the literature series, Don Quixote is a warm gold-brown — the colour of sun-faded armour and dusty roads. Noble and dreaming, with the romantic melancholy of the knight-errant.",
+    "tagline": "A warm, weathered gold-brown - noble, faded, and dreaming.",
+    "description": "From the literature series, Don Quixote is a warm gold-brown - the colour of sun-faded armour and dusty roads. Noble and dreaming, with the romantic melancholy of the knight-errant.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -9528,7 +9528,7 @@ const INKS = [
     "colorPrimary": "#5a7a3a",
     "colorDark": "#3a5a1a",
     "tagline": "A warm, sunlit green like a riverbank summer adventure.",
-    "description": "From the literature series, Adventures of Tom Sawyer is a warm, sunny yellow-green — the colour of riverbank grass on a carefree summer day. Cheerful and full of boyish energy.",
+    "description": "From the literature series, Adventures of Tom Sawyer is a warm, sunny yellow-green - the colour of riverbank grass on a carefree summer day. Cheerful and full of boyish energy.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -9560,8 +9560,8 @@ const INKS = [
     "name": "Tsukuyami",
     "colorPrimary": "#1a2a4a",
     "colorDark": "#0a0a2a",
-    "tagline": "Moonless dark — a deep, profound blue-black of night.",
-    "description": "Tsukuyami (moonless darkness) is a very deep blue-black — the colour of the deepest night without moonlight. Profound and mysterious, with subtle blue depths and a touch of sheen.",
+    "tagline": "Moonless dark - a deep, profound blue-black of night.",
+    "description": "Tsukuyami (moonless darkness) is a very deep blue-black - the colour of the deepest night without moonlight. Profound and mysterious, with subtle blue depths and a touch of sheen.",
     "properties": {
       "shading": 2,
       "sheen": 2,
@@ -9631,7 +9631,7 @@ const INKS = [
     "colorPrimary": "#5a8ac8",
     "colorDark": "#3a6aa8",
     "tagline": "A soft, dreaming sky-blue ready to fly to Neverland.",
-    "description": "From the Peter Pan series, Wendy Darling is a soft, dreamy sky-blue with a gentle shimmer — the colour of a child's bedroom window open to the night sky. Hopeful and full of wonder.",
+    "description": "From the Peter Pan series, Wendy Darling is a soft, dreamy sky-blue with a gentle shimmer - the colour of a child's bedroom window open to the night sky. Hopeful and full of wonder.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -9666,7 +9666,7 @@ const INKS = [
     "colorPrimary": "#5a5a6a",
     "colorDark": "#3a3a4a",
     "tagline": "A complex, contemplative grey with a hidden green-gold sheen.",
-    "description": "Human Issues is a sophisticated grey with a hidden green-gold sheen — understated in colour but complex in character. A thoughtful, contemplative ink that rewards close attention.",
+    "description": "Human Issues is a sophisticated grey with a hidden green-gold sheen - understated in colour but complex in character. A thoughtful, contemplative ink that rewards close attention.",
     "properties": {
       "shading": 2,
       "sheen": 3,
@@ -9701,7 +9701,7 @@ const INKS = [
     "colorPrimary": "#5a1a2a",
     "colorDark": "#3a0a1a",
     "tagline": "A dark, guilt-laden burgundy with a brooding sheen.",
-    "description": "From the literature series, Crime and Punishment is a dark burgundy-red with a brooding intensity and a subtle sheen — inspired by Dostoevsky's tortured masterpiece. Deep, guilty, and dramatic.",
+    "description": "From the literature series, Crime and Punishment is a dark burgundy-red with a brooding intensity and a subtle sheen - inspired by Dostoevsky's tortured masterpiece. Deep, guilty, and dramatic.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -9735,7 +9735,7 @@ const INKS = [
     "colorPrimary": "#5a1a3a",
     "colorDark": "#3a0a1a",
     "tagline": "A dark, seductive vampire purple-red with a wicked sheen.",
-    "description": "From Wearingeul's Special Collection, Carmilla is a dark purple-red with a dramatic sheen — seductive and dangerous, inspired by the classic gothic vampire tale. Rich, mysterious, and beautiful.",
+    "description": "From Wearingeul's Special Collection, Carmilla is a dark purple-red with a dramatic sheen - seductive and dangerous, inspired by the classic gothic vampire tale. Rich, mysterious, and beautiful.",
     "properties": {
       "shading": 3,
       "sheen": 4,
@@ -9769,7 +9769,7 @@ const INKS = [
     "colorPrimary": "#2a3a3a",
     "colorDark": "#0a1a1a",
     "tagline": "A dark, mysterious teal-black worthy of a Holmes mystery.",
-    "description": "From the literature series, Valley of Fear is a very dark teal-black with a mysterious, atmospheric depth — inspired by the Sherlock Holmes novel. Dark, intriguing, and full of shadow.",
+    "description": "From the literature series, Valley of Fear is a very dark teal-black with a mysterious, atmospheric depth - inspired by the Sherlock Holmes novel. Dark, intriguing, and full of shadow.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -9803,7 +9803,7 @@ const INKS = [
     "colorPrimary": "#3a8a5a",
     "colorDark": "#1a6a3a",
     "tagline": "A vivid fairy green sprinkled with golden pixie dust.",
-    "description": "From the Peter Pan series, Tinker Bell is a vivid green with sparkling gold shimmer — fairy magic in a bottle. Bright, playful, and full of pixie-dust sparkle.",
+    "description": "From the Peter Pan series, Tinker Bell is a vivid green with sparkling gold shimmer - fairy magic in a bottle. Bright, playful, and full of pixie-dust sparkle.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -9836,7 +9836,7 @@ const INKS = [
     "colorPrimary": "#9a2e26",
     "colorDark": "#5c1b16",
     "tagline": "A deep, villainous navy with a menacing sheen.",
-    "description": "From the Peter Pan series, Captain Hook is a deep, dark navy with a menacing sheen — the colour of the villain's coat and the dark waters below his ship. Dramatic and dangerous.",
+    "description": "From the Peter Pan series, Captain Hook is a deep, dark navy with a menacing sheen - the colour of the villain's coat and the dark waters below his ship. Dramatic and dangerous.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -9868,7 +9868,7 @@ const INKS = [
     "name": "Queen of Hearts",
     "colorPrimary": "#a81a2a",
     "colorDark": "#88000a",
-    "tagline": "A bold, commanding red — off with their heads!",
+    "tagline": "A bold, commanding red - off with their heads!",
     "description": "From the Alice in Wonderland series, Queen of Hearts is a bold, vivid red with a commanding presence and a subtle sheen. Dramatic and imperious, just like the tyrannical queen herself.",
     "properties": {
       "shading": 3,
@@ -9903,7 +9903,7 @@ const INKS = [
     "colorPrimary": "#3a6aaa",
     "colorDark": "#1a4a8a",
     "tagline": "A curious, dreamy blue ready to tumble down the rabbit hole.",
-    "description": "From the Alice in Wonderland series, Alice is a bright, curious blue with a dreamy quality and a subtle shimmer — the colour of a pinafore dress and wide-eyed wonder. Cheerful and inquisitive.",
+    "description": "From the Alice in Wonderland series, Alice is a bright, curious blue with a dreamy quality and a subtle shimmer - the colour of a pinafore dress and wide-eyed wonder. Cheerful and inquisitive.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -9937,7 +9937,7 @@ const INKS = [
     "colours": ["Green"],
     "colorPrimary": "#5a9ac8",
     "colorDark": "#3a7aa8",
-    "tagline": "Lord of wind — a bright, airy sky-blue with celestial shimmer.",
+    "tagline": "Lord of wind - a bright, airy sky-blue with celestial shimmer.",
     "description": "From Wearingeul's Special Collection mythology series, Vayu (the Hindu lord of wind) is a bright, airy sky-blue with celestial shimmer. Light, free, and full of movement.",
     "properties": {
       "shading": 3,
@@ -9972,8 +9972,8 @@ const INKS = [
     "colours": ["Blue"],
     "colorPrimary": "#1a6a7a",
     "colorDark": "#0a4a5a",
-    "tagline": "Goddess of the sea — a deep ocean teal with a watery sheen.",
-    "description": "From the Special Collection mythology series, Sedna (the Inuit goddess of the sea) is a deep ocean teal with a beautiful sheen — the colour of cold northern waters. Mysterious and deep.",
+    "tagline": "Goddess of the sea - a deep ocean teal with a watery sheen.",
+    "description": "From the Special Collection mythology series, Sedna (the Inuit goddess of the sea) is a deep ocean teal with a beautiful sheen - the colour of cold northern waters. Mysterious and deep.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -10008,8 +10008,8 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#7a3a6a",
     "colorDark": "#5a1a4a",
-    "tagline": "Queen of spring and the underworld — a rich purple-pink with a sheen.",
-    "description": "From the Special Collection mythology series, Persephone is a rich purple-pink with a beautiful sheen — capturing the dual nature of the goddess who is both spring's bloom and the underworld's queen.",
+    "tagline": "Queen of spring and the underworld - a rich purple-pink with a sheen.",
+    "description": "From the Special Collection mythology series, Persephone is a rich purple-pink with a beautiful sheen - capturing the dual nature of the goddess who is both spring's bloom and the underworld's queen.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -10042,8 +10042,8 @@ const INKS = [
     "name": "Heimdall",
     "colorPrimary": "#a87a2a",
     "colorDark": "#885a0a",
-    "tagline": "Guardian of the rainbow bridge — a warm gold-amber with radiant shimmer.",
-    "description": "From the Special Collection mythology series, Heimdall (the Norse guardian of Bifrost) is a warm gold-amber with radiant shimmer — the colour of the rainbow bridge gleaming in the sun. Warm and luminous.",
+    "tagline": "Guardian of the rainbow bridge - a warm gold-amber with radiant shimmer.",
+    "description": "From the Special Collection mythology series, Heimdall (the Norse guardian of Bifrost) is a warm gold-amber with radiant shimmer - the colour of the rainbow bridge gleaming in the sun. Warm and luminous.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -10077,8 +10077,8 @@ const INKS = [
     "colours": ["Red","Pink"],
     "colorPrimary": "#c87a1a",
     "colorDark": "#a85a0a",
-    "tagline": "The Monkey King — a blazing gold-orange with rebellious shimmer.",
-    "description": "From the Special Collection, The Great Sage Heaven's Equal (Sun Wukong, the Monkey King) is a blazing gold-orange with brilliant shimmer — bold, rebellious, and powerful, like the legendary trickster hero.",
+    "tagline": "The Monkey King - a blazing gold-orange with rebellious shimmer.",
+    "description": "From the Special Collection, The Great Sage Heaven's Equal (Sun Wukong, the Monkey King) is a blazing gold-orange with brilliant shimmer - bold, rebellious, and powerful, like the legendary trickster hero.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -10113,8 +10113,8 @@ const INKS = [
     "colours": ["Blue"],
     "colorPrimary": "#1a7a8a",
     "colorDark": "#0a5a6a",
-    "tagline": "God of fresh water — a vivid teal with a flowing, watery sheen.",
-    "description": "From the Special Collection mythology series, Enki (the Sumerian god of water and wisdom) is a vivid teal with a beautiful flowing sheen — the colour of life-giving fresh water. Bright and wise.",
+    "tagline": "God of fresh water - a vivid teal with a flowing, watery sheen.",
+    "description": "From the Special Collection mythology series, Enki (the Sumerian god of water and wisdom) is a vivid teal with a beautiful flowing sheen - the colour of life-giving fresh water. Bright and wise.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -10149,8 +10149,8 @@ const INKS = [
     "colours": ["Grey"],
     "colorPrimary": "#2a1a2a",
     "colorDark": "#0a000a",
-    "tagline": "Lord of the underworld — a near-black purple with an infernal sheen.",
-    "description": "From the Special Collection mythology series, Hades (the Greek lord of the underworld) is a near-black purple with a dramatic sheen — dark, powerful, and regal as the ruler of the dead. The darkest ink in the series.",
+    "tagline": "Lord of the underworld - a near-black purple with an infernal sheen.",
+    "description": "From the Special Collection mythology series, Hades (the Greek lord of the underworld) is a near-black purple with a dramatic sheen - dark, powerful, and regal as the ruler of the dead. The darkest ink in the series.",
     "properties": {
       "shading": 3,
       "sheen": 3,

@@ -1,4 +1,4 @@
-// Ink Vial — Stripe Checkout session creator (Vercel serverless function)
+// Ink Vial - Stripe Checkout session creator (Vercel serverless function)
 // Prices are looked up server-side from catalog.json so they cannot be tampered with.
 // Requires env var STRIPE_SECRET_KEY (set in the Vercel dashboard).
 
@@ -62,7 +62,7 @@ module.exports = async (req, res) => {
         price_data: {
           currency: 'gbp',
           unit_amount: unit,
-          product_data: { name: `${entry.brand} ${entry.name} — 2ml sample` }
+          product_data: { name: `${entry.brand} ${entry.name} - 2ml sample` }
         }
       });
     }

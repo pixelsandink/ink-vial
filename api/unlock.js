@@ -1,4 +1,4 @@
-// POST /api/unlock — checks the preview password and, if correct, sets a
+// POST /api/unlock - checks the preview password and, if correct, sets a
 // cookie that lets Edge Middleware allow access to the shop pages.
 // Password lives in the SITE_PASSWORD env var (never in the page source).
 

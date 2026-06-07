@@ -1,4 +1,4 @@
-// GET /api/stock — returns live stock STATUS for every ink (never the raw count).
+// GET /api/stock - returns live stock STATUS for every ink (never the raw count).
 // Reads the single hash "inkvial:stock". Falls back to seed if Redis is empty/unset.
 
 const redis = require('./_redis');
@@ -25,7 +25,7 @@ module.exports = async (req, res) => {
     }
     return res.status(200).json({ statuses });
   } catch (err) {
-    // Redis unreachable — let the front-end fall back to its built-in stock
+    // Redis unreachable - let the front-end fall back to its built-in stock
     return res.status(200).json({ statuses: null, note: 'kv-unavailable' });
   }
 };

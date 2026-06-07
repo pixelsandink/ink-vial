@@ -1,6 +1,6 @@
 // Tiny Redis client over the Upstash REST API.
 // Works whether Vercel injects KV_REST_API_* (old Vercel KV) or
-// UPSTASH_REDIS_REST_* (Upstash marketplace) env vars — no SDK needed.
+// UPSTASH_REDIS_REST_* (Upstash marketplace) env vars - no SDK needed.
 
 const URL =
   process.env.KV_REST_API_URL ||

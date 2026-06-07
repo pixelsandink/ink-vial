@@ -1,4 +1,4 @@
-// Ink Vial — Price lookup (updated: 50% minimum margin on all brands)
+// Ink Vial - Price lookup (updated: 50% minimum margin on all brands)
 // All prices ensure ≥50% gross margin after ink, vial, label & labour costs.
 
 function getInkPrice(ink) {
@@ -101,7 +101,7 @@ function getInkPrice(ink) {
   return 1.75;
 }
 
-// Stock status — customers see a label only, never the number.
+// Stock status - customers see a label only, never the number.
 // 'in' = Available · 'low' = Low stock · 'out' = Sold out
 var LOW_STOCK_AT = 4;
 function getStockStatus(ink) {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop All Inks — Ink Vial</title>
+  <title>Shop All Inks - Ink Vial</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -165,7 +165,7 @@
   .announce-sep{color:rgba(240,232,216,0.35);font-size:0.7rem;}
   @keyframes announce-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
   @media (prefers-reduced-motion: reduce){.announce-track{animation:none;justify-content:center;width:100%;}.announce-track .announce-dupe{display:none;}}
-  /* smart sticky header — banner collapses on scroll-down, returns on scroll-up */
+  /* smart sticky header - banner collapses on scroll-down, returns on scroll-up */
   .site-header{position:sticky;top:0;z-index:100;}
   .site-header .nav{position:static;top:auto;}
   .announce-bar{transition:max-height .35s ease;max-height:72px;}
@@ -221,10 +221,10 @@
 <div class="announce-bar" aria-label="Announcements">
   <div class="announce-track">
     <span class="announce-item">✨ Free UK delivery on orders over £40</span><span class="announce-sep">◆</span>
-    <span class="announce-item">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep">◆</span>
+    <span class="announce-item">🖋️ Every vial is hand-filled fresh to order - please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep">◆</span>
     <span class="announce-item">💜 Over 300 inks to explore</span><span class="announce-sep">◆</span>
     <span class="announce-item announce-dupe">✨ Free UK delivery on orders over £40</span><span class="announce-sep announce-dupe">◆</span>
-    <span class="announce-item announce-dupe">🖋️ Every vial is hand-filled fresh to order — please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep announce-dupe">◆</span>
+    <span class="announce-item announce-dupe">🖋️ Every vial is hand-filled fresh to order - please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep announce-dupe">◆</span>
     <span class="announce-item announce-dupe">💜 Over 300 inks to explore</span><span class="announce-sep announce-dupe">◆</span>
   </div>
 </div>
@@ -254,7 +254,7 @@
 
 <div class="page-header">
   <h1>Shop All Inks</h1>
-  <p>2ml samples, freshly filled to order — try before you commit to the bottle.</p>
+  <p>2ml samples, freshly filled to order - try before you commit to the bottle.</p>
   <span class="ink-count" id="ink-count">Loading…</span>
 </div>
 
@@ -351,7 +351,7 @@
     </ul></div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2026 Ink Vial — United Kingdom</span>
+    <span>&copy; 2026 Ink Vial - United Kingdom</span>
     <span>Made with love for ink lovers everywhere</span>
   </div>
 </footer>
@@ -455,7 +455,7 @@
                 data-item-price="${price.toFixed(2)}"
                 data-item-url="product?id=${ink.id}"
                 data-item-name="${ink.brand} ${ink.name}"
-                data-item-description="2ml plastic vial — ${(ink.tagline||'').replace(/"/g,'&quot;')}"
+                data-item-description="2ml plastic vial - ${(ink.tagline||'').replace(/"/g,'&quot;')}"
                 data-item-categories="${ink.brand}"
               >
                 <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
@@ -501,7 +501,7 @@
     });
   });
 
-  // ── Live stock (from /api/stock) — falls back to built-in if unavailable ──
+  // ── Live stock (from /api/stock) - falls back to built-in if unavailable ──
   function loadLiveStock() {
     fetch('/api/stock', { headers: { 'Accept': 'application/json' } })
       .then(r => r.ok ? r.json() : null)

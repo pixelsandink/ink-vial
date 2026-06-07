@@ -1,4 +1,4 @@
-// Stripe webhook — fires after a successful payment and subtracts the
+// Stripe webhook - fires after a successful payment and subtracts the
 // purchased quantities from live stock. Fully automatic; no manual upkeep.
 //
 // Env vars needed: STRIPE_SECRET_KEY, STRIPE_WEBHOOK_SECRET
@@ -44,7 +44,7 @@ module.exports = async (req, res) => {
         const items = typeof raw === 'string' ? JSON.parse(raw) : raw;
         if (Array.isArray(items)) {
           for (const it of items) {
-            // atomic decrement — never lets two orders double-spend the same vial
+            // atomic decrement - never lets two orders double-spend the same vial
             await redis.hincrby('inkvial:stock', it.id, -Math.abs(it.qty || 1));
           }
         }

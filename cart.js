@@ -1,5 +1,5 @@
 /* ──────────────────────────────────────────────────────────────
-   Ink Vial — self-contained basket
+   Ink Vial - self-contained basket
    Works with the existing .snipcart-add-item buttons and
    .snipcart-checkout / .snipcart-items-count elements.
    Stores the basket in localStorage so it survives page loads.
@@ -158,7 +158,7 @@
       <div class="iv-row"><span>Subtotal (${itemCount()} item${itemCount()!==1?'s':''})</span><span>${money(sub)}</span></div>
       <div class="iv-row"><span>Shipping</span><span>${freeShip ? '<strong style="color:#2d7a3a">FREE</strong>' : money(SHIPPING)}</span></div>
       <div class="iv-row total"><span>Total</span><span>${money(total)}</span></div>
-      <button class="iv-checkout" id="iv-checkout">Checkout — ${money(total)}</button>
+      <button class="iv-checkout" id="iv-checkout">Checkout - ${money(total)}</button>
       <button class="iv-empty-btn" id="iv-empty">Empty basket</button>
     `;
     foot.querySelector('#iv-checkout').addEventListener('click', checkout);
@@ -214,7 +214,7 @@
     });
   }
 
-  // ── Checkout — Stripe in production, email fallback locally ──
+  // ── Checkout - Stripe in production, email fallback locally ──
   async function checkout() {
     if (!cart.length) return;
     const btn = document.getElementById('iv-checkout');
