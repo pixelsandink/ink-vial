@@ -1221,6 +1221,7 @@ const INKS = [
   },
   {
     "id": "diamine-raise-a-glass",
+    "image": "images/diamine-raise-a-glass.jpg",
     "shimmer": true,
     "sheen": false,
     "brand": "Diamine",
@@ -2430,6 +2431,7 @@ const INKS = [
   },
   {
     "id": "jherbin-vert-cactus",
+    "image": "images/jherbin-vert-cactus.jpg",
     "brand": "J.Herbin",
     "name": "Vert Cactus",
     "colorPrimary": "#4a7a3a",
@@ -2839,6 +2841,7 @@ const INKS = [
   },
   {
     "id": "jherbin-lie-de-the",
+    "image": "images/jherbin-lie-de-the.jpg",
     "brand": "J.Herbin",
     "name": "Lie De The",
     "colours": ["Brown"],
@@ -2872,6 +2875,7 @@ const INKS = [
   },
   {
     "id": "jherbin-rouge-grenat",
+    "image": "images/jherbin-rouge-grenat.jpg",
     "brand": "J.Herbin",
     "name": "Rouge Grenat",
     "colorPrimary": "#7a1a2a",
@@ -2937,6 +2941,7 @@ const INKS = [
   },
   {
     "id": "kaweco-smokey-grey",
+    "image": "images/kaweco-smokey-grey.jpg",
     "brand": "Kaweco",
     "name": "Smokey Grey",
     "colorPrimary": "#5a5a6a",
@@ -2969,6 +2974,7 @@ const INKS = [
   },
   {
     "id": "kaweco-caramel-brown",
+    "image": "images/kaweco-caramel-brown.jpg",
     "brand": "Kaweco",
     "name": "Caramel Brown",
     "colours": ["Brown"],
@@ -3403,6 +3409,7 @@ const INKS = [
   },
   {
     "id": "laban-artemis-navy",
+    "image": "images/laban-artemis-navy.jpg",
     "brand": "Laban",
     "name": "Artemis Navy",
     "colorPrimary": "#1a2a5a",
@@ -3435,6 +3442,7 @@ const INKS = [
   },
   {
     "id": "laban-athena-grey",
+    "image": "images/laban-athena-grey.jpg",
     "brand": "Laban",
     "name": "Athena Grey",
     "colorPrimary": "#7a7a8a",
@@ -8604,6 +8612,7 @@ const INKS = [
   },
   {
     "id": "vinta-blue-blood",
+    "image": "images/vinta-blue-blood.jpg",
     "sheen": true,
     "brand": "Vinta",
     "name": "Blue Blood",
@@ -8672,6 +8681,7 @@ const INKS = [
   },
   {
     "id": "vinta-sailfin-green",
+    "image": "images/vinta-sailfin-green.jpg",
     "shimmer": true,
     "sheen": false,
     "brand": "Vinta",
@@ -8707,6 +8717,7 @@ const INKS = [
   },
   {
     "id": "vinta-elusive-blue",
+    "image": "images/vinta-elusive-blue.jpg",
     "shimmer": true,
     "sheen": false,
     "brand": "Vinta",
@@ -8741,6 +8752,7 @@ const INKS = [
   },
   {
     "id": "vinta-liquid-sepia",
+    "image": "images/vinta-liquid-sepia.jpg",
     "brand": "Vinta",
     "name": "Liquid Sepia",
     "colours": ["Brown"],
@@ -8774,6 +8786,7 @@ const INKS = [
   },
   {
     "id": "vinta-pink-afterglow",
+    "image": "images/vinta-pink-afterglow.jpg",
     "shimmer": true,
     "sheen": false,
     "brand": "Vinta",
@@ -8909,6 +8922,7 @@ const INKS = [
   },
   {
     "id": "vinta-london-grey",
+    "image": "images/vinta-london-grey.jpg",
     "brand": "Vinta",
     "name": "London Grey",
     "colorPrimary": "#5a5a6a",
