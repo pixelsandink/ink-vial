@@ -6767,9 +6767,9 @@ const INKS = [
     "stock": 8
   },
   {
-    "id": "sailor-studio-173",
+    "id": "sailor-studio-172",
     "brand": "Sailor",
-    "name": "Studio Ink 173",
+    "name": "Studio Ink 172",
     "colorPrimary": "#a85a3a",
     "colorDark": "#88401a",
     "tagline": "A warm, dusty orange-brown from the Studio collection.",
@@ -6796,7 +6796,7 @@ const INKS = [
         "body": "Stunning in broad nibs."
       }
     ],
-    "image": "images/sailor-studio-173.jpg",
+    "image": "images/sailor-studio-172.jpg",
     "stock": 8
   },
   {
