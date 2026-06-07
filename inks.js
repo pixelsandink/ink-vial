@@ -10289,5 +10289,141 @@ const INKS = [
     ],
     "image": "images/birmingham-oil-rag.jpg",
     "stock": 20
+  },
+  {
+    "id": "robert-oster-coffee-monster",
+    "brand": "Robert Oster",
+    "name": "Coffee Monster",
+    "colours": ["Brown","Grey"],
+    "colorPrimary": "#5a4a3a",
+    "colorDark": "#352a20",
+    "tagline": "A Robert Oster x The Coffee Monster Co. collaboration - slate and coffee in a single, extraordinary ink.",
+    "description": "Coffee Monster is a special collaboration between Robert Oster and the beloved ink artist The Coffee Monster Co. It's a remarkable chromatic-shading ink that splits across the page between cool slate-blue and warm, roasted coffee-brown - cool in the shadows, rich and toasty where it pools. Genuinely one of a kind, and a proper collector's favourite.",
+    "properties": {
+      "shading": 4,
+      "sheen": 0,
+      "dryTime": "Medium (10–15 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth or cream paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "The magic shows best here - watch it separate from slate-grey into warm coffee-brown across a single stroke. High shading, clean lines, no feathering."
+      },
+      {
+        "title": "On textured paper",
+        "body": "The two-tone split deepens and the brown reads richer. Still well behaved with no bleed on quality stock."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Wetter, broader nibs reward you with the fullest colour separation. Even a fine nib hints at the slate-to-coffee shift."
+      }
+    ],
+    "image": "images/robert-oster-coffee-monster.jpg",
+    "stock": 20
+  },
+  {
+    "id": "robert-oster-murky-pond-water",
+    "brand": "Robert Oster",
+    "name": "Murky Pond Water",
+    "colours": ["Grey"],
+    "colorPrimary": "#494853",
+    "colorDark": "#2e2d36",
+    "tagline": "A Robert Oster x The Coffee Monster Co. collaboration - moody, murky and beautifully grey.",
+    "description": "Part of the Robert Oster x The Coffee Monster Co. collaboration, Murky Pond Water is a brooding, desaturated grey with hints of green and violet stirred through it - exactly like the still, silty water it's named for. Subtle, atmospheric and full of quiet character.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Medium (10–15 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth or cream paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Soft grey shading with murky green-violet undertones surfacing in the pooling. Understated and moody."
+      },
+      {
+        "title": "On textured paper",
+        "body": "The murk deepens on toothier paper, leaning more slate. Clean with no feathering on quality stock."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Reads as a refined muted grey in fine nibs; broader nibs draw out the green and violet hidden in the murk."
+      }
+    ],
+    "image": "images/robert-oster-murky-pond-water.jpg",
+    "stock": 20
+  },
+  {
+    "id": "dominant-industry-allegory",
+    "brand": "Dominant Industry",
+    "name": "Allegory",
+    "colours": ["Grey","Blue"],
+    "colorPrimary": "#2f3742",
+    "colorDark": "#1c222a",
+    "tagline": "A deep, contemplative slate blue-grey.",
+    "description": "Allegory is a dark, desaturated blue-grey from Dominant Industry - the colour of storm clouds at dusk. Near-black at full saturation with a cool blue cast, it's a sophisticated everyday dark with quiet depth and gentle shading.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Medium (10–15 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Smooth",
+      "bestOn": "Smooth or cream paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Cool slate-blue shading that settles into a deep charcoal in heavier strokes. Elegant and calm."
+      },
+      {
+        "title": "On textured paper",
+        "body": "The blue cast shows a touch more on toothier stock. Well behaved with no bleed on quality paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "A clean near-black in fine nibs; broader nibs reveal the blue-grey character and soft shading range."
+      }
+    ],
+    "image": "images/dominant-industry-allegory.jpg",
+    "stock": 10
+  },
+  {
+    "id": "vinta-ulap",
+    "brand": "Vinta",
+    "name": "Ulap",
+    "colours": ["Grey","Teal"],
+    "colorPrimary": "#5a6a68",
+    "colorDark": "#3a4a48",
+    "tagline": "A soft, cloudy grey-teal named for the sky.",
+    "description": "Ulap (Filipino for 'cloud') is a gentle grey-teal with a whisper of green, like overcast skies drifting over the sea. Calm and atmospheric, with lovely soft shading that moves from pale mist to deeper slate.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Medium (10–15 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth or cream paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Misty grey-teal with soft, even shading. Light strokes read almost silver; heavier ones cool into slate."
+      },
+      {
+        "title": "On textured paper",
+        "body": "The green-teal undertone comes through a little more. Gentle and clean with no feathering."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "A soft, easy grey-teal in any nib; broader nibs bring out the most of its cloudy shading."
+      }
+    ],
+    "image": "images/vinta-ulap.jpg",
+    "stock": 12
   }
 ];

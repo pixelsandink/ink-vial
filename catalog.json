@@ -1518,5 +1518,25 @@
     "name": "Oil Rag",
     "brand": "The Birmingham Pen Company",
     "price": 3
+  },
+  "robert-oster-coffee-monster": {
+    "name": "Coffee Monster",
+    "brand": "Robert Oster",
+    "price": 2.25
+  },
+  "robert-oster-murky-pond-water": {
+    "name": "Murky Pond Water",
+    "brand": "Robert Oster",
+    "price": 2.25
+  },
+  "dominant-industry-allegory": {
+    "name": "Allegory",
+    "brand": "Dominant Industry",
+    "price": 2.25
+  },
+  "vinta-ulap": {
+    "name": "Ulap",
+    "brand": "Vinta",
+    "price": 3
   }
 }
