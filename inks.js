@@ -3136,6 +3136,7 @@ const INKS = [
   },
   {
     "id": "kwz-brown-3",
+    "image": "images/kwz-brown-3.jpg",
     "brand": "KWZ Ink",
     "name": "Brown 3",
     "colours": ["Brown"],
@@ -3169,6 +3170,7 @@ const INKS = [
   },
   {
     "id": "kwz-warsaw-dreaming",
+    "image": "images/kwz-warsaw-dreaming.jpg",
     "brand": "KWZ Ink",
     "name": "Warsaw Dreaming",
     "colorPrimary": "#4a5a7a",
@@ -3201,6 +3203,7 @@ const INKS = [
   },
   {
     "id": "kwz-grey-lux",
+    "image": "images/kwz-grey-lux.jpg",
     "brand": "KWZ Ink",
     "name": "Grey Lux",
     "colorPrimary": "#7a7a8a",
@@ -3233,6 +3236,7 @@ const INKS = [
   },
   {
     "id": "kwz-maroon",
+    "image": "images/kwz-maroon.jpg",
     "brand": "KWZ Ink",
     "name": "Maroon",
     "colorPrimary": "#6a1a1a",
@@ -3265,6 +3269,7 @@ const INKS = [
   },
   {
     "id": "kwz-cappuccino",
+    "image": "images/kwz-cappuccino.jpg",
     "brand": "KWZ Ink",
     "name": "Cappuccino",
     "colours": ["Brown"],
@@ -3332,6 +3337,7 @@ const INKS = [
   },
   {
     "id": "laban-aphrodite-pink",
+    "image": "images/laban-aphrodite-pink.jpg",
     "brand": "Laban",
     "name": "Aphrodite Pink",
     "colorPrimary": "#e07a9a",
@@ -3364,6 +3370,7 @@ const INKS = [
   },
   {
     "id": "laban-hera-green",
+    "image": "images/laban-hera-green.jpg",
     "brand": "Laban",
     "name": "Hera Green",
     "colorPrimary": "#2a7a3a",
