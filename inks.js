@@ -10255,5 +10255,39 @@ const INKS = [
     ],
     "image": "images/inkebara-pale-violet.jpg",
     "stock": 20
+  },
+  {
+    "id": "birmingham-oil-rag",
+    "brand": "The Birmingham Pen Company",
+    "name": "Oil Rag",
+    "colours": ["Brown"],
+    "colorPrimary": "#3a2622",
+    "colorDark": "#241512",
+    "tagline": "A dark, worn brown-maroon with the grit of the workshop.",
+    "description": "Oil Rag is a deep, smoky brown-maroon - the colour of a well-used cloth on a garage bench. Almost black at full saturation, it warms to a rich oxblood-brown where the ink thins, giving it real character on the page without ever feeling loud.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Medium (10–15 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth or cream paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Lovely shading - light strokes pull a warm reddish-brown while heavier strokes settle into a near-black espresso. Clean lines with no feathering."
+      },
+      {
+        "title": "On textured paper",
+        "body": "The maroon undertone shows more on toothier stock, deepening the worn, industrial feel. Behaves well with no bleed on quality paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "A versatile everyday dark - reads as a sophisticated near-black in a fine nib, and reveals its full brown-maroon range in a broad."
+      }
+    ],
+    "image": "images/birmingham-oil-rag.jpg",
+    "stock": 20
   }
 ];
