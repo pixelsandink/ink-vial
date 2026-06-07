@@ -8,85 +8,85 @@ function getInkPrice(ink) {
   // ── Nagasawa Kobe £5.00 ────────────────────────────────
   if (brand.includes('kobe') || brand.includes('nagasawa')) return 5.00;
 
-  // ── Sailor Studio & Sailor Studio Ink £3.50 ───────────
-  if (id.includes('sailor-studio')) return 3.50;
+  // ── TAG Kyo-No-Oto £4.50 ──────────────────────────────
+  if (brand.includes('tag') && brand.includes('kyo')) return 4.50;
+
+  // ── Tono & Lims £4.25 ─────────────────────────────────
+  if (brand.includes('tono & lims') || brand.includes('lims') ||
+      id.startsWith('tono-lims') || id.startsWith('tono-and-lims')) return 4.25;
 
   // ── J.Herbin 1670 £4.00 ───────────────────────────────
   if (id.includes('jherbin') && (id.includes('1670') || id.includes('emerald-of-chivor') || id.includes('stormy-grey') || id.includes('hematite-red'))) return 4.00;
 
-  // ── Pilot Iroshizuku £3.75 ────────────────────────────
-  if (brand.includes('pilot iroshizuku') || id.startsWith('pilot-iroshizuku')) return 3.75;
+  // ── Pilot Iroshizuku £4.00 ────────────────────────────
+  if (brand.includes('pilot iroshizuku') || id.startsWith('pilot-iroshizuku')) return 4.00;
 
-  // ── Sailor Mizutama £3.75 ─────────────────────────────
-  if (id.includes('sailor-mizutama')) return 3.75;
+  // ── Ferris Wheel Press £4.00 ──────────────────────────
+  if (brand.includes('ferris wheel press')) return 4.00;
 
-  // ── Sailor Shikori £3.50 ──────────────────────────────
-  if (id.includes('sailor-shikori')) return 3.50;
+  // ── Wearingeul (standard & special) £4.00 ─────────────
+  if (brand.includes('wearingeul')) return 4.00;
 
-  // ── Wearingeul Special Collection £3.50 ───────────────
-  // Special collection inks have 'special' in their collection tag or id
-  if (id.includes('wearingeul') && (
-    id.includes('vayu') || id.includes('sedna') || id.includes('persephone') ||
-    id.includes('heimdall') || id.includes('great-sage') || id.includes('enki') ||
-    id.includes('hades') || id.includes('resurrection') || id.includes('metamorphosis') ||
-    id.includes('purgatori') || id.includes('carmilla')
-  )) return 3.50;
-
-  // ── Tono & Lims £3.50 ─────────────────────────────────
-  if (brand.includes('tono') || brand.includes('lims') ||
-      id.startsWith('tono-lims') || id.startsWith('tono-and-lims')) return 3.50;
-
-  // ── Wearingeul (standard) £3.25 ───────────────────────
-  if (brand.includes('wearingeul')) return 3.25;
-
-  // ── Lennon Tool Bar £3.25 ─────────────────────────────
-  if (brand.includes('lennon tool bar') || id.startsWith('lennon-tool-bar')) return 3.25;
-
-  // ── TAG Kyo-No-Oto £3.25 ──────────────────────────────
-  if (brand.includes('tag') && brand.includes('kyo')) return 3.25;
-
-  // ── Vinta £3.00 ───────────────────────────────────────
-  if (brand.includes('vinta')) return 3.00;
-
-  // ── Octopus Fluids £3.00 ──────────────────────────────
-  if (brand.includes('octopus')) return 3.00;
-
-  // ── Sailor Manyo £3.00 ────────────────────────────────
-  if (id.includes('sailor-manyo')) return 3.00;
-
-  // ── Taccia Ukiyoe £3.00 ───────────────────────────────
-  if (id.includes('taccia') && id.includes('ukiyoe')) return 3.00;
-
-  // ── Sailor (standard & Dategokoro) £2.75 ──────────────
-  if (brand.includes('sailor')) return 2.75;
-
-  // ── Ferris Wheel Press £2.50 ──────────────────────────
-  if (brand.includes('ferris wheel press')) return 2.50;
-
-  // ── Pelikan Edelstein £2.50 ───────────────────────────
-  if (id.includes('pelikan') && id.includes('edelstein')) return 2.50;
-
-  // ── Pentonote £2.50 ───────────────────────────────────
-  if (brand.includes('pentonote')) return 2.50;
+  // ── Sailor Manyo £4.00 ────────────────────────────────
+  if (id.includes('sailor-manyo')) return 4.00;
 
   // ── Robert Oster x The Coffee Monster Co. collab £4.00 ──
   if (id.includes('coffee-monster') || id.includes('murky-pond-water')) return 4.00;
 
-  // ── Robert Oster £2.25 ────────────────────────────────
-  if (brand.includes('robert oster')) return 2.25;
+  // ── Taccia Ukiyoe £3.75 ───────────────────────────────
+  if (id.includes('taccia') && id.includes('ukiyoe')) return 3.75;
 
-  // ── J.Herbin (standard) £2.25 ─────────────────────────
-  if (brand.includes('j.herbin') || brand.includes('jherbin') ||
-      id.startsWith('jherbin')) return 2.25;
+  // ── Sailor Mizutama £3.75 ─────────────────────────────
+  if (id.includes('sailor-mizutama')) return 3.75;
 
-  // ── Dominant Industry £2.25 ───────────────────────────
-  if (brand.includes('dominant industry')) return 2.25;
+  // ── Sailor Ink Studio £3.50 ───────────────────────────
+  if (id.includes('sailor-studio')) return 3.50;
 
-  // ── Taccia Sunaoiro £2.25 ─────────────────────────────
-  if (brand.includes('taccia')) return 2.25;
+  // ── Sailor Shikiori £3.50 ─────────────────────────────
+  if (id.includes('sailor-shikori')) return 3.50;
 
-  // ── Birmingham Pen Company £2.00 ──────────────────────
+  // ── Sailor (standard & Dategokoro) £3.50 ──────────────
+  if (brand.includes('sailor')) return 3.50;
+
+  // ── Lennon Tool Bar £3.50 ─────────────────────────────
+  if (brand.includes('lennon tool bar') || id.startsWith('lennon-tool-bar')) return 3.50;
+
+  // ── Dominant Industry: Pearl/shimmer £3.25, standard £2.75 ──
+  if (brand.includes('dominant industry')) return ink.shimmer === true ? 3.25 : 2.75;
+
+  // ── Vinta £3.25 ───────────────────────────────────────
+  if (brand.includes('vinta')) return 3.25;
+
+  // ── Octopus Fluids £3.00 ──────────────────────────────
+  if (brand.includes('octopus')) return 3.00;
+
+  // ── Birmingham Pen Company £3.00 ──────────────────────
   if (brand.includes('birmingham')) return 3.00;
+
+  // ── Robert Oster £2.75 ────────────────────────────────
+  if (brand.includes('robert oster')) return 2.75;
+
+  // ── J.Herbin (standard) £2.75 ─────────────────────────
+  if (brand.includes('j.herbin') || brand.includes('jherbin') ||
+      id.startsWith('jherbin')) return 2.75;
+
+  // ── Taccia Sunaoiro £2.75 ─────────────────────────────
+  if (brand.includes('taccia')) return 2.75;
+
+  // ── Pentonote £2.50 ───────────────────────────────────
+  if (brand.includes('pentonote')) return 2.50;
+
+  // ── Pelikan Edelstein £2.50 ───────────────────────────
+  if (id.includes('pelikan') && id.includes('edelstein')) return 2.50;
+
+  // ── Troublemaker £2.25 ────────────────────────────────
+  if (brand.includes('troublemaker')) return 2.25;
+
+  // ── De Atramentis £2.25 ───────────────────────────────
+  if (brand.includes('de atramentis') || id.startsWith('de-atramentis') || id.startsWith('deatramentis')) return 2.25;
+
+  // ── Laban £2.25 ───────────────────────────────────────
+  if (brand.includes('laban')) return 2.25;
 
   // ── Colorverse £2.00 ──────────────────────────────────
   if (brand.includes('colorverse')) return 2.00;
@@ -94,13 +94,16 @@ function getInkPrice(ink) {
   // ── KWZ Ink £2.00 ─────────────────────────────────────
   if (brand.includes('kwz')) return 2.00;
 
-  // ── Laban £2.00 ───────────────────────────────────────
-  if (brand.includes('laban')) return 2.00;
+  // ── Monteverde £3.00 ──────────────────────────────────
+  if (brand.includes('monteverde')) return 3.00;
 
-  // ── Monteverde £2.00 ──────────────────────────────────
-  if (brand.includes('monteverde')) return 2.00;
+  // ── Kaweco £2.00 ──────────────────────────────────────
+  if (brand.includes('kaweco')) return 2.00;
 
-  // ── Standard £1.75 (Diamine, Kaweco, Pelikan 4001, R&K, De Atramentis, Troublemaker, Inkebara) ──
+  // ── Inkebara £2.00 ────────────────────────────────────
+  if (brand.includes('inkebara')) return 2.00;
+
+  // ── Standard £1.75 (Diamine, Pelikan 4001, Rohrer & Klingner) ──
   return 1.75;
 }
 
