@@ -69,6 +69,9 @@ function getInkPrice(ink) {
   // ── Pentonote £2.50 ───────────────────────────────────
   if (brand.includes('pentonote')) return 2.50;
 
+  // ── Robert Oster x The Coffee Monster Co. collab £4.00 ──
+  if (id.includes('coffee-monster') || id.includes('murky-pond-water')) return 4.00;
+
   // ── Robert Oster £2.25 ────────────────────────────────
   if (brand.includes('robert oster')) return 2.25;
 

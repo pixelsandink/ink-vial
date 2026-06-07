@@ -10322,7 +10322,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-coffee-monster.jpg",
-    "stock": 20
+    "stock": 80
   },
   {
     "id": "robert-oster-murky-pond-water",
@@ -10356,7 +10356,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-murky-pond-water.jpg",
-    "stock": 20
+    "stock": 80
   },
   {
     "id": "dominant-industry-allegory",
