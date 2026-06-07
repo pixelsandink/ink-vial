@@ -361,11 +361,14 @@
       </section>` : '';
 
     const p = ink.properties;
+    const hasSheen   = ink.sheen === true || (ink.sheen !== false && p.sheen >= 3);
+    const hasShimmer = ink.shimmer === true || (ink.shimmer !== false && /shimmer|shimmering|sparkl|glitter/i.test((ink.description||'') + (ink.tagline||'')));
     const chips = [];
     if (p.shading >= 3) chips.push('High Shading');
     else if (p.shading === 2) chips.push('Low Shading');
-    if (p.sheen >= 3) chips.push('Strong Sheen');
+    if (hasSheen) chips.push('Strong Sheen');
     else if (p.sheen >= 1) chips.push('Subtle Sheen');
+    if (hasShimmer) chips.push('Shimmer');
     if (p.lubrication && p.lubrication.toLowerCase().includes('well')) chips.push('Smooth Flow');
 
     document.getElementById('product-root').innerHTML = `

@@ -295,8 +295,8 @@
     <span>Made with love for ink lovers everywhere</span>
   </div>
 </footer>
-<script src="inks.js"></script>
-<script src="prices.js"></script>
+<script src="inks.js?v=2"></script>
+<script src="prices.js?v=2"></script>
 <script src="cart.js"></script>
 <script>
   // ── State ──────────────────────────────────────────────
@@ -309,8 +309,8 @@
   // ── Feature detection ──────────────────────────────────
   function hasFeature(ink, feature) {
     const p = ink.properties || {};
-    if (feature === 'sheen')   return (p.sheen || 0) >= 3;
-    if (feature === 'shimmer') return /shimmer|shimmering|sparkl|glitter/i.test((ink.description||'') + (ink.tagline||''));
+    if (feature === 'sheen')   return ink.sheen === true || (ink.sheen !== false && (p.sheen || 0) >= 3);
+    if (feature === 'shimmer') return ink.shimmer === true || (ink.shimmer !== false && /shimmer|shimmering|sparkl|glitter/i.test((ink.description||'') + (ink.tagline||'')));
     if (feature === 'water')   return /medium|high/i.test(p.waterResistance || '');
     return true;
   }
