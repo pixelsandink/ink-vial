@@ -52,8 +52,8 @@ module.exports = async (req, res) => {
 
   const isSuggest = type === 'suggest';
   const mailSubject = isSuggest
-    ? `New ink suggestion${ink ? ' — ' + ink : ''}`
-    : `New contact message${subject ? ' — ' + subject : ''}`;
+    ? `New ink suggestion${ink ? ' - ' + ink : ''}`
+    : `New contact message${subject ? ' - ' + subject : ''}`;
 
   const rows = isSuggest
     ? [['Ink / brand', ink], ['Note', note], ['Email', email]]

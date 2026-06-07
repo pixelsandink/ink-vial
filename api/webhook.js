@@ -72,7 +72,7 @@ async function notifyOrder(session, items) {
     `<li style="margin:0 0 4px;">${l.qty}× ${esc(l.label)}</li>`).join('');
   const html =
     `<div style="font-family:Arial,sans-serif;font-size:15px;color:#3d2458;">
-       <h2 style="color:#5c3a9a;margin:0 0 6px;">New order — ${esc(amount)}</h2>
+       <h2 style="color:#5c3a9a;margin:0 0 6px;">New order - ${esc(amount)}</h2>
        <p style="margin:0 0 12px;color:#666;">${totalVials} vial${totalVials !== 1 ? 's' : ''}</p>
        <ul style="margin:0 0 16px;padding-left:18px;">${itemsHtml}</ul>
        <p style="margin:0 0 4px;"><strong>Ship to:</strong><br>${esc(ship) || '(no address)'}</p>
@@ -81,14 +81,14 @@ async function notifyOrder(session, items) {
        <p style="font-size:12px;color:#999;">Full details in your Stripe dashboard.</p>
      </div>`;
   const text =
-    `New order — ${amount} (${totalVials} vials)\n\n` +
+    `New order - ${amount} (${totalVials} vials)\n\n` +
     lines.map(l => `${l.qty}x ${l.label}`).join('\n') +
     `\n\nShip to: ${ship || '(no address)'}\nEmail: ${email || '(none)'}`;
   try {
     await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ from: FROM, to: [TO], subject: `New order — Ink Vial (${amount})`, html, text, reply_to: email || undefined })
+      body: JSON.stringify({ from: FROM, to: [TO], subject: `New order - Ink Vial (${amount})`, html, text, reply_to: email || undefined })
     });
   } catch (e) { console.error('order email error', e); }
 }
