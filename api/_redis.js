@@ -55,4 +55,4 @@ async function set(key, val, exSecs)  {
   return cmd(a);
 }
 
-module.exports = { isConfigured, hgetall, hset, hincrby, del, get, set };
+module.exports = { isConfigured, cmd, hgetall, hset, hincrby, del, get, set };

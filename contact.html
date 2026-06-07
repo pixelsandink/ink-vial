@@ -163,8 +163,9 @@
       <div class="card-tag">Say hello</div>
       <h2>Contact Us</h2>
       <p class="intro">Got a question about an order, an ink, or anything else? Drop us a message and we'll get back to you as soon as we can.</p>
-      <form id="contact-form" action="https://formspree.io/f/YOUR_CONTACT_FORM_ID" method="POST">
-        <input type="hidden" name="_subject" value="New contact message - Ink Vial" />
+      <form id="contact-form" action="/api/contact" method="POST">
+        <input type="hidden" name="type" value="contact" />
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
         <div class="field">
           <label for="c-name">Your name</label>
           <input type="text" id="c-name" name="name" required placeholder="Jane Smith" />
@@ -192,8 +193,9 @@
       <div class="card-tag">Wishlist & ideas</div>
       <h2>Suggest an Ink</h2>
       <p class="intro">Is there an ink you wish we stocked? A brand we're missing? Tell us - we're always growing the collection and your suggestions genuinely shape what we add next.</p>
-      <form id="suggest-form" action="https://formspree.io/f/YOUR_SUGGEST_FORM_ID" method="POST">
-        <input type="hidden" name="_subject" value="New ink suggestion - Ink Vial" />
+      <form id="suggest-form" action="/api/contact" method="POST">
+        <input type="hidden" name="type" value="suggest" />
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true" />
         <div class="field">
           <label for="s-ink">Ink or brand you'd love to see</label>
           <input type="text" id="s-ink" name="ink_suggestion" required placeholder="e.g. Diamine Inkvent, Sailor Ink Studio…" />
@@ -250,33 +252,30 @@
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       status.className = 'form-status';
-      const action = form.getAttribute('action');
-      // If the Formspree ID hasn't been set yet, fall back to mailto
-      if (action.includes('YOUR_')) {
-        const data = new FormData(form);
-        const lines = [];
-        data.forEach((v, k) => { if (!k.startsWith('_') && v) lines.push(k + ': ' + v); });
-        window.location.href = 'mailto:hello@inkvial.co.uk?subject='
-          + encodeURIComponent(form.querySelector('[name=_subject]').value)
-          + '&body=' + encodeURIComponent(lines.join('\n'));
-        return;
-      }
+      const btn = form.querySelector('button[type=submit]');
+      const data = Object.fromEntries(new FormData(form).entries());
+      const original = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
       try {
-        const res = await fetch(action, {
+        const res = await fetch(form.getAttribute('action'), {
           method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(data)
         });
-        if (res.ok) {
+        const out = await res.json().catch(() => ({}));
+        if (res.ok && out.ok) {
           form.reset();
           status.textContent = successMsg;
           status.classList.add('success');
         } else {
-          throw new Error('submit failed');
+          status.textContent = (out && typeof out.error === 'string' && out.error) || 'Something went wrong - please email us directly at hello@inkvial.co.uk.';
+          status.classList.add('error');
         }
       } catch (err) {
         status.textContent = 'Something went wrong - please email us directly at hello@inkvial.co.uk.';
         status.classList.add('error');
+      } finally {
+        if (btn) { btn.disabled = false; btn.textContent = original; }
       }
     });
   }
