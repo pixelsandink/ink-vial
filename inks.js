@@ -272,6 +272,7 @@ const INKS = [
     "id": "birmingham-waterbear",
     "brand": "The Birmingham Pen Company",
     "name": "Waterbear",
+    "colours": ["Grey"],
     "colorPrimary": "#3a8a9a",
     "colorDark": "#1a6a7a",
     "tagline": "A vivid teal as indestructible and surprising as its namesake.",
