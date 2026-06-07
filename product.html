@@ -241,6 +241,7 @@
   .nav-toggle{display:none;background:none;border:none;cursor:pointer;color:var(--purple-dark);padding:6px;align-items:center;justify-content:center;}
   @media(max-width:768px){
     .nav-toggle{display:inline-flex;}
+    input[type=text],input[type=email],input[type=search],input[type=tel],input[type=number],textarea,select{font-size:16px !important;}
     .nav-links{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;flex-direction:column;gap:0;background:rgba(250,243,232,0.98);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);box-shadow:0 10px 24px rgba(60,36,88,0.12);padding:6px 0;z-index:120;margin:0;}
     .nav-links.open{display:flex;}
     .nav-links li{width:100%;}
@@ -348,7 +349,7 @@
     const price   = getInkPrice(ink);
     const stat    = getStockStatus(ink);
     const isOut   = stat === 'out';
-    const statLabel = isOut ? 'Out of Stock' : (stat === 'low' ? 'Low Stock' : 'In Stock');
+    const statLabel = isOut ? 'Sold out' : (stat === 'low' ? 'Low stock' : 'Available');
     ink._price    = price;
     document.title = `${ink.name} — ${ink.brand} | Ink Vial`;
     document.getElementById('breadcrumb-name').textContent = `${ink.brand} ${ink.name}`;
@@ -501,7 +502,7 @@
                 </span>
                 <span class="trust-item">
                   <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-                  Ships in 1–2 days
+                  Filled fresh in 3–5 days
                 </span>
                 <span class="trust-item">
                   <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>

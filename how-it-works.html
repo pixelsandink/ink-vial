@@ -133,6 +133,7 @@
   .nav-toggle{display:none;background:none;border:none;cursor:pointer;color:var(--purple-dark);padding:6px;align-items:center;justify-content:center;}
   @media(max-width:768px){
     .nav-toggle{display:inline-flex;}
+    input[type=text],input[type=email],input[type=search],input[type=tel],input[type=number],textarea,select{font-size:16px !important;}
     .nav-links{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;flex-direction:column;gap:0;background:rgba(250,243,232,0.98);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);box-shadow:0 10px 24px rgba(60,36,88,0.12);padding:6px 0;z-index:120;margin:0;}
     .nav-links.open{display:flex;}
     .nav-links li{width:100%;}
