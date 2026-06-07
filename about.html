@@ -102,7 +102,31 @@
   .announce-sep{color:rgba(240,232,216,0.35);font-size:0.7rem;}
   @keyframes announce-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
   @media (prefers-reduced-motion: reduce){.announce-track{animation:none;justify-content:center;width:100%;}.announce-track .announce-dupe{display:none;}}
+  /* smart sticky header + mobile menu (shared) */
+  .site-header{position:sticky;top:0;z-index:100;}
+  .site-header .nav{position:static;top:auto;}
+  .announce-bar{transition:max-height .35s ease;max-height:72px;}
+  .site-header.compact .announce-bar{max-height:0;}
+  .nav-inner{position:relative;}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;color:var(--purple-dark);padding:6px;align-items:center;justify-content:center;}
+  @media(max-width:768px){
+    .nav-toggle{display:inline-flex;}
+    .nav-links{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;flex-direction:column;gap:0;background:rgba(250,243,232,0.98);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);box-shadow:0 10px 24px rgba(60,36,88,0.12);padding:6px 0;z-index:120;margin:0;}
+    .nav-links.open{display:flex;}
+    .nav-links li{width:100%;}
+    .nav-links a{display:block;padding:14px 24px;font-size:0.95rem;}
+  }
+  @media(max-width:600px){
+    .announce-item{font-size:0.66rem;padding:0 16px;}
+    .announce-track{padding:6px 0;}
+    .announce-sep{font-size:0.58rem;}
+    .nav-inner{gap:10px;padding:0 16px;}
+    .nav-actions{gap:6px;}
+    .nav-actions .btn-primary,.nav-actions .btn-outline{padding:9px 12px;font-size:0.72rem;letter-spacing:0.02em;}
+    .nav-logo img{height:38px !important;}
+  }
 </style>
+<header class="site-header" id="site-header">
 <div class="announce-bar" aria-label="Announcements">
   <div class="announce-track">
     <span class="announce-item">✨ Free UK delivery on orders over £40</span><span class="announce-sep">◆</span>
@@ -114,21 +138,23 @@
   </div>
 </div>
 
-<div class="blobs" aria-hidden="true"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
 
 <nav class="nav">
   <div class="nav-inner">
     <a class="nav-logo" href="/"><img src="inkvial-logo-icon.png" alt="Ink Vial" style="height:46px;width:auto;" /><span class="nav-brand">Ink Vial</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="shop">Shop</a></li>
       <li><a href="how-it-works">How It Works</a></li>
       <li><a href="about" class="active">About</a></li>
       <li><a href="faq">FAQ</a></li>
       <li><a href="contact">Contact</a></li>
     </ul>
-    <div class="nav-actions"><a href="contact#suggest" class="btn-suggest" title="Suggest an ink"><span aria-hidden="true">💡</span><span class="lbl">Suggest an Ink</span></a><a href="shop" class="btn-primary">Shop Samples</a></div>
+    <div class="nav-actions"><a href="contact#suggest" class="btn-suggest" title="Suggest an ink"><span aria-hidden="true">💡</span><span class="lbl">Suggest an Ink</span></a><a href="shop" class="btn-primary">Shop Samples</a><button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button></div>
   </div>
 </nav>
+</header>
+
+<div class="blobs" aria-hidden="true"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
 
 <section class="hero">
   <div class="narrow">
@@ -226,5 +252,18 @@
     <span>Made with love for ink lovers everywhere</span>
   </div>
 </footer>
+<script>
+(function(){
+  var header=document.getElementById('site-header'); if(!header)return;
+  var nav=header.querySelector('.nav'), bar=header.querySelector('.announce-bar');
+  function setTop(){ var navH=nav?nav.offsetHeight:68, barH=bar?bar.scrollHeight:0, c=header.classList.contains('compact'); document.documentElement.style.setProperty('--fb-top',(c?navH:navH+barH)+'px'); }
+  var last=window.pageYOffset||0, ticking=false;
+  function onScroll(){ var y=window.pageYOffset||0; if(y>last && y>90){header.classList.add('compact');} else if(y<last-2){header.classList.remove('compact');} last=y; ticking=false; setTop(); }
+  window.addEventListener('scroll',function(){ if(!ticking){ window.requestAnimationFrame(onScroll); ticking=true; } },{passive:true});
+  window.addEventListener('resize',setTop); setTop();
+  var t=document.getElementById('nav-toggle'), links=document.getElementById('nav-links');
+  if(t&&links){ t.addEventListener('click',function(){ var o=links.classList.toggle('open'); t.setAttribute('aria-expanded',o?'true':'false'); }); links.addEventListener('click',function(e){ if(e.target.closest('a')){ links.classList.remove('open'); t.setAttribute('aria-expanded','false'); } }); }
+})();
+</script>
 </body>
 </html>
