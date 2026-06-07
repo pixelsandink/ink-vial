@@ -643,7 +643,7 @@ const INKS = [
   },
   {
     "id": "colorverse-deep-purple",
-    "sheen": true,
+    "sheen": false,
     "brand": "Colorverse",
     "name": "Deep Purple",
     "colorPrimary": "#4a1a6a",
@@ -744,6 +744,7 @@ const INKS = [
   },
   {
     "id": "diamine-7-sinners-lust",
+    "sheen": true,
     "brand": "Diamine",
     "name": "7 Sinners Lust",
     "colorPrimary": "#2a3a8f",
@@ -881,6 +882,7 @@ const INKS = [
   {
     "id": "diamine-7-sinners-gluttony",
     "shimmer": true,
+    "sheen": false,
     "brand": "Diamine",
     "name": "7 Sinners Gluttony",
     "colours": ["Red","Orange"],
@@ -950,6 +952,7 @@ const INKS = [
   {
     "id": "diamine-7-sinners-pride",
     "shimmer": true,
+    "sheen": false,
     "brand": "Diamine",
     "name": "7 Sinners Pride",
     "colours": ["Purple"],
@@ -1083,8 +1086,8 @@ const INKS = [
   },
   {
     "id": "diamine-a-jug-of-sangria",
-    "shimmer": true,
-    "sheen": true,
+    "shimmer": false,
+    "sheen": false,
     "brand": "Diamine",
     "name": "A Jug of Sangria",
     "colorPrimary": "#6a1a3a",
@@ -1219,6 +1222,7 @@ const INKS = [
   {
     "id": "diamine-raise-a-glass",
     "shimmer": true,
+    "sheen": false,
     "brand": "Diamine",
     "name": "Raise a Glass",
     "colours": ["Purple"],
@@ -1890,6 +1894,7 @@ const INKS = [
   },
   {
     "id": "ferris-wheel-press-madam-mulberry",
+    "sheen": false,
     "brand": "Ferris Wheel Press",
     "name": "Madam Mulberry",
     "colorPrimary": "#6a2a5a",
@@ -2290,7 +2295,7 @@ const INKS = [
   },
   {
     "id": "jherbin-rouille-dancre",
-    "shimmer": true,
+    "shimmer": false,
     "brand": "J.Herbin",
     "name": "Rouille d'Ancre",
     "colours": ["Pink","Orange"],
@@ -2491,6 +2496,7 @@ const INKS = [
   },
   {
     "id": "jherbin-larmes-de-cassis",
+    "sheen": false,
     "brand": "J.Herbin",
     "name": "Larmes de Cassis",
     "colorPrimary": "#3a1a4a",
@@ -2729,6 +2735,7 @@ const INKS = [
   {
     "id": "jherbin-stormy-grey",
     "shimmer": true,
+    "sheen": false,
     "brand": "J.Herbin",
     "name": "Stormy Grey",
     "colorPrimary": "#5a6a7a",
@@ -2763,6 +2770,7 @@ const INKS = [
   {
     "id": "jherbin-hematite-red",
     "shimmer": true,
+    "sheen": true,
     "brand": "J.Herbin",
     "name": "Hematite Red",
     "colorPrimary": "#6a1a1a",
@@ -4189,7 +4197,8 @@ const INKS = [
   },
   {
     "id": "octopus-fluids-unicorn",
-    "shimmer": true,
+    "shimmer": false,
+    "sheen": true,
     "brand": "Octopus Fluids",
     "name": "Unicorn",
     "colorPrimary": "#9a8ac8",
@@ -4223,7 +4232,8 @@ const INKS = [
   },
   {
     "id": "octopus-fluids-mermaid",
-    "shimmer": true,
+    "shimmer": false,
+    "sheen": true,
     "brand": "Octopus Fluids",
     "name": "Mermaid",
     "colours": ["Blue"],
@@ -4258,7 +4268,8 @@ const INKS = [
   },
   {
     "id": "octopus-fluids-fairy",
-    "shimmer": true,
+    "shimmer": false,
+    "sheen": true,
     "brand": "Octopus Fluids",
     "name": "Fairy",
     "colorPrimary": "#d48aaa",
@@ -4393,7 +4404,7 @@ const INKS = [
   },
   {
     "id": "pilot-iroshizuku-yama-budo",
-    "sheen": true,
+    "sheen": false,
     "brand": "Pilot Iroshizuku",
     "name": "Yama-Budo",
     "colorPrimary": "#6a1a3a",
@@ -5030,6 +5041,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-motor-oil",
+    "sheen": false,
     "brand": "Robert Oster",
     "name": "Motor Oil",
     "colours": ["Green","Grey"],
@@ -5098,6 +5110,7 @@ const INKS = [
   {
     "id": "robert-oster-sinners-blood",
     "shimmer": false,
+    "sheen": false,
     "brand": "Robert Oster",
     "name": "Sinners Blood",
     "colorPrimary": "#8a1a2a",
@@ -5131,6 +5144,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-sinners-heart",
+    "sheen": false,
     "brand": "Robert Oster",
     "name": "Sinners Heart",
     "colours": ["Brown","Red"],
@@ -5266,6 +5280,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-black-violet",
+    "sheen": false,
     "brand": "Robert Oster",
     "name": "Black Violet",
     "colorPrimary": "#2a1a4a",
@@ -5332,6 +5347,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-midnight-sapphire",
+    "sheen": false,
     "brand": "Robert Oster",
     "name": "Midnight Sapphire",
     "colorPrimary": "#1a2a6a",
@@ -5464,6 +5480,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-green-at-night",
+    "sheen": true,
     "brand": "Robert Oster",
     "name": "Green At Night",
     "colorPrimary": "#1a4a3a",
@@ -5597,7 +5614,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-river-of-fire",
-    "sheen": true,
+    "sheen": false,
     "brand": "Robert Oster",
     "name": "River of Fire",
     "colorPrimary": "#2f6b54",
@@ -5664,6 +5681,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-smokescreen",
+    "sheen": false,
     "brand": "Robert Oster",
     "name": "Smokescreen",
     "colorPrimary": "#4a4a4a",
@@ -6878,6 +6896,7 @@ const INKS = [
   },
   {
     "id": "sailor-studio-673",
+    "sheen": false,
     "brand": "Sailor",
     "name": "Studio Ink 673",
     "colours": ["Brown"],
@@ -8440,7 +8459,7 @@ const INKS = [
   },
   {
     "id": "troublemaker-abalone",
-    "sheen": true,
+    "sheen": false,
     "brand": "Troublemaker Inks",
     "name": "Abalone",
     "colorPrimary": "#2a6a7a",
@@ -8647,7 +8666,7 @@ const INKS = [
   {
     "id": "vinta-sailfin-green",
     "shimmer": true,
-    "sheen": true,
+    "sheen": false,
     "brand": "Vinta",
     "name": "Sailfin Green",
     "colours": ["Green"],
@@ -9084,6 +9103,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-resurrection",
+    "sheen": false,
     "brand": "Wearingeul",
     "name": "Resurrection",
     "colours": ["Green"],
@@ -9289,6 +9309,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-exile-of-flower",
+    "sheen": false,
     "brand": "Wearingeul",
     "name": "Exile of Flower",
     "colours": ["Orange","Pink"],
@@ -9391,6 +9412,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-purgatori",
+    "sheen": false,
     "brand": "Wearingeul",
     "name": "Purgatori",
     "colours": ["Pink","Red"],
@@ -9630,7 +9652,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-human-issues",
-    "sheen": true,
+    "sheen": false,
     "brand": "Wearingeul",
     "name": "Human Issues",
     "colours": ["Red"],
@@ -9700,7 +9722,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-carmilla",
-    "sheen": true,
+    "sheen": false,
     "brand": "Wearingeul",
     "name": "Carmilla",
     "colorPrimary": "#5a1a3a",
@@ -9937,6 +9959,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-sedna",
+    "sheen": false,
     "brand": "Wearingeul",
     "name": "Sedna",
     "colours": ["Blue"],
@@ -9972,6 +9995,7 @@ const INKS = [
   {
     "id": "wearingeul-persephone",
     "shimmer": true,
+    "sheen": false,
     "brand": "Wearingeul",
     "name": "Persephone",
     "colours": ["Purple"],
@@ -10076,6 +10100,7 @@ const INKS = [
   {
     "id": "wearingeul-enki",
     "shimmer": true,
+    "sheen": false,
     "brand": "Wearingeul",
     "name": "Enki",
     "colours": ["Blue"],
@@ -10111,6 +10136,7 @@ const INKS = [
   {
     "id": "wearingeul-hades",
     "shimmer": true,
+    "sheen": false,
     "brand": "Wearingeul",
     "name": "Hades",
     "colours": ["Grey"],
