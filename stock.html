@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Stock admin - Ink Vial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{--bg:#faf3e8;--surface:#fff;--purple-deep:#3d2458;--purple-dark:#5c3a9a;--purple-mid:#8b68cc;--lavender-light:#d4c4ee;--lavender-pale:#ede6f8;--muted:rgba(61,36,88,0.55);--border:rgba(176,154,216,0.3);--in:#2d7a3a;--low:#b8860b;--out:#c0405a;}
+  body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--purple-deep);line-height:1.5;padding:24px 16px 80px;}
+  .wrap{max-width:920px;margin:0 auto;}
+  h1{font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:4px;}
+  .sub{color:var(--muted);font-size:0.85rem;margin-bottom:20px;}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;}
+  .chip{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 14px;font-size:0.8rem;font-weight:700;}
+  .chip b{font-size:1.2rem;display:block;font-family:'Playfair Display',serif;}
+  .chip.in b{color:var(--in);} .chip.low b{color:var(--low);} .chip.out b{color:var(--out);}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px;}
+  input[type=text],input[type=number]{font-family:'Nunito',sans-serif;font-size:0.9rem;border:1.5px solid var(--lavender-light);border-radius:8px;padding:9px 12px;outline:none;background:var(--surface);color:var(--purple-deep);}
+  input[type=text]{flex:1;min-width:200px;}
+  input:focus{border-color:var(--purple-mid);}
+  label.toggle{display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;font-weight:700;cursor:pointer;}
+  table{width:100%;border-collapse:collapse;background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(140,100,210,0.07);}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);font-size:0.88rem;}
+  th{background:var(--lavender-pale);font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);position:sticky;top:0;}
+  tr:last-child td{border-bottom:none;}
+  td.brand{color:var(--muted);font-size:0.78rem;}
+  td.name{font-weight:700;}
+  .badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:0.68rem;font-weight:800;text-transform:uppercase;letter-spacing:0.04em;}
+  .badge.in{background:#e3f5e8;color:var(--in);} .badge.low{background:#fdf3d8;color:var(--low);} .badge.out{background:#fce8ec;color:var(--out);}
+  tr.r-low{background:#fffaf0;} tr.r-out{background:#fdf0f3;}
+  .stockcell{display:flex;gap:6px;align-items:center;}
+  .stockcell input{width:64px;padding:6px 8px;}
+  .stockcell button{background:var(--purple-dark);color:#fff;border:none;border-radius:7px;padding:6px 11px;font-weight:800;font-size:0.75rem;cursor:pointer;font-family:'Nunito',sans-serif;}
+  .stockcell button:hover{background:var(--purple-mid);}
+  .stockcell button:disabled{opacity:.5;cursor:default;}
+  .saved{color:var(--in);font-size:0.72rem;font-weight:800;}
+  .gate{max-width:380px;margin:60px auto;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px;}
+  .gate input{width:100%;margin:14px 0;}
+  .gate button{width:100%;background:var(--purple-dark);color:#fff;border:none;border-radius:8px;padding:12px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif;}
+  .msg{text-align:center;padding:40px;color:var(--muted);}
+  .err{color:var(--out);}
+</style>
+</head>
+<body>
+<div class="wrap" id="root"><div class="msg">Loading…</div></div>
+
+<script>
+const LOW_AT = 4;
+const qs = new URLSearchParams(location.search);
+let KEY = qs.get('key') || '';
+let cat = {}, rows = [];
+
+function statusOf(n){ return n <= 0 ? 'out' : (n <= LOW_AT ? 'low' : 'in'); }
+const root = document.getElementById('root');
+
+function gate(err){
+  root.innerHTML =
+    '<div class="gate"><h1 style="font-size:1.4rem;">Stock admin</h1>'
+    + (err ? '<p class="err" style="margin-top:8px;">'+err+'</p>' : '<p class="sub">Enter your admin key to continue.</p>')
+    + '<input type="text" id="k" placeholder="Admin key" autocomplete="off" />'
+    + '<button onclick="go()">View stock</button></div>';
+  const i = document.getElementById('k'); if(i){ i.focus(); i.addEventListener('keydown',e=>{if(e.key==="Enter")go();}); }
+}
+function go(){ const v=document.getElementById('k').value.trim(); if(v){ location.search='?key='+encodeURIComponent(v); } }
+
+async function load(){
+  if(!KEY){ gate(); return; }
+  try{
+    const [sRes, cRes] = await Promise.all([
+      fetch('/api/admin-stock?key='+encodeURIComponent(KEY)+'&action=list'),
+      fetch('/catalog.json')
+    ]);
+    if(sRes.status === 401){ gate('That key was not accepted. Try again.'); return; }
+    const s = await sRes.json(); cat = await cRes.json();
+    rows = (s.all||[]).map(r=>({ id:r.id, stock:r.stock, brand:(cat[r.id]||{}).brand||'', name:(cat[r.id]||{}).name||r.id }));
+    render();
+  }catch(e){ root.innerHTML='<div class="msg err">Could not load stock: '+e.message+'</div>'; }
+}
+
+function render(){
+  const search = (document.getElementById('search')||{}).value || '';
+  const lowOnly = (document.getElementById('lowOnly')||{}).checked || false;
+  const sv = search.toLowerCase();
+  let list = rows.slice().sort((a,b)=>{
+    const order = {out:0, low:1, in:2};
+    const d = order[statusOf(a.stock)] - order[statusOf(b.stock)];
+    return d || a.brand.localeCompare(b.brand) || a.name.localeCompare(b.name);
+  });
+  if(sv) list = list.filter(r=>(r.name+' '+r.brand+' '+r.id).toLowerCase().includes(sv));
+  if(lowOnly) list = list.filter(r=>statusOf(r.stock)!=='in');
+
+  const tot = rows.reduce((n,r)=>n+r.stock,0);
+  const cIn = rows.filter(r=>statusOf(r.stock)==='in').length;
+  const cLow = rows.filter(r=>statusOf(r.stock)==='low').length;
+  const cOut = rows.filter(r=>statusOf(r.stock)==='out').length;
+
+  root.innerHTML =
+    '<h1>Stock admin</h1><p class="sub">'+rows.length+' inks · '+tot+' vials in stock · updates save instantly</p>'
+    + '<div class="chips">'
+    +   '<div class="chip in"><b>'+cIn+'</b>Available</div>'
+    +   '<div class="chip low"><b>'+cLow+'</b>Low stock</div>'
+    +   '<div class="chip out"><b>'+cOut+'</b>Sold out</div>'
+    +   '<div class="chip"><b>'+tot+'</b>Total vials</div>'
+    + '</div>'
+    + '<div class="controls">'
+    +   '<input type="text" id="search" placeholder="Search ink or brand…" value="'+search.replace(/"/g,'&quot;')+'" />'
+    +   '<label class="toggle"><input type="checkbox" id="lowOnly"'+(lowOnly?' checked':'')+' /> Low / sold out only</label>'
+    + '</div>'
+    + '<table><thead><tr><th>Brand</th><th>Ink</th><th>Status</th><th>Stock</th></tr></thead><tbody id="tb"></tbody></table>';
+
+  const tb = document.getElementById('tb');
+  if(!list.length){ tb.innerHTML='<tr><td colspan="4" class="msg">No matches.</td></tr>'; }
+  list.forEach(r=>{
+    const st = statusOf(r.stock);
+    const tr = document.createElement('tr');
+    tr.className = st==='out'?'r-out':st==='low'?'r-low':'';
+    tr.innerHTML =
+      '<td class="brand">'+esc(r.brand)+'</td>'
+      + '<td class="name">'+esc(r.name)+'</td>'
+      + '<td><span class="badge '+st+'">'+(st==='in'?'Available':st==='low'?'Low':'Sold out')+'</span></td>'
+      + '<td><div class="stockcell"><input type="number" min="0" value="'+r.stock+'" /><button>Save</button><span class="saved" style="display:none">✓</span></div></td>';
+    const inp = tr.querySelector('input'), btn = tr.querySelector('button'), ok = tr.querySelector('.saved');
+    btn.addEventListener('click', async ()=>{
+      const v = parseInt(inp.value);
+      if(!Number.isFinite(v)||v<0){ inp.focus(); return; }
+      btn.disabled=true; btn.textContent='…';
+      try{
+        const res = await fetch('/api/admin-stock?key='+encodeURIComponent(KEY)+'&action=set&id='+encodeURIComponent(r.id)+'&count='+v);
+        const d = await res.json();
+        if(d.ok){ r.stock=d.stock; ok.style.display='inline'; setTimeout(()=>render(),600); }
+        else { alert(d.error||'Error'); btn.disabled=false; btn.textContent='Save'; }
+      }catch(e){ alert('Failed: '+e.message); btn.disabled=false; btn.textContent='Save'; }
+    });
+    tb.appendChild(tr);
+  });
+
+  document.getElementById('search').addEventListener('input', render);
+  document.getElementById('lowOnly').addEventListener('change', render);
+  // keep focus/caret in search after re-render
+  const se = document.getElementById('search'); if(search){ se.focus(); se.setSelectionRange(se.value.length, se.value.length); }
+}
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+load();
+</script>
+</body>
+</html>
