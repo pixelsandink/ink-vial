@@ -5,6 +5,7 @@
   "description": "Ink Vial — fountain pen ink sampling shop",
   "type": "commonjs",
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "stripe": "^14.25.0"
   }
 }
