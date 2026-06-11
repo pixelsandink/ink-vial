@@ -29,7 +29,7 @@ const wrap = inner =>
            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
              <tr>
                <td style="font-family:Georgia,serif;font-size:1.6rem;font-weight:700;color:#5c3a9a;vertical-align:middle;">Ink Vial</td>
-               <td align="right" style="vertical-align:middle;"><img src="https://www.inkvial.co.uk/inkvial-logo-icon.png" alt="Ink Vial" width="54" height="54" style="display:block;width:54px;height:auto;border:0;" /></td>
+               <td align="right" style="vertical-align:middle;"><img src="https://www.inkvial.co.uk/inkvial-logo-icon.png" alt="Ink Vial" width="80" height="80" style="display:block;width:80px;height:auto;border:0;" /></td>
              </tr>
            </table>
            ${inner}
