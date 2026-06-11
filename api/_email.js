@@ -22,12 +22,18 @@ async function sendEmail({ to, subject, html, text, replyTo }) {
 }
 
 const wrap = inner =>
-  `<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#3d2458;line-height:1.6;max-width:520px;margin:0 auto;">
-     <div style="font-family:Georgia,serif;font-size:1.6rem;font-weight:700;color:#5c3a9a;margin-bottom:18px;">Ink Vial</div>
-     ${inner}
-     <hr style="border:none;border-top:1px solid #eee;margin:22px 0 12px;">
-     <p style="font-size:12px;color:#999;">Ink Vial - a trading name of Pixels and Ink Ltd · <a href="https://www.inkvial.co.uk" style="color:#8b68cc;">inkvial.co.uk</a></p>
-   </div>`;
+  `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#faf3e8;margin:0;">
+     <tr><td align="center" style="padding:32px 16px;">
+       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;">
+         <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#3d2458;line-height:1.6;">
+           <div style="font-family:Georgia,serif;font-size:1.6rem;font-weight:700;color:#5c3a9a;margin-bottom:18px;">Ink Vial</div>
+           ${inner}
+           <hr style="border:none;border-top:1px solid rgba(176,154,216,0.4);margin:22px 0 12px;">
+           <p style="font-size:12px;color:#9a8bb0;">Ink Vial - a trading name of Pixels and Ink Ltd &middot; <a href="https://www.inkvial.co.uk" style="color:#8b68cc;">inkvial.co.uk</a></p>
+         </td></tr>
+       </table>
+     </td></tr>
+   </table>`;
 
 const itemsUl = lines =>
   `<ul style="margin:0 0 16px;padding-left:18px;">${lines.map(l => `<li style="margin:0 0 4px;">${esc(l.qty)} × ${esc(l.label)}</li>`).join('')}</ul>`;
