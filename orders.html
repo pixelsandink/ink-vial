@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Orders - Ink Vial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{--bg:#faf3e8;--surface:#fff;--purple-deep:#3d2458;--purple-dark:#5c3a9a;--purple-mid:#8b68cc;--lavender-light:#d4c4ee;--lavender-pale:#ede6f8;--muted:rgba(61,36,88,0.55);--border:rgba(176,154,216,0.3);--new:#b8860b;--done:#2d7a3a;}
+  body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--purple-deep);line-height:1.5;padding:24px 16px 80px;}
+  .wrap{max-width:760px;margin:0 auto;}
+  h1{font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:4px;}
+  .sub{color:var(--muted);font-size:0.85rem;margin-bottom:18px;}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px;}
+  .chip{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 14px;font-size:0.8rem;font-weight:700;}
+  .chip b{font-size:1.2rem;display:block;font-family:'Playfair Display',serif;}
+  label.toggle{display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;font-weight:700;cursor:pointer;margin-bottom:16px;}
+  .order{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;margin-bottom:14px;box-shadow:0 2px 10px rgba(140,100,210,0.06);}
+  .order.new{border-left:4px solid var(--new);}
+  .order.done{opacity:0.82;}
+  .o-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px;}
+  .o-amt{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;}
+  .o-date{font-size:0.78rem;color:var(--muted);}
+  .badge{display:inline-block;padding:3px 11px;border-radius:20px;font-size:0.68rem;font-weight:800;text-transform:uppercase;letter-spacing:0.04em;}
+  .badge.new{background:#fdf3d8;color:var(--new);} .badge.done{background:#e3f5e8;color:var(--done);}
+  .o-cust{font-size:0.9rem;margin-bottom:6px;}
+  .o-cust b{font-weight:800;}
+  .o-ship{font-size:0.88rem;color:var(--purple-deep);background:var(--lavender-pale);border-radius:8px;padding:8px 11px;margin:8px 0;}
+  .o-items{list-style:none;margin:8px 0;font-size:0.9rem;}
+  .o-items li{padding:2px 0;}
+  .o-items li::before{content:"• ";color:var(--purple-mid);}
+  .ship-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px;}
+  .ship-row input{font-family:'Nunito',sans-serif;font-size:0.85rem;border:1.5px solid var(--lavender-light);border-radius:8px;padding:9px 12px;outline:none;flex:1;min-width:150px;}
+  .ship-row input:focus{border-color:var(--purple-mid);}
+  .ship-row button{background:var(--purple-dark);color:#fff;border:none;border-radius:8px;padding:10px 16px;font-weight:800;font-size:0.82rem;cursor:pointer;font-family:'Nunito',sans-serif;white-space:nowrap;}
+  .ship-row button:hover{background:var(--purple-mid);}
+  .ship-row button:disabled{opacity:.5;cursor:default;}
+  .shipped-info{font-size:0.82rem;color:var(--done);font-weight:700;margin-top:8px;}
+  .shipped-info a{color:var(--purple-dark);}
+  .resend{font-size:0.75rem;color:var(--muted);text-decoration:underline;cursor:pointer;background:none;border:none;margin-left:8px;}
+  .gate{max-width:380px;margin:60px auto;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px;}
+  .gate input{width:100%;margin:14px 0;border:1.5px solid var(--lavender-light);border-radius:8px;padding:10px;font-family:'Nunito',sans-serif;}
+  .gate button{width:100%;background:var(--purple-dark);color:#fff;border:none;border-radius:8px;padding:12px;font-weight:800;cursor:pointer;font-family:'Nunito',sans-serif;}
+  .msg{text-align:center;padding:40px;color:var(--muted);}
+  .err{color:#c0405a;}
+</style>
+</head>
+<body>
+<div class="wrap" id="root"><div class="msg">Loading…</div></div>
+<script>
+const qs = new URLSearchParams(location.search);
+let KEY = qs.get('key') || '';
+let orders = [];
+const root = document.getElementById('root');
+const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+function gate(err){
+  root.innerHTML='<div class="gate"><h1 style="font-size:1.4rem;">Orders</h1>'
+    +(err?'<p class="err" style="margin-top:8px;">'+err+'</p>':'<p class="sub">Enter your admin key to continue.</p>')
+    +'<input type="text" id="k" placeholder="Admin key" autocomplete="off" /><button onclick="go()">View orders</button></div>';
+  const i=document.getElementById('k'); if(i){i.focus();i.addEventListener('keydown',e=>{if(e.key==="Enter")go();});}
+}
+function go(){const v=document.getElementById('k').value.trim();if(v)location.search='?key='+encodeURIComponent(v);}
+
+async function load(){
+  if(!KEY){gate();return;}
+  try{
+    const r=await fetch('/api/orders?key='+encodeURIComponent(KEY));
+    if(r.status===401){gate('That key was not accepted.');return;}
+    const d=await r.json(); orders=d.orders||[]; render();
+  }catch(e){root.innerHTML='<div class="msg err">Could not load orders: '+e.message+'</div>';}
+}
+
+function fmtDate(iso){ try{return new Date(iso).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});}catch(e){return iso||'';} }
+
+function render(){
+  const hideShipped=(document.getElementById('hideShipped')||{}).checked||false;
+  let list=orders.slice();
+  if(hideShipped) list=list.filter(o=>!o.shipped);
+  const toShip=orders.filter(o=>!o.shipped).length;
+
+  root.innerHTML='<h1>Orders</h1><p class="sub">'+orders.length+' total · '+toShip+' to ship · marking shipped emails the customer automatically</p>'
+    +'<div class="chips"><div class="chip"><b>'+orders.length+'</b>Total orders</div><div class="chip"><b style="color:var(--new)">'+toShip+'</b>To ship</div></div>'
+    +'<label class="toggle"><input type="checkbox" id="hideShipped"'+(hideShipped?' checked':'')+' /> Hide shipped</label>'
+    +'<div id="list"></div>';
+  const wrap=document.getElementById('list');
+  if(!list.length){ wrap.innerHTML='<div class="msg">No orders yet.</div>'; }
+  list.forEach(o=>{
+    const div=document.createElement('div');
+    div.className='order '+(o.shipped?'done':'new');
+    let html='<div class="o-top"><span class="o-amt">'+esc(o.amount||'')+'</span>'
+      +'<span class="badge '+(o.shipped?'done':'new')+'">'+(o.shipped?'Shipped':'New')+'</span></div>'
+      +'<div class="o-date">'+fmtDate(o.at)+'</div>'
+      +'<div class="o-cust"><b>'+esc(o.name||'(no name)')+'</b> · '+esc(o.email||'')+'</div>'
+      +(o.ship?'<div class="o-ship">📮 '+esc(o.ship)+'</div>':'')
+      +'<ul class="o-items">'+(o.items||[]).map(i=>'<li>'+esc(i)+'</li>').join('')+'</ul>';
+    if(o.shipped){
+      html+='<div class="shipped-info">✓ Shipped '+fmtDate(o.shippedAt)+(o.tracking?' · '+esc(o.tracking):'')
+        +'<button class="resend" data-s="'+esc(o.session)+'">resend email</button></div>';
+    }else{
+      html+='<div class="ship-row"><input type="text" placeholder="Tracking number (optional)" data-track="'+esc(o.session)+'" />'
+        +'<button data-ship="'+esc(o.session)+'">Mark shipped & email</button></div>';
+    }
+    wrap.appendChild(div); div.innerHTML=html;
+  });
+
+  document.getElementById('hideShipped').addEventListener('change',render);
+  wrap.querySelectorAll('[data-ship]').forEach(b=>b.addEventListener('click',()=>ship(b.getAttribute('data-ship'),false)));
+  wrap.querySelectorAll('.resend').forEach(b=>b.addEventListener('click',()=>ship(b.getAttribute('data-s'),true)));
+}
+
+async function ship(session, resend){
+  const order=orders.find(o=>o.session===session); if(!order)return;
+  let url='/api/ship?key='+encodeURIComponent(KEY)+'&session='+encodeURIComponent(session);
+  if(!resend){
+    const t=(document.querySelector('[data-track="'+CSS.escape(session)+'"]')||{}).value||'';
+    if(t.trim()) url+='&tracking='+encodeURIComponent(t.trim());
+  } else { url+='&resend=1'; if(order.tracking) url+='&tracking='+encodeURIComponent(order.tracking); }
+  const btn=event&&event.target; if(btn){btn.disabled=true;btn.textContent='Sending…';}
+  try{
+    const r=await fetch(url); const d=await r.json();
+    if(d.ok){ order.shipped=true; order.shippedAt=new Date().toISOString(); if(d.tracking)order.tracking=d.tracking; render(); }
+    else { alert(d.error||'Error'); if(btn){btn.disabled=false;btn.textContent='Mark shipped & email';} }
+  }catch(e){ alert('Failed: '+e.message); if(btn){btn.disabled=false;btn.textContent='Mark shipped & email';} }
+}
+load();
+</script>
+</body>
+</html>
