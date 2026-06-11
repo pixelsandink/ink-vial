@@ -48,10 +48,10 @@ const itemsTxt = lines => lines.map(l => `${l.qty} x ${l.label}`).join('\n');
 function orderConfirmationEmail({ name, amount, lines, ship }) {
   const hi = name ? `Hi ${esc(name.split(' ')[0])},` : 'Hi there,';
   return {
-    subject: 'Thank you for your Ink Vial order! 💜',
+    subject: 'Thank you for your Ink Vial order!',
     html: wrap(
       `<p>${hi}</p>
-       <p>Thank you so much for your order - it genuinely means the world. 💜</p>
+       <p>Thank you so much for your order - it genuinely means the world.</p>
        <p style="margin:0 0 6px;"><strong>Your inks${amount ? ' (' + esc(amount) + ')' : ''}:</strong></p>
        ${itemsUl(lines)}
        ${ship ? `<p style="margin:0 0 12px;"><strong>Shipping to:</strong><br>${esc(ship)}</p>` : ''}
@@ -73,13 +73,13 @@ function shippedEmail({ name, lines, tracking }) {
         <a href="https://www.royalmail.com/track-your-item#/tracking-results/${encodeURIComponent(tracking)}" style="color:#8b68cc;">Track your parcel</a></p>`
     : `<p style="margin:0 0 12px;">Sent via Royal Mail tracked.</p>`;
   return {
-    subject: 'Your Ink Vial order is on its way! 📮',
+    subject: 'Your Ink Vial order is on its way!',
     html: wrap(
       `<p>${hi}</p>
-       <p>Great news - your inks are packed, hand-labelled with love, and have just been posted! 📮</p>
+       <p>Great news - your inks are packed, hand-labelled with love, and have just been posted!</p>
        ${lines && lines.length ? itemsUl(lines) : ''}
        ${trackBlock}
-       <p>It should be with you within a few working days. I really hope you love trying them - once you have, I'd love to know what you think. Just hit reply, or tag <strong>@inkvial</strong> if you share a swatch. 💜</p>
+       <p>It should be with you within a few working days. I really hope you love trying them - once you have, I'd love to know what you think. Just hit reply, or tag <strong>@inkvial</strong> if you share a swatch.</p>
        <p>Happy writing,<br>Rupal</p>`),
     text:
       `${name ? 'Hi ' + name.split(' ')[0] + ',' : 'Hi there,'}\n\n` +
