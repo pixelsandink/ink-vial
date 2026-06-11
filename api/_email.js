@@ -26,7 +26,12 @@ const wrap = inner =>
      <tr><td align="center" style="padding:32px 16px;">
        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;">
          <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:15px;color:#3d2458;line-height:1.6;">
-           <div style="font-family:Georgia,serif;font-size:1.6rem;font-weight:700;color:#5c3a9a;margin-bottom:18px;">Ink Vial</div>
+           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
+             <tr>
+               <td style="font-family:Georgia,serif;font-size:1.6rem;font-weight:700;color:#5c3a9a;vertical-align:middle;">Ink Vial</td>
+               <td align="right" style="vertical-align:middle;"><img src="https://www.inkvial.co.uk/inkvial-logo-icon.png" alt="Ink Vial" width="54" height="54" style="display:block;width:54px;height:auto;border:0;" /></td>
+             </tr>
+           </table>
            ${inner}
            <hr style="border:none;border-top:1px solid rgba(176,154,216,0.4);margin:22px 0 12px;">
            <p style="font-size:12px;color:#9a8bb0;">Ink Vial - a trading name of Pixels and Ink Ltd &middot; <a href="https://www.inkvial.co.uk" style="color:#8b68cc;">inkvial.co.uk</a></p>
