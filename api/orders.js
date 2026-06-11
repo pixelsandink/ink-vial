@@ -30,6 +30,12 @@ module.exports = async (req, res) => {
       }
       return res.status(200).json({ ok: true, imported });
     }
+
+    // Remove a single order from the book (e.g. a test purchase)
+    if (q.remove) {
+      const n = await redis.cmd(['HDEL', 'inkvial:orderbook', q.remove]);
+      return res.status(200).json({ ok: true, removed: n });
+    }
     const flat = await redis.cmd(['HGETALL', 'inkvial:orderbook']);
     const orders = [];
     if (Array.isArray(flat)) {
