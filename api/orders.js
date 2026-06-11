@@ -11,6 +11,25 @@ module.exports = async (req, res) => {
   }
   if (!redis.isConfigured()) return res.status(500).json({ error: 'Database not connected.' });
   try {
+    // One-time import of orders logged by the old webhook (list 'inkvial:orders')
+    if (q.migrate === '1') {
+      const old = await redis.cmd(['LRANGE', 'inkvial:orders', '0', '999']);
+      let imported = 0;
+      for (const s of old || []) {
+        try {
+          const o = JSON.parse(s);
+          const key = o.session || ('legacy-' + (o.at || Math.random()));
+          const exists = await redis.cmd(['HEXISTS', 'inkvial:orderbook', key]);
+          if (!exists || exists === 0) {
+            o.shipped = false; o.shippedAt = null; o.tracking = o.tracking || '';
+            o.items = (o.items || []).map(x => String(x).replace('×', 'x'));
+            await redis.cmd(['HSET', 'inkvial:orderbook', key, JSON.stringify(o)]);
+            imported++;
+          }
+        } catch (e) {}
+      }
+      return res.status(200).json({ ok: true, imported });
+    }
     const flat = await redis.cmd(['HGETALL', 'inkvial:orderbook']);
     const orders = [];
     if (Array.isArray(flat)) {
