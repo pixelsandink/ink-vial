@@ -543,12 +543,17 @@
     var compact=header.classList.contains('compact');
     document.documentElement.style.setProperty('--fb-top',(compact?navH:navH+barH)+'px');
   }
-  var last=window.pageYOffset||0, ticking=false;
+  var last=window.pageYOffset||0, ticking=false, acc=0, lockUntil=0;
   function onScroll(){
-    var y=window.pageYOffset||0;
-    if(y>last && y>90){ header.classList.add('compact'); }
-    else if(y<last-2){ header.classList.remove('compact'); }
-    last=y; ticking=false; setTop();
+    var y=window.pageYOffset||0, now=Date.now();
+    ticking=false;
+    if(now<lockUntil){ last=y; return; }
+    var d=y-last; last=y;
+    if(d===0) return;
+    acc=((d>0)===(acc>0))?acc+d:d;
+    var compact=header.classList.contains("compact");
+    if(!compact && acc>24 && y>180){ header.classList.add("compact"); lockUntil=now+450; acc=0; setTop(); }
+    else if(compact && (acc<-24 || y<80)){ header.classList.remove("compact"); lockUntil=now+450; acc=0; setTop(); }
   }
   window.addEventListener('scroll',function(){ if(!ticking){ window.requestAnimationFrame(onScroll); ticking=true; } },{passive:true});
   window.addEventListener('resize',setTop);
