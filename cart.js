@@ -220,20 +220,47 @@
     const btn = document.getElementById('iv-checkout');
     if (btn) { btn.disabled = true; btn.textContent = 'Taking you to checkout…'; }
     try {
-      const res = await fetch('/api/create-checkout-session', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: cart.map(i => ({ id: i.id, qty: i.qty })) })
-      });
-      if (!res.ok) throw new Error('no checkout endpoint');
+      let res;
+      try {
+        res = await fetch('/api/create-checkout-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ items: cart.map(i => ({ id: i.id, qty: i.qty })) })
+        });
+      } catch (netErr) {
+        // No endpoint reachable at all (e.g. running locally): email the order
+        emailOrder();
+        if (btn) { btn.disabled = false; render(); }
+        return;
+      }
+      // The endpoint exists but rejected the order - show its reason, do not
+      // silently switch to email.
+      const FAIL = 'Sorry, we could not start checkout just now. Please try again, or email ' + EMAIL + '.';
+      // The endpoint exists but rejected the order - show its reason, do not
+      // silently switch to email.
+      if (!res.ok) {
+        let msg = FAIL;
+        try { const err = await res.json(); if (err && err.error) msg = err.error; } catch (e) {}
+        render();                 // resets the button; rebuilds the footer
+        showCheckoutError(msg);   // ...so the banner must go in afterwards
+        return;
+      }
       const data = await res.json();
       if (data && data.url) { window.location.href = data.url; return; }
-      throw new Error('no url returned');
+      render();
+      showCheckoutError(FAIL);
     } catch (e) {
-      // Fallback (e.g. running locally without the Stripe function): email the order
-      emailOrder();
-      if (btn) { btn.disabled = false; render(); }
+      render();
+      showCheckoutError('Sorry, we could not start checkout just now. Please try again, or email ' + EMAIL + '.');
     }
+  }
+
+  function showCheckoutError(msg) {
+    const el = document.createElement('div');
+    el.id = 'iv-checkout-error';
+    el.style.cssText = 'margin:0 0 10px;padding:10px 14px;border-radius:10px;background:#fbe6e6;color:#7a1f1f;font-size:14px;line-height:1.4;';
+    el.textContent = msg;
+    if (foot) foot.insertBefore(el, foot.firstChild);
   }
 
   function emailOrder() {
