@@ -72,6 +72,23 @@ module.exports = async (req, res) => {
     }
     if (!line_items.length) return res.status(400).json({ error: 'No valid items in basket.' });
 
+    // Stripe Checkout allows at most 100 line items per session. For very large
+    // baskets, consolidate into one priced line so checkout still works - the full
+    // itemised order is preserved in the order token for stock decrement and the
+    // order email, so nothing is lost.
+    let checkoutLineItems = line_items;
+    if (line_items.length > 100) {
+      const totalQty = orderItems.reduce((n, o) => n + o.qty, 0);
+      checkoutLineItems = [{
+        quantity: 1,
+        price_data: {
+          currency: 'gbp',
+          unit_amount: subtotalPence,
+          product_data: { name: `Ink Vial order - ${totalQty} x 2ml samples (${line_items.length} inks)` }
+        }
+      }];
+    }
+
     // Stash the order so the webhook can decrement stock after payment
     const token = crypto.randomUUID();
     if (redis.isConfigured()) {
@@ -85,7 +102,7 @@ module.exports = async (req, res) => {
 
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
-      line_items,
+      line_items: checkoutLineItems,
       allow_promotion_codes: true,
       phone_number_collection: { enabled: false },
       shipping_address_collection: { allowed_countries: ['GB'] },
