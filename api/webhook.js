@@ -111,7 +111,17 @@ module.exports = async (req, res) => {
     if (items.length && redis.isConfigured()) {
       try {
         for (const it of items) {
-          await redis.hincrby('inkvial:stock', it.id, -Math.abs(it.qty || 1));
+          const qty = Math.abs(it.qty || 1);
+          const entry = catalog[it.id];
+          // Packs have no stock counter of their own - selling one draws down
+          // each of the individual inks it contains, same as if bought as singles.
+          if (entry && entry.components && entry.components.length) {
+            for (const cid of entry.components) {
+              await redis.hincrby('inkvial:stock', cid, -qty);
+            }
+          } else {
+            await redis.hincrby('inkvial:stock', it.id, -qty);
+          }
         }
         await redis.del('order:' + token);
       } catch (e) { console.error('Stock decrement error:', e); }

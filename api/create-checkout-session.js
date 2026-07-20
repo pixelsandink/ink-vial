@@ -52,7 +52,12 @@ module.exports = async (req, res) => {
       const entry = catalog[it.id];
       if (!entry) continue;                                   // ignore unknown ids
       const qty = Math.max(1, Math.min(20, parseInt(it.qty) || 1));
-      const have = getStock(it.id);
+      // Packs (entry.components present) draw from the shared stock of the inks
+      // inside them rather than having their own counter - so availability is
+      // whichever component ink is scarcest.
+      const have = (entry.components && entry.components.length)
+        ? Math.min(...entry.components.map(getStock))
+        : getStock(it.id);
       if (have < qty) { unavailable.push(`${entry.brand} ${entry.name}`); continue; }
       const unit = Math.round(entry.price * 100);
       subtotalPence += unit * qty;

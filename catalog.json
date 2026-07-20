@@ -1538,5 +1538,111 @@
     "name": "Ulap",
     "brand": "Vinta",
     "price": 3.25
+  },
+  "discovery-pack": {
+    "name": "Discovery Pack",
+    "brand": "Ink Vial",
+    "price": 16,
+    "components": [
+      "pilot-iroshizuku-kon-peki",
+      "diamine-toe-in-the-ocean",
+      "laban-hera-green",
+      "diamine-raise-a-glass",
+      "kaweco-caramel-brown",
+      "robert-oster-royal-red",
+      "pilot-iroshizuku-hana-ikada",
+      "laban-zeus-purple"
+    ]
+  },
+  "first-fill": {
+    "name": "First Fill",
+    "brand": "Ink Vial",
+    "price": 10,
+    "components": [
+      "kaweco-midnight-blue",
+      "jherbin-perle-noire",
+      "rohrer-klingner-salix",
+      "jherbin-vert-empire",
+      "rohrer-klingner-sepia",
+      "laban-ares-red"
+    ]
+  },
+  "elsewhere": {
+    "name": "Elsewhere",
+    "brand": "Ink Vial",
+    "price": 11,
+    "components": [
+      "diamine-chichen-itza",
+      "diamine-petra",
+      "diamine-the-great-wall-of-china",
+      "jherbin-emerald-of-chivor",
+      "robert-oster-sydney-darling-harbour",
+      "kwz-warsaw-dreaming"
+    ]
+  },
+  "nature-table": {
+    "name": "Nature Table",
+    "brand": "Ink Vial",
+    "price": 16,
+    "components": [
+      "birmingham-waterbear",
+      "birmingham-megalodon",
+      "robert-oster-cherry-blossom",
+      "pilot-iroshizuku-ajisai",
+      "ferris-wheel-press-dancing-thyme",
+      "vinta-sailfin-green"
+    ]
+  },
+  "book-club": {
+    "name": "Book Club",
+    "brand": "Ink Vial",
+    "price": 19,
+    "components": [
+      "wearingeul-alice",
+      "wearingeul-jane-eyre",
+      "wearingeul-crime-and-punishment",
+      "wearingeul-don-quixote",
+      "wearingeul-carmilla",
+      "wearingeul-adventures-of-tom-sawyer"
+    ]
+  },
+  "mythology": {
+    "name": "Mythology",
+    "brand": "Ink Vial",
+    "price": 18,
+    "components": [
+      "laban-zeus-purple",
+      "wearingeul-hades",
+      "wearingeul-persephone",
+      "wearingeul-vayu",
+      "wearingeul-sedna",
+      "wearingeul-heimdall"
+    ]
+  },
+  "the-menu": {
+    "name": "The Menu",
+    "brand": "Ink Vial",
+    "price": 11,
+    "components": [
+      "kwz-cappuccino",
+      "diamine-a-jug-of-sangria",
+      "robert-oster-melon-tea",
+      "lennon-tool-bar-misona-tea",
+      "robert-oster-choc-pudding",
+      "diamine-raise-a-glass"
+    ]
+  },
+  "after-dark": {
+    "name": "After Dark",
+    "brand": "Ink Vial",
+    "price": 13,
+    "components": [
+      "jherbin-emerald-of-chivor",
+      "troublemaker-abalone",
+      "troublemaker-starry-night-blue",
+      "robert-oster-sinners-heart",
+      "robert-oster-motor-oil",
+      "robert-oster-coffee-monster"
+    ]
   }
 }

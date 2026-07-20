@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ink Vial - Fountain Pen Ink Samples | Try Before You Buy</title>
-  <meta name="description" content="Ink Vial - a UK fountain pen ink sampling shop. Over 300 inks in 2ml samples, including brands hard to find in the UK. Try before you commit to a bottle. Free UK delivery over £40." />
+  <title>Ink Vial - Discovery Packs | Fountain Pen Ink Samples</title>
+  <meta name="description" content="Ink Vial - a UK fountain pen ink sampling shop. Curated Discovery Packs of 2ml samples, plus over 300 inks to browse individually. Try before you commit to a bottle. Free UK delivery over £40." />
   <link rel="canonical" href="https://www.inkvial.co.uk/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Ink Vial" />
-  <meta property="og:title" content="Ink Vial - Fountain Pen Ink Samples" />
-  <meta property="og:description" content="Over 300 fountain pen inks in 2ml samples. Try before you commit to a bottle. Free UK delivery over £40." />
+  <meta property="og:title" content="Ink Vial - Discovery Packs" />
+  <meta property="og:description" content="Curated Discovery Packs of 2ml fountain pen ink samples. Try before you commit to a bottle." />
   <meta property="og:url" content="https://www.inkvial.co.uk/" />
   <meta property="og:image" content="https://www.inkvial.co.uk/inkvial-logo-icon.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --bg:             #faf3e8;
+      --surface:        #ffffff;
       --purple-deep:    #3d2458;
       --purple-dark:    #5c3a9a;
       --purple-mid:     #8b68cc;
@@ -28,407 +28,399 @@
       --lavender-light: #d4c4ee;
       --lavender-pale:  #ede6f8;
       --pink:           #f5a0b0;
-      --surface:        #ffffff;
+      --text:           #3d2458;
       --muted:          rgba(61,36,88,0.48);
-      --radius:         16px;
+      --border:         rgba(176,154,216,0.25);
+      --radius-sm:      8px;
+      --radius:         14px;
+      --radius-lg:      20px;
     }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
 
-    html, body {
-      height: 100%;
-      font-family: 'Nunito', sans-serif;
-      background-color: var(--bg);
-      color: var(--purple-deep);
-      overflow-x: hidden;
-    }
+    .blobs { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.11; animation: drift 22s ease-in-out infinite alternate; }
+    .blob-1 { width: 500px; height: 500px; background: #c4b0e4; top: -10%; left: -10%; animation-duration: 28s; }
+    .blob-2 { width: 340px; height: 340px; background: #f5a0b0; bottom: -10%; right: -5%; animation-duration: 20s; animation-delay: -9s; }
+    @keyframes drift { 0% { transform: translate(0,0); } 100% { transform: translate(20px,-16px); } }
 
-    /* ── Ambient background blobs ── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 70% 55% at 10% 15%, rgba(176,154,216,0.28) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 50% at 88% 82%, rgba(245,160,176,0.20) 0%, transparent 55%),
-        radial-gradient(ellipse 35% 40% at 72% 18%, rgba(200,180,240,0.18) 0%, transparent 50%);
-      pointer-events: none;
-      z-index: 0;
-    }
+    /* NAV (matches shop.html) */
+    .nav { position: sticky; top: 0; z-index: 100; background: rgba(250,243,232,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; position: relative; }
+    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-brand { font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; font-weight: 700; color: var(--purple-dark); letter-spacing: 0.01em; white-space: nowrap; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 0.85rem; font-weight: 700; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--purple-dark); }
+    .btn-primary { display: inline-flex; align-items: center; gap: 6px; padding: 10px 22px; background: var(--purple-dark); color: #fff; font-family: 'Nunito', sans-serif; font-size: 0.82rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-radius: var(--radius-sm); text-decoration: none; transition: background 0.2s, transform 0.1s; border: none; cursor: pointer; }
+    .btn-primary:hover { background: var(--purple-mid); transform: translateY(-1px); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--purple-dark); padding: 6px; align-items: center; justify-content: center; }
 
-    .blobs {
-      position: fixed;
-      inset: 0;
-      overflow: hidden;
-      pointer-events: none;
-      z-index: 0;
-    }
-    .blob {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(72px);
-      opacity: 0.20;
-      animation: drift 20s ease-in-out infinite alternate;
-    }
-    .blob-1 { width: 500px; height: 500px; background: #c4b0e4; top: -12%; left: -8%;  animation-duration: 25s; }
-    .blob-2 { width: 340px; height: 340px; background: #f5a0b0; bottom: -10%; right: -8%; animation-duration: 19s; animation-delay: -8s; }
-    .blob-3 { width: 240px; height: 240px; background: #a48dd4; top: 52%; left: 58%; animation-duration: 15s; animation-delay: -4s; }
+    .announce-bar { background: var(--purple-deep); overflow: hidden; white-space: nowrap; position: relative; z-index: 101; transition: max-height .35s ease; max-height: 72px; }
+    .announce-track { display: inline-flex; align-items: center; padding: 9px 0; animation: announce-scroll 38s linear infinite; }
+    .announce-bar:hover .announce-track { animation-play-state: paused; }
+    .announce-item { font-family: 'Nunito', sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.02em; color: #f0e8d8; padding: 0 30px; }
+    .announce-sep { color: rgba(240,232,216,0.35); font-size: 0.7rem; }
+    @keyframes announce-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .announce-track { animation: none; justify-content: center; width: 100%; } .announce-track .announce-dupe { display: none; } }
+    .site-header { position: sticky; top: 0; z-index: 100; }
+    .site-header .nav { position: static; }
+    .site-header.compact .announce-bar { max-height: 0; }
 
-    @keyframes drift {
-      0%   { transform: translate(0,0) scale(1); }
-      50%  { transform: translate(28px,-20px) scale(1.04); }
-      100% { transform: translate(-18px,24px) scale(0.97); }
-    }
+    /* HERO */
+    .hero { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 56px 24px 40px; text-align: center; }
+    .hero-word { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.4rem, 6vw, 3.6rem); font-weight: 700; color: var(--purple-dark); margin-bottom: 10px; }
+    .hero-tag { font-family: 'Playfair Display', Georgia, serif; font-style: italic; color: var(--purple-mid); font-size: clamp(1rem, 2.5vw, 1.25rem); margin-bottom: 18px; }
+    .hero p.lede { color: var(--muted); font-size: 1rem; max-width: 560px; margin: 0 auto; }
+    .hero .browse-link { display: inline-block; margin-top: 20px; font-size: 0.85rem; font-weight: 700; color: var(--purple-dark); text-decoration: none; border-bottom: 1.5px solid var(--lavender-light); padding-bottom: 2px; }
+    .hero .browse-link:hover { border-color: var(--purple-dark); }
 
-    /* ── Layout ── */
-    .page {
-      position: relative;
-      z-index: 1;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px 24px;
-      text-align: center;
-    }
+    /* PACK GRID */
+    .packs-wrap { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 12px 24px 80px; }
+    .pk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
 
-    /* ── Logo ── */
-    .bottle-icon {
-      width: 300px;
-      height: auto;
-      margin-bottom: 16px;
-      animation: float 5s ease-in-out infinite;
-      filter: drop-shadow(0 8px 24px rgba(140,100,210,0.20));
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0) rotate(-1deg); }
-      50%       { transform: translateY(-10px) rotate(1deg); }
-    }
+    .pk-card { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px 22px 20px; box-shadow: 0 2px 14px rgba(140,100,210,0.07); transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; }
+    .pk-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(140,100,210,0.15); }
+    .pk-flag { position: absolute; top: -11px; left: 20px; background: var(--purple-dark); color: #fff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; box-shadow: 0 3px 10px rgba(92,58,154,0.35); }
+    .pk-swatches { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+    .pk-dot { width: 22px; height: 22px; border-radius: 50%; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--border); flex-shrink: 0; }
+    .pk-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 6px; }
+    .pk-story { font-style: italic; color: var(--text); opacity: 0.75; font-size: 0.86rem; line-height: 1.5; margin-bottom: 10px; }
+    .pk-contents { font-size: 0.72rem; color: var(--muted); line-height: 1.5; margin-bottom: 16px; flex: 1; }
+    .pk-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
+    .pk-price { font-size: 1.05rem; font-weight: 800; color: var(--purple-dark); }
+    .pk-stat { display: inline-flex; align-items: center; gap: 5px; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+    .pk-stat::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+    .pk-stat-in { color: #2d7a3a; } .pk-stat-in::before { background: #2d7a3a; }
+    .pk-stat-low { color: #c08a1a; } .pk-stat-low::before { background: #d49a2a; }
+    .pk-stat-out { color: var(--muted); } .pk-stat-out::before { background: rgba(61,36,88,0.35); }
+    .pk-stat-loading { color: var(--muted); }
+    .pk-add { width: 100%; padding: 13px; background: var(--purple-dark); color: #fff; border: none; border-radius: var(--radius-sm); font-family: 'Nunito', sans-serif; font-size: 0.85rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; transition: background .2s, transform .1s; }
+    .pk-add:hover:not(:disabled) { background: var(--purple-mid); transform: translateY(-1px); }
+    .pk-add:disabled { background: var(--lavender-light); cursor: not-allowed; color: rgba(61,36,88,0.5); }
+    .pk-add.pk-soldout { background: transparent; border: 1.5px solid var(--border); color: var(--muted); }
 
-    /* ── Brand name ── */
-    .brand {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(2.8rem, 8vw, 5rem);
-      font-weight: 700;
-      color: var(--purple-dark);
-      letter-spacing: 0.03em;
-      line-height: 1;
-      margin-bottom: 10px;
-    }
+    /* FOOTER (matches shop.html) */
+    footer { background: #2a1840; padding: 48px 24px 32px; color: rgba(240,232,216,0.55); position: relative; z-index: 1; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    .footer-brand { display: flex; flex-direction: column; gap: 12px; }
+    .footer-wordmark { font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; font-weight: 700; color: #f0e8d8; letter-spacing: 0.01em; line-height: 1; }
+    .footer-tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.85rem; color: rgba(240,232,216,0.38); }
+    .footer-col h4 { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(240,232,216,0.32); margin-bottom: 16px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { font-size: 0.88rem; color: rgba(240,232,216,0.55); text-decoration: none; transition: color 0.2s; }
+    .footer-col a:hover { color: #d4c4ee; }
+    .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 24px; border-top: 1px solid rgba(240,232,216,0.08); display: flex; justify-content: space-between; font-size: 0.75rem; color: rgba(240,232,216,0.25); flex-wrap: wrap; gap: 12px; }
 
-    .tagline {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-style: italic;
-      font-size: clamp(1.2rem, 3.5vw, 1.6rem);
-      color: var(--purple-mid);
-      letter-spacing: 0.10em;
-      margin-bottom: 52px;
+    @media (max-width: 768px) {
+      .nav-links { display: none; position: absolute; top: calc(100% + 1px); left: 0; right: 0; flex-direction: column; gap: 0; background: rgba(250,243,232,0.98); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); box-shadow: 0 10px 24px rgba(60,36,88,0.12); padding: 6px 0; z-index: 120; margin: 0; }
+      .nav-links.open { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 14px 24px; font-size: 0.95rem; }
+      .nav-toggle { display: inline-flex; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
     }
-
-    /* ── Countdown ── */
-    .countdown-label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 18px;
+    @media (max-width: 480px) {
+      .footer-inner { grid-template-columns: 1fr; }
+      .nav-logo img { height: 38px !important; }
     }
-
-    .countdown {
-      display: flex;
-      gap: clamp(10px, 3vw, 20px);
-      margin-bottom: 18px;
+    @media (max-width: 600px) {
+      .nav-inner { gap: 10px; padding: 0 16px; }
+      .nav-actions { gap: 6px; }
+      .nav-actions .btn-primary { padding: 9px 12px; font-size: 0.72rem; letter-spacing: 0.02em; white-space: nowrap; }
+      .hero { padding: 40px 20px 28px; }
     }
-
-    .unit {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .unit-box {
-      width: clamp(72px, 16vw, 106px);
-      height: clamp(72px, 16vw, 106px);
-      background: var(--surface);
-      border: 2px solid var(--lavender-light);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow:
-        0 4px 24px rgba(140,100,210,0.10),
-        0 1px 0 rgba(255,255,255,0.9) inset;
-    }
-
-    .unit-number {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(1.8rem, 5vw, 2.8rem);
-      font-weight: 700;
-      color: var(--purple-dark);
-      line-height: 1;
-    }
-
-    .unit-name {
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    @keyframes tick-pulse {
-      0%   { transform: scale(1); }
-      30%  { transform: scale(1.10); color: var(--purple-mid); }
-      100% { transform: scale(1); }
-    }
-    .tick { animation: tick-pulse 0.35s ease-out; }
-
-    .launch-date {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.5rem, 4.5vw, 2.2rem);
-      font-weight: 700;
-      color: var(--purple-dark);
-      margin-bottom: 8px;
-    }
-
-    .blurb {
-      font-size: clamp(0.88rem, 2vw, 1rem);
-      color: var(--muted);
-      line-height: 2;
-      max-width: 560px;
-      margin: 0 auto 36px;
-      padding: 0 20px;
-    }
-
-    /* ── Separator ── */
-    .sep {
-      width: 60px;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--lavender), transparent);
-      margin: 0 auto 40px;
-      border-radius: 2px;
-    }
-
-    /* ── Launched state ── */
-    .launched-msg {
-      display: none;
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.3rem, 4vw, 1.8rem);
-      color: var(--purple-dark);
-      margin-bottom: 20px;
-    }
-
-    /* ── Social links ── */
-    .socials {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-    .socials a {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-    .socials a:hover { color: var(--purple-dark); }
-    .socials a svg   { width: 16px; height: 16px; fill: currentColor; }
-
-    footer {
-      position: relative;
-      z-index: 1;
-      padding: 20px 24px;
-      text-align: center;
-      font-size: 0.72rem;
-      color: var(--muted);
-      letter-spacing: 0.06em;
-    }
-    .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
-  .nav-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
-  @media(max-width:480px){.nav-brand{font-size:1.1rem;}}
-</style>
+  </style>
 </head>
 <body>
 
-<div class="blobs">
+<header class="site-header" id="site-header">
+  <div class="announce-bar" aria-label="Announcements">
+    <div class="announce-track">
+      <span class="announce-item">✨ Free UK delivery on orders over £40</span><span class="announce-sep">◆</span>
+      <span class="announce-item">🖋️ Every vial is hand-filled fresh to order - please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep">◆</span>
+      <span class="announce-item">💜 Over 300 inks to explore</span><span class="announce-sep">◆</span>
+      <span class="announce-item announce-dupe">✨ Free UK delivery on orders over £40</span><span class="announce-sep announce-dupe">◆</span>
+      <span class="announce-item announce-dupe">🖋️ Every vial is hand-filled fresh to order - please allow 3–5 working days for us to fill &amp; pack, before Royal Mail delivery</span><span class="announce-sep announce-dupe">◆</span>
+      <span class="announce-item announce-dupe">💜 Over 300 inks to explore</span><span class="announce-sep announce-dupe">◆</span>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/">
+        <img src="inkvial-logo-icon.png" alt="Ink Vial" style="height:46px;width:auto;" /><span class="nav-brand">Ink Vial</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="shop">Shop</a></li>
+        <li><a href="how-it-works">How It Works</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="faq">FAQ</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="snipcart-checkout btn-primary">Basket (<span class="snipcart-items-count">0</span>)</button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="blobs" aria-hidden="true">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
 </div>
 
-<main class="page">
+<div class="hero">
+  <h1 class="hero-word">Discovery Packs</h1>
+  <p class="hero-tag">Curated sets of 2ml samples, freshly filled to order</p>
+  <p class="lede">Eight ways into the shop - a gateway set of easy, well-behaved colours, and seven built around what makes our 300+ inks unusual: real places, real creatures, real novels, real gods.</p>
+  <a class="browse-link" href="shop">Or browse all 300+ inks individually &rarr;</a>
+</div>
 
-  <img class="bottle-icon" src="inkvial-logo-nobg.png" alt="Ink Vial" />
-  <!-- legacy SVG kept below, hidden -->
-  <svg style="display:none" viewBox="0 0 120 172" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <defs>
-      <clipPath id="capClip">
-        <rect x="18" y="8" width="84" height="44" rx="13"/>
-      </clipPath>
-    </defs>
-
-    <!-- Cap -->
-    <rect x="18" y="8" width="84" height="44" rx="13" fill="#c4b0e4" stroke="#4a2d7a" stroke-width="3.5"/>
-    <rect x="18" y="8" width="84" height="16" rx="13" fill="#d8ccf2"/>
-    <!-- Cap ridges -->
-    <g clip-path="url(#capClip)" opacity="0.18">
-      <line x1="34"  y1="8" x2="34"  y2="52" stroke="#2d1a4a" stroke-width="5"/>
-      <line x1="47"  y1="8" x2="47"  y2="52" stroke="#2d1a4a" stroke-width="5"/>
-      <line x1="60"  y1="8" x2="60"  y2="52" stroke="#2d1a4a" stroke-width="5"/>
-      <line x1="73"  y1="8" x2="73"  y2="52" stroke="#2d1a4a" stroke-width="5"/>
-      <line x1="86"  y1="8" x2="86"  y2="52" stroke="#2d1a4a" stroke-width="5"/>
-    </g>
-
-    <!-- Neck -->
-    <rect x="34" y="50" width="52" height="18" rx="4" fill="#f0eaf8" stroke="#4a2d7a" stroke-width="3"/>
-
-    <!-- Bottle body -->
-    <path d="M12,66 H108 V130 Q108,158 60,158 Q12,158 12,130 V66 Z"
-          fill="#f0eaf8" stroke="#4a2d7a" stroke-width="3.5"/>
-
-    <!-- Ink fill -->
-    <path d="M13.8,94 H106.2 V130 Q106.2,156.2 60,156.2 Q13.8,156.2 13.8,130 V94 Z"
-          fill="#a48dd4" opacity="0.72"/>
-
-    <!-- Ink surface shimmer -->
-    <ellipse cx="60" cy="94" rx="46" ry="4.5" fill="rgba(255,255,255,0.28)"/>
-
-    <!-- Glass shine -->
-    <rect x="94" y="68" width="8" height="52" rx="4" fill="rgba(255,255,255,0.20)"/>
-
-    <!-- Eyes -->
-    <circle cx="44" cy="108" r="5.5" fill="#3d2458"/>
-    <circle cx="46" cy="106" r="2"   fill="white"/>
-    <circle cx="76" cy="108" r="5.5" fill="#3d2458"/>
-    <circle cx="78" cy="106" r="2"   fill="white"/>
-
-    <!-- Blush -->
-    <ellipse cx="33"  cy="116" rx="9" ry="6" fill="#f5a0b0" opacity="0.68"/>
-    <ellipse cx="87"  cy="116" rx="9" ry="6" fill="#f5a0b0" opacity="0.68"/>
-
-    <!-- Smile -->
-    <path d="M44,120 Q60,135 76,120"
-          stroke="#3d2458" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-    <!-- Ink bubble -->
-    <circle cx="27" cy="132" r="4" fill="rgba(255,255,255,0.22)" stroke="rgba(255,255,255,0.35)" stroke-width="1"/>
-  </svg>
-
-  <p class="tagline">Something beautiful is brewing</p>
-
-  <p class="blurb">Over 300 inks, freshly filled to order.<br>Fall in love with a colour before you commit to the bottle.</p>
-
-  <p class="launch-date">8 June 2026 &middot; 8:00 AM BST</p>
-  <p class="countdown-label">Launching in</p>
-
-  <div class="countdown" role="timer" aria-live="polite" aria-label="Countdown to launch">
-    <div class="unit">
-      <div class="unit-box"><span class="unit-number" id="days">00</span></div>
-      <span class="unit-name">Days</span>
-    </div>
-    <div class="unit">
-      <div class="unit-box"><span class="unit-number" id="hours">00</span></div>
-      <span class="unit-name">Hours</span>
-    </div>
-    <div class="unit">
-      <div class="unit-box"><span class="unit-number" id="minutes">00</span></div>
-      <span class="unit-name">Minutes</span>
-    </div>
-    <div class="unit">
-      <div class="unit-box"><span class="unit-number" id="seconds">00</span></div>
-      <span class="unit-name">Seconds</span>
-    </div>
+<div class="packs-wrap">
+  <div class="pk-grid" id="pk-grid">
+      <article class="pk-card" data-pack-id="discovery-pack">
+        <span class="pk-flag">THE GATEWAY SET</span>
+        <div class="pk-swatches"><span class="pk-dot" style="background:#1a5a9a" title="Kon-peki"></span><span class="pk-dot" style="background:#3a8a9a" title="Toe in the Ocean"></span><span class="pk-dot" style="background:#2a7a3a" title="Hera Green"></span><span class="pk-dot" style="background:#c8a04a" title="Raise a Glass"></span><span class="pk-dot" style="background:#9a6a2a" title="Caramel Brown"></span><span class="pk-dot" style="background:#a01a2a" title="Royal Red"></span><span class="pk-dot" style="background:#e08a9a" title="Hana-ikada"></span><span class="pk-dot" style="background:#4a1a6a" title="Zeus Purple"></span></div>
+        <h3 class="pk-name">Discovery Pack</h3>
+        <p class="pk-story">One ink from every shelf - eight easy, well-behaved colours across five brands. Start here if you’re not sure where to start.</p>
+        <p class="pk-contents">8 vials: Pilot Iroshizuku Kon-peki, Diamine Toe in the Ocean, Laban Hera Green, Diamine Raise a Glass, Kaweco Caramel Brown, Robert Oster Royal Red, Pilot Iroshizuku Hana-ikada, Laban Zeus Purple</p>
+        <div class="pk-foot">
+          <span class="pk-price">£16.00</span>
+          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
+        </div>
+        <button
+          class="snipcart-add-item pk-add"
+          data-item-id="discovery-pack"
+          data-item-price="16.00"
+          data-item-name="Ink Vial Discovery Pack"
+          data-item-description="8-vial discovery pack - Pilot Iroshizuku Kon-peki, Diamine Toe in the Ocean, Laban Hera Green, Diamine Raise a Glass, Kaweco Caramel Brown, Robert Oster Royal Red, Pilot Iroshizuku Hana-ikada, Laban Zeus Purple"
+          data-item-categories="Ink Vial"
+          data-item-quantity="1"
+          disabled
+        >Checking availability&hellip;</button>
+      </article>
+      <article class="pk-card" data-pack-id="first-fill">
+        
+        <div class="pk-swatches"><span class="pk-dot" style="background:#1a2a5a" title="Midnight Blue"></span><span class="pk-dot" style="background:#1a1a2a" title="Perle Noire"></span><span class="pk-dot" style="background:#3a5a7a" title="Salix"></span><span class="pk-dot" style="background:#2a5a2a" title="Vert Empire"></span><span class="pk-dot" style="background:#6a4a2a" title="Sepia"></span><span class="pk-dot" style="background:#9a1a1a" title="Ares Red"></span></div>
+        <h3 class="pk-name">First Fill</h3>
+        <p class="pk-story">Six honest, no-fuss colours for the very first vial in a new pen. No shimmer, no sheen - nothing to manage.</p>
+        <p class="pk-contents">6 vials: Kaweco Midnight Blue, J.Herbin Perle Noire, Rohrer & Klingner Salix, J.Herbin Vert Empire, Rohrer & Klingner Sepia, Laban Ares Red</p>
+        <div class="pk-foot">
+          <span class="pk-price">£10.00</span>
+          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
+        </div>
+        <button
+          class="snipcart-add-item pk-add"
+          data-item-id="first-fill"
+          data-item-price="10.00"
+          data-item-name="Ink Vial First Fill"
+          data-item-description="6-vial discovery pack - Kaweco Midnight Blue, J.Herbin Perle Noire, Rohrer & Klingner Salix, J.Herbin Vert Empire, Rohrer & Klingner Sepia, Laban Ares Red"
+          data-item-categories="Ink Vial"
+          data-item-quantity="1"
+          disabled
+        >Checking availability&hellip;</button>
+      </article>
+      <article class="pk-card" data-pack-id="elsewhere">
+        
+        <div class="pk-swatches"><span class="pk-dot" style="background:#3a8a7a" title="Chichen Itza"></span><span class="pk-dot" style="background:#b87060" title="Petra"></span><span class="pk-dot" style="background:#9a5a3a" title="The Great Wall of China"></span><span class="pk-dot" style="background:#1a5a3a" title="Emerald of Chivor"></span><span class="pk-dot" style="background:#1a6a9a" title="Sydney Darling Harbour"></span><span class="pk-dot" style="background:#4a5a7a" title="Warsaw Dreaming"></span></div>
+        <h3 class="pk-name">Elsewhere</h3>
+        <p class="pk-story">Postcards from real places - a Maya pyramid, a Roman ruin, an emerald mined deep in the Colombian Andes.</p>
+        <p class="pk-contents">6 vials: Diamine Chichen Itza, Diamine Petra, Diamine The Great Wall of China, J.Herbin Emerald of Chivor, Robert Oster Sydney Darling Harbour, KWZ Ink Warsaw Dreaming</p>
+        <div class="pk-foot">
+          <span class="pk-price">£11.00</span>
+          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
+        </div>
+        <button
+          class="snipcart-add-item pk-add"
+          data-item-id="elsewhere"
+          data-item-price="11.00"
+          data-item-name="Ink Vial Elsewhere"
+          data-item-description="6-vial discovery pack - Diamine Chichen Itza, Diamine Petra, Diamine The Great Wall of China, J.Herbin Emerald of Chivor, Robert Oster Sydney Darling Harbour, KWZ Ink Warsaw Dreaming"
+          data-item-categories="Ink Vial"
+          data-item-quantity="1"
+          disabled
+        >Checking availability&hellip;</button>
+      </article>
+      <article class="pk-card" data-pack-id="nature-table">
+        
+        <div class="pk-swatches"><span class="pk-dot" style="background:#3a8a9a" title="Waterbear"></span><span class="pk-dot" style="background:#2a5a7a" title="Megalodon"></span><span class="pk-dot" style="background:#e08a9a" title="Cherry Blossom"></span><span class="pk-dot" style="background:#6a5a8a" title="Ajisai"></span><span class="pk-dot" style="background:#5a8a5a" title="Dancing Thyme"></span><span class="pk-dot" style="background:#1a7a5a" title="Sailfin Green"></span></div>
+        <h3 class="pk-name">Nature Table</h3>
+        <p class="pk-story">Ink named after the thing it looks like - a tardigrade, a crocodile’s hide, a week of cherry blossom.</p>
+        <p class="pk-contents">6 vials: The Birmingham Pen Company Waterbear, The Birmingham Pen Company Megalodon, Robert Oster Cherry Blossom, Pilot Iroshizuku Ajisai, Ferris Wheel Press Dancing Thyme, Vinta Sailfin Green</p>
+        <div class="pk-foot">
+          <span class="pk-price">£16.00</span>
+          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
+        </div>
+        <button
+          class="snipcart-add-item pk-add"
+          data-item-id="nature-table"
+          data-item-price="16.00"
+          data-item-name="Ink Vial Nature Table"
+          data-item-description="6-vial discovery pack - The Birmingham Pen Company Waterbear, The Birmingham Pen Company Megalodon, Robert Oster Cherry Blossom, Pilot Iroshizuku Ajisai, Ferris Wheel Press Dancing Thyme, Vinta Sailfin Green"
+          data-item-categories="Ink Vial"
+          data-item-quantity="1"
+          disabled
+        >Checking availability&hellip;</button>
+      </article>
+      <article class="pk-card" data-pack-id="book-club">
+        
+        <div class="pk-swatches"><span class="pk-dot" style="background:#3a6aaa" title="Alice"></span><span class="pk-dot" style="background:#3a4a6a" title="Jane Eyre"></span><span class="pk-dot" style="background:#5a1a2a" title="Crime and Punishment"></span><span class="pk-dot" style="background:#7a5a2a" title="Don Quixote"></span><span class="pk-dot" style="background:#5a1a3a" title="Carmilla"></span><span class="pk-dot" style="background:#5a7a3a" title="Adventures of Tom Sawyer"></span></div>
+        <h3 class="pk-name">Book Club</h3>
+        <p class="pk-story">Six inks lifted from six novels - gothic romance, Russian tragedy, a raft down the Mississippi.</p>
+        <p class="pk-contents">6 vials: Wearingeul Alice, Wearingeul Jane Eyre, Wearingeul Crime and Punishment, Wearingeul Don Quixote, Wearingeul Carmilla, Wearingeul Adventures of Tom Sawyer</p>
+        <div class="pk-foot">
+          <span class="pk-price">£19.00</span>
+          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
+        </div>
+        <button
+          class="snipcart-add-item pk-add"
+          data-item-id="book-club"
+          data-item-price="19.00"
+          data-item-name="Ink Vial Book Club"
+          data-item-description="6-vial discovery pack - Wearingeul Alice, Wearingeul Jane Eyre, Wearingeul Crime and Punishment, Wearingeul Don Quixote, Wearingeul Carmilla, Wearingeul Adventures of Tom Sawyer"
+          data-item-categories="Ink Vial"
+          data-item-quantity="1"
+          disabled
+        >Checking availability&hellip;</button>
+      </article>
+      <article class="pk-card" data-pack-id="mythology">
+        
+        <div class="pk-swatches"><span class="pk-dot" style="background:#4a1a6a" title="Zeus Purple"></span><span class="pk-dot" style="background:#2a1a2a" title="Hades"></span><span class="pk-dot" style="background:#7a3a6a" title="Persephone"></span><span class="pk-dot" style="background:#5a9ac8" title="Vayu"></span><span class="pk-dot" style="background:#1a6a7a" title="Sedna"></span><span class="pk-dot" style="background:#a87a2a" title="Heimdall"></span></div>
+        <h3 class="pk-name">Mythology</h3>
+        <p class="pk-story">Zeus, Hades and Persephone’s family plot, joined by envoys from three other pantheons.</p>
+        <p class="pk-contents">6 vials: Laban Zeus Purple, Wearingeul Hades, Wearingeul Persephone, Wearingeul Vayu, Wearingeul Sedna, Wearingeul Heimdall</p>
+        <div class="pk-foot">
+          <span class="pk-price">£18.00</span>
+          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
+        </div>
+        <button
+          class="snipcart-add-item pk-add"
+          data-item-id="mythology"
+          data-item-price="18.00"
+          data-item-name="Ink Vial Mythology"
+          data-item-description="6-vial discovery pack - Laban Zeus Purple, Wearingeul Hades, Wearingeul Persephone, Wearingeul Vayu, Wearingeul Sedna, Wearingeul Heimdall"
+          data-item-categories="Ink Vial"
+          data-item-quantity="1"
+          disabled
+        >Checking availability&hellip;</button>
+      </article>
+      <article class="pk-card" data-pack-id="the-menu">
+        
+        <div class="pk-swatches"><span class="pk-dot" style="background:#8a6a4a" title="Cappuccino"></span><span class="pk-dot" style="background:#6a1a3a" title="A Jug of Sangria"></span><span class="pk-dot" style="background:#d48a6a" title="Melon Tea"></span><span class="pk-dot" style="background:#6a7a5a" title="Misona Tea"></span><span class="pk-dot" style="background:#5a3a2a" title="Choc Pudding"></span><span class="pk-dot" style="background:#c8a04a" title="Raise a Glass"></span></div>
+        <h3 class="pk-name">The Menu</h3>
+        <p class="pk-story">Coffee, wine, tea, chocolate, and one gold enough to toast with. A pack that smells like brunch.</p>
+        <p class="pk-contents">6 vials: KWZ Ink Cappuccino, Diamine A Jug of Sangria, Robert Oster Melon Tea, Lennon Tool Bar Misona Tea, Robert Oster Choc Pudding, Diamine Raise a Glass</p>
+        <div class="pk-foot">
+          <span class="pk-price">£11.00</span>
+          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
+        </div>
+        <button
+          class="snipcart-add-item pk-add"
+          data-item-id="the-menu"
+          data-item-price="11.00"
+          data-item-name="Ink Vial The Menu"
+          data-item-description="6-vial discovery pack - KWZ Ink Cappuccino, Diamine A Jug of Sangria, Robert Oster Melon Tea, Lennon Tool Bar Misona Tea, Robert Oster Choc Pudding, Diamine Raise a Glass"
+          data-item-categories="Ink Vial"
+          data-item-quantity="1"
+          disabled
+        >Checking availability&hellip;</button>
+      </article>
+      <article class="pk-card" data-pack-id="after-dark">
+        
+        <div class="pk-swatches"><span class="pk-dot" style="background:#1a5a3a" title="Emerald of Chivor"></span><span class="pk-dot" style="background:#2a6a7a" title="Abalone"></span><span class="pk-dot" style="background:#1a2a5a" title="Starry Night Blue"></span><span class="pk-dot" style="background:#7a1a4a" title="Sinners Heart"></span><span class="pk-dot" style="background:#3a3e2a" title="Motor Oil"></span><span class="pk-dot" style="background:#5a4a3a" title="Coffee Monster"></span></div>
+        <h3 class="pk-name">After Dark</h3>
+        <p class="pk-story">The showstoppers - rare sheen, real shimmer, and the ink you bring out for a good page.</p>
+        <p class="pk-contents">6 vials: J.Herbin Emerald of Chivor, Troublemaker Inks Abalone, Troublemaker Inks Starry Night Blue, Robert Oster Sinners Heart, Robert Oster Motor Oil, Robert Oster Coffee Monster</p>
+        <div class="pk-foot">
+          <span class="pk-price">£13.00</span>
+          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
+        </div>
+        <button
+          class="snipcart-add-item pk-add"
+          data-item-id="after-dark"
+          data-item-price="13.00"
+          data-item-name="Ink Vial After Dark"
+          data-item-description="6-vial discovery pack - J.Herbin Emerald of Chivor, Troublemaker Inks Abalone, Troublemaker Inks Starry Night Blue, Robert Oster Sinners Heart, Robert Oster Motor Oil, Robert Oster Coffee Monster"
+          data-item-categories="Ink Vial"
+          data-item-quantity="1"
+          disabled
+        >Checking availability&hellip;</button>
+      </article>
   </div>
+</div>
 
-  <p class="launched-msg" id="launched-msg">We're live - welcome to Ink Vial!</p>
-
-  <!-- Early-access unlock -->
-  <div class="early-access">
-    <button type="button" id="ea-toggle" class="ea-toggle">Have a preview password?</button>
-    <form id="ea-form" class="ea-form" autocomplete="off">
-      <input type="password" id="ea-pass" placeholder="Enter password" aria-label="Preview password" />
-      <button type="submit" class="ea-go">Enter</button>
-      <p class="ea-msg" id="ea-msg"></p>
-    </form>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="footer-wordmark">Ink Vial</span>
+      <p class="footer-tagline">Curated ink samples for ink lovers.</p>
+    </div>
+    <div class="footer-col"><h4>Shop</h4><ul>
+      <li><a href="shop">All Inks</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Info</h4><ul>
+      <li><a href="how-it-works">How It Works</a></li>
+      <li><a href="faq">FAQ</a></li>
+      <li><a href="about">About</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Connect</h4><ul>
+      <li><a href="contact">Contact</a></li><li><a href="contact#suggest">Suggest an Ink</a></li>
+    </ul></div>
   </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Ink Vial - a trading name of Pixels and Ink Ltd</span>
+    <span class="footer-legal"><a href="privacy" style="color:rgba(240,232,216,0.6);text-decoration:none;">Privacy</a> &middot; <a href="terms" style="color:rgba(240,232,216,0.6);text-decoration:none;">Terms</a> &middot; <a href="returns" style="color:rgba(240,232,216,0.6);text-decoration:none;">Returns</a></span>
+  </div>
+</footer>
 
-</main>
-
-<footer>&copy; 2026 Ink Vial &nbsp;&middot;&nbsp; United Kingdom</footer>
-
-<style>
-  .early-access{margin-top:40px;text-align:center;}
-  .ea-toggle{background:none;border:none;cursor:pointer;font-family:'Nunito',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.06em;color:var(--muted);text-transform:uppercase;transition:color .2s;}
-  .ea-toggle:hover{color:var(--purple-dark);}
-  .ea-form{display:none;justify-content:center;align-items:center;gap:8px;margin-top:14px;flex-wrap:wrap;}
-  .ea-form.show{display:flex;}
-  .ea-form input{padding:10px 14px;border:1.5px solid var(--lavender-light);border-radius:8px;background:#fff;font-family:'Nunito',sans-serif;font-size:0.9rem;color:var(--purple-deep);outline:none;width:180px;}
-  .ea-form input:focus{border-color:var(--purple-mid);}
-  .ea-go{padding:10px 20px;background:var(--purple-dark);color:#fff;border:none;border-radius:8px;font-family:'Nunito',sans-serif;font-size:0.82rem;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;transition:background .2s;}
-  .ea-go:hover{background:var(--purple-mid);}
-  .ea-msg{width:100%;font-size:0.8rem;font-weight:700;margin-top:4px;min-height:1em;}
-  .ea-msg.err{color:#c0405a;}
-  .ea-msg.ok{color:#2d7a3a;}
-</style>
+<script src="inks.js?v=2"></script>
+<script src="prices.js?v=2"></script>
+<script src="cart.js"></script>
 <script>
-  (function(){
-    const toggle=document.getElementById('ea-toggle');
-    const form=document.getElementById('ea-form');
-    const pass=document.getElementById('ea-pass');
-    const msg=document.getElementById('ea-msg');
-    toggle.addEventListener('click',()=>{ form.classList.toggle('show'); if(form.classList.contains('show')) pass.focus(); });
-    form.addEventListener('submit', async (e)=>{
-      e.preventDefault();
-      msg.className='ea-msg'; msg.textContent='Checking…';
-      try{
-        const r=await fetch('/api/unlock',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:pass.value})});
-        if(r.ok){ msg.className='ea-msg ok'; msg.textContent='Welcome in! Taking you to the shop…'; setTimeout(()=>{location.href='/shop';},700); }
-        else { msg.className='ea-msg err'; msg.textContent='Sorry, that password isn\'t right.'; }
-      }catch(err){ msg.className='ea-msg err'; msg.textContent='Something went wrong - please try again.'; }
+  // Live stock -> per-pack Available/Low/Sold out + enable the right Add button
+  fetch('/api/stock', { headers: { 'Accept': 'application/json' } })
+    .then(r => r.json())
+    .then(d => {
+      const statuses = (d && d.statuses) || {};
+      document.querySelectorAll('.pk-card').forEach(card => {
+        const id = card.getAttribute('data-pack-id');
+        const stat = statuses[id] || 'in'; // fail-open to "in" if the API is unreachable
+        const statEl = card.querySelector('[data-stat]');
+        const btn = card.querySelector('.pk-add');
+        statEl.className = 'pk-stat pk-stat-' + stat;
+        statEl.textContent = stat === 'out' ? 'Sold out' : (stat === 'low' ? 'Low stock' : 'Available');
+        if (stat === 'out') {
+          btn.disabled = true;
+          btn.classList.add('pk-soldout');
+          btn.textContent = 'Sold Out';
+        } else {
+          btn.disabled = false;
+          btn.textContent = 'Add to Basket';
+        }
+      });
+    })
+    .catch(() => {
+      // Live stock unreachable - fail open so customers can still buy;
+      // the server-side check at checkout is the real backstop.
+      document.querySelectorAll('.pk-card').forEach(card => {
+        const statEl = card.querySelector('[data-stat]');
+        const btn = card.querySelector('.pk-add');
+        statEl.className = 'pk-stat pk-stat-in';
+        statEl.textContent = 'Available';
+        btn.disabled = false;
+        btn.textContent = 'Add to Basket';
+      });
     });
-  })();
 </script>
-
 <script>
-  const LAUNCH = new Date('2026-06-08T07:00:00Z').getTime();
-  const els = {
-    days:    document.getElementById('days'),
-    hours:   document.getElementById('hours'),
-    minutes: document.getElementById('minutes'),
-    seconds: document.getElementById('seconds'),
-  };
-  function pad(n) { return String(n).padStart(2, '0'); }
-  function pulse(el, val) {
-    if (el.textContent !== val) {
-      el.textContent = val;
-      el.classList.remove('tick');
-      void el.offsetWidth;
-      el.classList.add('tick');
-    }
+  var t = document.getElementById('nav-toggle'), links = document.getElementById('nav-links');
+  if (t && links) {
+    t.addEventListener('click', function () { var o = links.classList.toggle('open'); t.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+    links.addEventListener('click', function (e) { if (e.target.closest('a')) { links.classList.remove('open'); t.setAttribute('aria-expanded', 'false'); } });
   }
-  function tick() {
-    const diff = LAUNCH - Date.now();
-    if (diff <= 0) {
-      Object.keys(els).forEach(k => els[k].textContent = '00');
-      document.getElementById('launched-msg').style.display = 'block';
-      // We're live - send visitors straight into the shop
-      location.replace('/shop');
-      return;
-    }
-    pulse(els.days,    pad(Math.floor(diff / 86400000)));
-    pulse(els.hours,   pad(Math.floor((diff % 86400000) / 3600000)));
-    pulse(els.minutes, pad(Math.floor((diff % 3600000) / 60000)));
-    pulse(els.seconds, pad(Math.floor((diff % 60000) / 1000)));
-  }
-  tick();
-  setInterval(tick, 1000);
 </script>
-  <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

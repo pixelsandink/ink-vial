@@ -3,6 +3,8 @@
 
 const redis = require('./_redis');
 const seed = require('../stock-seed.json');
+let catalog = {};
+try { catalog = require('../catalog.json'); } catch (e) {}
 
 const LOW_AT = 4;
 function statusOf(n) {
@@ -22,6 +24,19 @@ module.exports = async (req, res) => {
     for (const id of Object.keys(seed)) {
       const n = counts[id] !== undefined ? counts[id] : seed[id];
       statuses[id] = statusOf(n);
+    }
+    // Packs have no stock counter of their own - their availability is whichever
+    // component ink inside them is scarcest right now.
+    const RANK = { in: 2, low: 1, out: 0 };
+    for (const id of Object.keys(catalog)) {
+      const entry = catalog[id];
+      if (!entry.components || !entry.components.length) continue;
+      let worst = 'in';
+      for (const cid of entry.components) {
+        const st = statuses[cid] || 'out';
+        if (RANK[st] < RANK[worst]) worst = st;
+      }
+      statuses[id] = worst;
     }
     return res.status(200).json({ statuses });
   } catch (err) {
