@@ -6351,11 +6351,11 @@ const INKS = [
   {
     "id": "sailor-shikori-tokiwamatsu",
     "brand": "Sailor",
-    "name": "Shikori Tokiwamatsu",
+    "name": "Shikiori Tokiwamatsu",
     "colorPrimary": "#2a5a3a",
     "colorDark": "#1a3a1a",
-    "tagline": "Evergreen pine - a deep, muted forest green from the Shikori series.",
-    "description": "Tokiwamatsu (evergreen pine) is a deep, muted forest green with the soft, painterly quality of the Shikori series. Calm, natural, and beautifully restrained.",
+    "tagline": "Evergreen pine - a deep, muted forest green from the Shikiori series.",
+    "description": "Tokiwamatsu (evergreen pine) is a deep, muted forest green with the soft, painterly quality of the Shikiori series. Calm, natural, and beautifully restrained.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6384,12 +6384,12 @@ const INKS = [
   {
     "id": "sailor-shikori-sube-rakashi",
     "brand": "Sailor",
-    "name": "Shikori Sube-rakashi",
+    "name": "Shikiori Sube-rakashi",
     "colours": ["Brown","Green"],
     "colorPrimary": "#8a7a5a",
     "colorDark": "#6a5a3a",
     "tagline": "A warm, muted golden-tan with painterly softness.",
-    "description": "From the Shikori series, Sube-rakashi is a warm, muted golden-tan - soft and earthy, with the gentle painterly quality the series is known for. Understated and lovely.",
+    "description": "From the Shikiori series, Sube-rakashi is a warm, muted golden-tan - soft and earthy, with the gentle painterly quality the series is known for. Understated and lovely.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6418,11 +6418,11 @@ const INKS = [
   {
     "id": "sailor-shikori-yozakura",
     "brand": "Sailor",
-    "name": "Shikori Yozakura",
+    "name": "Shikiori Yozakura",
     "colorPrimary": "#b46a8a",
     "colorDark": "#945a6a",
     "tagline": "Night cherry blossom - a soft, dusky rose-pink under moonlight.",
-    "description": "Yozakura (night cherry blossom) is a soft, dusky rose-pink with the muted, painterly quality of the Shikori series. It evokes sakura viewed by moonlight - romantic and atmospheric.",
+    "description": "Yozakura (night cherry blossom) is a soft, dusky rose-pink with the muted, painterly quality of the Shikiori series. It evokes sakura viewed by moonlight - romantic and atmospheric.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6451,12 +6451,12 @@ const INKS = [
   {
     "id": "sailor-shikori-yutsubame",
     "brand": "Sailor",
-    "name": "Shikori Yutsubame",
+    "name": "Shikiori Yutsubame",
     "colours": ["Pink"],
     "colorPrimary": "#b06a8a",
     "colorDark": "#8a3a5a",
     "tagline": "Evening swallow - a soft, dusky pink at twilight.",
-    "description": "Yutsubame (evening swallow) is a soft, muted dusky pink from the Shikori series - the colour of the sky just after sunset. Gentle and atmospheric.",
+    "description": "Yutsubame (evening swallow) is a soft, muted dusky pink from the Shikiori series - the colour of the sky just after sunset. Gentle and atmospheric.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6485,12 +6485,12 @@ const INKS = [
   {
     "id": "sailor-shikori-hara-hara",
     "brand": "Sailor",
-    "name": "Shikori Hara Hara",
+    "name": "Shikiori Hara Hara",
     "colours": ["Purple"],
     "colorPrimary": "#9a8aaa",
     "colorDark": "#7a6a8a",
     "tagline": "A soft, muted lavender-grey with painterly delicacy.",
-    "description": "From the Shikori series, Hara Hara is a soft, muted lavender-grey - delicate and atmospheric, like petals drifting down. One of the gentlest colours in the series.",
+    "description": "From the Shikiori series, Hara Hara is a soft, muted lavender-grey - delicate and atmospheric, like petals drifting down. One of the gentlest colours in the series.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6519,12 +6519,12 @@ const INKS = [
   {
     "id": "sailor-shikori-potsu",
     "brand": "Sailor",
-    "name": "Shikori Potsu",
+    "name": "Shikiori Potsu",
     "colours": ["Purple"],
     "colorPrimary": "#6a4a8a",
     "colorDark": "#4a2a6a",
     "tagline": "A soft, dusky purple with quiet sophistication.",
-    "description": "From the Shikori series, Potsu is a muted, dusky purple - soft, atmospheric, and quietly sophisticated. The painterly quality gives it a gentle, watercolour feel.",
+    "description": "From the Shikiori series, Potsu is a muted, dusky purple - soft, atmospheric, and quietly sophisticated. The painterly quality gives it a gentle, watercolour feel.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6553,12 +6553,12 @@ const INKS = [
   {
     "id": "sailor-shikori-shimoyo",
     "brand": "Sailor",
-    "name": "Shikori Shimoyo",
+    "name": "Shikiori Shimoyo",
     "colours": ["Blue"],
     "colorPrimary": "#5a6a7a",
     "colorDark": "#3a4a5a",
-    "tagline": "Frosty night - a cool, muted blue-grey from the Shikori series.",
-    "description": "Shimoyo (frosty night) is a cool, muted blue-grey with the painterly softness of the Shikori series. Calm and wintry, it has the still beauty of a frost-covered evening.",
+    "tagline": "Frosty night - a cool, muted blue-grey from the Shikiori series.",
+    "description": "Shimoyo (frosty night) is a cool, muted blue-grey with the painterly softness of the Shikiori series. Calm and wintry, it has the still beauty of a frost-covered evening.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6587,12 +6587,12 @@ const INKS = [
   {
     "id": "sailor-shikori-okuyama",
     "brand": "Sailor",
-    "name": "Shikori Okuyama",
+    "name": "Shikiori Okuyama",
     "colours": ["Purple"],
     "colorPrimary": "#5a3a6a",
     "colorDark": "#3a1a4a",
-    "tagline": "Deep mountains - a muted, earthy purple from the Shikori series.",
-    "description": "Okuyama (deep mountains) is a muted, earthy purple with the soft painterly quality of the Shikori series. It evokes the deep, quiet hush of remote mountain forests.",
+    "tagline": "Deep mountains - a muted, earthy purple from the Shikiori series.",
+    "description": "Okuyama (deep mountains) is a muted, earthy purple with the soft painterly quality of the Shikiori series. It evokes the deep, quiet hush of remote mountain forests.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6621,12 +6621,12 @@ const INKS = [
   {
     "id": "sailor-shikori-kasagi",
     "brand": "Sailor",
-    "name": "Shikori Kasagi",
+    "name": "Shikiori Kasagi",
     "colours": ["Brown"],
     "colorPrimary": "#7a4a3a",
     "colorDark": "#5a2a1a",
     "tagline": "A warm, muted russet-brown with painterly softness.",
-    "description": "From the Shikori series, Kasagi is a warm, muted russet-brown - soft and earthy, with the gentle watercolour quality the series is loved for. Comforting and natural.",
+    "description": "From the Shikiori series, Kasagi is a warm, muted russet-brown - soft and earthy, with the gentle watercolour quality the series is loved for. Comforting and natural.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7029,11 +7029,11 @@ const INKS = [
   {
     "id": "sailor-shikori-souten",
     "brand": "Sailor",
-    "name": "Shikori Souten",
+    "name": "Shikiori Souten",
     "colorPrimary": "#4a7a9a",
     "colorDark": "#2a5a7a",
-    "tagline": "Blue sky - a soft, muted sky-blue from the Shikori series.",
-    "description": "Souten (blue sky) is a soft, muted sky-blue with the painterly quality of the Shikori series. Gentle and atmospheric, like a hazy blue sky in early morning.",
+    "tagline": "Blue sky - a soft, muted sky-blue from the Shikiori series.",
+    "description": "Souten (blue sky) is a soft, muted sky-blue with the painterly quality of the Shikiori series. Gentle and atmospheric, like a hazy blue sky in early morning.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -10374,6 +10374,40 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-murky-pond-water.jpg",
+    "stock": 80
+  },
+  {
+    "id": "robert-oster-day-to-night",
+    "brand": "Robert Oster",
+    "name": "Day to Night",
+    "colours": ["Blue","Yellow"],
+    "colorPrimary": "#c89a3a",
+    "colorDark": "#1a2a4a",
+    "tagline": "A Robert Oster x The Coffee Monster Co. collaboration - a chromatic shift from golden day to deep midnight blue.",
+    "description": "Day to Night is a special collaboration between Robert Oster and The Coffee Monster Co. A dramatic chromatic-shading ink that splits across the page between warm, golden daylight and deep, indigo night - bright where it's thin, and plunging into midnight blue where it pools. A proper collector's favourite alongside its Coffee Monster and Murky Pond Water siblings.",
+    "properties": {
+      "shading": 4,
+      "sheen": 0,
+      "dryTime": "Medium (10–15 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth or cream paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Watch it separate from warm gold into deep indigo-blue across a single stroke. High shading, clean lines, no feathering."
+      },
+      {
+        "title": "On textured paper",
+        "body": "The day-to-night split deepens and the blue reads richer. Still well behaved with no bleed on quality stock."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Wetter, broader nibs reward you with the fullest colour separation from gold to indigo."
+      }
+    ],
+    "image": "images/robert-oster-day-to-night.jpg",
     "stock": 80
   },
   {

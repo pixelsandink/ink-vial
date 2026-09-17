@@ -11,6 +11,9 @@ function getInkPrice(ink) {
   // ── TAG Kyo-No-Oto £4.50 ──────────────────────────────
   if (brand.includes('tag') && brand.includes('kyo')) return 4.50;
 
+  // ── Kitty Inkpot £4.50 (rare, small-batch) ───────────
+  if (brand.includes('kitty inkpot') || id.startsWith('kitty-inkpot')) return 4.50;
+
   // ── Tono & Lims £4.25 ─────────────────────────────────
   if (brand.includes('tono & lims') || brand.includes('lims') ||
       id.startsWith('tono-lims') || id.startsWith('tono-and-lims')) return 4.25;
@@ -22,6 +25,9 @@ function getInkPrice(ink) {
   // ── Pilot Iroshizuku £4.00 ────────────────────────────
   if (brand.includes('pilot iroshizuku') || id.startsWith('pilot-iroshizuku')) return 4.00;
 
+  // ── Esterbrook x Sakura Dragon £4.00 ──────────────────
+  if (brand.includes('sakura dragon') || id.startsWith('esterbrook-sakura-dragon')) return 4.00;
+
   // ── Ferris Wheel Press £4.00 ──────────────────────────
   if (brand.includes('ferris wheel press')) return 4.00;
 
@@ -32,7 +38,7 @@ function getInkPrice(ink) {
   if (id.includes('sailor-manyo')) return 4.00;
 
   // ── Robert Oster x The Coffee Monster Co. collab £4.00 ──
-  if (id.includes('coffee-monster') || id.includes('murky-pond-water')) return 4.00;
+  if (id.includes('coffee-monster') || id.includes('murky-pond-water') || id.includes('day-to-night')) return 4.00;
 
   // ── Taccia Ukiyoe £3.75 ───────────────────────────────
   if (id.includes('taccia') && id.includes('ukiyoe')) return 3.75;
@@ -43,7 +49,7 @@ function getInkPrice(ink) {
   // ── Sailor Ink Studio £3.50 ───────────────────────────
   if (id.includes('sailor-studio')) return 3.50;
 
-  // ── Sailor Shikiori £3.50 ─────────────────────────────
+  // ── Sailor Shikiori £3.50 (ids keep the legacy 'shikori' spelling) ─────────────────────────────
   if (id.includes('sailor-shikori')) return 3.50;
 
   // ── Sailor (standard & Dategokoro) £3.50 ──────────────
@@ -88,6 +94,9 @@ function getInkPrice(ink) {
 
   // ── Laban £2.25 ───────────────────────────────────────
   if (brand.includes('laban')) return 2.25;
+
+  // ── Cult Pens x Diamine Deep Dark £2.00 ───────────────
+  if (brand.includes('cult pens') || id.startsWith('cult-pens-diamine')) return 2.00;
 
   // ── Colorverse £2.00 ──────────────────────────────────
   if (brand.includes('colorverse')) return 2.00;
