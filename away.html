@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ink Vial - Away at an Event</title>
+  <meta name="description" content="Ink Vial is away at an event until Friday 25 September - and something new and fun is on its way." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="/inkvial-logo-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #faf3e8;
+      --surface: #ffffff;
+      --purple-deep: #3d2458;
+      --purple-dark: #5c3a9a;
+      --purple-mid: #8b68cc;
+      --lavender: #b09ad8;
+      --lavender-light: #d4c4ee;
+      --lavender-pale: #ede6f8;
+      --pink: #f5a0b0;
+      --gold: #c9a55a;
+      --muted: rgba(61,36,88,0.55);
+      --border: rgba(176,154,216,0.25);
+    }
+    html, body { height: 100%; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg);
+      color: var(--purple-deep);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .blobs { position: fixed; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.13; animation: drift 24s ease-in-out infinite alternate; }
+    .blob-1 { width: 520px; height: 520px; background: #c4b0e4; top: -12%; left: -12%; animation-duration: 28s; }
+    .blob-2 { width: 360px; height: 360px; background: #f5a0b0; bottom: -12%; right: -6%; animation-duration: 20s; animation-delay: -9s; }
+    .blob-3 { width: 300px; height: 300px; background: #c9a55a; top: 40%; right: 18%; animation-duration: 32s; animation-delay: -4s; opacity: 0.08; }
+    @keyframes drift { 0% { transform: translate(0,0); } 100% { transform: translate(22px,-18px); } }
+    @media (prefers-reduced-motion: reduce) { .blob { animation: none; } }
+
+    main {
+      position: relative; z-index: 1;
+      flex: 1;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 48px 24px 32px;
+    }
+    .mascot { width: 132px; height: auto; margin-bottom: 18px; animation: bob 4.5s ease-in-out infinite; }
+    @keyframes bob { 0%,100% { transform: translateY(0) rotate(-1.5deg); } 50% { transform: translateY(-8px) rotate(1.5deg); } }
+    @media (prefers-reduced-motion: reduce) { .mascot { animation: none; } }
+
+    .brand {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.35rem; font-weight: 700; color: var(--purple-dark);
+      letter-spacing: 0.01em; margin-bottom: 26px;
+    }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--purple-mid); margin-bottom: 12px;
+    }
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.2rem, 6vw, 3.4rem); font-weight: 700; line-height: 1.1;
+      color: var(--purple-dark); margin-bottom: 14px; text-wrap: balance;
+    }
+    .lede {
+      font-family: 'Playfair Display', Georgia, serif; font-style: italic;
+      font-size: clamp(1.02rem, 2.4vw, 1.22rem); color: var(--purple-mid);
+      max-width: 40ch; margin: 0 auto 34px;
+    }
+    .tease {
+      max-width: 440px; width: 100%;
+      background: linear-gradient(135deg, var(--lavender-pale), #fff);
+      border: 1px solid var(--border); border-radius: 20px;
+      padding: 22px 24px; text-align: left;
+      box-shadow: 0 2px 14px rgba(140,100,210,0.07);
+      margin-bottom: 34px;
+    }
+    .tease .tag {
+      display: inline-block; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+      color: #fff; background: var(--gold); padding: 4px 10px; border-radius: 999px; margin-bottom: 10px;
+    }
+    .tease h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.28rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 6px; }
+    .tease p { font-size: 0.9rem; color: var(--muted); }
+    .tease p b { color: var(--purple-dark); }
+
+    .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; }
+    .links a {
+      display: inline-flex; align-items: center; gap: 7px;
+      color: var(--muted); text-decoration: none;
+      font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+      transition: color .2s;
+    }
+    .links a:hover, .links a:focus-visible { color: var(--purple-dark); outline: none; }
+    .links svg { width: 16px; height: 16px; fill: currentColor; }
+
+    footer { position: relative; z-index: 1; padding: 18px 24px 26px; text-align: center; font-size: 0.7rem; color: var(--muted); letter-spacing: 0.05em; }
+  </style>
+</head>
+<body>
+
+<div class="blobs" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+</div>
+
+<main>
+  <img class="mascot" src="/inkvial-logo-icon.png" alt="" width="364" height="400" />
+  <div class="brand">Ink Vial</div>
+
+  <p class="eyebrow">Out and about</p>
+  <h1>We're away at an event</h1>
+  <p class="lede">The shop is closed until Friday 25 September while we're out meeting ink lovers in person. Back with fresh stock straight after.</p>
+
+  <section class="tease" aria-label="Coming soon">
+    <span class="tag">Coming soon</span>
+    <h2>Something new and fun is on its way</h2>
+    <p>We can't say much yet — but there's a new arrival brewing that we think you're going to love. <b>Follow along and be the first to know.</b></p>
+  </section>
+
+  <nav class="links" aria-label="Get in touch">
+    <a href="https://www.instagram.com/inkvial" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      @inkvial
+    </a>
+    <a href="mailto:hello@inkvial.co.uk">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.511l-8 5.333-8-5.333V6h16zM4 18V8.911l7.445 4.963a1 1 0 0 0 1.11 0L20 8.911V18H4z"/></svg>
+      hello@inkvial.co.uk
+    </a>
+  </nav>
+</main>
+
+<footer>&copy; 2026 Ink Vial &nbsp;&middot;&nbsp; a trading name of Pixels and Ink Ltd &nbsp;&middot;&nbsp; United Kingdom</footer>
+
+</body>
+</html>
