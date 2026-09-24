@@ -234,7 +234,7 @@ const INKS = [
       }
     ],
     "image": "images/birmingham-washed-lavender.jpg",
-    "stock": 20
+    "stock": 19
   },
   {
     "id": "birmingham-firebox",
@@ -369,7 +369,7 @@ const INKS = [
       }
     ],
     "image": "images/colorverse-walk-the-dog.jpg",
-    "stock": 26
+    "stock": 25
   },
   {
     "id": "colorverse-delicious-sleep",
@@ -639,7 +639,7 @@ const INKS = [
         "body": "Well-behaved across all nib widths. Medium nibs hit the sweet spot for colour and character."
       }
     ],
-    "stock": 26,
+    "stock": 25,
     "image": "images/colorverse-dirty-red.jpg"
   },
   {
@@ -1220,7 +1220,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-rosewood.jpg",
-    "stock": 30
+    "stock": 29
   },
   {
     "id": "diamine-raise-a-glass",
@@ -1290,7 +1290,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-oh-betty.jpg",
-    "stock": 32
+    "stock": 31
   },
   {
     "id": "diamine-blue-monday",
@@ -1323,7 +1323,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-blue-monday.jpg",
-    "stock": 20
+    "stock": 19
   },
   {
     "id": "diamine-lavender-frost",
@@ -1392,7 +1392,7 @@ const INKS = [
       }
     ],
     "image": "images/diamine-toe-in-the-ocean.jpg",
-    "stock": 12
+    "stock": 11
   },
   {
     "id": "diamine-the-great-wall-of-china",
@@ -1728,7 +1728,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-peter-moss.jpg",
-    "stock": 15
+    "stock": 14
   },
   {
     "id": "ferris-wheel-press-unfettered-flight",
@@ -1761,7 +1761,7 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-unfettered-flight.jpg",
-    "stock": 15
+    "stock": 14
   },
   {
     "id": "ferris-wheel-press-storied-blue",
@@ -3045,7 +3045,7 @@ const INKS = [
       }
     ],
     "image": "images/kwz-brown-pink.jpg",
-    "stock": 25
+    "stock": 23
   },
   {
     "id": "kwz-grey-plum",
@@ -3111,7 +3111,7 @@ const INKS = [
       }
     ],
     "image": "images/kwz-cherry.jpg",
-    "stock": 25
+    "stock": 24
   },
   {
     "id": "kwz-gummiberry",
@@ -3679,7 +3679,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-sesame-oil.jpg",
-    "stock": 12
+    "stock": 11
   },
   {
     "id": "lennon-tool-bar-dried-longan",
@@ -3746,7 +3746,7 @@ const INKS = [
       }
     ],
     "image": "images/lennon-tool-bar-misona-tea.jpg",
-    "stock": 12
+    "stock": 11
   },
   {
     "id": "lennon-tool-bar-purple-rice",
@@ -4660,7 +4660,7 @@ const INKS = [
       }
     ],
     "image": "images/pilot-iroshizuku-sui-gyoku.jpg",
-    "stock": 20
+    "stock": 19
   },
   {
     "id": "pilot-iroshizuku-hana-ikada",
@@ -4828,7 +4828,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-choc-pudding.jpg",
-    "stock": 20
+    "stock": 18
   },
   {
     "id": "robert-oster-dusty-pink",
@@ -4962,7 +4962,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-storm-summer.jpg",
-    "stock": 20
+    "stock": 19
   },
   {
     "id": "robert-oster-caffe-crema",
@@ -4996,7 +4996,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-caffe-crema.jpg",
-    "stock": 20
+    "stock": 17
   },
   {
     "id": "robert-oster-wind",
@@ -5236,7 +5236,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-melon-tea.jpg",
-    "stock": 20
+    "stock": 19
   },
   {
     "id": "robert-oster-viola",
@@ -5269,7 +5269,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-viola.jpg",
-    "stock": 20
+    "stock": 19
   },
   {
     "id": "robert-oster-charcoal",
@@ -5437,7 +5437,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-turquoise.jpg",
-    "stock": 20
+    "stock": 19
   },
   {
     "id": "robert-oster-frankly-blue",
@@ -7024,7 +7024,7 @@ const INKS = [
       }
     ],
     "image": "images/sailor-studio-973.jpg",
-    "stock": 8
+    "stock": 7
   },
   {
     "id": "sailor-shikori-souten",
@@ -7561,7 +7561,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-sunaoiro-cha.jpg",
-    "stock": 16
+    "stock": 13
   },
   {
     "id": "taccia-ukiyoe-hokusai-benitsuchi",
@@ -7595,7 +7595,7 @@ const INKS = [
       }
     ],
     "image": "images/taccia-ukiyoe-hokusai-benitsuchi.jpg",
-    "stock": 16
+    "stock": 14
   },
   {
     "id": "tono-lims-miss-u",
@@ -9925,7 +9925,7 @@ const INKS = [
       }
     ],
     "image": "images/wearingeul-queen-of-hearts.jpg",
-    "stock": 12
+    "stock": 11
   },
   {
     "id": "wearingeul-alice",
@@ -10340,7 +10340,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-coffee-monster.jpg",
-    "stock": 80
+    "stock": 79
   },
   {
     "id": "robert-oster-murky-pond-water",
@@ -10374,7 +10374,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-murky-pond-water.jpg",
-    "stock": 80
+    "stock": 79
   },
   {
     "id": "robert-oster-day-to-night",
@@ -10408,7 +10408,7 @@ const INKS = [
       }
     ],
     "image": "images/robert-oster-day-to-night.jpg",
-    "stock": 80
+    "stock": 79
   },
   {
     "id": "dominant-industry-allegory",
