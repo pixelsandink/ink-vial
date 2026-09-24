@@ -1,11 +1,4 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/((?!away$|success$|orders$|stock$|api/webhook|api/orders|api/ship|api/admin-stock|api/stock|api/messages|api/unlock|api/contact|images/|_vercel/|.*\\.(?:png|jpe?g|svg|webp|gif|ico|css|js|json|txt|pdf|woff2?)$).*)",
-      "destination": "/away",
-      "permanent": false
-    }
-  ]
+  "trailingSlash": false
 }
