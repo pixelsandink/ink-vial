@@ -6,16 +6,65 @@
 //                    CONTACT_FROM        (default "Ink Vial <onboarding@resend.dev>")
 //                                         once your domain is verified in Resend,
 //                                         set this to e.g. "Ink Vial <hello@inkvial.co.uk>"
+//                    CONTACT_SECRET      (anti-spam token signing; falls back to ADMIN_KEY)
 
+const crypto = require('crypto');
 const redis = require('./_redis');
 
 const TO   = process.env.CONTACT_TO   || 'hello@inkvial.co.uk';
 const FROM = process.env.CONTACT_FROM || 'Ink Vial <onboarding@resend.dev>';
 
+// Anti-spam token: GET /api/contact returns a signed timestamp, the page sends it
+// back with the form. Submissions with no/forged/too-fresh/too-old tokens are
+// dropped, which stops bots that POST straight to this endpoint.
+// Secret: CONTACT_SECRET (optional), falling back to ADMIN_KEY / RESEND_API_KEY.
+const SECRET = () => process.env.CONTACT_SECRET || process.env.ADMIN_KEY || process.env.RESEND_API_KEY || '';
+const sign = t => crypto.createHmac('sha256', SECRET()).update(String(t)).digest('hex').slice(0, 32);
+const MIN_AGE_MS = 3000;            // humans take longer than 3s to fill a form
+const MAX_AGE_MS = 2 * 60 * 60e3;   // token valid for 2 hours
+const RATE_LIMIT = 5;               // submissions per IP per hour
+
+function tokenOk(tok) {
+  if (!SECRET()) return true; // nothing to sign with - skip rather than break the form
+  const [t, sig] = String(tok || '').split('.');
+  if (!t || !sig || sig.length !== 32) return false;
+  const a = Buffer.from(sig), b = Buffer.from(sign(t));
+  if (!crypto.timingSafeEqual(a, b)) return false;
+  const age = Date.now() - Number(t);
+  return age >= MIN_AGE_MS && age <= MAX_AGE_MS;
+}
+
+// Generic template spam: link-heavy, or the "contact me by email - <shop name>" pattern.
+function looksLikeSpam({ name, email, subject, message, note, ink }) {
+  const text = [name, subject, message, note, ink].join(' ');
+  if ((text.match(/https?:\/\/|www\./gi) || []).length > 2) return true;
+  if (/please contact me (by|via) e-?mail\s*[-—–]\s*\w/i.test(text)) return true;
+  if (/I would like more information\.?\s*Please contact me/i.test(text)) return true;
+  return false;
+}
+
+async function rateLimited(req) {
+  try {
+    if (!redis.isConfigured()) return false;
+    const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'unknown';
+    const key = 'inkvial:contact-rl:' + ip;
+    const n = await redis.cmd(['INCR', key]);
+    if (n === 1) await redis.cmd(['EXPIRE', key, 3600]);
+    return n > RATE_LIMIT;
+  } catch (e) { return false; } // fail open
+}
+
 const esc = s => String(s == null ? '' : s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 module.exports = async (req, res) => {
+  // Hand the page a fresh signed timestamp (see tokenOk)
+  if (req.method === 'GET') {
+    res.setHeader('Cache-Control', 'no-store');
+    if (!SECRET()) return res.status(200).json({ token: '' });
+    const t = Date.now();
+    return res.status(200).json({ token: `${t}.${sign(t)}` });
+  }
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     return res.status(405).json({ error: 'Method not allowed' });
@@ -34,6 +83,10 @@ module.exports = async (req, res) => {
   // Honeypot — bots fill hidden fields; pretend success and drop.
   if (body._gotcha) return res.status(200).json({ ok: true });
 
+  // Silent drops: bots get a fake success so they don't adapt.
+  if (!tokenOk(body._token)) return res.status(200).json({ ok: true });
+  if (await rateLimited(req)) return res.status(200).json({ ok: true });
+
   const type    = body.type === 'suggest' ? 'suggest' : 'contact';
   const name    = (body.name || '').toString().trim().slice(0, 120);
   const email   = (body.email || '').toString().trim().slice(0, 160);
@@ -41,6 +94,10 @@ module.exports = async (req, res) => {
   const message = (body.message || '').toString().trim().slice(0, 4000);
   const ink     = (body.ink_suggestion || '').toString().trim().slice(0, 200);
   const note    = (body.note || '').toString().trim().slice(0, 4000);
+
+  if (looksLikeSpam({ name, email, subject, message, note, ink })) {
+    return res.status(200).json({ ok: true });
+  }
 
   // Minimal validation
   if (type === 'contact' && (!email || !message)) {
