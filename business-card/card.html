@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Ink Vial Business Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* UK standard 85x55mm trim + 3mm bleed each side = 91x61mm. Safe area: 4mm inside trim. */
+@page{size:91mm 61mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#888}
+.card{width:91mm;height:61mm;position:relative;overflow:hidden;page-break-after:always;font-family:'Nunito',sans-serif}
+.front{background:#faf3e8}
+.back{background:#3d2458;color:#faf3e8}
+/* decorative ink drops */
+.dot{position:absolute;border-radius:50%}
+.front .d1{width:46mm;height:46mm;background:#ede6f8;right:-12mm;top:-14mm}
+.front .d2{width:22mm;height:22mm;background:#d4c4ee;left:-8mm;bottom:-9mm}
+.front .d3{width:7mm;height:7mm;background:#f5a0b0;left:12mm;top:10mm}
+.front img{position:absolute;height:44mm;left:50%;top:50%;transform:translate(-50%,-47%)}
+.front .word{position:absolute;left:0;right:0;bottom:7.5mm;text-align:center;font-family:'Playfair Display',serif;font-weight:700;font-size:7.5mm;color:#3d2458;letter-spacing:.2mm}
+.back .d1{width:50mm;height:50mm;background:#5c3a9a;right:-30mm;bottom:-28mm}
+.back .d2{width:14mm;height:14mm;background:#8b68cc;right:14mm;top:-5mm;opacity:.6}
+.back .d3{width:4mm;height:4mm;background:#f5a0b0;right:8mm;top:12mm}
+.back .in{position:absolute;left:10mm;top:10mm;right:10mm;bottom:10mm}
+.back h1{font-family:'Playfair Display',serif;font-size:8.5mm;line-height:1;color:#fff}
+.back .tag{font-family:'Playfair Display',serif;font-style:italic;font-size:3.4mm;color:#d4c4ee;margin-top:2mm}
+.back .rule{width:10mm;height:.6mm;background:#f5a0b0;margin:5mm 0 4.5mm;border-radius:1mm}
+.back .row{font-weight:700;font-size:3.1mm;line-height:1.9;color:#faf3e8}
+.back .row span{color:#b09ad8;font-weight:800;display:inline-block;width:12mm;font-size:2.4mm;letter-spacing:.3mm;text-transform:uppercase}
+.back .foot{position:absolute;left:0;bottom:-1mm;font-size:2.4mm;font-weight:700;letter-spacing:.35mm;text-transform:uppercase;color:#b09ad8}
+@media screen{.card{margin:8mm auto;box-shadow:0 2mm 6mm rgba(0,0,0,.4)}}
+</style></head><body>
+<section class="card front">
+  <i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i>
+  <img src="mascot.png" alt="Ink Vial mascot">
+</section>
+<section class="card back">
+  <i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i>
+  <div class="in">
+    <h1>Ink Vial</h1>
+    <p class="tag">Curated ink samples for ink lovers.</p>
+    <div class="rule"></div>
+    <p class="row"><span>Shop</span>www.inkvial.co.uk</p>
+    <p class="row"><span>Email</span>hello@inkvial.co.uk</p>
+    <p class="foot">Fountain pen ink discovery packs</p>
+  </div>
+</section>
+</body></html>
