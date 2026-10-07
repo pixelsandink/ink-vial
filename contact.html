@@ -248,6 +248,11 @@
 </footer>
 
 <script>
+  // Anti-spam: fetch a signed timestamp from the server; sent back with each submission
+  let spamToken = '';
+  const tokenReady = fetch('/api/contact', { cache: 'no-store' })
+    .then(r => r.json()).then(o => { spamToken = (o && o.token) || ''; }).catch(() => {});
+
   // Submit forms via fetch so the user stays on the page and sees a thank-you message
   function handleForm(formId, statusId, successMsg) {
     const form = document.getElementById(formId);
@@ -257,7 +262,9 @@
       e.preventDefault();
       status.className = 'form-status';
       const btn = form.querySelector('button[type=submit]');
+      await tokenReady;
       const data = Object.fromEntries(new FormData(form).entries());
+      data._token = spamToken;
       const original = btn ? btn.textContent : '';
       if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
       try {

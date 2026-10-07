@@ -42,3 +42,13 @@ Every submission is also stored in Upstash as a safety net. View them at:
 ## If `RESEND_API_KEY` isn't set yet
 The form still works and saves to the database (so nothing is lost) — it just
 won't email until you add the key.
+
+## Spam protection
+Besides the hidden honeypot field, `/api/contact` silently drops (fake "success")
+submissions that:
+- lack a valid signed token (the page fetches one on load; it must be 3s–2h old),
+- come from an IP that has submitted more than 5 times in the past hour, or
+- match known template spam (e.g. "I would like more information. Please contact me by email — …") or contain 3+ links.
+
+The token is signed with `CONTACT_SECRET` (optional; falls back to `ADMIN_KEY`,
+then `RESEND_API_KEY`). Dropped submissions are not emailed or stored.
