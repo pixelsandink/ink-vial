@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Ink Vial Business Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* UK standard 85x55mm trim + 3mm bleed each side = 91x61mm. Safe area: 4mm inside trim. */
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#888}
+.card{width:91mm;height:61mm;position:relative;overflow:hidden;page-break-after:always;font-family:'Nunito',sans-serif}
+.dot{position:absolute;border-radius:50%}
+.front{background:#faf3e8;color:#3d2458}
+.front .d1{width:50mm;height:50mm;background:#ede6f8;right:-16mm;top:-20mm}
+.front .d2{width:20mm;height:20mm;background:#d4c4ee;right:-6mm;bottom:-9mm}
+.front .d3{width:4mm;height:4mm;background:#f5a0b0;left:37mm;top:8mm}
+.front img{position:absolute;height:35mm;left:6mm;top:50%;transform:translateY(-50%)}
+.front .txt{position:absolute;left:41mm;right:6mm;top:50%;transform:translateY(-50%)}
+.front h1{font-family:'Playfair Display',serif;font-size:5.8mm;line-height:1.12;color:#3d2458}
+.front h1 em{font-weight:400;color:#8b68cc}
+.front .rule{width:9mm;height:.6mm;background:#f5a0b0;margin:3.5mm 0;border-radius:1mm}
+.front p{font-size:3mm;font-weight:700;line-height:1.45;color:#5c3a9a}
+.back{background:#3d2458;color:#faf3e8}
+.back .d1{width:46mm;height:46mm;background:#5c3a9a;left:-32mm;bottom:-36mm}
+.back .d2{width:12mm;height:12mm;background:#8b68cc;right:20mm;top:-4mm;opacity:.6}
+.back .qr{position:absolute;right:10mm;top:50%;transform:translateY(-50%);width:29mm;background:#faf3e8;border-radius:3mm;padding:3mm;text-align:center}
+.back .qr svg{display:block;width:23mm;height:23mm;margin:0 auto}
+.back .qr svg path{fill:#3d2458}
+.back .qr b{display:block;margin-top:1.6mm;font-size:2.3mm;letter-spacing:.3mm;text-transform:uppercase;color:#5c3a9a;font-weight:800}
+.back .in{position:absolute;left:10mm;top:7mm;bottom:10mm;width:40mm}
+.back h2{font-family:'Playfair Display',serif;font-size:7mm;line-height:1;color:#fff}
+.back .tag{font-family:'Playfair Display',serif;font-style:italic;font-size:3mm;line-height:1.35;color:#d4c4ee;margin-top:2mm}
+.back .rule{width:9mm;height:.6mm;background:#f5a0b0;margin:2.5mm 0;border-radius:1mm}
+.back .row{font-weight:700;font-size:2.8mm;line-height:1.5}
+.back .row span{display:block;color:#b09ad8;font-weight:800;font-size:2.1mm;letter-spacing:.3mm;text-transform:uppercase;line-height:1.2;margin-top:1mm}
+@media screen{.card{margin:8mm auto;box-shadow:0 2mm 6mm rgba(0,0,0,.4)}}
+
+@page{size:A4;margin:0}
+html,body{background:#888}
+.sheet{width:210mm;height:297mm;position:relative;overflow:hidden;background:#fff;page-break-after:always}
+.slot{position:absolute;overflow:hidden}
+.art{position:absolute;width:91mm;height:61mm}
+.slot .card{position:absolute;left:0;top:0;margin:0;box-shadow:none;page-break-after:auto}
+.tb{position:absolute;border:.2mm solid #000}
+.tn{position:absolute;left:20mm;right:20mm;top:3mm;font:2.6mm/1.3 sans-serif;color:#000;text-align:center}
+@media screen{.sheet{margin:8mm auto;box-shadow:0 2mm 6mm rgba(0,0,0,.4)}}
+</style></head><body><section class="sheet"><div class="tb" style="left:20mm;top:11mm;width:85mm;height:55mm"></div><div class="tb" style="left:105mm;top:11mm;width:85mm;height:55mm"></div><div class="tb" style="left:20mm;top:66mm;width:85mm;height:55mm"></div><div class="tb" style="left:105mm;top:66mm;width:85mm;height:55mm"></div><div class="tb" style="left:20mm;top:121mm;width:85mm;height:55mm"></div><div class="tb" style="left:105mm;top:121mm;width:85mm;height:55mm"></div><div class="tb" style="left:20mm;top:176mm;width:85mm;height:55mm"></div><div class="tb" style="left:105mm;top:176mm;width:85mm;height:55mm"></div><div class="tb" style="left:20mm;top:231mm;width:85mm;height:55mm"></div><div class="tb" style="left:105mm;top:231mm;width:85mm;height:55mm"></div><p class="tn">Alignment test: print at 100% / actual size on plain paper, hold it over a card sheet against a window. Each box should sit exactly on the perforations. If not, change OFFSET_X / OFFSET_Y in make-sheet.py.</p></section></body></html>
