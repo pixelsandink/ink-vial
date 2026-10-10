@@ -3,7 +3,8 @@ plus an alignment test page. Tweak the margins below if your printer/stock needs
 import re
 CARD_W, CARD_H = 85, 55          # trim size (mm)
 COLS, ROWS = 2, 5
-MARGIN_X, MARGIN_Y = 20, 11      # (210-2*85)/2 and (297-5*55)/2: cards fill the sheet, no gaps
+MARGIN_X, MARGIN_Y = 12.5, 11    # estimated from the Herlitz product photo: 12.5mm side strips, 11mm top/bottom
+GAP = 15                         # perforated strip between the two columns (mm); estimated, adjust to your sheet
 BLEED = 1.5                      # extra art past the sheet's outer edge cards, hides small misregistration
 OFFSET_X, OFFSET_Y = 0, 0        # nudge everything (mm) to compensate for printer drift
 
@@ -15,7 +16,7 @@ front = re.search(r'<section class="card front">.*?</section>', src, re.S).group
 back = re.search(r'<section class="card back">.*?</section>', src, re.S).group(0)
 
 def slot(card, c, r, bleed):
-    x = MARGIN_X + OFFSET_X + c*CARD_W - bleed
+    x = MARGIN_X + OFFSET_X + c*(CARD_W+GAP) - bleed
     y = MARGIN_Y + OFFSET_Y + r*CARD_H - bleed
     w, h = CARD_W + 2*bleed, CARD_H + 2*bleed
     off = 3 - bleed   # card art is 91x61 with 3mm bleed
@@ -36,7 +37,7 @@ def page(card):
 
 def test_page():
     boxes = ''.join(
-        f'<div class="tb" style="left:{MARGIN_X+OFFSET_X+c*CARD_W}mm;top:{MARGIN_Y+OFFSET_Y+r*CARD_H}mm;width:{CARD_W}mm;height:{CARD_H}mm"></div>'
+        f'<div class="tb" style="left:{MARGIN_X+OFFSET_X+c*(CARD_W+GAP)}mm;top:{MARGIN_Y+OFFSET_Y+r*CARD_H}mm;width:{CARD_W}mm;height:{CARD_H}mm"></div>'
         for r in range(ROWS) for c in range(COLS))
     return ('<section class="sheet">' + boxes +
             '<p class="tn">Alignment test: print at 100% / actual size on plain paper, hold it over a card sheet against a window. '
