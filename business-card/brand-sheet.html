@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Ink Vial Brand Sheet</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+@page{size:297mm 210mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#888}
+.page{width:297mm;height:210mm;background:#faf3e8;color:#3d2458;font-family:'Nunito',sans-serif;position:relative;overflow:hidden;padding:12mm 14mm;display:grid;grid-template-columns:78mm 1fr;grid-template-rows:auto 1fr auto;gap:6mm 12mm}
+@media screen{.page{margin:8mm auto;box-shadow:0 2mm 6mm rgba(0,0,0,.4)}}
+.blob{position:absolute;border-radius:50%}
+.b1{width:90mm;height:90mm;background:#ede6f8;right:-30mm;top:-40mm}
+.b2{width:40mm;height:40mm;background:#d4c4ee;left:-14mm;bottom:-18mm;opacity:.7}
+.page>*:not(.blob){position:relative}
+header{grid-column:1/3;display:flex;justify-content:space-between;align-items:baseline;border-bottom:.4mm solid #d4c4ee;padding-bottom:3mm}
+header h1{font-family:'Playfair Display',serif;font-size:9mm;line-height:1}
+header span{font-weight:800;font-size:2.8mm;letter-spacing:.5mm;text-transform:uppercase;color:#8b68cc}
+h2{font-weight:800;font-size:2.6mm;letter-spacing:.5mm;text-transform:uppercase;color:#8b68cc;margin-bottom:3mm}
+.logo{background:#fff;border-radius:4mm;padding:6mm;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:.3mm solid #d4c4ee}
+.logo img{height:38mm}
+.logo .wm{font-family:'Playfair Display',serif;font-weight:700;font-size:9mm;margin-top:3mm;line-height:1}
+.logo .tg{font-family:'Playfair Display',serif;font-style:italic;font-size:3.6mm;color:#5c3a9a;margin-top:2mm}
+.note{font-size:2.9mm;line-height:1.45;color:#5c3a9a;margin-top:4mm;font-weight:600}
+.col{display:flex;flex-direction:column;gap:5mm;min-height:0}
+.sw{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm}
+.sw div{border-radius:2.5mm;overflow:hidden;background:#fff;border:.3mm solid #d4c4ee}
+.sw i{display:block;height:11mm}
+.sw b{display:block;font-size:2.8mm;padding:1.6mm 2mm 0;font-weight:800}
+.sw small{display:block;font-size:2.4mm;padding:0 2mm 1.8mm;color:#5c3a9a;font-weight:600;line-height:1.35}
+.row3{display:grid;grid-template-columns:1fr 1fr;gap:10mm}
+.type .sp1{font-family:'Playfair Display',serif;font-weight:700;font-size:9mm;line-height:1.05}
+.type .sp2{font-family:'Playfair Display',serif;font-style:italic;font-size:4.4mm;color:#5c3a9a;margin:1mm 0 3mm}
+.type .sp3{font-weight:800;font-size:4mm}
+.type .sp4{font-size:3mm;line-height:1.45;color:#5c3a9a;font-weight:600;margin-top:.8mm}
+.type small{display:block;font-size:2.4mm;color:#8b68cc;font-weight:800;letter-spacing:.3mm;text-transform:uppercase;margin-bottom:1mm}
+.voice p{font-size:3mm;line-height:1.5;font-weight:600;color:#5c3a9a;margin-bottom:1.6mm}
+.voice .q{font-family:'Playfair Display',serif;font-style:italic;font-size:4.4mm;color:#3d2458;line-height:1.3;margin-bottom:1.8mm}
+.use{grid-column:1/3;display:flex;gap:8mm;align-items:center;background:#3d2458;border-radius:4mm;padding:4mm 8mm;color:#faf3e8}
+.use img{height:30mm;border-radius:1.6mm;box-shadow:0 1mm 3mm rgba(0,0,0,.35)}
+.use h2{color:#b09ad8;margin-bottom:1.5mm}
+.use .info{margin-left:auto;font-weight:800;font-size:3.4mm;line-height:1.7}
+.use .info span{display:block;font-size:2.2mm;letter-spacing:.4mm;color:#b09ad8;text-transform:uppercase;line-height:1.2;margin-top:1.4mm}
+.use .info span:first-child{margin-top:0}
+</style></head><body>
+<main class="page">
+  <i class="blob b1"></i><i class="blob b2"></i>
+  <header><h1>Ink Vial &middot; Brand Sheet</h1><span>Quick reference</span></header>
+
+  <section>
+    <h2>Logo &amp; mascot</h2>
+    <div class="logo"><img src="mascot.png" alt=""><div class="wm">Ink Vial</div><div class="tg">Curated ink samples for ink lovers.</div></div>
+    <p class="note">Keep clear space around the mascot at least the width of the vial cap. Don&rsquo;t stretch, recolour or place on busy backgrounds. Best on cream or white.</p>
+  </section>
+
+  <section class="col">
+    <div>
+      <h2>Colour</h2>
+      <div class="sw">
+        <div><i style="background:#faf3e8"></i><b>Cream</b><small>#FAF3E8<br>Backgrounds</small></div>
+        <div><i style="background:#3d2458"></i><b>Deep purple</b><small>#3D2458<br>Text, dark panels</small></div>
+        <div><i style="background:#5c3a9a"></i><b>Purple</b><small>#5C3A9A<br>Headings, links</small></div>
+        <div><i style="background:#8b68cc"></i><b>Mid purple</b><small>#8B68CC<br>Labels, accents</small></div>
+        <div><i style="background:#b09ad8"></i><b>Lavender</b><small>#B09AD8<br>Text on dark</small></div>
+        <div><i style="background:#d4c4ee"></i><b>Light lavender</b><small>#D4C4EE<br>Shapes, borders</small></div>
+        <div><i style="background:#ede6f8"></i><b>Pale lavender</b><small>#EDE6F8<br>Soft fills</small></div>
+        <div><i style="background:#f5a0b0"></i><b>Pink</b><small>#F5A0B0<br>Small highlights only</small></div>
+      </div>
+    </div>
+    <div class="row3">
+      <div class="type">
+        <h2>Typography</h2>
+        <small>Playfair Display &middot; names &amp; headlines</small>
+        <div class="sp1">Ink Vial</div>
+        <div class="sp2">Try before you commit to a bottle.</div>
+        <small>Nunito &middot; everything else</small>
+        <div class="sp3">Discovery Packs</div>
+        <div class="sp4">Clean, friendly body text for shop pages, labels and print.</div>
+      </div>
+      <div class="voice">
+        <h2>Voice</h2>
+        <div class="q">&ldquo;Curated ink samples for ink lovers.&rdquo;</div>
+        <div class="q">&ldquo;Try before you commit to a bottle.&rdquo;</div>
+        <p>Friendly and plain-spoken.</p>
+        <p>Lead with trying and sampling, not selling.</p>
+        <p>Write for fellow pen and ink fans.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="use">
+    <div><h2>In use</h2><img src="inkvial-card-event-front.png" alt=""></div>
+    <img src="inkvial-card-event-back.png" alt="" style="margin-top:4.5mm">
+    <div class="info"><span>Shop</span>www.inkvial.co.uk<span>Email</span>hello@inkvial.co.uk<span>Instagram</span>@inkvialuk</div>
+  </section>
+</main>
+</body></html>
