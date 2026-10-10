@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@page{size:A4;margin:0}*{margin:0;padding:0}html,body{background:#fff}.p{width:210mm;height:297mm;position:relative;font-family:sans-serif}svg{position:absolute;left:0;top:0;width:210mm;height:297mm}</style></head><body><div class="p">
+<svg viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" fill="#000" stroke="#000" stroke-width=".2">
+<g id="cross"></g>
+<script>/* built below */</script>
+</svg></div>
+<script>
+const NS='http://www.w3.org/2000/svg',svg=document.querySelector('svg');
+const add=(t,a,txt)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(txt)e.textContent=txt;svg.appendChild(e);return e};
+// crosshairs 10mm in from each edge
+[[10,10],[200,10],[10,287],[200,287]].forEach(([x,y])=>{add('line',{x1:x-6,y1:y,x2:x+6,y2:y});add('line',{x1:x,y1:y-6,x2:x,y2:y+6});add('circle',{cx:x,cy:y,r:2,fill:'none'})});
+// horizontal ruler x=10..200 at y=148.5, vertical ruler y=10..287 at x=105
+add('line',{x1:10,y1:148.5,x2:200,y2:148.5});add('line',{x1:105,y1:10,x2:105,y2:287});
+for(let x=10;x<=200;x+=10){add('line',{x1:x,y1:145.5,x2:x,y2:151.5});if((x-10)%50==0)add('text',{x:x,y:156,'font-size':3.2,'text-anchor':'middle','stroke-width':0},String(x-10))}
+for(let y=10;y<=287;y+=10){add('line',{x1:102,y1:y,x2:108,y2:y});if((y-10)%50==0)add('text',{x:111,y:y+1.1,'font-size':3.2,'stroke-width':0},String(y-10))}
+add('text',{x:16,y:30,'font-size':4.2,'stroke-width':0},'Ink Vial print calibration');
+['Print at Actual size (no scaling) on plain paper.','Then measure with a ruler, in mm:','','1) Left circle centre to right circle centre','    along the horizontal line: should be 190.0','','2) Top circle centre to bottom circle centre','    along the vertical line: should be 277.0','','3) Top-left circle centre: distance from the','    left paper edge and from the top paper edge','    should each be 10.0'].forEach((t,i)=>add('text',{x:16,y:40+i*5.2,'font-size':3.4,'stroke-width':0},t));
+</script></body></html>

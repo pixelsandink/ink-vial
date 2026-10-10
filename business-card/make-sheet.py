@@ -3,8 +3,8 @@ plus an alignment test page. Tweak the margins below if your printer/stock needs
 import re
 CARD_W, CARD_H = 85, 55          # trim size (mm)
 COLS, ROWS = 2, 5
-MARGIN_X, MARGIN_Y = 12.5, 11    # estimated from the Herlitz product photo: 12.5mm side strips, 11mm top/bottom
-GAP = 15                         # perforated strip between the two columns (mm); estimated, adjust to your sheet
+MARGIN_X, MARGIN_Y = 15, 11      # side strips measured from a photo of the real sheet
+GAP = 10                         # perforated strip between the two columns (mm)
 BLEED = 1.5                      # extra art past the sheet's outer edge cards, hides small misregistration
 OFFSET_X, OFFSET_Y = 0, 0        # nudge everything (mm) to compensate for printer drift
 

@@ -1,7 +1,7 @@
 """Places the card PNGs on A4 at the Herlitz 10-up layout and writes HTML for PDF export.
 Edit MARGIN_X / MARGIN_Y / GAP / OFFSET_* if your sheet or printer needs it."""
 CARD_W, CARD_H = 85, 55
-MARGIN_X, MARGIN_Y, GAP = 12.5, 11, 15
+MARGIN_X, MARGIN_Y, GAP = 15, 11, 10
 OFFSET_X, OFFSET_Y = 0, 0
 COLS, ROWS = 2, 5
 
