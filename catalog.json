@@ -1590,7 +1590,8 @@
       "laban-demeter-brown",
       "laban-hermes-sky-blue",
       "laban-ares-red",
-      "laban-zeus-purple"
+      "laban-zeus-purple",
+      "laban-poseidon-green"
     ]
   },
   "alice-in-wonderland": {
@@ -1772,5 +1773,555 @@
     "name": "Toponium Twinkle",
     "brand": "The Birmingham Pen Company",
     "price": 3
+  },
+  "cult-pens-diamine-maple-leaf": {
+    "name": "Maple Leaf",
+    "brand": "Cult Pens x Diamine",
+    "price": 2
+  },
+  "cult-pens-diamine-muddy-puddle": {
+    "name": "Muddy Puddle",
+    "brand": "Cult Pens x Diamine",
+    "price": 2
+  },
+  "cult-pens-diamine-murky-bucket": {
+    "name": "Murky Bucket",
+    "brand": "Cult Pens x Diamine",
+    "price": 2
+  },
+  "de-atramentis-archival-black": {
+    "name": "Archival Black",
+    "brand": "De Atramentis",
+    "price": 2.25
+  },
+  "diamine-amazing-amethyst": {
+    "name": "Amazing Amethyst",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-ancient-copper": {
+    "name": "Ancient Copper",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-aurora-borealis": {
+    "name": "Aurora Borealis",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-autumn-oak": {
+    "name": "Autumn Oak",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-celadon-cat": {
+    "name": "Celadon Cat",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-cherry-sunburst": {
+    "name": "Cherry Sunburst",
+    "brand": "Diamine",
+    "price": 1.75
+  },
+  "diamine-classic-green": {
+    "name": "Classic Green",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-damson": {
+    "name": "Damson",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-earl-grey": {
+    "name": "Earl Grey",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-golden-brown": {
+    "name": "Golden Brown",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-grape": {
+    "name": "Grape",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "cult-pens-diamine-maureen": {
+    "name": "Maureen",
+    "brand": "Cult Pens x Diamine",
+    "price": 2
+  },
+  "diamine-merlot": {
+    "name": "Merlot",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-monaco-red": {
+    "name": "Monaco Red",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-ochre": {
+    "name": "Ochre",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-onyx-black": {
+    "name": "Onyx Black",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-oxblood": {
+    "name": "Oxblood",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-raw-sienna": {
+    "name": "Raw Sienna",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-red-dragon": {
+    "name": "Red Dragon",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-saddle-brown": {
+    "name": "Saddle Brown",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-salamander": {
+    "name": "Salamander",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-twilight": {
+    "name": "Twilight",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-tyrian-purple": {
+    "name": "Tyrian Purple",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-violet": {
+    "name": "Violet",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-warm-brown": {
+    "name": "Warm Brown",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "diamine-writers-blood": {
+    "name": "Writer's Blood",
+    "brand": "Diamine",
+    "price": 0.99
+  },
+  "ferris-wheel-press-astral-blue-odyssey": {
+    "name": "Astral Blue Odyssey",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-aurorealis": {
+    "name": "Aurorealis",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-brilliant-beanstalk": {
+    "name": "Brilliant Beanstalk",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-embers-of-time": {
+    "name": "Embers of Time",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-freshly-squeezed-sunshine": {
+    "name": "Freshly Squeezed Sunshine",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-furry-frostbites": {
+    "name": "Furry Frostbites",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-oinking-embers": {
+    "name": "Oinking Embers",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-starlit-stories": {
+    "name": "Starlit Stories",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-the-copperleaf-guild": {
+    "name": "The Copperleaf Guild",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-the-sad-charade": {
+    "name": "The Sad Charade",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-tunes-of-tinseltown": {
+    "name": "Tunes of Tinseltown",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "ferris-wheel-press-wonderland-in-coral": {
+    "name": "Wonderland in Coral",
+    "brand": "Ferris Wheel Press",
+    "price": 4
+  },
+  "journalize-carnival-fireworks": {
+    "name": "Carnival Fireworks",
+    "brand": "Journalize",
+    "price": 3.75
+  },
+  "kwz-sheen-machine": {
+    "name": "Sheen Machine",
+    "brand": "KWZ Ink",
+    "price": 2
+  },
+  "kolour-cafe-barako": {
+    "name": "Barako",
+    "brand": "Kolour Cafe",
+    "price": 3.25
+  },
+  "kolour-cafe-cuppa": {
+    "name": "Cuppa",
+    "brand": "Kolour Cafe",
+    "price": 3.25
+  },
+  "kolour-cafe-ube": {
+    "name": "Ube",
+    "brand": "Kolour Cafe",
+    "price": 3.25
+  },
+  "laban-poseidon-green": {
+    "name": "Poseidon Green",
+    "brand": "Laban",
+    "price": 2.25
+  },
+  "lennon-tool-bar-brown-sugar": {
+    "name": "Brown Sugar",
+    "brand": "Lennon Tool Bar",
+    "price": 3.5
+  },
+  "platinum-carbon-black": {
+    "name": "Carbon Black",
+    "brand": "Platinum",
+    "price": 2.25
+  },
+  "robert-oster-aqua": {
+    "name": "Aqua",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-blue-lagoon": {
+    "name": "Blue Lagoon",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-bronze": {
+    "name": "Bronze",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-chicago": {
+    "name": "Chicago",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-deep-purple": {
+    "name": "Deep Purple",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-fire-and-ice": {
+    "name": "Fire and Ice",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-frankly-green": {
+    "name": "Frankly Green",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-frankly-scarlet": {
+    "name": "Frankly Scarlet",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-gogo": {
+    "name": "Gogo",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-great-southern-ocean": {
+    "name": "Great Southern Ocean",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-green-lime": {
+    "name": "Green Lime",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-honey-bee": {
+    "name": "Honey Bee",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-kelp-forest": {
+    "name": "Kelp Forest",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-khaki": {
+    "name": "Khaki",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-pink-squirrel": {
+    "name": "Pink Squirrel",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-red-candy": {
+    "name": "Red Candy",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-romeo-and-juliet": {
+    "name": "Romeo and Juliet",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-sinners-poison": {
+    "name": "Sinner's Poison",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-taiwan-blue": {
+    "name": "Taiwan Blue",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-terracotta": {
+    "name": "Terracotta",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "robert-oster-whisper-red": {
+    "name": "Whisper Red",
+    "brand": "Robert Oster",
+    "price": 2.75
+  },
+  "sailor-manyo-kikyou": {
+    "name": "Manyo Kikyou",
+    "brand": "Sailor",
+    "price": 4
+  },
+  "sailor-manyo-shirakashi": {
+    "name": "Manyo Shirakashi",
+    "brand": "Sailor",
+    "price": 4
+  },
+  "sailor-manyo-ume": {
+    "name": "Manyo Ume",
+    "brand": "Sailor",
+    "price": 4
+  },
+  "sailor-shikori-chushu": {
+    "name": "Shikiori Chushu",
+    "brand": "Sailor",
+    "price": 3.5
+  },
+  "sailor-shikori-kamoshika": {
+    "name": "Shikiori Kamoshika",
+    "brand": "Sailor",
+    "price": 3.5
+  },
+  "sailor-shikori-yodaki": {
+    "name": "Shikiori Yodaki",
+    "brand": "Sailor",
+    "price": 3.5
+  },
+  "shanghai-stationary-fireworks": {
+    "name": "Fireworks",
+    "brand": "Shanghai Stationary",
+    "price": 2.5
+  },
+  "shanghai-stationary-gui-zu": {
+    "name": "Gui Zu",
+    "brand": "Shanghai Stationary",
+    "price": 2.5
+  },
+  "shanghai-stationary-imperial-post": {
+    "name": "Imperial Post",
+    "brand": "Shanghai Stationary",
+    "price": 2.5
+  },
+  "shanghai-stationary-meadow-in-the-sun": {
+    "name": "Meadow in the Sun",
+    "brand": "Shanghai Stationary",
+    "price": 2.5
+  },
+  "shanghai-stationary-mudan": {
+    "name": "Mudan",
+    "brand": "Shanghai Stationary",
+    "price": 2.5
+  },
+  "shanghai-stationary-sky-in-the-pond-at-rice-terrace": {
+    "name": "Sky in the Pond at Rice Terrace",
+    "brand": "Shanghai Stationary",
+    "price": 2.5
+  },
+  "shanghai-stationary-white-cedar": {
+    "name": "White Cedar",
+    "brand": "Shanghai Stationary",
+    "price": 2.5
+  },
+  "shanghai-stationary-youlu": {
+    "name": "Youlu",
+    "brand": "Shanghai Stationary",
+    "price": 2.5
+  },
+  "teranishi-antique-black": {
+    "name": "Antique Black",
+    "brand": "Teranishi",
+    "price": 2.25
+  },
+  "teranishi-brilliant-mint": {
+    "name": "Brilliant Mint",
+    "brand": "Teranishi",
+    "price": 2.25
+  },
+  "teranishi-classy-burgundy": {
+    "name": "Classy Burgundy",
+    "brand": "Teranishi",
+    "price": 2.25
+  },
+  "teranishi-emotional-olive": {
+    "name": "Emotional Olive",
+    "brand": "Teranishi",
+    "price": 2.25
+  },
+  "teranishi-innocent-mauve": {
+    "name": "Innocent Mauve",
+    "brand": "Teranishi",
+    "price": 2.25
+  },
+  "teranishi-night-time-soda": {
+    "name": "Night Time Soda",
+    "brand": "Teranishi",
+    "price": 2.25
+  },
+  "teranishi-opera-rose": {
+    "name": "Opera Rose",
+    "brand": "Teranishi",
+    "price": 2.25
+  },
+  "teranishi-smoky-navy": {
+    "name": "Smoky Navy",
+    "brand": "Teranishi",
+    "price": 2.25
+  },
+  "teranishi-traveling-sepia": {
+    "name": "Traveling Sepia",
+    "brand": "Teranishi",
+    "price": 2.25
+  },
+  "birmingham-angelfish": {
+    "name": "Angelfish",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "birmingham-black-pearl": {
+    "name": "Black Pearl",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "birmingham-byzantium": {
+    "name": "Byzantium",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "birmingham-heron": {
+    "name": "Heron",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "birmingham-interstellar-bronze": {
+    "name": "Interstellar Bronze",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "birmingham-moonfish-jelly": {
+    "name": "Moonfish Jelly",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "birmingham-pitted-nickel": {
+    "name": "Pitted Nickel",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "birmingham-quantum-teal": {
+    "name": "Quantum Teal",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "birmingham-tesla-coil": {
+    "name": "Tesla Coil",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "birmingham-tigers-eye": {
+    "name": "Tigers Eye",
+    "brand": "The Birmingham Pen Company",
+    "price": 3
+  },
+  "tono-lims-emerald-mountain": {
+    "name": "Emerald Mountain",
+    "brand": "Tono & Lims",
+    "price": 4.25
+  },
+  "tono-lims-monte-bianco": {
+    "name": "Monte Bianco",
+    "brand": "Tono & Lims",
+    "price": 4.25
+  },
+  "wearingeul-a-dream-within-a-dream": {
+    "name": "A Dream Within a Dream",
+    "brand": "Wearingeul",
+    "price": 4
+  },
+  "wearingeul-the-nightingale-and-the-rose": {
+    "name": "The Nightingale and the Rose",
+    "brand": "Wearingeul",
+    "price": 4
+  },
+  "wearingeul-therese-raquin": {
+    "name": "Therese Raquin",
+    "brand": "Wearingeul",
+    "price": 4
+  },
+  "wearingeul-undine": {
+    "name": "Undine",
+    "brand": "Wearingeul",
+    "price": 4
   }
 }

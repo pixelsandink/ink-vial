@@ -1,12 +1,49 @@
 // Ink Vial - Price lookup (updated: 50% minimum margin on all brands)
 // All prices ensure ≥50% gross margin after ink, vial, label & labour costs.
 
+// Standard-range Diamine 30ml bottles (£3.00) - sold at 99p a vial
+var DIAMINE_STANDARD_99P = [
+  'diamine-amazing-amethyst', 'diamine-ancient-copper', 'diamine-aurora-borealis', 'diamine-autumn-oak',
+  'diamine-celadon-cat', 'diamine-classic-green', 'diamine-damson', 'diamine-earl-grey',
+  'diamine-golden-brown', 'diamine-grape', 'diamine-merlot', 'diamine-monaco-red',
+  'diamine-ochre', 'diamine-onyx-black', 'diamine-oxblood', 'diamine-raw-sienna',
+  'diamine-red-dragon', 'diamine-saddle-brown', 'diamine-salamander', 'diamine-twilight',
+  'diamine-tyrian-purple', 'diamine-violet', 'diamine-warm-brown', 'diamine-writers-blood'
+];
+
 function getInkPrice(ink) {
   const id    = (ink.id    || '').toLowerCase();
   const brand = (ink.brand || '').toLowerCase();
 
   // ── Nagasawa Kobe £5.00 ────────────────────────────────
   if (brand.includes('kobe') || brand.includes('nagasawa')) return 5.00;
+
+  // ── Kitty Inkpot £4.50 ────────────────────────────────
+  if (brand.includes('kitty inkpot')) return 4.50;
+
+  // ── Esterbrook x Sakura Dragon £4.00 ──────────────────
+  if (brand.includes('esterbrook')) return 4.00;
+
+  // ── Journalize £3.75 (provisional) ────────────────────
+  if (brand.includes('journalize')) return 3.75;
+
+  // ── Kolour Cafe (Arcus Artisan Inks) £3.25 ────────────
+  if (brand.includes('kolour cafe')) return 3.25;
+
+  // ── Shanghai Stationary £2.50 ─────────────────────────
+  if (brand.includes('shanghai stationary')) return 2.50;
+
+  // ── Teranishi Taisho Roman Haikara £2.25 ──────────────
+  if (brand.includes('teranishi')) return 2.25;
+
+  // ── Platinum Carbon Black £2.25 (provisional) ─────────
+  if (brand.includes('platinum')) return 2.25;
+
+  // ── Cult Pens x Diamine exclusives £2.00 ──────────────
+  if (brand.includes('cult pens')) return 2.00;
+
+  // ── Diamine standard range 99p ────────────────────────
+  if (DIAMINE_STANDARD_99P.indexOf(id) !== -1) return 0.99;
 
   // ── TAG Kyo-No-Oto £4.50 ──────────────────────────────
   if (brand.includes('tag') && brand.includes('kyo')) return 4.50;

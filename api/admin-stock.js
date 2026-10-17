@@ -9,6 +9,8 @@
 //     /api/admin-stock?key=YOUR_KEY&action=set&id=diamine-lady-grey&count=20
 //   Add to an ink (e.g. opened another bottle):
 //     /api/admin-stock?key=YOUR_KEY&action=add&id=diamine-lady-grey&count=20
+//   Give a newly listed batch of inks (api/_new-inks.json) their opening stock:
+//     /api/admin-stock?key=YOUR_KEY&action=add-new
 
 const redis = require('./_redis');
 const seed = require('../stock-seed.json');
@@ -33,6 +35,21 @@ module.exports = async (req, res) => {
       await redis.del('inkvial:stock');
       await redis.hset('inkvial:stock', seed);
       return res.status(200).json({ ok: true, seeded: Object.keys(seed).length });
+    }
+
+    if (action === 'add-new') {
+      // One-off after adding a batch of new inks: gives each new ink its opening
+      // stock from stock-seed.json, without touching any other ink's count.
+      // Inks already in the database with stock above zero are left alone.
+      const newIds = require('./_new-inks.json');
+      const counts = (await redis.hgetall('inkvial:stock')) || {};
+      const toSet = {};
+      for (const id of newIds) {
+        const cur = counts[id] !== undefined ? parseInt(counts[id]) : undefined;
+        if ((cur === undefined || !(cur > 0)) && seed[id] > 0) toSet[id] = seed[id];
+      }
+      if (Object.keys(toSet).length) await redis.hset('inkvial:stock', toSet);
+      return res.status(200).json({ ok: true, added: Object.keys(toSet).length, alreadyStocked: newIds.length - Object.keys(toSet).length });
     }
 
     if (action === 'set' || action === 'add') {
