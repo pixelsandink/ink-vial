@@ -1,8 +1,8 @@
 // Ink Vial - Price lookup (updated: 50% minimum margin on all brands)
 // All prices ensure ≥50% gross margin after ink, vial, label & labour costs.
 
-// Standard-range Diamine 30ml bottles (£3.00) - sold at 99p a vial
-var DIAMINE_STANDARD_99P = [
+// Standard-range Diamine 30ml bottles (£3.00) - sold at 50p a vial
+var DIAMINE_STANDARD_50P = [
   'diamine-amazing-amethyst', 'diamine-ancient-copper', 'diamine-aurora-borealis', 'diamine-autumn-oak',
   'diamine-celadon-cat', 'diamine-classic-green', 'diamine-damson', 'diamine-earl-grey',
   'diamine-golden-brown', 'diamine-grape', 'diamine-merlot', 'diamine-monaco-red',
@@ -42,8 +42,8 @@ function getInkPrice(ink) {
   // ── Cult Pens x Diamine exclusives £2.00 ──────────────
   if (brand.includes('cult pens')) return 2.00;
 
-  // ── Diamine standard range 99p ────────────────────────
-  if (DIAMINE_STANDARD_99P.indexOf(id) !== -1) return 0.99;
+  // ── Diamine standard range 50p ────────────────────────
+  if (DIAMINE_STANDARD_50P.indexOf(id) !== -1) return 0.50;
 
   // ── TAG Kyo-No-Oto £4.50 ──────────────────────────────
   if (brand.includes('tag') && brand.includes('kyo')) return 4.50;
