@@ -83,8 +83,7 @@
     .pk-card { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px 22px 20px; box-shadow: 0 2px 14px rgba(140,100,210,0.07); transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; }
     .pk-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(140,100,210,0.15); }
     .pk-flag { position: absolute; top: -11px; left: 20px; background: var(--purple-dark); color: #fff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; box-shadow: 0 3px 10px rgba(92,58,154,0.35); }
-    .pk-swatches { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
-    .pk-dot { width: 22px; height: 22px; border-radius: 50%; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--border); flex-shrink: 0; }
+    .pk-flag + .pk-name { margin-top: 8px; }
     .pk-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 6px; }
     .pk-story { font-style: italic; color: var(--text); opacity: 0.75; font-size: 0.86rem; line-height: 1.5; margin-bottom: 10px; }
     .pk-contents { font-size: 0.72rem; color: var(--muted); line-height: 1.5; margin-bottom: 16px; flex: 1; }
@@ -189,7 +188,6 @@
   <div class="pk-grid" id="pk-grid">
       <article class="pk-card" data-pack-id="discovery-pack">
         <span class="pk-flag">THE GATEWAY SET</span>
-        <div class="pk-swatches"><span class="pk-dot" style="background:#1a5a9a" title="Kon-peki"></span><span class="pk-dot" style="background:#0977aa" title="Fire and Ice"></span><span class="pk-dot" style="background:#b2a431" title="Emotional Olive"></span><span class="pk-dot" style="background:#a51e11" title="Ancient Copper"></span><span class="pk-dot" style="background:#9a1a1a" title="Ares Red"></span><span class="pk-dot" style="background:#d46a7a" title="Spadina Rose"></span><span class="pk-dot" style="background:#8a7ab0" title="Delicious Sleep"></span><span class="pk-dot" style="background:#9a6a2a" title="Caramel Brown"></span></div>
         <h3 class="pk-name">Discovery Pack</h3>
         <p class="pk-story">One ink from every shelf - eight easy, well-behaved colours from eight different brands. Start here if you’re not sure where to start.</p>
         <p class="pk-contents">8 vials: Pilot Iroshizuku Kon-peki, Robert Oster Fire and Ice, Teranishi Emotional Olive, Diamine Ancient Copper, Laban Ares Red, Ferris Wheel Press Spadina Rose, Colorverse Delicious Sleep, Kaweco Caramel Brown</p>
@@ -210,7 +208,6 @@
       </article>
       <article class="pk-card" data-pack-id="first-fill">
         
-        <div class="pk-swatches"><span class="pk-dot" style="background:#1a2a5a" title="Midnight Blue"></span><span class="pk-dot" style="background:#1a1a2a" title="Perle Noire"></span><span class="pk-dot" style="background:#707cab" title="Toe in the Ocean"></span><span class="pk-dot" style="background:#2a5a2a" title="Vert Empire"></span><span class="pk-dot" style="background:#6a4a2a" title="Sepia"></span><span class="pk-dot" style="background:#9a1a1a" title="Ares Red"></span></div>
         <h3 class="pk-name">First Fill</h3>
         <p class="pk-story">Six honest, no-fuss colours for the very first vial in a new pen. No shimmer, no sheen - nothing to manage.</p>
         <p class="pk-contents">6 vials: Kaweco Midnight Blue, J.Herbin Perle Noire, Diamine Toe in the Ocean, J.Herbin Vert Empire, Rohrer &amp; Klingner Sepia, Laban Ares Red</p>
@@ -231,7 +228,6 @@
       </article>
       <article class="pk-card" data-pack-id="tcmc-duo">
 
-        <div class="pk-swatches"><span class="pk-dot" style="background:#6a4a2e" title="Coffee Monster"></span><span class="pk-dot" style="background:#494853" title="Murky Pond Water"></span><span class="pk-dot" style="background:#c89a3a" title="Day to Night"></span></div>
         <h3 class="pk-name">Robert Oster x TCMC</h3>
         <p class="pk-story">All three chromatic-shading collaborations between Robert Oster and The Coffee Monster Co. - collector favourites, together at last.</p>
         <p class="pk-contents">3 vials: Robert Oster Coffee Monster, Robert Oster Murky Pond Water, Robert Oster Day to Night</p>
@@ -252,7 +248,6 @@
       </article>
       <article class="pk-card" data-pack-id="gods-and-goddesses">
 
-        <div class="pk-swatches"><span class="pk-dot" style="background:#e07a9a" title="Aphrodite Pink"></span><span class="pk-dot" style="background:#2a7a3a" title="Hera Green"></span><span class="pk-dot" style="background:#1a2a5a" title="Artemis Navy"></span><span class="pk-dot" style="background:#7a7a8a" title="Athena Grey"></span><span class="pk-dot" style="background:#c86a1a" title="Apollo Orange"></span><span class="pk-dot" style="background:#7a5a2a" title="Demeter Brown"></span><span class="pk-dot" style="background:#5a9ac8" title="Hermes Sky Blue"></span><span class="pk-dot" style="background:#9a1a1a" title="Ares Red"></span><span class="pk-dot" style="background:#4a1a6a" title="Zeus Purple"></span><span class="pk-dot" style="background:#2d9998" title="Poseidon Green"></span></div>
         <h3 class="pk-name">Laban Greek Mythology</h3>
         <p class="pk-story">The full Laban pantheon - all ten gods and goddesses in one set, from Aphrodite's pink to Poseidon's sea green.</p>
         <p class="pk-contents">10 vials: Laban Aphrodite Pink, Laban Hera Green, Laban Artemis Navy, Laban Athena Grey, Laban Apollo Orange, Laban Demeter Brown, Laban Hermes Sky Blue, Laban Ares Red, Laban Zeus Purple, Laban Poseidon Green</p>
@@ -273,7 +268,6 @@
       </article>
       <article class="pk-card" data-pack-id="alice-in-wonderland">
 
-        <div class="pk-swatches"><span class="pk-dot" style="background:#3a6aaa" title="Alice"></span><span class="pk-dot" style="background:#d49ab0" title="White Rabbit"></span><span class="pk-dot" style="background:#2f8a3a" title="Mad Hatter"></span><span class="pk-dot" style="background:#a81a2a" title="Queen of Hearts"></span><span class="pk-dot" style="background:#a04a9a" title="Cheshire Cat"></span></div>
         <h3 class="pk-name">Wearingeul Alice in Wonderland</h3>
         <p class="pk-story">Down the rabbit hole with Wearingeul's whole Wonderland cast - curious, chaotic, and never quite what they seem.</p>
         <p class="pk-contents">5 vials: Wearingeul Alice, Wearingeul White Rabbit, Wearingeul Mad Hatter, Wearingeul Queen of Hearts, Wearingeul Cheshire Cat</p>
@@ -294,7 +288,6 @@
       </article>
       <article class="pk-card" data-pack-id="peter-pan-pack">
 
-        <div class="pk-swatches"><span class="pk-dot" style="background:#5a8ac8" title="Wendy Darling"></span><span class="pk-dot" style="background:#3a8a5a" title="Tinker Bell"></span><span class="pk-dot" style="background:#9a2e26" title="Captain Hook"></span><span class="pk-dot" style="background:#2a7a3a" title="Peter Pan"></span><span class="pk-dot" style="background:#3a6a2a" title="Tick Tock Croc"></span></div>
         <h3 class="pk-name">Wearingeul Peter Pan</h3>
         <p class="pk-story">Second star to the right, straight on till morning - the whole of Wearingeul's Neverland in one set.</p>
         <p class="pk-contents">5 vials: Wearingeul Wendy Darling, Wearingeul Tinker Bell, Wearingeul Captain Hook, Wearingeul Peter Pan, Wearingeul Tick Tock Croc</p>
@@ -315,7 +308,6 @@
       </article>
       <article class="pk-card" data-pack-id="pilot-favourites">
 
-        <div class="pk-swatches"><span class="pk-dot" style="background:#5a1a5a" title="Yama-Budo"></span><span class="pk-dot" style="background:#1a5a9a" title="Kon-peki"></span><span class="pk-dot" style="background:#5a6a8a" title="Fuyu-syogun"></span><span class="pk-dot" style="background:#2a7a4a" title="Sui-gyoku"></span><span class="pk-dot" style="background:#e08a9a" title="Hana-ikada"></span><span class="pk-dot" style="background:#a83a1a" title="Momiji"></span><span class="pk-dot" style="background:#1a7a7a" title="Ku-jaku"></span><span class="pk-dot" style="background:#6a5a8a" title="Ajisai"></span></div>
         <h3 class="pk-name">Pilot Favourites</h3>
         <p class="pk-story">The community's most-loved Iroshizuku shades, from mountain-grape purple to maple-leaf red.</p>
         <p class="pk-contents">8 vials: Pilot Iroshizuku Yama-Budo, Pilot Iroshizuku Kon-peki, Pilot Iroshizuku Fuyu-syogun, Pilot Iroshizuku Sui-gyoku, Pilot Iroshizuku Hana-ikada, Pilot Iroshizuku Momiji, Pilot Iroshizuku Ku-jaku, Pilot Iroshizuku Ajisai</p>
@@ -336,7 +328,6 @@
       </article>
       <article class="pk-card" data-pack-id="diamine-7-deadly-sins">
 
-        <div class="pk-swatches"><span class="pk-dot" style="background:#1a5a1a" title="7 Sinners Envy"></span><span class="pk-dot" style="background:#a85a1a" title="7 Sinners Gluttony"></span><span class="pk-dot" style="background:#a88a1a" title="7 Sinners Greed"></span><span class="pk-dot" style="background:#2a3a8f" title="7 Sinners Lust"></span><span class="pk-dot" style="background:#6a1a8a" title="7 Sinners Pride"></span><span class="pk-dot" style="background:#3a5a7a" title="7 Sinners Sloth"></span><span class="pk-dot" style="background:#c83a1a" title="7 Sinners Wrath"></span></div>
         <h3 class="pk-name">Diamine 7 Deadly Sins</h3>
         <p class="pk-story">The complete set of seven - Envy to Wrath, every sin in its own bottle-worthy colour.</p>
         <p class="pk-contents">7 vials: Diamine 7 Sinners Envy, Gluttony, Greed, Lust, Pride, Sloth, Wrath</p>
@@ -357,7 +348,6 @@
       </article>
       <article class="pk-card" data-pack-id="deep-dark-collection">
 
-        <div class="pk-swatches"><span class="pk-dot" style="background:#1a3a7a" title="Deep Dark Blue"></span><span class="pk-dot" style="background:#5a3a1a" title="Deep Dark Brown"></span><span class="pk-dot" style="background:#1a4a2a" title="Deep Dark Green"></span><span class="pk-dot" style="background:#a85a1a" title="Deep Dark Orange"></span><span class="pk-dot" style="background:#4a1a6a" title="Deep Dark Purple"></span></div>
         <h3 class="pk-name">Diamine x Cult Pens Deep Dark</h3>
         <p class="pk-story">Five saturated, moody darks made by Diamine exclusively for Cult Pens - the whole line in one set.</p>
         <p class="pk-contents">5 vials: Deep Dark Blue, Deep Dark Brown, Deep Dark Green, Deep Dark Orange, Deep Dark Purple</p>
