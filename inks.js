@@ -3,11 +3,11 @@ const INKS = [
     "id": "birmingham-iron-ore",
     "brand": "The Birmingham Pen Company",
     "name": "Iron Ore",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Red"],
     "colorPrimary": "#5a4632",
     "colorDark": "#382c1e",
-    "tagline": "A brooding, industrial brown with the weight of steel.",
-    "description": "Iron Ore is a deep, muted brown that calls to mind forged metal and factory smoke. It writes with quiet authority - not flashy, but impossible to ignore once it's on the page.",
+    "tagline": "A deep, smouldering red-brown with the weight of forged iron.",
+    "description": "Iron Ore is a dark, muted red-brown with a hint of plum - the colour of rust-streaked ore and old furnace bricks. Serious enough for everyday writing, but warmer and more interesting than a plain brown. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -19,15 +19,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Shading comes through beautifully - lighter strokes reveal a warm khaki, heavy strokes go almost charcoal. Dry time is impressively fast."
+        "body": "Dark plum-brown with gentle shading - lighter strokes show more of the red."
       },
       {
         "title": "On textured paper",
-        "body": "The colour deepens slightly on toothier paper and the grey-green character really shows. No feathering or bleed on quality stock."
+        "body": "Reads deeper and browner on textured paper, with no fuss."
       },
       {
         "title": "Nib behaviour",
-        "body": "Behaves well across all nib sizes. In a broad nib the shading range is spectacular; in a fine nib it reads as a clean, sophisticated grey-green."
+        "body": "Comfortable in any nib; broad nibs show the red-brown shading best."
       }
     ],
     "image": "images/birmingham-iron-ore.jpg",
@@ -37,13 +37,13 @@ const INKS = [
     "id": "birmingham-weathered-penny",
     "brand": "The Birmingham Pen Company",
     "name": "Weathered Penny",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Red"],
     "colorPrimary": "#7a5230",
     "colorDark": "#4a3218",
-    "tagline": "The soft warmth of an old copper penny.",
-    "description": "Weathered Penny captures that particular shade of aged copper-brown. It's an earthy, grounded ink with gentle shading and real character.",
+    "tagline": "The deep, dark brown of a well-worn copper penny.",
+    "description": "Weathered Penny is a very dark maroon-brown - more like an old, darkened penny than a shiny new one. Rich and understated, it reads almost black-brown in finer nibs. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
     "properties": {
-      "shading": 3,
+      "shading": 2,
       "sheen": 1,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -53,15 +53,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "The verdigris tone is at its most vivid here, with warm golden-brown appearing at the lightest points of strokes. A subtle sheen can appear at stroke edges."
+        "body": "Deep maroon-brown with subtle shading in wetter strokes."
       },
       {
         "title": "On textured paper",
-        "body": "Textured paper brings out the earthy, organic quality - it almost looks like actual patina on the page. Shading is pronounced and lovely."
+        "body": "Sits darker and more neutral on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in medium and broad nibs where the full tonal range shows. Fine nibs give a clean, distinctive colour that stands out from standard greens."
+        "body": "Fine nibs give a near-black brown; broad nibs reveal the warm copper-red."
       }
     ],
     "image": "images/birmingham-weathered-penny.jpg",
@@ -74,11 +74,11 @@ const INKS = [
     "colours": ["Grey"],
     "colorPrimary": "#5a5a62",
     "colorDark": "#3a3a42",
-    "tagline": "Deep ocean grey - vast, cold, and utterly compelling.",
-    "description": "Megalodon plunges into the deep end of grey, conjuring the crushing depths of the open ocean. It's dark enough for serious writing but vivid enough to turn heads.",
+    "tagline": "A cool, deep-water grey with plenty of shading.",
+    "description": "Megalodon is a mid-to-dark grey with a cool edge, like deep, still water. It shades nicely from soft pewter to charcoal and makes a calm, readable everyday grey. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -87,15 +87,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep and rich at full flow, shifting to a bright teal in lighter strokes. A subtle blue-green sheen can appear on coated papers."
+        "body": "Cool grey with good shading from pewter to charcoal."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens slightly and loses some of the teal character, reading closer to a classic dark blue. Still excellent."
+        "body": "Slightly darker and flatter on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Outstanding in broad nibs where the depth and shading are on full display. Works reliably in all sizes with no hard starting."
+        "body": "Lovely in medium and broad nibs, where the shading shows."
       }
     ],
     "image": "images/birmingham-megalodon.jpg",
@@ -105,10 +105,11 @@ const INKS = [
     "id": "birmingham-flagstone",
     "brand": "The Birmingham Pen Company",
     "name": "Flagstone",
+    "colours": ["Black", "Grey"],
     "colorPrimary": "#7a7a8a",
     "colorDark": "#5a5a6a",
-    "tagline": "The calm, dependable grey of an old stone path.",
-    "description": "Flagstone is a refined, neutral grey with the faintest hint of blue - like slate pulled from a Midlands quarry. It's understated in the best way: professional, readable, and surprisingly characterful.",
+    "tagline": "A dark, near-black charcoal with a faint green edge.",
+    "description": "Flagstone is a very dark charcoal - nearly black, with a faint green-grey cast where it thins out, like wet slate paving. A sober, professional ink. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -120,15 +121,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Reads as a clean, cool grey with a whisper of blue-lavender. Consistent and reliable with minimal variation across stroke widths."
+        "body": "Near-black charcoal; lighter edges hint at green-grey."
       },
       {
         "title": "On textured paper",
-        "body": "Holds up beautifully on rough stock - no feathering, good contrast against cream or white paper."
+        "body": "Reads as a soft black on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A workhorse ink that performs flawlessly in all nib sizes. Great choice for note-taking or journalling where readability matters."
+        "body": "Dark and dependable in every nib size."
       }
     ],
     "image": "images/birmingham-flagstone.jpg",
@@ -138,14 +139,14 @@ const INKS = [
     "id": "birmingham-saltmarsh",
     "brand": "The Birmingham Pen Company",
     "name": "Saltmarsh",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Pink"],
     "colorPrimary": "#6a5238",
     "colorDark": "#443420",
-    "tagline": "A hazy, muted brown like coastal grass at low tide.",
-    "description": "Saltmarsh is a muted, atmospheric brown - the colour of sea-meadow grasses rather than a bright forest. Earthy, calming, and entirely unique, it's the kind of ink that makes people ask what you're writing with.",
+    "tagline": "A soft, dusty pink-taupe, like a salt marsh at dusk.",
+    "description": "Saltmarsh is a gentle, muted taupe with a dusty pink warmth - the colour of sea grasses and mud flats in evening light. Quiet and unusual. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -154,15 +155,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "The grey and green elements shift depending on stroke weight - lighter strokes go grey, heavier strokes reveal more green. Very pleasant to write with."
+        "body": "Dusty pink-taupe with soft, watercolour-like shading."
       },
       {
         "title": "On textured paper",
-        "body": "Looks wonderful on aged or cream-toned paper where the muted quality feels right at home. The colour reads as almost sage in good light."
+        "body": "More neutral and earthy on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Particularly lovely in a medium or stub nib. Well-behaved with good flow and no skipping."
+        "body": "A little pale in extra-fine nibs - medium and broad nibs suit it best."
       }
     ],
     "image": "images/birmingham-saltmarsh.jpg",
@@ -172,11 +173,11 @@ const INKS = [
     "id": "birmingham-gumball",
     "brand": "The Birmingham Pen Company",
     "name": "Gumball",
-    "colours": ["Purple"],
+    "colours": ["Purple", "Pink"],
     "colorPrimary": "#9a3a9a",
     "colorDark": "#7a1a7a",
-    "tagline": "Bright, cheerful purple that brings joy to every word.",
-    "description": "Gumball is an unapologetically fun bubblegum pink - warm, vivid and immediately likeable. It's the ink you reach for when you want your writing to make someone smile.",
+    "tagline": "A bright berry-magenta, like a sweet from a gumball machine.",
+    "description": "Gumball is a fun, saturated berry-magenta that sits between pink and purple. Bright, cheerful and easy to read. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -188,15 +189,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright and consistent, with a warm coral tone in heavy strokes and a candy pink in lighter lines. Contrast against white paper is superb."
+        "body": "Bright berry-magenta with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Retains its cheerful character on most papers. On cream paper it takes on a slightly peachy warmth."
+        "body": "Holds its colour well on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Works best in fine to medium nibs - broad nibs can make it look a bit heavy. Flows beautifully and dries quickly."
+        "body": "Lovely in any nib size."
       }
     ],
     "image": "images/birmingham-gumball.jpg",
@@ -209,10 +210,10 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#9a8abf",
     "colorDark": "#7a6a9a",
-    "tagline": "Soft, faded lavender like dried flowers pressed between pages.",
-    "description": "Washed Lavender is exactly as promised - a gentle, muted purple with grey undertones that feels vintage and refined. Not a loud purple, but a quiet, considered one.",
+    "tagline": "A soft lavender-violet, gently faded.",
+    "description": "Washed Lavender is a soft, slightly muted violet - like lavender that has been through the wash a few times. Gentle and calming, with nice shading. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -222,15 +223,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "The muted, dusty quality is most apparent here - it reads as a true washed-out lavender with subtle depth. Lovely and subtle."
+        "body": "Soft lavender-violet with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper the grey undertones become more pronounced and the ink takes on an antique quality. Beautiful for journalling."
+        "body": "A little greyer and quieter on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and well-behaved in all nib sizes. Fine nibs give a delicate line; medium nibs show the full character of the colour."
+        "body": "Medium and broad nibs give the richest colour."
       }
     ],
     "image": "images/birmingham-washed-lavender.jpg",
@@ -240,13 +241,14 @@ const INKS = [
     "id": "birmingham-firebox",
     "brand": "The Birmingham Pen Company",
     "name": "Firebox",
+    "colours": ["Orange", "Red"],
     "colorPrimary": "#9a3a1a",
     "colorDark": "#7a1a0a",
-    "tagline": "The deep, ember glow of a cast-iron furnace door.",
-    "description": "Firebox is a dark, smouldering red-orange that evokes burning coals and foundry heat. It's a shade unique to Birmingham's industrial heritage - earthy, warm, and full of character.",
+    "tagline": "The red-orange glow of a steam engine's firebox.",
+    "description": "Firebox is a warm, rusty red-orange - the colour of coals glowing behind a furnace door. Bold and warm, with good shading. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -255,15 +257,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "At full flow it's a deep, rich ember-red. In lighter strokes a warm orange appears. A hint of red sheen can show at stroke edges on coated stock."
+        "body": "Rusty red-orange with good shading."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy warmth of the colour really comes alive on cream paper, where it practically glows. The shading range is excellent."
+        "body": "Warmer and earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium to broad nibs where the colour depth and shading can show. Fine nibs give a clean, distinctive orange-red line."
+        "body": "Broad nibs show the shading best."
       }
     ],
     "image": "images/birmingham-firebox.jpg",
@@ -273,14 +275,14 @@ const INKS = [
     "id": "birmingham-waterbear",
     "brand": "The Birmingham Pen Company",
     "name": "Waterbear",
-    "colours": ["Grey"],
+    "colours": ["Grey", "Blue"],
     "colorPrimary": "#7a7a82",
     "colorDark": "#5a5a62",
-    "tagline": "A vivid grey as indestructible and surprising as its namesake.",
-    "description": "Waterbear is a bright, saturated grey with real presence. Named after the famously resilient tardigrade, it's bold, lively, and surprisingly versatile.",
+    "tagline": "A dark, blue-tinged grey named after the hardy tardigrade.",
+    "description": "Waterbear is a dark grey with a cool blue tinge, named after the famously indestructible tardigrade, or 'water bear'. A versatile, readable everyday grey. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -289,15 +291,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich and vibrant at full saturation, with the blue and green elements shifting beautifully across stroke widths. Some sheen visible at edges."
+        "body": "Dark blue-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds up well, though some of the vivid quality softens. Still a distinctive and beautiful colour."
+        "body": "Reads as a softer charcoal on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent across nib sizes - particularly striking in a broad or stub where the shading and saturation are fully on show."
+        "body": "Reliable in any nib size."
       }
     ],
     "image": "images/birmingham-waterbear.jpg",
@@ -307,14 +309,14 @@ const INKS = [
     "id": "colorverse-brunch-date",
     "brand": "Colorverse",
     "name": "Brunch Date",
-    "colours": ["Pink"],
+    "colours": ["Pink", "Orange"],
     "colorPrimary": "#d97a92",
     "colorDark": "#b4526e",
-    "tagline": "A warm terracotta-pink blush - like mimosas and morning light.",
-    "description": "Brunch Date is a warm, rosy pink that falls somewhere between salmon and coral. It's sociable, upbeat, and glows beautifully on cream paper.",
+    "tagline": "A muted, dusty coral-pink from the Joy in the Ordinary series.",
+    "description": "Brunch Date (No. 80) is a soft, dusty pink with a coral-orange warmth, from Colorverse's 'Joy in the Ordinary' series. It's a lovely shader, best in wetter, broader nibs. Colorverse inks are made in South Korea.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -323,15 +325,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and consistent with gentle shading from deep coral to peachy-rose. A hint of golden sheen can appear on coated papers."
+        "body": "Dusty coral-pink with plenty of shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth deepens slightly on cream stock, making it feel rich and indulgent. Beautiful for personal correspondence."
+        "body": "Softer and more beige on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in all sizes. The personality really comes through in medium and broad nibs. Good flow with no issues."
+        "body": "Can look light in fine or dry nibs - medium and broad nibs are best."
       }
     ],
     "image": "images/colorverse-brunch-date.jpg",
@@ -344,10 +346,10 @@ const INKS = [
     "colours": ["Green"],
     "colorPrimary": "#5a7a4a",
     "colorDark": "#3a5a2a",
-    "tagline": "A warm, grounded green for everyday adventures.",
-    "description": "Walk the Dog is a satisfying warm green - grounded and sophisticated. It's the ink equivalent of a comfortable routine: reliable, pleasant, and quietly lovely.",
+    "tagline": "A soft olive green for walks in the park.",
+    "description": "Walk the Dog is a soft, natural olive green from Colorverse's 'Joy in the Ordinary' series - the colour of a park on a dog walk. Colorverse inks are made in South Korea.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -357,15 +359,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Reads as a warm grey-brown with consistent behaviour. Mild shading adds just enough interest without being distracting."
+        "body": "Olive green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "On cream or aged paper it takes on a sepia-adjacent quality that feels beautifully natural."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Dependable and well-behaved in all nib sizes. A great daily writer."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/colorverse-walk-the-dog.jpg",
@@ -378,11 +380,11 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#8a7ab0",
     "colorDark": "#6a5a90",
-    "tagline": "The hazy lavender-purple of that perfect deep sleep.",
-    "description": "Delicious Sleep is a dreamy, soft lavender-purple - like the colour behind closed eyes just before you drift off. It's calming, gentle, and genuinely lovely on the page.",
+    "tagline": "A cool, medium violet.",
+    "description": "Delicious Sleep (No. 81) is a cool-toned medium violet from the 'Joy in the Ordinary' series. Well behaved, with low shading and no sheen. Colorverse inks are made in South Korea.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -391,15 +393,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Light, airy, and beautifully shaded from pale blue-grey to a deeper slate. Dries quickly and behaves impeccably."
+        "body": "Cool violet with low shading."
       },
       {
         "title": "On textured paper",
-        "body": "The soft quality of the colour suits textured paper well. On cream it has an almost watercolour quality."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wonderful journalling ink across all nib sizes. Fine nibs give an elegant, restrained line; broad nibs bring out the shading."
+        "body": "Lighter in fine nibs; broader nibs show a little shading."
       }
     ],
     "image": "images/colorverse-delicious-sleep.jpg",
@@ -409,14 +411,14 @@ const INKS = [
     "id": "colorverse-under-the-shade",
     "brand": "Colorverse",
     "name": "Under the Shade",
-    "colours": ["Green"],
-    "colorPrimary": "#5a8a5a",
-    "colorDark": "#3a6a3a",
-    "tagline": "Cool, dappled green like forest shadow on a summer afternoon.",
-    "description": "Under the Shade is a medium forest green with cool, leafy undertones. It's refreshing and natural - the kind of green that makes you want to sit down and write something meaningful.",
+    "colours": ["Grey"],
+    "colorPrimary": "#787a76",
+    "colorDark": "#696b68",
+    "tagline": "A muted, smoky cool grey.",
+    "description": "Under the Shade (No. 76) is a muted, smoky cool grey from the 'Joy in the Ordinary' series, with medium shading. It runs on the dry side, so it's best in a wetter pen. Colorverse inks are made in South Korea.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -425,15 +427,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "A clear, clean green with good shading from bright leaf-green to deeper forest tones. A mild sheen can appear on coated papers."
+        "body": "Smoky cool grey with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "The natural, organic feel of the colour suits textured paper perfectly. Rich and grounding."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Works well across all nib sizes. Medium and broad nibs bring out the best shading."
+        "body": "On the dry side and light in fine nibs - use a wet pen or broad nib."
       }
     ],
     "image": "images/colorverse-under-the-shade.jpg",
@@ -443,13 +445,13 @@ const INKS = [
     "id": "colorverse-rainy-day",
     "brand": "Colorverse",
     "name": "Rainy Day",
-    "colours": ["Blue"],
+    "colours": ["Blue", "Grey"],
     "colorPrimary": "#7a8a9a",
     "colorDark": "#5a6a7a",
-    "tagline": "The cool, steady grey of rain against a windowpane.",
-    "description": "Rainy Day is a calm, cool grey-blue - not sad, just contemplative. It's the perfect writing ink for slow afternoons and quiet thoughts.",
+    "tagline": "A greyish washed-denim blue.",
+    "description": "Rainy Day is a soft greyish-blue, like washed denim - neither green- nor purple-leaning. It shades in wider nibs and stays consistent across papers. Colorverse inks are made in South Korea.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -459,15 +461,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool and consistent, with a gentle blue lean that keeps it from reading as a plain grey. Minimal shading but very readable."
+        "body": "Washed-denim blue with shading in wider nibs."
       },
       {
         "title": "On textured paper",
-        "body": "Holds up well on all paper types. Particularly pleasant on cream where the blue note shows."
+        "body": "Consistent on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Reliable in all nib sizes. An excellent everyday writing ink."
+        "body": "Writes on the dry side - wetter nibs suit it."
       }
     ],
     "image": "images/colorverse-rainy-day.jpg",
@@ -478,30 +480,31 @@ const INKS = [
     "shimmer": true,
     "brand": "Colorverse",
     "name": "Mystic Mountain",
+    "colours": ["Blue"],
     "colorPrimary": "#4a5a9a",
     "colorDark": "#2a3a7a",
-    "tagline": "Deep cosmic blue with the mystery of distant peaks.",
-    "description": "Mystic Mountain is a rich, dark blue with purple undertones - the kind of blue that looks black at first glance but reveals its true character on closer inspection. Named after the Hubble Space Telescope image, it carries the vastness of that namesake.",
+    "tagline": "A dusky cornflower blue with pink shimmer.",
+    "description": "Mystic Mountain (No. 89) is from Colorverse's 'Eye on the Universe' series - a dusky cornflower blue with pink shimmer. It's wet and smooth, shading from blue to grey. Shake well before filling. Colorverse inks are made in South Korea.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Fast (5–10 sec)",
+      "shading": 4,
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
+      "lubrication": "Very well-lubricated",
       "bestOn": "White paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep and saturated with strong blue-purple shading. A purple-blue sheen appears at stroke edges in good light."
+        "body": "Blue-to-grey shading with pink shimmer."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens on textured stock and loses some of the purple, reading as a very deep navy. Still beautiful."
+        "body": "Softer on textured paper, with less shimmer."
       },
       {
         "title": "Nib behaviour",
-        "body": "Particularly impressive in broad nibs where the full depth and sheen are visible. Flows beautifully."
+        "body": "Wet and smooth; can look light in fine nibs. Give it time to dry."
       }
     ],
     "image": "images/colorverse-mystic-mountain.jpg",
@@ -512,10 +515,11 @@ const INKS = [
     "sheen": true,
     "brand": "Colorverse",
     "name": "Pillars of Creation",
+    "colours": ["Purple"],
     "colorPrimary": "#6a4a7a",
     "colorDark": "#4a2a5a",
-    "tagline": "A nebula purple born from starlight and cosmic dust.",
-    "description": "Pillars of Creation captures the dusty purple-brown of that iconic NASA image - an otherworldly colour that's part deep space, part crushed velvet. Genuinely unlike any other ink.",
+    "tagline": "A deep, red-leaning purple with green sheen.",
+    "description": "Pillars of Creation is from Colorverse's 'Eye on the Universe' series - a deep, red-leaning grape purple with medium shading and a green sheen in heavier lines. Colorverse inks are made in South Korea.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -527,15 +531,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "A rich purple-brown with excellent depth. A copper or red sheen appears dramatically at stroke edges on coated papers - stunning."
+        "body": "Deep purple with green sheen in pooled ink."
       },
       {
         "title": "On textured paper",
-        "body": "The brown tones emerge more on textured paper, giving it a warm, earthy quality. Less sheen but still beautiful."
+        "body": "Less sheen on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium to broad nibs to appreciate the shading and sheen. One of those inks that rewards a wide nib."
+        "body": "Broad nibs show the sheen best."
       }
     ],
     "image": "images/colorverse-pillars-of-creation.jpg",
@@ -548,11 +552,11 @@ const INKS = [
     "colours": ["Red"],
     "colorPrimary": "#a81a2a",
     "colorDark": "#7a0a1a",
-    "tagline": "The vast, fiery red of Jupiter's most mysterious moon.",
-    "description": "Sea Europa is a vivid red inspired by the subsurface ocean of Europa. It's bright, clean, and energetic - the kind of red that makes ordinary writing feel extraordinary.",
+    "tagline": "A medium, desaturated red.",
+    "description": "Sea Europa (No. 9) is from Colorverse's first 'Spaceward' series - a medium, slightly muted red with medium shading and no sheen. Colorverse inks are made in South Korea.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -561,15 +565,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright and vibrant with good shading from deep ocean blue to lighter teal. A blue sheen is visible on coated paper."
+        "body": "Muted red with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "Slightly deeper in tone on textured stock, leaning more blue than teal. Very pleasant to write with."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all nibs. Particularly eye-catching in a broad or italic nib where the colour saturation is maximised."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 26,
@@ -579,14 +583,14 @@ const INKS = [
     "id": "colorverse-and",
     "brand": "Colorverse",
     "name": "And",
-    "colours": ["Blue"],
+    "colours": ["Blue", "Teal"],
     "colorPrimary": "#1a4a8a",
     "colorDark": "#0a2a5a",
-    "tagline": "A deep, twilight-blue that bridges day and night.",
-    "description": "And is a rich, deep blue - the colour of the sky in that liminal moment between afternoon and evening. It's vivid without being harsh, cool without being cold.",
+    "tagline": "A muted blue-teal.",
+    "description": "And is a muted blue-teal with a grey edge. We've described it from our own swatch. Colorverse inks are made in South Korea.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -595,15 +599,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Burns bright amber in heavy strokes, softening to warm gold in lighter lines. A gentle golden sheen can appear on coated paper."
+        "body": "Muted blue-teal with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth intensifies on cream paper where it really glows. Excellent shading character."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Particularly beautiful in broad nibs. Fine nibs give a clean, distinctive orange-amber line."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 26,
@@ -613,80 +617,13 @@ const INKS = [
     "id": "colorverse-dirty-red",
     "brand": "Colorverse",
     "name": "Dirty Red",
+    "colours": ["Red"],
     "colorPrimary": "#9a3a2a",
     "colorDark": "#7a1a0a",
-    "tagline": "An earthy, smudged red with grit and depth.",
-    "description": "Dirty Red is a muted, earthy red - not the bright crimson of a British post box, but something more raw and grounded, like red clay or faded brick. It's full of character.",
+    "tagline": "A deep, earthy red.",
+    "description": "Dirty Red is from Colorverse's Project series (65ml) - a deep, earthy red with a dark edge. Colorverse inks are made in South Korea.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Cream or off-white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Deep earthy red with warm brown shading in lighter strokes. More terracotta than crimson - interesting and organic-feeling."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The earthiness really emerges on textured paper, where it reads like natural red pigment. Lovely for journalling."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Well-behaved across all nib widths. Medium nibs hit the sweet spot for colour and character."
-      }
-    ],
-    "stock": 25,
-    "image": "images/colorverse-dirty-red.jpg"
-  },
-  {
-    "id": "colorverse-deep-purple",
-    "sheen": false,
-    "brand": "Colorverse",
-    "name": "Deep Purple",
-    "colorPrimary": "#4a1a6a",
-    "colorDark": "#2a0a4a",
-    "tagline": "A rich, velvety purple with the depth of a night sky.",
-    "description": "Deep Purple is exactly what it promises - a dark, luscious purple that sits in the space between violet and indigo. Saturated, dramatic, and completely beautiful.",
-    "properties": {
-      "shading": 3,
-      "sheen": 3,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Smooth white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Dense and rich, shading from near-black purple to mid-violet in lighter strokes. A striking blue or green sheen appears on coated paper."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Deepens and darkens further on textured stock, losing some of the lighter shading range but remaining deeply impressive."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Best in medium to broad nibs where the depth and sheen can show. A statement ink for special writing."
-      }
-    ],
-    "stock": 26,
-    "image": "images/colorverse-deep-purple.jpg"
-  },
-  {
-    "id": "diamine-petra",
-    "brand": "Diamine",
-    "name": "Petra",
-    "colours": ["Orange"],
-    "colorPrimary": "#b87060",
-    "colorDark": "#98504a",
-    "tagline": "The rose-pink sandstone of an ancient desert city.",
-    "description": "Petra is a warm, dusty rose - not quite pink, not quite terracotta, but somewhere beautifully between the two. Like the famous rose-red city of Jordan, it's warm, ancient-feeling, and quietly spectacular.",
-    "properties": {
-      "shading": 2,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -696,15 +633,83 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and rosy, reading as a dusty salmon-pink with a gentle brown lean. Very legible and distinctly characterful."
+        "body": "Deep earthy red with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper the earthy quality deepens and the colour feels grounded and rich."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Performs well in all nib sizes. A great choice if you want a warm pink without anything too bright or bold."
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "stock": 25,
+    "image": "images/colorverse-dirty-red.jpg"
+  },
+  {
+    "id": "colorverse-deep-purple",
+    "brand": "Colorverse",
+    "name": "Deep Purple",
+    "colours": ["Purple"],
+    "colorPrimary": "#4a1a6a",
+    "colorDark": "#2a0a4a",
+    "tagline": "A dark, quick-drying purple.",
+    "description": "Deep Purple is from Colorverse's Project series (65ml) - a dark purple with a low bronze sheen in large swabs. It dries quickly and is happiest on good paper. Colorverse inks are made in South Korea.",
+    "properties": {
+      "shading": 2,
+      "sheen": 1,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Dark purple with a touch of bronze sheen in heavy lines."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Can feather on cheaper paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Quick drying in any nib."
+      }
+    ],
+    "stock": 26,
+    "image": "images/colorverse-deep-purple.jpg"
+  },
+  {
+    "id": "diamine-petra",
+    "brand": "Diamine",
+    "name": "Petra",
+    "colours": ["Orange", "Pink"],
+    "colorPrimary": "#b87060",
+    "colorDark": "#98504a",
+    "tagline": "A terracotta orange with a faint pink undertone.",
+    "description": "Petra is from the Cult Pens Wonders of the World collection by Diamine - a terracotta orange with a faint pink undertone, like the rose-red city carved into Jordanian sandstone. It shades well depending on nib size. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Cream or off-white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Terracotta with a pink undertone and good shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Earthier on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Broader nibs show the shading best."
       }
     ],
     "stock": 12,
@@ -714,13 +719,14 @@ const INKS = [
     "id": "diamine-chichen-itza",
     "brand": "Diamine",
     "name": "Chichen Itza",
-    "colorPrimary": "#3a8a7a",
-    "colorDark": "#1a6a5a",
-    "tagline": "A vivid teal-jade green from the heart of the Mayan world.",
-    "description": "Chichen Itza is a striking teal-green that evokes jade carvings and tropical forest light. Rich, saturated, and wonderfully distinctive - it's a colour that takes a stand.",
+    "colours": ["Blue", "Grey"],
+    "colorPrimary": "#769099",
+    "colorDark": "#587681",
+    "tagline": "A pale blue-grey, like ancient limestone.",
+    "description": "Chichen Itza is from the Cult Pens Wonders of the World collection by Diamine - a soft blue-grey inspired by the grey limestone of the ancient Mayan pyramids. Lighter than a vintage blue-black. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -729,15 +735,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bold and vivid, with strong shading from deep teal to bright jade. A subtle green-gold sheen appears at stroke edges on coated paper."
+        "body": "Soft blue-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Retains its vivid character on most papers. Particularly beautiful on cream where the warmth of the paper complements the colour."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A joy in broad and italic nibs where the teal saturation is at its most dramatic. Flows smoothly in all sizes."
+        "body": "On the light side - medium and broad nibs give a stronger line."
       }
     ],
     "stock": 12,
@@ -745,16 +751,16 @@ const INKS = [
   },
   {
     "id": "diamine-7-sinners-lust",
-    "sheen": true,
     "brand": "Diamine",
     "name": "7 Sinners Lust",
+    "colours": ["Blue"],
     "colorPrimary": "#2a3a8f",
     "colorDark": "#1a2459",
-    "tagline": "Deep crimson desire - seductive, dangerous, and unforgettable.",
-    "description": "Lust burns a deep, rich crimson - darker than red, with a hint of purple that makes it feel more dangerous than a simple bright red. One of the most dramatic inks in the Sinners series.",
+    "tagline": "A bold, vivid blue - because everyone wants a blue ink.",
+    "description": "Lust is part of the Cult Pens exclusive 7 Deadly Sins collection by Diamine. It's a bold, bright blue - the sin being that everyone wants one. Also available in our Diamine 7 Deadly Sins set. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -763,15 +769,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep and saturated, shading from near-black crimson to warm ruby. A vivid red sheen appears brilliantly on coated paper."
+        "body": "Bright blue with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens on textured stock but remains rich and intense. Less sheen but the depth is compelling."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the full drama shows. Fine nibs give a clean, intense crimson line."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/diamine-7-sinners-lust.jpg",
@@ -782,10 +788,220 @@ const INKS = [
     "sheen": true,
     "brand": "Diamine",
     "name": "7 Sinners Wrath",
+    "colours": ["Red"],
     "colorPrimary": "#c83a1a",
     "colorDark": "#a81a0a",
-    "tagline": "Burning orange-red - the fury of something finally unleashed.",
-    "description": "Wrath is an angry, vivid red-orange that feels like it's constantly about to boil over. It's bold, hot-tempered, and demands attention - exactly what it should be.",
+    "tagline": "A blood red with a green sheen.",
+    "description": "Wrath is part of the Cult Pens exclusive 7 Deadly Sins collection by Diamine - a blood red with a green sheen in heavier lines. Also available in our Diamine 7 Deadly Sins set. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
+    "properties": {
+      "shading": 3,
+      "sheen": 3,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "White or cream paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Blood red with green sheen in pooled ink."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Less sheen on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Broad nibs show the sheen best."
+      }
+    ],
+    "image": "images/diamine-7-sinners-wrath.jpg",
+    "stock": 12
+  },
+  {
+    "id": "diamine-7-sinners-greed",
+    "shimmer": true,
+    "brand": "Diamine",
+    "name": "7 Sinners Greed",
+    "colours": ["Yellow", "Brown"],
+    "colorPrimary": "#a88a1a",
+    "colorDark": "#7a6208",
+    "tagline": "A golden yellow-olive with golden shimmer.",
+    "description": "Greed is a golden, olive-leaning yellow scattered with gold shimmer - money, money, money. Part of the Cult Pens exclusive 7 Deadly Sins collection by Diamine, also available in our Diamine 7 Deadly Sins set. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "White or cream paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Golden olive-yellow with gold shimmer in pooled ink."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Earthier on textured paper, with softer sparkle."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Medium and broad nibs show the shimmer best. Shake well before filling."
+      }
+    ],
+    "image": "images/diamine-7-sinners-greed.jpg",
+    "stock": 12
+  },
+  {
+    "id": "diamine-7-sinners-sloth",
+    "sheen": true,
+    "brand": "Diamine",
+    "name": "7 Sinners Sloth",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#3a5a7a",
+    "colorDark": "#1a3a5a",
+    "tagline": "A slow, deep blue with a red sheen.",
+    "description": "Sloth is a deep violet-blue with a red sheen - and the slower you go, the more ink goes down and the better the sheen. Part of the Cult Pens exclusive 7 Deadly Sins collection by Diamine, also available in our Diamine 7 Deadly Sins set. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
+    "properties": {
+      "shading": 2,
+      "sheen": 4,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Any paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Deep blue with red sheen where the ink pools."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Less sheen on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Wet, broad nibs give the most sheen."
+      }
+    ],
+    "image": "images/diamine-7-sinners-sloth.jpg",
+    "stock": 12
+  },
+  {
+    "id": "diamine-7-sinners-gluttony",
+    "shimmer": true,
+    "brand": "Diamine",
+    "name": "7 Sinners Gluttony",
+    "colours": ["Orange", "Red"],
+    "colorPrimary": "#a85a1a",
+    "colorDark": "#7a3a0a",
+    "tagline": "A dark red-orange with a glitzy pink shimmer.",
+    "description": "Gluttony is a dark orange that almost reads red, finished with a glitzy pink shimmer. Part of the Cult Pens exclusive 7 Deadly Sins collection by Diamine, also available in our Diamine 7 Deadly Sins set. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Red-orange with pink shimmer."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Deeper red on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Broad nibs show the shimmer best. Shake well before filling."
+      }
+    ],
+    "image": "images/diamine-7-sinners-gluttony.jpg",
+    "stock": 12
+  },
+  {
+    "id": "diamine-7-sinners-envy",
+    "shimmer": true,
+    "brand": "Diamine",
+    "name": "7 Sinners Envy",
+    "colours": ["Green", "Red"],
+    "colorPrimary": "#1a5a1a",
+    "colorDark": "#0a3a0a",
+    "tagline": "A dark green with a deep red, almost black shimmer.",
+    "description": "Envy is a dark green with a very dark red, almost black shimmer - in heavy strokes the red pools while green halos the edges. Part of the Cult Pens exclusive 7 Deadly Sins collection by Diamine, also available in our Diamine 7 Deadly Sins set. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "White paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Dark green with deep red-black shimmer in pooled ink."
+      },
+      {
+        "title": "On textured paper",
+        "body": "More muted on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Broad nibs show the red-green contrast best. Shake well before filling."
+      }
+    ],
+    "image": "images/diamine-7-sinners-envy.jpg",
+    "stock": 12
+  },
+  {
+    "id": "diamine-7-sinners-pride",
+    "shimmer": true,
+    "brand": "Diamine",
+    "name": "7 Sinners Pride",
+    "colours": ["Purple"],
+    "colorPrimary": "#6a1a8a",
+    "colorDark": "#4a0a6a",
+    "tagline": "A regal purple with silver shimmer.",
+    "description": "Pride is a regal, rich purple with a silver shimmer. Part of the Cult Pens exclusive 7 Deadly Sins collection by Diamine, also available in our Diamine 7 Deadly Sins set. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Rich purple with silver shimmer."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Darker on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Broad nibs show the shimmer best. Shake well before filling."
+      }
+    ],
+    "image": "images/diamine-7-sinners-pride.jpg",
+    "stock": 12
+  },
+  {
+    "id": "diamine-tariff-teal",
+    "brand": "Diamine",
+    "name": "Tariff Teal",
+    "colours": ["Teal", "Green"],
+    "colorPrimary": "#1a7a7a",
+    "colorDark": "#0a5a5a",
+    "tagline": "A dark green-blue teal from Diamine's 160th anniversary.",
+    "description": "Tariff Teal is from Diamine's 160th Anniversary collection of vintage-inspired colours - a dark green-blue that shades lightly into darker green pools, with a faint red sheen. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -797,224 +1013,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Blazes orange-red with shading into deeper vermilion in heavy strokes. Vivid and energetic on white paper."
+        "body": "Dark teal with light shading into green pools."
       },
       {
         "title": "On textured paper",
-        "body": "Slightly tempered on textured stock - the orange quality softens a little and it reads closer to a bold red."
+        "body": "Reads deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium nibs. In fine nibs it's a striking, aggressive orange-red. In broad nibs the shading is theatrical."
-      }
-    ],
-    "image": "images/diamine-7-sinners-wrath.jpg",
-    "stock": 12
-  },
-  {
-    "id": "diamine-7-sinners-greed",
-    "shimmer": true,
-    "brand": "Diamine",
-    "name": "7 Sinners Greed",
-    "colours": ["Yellow"],
-    "colorPrimary": "#a88a1a",
-    "colorDark": "#7a6208",
-    "tagline": "A dark, covetous gold - wanting more with every word.",
-    "description": "Greed is a deep, covetous gold with warm undertones - the colour of coin and wanting what you can't have. Rich, dark, and quietly menacing.",
-    "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White or cream paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Deep forest green shading to bright emerald in lighter strokes. A gold or yellow sheen can appear at stroke edges on coated paper."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The depth of the green is most apparent on white paper. On cream stock it takes on a warmer, richer character."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Excellent across nib sizes. Broad nibs make the shading - and occasional sheen - really sing."
-      }
-    ],
-    "image": "images/diamine-7-sinners-greed.jpg",
-    "stock": 12
-  },
-  {
-    "id": "diamine-7-sinners-sloth",
-    "sheen": true,
-    "brand": "Diamine",
-    "name": "7 Sinners Sloth",
-    "colours": ["Blue"],
-    "colorPrimary": "#3a5a7a",
-    "colorDark": "#1a3a5a",
-    "tagline": "A blue so unbothered it barely has time for your expectations.",
-    "description": "Sloth is a flat, muted blue that couldn't care less about standing out. And that, oddly, is exactly what makes it interesting - it's the most understated blue in the collection.",
-    "properties": {
-      "shading": 1,
-      "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Any paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Flat, neutral and unbothered. Minimal shading, high legibility. Essentially a very stylish medium grey."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Consistent on all paper types. On cream it appears slightly warmer, which suits it."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "No-nonsense in every nib size. A quietly dependable performer."
-      }
-    ],
-    "image": "images/diamine-7-sinners-sloth.jpg",
-    "stock": 12
-  },
-  {
-    "id": "diamine-7-sinners-gluttony",
-    "shimmer": true,
-    "sheen": false,
-    "brand": "Diamine",
-    "name": "7 Sinners Gluttony",
-    "colours": ["Orange"],
-    "colorPrimary": "#a85a1a",
-    "colorDark": "#7a3a0a",
-    "tagline": "Indulgent, excessive orange - more is never enough.",
-    "description": "Gluttony is a dark, rich orange that feels opulent and excessive in the best way. It's deep, saturated, and refuses to be subtle - fitting for its namesake sin.",
-    "properties": {
-      "shading": 3,
-      "sheen": 3,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Smooth white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Dense and luxurious, shading from near-black deep purple to a rich mid-violet. A green or gold sheen emerges brilliantly on coated paper."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The sheen is less visible on textured stock but the depth and richness of the purple remains very impressive."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "A broad or medium nib really does this ink justice. One of the most showy in the collection - in a good way."
-      }
-    ],
-    "image": "images/diamine-7-sinners-gluttony.jpg",
-    "stock": 12
-  },
-  {
-    "id": "diamine-7-sinners-envy",
-    "sheen": true,
-    "brand": "Diamine",
-    "name": "7 Sinners Envy",
-    "colorPrimary": "#1a5a1a",
-    "colorDark": "#0a3a0a",
-    "tagline": "A bitter, deep green - the colour of wanting what you can't have.",
-    "description": "Envy is a very dark, cool green - almost bottle green, with a slight chill to it that feels appropriately resentful. Deeply saturated and full of presence.",
-    "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Very dark green shading to a cooler mid-green in lighter strokes. A yellow-green sheen can appear at edges on coated papers."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Deepens and darkens on textured stock - almost black-green in heavy lines. Striking."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Particularly impressive in broad nibs. Fine nibs give a clean, dark green line with character."
-      }
-    ],
-    "image": "images/diamine-7-sinners-envy.jpg",
-    "stock": 12
-  },
-  {
-    "id": "diamine-7-sinners-pride",
-    "shimmer": true,
-    "sheen": false,
-    "brand": "Diamine",
-    "name": "7 Sinners Pride",
-    "colours": ["Purple"],
-    "colorPrimary": "#6a1a8a",
-    "colorDark": "#4a0a6a",
-    "tagline": "Regal and self-assured - the king of all the sins.",
-    "description": "Pride is a rich, regal purple that announces itself without apology. It's the sin that started it all, and this ink does it full justice.",
-    "properties": {
-      "shading": 2,
-      "sheen": 3,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Smooth white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Rich amber-gold that shimmers with a green or copper sheen on coated papers. Spectacular in broad strokes."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The sheen is less pronounced on textured stock but the colour warmth is still gorgeous."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Best in medium to broad nibs. Fine nibs can make this ink look simply yellow - go wide to see the gold."
-      }
-    ],
-    "image": "images/diamine-7-sinners-pride.jpg",
-    "stock": 12
-  },
-  {
-    "id": "diamine-tariff-teal",
-    "brand": "Diamine",
-    "name": "Tariff Teal",
-    "colorPrimary": "#1a7a7a",
-    "colorDark": "#0a5a5a",
-    "tagline": "A bold, vivid teal with the confidence to go its own way.",
-    "description": "Tariff Teal is a punchy, saturated blue-green - not quite cyan, not quite turquoise, but a strong, opinionated teal with serious presence. A modern classic in the making.",
-    "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White or cream paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Vivid and saturated, shading from deep teal to bright blue-green. A blue sheen can appear at stroke edges on coated paper."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The colour holds up well on textured papers. Slightly darker and richer-looking."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "A pleasure to write with in all nib sizes. Goes particularly well in italic or stub nibs."
+        "body": "Comfortable in any nib; faint sheen in broad strokes."
       }
     ],
     "image": "images/diamine-tariff-teal.jpg",
@@ -1027,12 +1034,12 @@ const INKS = [
     "colours": ["Green"],
     "colorPrimary": "#2a6a4a",
     "colorDark": "#154a30",
-    "tagline": "The deep, reflective green of still water in an old city canal.",
-    "description": "Canalside is a beautiful green with hints of blue - dark enough to be serious, vivid enough to be interesting. It evokes brick walls and water reflections on a quiet morning.",
+    "tagline": "A deep, earthy canal-bank green.",
+    "description": "Canalside is from Diamine's 160th Anniversary collection - a deep, earthy green with a little shading and a faint red sheen in large swabs. Well behaved on good paper. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Fast (5–10 sec)",
+      "shading": 2,
+      "sheen": 1,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "White or cream paper"
@@ -1040,15 +1047,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich and balanced, shading from deep teal to a lighter blue-green. A hint of gold sheen appears at stroke edges on coated papers."
+        "body": "Deep earthy green with a little shading."
       },
       {
         "title": "On textured paper",
-        "body": "Slightly darker and more blue-leaning on textured stock. Very pleasant to write with at any paper weight."
+        "body": "Can feather on cheap copy paper - best on good stock."
       },
       {
         "title": "Nib behaviour",
-        "body": "One of those inks that suits every nib size. Particularly lovely in a stub or italic where the shading and depth show."
+        "body": "Comfortable in any nib; give it time to dry."
       }
     ],
     "image": "images/diamine-canalside.jpg",
@@ -1058,12 +1065,13 @@ const INKS = [
     "id": "diamine-lady-grey",
     "brand": "Diamine",
     "name": "Lady Grey",
+    "colours": ["Grey", "Purple"],
     "colorPrimary": "#9a9aaa",
     "colorDark": "#7a7a8a",
-    "tagline": "A refined, silvery grey with just a whisper of lavender.",
-    "description": "Lady Grey is a soft, muted grey with the faintest lavender undertone - elegant, understated, and completely distinctive from a plain grey. It's the colour of old silver and morning fog.",
+    "tagline": "A purple-grey that shifts as it dries.",
+    "description": "Lady Grey is the 2025 r/fountainpens community ink, following Earl Grey. It goes down bluish-grey and dries to a purple-grey with a hint of pink - a gentle multichromatic shader. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
-      "shading": 2,
+      "shading": 4,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -1073,15 +1081,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Pale, soft, and consistent with a very gentle lavender lean. Highly legible despite its lightness - surprisingly readable."
+        "body": "Bluish when wet, drying to purple-grey with pink hints."
       },
       {
         "title": "On textured paper",
-        "body": "The purple undertone becomes slightly more visible on cream paper, giving a warm vintage quality."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows properly. In a fine nib it can appear quite pale on white paper."
+        "body": "Can be light in fine nibs - medium and broad are best."
       }
     ],
     "image": "images/diamine-lady-grey.jpg",
@@ -1089,17 +1097,16 @@ const INKS = [
   },
   {
     "id": "diamine-a-jug-of-sangria",
-    "shimmer": false,
-    "sheen": false,
     "brand": "Diamine",
     "name": "A Jug of Sangria",
+    "colours": ["Pink", "Purple"],
     "colorPrimary": "#6a1a3a",
     "colorDark": "#4a0a1a",
-    "tagline": "Deep wine-red with the warmth of summer evenings in Spain.",
-    "description": "A Jug of Sangria is a deeply saturated red-purple that evokes exactly its namesake - dark, complex, and full of warmth. It sits between wine and burgundy, with shimmer that adds a festive sparkle.",
+    "tagline": "A dusty, wine-tinted pink.",
+    "description": "A Jug of Sangria is from the Cult Pens exclusive summer range by Diamine - a soft, dusty pink-mauve with a wine tint. It flows on the dry side. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -1108,15 +1115,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep wine-red with a strong red-gold shimmer on coated stock. Shading from near-black to warm ruby. Spectacular."
+        "body": "Dusty pink-mauve with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Shimmer is subtler but the depth and richness remains. A beautiful ink on any paper."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A broad or medium nib does this ink justice. Shake before use and flush pen after - shimmer inks need care."
+        "body": "On the dry side - wetter, broader nibs suit it."
       }
     ],
     "image": "images/diamine-a-jug-of-sangria.jpg",
@@ -1126,13 +1133,14 @@ const INKS = [
     "id": "diamine-summer-sunset",
     "brand": "Diamine",
     "name": "Summer Sunset",
+    "colours": ["Orange", "Pink"],
     "colorPrimary": "#c86a2a",
     "colorDark": "#a84a0a",
-    "tagline": "A blazing amber-orange like the last light over the horizon.",
-    "description": "Summer Sunset is a warm, vibrant orange-amber that genuinely glows on the page. Rich without being harsh, it captures that golden hour quality beautifully.",
+    "tagline": "A soft, peachy sunset coral.",
+    "description": "Summer Sunset is from the Cult Pens exclusive summer range by Diamine - a soft, peachy coral, close to a muted copper. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -1141,15 +1149,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and vivid, shading from deep amber to a brighter orange in lighter strokes. A gentle gold shimmer appears on coated paper."
+        "body": "Peachy coral with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth intensifies on cream paper. Lovely for journalling and sketching."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Particularly beautiful in a broad or stub nib. All sizes work well."
+        "body": "Medium and broad nibs give the richest colour."
       }
     ],
     "image": "images/diamine-summer-sunset.jpg",
@@ -1159,12 +1167,13 @@ const INKS = [
     "id": "diamine-cashmere-rose",
     "brand": "Diamine",
     "name": "Cashmere Rose",
+    "colours": ["Pink"],
     "colorPrimary": "#d4849a",
     "colorDark": "#b46478",
-    "tagline": "A soft, dusty rose as gentle and warm as cashmere itself.",
-    "description": "Cashmere Rose is a warm, muted pink - not bright or candy-like, but refined and grown-up. The dusty quality gives it real character, and it sits beautifully on cream paper.",
+    "tagline": "A pretty rose pink with a hint of red.",
+    "description": "Cashmere Rose is from Diamine's Inkvent Purple Edition - a pretty rose pink with elements of red. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -1174,15 +1183,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and consistent with gentle shading. The rose and dusty quality balance beautifully."
+        "body": "Rose pink with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper the warmth of the colour really comes alive. Perfect for personal correspondence."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in all sizes. Medium nibs hit the sweet spot for character."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/diamine-cashmere-rose.jpg",
@@ -1192,14 +1201,14 @@ const INKS = [
     "id": "diamine-rosewood",
     "brand": "Diamine",
     "name": "Rosewood",
-    "colours": ["Brown"],
+    "colours": ["Red", "Brown"],
     "colorPrimary": "#8a3a3a",
     "colorDark": "#6a1a1a",
-    "tagline": "Warm and woody - the rich red-brown of polished rosewood grain.",
-    "description": "Rosewood is a warm, muted red-brown that feels like the inside of a fine instrument workshop. It's not quite red, not quite brown, but something beautifully between the two.",
+    "tagline": "A warm, deep red-brown, like polished rosewood.",
+    "description": "Rosewood is from Diamine's 160th Anniversary collection - a warm, deep red-brown. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -1208,15 +1217,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm red-brown with good shading. The rose undertone is most visible in lighter strokes."
+        "body": "Warm red-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Looks wonderful on aged or cream paper where the warmth deepens."
+        "body": "Browner on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and reliable in all nib sizes. A sophisticated alternative to plain brown or red."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/diamine-rosewood.jpg",
@@ -1224,19 +1233,18 @@ const INKS = [
   },
   {
     "id": "diamine-raise-a-glass",
-    "image": "images/diamine-raise-a-glass.jpg",
     "shimmer": true,
-    "sheen": false,
+    "image": "images/diamine-raise-a-glass.jpg",
     "brand": "Diamine",
     "name": "Raise a Glass",
-    "colours": ["Purple"],
+    "colours": ["Purple", "Blue"],
     "colorPrimary": "#6a2a8a",
     "colorDark": "#4a1a6a",
-    "tagline": "The warm mulled-wine purple of a raised glass catching the light.",
-    "description": "Raise a Glass is a festive, warm purple with shimmer that genuinely sparkles on the page. It's celebratory in character - made for special letters, toasts, and memorable moments.",
+    "tagline": "A dark purple chameleon with green and gold shimmer.",
+    "description": "Raise a Glass is from Diamine's 2023 Inkvent range - a dark, inky purple with green and gold shimmer and a touch of gold sheen. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
       "shading": 2,
-      "sheen": 4,
+      "sheen": 2,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -1245,15 +1253,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm golden champagne with striking gold shimmer. On coated paper the effect is dazzling."
+        "body": "Dark purple with green-gold shimmer."
       },
       {
         "title": "On textured paper",
-        "body": "Shimmer is more subtle on rough paper, but the warm gold character remains lovely."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the shimmer best. Shake before use and clean your pen thoroughly after."
+        "body": "Broad nibs show the shimmer best. Shake well before filling."
       }
     ],
     "stock": 12
@@ -1265,10 +1273,10 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#8a5a2a",
     "colorDark": "#664010",
-    "tagline": "Bright, fun coral-brown with the energy of a retro diner.",
-    "description": "Oh Betty is a warm, vivid coral-brown - more terracotta than candy, with a cheerful warmth. Fun, retro, and completely cheerful.",
+    "tagline": "A warm, mid taupe-brown.",
+    "description": "Oh Betty is a warm, mid taupe-brown with gentle shading. We've described it from our own swatch. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -1278,15 +1286,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm coral-pink that reads as distinctly different from standard pink inks - more alive and energetic."
+        "body": "Warm taupe-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth shifts slightly toward peach on cream paper, which suits it."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Fun and consistent in all nib sizes. Best in fine to medium nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/diamine-oh-betty.jpg",
@@ -1296,13 +1304,14 @@ const INKS = [
     "id": "diamine-blue-monday",
     "brand": "Diamine",
     "name": "Blue Monday",
+    "colours": ["Blue"],
     "colorPrimary": "#4a6a8a",
     "colorDark": "#2a4a6a",
-    "tagline": "A deep, muted slate-blue with a quiet, contemplative mood.",
-    "description": "Blue Monday is a sophisticated slate-blue - darker and more serious than a sky blue, with grey undertones that make it feel genuinely thoughtful. Not named after the day of the week for nothing.",
+    "tagline": "A soft denim blue.",
+    "description": "Blue Monday is a soft, mid denim blue with gentle shading. We've described it from our own swatch. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -1311,15 +1320,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep slate-blue with good shading. The grey undertones give it a muted, considered quality."
+        "body": "Denim blue with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Deepens slightly on textured stock. Particularly good for journalling."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Works well in all sizes. Medium and broad nibs show the full shading range."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/diamine-blue-monday.jpg",
@@ -1330,13 +1339,13 @@ const INKS = [
     "shimmer": true,
     "brand": "Diamine",
     "name": "Lavender Frost",
-    "colours": ["Grey","Purple"],
+    "colours": ["Purple", "Grey"],
     "colorPrimary": "#9a8ac8",
     "colorDark": "#7a6aa8",
-    "tagline": "A cool, shimmering lavender with winter frost in its character.",
-    "description": "Lavender Frost is a soft, mid-toned lavender with shimmer particles that give it a frosty, crystalline quality. It's the prettiest lavender ink in the Diamine range.",
+    "tagline": "A soft purple-lavender with silver shimmer.",
+    "description": "Lavender Frost is from Diamine's 2023 Inkvent Purple Edition - a soft, dusky purple-lavender infused with silver shimmer that catches at different angles. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
@@ -1346,15 +1355,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool lavender with silver shimmer that catches the light beautifully. Consistent and dreamy."
+        "body": "Dusky lavender with silver shimmer."
       },
       {
         "title": "On textured paper",
-        "body": "Shimmer is more subtle on textured paper, but the lavender colour remains lovely."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in medium and broad nibs. Shake before use and clean pen after."
+        "body": "Broad nibs show the shimmer best. Shake well before filling."
       }
     ],
     "image": "images/diamine-lavender-frost.jpg",
@@ -1364,14 +1373,14 @@ const INKS = [
     "id": "diamine-toe-in-the-ocean",
     "brand": "Diamine",
     "name": "Toe in the Ocean",
-    "colours": ["Teal"],
-    "colorPrimary": "#3a8a9a",
-    "colorDark": "#1a6a7a",
-    "tagline": "That perfect moment of cold water on warm sand - vivid, refreshing teal.",
-    "description": "Toe in the Ocean is a bright, clean teal that's exactly the colour of shallow sea water in sunlight. It's energetic and refreshing - one of those inks that makes you want to write more.",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#707cab",
+    "colorDark": "#4f5f8d",
+    "tagline": "A cool periwinkle blue for paddling.",
+    "description": "A Toe in the Ocean is from the Cult Pens exclusive summer range by Diamine - a cool periwinkle blue. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -1380,15 +1389,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid and refreshing, shading from deep teal to a bright clear blue-green. Occasional sheen at stroke edges."
+        "body": "Periwinkle blue with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Slightly deeper on textured stock. Holds its vivid character well on all papers."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A joy in all nib sizes. Particularly striking in a stub or broad italic."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/diamine-toe-in-the-ocean.jpg",
@@ -1401,10 +1410,10 @@ const INKS = [
     "colours": ["Green"],
     "colorPrimary": "#4a6a2a",
     "colorDark": "#2e4a18",
-    "tagline": "The warm, ancient green-stone of walls stretching across mountains.",
-    "description": "The Great Wall of China is a warm, dusty moss-green - earthy and ancient-feeling. It evokes the colour of lichen-covered stone and centuries of history.",
+    "tagline": "A moody, dusty forest green.",
+    "description": "The Great Wall of China is from the Cult Pens Wonders of the World collection by Diamine - a muddy, dusty forest green chosen to suit the wall's character, with darker halos in big swatches. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -1414,15 +1423,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm terracotta-brown, consistent and earthy. A distinctive colour that doesn't look like standard brown."
+        "body": "Dusty forest green with darker halos."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy quality deepens on cream paper - feels right at home on aged or handmade stock."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Works well in all sizes. Broad nibs show the warmth best."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/diamine-the-great-wall-of-china.jpg",
@@ -1435,28 +1444,28 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#8a6a42",
     "colorDark": "#664a28",
-    "tagline": "The warm, sun-bleached brown-stone of ancient Rome.",
-    "description": "Colosseum is a sophisticated warm beige-brown - the colour of old travertine stone bleached by centuries of sun. It's subtle, refined, and completely unlike anything else in the Diamine catalogue.",
+    "tagline": "A light, sandy travertine brown.",
+    "description": "Colosseum is from the Cult Pens Wonders of the World collection by Diamine - a light, sandy brown inspired by the travertine limestone of the Colosseum. It's pale, so it's best for art, headings or broad nibs. Diamine is a Liverpool ink maker, making fountain pen ink since 1864.",
     "properties": {
-      "shading": 2,
+      "shading": 4,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
-      "bestOn": "White paper"
+      "bestOn": "Cream or aged paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm stone-beige with the faintest green lean. Consistent and muted - a very sophisticated neutral."
+        "body": "Light sandy brown with lots of shading."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper it almost disappears into the stock - use white paper for best contrast."
+        "body": "Soft on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium to broad nibs where the colour shows properly. A unique choice for heading notes or annotations."
+        "body": "Pale in fine nibs - use a broad nib or stub."
       }
     ],
     "image": "images/diamine-colosseum.jpg",
@@ -2344,14 +2353,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Ferris Wheel Press",
     "name": "Blushing Mushrooms",
-    "colours": ["Purple"],
+    "colours": ["Purple", "Pink"],
     "colorPrimary": "#7a5a8a",
     "colorDark": "#5a3a6a",
-    "tagline": "A warm, dusty mushroom-purple - earthy, soft, and completely unique.",
-    "description": "Blushing Mushrooms is a warm, dusty mauve-purple that feels organic and tactile. Ferris Wheel Press at their most creative.",
+    "tagline": "A blushing mauve with rose-gold shimmer.",
+    "description": "Blushing Mushroom is from the FerriTales Down the Rabbit Hole collection, inspired by Alice in Wonderland - a soft mauve with a blush duo-shade and rose-gold shimmer. It goes down pale and darkens as it dries. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2360,15 +2369,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and dusty, shading from deeper terracotta to soft blush. A gentle sheen adds depth on coated papers."
+        "body": "Pale mauve that darkens as it dries, with rose-gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy quality suits textured stock well. On cream paper the warmth is particularly beautiful."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "FWP inks are well-lubricated - glides across all nib sizes. Medium and broad nibs show the shading best."
+        "body": "Shake well; broader nibs show the shimmer best."
       }
     ],
     "image": "images/ferris-wheel-press-blushing-mushrooms.jpg",
@@ -2378,14 +2387,15 @@ const INKS = [
     "id": "ferris-wheel-press-terracotta-canyon",
     "brand": "Ferris Wheel Press",
     "name": "Terracotta Canyon",
+    "colours": ["Orange", "Brown"],
     "colorPrimary": "#c87a4a",
     "colorDark": "#a85a2a",
-    "tagline": "The warm, sun-baked red of canyon walls at golden hour.",
-    "description": "Terracotta Canyon is a rich, warm orange-red that evokes desert rock faces and baked earth. Vivid without being harsh, it's one of the most satisfying terracotta inks available.",
+    "tagline": "A warm, earthy terracotta orange.",
+    "description": "Terracotta Canyon is from Ferris Wheel Press's Southern Charm collection, inspired by Georgia's Providence Canyon - a pale, warm terracotta orange-brown. Soothing and earthy. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Medium (10–20 sec)",
+      "shading": 2,
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
       "bestOn": "White or cream paper"
@@ -2393,15 +2403,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and vivid, shading from deep burnt orange to lighter terracotta. A gorgeous golden-red sheen on coated papers."
+        "body": "Pale terracotta with low shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where the earthiness really comes through."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent FWP ink quality - very smooth. Best in medium or broad nibs."
+        "body": "Flow is on the dry side - wetter nibs suit it."
       }
     ],
     "image": "images/ferris-wheel-press-terracotta-canyon.jpg",
@@ -2409,46 +2419,14 @@ const INKS = [
   },
   {
     "id": "ferris-wheel-press-chidori-cherry-blossom",
+    "shimmer": true,
     "brand": "Ferris Wheel Press",
     "name": "Chidori Cherry Blossom",
     "colours": ["Pink"],
     "colorPrimary": "#e8aab8",
     "colorDark": "#c88a98",
-    "tagline": "Delicate, pale cherry blossom pink - fleeting and beautiful.",
-    "description": "Chidori Cherry Blossom is a soft, pale pink inspired by Japanese spring. It's light and delicate, with just enough colour to be readable - perfect for personal writing and sketching.",
-    "properties": {
-      "shading": 2,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Very well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Soft and pale, with gentle shading. Delicate and beautiful - very true to cherry blossom."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Can appear quite pale on cream paper. White paper gives the best contrast."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Best in medium to broad nibs where the colour shows properly."
-      }
-    ],
-    "image": "images/ferris-wheel-press-chidori-cherry-blossom.jpg",
-    "stock": 15
-  },
-  {
-    "id": "ferris-wheel-press-pink-eraser",
-    "brand": "Ferris Wheel Press",
-    "name": "Pink Eraser",
-    "colorPrimary": "#e87a9a",
-    "colorDark": "#c85a7a",
-    "tagline": "A fun, retro pink - exactly like a brand-new pencil eraser.",
-    "description": "Pink Eraser is a bright, cheerful pink that's warm without being coral. It's a nod to the nostalgic pink of school erasers - playful, vivid, and completely fun to write with.",
+    "tagline": "A pale cherry-blossom pink with rose-gold shimmer.",
+    "description": "Chidori Cherry Blossom was made for the 10th anniversary of Tokyo stationery shop Paper Tree - a pale, soft pink with rose-gold shimmer. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -2460,15 +2438,49 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright and consistent - a proper, vivid pink. Good contrast against white paper."
+        "body": "Pale pink with rose-gold shimmer."
       },
       {
         "title": "On textured paper",
-        "body": "Takes on a slightly warmer quality on cream. Still cheerful and legible."
+        "body": "Shimmer is subtler on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and well-lubricated across all nib sizes - typical FWP quality."
+        "body": "Shake well; broad nibs show the sparkle best."
+      }
+    ],
+    "image": "images/ferris-wheel-press-chidori-cherry-blossom.jpg",
+    "stock": 15
+  },
+  {
+    "id": "ferris-wheel-press-pink-eraser",
+    "brand": "Ferris Wheel Press",
+    "name": "Pink Eraser",
+    "colours": ["Pink"],
+    "colorPrimary": "#e87a9a",
+    "colorDark": "#c85a7a",
+    "tagline": "The bright pink of a pencil eraser.",
+    "description": "Pink Eraser is from Ferris Wheel Press's Spring 2020 collection - the bright, cheerful pink of a pencil eraser. Ferris Wheel Press is a stationery company from Ontario, Canada.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Very well-lubricated",
+      "bestOn": "White paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Bright pink with some shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Holds its colour on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Can be light in fine nibs - a wider nib is best."
       }
     ],
     "image": "images/ferris-wheel-press-pink-eraser.jpg",
@@ -2478,13 +2490,14 @@ const INKS = [
     "id": "ferris-wheel-press-blue-grass-velvet",
     "brand": "Ferris Wheel Press",
     "name": "Blue Grass Velvet",
+    "colours": ["Teal"],
     "colorPrimary": "#3a6a7a",
     "colorDark": "#1a4a5a",
-    "tagline": "A deep, velvety teal-blue with the richness of evening grass.",
-    "description": "Blue Grass Velvet is a deep, saturated teal with enough blue to make it serious and enough green to keep it interesting. Rich, luxurious, and completely distinctive.",
+    "tagline": "A deep blue-green teal.",
+    "description": "Bluegrass Velvet is a medium-to-deep blue-green teal with medium shading and a low sheen. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2493,15 +2506,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich and deep, shading from near-black teal to vivid blue-green. A subtle teal sheen at stroke edges on coated papers."
+        "body": "Teal with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens slightly on textured stock - deeply impressive on any paper."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A broad or italic nib does this ink full justice. Flows beautifully."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/ferris-wheel-press-blue-grass-velvet.jpg",
@@ -2509,16 +2522,18 @@ const INKS = [
   },
   {
     "id": "ferris-wheel-press-queen-allium",
+    "shimmer": true,
     "brand": "Ferris Wheel Press",
     "name": "Queen Allium",
+    "colours": ["Purple"],
     "colorPrimary": "#7a4a9a",
     "colorDark": "#5a2a7a",
-    "tagline": "A vivid, regal purple - bold and beautiful like a giant allium in bloom.",
-    "description": "Queen Allium is a vivid mid-purple named after the spectacular globe-shaped flower. Saturated, bright, and completely regal - one of FWP's most striking colours.",
+    "tagline": "An allium purple with sparkling gold shimmer.",
+    "description": "Queen Allium is from Ferris Wheel Press's Fashion District collection, inspired by Toronto's Queen Street - a lilac-purple with medium shading and gold shimmer. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
-      "dryTime": "Medium (10–20 sec)",
+      "sheen": 1,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
       "bestOn": "White paper"
@@ -2526,15 +2541,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright and vivid, shading from deeper purple to bright violet. A blue sheen appears on coated papers."
+        "body": "Lilac-purple with medium shading and gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its vibrancy on most papers. Particularly good on bright white stock."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. Broad nibs show the full depth and occasional sheen."
+        "body": "A slightly dry flow - broader nibs show the shimmer best. Shake well before filling and roll the pen now and then to keep the shimmer moving."
       }
     ],
     "image": "images/ferris-wheel-press-queen-allium.jpg",
@@ -2547,12 +2562,12 @@ const INKS = [
     "colours": ["Pink"],
     "colorPrimary": "#d46a7a",
     "colorDark": "#b44a5a",
-    "tagline": "A bold, warm rose - named for Toronto's vibrant Spadina Avenue.",
-    "description": "Spadina Rose is a confident, warm rose-pink - not delicate or pastel, but full and rich. Named for the famous Toronto street, it has urban energy and genuine warmth.",
+    "tagline": "A muted, dusty rose.",
+    "description": "Spadina Rose is from Ferris Wheel Press's Fashion District collection - a muted, dusty rose pink with a warm, floral feel. Slow to dry. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
-      "dryTime": "Medium (10–20 sec)",
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
       "bestOn": "White or cream paper"
@@ -2560,15 +2575,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich and warm, shading from deep rose to bright pink. A red sheen appears at stroke edges on coated papers."
+        "body": "Dusty rose with soft shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth of the colour comes through beautifully on cream stock."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and expressive in all nib sizes. A bold, confident choice."
+        "body": "Can be faint in fine nibs - broad nibs and washes suit it."
       }
     ],
     "image": "images/ferris-wheel-press-spadina-rose.jpg",
@@ -2578,14 +2593,15 @@ const INKS = [
     "id": "ferris-wheel-press-peter-moss",
     "brand": "Ferris Wheel Press",
     "name": "Peter Moss",
+    "colours": ["Green"],
     "colorPrimary": "#3a6a3a",
     "colorDark": "#1a4a1a",
-    "tagline": "The deep, damp green of moss on a forest floor after rain.",
-    "description": "Peter Moss is a rich forest green with depth and character - not bright, not olive, but a true saturated green that feels cool and earthy simultaneously.",
+    "tagline": "A mossy olive green.",
+    "description": "Peter Moss is from Ferris Wheel Press's Fall 2021 collection - a mossy, olive-leaning green with low shading and a dark sheen in large swabs. Lubricated for a smooth write. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Medium (10–20 sec)",
+      "shading": 2,
+      "sheen": 1,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
       "bestOn": "White or cream paper"
@@ -2593,15 +2609,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep forest green shading to bright mid-green in lighter strokes. A gold sheen can appear on coated papers."
+        "body": "Mossy olive green with low shading."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy depth suits textured paper. Beautiful on cream where it reads as a true woodland green."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent across all nibs. FWP lubrication makes it a joy to write with."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/ferris-wheel-press-peter-moss.jpg",
@@ -2609,14 +2625,16 @@ const INKS = [
   },
   {
     "id": "ferris-wheel-press-unfettered-flight",
+    "shimmer": true,
     "brand": "Ferris Wheel Press",
     "name": "Unfettered Flight",
+    "colours": ["Blue"],
     "colorPrimary": "#5a8ac8",
     "colorDark": "#3a6aa8",
-    "tagline": "A bright, open sky-blue - the colour of complete freedom.",
-    "description": "Unfettered Flight is a vivid, clean sky-blue with energy and optimism. It's not a navy or slate - it's genuinely, openly blue, like looking straight up on a clear day.",
+    "tagline": "A light sky blue with gold and pink duochrome shimmer.",
+    "description": "Unfettered Flight is from the FerriTales Wild Swans collection - a light, sunny sky blue with duochrome gold and pink shimmer. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
-      "shading": 3,
+      "shading": 2,
       "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
@@ -2626,15 +2644,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright and vivid, shading from deeper sky to lighter blue. A clean, optimistic ink."
+        "body": "Light blue with gold-pink shimmer."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its brightness on most papers. Best on white for maximum vibrancy."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Flows beautifully in all sizes - typical excellent FWP quality."
+        "body": "Shake well before filling and roll the pen now and then to keep the shimmer moving."
       }
     ],
     "image": "images/ferris-wheel-press-unfettered-flight.jpg",
@@ -2644,13 +2662,14 @@ const INKS = [
     "id": "ferris-wheel-press-storied-blue",
     "brand": "Ferris Wheel Press",
     "name": "Storied Blue",
+    "colours": ["Blue", "Grey"],
     "colorPrimary": "#2a5a8a",
     "colorDark": "#0a3a6a",
-    "tagline": "A deep, literary navy blue - serious, considered, timeless.",
-    "description": "Storied Blue is a rich, dark blue with depth and gravitas. It's the ink of bookshelves, old diaries, and careful correspondence - a blue that means business.",
+    "tagline": "A dusty steel blue.",
+    "description": "Storied Blue is from Ferris Wheel Press's Bookshoppe collection - a dusty, cool steel blue with a grey edge and medium shading. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2659,15 +2678,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep and rich, shading from near-black navy to bright blue. A subtle blue-gold sheen on coated papers."
+        "body": "Dusty blue with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens on textured stock but remains deeply beautiful. Excellent on cream paper."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Outstanding in broad nibs where the full depth shows. Works in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/ferris-wheel-press-storied-blue.jpg",
@@ -2680,28 +2699,28 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#9a8a7a",
     "colorDark": "#7a6a5a",
-    "tagline": "The warm, pearlescent grey of an oyster shell at dusk.",
-    "description": "Oyster Hour is a warm, sophisticated greige - between warm grey and pale brown, with the pearlescent quality of its namesake. Understated and beautifully refined.",
+    "tagline": "A creamy latte brown.",
+    "description": "Oyster Hour is from Ferris Wheel Press's Finer Things collection - a soft, creamy latte brown. It's on the light side, so it's lovely for art, headings and broad nibs. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
-      "shading": 2,
-      "sheen": 1,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
-      "bestOn": "White paper"
+      "bestOn": "Cream or white paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm grey-beige with consistent flow and gentle warmth. A very elegant neutral."
+        "body": "Creamy light brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper it can look almost ivory. White paper gives better contrast."
+        "body": "Soft on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and well-behaved in all sizes."
+        "body": "Light in fine nibs - best in broad nibs or with a dip pen."
       }
     ],
     "image": "images/ferris-wheel-press-oyster-hour.jpg",
@@ -2711,13 +2730,14 @@ const INKS = [
     "id": "ferris-wheel-press-dancing-thyme",
     "brand": "Ferris Wheel Press",
     "name": "Dancing Thyme",
+    "colours": ["Green", "Teal"],
     "colorPrimary": "#5a8a5a",
     "colorDark": "#3a6a3a",
-    "tagline": "A fresh, herb green that dances between grey and sage.",
-    "description": "Dancing Thyme is a medium, fresh green with herbaceous character - the kind of green that makes you think of kitchen gardens and morning dew. It's neither too bright nor too dark.",
+    "tagline": "A serene, earthy thyme green.",
+    "description": "Dancing Thyme is from Ferris Wheel Press's Southern Charm collection, with a New Orleans jazz theme - a muted, earthy sage-thyme green. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2726,15 +2746,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Fresh and clean with good shading from deeper herb-green to lighter sage."
+        "body": "Muted sage green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The herbaceous quality really comes through on cream paper."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Delightful in all nib sizes. Excellent FWP flow."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/ferris-wheel-press-dancing-thyme.jpg",
@@ -2744,13 +2764,14 @@ const INKS = [
     "id": "ferris-wheel-press-candy-marsala",
     "brand": "Ferris Wheel Press",
     "name": "Candy Marsala",
+    "colours": ["Red"],
     "colorPrimary": "#8a3a3a",
     "colorDark": "#6a1a1a",
-    "tagline": "Deep marsala wine - rich, warm, and completely sophisticated.",
-    "description": "Candy Marsala is a warm, deep red-brown - the colour of marsala wine, sitting between burgundy and terracotta. Rich, grown-up, and endlessly wearable.",
+    "tagline": "A deep marsala wine red.",
+    "description": "Candy Marsala is a deep, wine-tinted marsala red. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2759,15 +2780,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep and warm, shading from dark wine-red to lighter terracotta. A subtle red-gold sheen on coated papers."
+        "body": "Deep wine red with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where the warmth and depth show perfectly."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes - particularly stunning in a broad italic."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/ferris-wheel-press-candy-marsala.jpg",
@@ -2775,17 +2796,16 @@ const INKS = [
   },
   {
     "id": "ferris-wheel-press-madam-mulberry",
-    "sheen": false,
     "brand": "Ferris Wheel Press",
     "name": "Madam Mulberry",
-    "colours": ["Purple"],
+    "colours": ["Purple", "Pink"],
     "colorPrimary": "#5a1a6a",
     "colorDark": "#3a0a4a",
-    "tagline": "A deep, dramatic mulberry purple - dark, lush, and thoroughly glamorous.",
-    "description": "Madam Mulberry is a dark, rich purple - the colour of ripe mulberries. Deep, saturated, and dramatic, it's one of FWP's most opulent colours.",
+    "tagline": "A soft, smoky mauve purple.",
+    "description": "Madam Mulberry is a soft, smoky mauve-purple with a rosy edge and medium shading - it shifts with the light and paper. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2794,15 +2814,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dark and lush, shading from near-black mulberry to rich purple-pink. A striking red or pink sheen on coated papers."
+        "body": "Smoky mauve with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "Still impressive on textured stock. The depth carries through beautifully."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A broad nib truly does this ink justice - one of FWP's showstoppers."
+        "body": "A slightly dry flow - broader nibs suit it."
       }
     ],
     "image": "images/ferris-wheel-press-madam-mulberry.jpg",
@@ -2812,14 +2832,15 @@ const INKS = [
     "id": "ferris-wheel-press-royal-rhubarb",
     "brand": "Ferris Wheel Press",
     "name": "Royal Rhubarb",
+    "colours": ["Red", "Pink"],
     "colorPrimary": "#8a2a3a",
     "colorDark": "#6a0a1a",
-    "tagline": "A tart, vibrant rhubarb-red - tangy and completely distinctive.",
-    "description": "Royal Rhubarb is a vivid, warm red-pink that sits between red and magenta. It's distinctive, playful, and full of energy - the colour of rhubarb stalks ready to become pie.",
+    "tagline": "A deep rhubarb crimson-pink.",
+    "description": "Royal Rhubarb is from Ferris Wheel Press's Fall 2020 collection - a deep, purplish rhubarb red-pink with low shading. Slow to dry. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Medium (10–20 sec)",
+      "shading": 2,
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
       "bestOn": "White paper"
@@ -2827,15 +2848,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid and warm, shading from deep red to bright warm pink. A red sheen at stroke edges on coated papers."
+        "body": "Rhubarb crimson with low shading."
       },
       {
         "title": "On textured paper",
-        "body": "Slightly warmer on cream paper - the rhubarb quality really comes through."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Works well in all nibs. Particularly lively in broader widths."
+        "body": "Give it time to dry."
       }
     ],
     "image": "images/ferris-wheel-press-royal-rhubarb.jpg",
@@ -2845,13 +2866,14 @@ const INKS = [
     "id": "ferris-wheel-press-bayou-berry-mist",
     "brand": "Ferris Wheel Press",
     "name": "Bayou Berry Mist",
+    "colours": ["Purple", "Blue"],
     "colorPrimary": "#7a5a8a",
     "colorDark": "#5a3a6a",
-    "tagline": "A misty, atmospheric purple-grey - mysterious as a Louisiana bayou.",
-    "description": "Bayou Berry Mist is a muted, dusty purple with grey undertones - atmospheric and slightly mysterious. It's a purple for people who find straight purples too loud.",
+    "tagline": "A smoky, misty berry-violet.",
+    "description": "Bayou Berry Mist is from Ferris Wheel Press's Southern Charm collection - a smoky, grey-tinged berry violet with medium shading. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2860,15 +2882,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Muted and atmospheric, shading from deeper dusty purple to lighter grey-mauve."
+        "body": "Smoky violet with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "The muted quality suits textured paper well - feels intimate and organic."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in all sizes. The misty quality is lovely in a fine nib."
+        "body": "A slightly dry flow - broader nibs suit it."
       }
     ],
     "image": "images/ferris-wheel-press-bayou-berry-mist.jpg",
@@ -2881,11 +2903,11 @@ const INKS = [
     "colours": ["Blue"],
     "colorPrimary": "#2a4a8a",
     "colorDark": "#1a2a5a",
-    "tagline": "The deep blue of flowers silhouetted against a fading sky.",
-    "description": "Dusk in Bloom is a deep, medium blue with real warmth. It's the colour of a wisteria sky at dusk - romantic, evocative, and genuinely lovely.",
+    "tagline": "A dusky blue that dries to periwinkle.",
+    "description": "Dusk in Bloom is from Ferris Wheel Press's Twilight Garden collection - a dusty cornflower blue tinted towards purple that dries to periwinkle. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2894,15 +2916,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm purple with good shading and a gentle pink sheen at stroke edges on coated papers."
+        "body": "Cornflower-periwinkle with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where the warmth comes through."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes - a genuinely romantic ink."
+        "body": "Flows smoothly in any nib."
       }
     ],
     "image": "images/ferris-wheel-press-dusk-in-bloom.jpg",
@@ -2910,16 +2932,17 @@ const INKS = [
   },
   {
     "id": "ferris-wheel-press-moonbeam-meadows",
+    "shimmer": true,
     "brand": "Ferris Wheel Press",
     "name": "Moonbeam Meadows",
-    "colours": ["Purple"],
+    "colours": ["Purple", "Blue"],
     "colorPrimary": "#8a7ab0",
     "colorDark": "#6a5a90",
-    "tagline": "The soft violet haze of meadow grass under moonlight.",
-    "description": "Moonbeam Meadows is a soft, dusky purple - not quite lavender, not quite grey, but something gently luminous in between. Unusual and completely charming.",
+    "tagline": "A dusky lilac with green and pink shimmer.",
+    "description": "Moonbeam Meadows is from the FerriTales Bestiary Series - a dusky lilac-purple with duochrome green and pink shimmer. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2928,15 +2951,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft yellow-green with gentle shading. Unusual and charming - unlike anything else on the market."
+        "body": "Dusky lilac with green-pink sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth suits cream paper. On white it reads as a clean, fresh yellow-green."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and reliable. Best in medium or broad nibs where the colour shows properly."
+        "body": "Shake well before filling and roll the pen now and then to keep the shimmer moving."
       }
     ],
     "image": "images/ferris-wheel-press-moonbeam-meadows.jpg",
@@ -2949,10 +2972,10 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#8a5a3a",
     "colorDark": "#6a3a1a",
-    "tagline": "The warm, honest brown of weathered wood and river mud.",
-    "description": "Beaver Dam Brown is a warm, medium brown with earthy authenticity. Named after the industrious animal's handiwork, it's a practical, dependable brown with genuine warmth.",
+    "tagline": "A deep chocolate brown.",
+    "description": "Beaver Dam Brown is a deep chocolate brown - some find it close to an old iron-gall ink. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
-      "shading": 3,
+      "shading": 2,
       "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
@@ -2962,15 +2985,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and earthy, shading from rich dark brown to lighter tan. Completely natural-feeling."
+        "body": "Deep chocolate brown with low shading."
       },
       {
         "title": "On textured paper",
-        "body": "Looks wonderful on aged or cream paper where the warmth deepens beautifully."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "FWP smoothness makes this a joy to write with in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/ferris-wheel-press-beaver-dam-brown.jpg",
@@ -2980,13 +3003,14 @@ const INKS = [
     "id": "ferris-wheel-press-highland-smoke",
     "brand": "Ferris Wheel Press",
     "name": "Highland Smoke",
+    "colours": ["Grey", "Blue"],
     "colorPrimary": "#6a7a8a",
     "colorDark": "#4a5a6a",
-    "tagline": "The cool, smoky blue-grey of Highland mist rolling in from the sea.",
-    "description": "Highland Smoke is a sophisticated cool blue-grey - the colour of morning mist in the Scottish Highlands. Moody, refined, and completely distinctive.",
+    "tagline": "A smoky, dark blue-grey.",
+    "description": "Highland Smoke is a smoky, dark blue-grey with gentle shading. We've described it from our own swatch. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -2995,15 +3019,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool and atmospheric, shading from deeper blue-grey to lighter smoke. A subtle sheen at stroke edges."
+        "body": "Smoky blue-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The moody quality suits textured paper well. Beautiful on both warm and cool-toned stocks."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. Medium nibs hit the sweet spot for shading."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/ferris-wheel-press-highland-smoke.jpg",
@@ -3013,12 +3037,13 @@ const INKS = [
     "id": "ferris-wheel-press-leadcase-letters",
     "brand": "Ferris Wheel Press",
     "name": "Leadcase Letters",
+    "colours": ["Grey"],
     "colorPrimary": "#6a6a7a",
     "colorDark": "#4a4a5a",
-    "tagline": "The cool, neutral grey of lead type from an old letterpress.",
-    "description": "Leadcase Letters is a cool, neutral grey inspired by the lead type cases of vintage printers. It's functional and elegant - a grey for people who take their craft seriously.",
+    "tagline": "The leaded grey of metal printing type.",
+    "description": "Leadcast Letters is from Ferris Wheel Press's Print Shoppe collection - a mid grey reminiscent of the metal type used on a printing press. Ferris Wheel Press is a stationery company from Ontario, Canada.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
@@ -3028,15 +3053,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Clean, consistent cool grey. Highly legible and professional - a neutral that earns its place."
+        "body": "Mid grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Works beautifully on all papers. The FWP lubrication makes even a grey ink pleasurable to write with."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Reliable in all nib sizes. A quietly excellent everyday grey."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/ferris-wheel-press-leadcase-letters.jpg",
@@ -3476,10 +3501,11 @@ const INKS = [
     "id": "jherbin-vert-empire",
     "brand": "J.Herbin",
     "name": "Vert Empire",
+    "colours": ["Green"],
     "colorPrimary": "#2a5a2a",
     "colorDark": "#1a3a1a",
-    "tagline": "A deep, commanding imperial green - the green of empire and ambition.",
-    "description": "Vert Empire is a rich, dark forest green with real depth and authority. Named after the verdant colours of imperial France, it's a classic ink for serious writing.",
+    "tagline": "A deep, muted empire green.",
+    "description": "Vert Empire is a deep, muted green with gentle shading - classic and understated. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks in their classic 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3491,15 +3517,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep forest green shading to a brighter mid-green. Consistent and reliable across all stroke widths."
+        "body": "Deep muted green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens slightly on textured stock, which suits its serious character perfectly."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Works beautifully in all nib sizes. J.Herbin inks are known for their smooth, well-behaved flow."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/jherbin-vert-empire.jpg",
@@ -3509,12 +3535,13 @@ const INKS = [
     "id": "jherbin-gris-nuage",
     "brand": "J.Herbin",
     "name": "Gris Nuage",
+    "colours": ["Grey", "Purple"],
     "colorPrimary": "#9a9a9a",
     "colorDark": "#7a7a7a",
-    "tagline": "Cloud grey - soft, neutral, and endlessly versatile.",
-    "description": "Gris Nuage (Cloud Grey) is a clean, medium grey with cool undertones. It's J.Herbin's answer to a sophisticated neutral - calm, professional, and very pleasant to write with.",
+    "tagline": "A soft cloud grey with a lavender tint.",
+    "description": "Gris Nuage - 'cloud grey' - is a soft, light grey with a gentle lavender tint. Quiet and elegant. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks in their classic 30ml bottles.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -3524,15 +3551,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Clean neutral grey with minimal shading. Highly legible and professional."
+        "body": "Soft lavender-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Consistent on all papers. On cream it takes on a slightly warmer character."
+        "body": "Paler on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Reliable and easy in all nib sizes. A true workhorse neutral."
+        "body": "Light in fine nibs - medium and broad are best."
       }
     ],
     "image": "images/jherbin-gris-nuage.jpg",
@@ -3542,11 +3569,11 @@ const INKS = [
     "id": "jherbin-cafe-des-iles",
     "brand": "J.Herbin",
     "name": "Cafe des Iles",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Orange"],
     "colorPrimary": "#7a5a3a",
     "colorDark": "#5a3a1a",
-    "tagline": "The warm, aromatic brown of coffee on a tropical island.",
-    "description": "Cafe des Iles (Island Coffee) is a warm, medium brown with golden undertones. It's the colour of strong coffee with milk - comforting, rich, and deeply satisfying.",
+    "tagline": "A warm, island-coffee brown.",
+    "description": "Café des Îles is a warm, rusty coffee brown with gentle shading. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks in their classic 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3558,15 +3585,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and consistent, shading from dark coffee to lighter caramel in thinner strokes."
+        "body": "Warm rusty brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on cream or aged paper where the warmth deepens beautifully."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and well-behaved in all sizes. A deeply satisfying daily writer."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/jherbin-cafe-des-iles.jpg",
@@ -3579,10 +3606,10 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#8a7a9a",
     "colorDark": "#6a5a7a",
-    "tagline": "Moon dust - a soft, ethereal muted lavender.",
-    "description": "Poussiere de Lune (Moon Dust) is a muted, dusty lavender-grey - soft and atmospheric, like the surface of the moon seen through gauze. Subtle and completely distinctive.",
+    "tagline": "A dusky 'moon dust' plum.",
+    "description": "Poussière de Lune - 'moon dust' - is a dusky, muted plum purple. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks in their classic 30ml bottles.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -3592,15 +3619,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft muted lavender-grey with gentle character. Understated and beautifully refined."
+        "body": "Dusky plum with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper the grey undertones become more pronounced. Lovely for journalling."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows. In fine nibs it can appear quite pale."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/jherbin-poussiere-de-lune.jpg",
@@ -3608,17 +3635,16 @@ const INKS = [
   },
   {
     "id": "jherbin-rouille-dancre",
-    "shimmer": false,
     "brand": "J.Herbin",
     "name": "Rouille d'Ancre",
-    "colours": ["Pink","Orange"],
-    "colorPrimary": "#8a4a1a",
-    "colorDark": "#6a2a0a",
-    "tagline": "Anchor rust - the warm, oxidised orange of old iron by the sea.",
-    "description": "Rouille d'Ancre (Anchor Rust) is a warm, earthy rust-orange that evokes aged metal and maritime history. It's earthy, warm, and completely characterful.",
+    "colours": ["Pink", "Red"],
+    "colorPrimary": "#cd7473",
+    "colorDark": "#aa5951",
+    "tagline": "A dusty, vintage coral-rose.",
+    "description": "Rouille d'Ancre - 'anchor rust' - is a dusty, vintage coral-rose that's hard to pin down, somewhere between pink, mauve and rust. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks in their classic 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -3627,15 +3653,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm rust-orange shading from deep burnt sienna to lighter amber. A gentle golden sheen on coated paper."
+        "body": "Dusty coral-rose with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy quality suits textured paper perfectly - feels deeply organic."
+        "body": "More mauve on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in medium and broad nibs where the warmth and shading show best."
+        "body": "Can be light - a wet or flexible nib suits it."
       }
     ],
     "image": "images/jherbin-rouille-dancre.jpg",
@@ -3645,13 +3671,13 @@ const INKS = [
     "id": "jherbin-cacao-du-bresil",
     "brand": "J.Herbin",
     "name": "Cacao du Bresil",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Grey"],
     "colorPrimary": "#6a4a2a",
     "colorDark": "#4a2a0a",
-    "tagline": "The deep, rich brown of raw Brazilian cacao.",
-    "description": "Cacao du Bresil (Brazilian Cacao) is a dark, earthy brown with genuine depth - darker and richer than a standard brown, evoking the raw, complex flavour of good chocolate.",
+    "tagline": "A cool grey-brown cocoa with lots of shading.",
+    "description": "Cacao du Brésil is a cool grey-brown with excellent saturation and plenty of elegant shading. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks in their classic 30ml bottles.",
     "properties": {
-      "shading": 3,
+      "shading": 4,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -3661,15 +3687,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dark, rich brown shading to a lighter warm tan. Deep and satisfying."
+        "body": "Cool cocoa brown with lots of shading."
       },
       {
         "title": "On textured paper",
-        "body": "Perfect on aged or cream paper where the depth and warmth really shine."
+        "body": "Reads greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. Broad nibs show the full tonal range beautifully."
+        "body": "Shading starts in fine nibs and really shows in broads."
       }
     ],
     "image": "images/jherbin-cacao-du-bresil.jpg",
@@ -3679,13 +3705,14 @@ const INKS = [
     "id": "jherbin-vert-de-gris",
     "brand": "J.Herbin",
     "name": "Vert de Gris",
+    "colours": ["Teal", "Grey"],
     "colorPrimary": "#5a8a6a",
     "colorDark": "#3a6a4a",
-    "tagline": "The soft green-grey of copper left to the elements.",
-    "description": "Vert de Gris (Verdigris) is a muted, grey-green that captures the patina of aged copper. It's subtle and sophisticated - a green for those who prefer atmosphere over vibrancy.",
+    "tagline": "A turquoise-grey verdigris.",
+    "description": "Vert de Gris - 'green-grey' - combines deep turquoise and grey tones, with a little shading in broad nibs. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks in their classic 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -3694,15 +3721,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft and muted, shading from deeper verdigris to lighter grey-green. A hint of sheen on coated papers."
+        "body": "Turquoise-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The muted, organic quality suits textured paper beautifully."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Well-behaved in all sizes. Medium nibs hit the sweet spot."
+        "body": "Broad nibs show a little shading."
       }
     ],
     "image": "images/jherbin-vert-de-gris.jpg",
@@ -3712,13 +3739,14 @@ const INKS = [
     "id": "jherbin-rouge-opera",
     "brand": "J.Herbin",
     "name": "Rouge Opera",
+    "colours": ["Red", "Pink"],
     "colorPrimary": "#c82a2a",
     "colorDark": "#a80a0a",
-    "tagline": "Opera-house red - dramatic, vivid, and made to be seen.",
-    "description": "Rouge Opera is a bold, vivid red - clean and bright, like the curtains of a grand opera house. It's J.Herbin's most confident red, with genuine presence on the page.",
+    "tagline": "A bright, theatrical red.",
+    "description": "Rouge Opéra is a bright, cheerful red with a pink edge. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks in their classic 30ml bottles.",
     "properties": {
       "shading": 2,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -3727,15 +3755,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid and saturated - a true opera-curtain red. Excellent contrast on white paper."
+        "body": "Bright red with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Retains its drama on most papers. On cream it gains a touch of warmth."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent in all sizes. A reliable, confident red."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/jherbin-rouge-opera.jpg",
@@ -3746,10 +3774,11 @@ const INKS = [
     "image": "images/jherbin-vert-cactus.jpg",
     "brand": "J.Herbin",
     "name": "Vert Cactus",
+    "colours": ["Green"],
     "colorPrimary": "#4a7a3a",
     "colorDark": "#2a5a1a",
-    "tagline": "The deep, waxy green of a desert cactus in morning light.",
-    "description": "Vert Cactus (Cactus Green) is a medium-dark green with a slightly yellow lean - like the thick, waxy flesh of a cactus. It's grounded, natural, and quietly lovely.",
+    "tagline": "A dusty, olive cactus green.",
+    "description": "Vert Cactus is a dusty, olive-leaning green, like a desert cactus. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3761,15 +3790,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Medium green with a warm yellow lean and good shading. Natural and satisfying."
+        "body": "Olive green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy warmth suits cream paper beautifully."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Reliable and pleasant in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 12
@@ -3778,13 +3807,13 @@ const INKS = [
     "id": "jherbin-corail-des-tropiques",
     "brand": "J.Herbin",
     "name": "Corail des Tropiques",
-    "colours": ["Orange"],
+    "colours": ["Orange", "Red"],
     "colorPrimary": "#d46a5a",
     "colorDark": "#b44a3a",
-    "tagline": "Tropical coral - warm, vivid, and full of sunshine.",
-    "description": "Corail des Tropiques (Tropical Coral) is a warm, vivid coral - halfway between orange and pink, with the energy of a tropical reef. Bright, cheerful, and completely distinctive.",
+    "tagline": "A bright tropical coral.",
+    "description": "Corail des Tropiques is a bright, warm coral that sits between orange and red. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -3794,15 +3823,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and vivid coral with consistent saturation. Very cheerful against white paper."
+        "body": "Bright coral with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Takes on a slightly peachier character on cream - warm and inviting."
+        "body": "Slightly deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and well-behaved in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/jherbin-corail-des-tropiques.jpg",
@@ -3810,17 +3839,16 @@ const INKS = [
   },
   {
     "id": "jherbin-larmes-de-cassis",
-    "sheen": false,
     "brand": "J.Herbin",
     "name": "Larmes de Cassis",
-    "colours": ["Pink"],
+    "colours": ["Purple", "Pink"],
     "colorPrimary": "#6a1a3a",
     "colorDark": "#3a0a1a",
-    "tagline": "Blackcurrant tears - deep, dark pink with a bittersweet soul.",
-    "description": "Larmes de Cassis (Blackcurrant Tears) is a very dark, rich pink - almost black, revealing its true rose nature only in lighter strokes or at stroke edges. Deeply dramatic.",
+    "tagline": "Blackcurrant tears - a rich magenta-purple.",
+    "description": "Larmes de Cassis - 'blackcurrant tears' - is a rich magenta-purple with gentle shading. Smooth and quick drying. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -3829,15 +3857,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Near-black purple shading to a rich dark violet. A striking green or red sheen appears at stroke edges on coated paper."
+        "body": "Magenta-purple with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens further on textured stock. Still beautiful - one of J.Herbin's darkest inks."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the depth and sheen reveal themselves."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/jherbin-larmes-de-cassis.jpg",
@@ -3850,10 +3878,10 @@ const INKS = [
     "colours": ["Pink"],
     "colorPrimary": "#9a7a8a",
     "colorDark": "#7a5a6a",
-    "tagline": "An old-fashioned bouquet - soft, dusty mauve with vintage charm.",
-    "description": "Bouquet d'Antan (Old Bouquet) is a muted, dusty mauve-rose - the colour of dried flowers in a Victorian vase. Soft, nostalgic, and completely lovely.",
+    "tagline": "A dusty, old-fashioned rose.",
+    "description": "Bouquet d'Antan - 'bouquet of yesteryear' - is a soft, dusty rose pink with a vintage feel. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -3863,15 +3891,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft and dusty mauve-rose. Gentle and refined - the colour of pressed petals."
+        "body": "Dusty rose with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where the vintage quality really comes alive."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in all sizes. Fine nibs give an especially delicate result."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/jherbin-bouquet-dantan.jpg",
@@ -3881,10 +3909,11 @@ const INKS = [
     "id": "jherbin-vert-olive",
     "brand": "J.Herbin",
     "name": "Vert Olive",
+    "colours": ["Green", "Yellow"],
     "colorPrimary": "#5a6a2a",
     "colorDark": "#3a4a0a",
-    "tagline": "The warm, earthy green of ripe olives and Provençal sun.",
-    "description": "Vert Olive (Olive Green) is a warm, slightly yellow-green olive - earthy, grounded, and unmistakably French in character. Perfect for those who love muted, sophisticated greens.",
+    "tagline": "A bright yellow-green olive.",
+    "description": "Vert Olive is a bright, yellow-leaning green - lovely for journaling and drawing, though it can be fussy in some pens. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -3896,15 +3925,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm olive with yellow-green lean and good shading. Earthy and grounded."
+        "body": "Yellow-green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Perfect on cream or aged paper where it reads as completely natural."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all nib sizes."
+        "body": "Can vary between pens - a wetter nib suits it."
       }
     ],
     "image": "images/jherbin-vert-olive.jpg",
@@ -3914,13 +3943,14 @@ const INKS = [
     "id": "jherbin-bleu-nuit",
     "brand": "J.Herbin",
     "name": "Bleu Nuit",
+    "colours": ["Blue"],
     "colorPrimary": "#1a2a5a",
     "colorDark": "#0a1a3a",
-    "tagline": "Night blue - the deep, starless indigo of 3am.",
-    "description": "Bleu Nuit (Night Blue) is a very dark navy - almost black at first glance, revealing its true deep blue nature only in lighter strokes. Authoritative and quietly beautiful.",
+    "tagline": "A deep night blue.",
+    "description": "Bleu Nuit - 'night blue' - is a deep, saturated blue. A classic, dependable writer. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -3929,15 +3959,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Very dark blue shading to a rich midnight navy. A subtle blue sheen on coated papers."
+        "body": "Deep blue with low shading."
       },
       {
         "title": "On textured paper",
-        "body": "Deepens further on textured stock. Almost black but unmistakably blue."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. Broad nibs reveal the shading and depth most clearly."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/jherbin-bleu-nuit.jpg",
@@ -3950,11 +3980,11 @@ const INKS = [
     "colours": ["Black"],
     "colorPrimary": "#1a1a2a",
     "colorDark": "#0a0a1a",
-    "tagline": "Black pearl - the deepest, most elegant black in the J.Herbin range.",
-    "description": "Perle Noire (Black Pearl) is J.Herbin's flagship black - rich, deep, and with just a whisper of blue-black depth. It's elegant without being harsh, and writes beautifully.",
+    "tagline": "A soft, classic black pearl.",
+    "description": "Perle Noire - 'black pearl' - is a classic, well-behaved black. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
       "shading": 1,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -3963,15 +3993,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep, rich black with a very subtle blue undertone. Highly legible on all papers."
+        "body": "A neutral black."
       },
       {
         "title": "On textured paper",
-        "body": "Consistent on all stocks. A reliable, beautiful black for daily use."
+        "body": "Crisp on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all nib sizes - one of the most refined blacks available."
+        "body": "Reliable in any nib."
       }
     ],
     "image": "images/jherbin-perle-noire.jpg",
@@ -3982,14 +4012,14 @@ const INKS = [
     "shimmer": true,
     "brand": "J.Herbin",
     "name": "Vert Atlantide",
-    "colours": ["Green"],
+    "colours": ["Green", "Teal"],
     "colorPrimary": "#2a6a5a",
     "colorDark": "#1a4a3a",
-    "tagline": "A deep, mysterious teal-green from a sunken world.",
-    "description": "Vert Atlantide (Atlantis Green) is a deep, complex teal with blue-green mystery. It evokes the legendary lost city - dark, deep, and carrying the weight of the ocean.",
+    "tagline": "A deep blue-green with shimmer.",
+    "description": "Vert Atlantide is a deep blue-green with a shimmer finish. Shake well before filling. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -3998,15 +4028,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep and mysterious teal-green with excellent shading. A subtle blue-gold sheen at stroke edges."
+        "body": "Deep blue-green with shimmer in pooled ink."
       },
       {
         "title": "On textured paper",
-        "body": "The depth and mystery carry through on textured stock. A very special ink."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Outstanding in medium and broad nibs where the depth shows fully."
+        "body": "Broad nibs show the shimmer best."
       }
     ],
     "image": "images/jherbin-vert-atlantide.jpg",
@@ -4018,14 +4048,14 @@ const INKS = [
     "sheen": true,
     "brand": "J.Herbin",
     "name": "Emerald of Chivor",
-    "colours": ["Blue"],
-    "colorPrimary": "#1a3a7a",
-    "colorDark": "#0a2050",
-    "tagline": "A legendary 1670 ink - deep sapphire-blue with gold shimmer and red sheen.",
-    "description": "Emerald of Chivor is one of the most famous fountain pen inks in the world. A deep, rich blue with gold shimmer particles and a striking red sheen - it's the ink that proves fountain pen writing can be truly spectacular.",
+    "colours": ["Teal"],
+    "colorPrimary": "#1f5f6e",
+    "colorDark": "#123a44",
+    "tagline": "A teal with gold shimmer and red sheen.",
+    "description": "Emerald of Chivor is a deep teal from the 1670 Anniversary collection, with gold shimmer and a red sheen where it pools. From J. Herbin's 1670 Anniversary collection of richly saturated inks with gold shimmer. Shake well before filling. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
-      "shading": 2,
-      "sheen": 5,
+      "shading": 3,
+      "sheen": 3,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4034,15 +4064,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep emerald green with gold shimmer and a dramatic red sheen at stroke edges. On coated paper the effect is breathtaking."
+        "body": "Teal with gold shimmer and red sheen."
       },
       {
         "title": "On textured paper",
-        "body": "The shimmer and sheen are less dramatic on rough paper, but the deep green still impresses."
+        "body": "Less sheen on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Use in broad or medium nibs for maximum effect. Shake frequently and flush your pen thoroughly after use."
+        "body": "Broad nibs show it off best."
       }
     ],
     "image": "images/jherbin-emerald-of-chivor.jpg",
@@ -4051,16 +4081,16 @@ const INKS = [
   {
     "id": "jherbin-stormy-grey",
     "shimmer": true,
-    "sheen": false,
     "brand": "J.Herbin",
     "name": "Stormy Grey",
+    "colours": ["Grey"],
     "colorPrimary": "#5a6a7a",
     "colorDark": "#3a4a5a",
-    "tagline": "A 1670 grey with gold shimmer and a hint of thunder.",
-    "description": "Stormy Grey is a sophisticated dark grey from the J.Herbin 1670 anniversary range, with gold shimmer that makes every stroke look like lightning caught in ink. Moody and spectacular.",
+    "tagline": "A deep coal grey with gold flecks.",
+    "description": "Stormy Grey is a deep anthracite grey with flecks of gold shimmer. From J. Herbin's 1670 Anniversary collection of richly saturated inks with gold shimmer. Shake well before filling. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
-      "shading": 2,
-      "sheen": 4,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4069,15 +4099,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep stormy grey with striking gold shimmer. On coated paper it looks genuinely electric."
+        "body": "Coal grey with gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Shimmer is subtler on rough paper but the dark grey remains impressive."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Medium to broad nibs show the shimmer best. Shake before use, flush pen after."
+        "body": "Broad nibs show the shimmer best."
       }
     ],
     "image": "images/jherbin-stormy-grey.jpg",
@@ -4086,16 +4116,16 @@ const INKS = [
   {
     "id": "jherbin-hematite-red",
     "shimmer": true,
-    "sheen": true,
     "brand": "J.Herbin",
     "name": "Hematite Red",
+    "colours": ["Red"],
     "colorPrimary": "#6a1a1a",
     "colorDark": "#4a0a0a",
-    "tagline": "A 1670 deep red with metallic gold shimmer - like crushed iron ore.",
-    "description": "Hematite Red is a dark, rich red from the J.Herbin 1670 range - almost garnet in shade, with gold shimmer that catches the light dramatically. One of the most striking red inks available.",
+    "tagline": "A bright, earthy red with gold shimmer.",
+    "description": "Rouge Hématite is a bright red with gold shimmer, echoing J. Herbin's historic logo colour. From J. Herbin's 1670 Anniversary collection of richly saturated inks with gold shimmer. Shake well before filling. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
-      "shading": 2,
-      "sheen": 4,
+      "shading": 3,
+      "sheen": 1,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4104,15 +4134,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep garnet-red with dramatic gold shimmer. On coated paper the shimmer is truly spectacular."
+        "body": "Bright red with gold shimmer."
       },
       {
         "title": "On textured paper",
-        "body": "The shimmer is less visible but the deep red remains very beautiful."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs. Always shake before use and clean your pen thoroughly after."
+        "body": "Broad nibs show the shimmer best."
       }
     ],
     "image": "images/jherbin-hematite-red.jpg",
@@ -4123,11 +4153,11 @@ const INKS = [
     "shimmer": true,
     "brand": "J.Herbin",
     "name": "Caroube de Chypre",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Red"],
     "colorPrimary": "#5a3a1a",
     "colorDark": "#3a1a0a",
-    "tagline": "The deep, dark brown of Cypriot carob pods in autumn.",
-    "description": "Caroube de Chypre (Cypriot Carob) is a very dark brown - deeper and richer than most browns, with warmth that only emerges in lighter strokes. It's the ink equivalent of dark chocolate.",
+    "tagline": "A carob red-brown with gold shimmer.",
+    "description": "Caroube de Chypre - 'Cypriot carob' - is a warm red-brown with gold shimmer. From J. Herbin's 1670 Anniversary collection of richly saturated inks with gold shimmer. Shake well before filling. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -4139,15 +4169,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Very dark brown, almost black, shading to a warmer dark chocolate in lighter strokes."
+        "body": "Red-brown with gold shimmer."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on aged or cream paper where the depth and warmth show best."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. The full range of shading shows best in broad nibs."
+        "body": "Broad nibs show the shimmer best."
       }
     ],
     "image": "images/jherbin-caroube-de-chypre.jpg",
@@ -4161,8 +4191,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#6a5a3a",
     "colorDark": "#4a3a1a",
-    "tagline": "Tea-leaf brown - the earthy, comforting colour at the bottom of the cup.",
-    "description": "Lie de Thé (Tea Leaf) is a warm, medium brown with a green-earthy lean - the colour of spent tea leaves. Comforting, natural, and quietly sophisticated.",
+    "tagline": "The dark brown of tea dregs.",
+    "description": "Lie de Thé - 'tea dregs' - is a dark, earthy brown. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -4174,15 +4204,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm brown with a subtle green lean, shading from rich tea-brown to lighter amber."
+        "body": "Dark tea brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Particularly beautiful on aged or cream paper - feels right at home."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and pleasant in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 12
@@ -4192,13 +4222,14 @@ const INKS = [
     "image": "images/jherbin-rouge-grenat.jpg",
     "brand": "J.Herbin",
     "name": "Rouge Grenat",
+    "colours": ["Red"],
     "colorPrimary": "#7a1a2a",
     "colorDark": "#5a0a1a",
-    "tagline": "Garnet red - the deep, glowing colour of a precious stone.",
-    "description": "Rouge Grenat (Garnet Red) is a deep, rich red-purple - the colour of garnet gemstones. Darker than a bright red, more complex than a simple burgundy, it's a deeply satisfying ink.",
+    "tagline": "A rich, saturated garnet red.",
+    "description": "Rouge Grenat is a lush, highly saturated garnet red that reads well in fine and broad nibs alike, with a little shading in broad strokes. J. Herbin is a French ink maker founded in 1670, known for natural, well-behaved inks.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4207,15 +4238,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep garnet shading from near-black red to a warm ruby. A subtle red sheen at stroke edges on coated paper."
+        "body": "Garnet red with a little shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth and depth show beautifully on cream paper."
+        "body": "More maroon on ivory paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. Broad nibs reveal the full shading and occasional sheen."
+        "body": "Readable in every nib width."
       }
     ],
     "stock": 12
@@ -4224,10 +4255,11 @@ const INKS = [
     "id": "kaweco-midnight-blue",
     "brand": "Kaweco",
     "name": "Midnight Blue",
+    "colours": ["Blue"],
     "colorPrimary": "#1a2a5a",
     "colorDark": "#0a1a3a",
-    "tagline": "A deep, classic midnight blue - Kaweco's signature colour.",
-    "description": "Kaweco Midnight Blue is a rich, dark navy that leans more blue than black. It's a dependable, well-behaved classic blue-black with the Kaweco quality that makes their inks a pleasure to write with.",
+    "tagline": "A dependable blue-black.",
+    "description": "Midnight Blue is one of the most blue-black of blue-blacks - a quiet workhorse that grows on you. Quick drying with no feathering. Kaweco is a German pen maker, founded in 1883.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -4239,15 +4271,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep navy blue with excellent legibility and consistent flow. Minimal shading but very refined."
+        "body": "Blue-black with low shading."
       },
       {
         "title": "On textured paper",
-        "body": "Reliable on all paper types. A true daily-use blue-black."
+        "body": "Clean on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all nib sizes - Kaweco inks are famously well-behaved."
+        "body": "Reliable in any nib."
       }
     ],
     "image": "images/kaweco-midnight-blue.jpg",
@@ -4258,12 +4290,13 @@ const INKS = [
     "image": "images/kaweco-smokey-grey.jpg",
     "brand": "Kaweco",
     "name": "Smokey Grey",
+    "colours": ["Grey", "Brown"],
     "colorPrimary": "#5a5a6a",
     "colorDark": "#3a3a4a",
-    "tagline": "A cool, smoky grey with subtle depth and understated elegance.",
-    "description": "Kaweco Smokey Grey is a cool, medium grey with a slight blue undertone - like smoke in a November sky. Sophisticated and versatile, it's the grey for writers who want something more than plain.",
+    "tagline": "A warm, smoky grey-brown.",
+    "description": "Smokey Grey is a warm grey with a brown edge - like wisps of smoke from a fire. Kaweco is a German pen maker, founded in 1883.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -4273,15 +4306,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool grey with a hint of blue depth. Consistent and highly legible."
+        "body": "Smoky grey-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Works on all paper types. A versatile, sophisticated neutral."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and reliable in all sizes - Kaweco quality throughout."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 20
@@ -4294,8 +4327,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#9a6a2a",
     "colorDark": "#7a4a0a",
-    "tagline": "The warm, golden sweetness of freshly made caramel.",
-    "description": "Kaweco Caramel Brown is a warm, bright brown with golden undertones - lighter and more amber than a traditional dark brown. It's cheerful and warm, like a perfect caramel.",
+    "tagline": "A rich caramel-chocolate brown.",
+    "description": "Caramel Brown is a rich, not-too-dark brown that shades on most papers. It can run a little dry in some pens. Kaweco is a German pen maker, founded in 1883.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -4307,15 +4340,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm golden-brown with good shading from rich caramel to lighter amber."
+        "body": "Caramel brown with shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where the warmth really glows."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and pleasant in all sizes."
+        "body": "A touch dry - a wetter nib suits it."
       }
     ],
     "stock": 20
@@ -4324,14 +4357,14 @@ const INKS = [
     "id": "kwz-brown-pink",
     "brand": "KWZ Ink",
     "name": "Brown Pink",
-    "colours": ["Pink","Brown"],
+    "colours": ["Pink", "Brown"],
     "colorPrimary": "#9a6a5a",
     "colorDark": "#7a4a3a",
-    "tagline": "A warm, dusty blend of brown and rose - unique and quietly lovely.",
-    "description": "Brown Pink is exactly what it sounds like - a warm, muted colour that sits between dusty rose and warm brown. KWZ at their most creative, making a colour that really shouldn't work but absolutely does.",
+    "tagline": "A dusty mauve-burgundy.",
+    "description": "Brown Pink is a muted, dusty mauve with burgundy and brown tones - more vintage rose than brown. Shading shows best in flex and broad nibs. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4340,15 +4373,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and dusty, shading between dusty rose and brown. Genuinely unique."
+        "body": "Dusty mauve-burgundy."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper it takes on a warm, vintage quality."
+        "body": "Flatter on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and well-behaved in all sizes."
+        "body": "Shades best in flex and broad nibs."
       }
     ],
     "image": "images/kwz-brown-pink.jpg",
@@ -4358,13 +4391,14 @@ const INKS = [
     "id": "kwz-grey-plum",
     "brand": "KWZ Ink",
     "name": "Grey Plum",
+    "colours": ["Grey", "Purple"],
     "colorPrimary": "#6a5a7a",
     "colorDark": "#4a3a5a",
-    "tagline": "A muted, smoky purple-grey - like a plum seen through fog.",
-    "description": "Grey Plum is a sophisticated muted purple with grey undertones - the colour of a ripe plum in overcast light. It's a purple for people who find straight purples too bright.",
+    "tagline": "A purple-leaning plum grey.",
+    "description": "Grey Plum is one of the few purple-leaning greys - a dark, smoky plum-grey. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4373,15 +4407,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Muted purple-grey with good shading. The grey and purple elements shift depending on stroke weight."
+        "body": "Smoky plum-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The muted, smoky quality suits textured paper well."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs where the full tonal range shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/kwz-grey-plum.jpg",
@@ -4391,13 +4425,14 @@ const INKS = [
     "id": "kwz-cherry",
     "brand": "KWZ Ink",
     "name": "Cherry",
+    "colours": ["Red"],
     "colorPrimary": "#9a1a2a",
     "colorDark": "#7a0a0a",
-    "tagline": "Deep, vivid cherry red - bright, bold, and completely satisfying.",
-    "description": "KWZ Cherry is a rich, vivid red with warmth and depth. It's a proper cherry red - not too dark, not too orange, just beautifully, classically red.",
+    "tagline": "A bright cherry red.",
+    "description": "Cherry is a bright, juicy cherry red. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4406,15 +4441,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich cherry red with good shading and a hint of red sheen on coated papers."
+        "body": "Bright red with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Vivid and warm on cream paper where the depth comes through beautifully."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. One of the best reds in the KWZ range."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/kwz-cherry.jpg",
@@ -4427,11 +4462,11 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#5a2a7a",
     "colorDark": "#3a0a5a",
-    "tagline": "A fun, deep berry-purple inspired by the classic cartoon confection.",
-    "description": "Gummiberry is a rich, saturated berry-purple - vivid and playful, like the magical berry juice from the beloved animated series. Full of energy and completely fun.",
+    "tagline": "A bright purple with lots of personality.",
+    "description": "Gummiberry is a bright, characterful purple that shades from dark purple to light violet. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4440,15 +4475,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid berry-purple with good shading and a blue-purple sheen on coated papers."
+        "body": "Purple shading to violet."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its vibrancy well on most papers."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Works well in all sizes. Broad nibs show the sheen best."
+        "body": "Stub and broad nibs show the shading best."
       }
     ],
     "image": "images/kwz-gummiberry.jpg",
@@ -4459,11 +4494,11 @@ const INKS = [
     "image": "images/kwz-brown-3.jpg",
     "brand": "KWZ Ink",
     "name": "Brown 3",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Orange"],
     "colorPrimary": "#7a5a3a",
     "colorDark": "#5a3a1a",
-    "tagline": "A warm, classic brown - simple, honest, and thoroughly reliable.",
-    "description": "KWZ Brown 3 is a warm, medium brown that does exactly what it should. No gimmicks, just a well-made, thoroughly satisfying brown for daily writing.",
+    "tagline": "A warm, orange-tinged brown.",
+    "description": "Brown #3 is a warm brown with an orange glow in the lighter strokes. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -4475,15 +4510,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Classic warm brown with good shading from dark to lighter tan. Completely dependable."
+        "body": "Warm brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Perfect on cream or aged paper where brown truly belongs."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Reliable in all nib sizes. A genuinely good everyday brown."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 25
@@ -4493,12 +4528,13 @@ const INKS = [
     "image": "images/kwz-warsaw-dreaming.jpg",
     "brand": "KWZ Ink",
     "name": "Warsaw Dreaming",
+    "colours": ["Black", "Blue"],
     "colorPrimary": "#4a5a7a",
     "colorDark": "#2a3a5a",
-    "tagline": "A moody, dreaming blue-grey - the colour of a city at dusk.",
-    "description": "Warsaw Dreaming is a sophisticated blue-grey that evokes the atmospheric quality of a European city in twilight. Muted, thoughtful, and deeply characterful.",
+    "tagline": "A very dark, dreamy blue-black.",
+    "description": "Warsaw Dreaming is a very dark ink that sits between blue-black and black, with a dusky edge. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
-      "shading": 3,
+      "shading": 2,
       "sheen": 1,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -4508,15 +4544,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Moody blue-grey with good shading. The blue and grey elements shift beautifully across stroke widths."
+        "body": "Very dark blue-black."
       },
       {
         "title": "On textured paper",
-        "body": "The atmospheric quality suits textured paper. Beautiful for journalling."
+        "body": "Near-black on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. Medium nibs show the full character best."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 25
@@ -4526,10 +4562,11 @@ const INKS = [
     "image": "images/kwz-grey-lux.jpg",
     "brand": "KWZ Ink",
     "name": "Grey Lux",
+    "colours": ["Grey", "Green"],
     "colorPrimary": "#7a7a8a",
     "colorDark": "#5a5a6a",
-    "tagline": "A luxurious, refined grey - cool, polished, and professional.",
-    "description": "Grey Lux is a cool, polished medium-grey with a subtle blue lean. 'Lux' suits it well - there's something refined and high-quality about this ink that elevates even ordinary writing.",
+    "tagline": "A dark green-tinged grey.",
+    "description": "Grey Lux is a dark grey with a green tinge. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -4541,15 +4578,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool, polished grey with a subtle blue-silver quality. Very professional."
+        "body": "Dark green-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Works well on all papers. On cream it appears slightly warmer."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and reliable in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 25
@@ -4559,13 +4596,14 @@ const INKS = [
     "image": "images/kwz-maroon.jpg",
     "brand": "KWZ Ink",
     "name": "Maroon",
+    "colours": ["Red", "Brown"],
     "colorPrimary": "#6a1a1a",
     "colorDark": "#4a0a0a",
-    "tagline": "A deep, rich maroon - dark, warm, and completely classic.",
-    "description": "KWZ Maroon is a dark, warm red-brown with genuine depth. It's a proper maroon - not a bright red, not a plain brown, but that perfect space between them.",
+    "tagline": "A saturated maroon-burgundy.",
+    "description": "Maroon is a deep, saturated maroon with a burgundy lean. Rich and fun to work with, though it can run a touch dry. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4574,15 +4612,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep, rich maroon shading from near-black to warm ruby-brown. A subtle red sheen on coated papers."
+        "body": "Deep maroon with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where the warmth and depth come through."
+        "body": "Browner on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. One of the most satisfying dark reds available."
+        "body": "A little dry - wetter nibs suit it."
       }
     ],
     "stock": 25
@@ -4592,14 +4630,14 @@ const INKS = [
     "image": "images/kwz-cappuccino.jpg",
     "brand": "KWZ Ink",
     "name": "Cappuccino",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Yellow"],
     "colorPrimary": "#8a6a4a",
     "colorDark": "#6a4a2a",
-    "tagline": "The warm, creamy brown of a perfectly made cappuccino.",
-    "description": "KWZ Cappuccino is a warm, medium-light brown with creamy character - the colour of that perfect foam-and-espresso swirl in the cup. Comforting and genuinely pleasant.",
+    "tagline": "A golden coffee-and-foam brown.",
+    "description": "Cappuccino is a warm, golden tan-brown with darker edges where it pools - like coffee under the foam. We've described it from our own swatch. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
-      "shading": 3,
-      "sheen": 0,
+      "shading": 4,
+      "sheen": 1,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4608,29 +4646,29 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm, creamy brown shading from rich cappuccino to lighter latte. Completely satisfying."
+        "body": "Golden tan with darker edges."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where it reads as genuinely luxurious."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Well-behaved and pleasant in all sizes."
+        "body": "Broad nibs show the shading best."
       }
     ],
     "stock": 25
   },
   {
     "id": "kwz-berry",
-    "sheen": false,
+    "sheen": true,
     "brand": "KWZ Ink",
     "name": "Berry",
     "colours": ["Purple"],
     "colorPrimary": "#5a1a7a",
     "colorDark": "#3a0a52",
-    "tagline": "A deep, dark berry - rich, full, and brimming with character.",
-    "description": "KWZ Berry is a dark, saturated berry-purple - the colour of ripe blackberries crushed on your fingers. Deep, rich, and completely full of character.",
+    "tagline": "A juicy berry purple with gold sheen.",
+    "description": "Berry is a juicy violet-purple with a gold sheen in heavier lines. KWZ is a small, family-run ink maker from Poland.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -4642,15 +4680,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dark and rich berry-purple, shading from near-black to deep violet. A striking red or pink sheen on coated papers."
+        "body": "Berry purple with gold sheen in pooled ink."
       },
       {
         "title": "On textured paper",
-        "body": "The depth carries through on textured stock. Still very impressive."
+        "body": "Less sheen on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the sheen and depth really show."
+        "body": "Broad nibs show the sheen best."
       }
     ],
     "stock": 25,
@@ -4697,10 +4735,11 @@ const INKS = [
     "image": "images/laban-aphrodite-pink.jpg",
     "brand": "Laban",
     "name": "Aphrodite Pink",
+    "colours": ["Pink", "Brown"],
     "colorPrimary": "#e07a9a",
     "colorDark": "#c05a7a",
-    "tagline": "Warm, goddess-worthy pink - the blush of love itself.",
-    "description": "Named for the goddess of love, Aphrodite Pink is a warm, vivid pink with a coral lean. Bright and confident, it's a pink that announces itself without apology.",
+    "tagline": "A dark rose pink with a brown undertone.",
+    "description": "Aphrodite Pink is a dark, dusty rose pink with a brown undertone - unusual and lovely. Part of Laban's Greek Mythology collection, made in Taiwan in 50ml bottles. Also available in our Laban Greek Mythology set.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -4712,15 +4751,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and vivid, reading as a confident coral-pink. Good contrast against white paper."
+        "body": "Dusty rose with little shading."
       },
       {
         "title": "On textured paper",
-        "body": "Takes on a slightly peachy quality on cream paper - warm and inviting."
+        "body": "Browner on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and well-behaved in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 20
@@ -4730,13 +4769,14 @@ const INKS = [
     "image": "images/laban-hera-green.jpg",
     "brand": "Laban",
     "name": "Hera Green",
+    "colours": ["Green", "Teal"],
     "colorPrimary": "#2a7a3a",
     "colorDark": "#1a5a2a",
-    "tagline": "The deep, regal green of the queen of Olympus.",
-    "description": "Named for the queen of the gods, Hera Green is a rich, saturated forest green - deep, authoritative, and completely commanding on the page.",
+    "tagline": "A dark green workhorse with teal undertones.",
+    "description": "Hera Dark Green is a traditional dark green with teal and grey undertones - a quick-drying workhorse. Part of Laban's Greek Mythology collection, made in Taiwan in 50ml bottles. Also available in our Laban Greek Mythology set.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4745,31 +4785,33 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich forest green with good shading. A subtle gold sheen can appear on coated paper."
+        "body": "Dark teal-green with low shading."
       },
       {
         "title": "On textured paper",
-        "body": "Deep and earthy on textured stock. Beautiful on cream paper."
+        "body": "Holds up on cheaper paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes. Broad nibs reveal the full depth."
+        "body": "Quick drying in any nib."
       }
     ],
     "stock": 20
   },
   {
     "id": "laban-artemis-navy",
+    "sheen": true,
     "image": "images/laban-artemis-navy.jpg",
     "brand": "Laban",
     "name": "Artemis Navy",
+    "colours": ["Blue"],
     "colorPrimary": "#1a2a5a",
     "colorDark": "#0a1a3a",
-    "tagline": "Deep, moonlit navy - the colour of the hunt at midnight.",
-    "description": "Named for the goddess of the hunt and the moon, Artemis Navy is a deep, classic navy with real depth and authority. Dark, reliable, and endlessly wearable.",
+    "tagline": "A jewel-toned sapphire with a red sheen.",
+    "description": "Artemis Navy reads more like a jewel-toned sapphire than navy, with a hint of purple and a subtle red sheen. Part of Laban's Greek Mythology collection, made in Taiwan in 50ml bottles. Also available in our Laban Greek Mythology set.",
     "properties": {
       "shading": 2,
-      "sheen": 0,
+      "sheen": 2,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4778,15 +4820,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep navy with consistent flow and good legibility. A proper blue-black for serious writing."
+        "body": "Sapphire blue with red sheen at the edges."
       },
       {
         "title": "On textured paper",
-        "body": "Works beautifully on all papers. A dependable everyday navy."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Reliable in all nib sizes - an excellent daily writer."
+        "body": "Broad nibs show the sheen best."
       }
     ],
     "stock": 20
@@ -4796,14 +4838,15 @@ const INKS = [
     "image": "images/laban-athena-grey.jpg",
     "brand": "Laban",
     "name": "Athena Grey",
+    "colours": ["Grey", "Blue"],
     "colorPrimary": "#7a7a8a",
     "colorDark": "#5a5a6a",
-    "tagline": "The wise, measured grey of the goddess of wisdom.",
-    "description": "Named for the goddess of wisdom, Athena Grey is a cool, refined grey with a subtle blue lean. Considered, intelligent-feeling, and thoroughly sophisticated.",
+    "tagline": "A dark, slate blue-grey.",
+    "description": "Athena Grey is a dark, slate-like grey with a blue edge. Slow to dry. Part of Laban's Greek Mythology collection, made in Taiwan in 50ml bottles. Also available in our Laban Greek Mythology set.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "Any paper"
@@ -4811,15 +4854,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool grey with a hint of blue. Highly professional and legible."
+        "body": "Slate blue-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Consistent on all papers. A refined, versatile neutral."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Well-behaved in all nib sizes."
+        "body": "Give it time to dry."
       }
     ],
     "stock": 20
@@ -4828,13 +4871,14 @@ const INKS = [
     "id": "laban-apollo-orange",
     "brand": "Laban",
     "name": "Apollo Orange",
+    "colours": ["Orange"],
     "colorPrimary": "#c86a1a",
     "colorDark": "#a84a0a",
-    "tagline": "The warm, blazing orange of the sun god in full glory.",
-    "description": "Named for the god of the sun, Apollo Orange is a bold, warm orange that radiates energy and warmth. Vivid without being garish - it's orange done properly.",
+    "tagline": "A bright pinkish orange with strong shading.",
+    "description": "Apollo Orange is a bright, pinkish orange with strong shading and no sheen. Clean your pen if you leave it inked for a long time. Part of Laban's Greek Mythology collection, made in Taiwan in 50ml bottles. Also available in our Laban Greek Mythology set.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4843,15 +4887,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm and vivid, shading from deep amber-orange to lighter golden. A gentle sheen on coated papers."
+        "body": "Bright orange with strong shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth deepens beautifully on cream paper."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the warmth and shading fully show."
+        "body": "Broad nibs show the shading best."
       }
     ],
     "image": "images/laban-apollo-orange.jpg",
@@ -4861,11 +4905,11 @@ const INKS = [
     "id": "laban-demeter-brown",
     "brand": "Laban",
     "name": "Demeter Brown",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Green"],
     "colorPrimary": "#7a5a2a",
     "colorDark": "#5a3a0a",
-    "tagline": "The warm, fertile brown of the earth goddess - grounded and nourishing.",
-    "description": "Named for the goddess of the harvest, Demeter Brown is a warm, earthy medium brown. Like good soil - grounded, natural, and deeply satisfying to write with.",
+    "tagline": "A dark, earthy olive-brown.",
+    "description": "Demeter Brown is a dark, earthy brown with an olive edge - the goddess of the harvest. Part of Laban's Greek Mythology collection, made in Taiwan in 50ml bottles. Also available in our Laban Greek Mythology set.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -4877,15 +4921,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm earthy brown with good shading from dark to lighter tan. Natural and dependable."
+        "body": "Dark olive-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Perfect on aged or cream paper where the earthiness truly sings."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and pleasant in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/laban-demeter-brown.jpg",
@@ -4895,10 +4939,11 @@ const INKS = [
     "id": "laban-hermes-sky-blue",
     "brand": "Laban",
     "name": "Hermes Sky Blue",
+    "colours": ["Blue"],
     "colorPrimary": "#5a9ac8",
     "colorDark": "#3a7aa8",
-    "tagline": "The bright, open sky-blue of the messenger god in flight.",
-    "description": "Named for the swift messenger of the gods, Hermes Sky Blue is a clean, vivid sky-blue - open, communicative, and full of energy. The perfect blue for letters and correspondence.",
+    "tagline": "A bright, light sky blue.",
+    "description": "Hermes Sky Blue is a bright sky blue on the lighter side, shading towards paler tones as it dries, with a faint sheen. Part of Laban's Greek Mythology collection, made in Taiwan in 50ml bottles. Also available in our Laban Greek Mythology set.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -4910,15 +4955,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright and vivid sky-blue with good shading. Clean and communicative."
+        "body": "Light sky blue with shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its brightness well. Best on white paper for maximum vibrancy."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Works beautifully in all nib sizes."
+        "body": "A slightly dry flow - wetter nibs suit it."
       }
     ],
     "image": "images/laban-hermes-sky-blue.jpg",
@@ -4928,13 +4973,14 @@ const INKS = [
     "id": "laban-ares-red",
     "brand": "Laban",
     "name": "Ares Red",
+    "colours": ["Red"],
     "colorPrimary": "#9a1a1a",
     "colorDark": "#7a0a0a",
-    "tagline": "Bold, battle-ready red - the colour of the god of war.",
-    "description": "Named for the god of war, Ares Red is a vivid, saturated red with real intensity. Not quite as dark as oxblood or burgundy - this is a red that means business.",
+    "tagline": "A bold red with a hint of orange.",
+    "description": "Ares Red is a bold, mid-tone red with a hint of orange - great for everyday use. Part of Laban's Greek Mythology collection, made in Taiwan in 50ml bottles. Also available in our Laban Greek Mythology set.",
     "properties": {
       "shading": 2,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4943,15 +4989,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid, confident red with good saturation. A bold red sheen can appear on coated papers."
+        "body": "Bold red with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Strong and vibrant on all papers."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent in all sizes. A reliable, powerful red."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/laban-ares-red.jpg",
@@ -4959,15 +5005,17 @@ const INKS = [
   },
   {
     "id": "laban-zeus-purple",
+    "sheen": true,
     "brand": "Laban",
     "name": "Zeus Purple",
+    "colours": ["Purple"],
     "colorPrimary": "#4a1a6a",
     "colorDark": "#2a0a4a",
-    "tagline": "A commanding deep purple - the imperial colour of the king of gods.",
-    "description": "Named for the king of Olympus, Zeus Purple is a deep, regal purple with genuine authority. Dark, saturated, and commanding - exactly what you'd expect of a god-king.",
+    "tagline": "A deep, regal purple with strong sheen.",
+    "description": "Zeus Purple is a deep, regal magenta-purple with an impressive sheen. Part of Laban's Greek Mythology collection, made in Taiwan in 50ml bottles. Also available in our Laban Greek Mythology set.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
+      "shading": 2,
+      "sheen": 3,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -4976,15 +5024,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep regal purple with good shading and a blue-purple sheen on coated papers."
+        "body": "Regal purple with sheen in pooled ink."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens slightly on textured stock - still deeply impressive."
+        "body": "Less sheen on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in medium and broad nibs where the depth and sheen show best."
+        "body": "Broad nibs show the sheen best."
       }
     ],
     "image": "images/laban-zeus-purple.jpg",
@@ -5032,11 +5080,11 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#9a7a3a",
     "colorDark": "#7a5a1a",
-    "tagline": "Warm, golden tan - the colour of sesame oil catching the light.",
-    "description": "Sesame Oil is a warm, golden amber-brown that evokes the colour of pressed sesame oil in a clear bottle. Unique, warm, and grounding - a beautiful neutral with character.",
+    "tagline": "A warm mid-brown, inspired by sesame oil.",
+    "description": "Sesame Oil is from Lennon Tool Bar's 2021 Winter Limited series - a warm mid-tone brown inspired by the fragrance and deep flavour of sesame oil. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5045,15 +5093,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm golden-tan shading from rich amber to lighter honey. A gentle golden sheen on coated paper."
+        "body": "Warm brown with lots of shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where the warmth deepens."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and pleasant in all sizes."
+        "body": "Broad nibs show the shading best."
       }
     ],
     "image": "images/lennon-tool-bar-sesame-oil.jpg",
@@ -5063,11 +5111,11 @@ const INKS = [
     "id": "lennon-tool-bar-dried-longan",
     "brand": "Lennon Tool Bar",
     "name": "Dried Longan",
-    "colours": ["Brown"],
+    "colours": ["Orange", "Brown"],
     "colorPrimary": "#7a4a2a",
     "colorDark": "#5a2a0a",
-    "tagline": "The rich, warm brown of dried longan fruit - earthy and sweet.",
-    "description": "Dried Longan is a warm, medium-dark brown inspired by the dried tropical fruit. Earthy and warm, it's the ink equivalent of a perfectly preserved piece of fruit - complex and satisfying.",
+    "tagline": "A light, sweet dried-longan tan.",
+    "description": "Dried Longan is from Lennon Tool Bar's 2024 Winter Tonics in Taiwan series - a light orange-tan, like the dried fruit. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -5079,15 +5127,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm brown shading from deep fruit-brown to lighter amber. Rich and earthy."
+        "body": "Light orange-tan with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on aged or cream paper - feels genuinely artisanal."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent in all sizes. A deeply satisfying brown."
+        "body": "Light in fine nibs - broader nibs suit it."
       }
     ],
     "image": "images/lennon-tool-bar-dried-longan.jpg",
@@ -5097,10 +5145,11 @@ const INKS = [
     "id": "lennon-tool-bar-misona-tea",
     "brand": "Lennon Tool Bar",
     "name": "Misona Tea",
+    "colours": ["Brown"],
     "colorPrimary": "#6a7a5a",
     "colorDark": "#4a5a3a",
-    "tagline": "A warm grey-green like the colour of brewed miso soup.",
-    "description": "Misona Tea is a warm, muted grey-green that sits between sage and khaki. It's the colour of miso broth in soft light - earthy, comforting, and unlike anything else.",
+    "tagline": "A dark, steeped-tea brown.",
+    "description": "Misona Tea is a dark, rich brown. We've described it from our own swatch. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -5112,15 +5161,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm grey-green with good shading. The grey and green elements dance depending on stroke weight."
+        "body": "Dark brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy, organic quality suits textured paper beautifully."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs where the full warmth shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/lennon-tool-bar-misona-tea.jpg",
@@ -5133,11 +5182,11 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#6a4a6a",
     "colorDark": "#42283f",
-    "tagline": "The warm, earthy purple-grey of steamed purple rice.",
-    "description": "Purple Rice is a muted, earthy purple with warm grey undertones - inspired by the nutty heritage grain. In keeping with Lennon Tool Bar's pantry-inspired range, it's comforting, organic and quietly distinctive on the page.",
+    "tagline": "A deep purple-rice plum.",
+    "description": "Purple Rice is a deep plum purple. We've described it from our own swatch. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5146,15 +5195,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich and saturated, shading from deep purple to bright violet. A blue sheen on coated papers."
+        "body": "Deep plum with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its vibrancy on all papers."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium and broad nibs where the depth shows fully."
+        "body": "Comfortable in any nib."
       }
     ],
     "stock": 12,
@@ -5164,13 +5213,14 @@ const INKS = [
     "id": "lennon-tool-bar-red-beans",
     "brand": "Lennon Tool Bar",
     "name": "Red Beans",
+    "colours": ["Red", "Pink"],
     "colorPrimary": "#6a2a1a",
     "colorDark": "#4a0a0a",
-    "tagline": "The deep, earthy red of slow-cooked red beans.",
-    "description": "Red Beans is a dark, muted red-brown - the colour of the beloved East Asian ingredient after long cooking. Earthy, warm, and deeply grounding.",
+    "tagline": "A soft red-bean rose.",
+    "description": "Red Beans is a soft rose-red, like sweet red bean. We've described it from our own swatch. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5179,15 +5229,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep earthy red-brown with warm shading. More complex than a simple red or brown."
+        "body": "Rose-red with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where the earthy warmth deepens."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Medium and broad nibs show the full tonal range."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/lennon-tool-bar-red-beans.jpg",
@@ -5197,14 +5247,14 @@ const INKS = [
     "id": "lennon-tool-bar-jujube",
     "brand": "Lennon Tool Bar",
     "name": "Jujube",
-    "colours": ["Orange","Red"],
+    "colours": ["Red", "Orange"],
     "colorPrimary": "#7a1a1a",
     "colorDark": "#5a0a0a",
-    "tagline": "The deep, dried red of a jujube fruit - ancient and warming.",
-    "description": "Jujube is a dark, rich red inspired by the traditional East Asian fruit. Deep, slightly brown-red with the warmth of centuries of use in teas and desserts.",
+    "tagline": "A warm jujube red.",
+    "description": "Jujube is from Lennon Tool Bar's 2024 Winter Tonics in Taiwan series - a warm red-orange, like dried red dates. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5213,15 +5263,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep dark red shading to a warmer ruby. A red sheen at stroke edges on coated papers."
+        "body": "Warm red-orange with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth and depth show beautifully on cream stock."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in broad nibs where the shading and sheen both show."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/lennon-tool-bar-jujube.jpg",
@@ -5231,10 +5281,11 @@ const INKS = [
     "id": "lennon-tool-bar-island-wood",
     "brand": "Lennon Tool Bar",
     "name": "Island Wood",
+    "colours": ["Orange", "Red"],
     "colorPrimary": "#7a5a2a",
     "colorDark": "#5a3a0a",
-    "tagline": "The warm, sun-warmed brown of tropical driftwood.",
-    "description": "Island Wood is a warm, medium brown with a golden lean - the colour of wood bleached and warmed by tropical sun. Natural, honest, and genuinely beautiful.",
+    "tagline": "A rusty, red-orange wood.",
+    "description": "Island Wood is a rusty red-orange. We've described it from our own swatch. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -5246,15 +5297,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm golden-brown with good shading. A natural, earthy ink with genuine character."
+        "body": "Rusty red-orange with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Particularly lovely on aged or cream paper where the warmth deepens."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and consistent in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/lennon-tool-bar-island-wood.jpg",
@@ -5264,13 +5315,14 @@ const INKS = [
     "id": "lennon-tool-bar-catfish-spirit",
     "brand": "Lennon Tool Bar",
     "name": "Catfish Spirit",
+    "colours": ["Purple", "Grey"],
     "colorPrimary": "#5a6a7a",
     "colorDark": "#3a4a5a",
-    "tagline": "The cool, murky blue-grey of a river at dusk.",
-    "description": "Catfish Spirit is a cool, atmospheric blue-grey - the colour of the deep part of a river where catfish lurk. Moody and mysterious, it's one of the more unusual colours in the range.",
+    "tagline": "A dusty purple-grey from a Taiwanese folk tale.",
+    "description": "Catfish Spirit is from the Summer 2023 'All Kinds of Spirits Vol. 2' collection, inspired by the tale of a giant catfish spirit - a dusty purple-grey. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5279,15 +5331,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool blue-grey with good shading. The atmospheric, mysterious quality is genuinely distinctive."
+        "body": "Dusty purple-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The moody quality suits textured paper well."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium and broad nibs where the full atmospheric range shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/lennon-tool-bar-catfish-spirit.jpg",
@@ -5297,13 +5349,13 @@ const INKS = [
     "id": "lennon-tool-bar-pen-fairy",
     "brand": "Lennon Tool Bar",
     "name": "Pen Fairy",
-    "colours": ["Grey"],
+    "colours": ["Grey", "Brown"],
     "colorPrimary": "#8a8a92",
     "colorDark": "#6a6a72",
-    "tagline": "A soft, magical silvery grey - the ink of wishes and whimsy.",
-    "description": "Pen Fairy is a gentle, muted silvery grey - the colour of fairy wings in soft light. It's magical without being loud, whimsical without being childish.",
+    "tagline": "A soft taupe grey, summoned by schoolchildren.",
+    "description": "Pen Fairy is from the Summer 2022 'All Kinds of Spirits' collection, named after the spirit children summon in class by holding a pen together - a soft taupe grey. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -5313,15 +5365,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft, muted lavender-purple with gentle character. Dreamy and unique."
+        "body": "Taupe grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper the grey undertones emerge and it takes on a vintage quality."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows properly."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/lennon-tool-bar-pen-fairy.jpg",
@@ -5331,13 +5383,13 @@ const INKS = [
     "id": "lennon-tool-bar-fortune-teller-168-light",
     "brand": "Lennon Tool Bar",
     "name": "Fortune Teller 168 Light",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Yellow"],
     "colorPrimary": "#8a7258",
     "colorDark": "#6a5238",
-    "tagline": "A warm, misty brown - mysterious as a fortune teller's crystal ball.",
-    "description": "Fortune Teller 168 Light is a warm, soft brown with an atmospheric, slightly otherworldly quality. Light and muted, it feels like the morning before the fortune is told.",
+    "tagline": "A golden amber tan.",
+    "description": "Fortune Teller #168 Light is a golden amber tan from Lennon Tool Bar's Magic Fortune Teller Shop series. We've described it from our own swatch. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
-      "shading": 2,
+      "shading": 4,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -5347,15 +5399,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft cool blue-grey, consistent and gentle. A very refined neutral."
+        "body": "Golden amber with plenty of shading."
       },
       {
         "title": "On textured paper",
-        "body": "Works well on most papers. White paper gives the best contrast."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Medium and broad nibs show the colour best."
+        "body": "Broad nibs show the shading best."
       }
     ],
     "image": "images/lennon-tool-bar-fortune-teller-168-light.jpg",
@@ -5365,11 +5417,11 @@ const INKS = [
     "id": "lennon-tool-bar-tortoise-and-serpent",
     "brand": "Lennon Tool Bar",
     "name": "Tortoise and Serpent",
-    "colours": ["Blue"],
+    "colours": ["Blue", "Teal"],
     "colorPrimary": "#1a2a5a",
     "colorDark": "#0a1638",
-    "tagline": "A deep, ancient indigo-blue inspired by Chinese cosmology.",
-    "description": "Tortoise and Serpent (named for the Black Tortoise constellation) is a dark, deep blue - grounded, ancient, and full of quiet power.",
+    "tagline": "A dark teal-navy with red edges.",
+    "description": "Tortoise and Serpent is a dark teal-navy that shows red at the edges of heavy strokes. We've described it from our own swatch. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -5381,15 +5433,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dark olive-green with good shading. Earthy and distinctive - unlike standard greens."
+        "body": "Dark teal-navy with red edges."
       },
       {
         "title": "On textured paper",
-        "body": "Perfect on aged or cream paper where the earthy quality deepens."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Broad nibs show the edges best."
       }
     ],
     "image": "images/lennon-tool-bar-tortoise-and-serpent.jpg",
@@ -5402,11 +5454,11 @@ const INKS = [
     "colours": ["Green"],
     "colorPrimary": "#1a3a1a",
     "colorDark": "#0a1e0a",
-    "tagline": "The deep, vast green of the night forest - infinite and awe-inspiring.",
-    "description": "Firament (Firmament) is a very dark, deep green - rich, dark, and quietly majestic.",
+    "tagline": "A deep, leafy green.",
+    "description": "Firament is a deep, leafy green. We've described it from our own swatch. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions inspired by Taiwanese life. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5415,15 +5467,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Very deep blue with shading to rich navy. A subtle blue sheen on coated papers."
+        "body": "Deep green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens further on textured stock. Deeply beautiful."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in broad nibs where the depth and shading fully show."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/lennon-tool-bar-firament.jpg",
@@ -5433,14 +5485,14 @@ const INKS = [
     "id": "lennon-tool-bar-black-hound",
     "brand": "Lennon Tool Bar",
     "name": "Black Hound",
-    "colours": ["Brown"],
+    "colours": ["Black", "Green"],
     "colorPrimary": "#2a1a1a",
     "colorDark": "#0a0a0a",
-    "tagline": "Near-black with a whisper of brown - the ink of shadows.",
-    "description": "Black Hound is an almost-black ink with the faintest warm brown undertone. It's dark enough to read as black in normal use but reveals its true nature in the light.",
+    "tagline": "A dark, green-tinged black-brown.",
+    "description": "Black Hound is a very dark ink with green and brown tones showing at the edges. We've described it from our own swatch. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions. 30ml bottles.",
     "properties": {
       "shading": 2,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5449,15 +5501,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Near-black with a very subtle warm undertone. Highly legible and professional."
+        "body": "Dark green-black with subtle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Consistent on all papers. A versatile, dramatic black-brown."
+        "body": "Near-black on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Reliable in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/lennon-tool-bar-black-hound.jpg",
@@ -5467,13 +5519,14 @@ const INKS = [
     "id": "lennon-tool-bar-outback-forest",
     "brand": "Lennon Tool Bar",
     "name": "Outback Forest",
+    "colours": ["Green"],
     "colorPrimary": "#2a5a2a",
     "colorDark": "#1a3a1a",
-    "tagline": "A deep, ancient forest green - the green of old-growth Australian bush.",
-    "description": "Outback Forest is a deep, rich green with an earthy, ancient quality. It evokes the deep Australian bush - old eucalyptus forest under a hot sky, cool in the shade.",
+    "tagline": "A muted bush olive green.",
+    "description": "Outback Forest is a muted olive-bush green. We've described it from our own swatch. Lennon Tool Bar is a Taiwanese ink maker founded in 2014 in Tamsui, known for seasonal limited editions. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5482,15 +5535,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep forest green with excellent shading from near-black to bright mid-green."
+        "body": "Olive green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The ancient, earthy quality suits textured paper. Beautiful on cream stock."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Outstanding in medium and broad nibs where the full depth shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/lennon-tool-bar-outback-forest.jpg",
@@ -5535,14 +5588,14 @@ const INKS = [
     "id": "nagasawa-strawberry-chocolate",
     "brand": "Nagasawa Kobe",
     "name": "Strawberry Chocolate",
-    "colours": ["Pink"],
+    "colours": ["Pink", "Purple"],
     "colorPrimary": "#a84a6a",
     "colorDark": "#7a1a4a",
-    "tagline": "The bittersweet colour of chocolate dipped strawberries - rich and indulgent.",
-    "description": "Strawberry Chocolate is a deep, warm rose-pink that sits between dark chocolate and dried strawberry. From Kobe's famous patisserie-inspired range, it's indulgent and completely unique.",
+    "tagline": "A dusty strawberry-chocolate pink.",
+    "description": "Strawberry Chocolate is a dusty, berry-tinted pink - the standout of the three Chocolate Museum inks. Nagasawa is a historic stationery shop in Kobe, Japan; this ink was made with the Felissimo Chocolate Museum in Kobe.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5551,15 +5604,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep red-brown shading from dark chocolate to warmer red. A subtle red sheen at stroke edges."
+        "body": "Dusty berry-pink with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The richness deepens on cream paper - truly indulgent."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs. A genuinely special ink that justifies the price."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/nagasawa-strawberry-chocolate.jpg",
@@ -5569,11 +5622,11 @@ const INKS = [
     "id": "nagasawa-milk-chocolate",
     "brand": "Nagasawa Kobe",
     "name": "Milk Chocolate",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Pink"],
     "colorPrimary": "#9a6a3a",
     "colorDark": "#7a4a1a",
-    "tagline": "The warm, creamy brown of premium milk chocolate.",
-    "description": "Milk Chocolate is a warm, medium brown with a creamy, sweet quality - the colour of fine milk chocolate from a Kobe confiserie. Rich, warm, and completely satisfying.",
+    "tagline": "A soft, rosy milk-chocolate brown.",
+    "description": "Milk Chocolate is a soft, rosy brown, like milk chocolate. Nagasawa is a historic stationery shop in Kobe, Japan; this ink was made with the Felissimo Chocolate Museum in Kobe.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -5585,15 +5638,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm creamy brown with good shading from rich milk chocolate to lighter caramel."
+        "body": "Rosy brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on cream paper where the warmth and sweetness really come through."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and consistent in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/nagasawa-milk-chocolate.jpg",
@@ -5606,11 +5659,11 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#4a2a1a",
     "colorDark": "#2a0a0a",
-    "tagline": "The deep, intense darkness of 85% cacao - rich and complex.",
-    "description": "Bitter Chocolate is a very dark, rich brown - almost black, with a warm depth that reveals itself in lighter strokes. The ink equivalent of premium dark chocolate.",
+    "tagline": "A deep, dark bitter-chocolate brown.",
+    "description": "Bitter Chocolate is a deep, dark chocolate brown. Nagasawa is a historic stationery shop in Kobe, Japan; this ink was made with the Felissimo Chocolate Museum in Kobe.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5619,15 +5672,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Near-black dark brown shading to rich chocolate in lighter strokes. Deep and complex."
+        "body": "Dark chocolate brown with low shading."
       },
       {
         "title": "On textured paper",
-        "body": "Perfect on cream or aged paper where the dark warmth is at its best."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs. The depth reveals itself most in wider lines."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/nagasawa-bitter-chocolate.jpg",
@@ -5635,17 +5688,17 @@ const INKS = [
   },
   {
     "id": "octopus-fluids-unicorn",
-    "shimmer": false,
     "sheen": true,
     "brand": "Octopus Fluids",
     "name": "Unicorn",
+    "colours": ["Blue"],
     "colorPrimary": "#9a8ac8",
     "colorDark": "#7a6aa8",
-    "tagline": "A magical shimmer lavender - iridescent as a unicorn's mane.",
-    "description": "Unicorn is a soft, shimmering lavender with a magical, iridescent quality. Multi-colour shimmer particles catch the light differently at every angle - genuinely enchanting.",
+    "tagline": "A cobalt blue with heavy pink sheen.",
+    "description": "Unicorn is a bright cobalt blue with a ton of pink sheen - and unusually, the sheen shows even in normal writing, not just big swabs. Octopus Fluids is a German ink maker; this is from their sheening collection named after mythical creatures.",
     "properties": {
       "shading": 2,
-      "sheen": 0,
+      "sheen": 5,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5654,15 +5707,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft lavender with multi-colour shimmer that sparkles beautifully on coated paper."
+        "body": "Cobalt blue with heavy pink sheen."
       },
       {
         "title": "On textured paper",
-        "body": "Shimmer is subtler on textured stock but the colour remains lovely."
+        "body": "Less sheen on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Medium or broad nibs show the shimmer best. Shake before use and clean pen after."
+        "body": "Sheen shows even in finer nibs."
       }
     ],
     "image": "images/octopus-fluids-unicorn.jpg",
@@ -5670,18 +5723,17 @@ const INKS = [
   },
   {
     "id": "octopus-fluids-mermaid",
-    "shimmer": false,
     "sheen": true,
     "brand": "Octopus Fluids",
     "name": "Mermaid",
     "colours": ["Blue"],
     "colorPrimary": "#3a8a7a",
     "colorDark": "#1a6a5a",
-    "tagline": "A vivid, ocean teal with the shimmer of scales beneath the waves.",
-    "description": "Mermaid is a bright, saturated teal-green with shimmer particles that catch the light like fish scales underwater. Vivid, magical, and completely compelling.",
+    "tagline": "A deep turquoise with pink sheen.",
+    "description": "Mermaid is a deep turquoise-blue with a strong pink sheen that can make heavy strokes look dark navy. Octopus Fluids is a German ink maker; this is from their sheening collection named after mythical creatures.",
     "properties": {
       "shading": 2,
-      "sheen": 0,
+      "sheen": 5,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5690,15 +5742,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid teal with multi-colour shimmer. On coated paper the shimmer creates a stunning underwater effect."
+        "body": "Deep turquoise with pink sheen."
       },
       {
         "title": "On textured paper",
-        "body": "The teal colour remains vivid on textured stock - the shimmer effect is more subtle."
+        "body": "Less sheen on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in broad nibs. Shake before use, clean thoroughly after."
+        "body": "Wet, broad nibs give the most sheen."
       }
     ],
     "image": "images/octopus-fluids-mermaid.jpg",
@@ -5706,17 +5758,17 @@ const INKS = [
   },
   {
     "id": "octopus-fluids-fairy",
-    "shimmer": false,
     "sheen": true,
     "brand": "Octopus Fluids",
     "name": "Fairy",
+    "colours": ["Pink", "Purple"],
     "colorPrimary": "#d48aaa",
     "colorDark": "#b46a8a",
-    "tagline": "A soft, sparkling pink with the shimmer of fairy wings.",
-    "description": "Fairy is a warm, medium pink with shimmer particles that make every stroke twinkle. It's delicate enough to be dreamy but bright enough to make your writing shine.",
+    "tagline": "A magenta with a heavy golden sheen.",
+    "description": "Fairy is a magenta with such a heavy golden sheen that pooled ink can glow olive-gold. Octopus Fluids is a German ink maker; this is from their sheening collection named after mythical creatures.",
     "properties": {
       "shading": 2,
-      "sheen": 0,
+      "sheen": 5,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -5725,15 +5777,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm pink with sparkling shimmer. On coated paper the effect is genuinely magical."
+        "body": "Magenta with gold sheen in pooled ink."
       },
       {
         "title": "On textured paper",
-        "body": "Shimmer subdues on rougher paper but the warm pink remains lovely."
+        "body": "More magenta on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs. Shake, use, and clean as with all shimmer inks."
+        "body": "Wet, broad nibs give the most sheen."
       }
     ],
     "image": "images/octopus-fluids-fairy.jpg",
@@ -5743,15 +5795,15 @@ const INKS = [
     "id": "pelikan-brilliant-brown",
     "brand": "Pelikan",
     "name": "Brilliant Brown",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Orange"],
     "colorPrimary": "#8a5a2a",
     "colorDark": "#6a3a0a",
-    "tagline": "A brilliant, warm brown - classic Pelikan quality in a rich autumn shade.",
-    "description": "Pelikan Brilliant Brown is a warm, medium-dark brown with excellent flow and consistency. The 'brilliant' in the name is earned - there's a quality and depth to this ink that stands out.",
+    "tagline": "A warm brown with a red undertone.",
+    "description": "Brilliant Brown from Pelikan's 4001 range is a warm, medium brown with a red-orange undertone and some shading. A dry ink that suits wetter pens. Pelikan is a German pen and ink maker founded in 1838.",
     "properties": {
       "shading": 3,
       "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
       "bestOn": "Cream or white paper"
@@ -5759,15 +5811,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm, classic brown with good shading. The Pelikan lubrication makes it an absolute joy to write with."
+        "body": "Warm red-brown with some shading."
       },
       {
         "title": "On textured paper",
-        "body": "Excellent on cream paper where the warmth really comes through."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Outstanding in all nib sizes - Pelikan inks are among the smoothest available."
+        "body": "Dry flow - best in a wet nib."
       }
     ],
     "image": "images/pelikan-brilliant-brown.jpg",
@@ -5777,13 +5829,14 @@ const INKS = [
     "id": "pelikan-blue-black",
     "brand": "Pelikan",
     "name": "Blue Black",
+    "colours": ["Blue", "Grey"],
     "colorPrimary": "#1a2a3a",
     "colorDark": "#0a1a2a",
-    "tagline": "The definitive blue-black - a hundred years of writing tradition.",
-    "description": "Pelikan Blue Black is one of the most famous fountain pen inks in history. A deep, classic blue-black that leans more blue than black - traditional, impeccably well-behaved, and beloved by generations of writers.",
+    "tagline": "A denim blue-grey blue-black.",
+    "description": "Pelikan 4001 Blue Black is a medium blue-black, like faded denim, with a modicum of shading and some water resistance. A dry writer - great for taming wet pens. Pelikan is a German pen and ink maker founded in 1838.",
     "properties": {
-      "shading": 2,
-      "sheen": 1,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Medium",
       "lubrication": "Very well-lubricated",
@@ -5792,15 +5845,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "The platonic ideal of blue-black - deep, reliable, and beautiful. Slight water resistance from the iron gall component."
+        "body": "Denim blue-grey with some shading."
       },
       {
         "title": "On textured paper",
-        "body": "Works on any paper, as you'd expect from a century-old classic."
+        "body": "Holds up on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and reliable in every nib, from the finest EF to the broadest stub."
+        "body": "Dry flow - great in wet pens."
       }
     ],
     "image": "images/pelikan-blue-black.jpg",
@@ -5810,13 +5863,13 @@ const INKS = [
     "id": "pentonote-susuki-milk",
     "brand": "Pentonote",
     "name": "Susuki Milk",
-    "colours": ["Brown"],
+    "colours": ["Pink", "Brown"],
     "colorPrimary": "#9a7a5a",
     "colorDark": "#7a5a38",
-    "tagline": "The warm, milky brown of tea poured through autumn grass.",
-    "description": "Susuki Milk (susuki is the Japanese pampas grass) is a soft, warm milky brown - the beautiful warm tone of morning light on pale grass.",
+    "tagline": "A soft, milky pink-beige.",
+    "description": "Susuki Milk is a soft, milky pink-beige. We've described it from our own swatch.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -5826,15 +5879,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm, soft cream-ivory with a gentle golden lean. Very pale - best appreciated on bright white paper."
+        "body": "Milky pink-beige with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "On cream paper it can appear very light. Stick to white paper for best legibility."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium to broad nibs where the colour shows properly. Fine nibs will be very faint."
+        "body": "Light in fine nibs - broader nibs suit it."
       }
     ],
     "image": "images/pentonote-susuki-milk.jpg",
@@ -5842,17 +5895,17 @@ const INKS = [
   },
   {
     "id": "pilot-iroshizuku-yama-budo",
-    "sheen": false,
+    "sheen": true,
     "brand": "Pilot Iroshizuku",
     "name": "Yama-Budo",
-    "colours": ["Purple"],
-    "colorPrimary": "#5a1a5a",
-    "colorDark": "#3a0a3a",
-    "tagline": "Mountain grape - a deep, rich burgundy-purple from the Japanese highlands.",
-    "description": "Yama-Budo (mountain grape) is one of Iroshizuku's most celebrated inks - a deep, complex burgundy-purple with exceptional shading. It evokes wild grapes clinging to mountain slopes in autumn.",
+    "colours": ["Red", "Pink"],
+    "colorPrimary": "#87274a",
+    "colorDark": "#742837",
+    "tagline": "Crimson glory vine - a fruity magenta-crimson.",
+    "description": "Yama-budo (crimson glory vine) is a rich, fruity magenta-crimson with a touch of shading and a reddish-gold sheen on some papers. Behaves well even on office paper. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
     "properties": {
-      "shading": 5,
-      "sheen": 3,
+      "shading": 2,
+      "sheen": 2,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -5861,15 +5914,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Extraordinary shading from near-black to bright magenta-purple. A stunning green sheen at stroke edges. One of the finest inks available."
+        "body": "Magenta-crimson with gold sheen in heavy lines."
       },
       {
         "title": "On textured paper",
-        "body": "The shading is slightly compressed on textured stock but still very impressive."
+        "body": "Well behaved on cheaper paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Pilot's legendary smoothness in every nib. A broad nib fully realises the spectacle of this ink."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/pilot-iroshizuku-yama-budo.jpg",
@@ -5879,12 +5932,47 @@ const INKS = [
     "id": "pilot-iroshizuku-kon-peki",
     "brand": "Pilot Iroshizuku",
     "name": "Kon-peki",
+    "colours": ["Blue"],
     "colorPrimary": "#1a5a9a",
     "colorDark": "#0a3a7a",
-    "tagline": "Azure blue - the vivid, pure blue of a clear Japanese sky.",
-    "description": "Kon-peki (azure) is a vivid, saturated sky-blue that's consistently rated among the most beautiful inks in the world. Bright, clean, and exceptional - everything a blue should be.",
+    "tagline": "Deep azure - a vivid cerulean blue.",
+    "description": "Kon-peki (deep azure) is a vivid cerulean blue and one of the most popular Iroshizuku inks. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
     "properties": {
-      "shading": 4,
+      "shading": 2,
+      "sheen": 1,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Very well-lubricated",
+      "bestOn": "Smooth paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Vivid cerulean with light shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Holds its colour on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Smooth in any nib."
+      }
+    ],
+    "image": "images/pilot-iroshizuku-kon-peki.jpg",
+    "stock": 20
+  },
+  {
+    "id": "pilot-iroshizuku-ku-jaku",
+    "brand": "Pilot Iroshizuku",
+    "name": "Ku-jaku",
+    "colours": ["Teal"],
+    "colorPrimary": "#1a7a7a",
+    "colorDark": "#0a5a5a",
+    "tagline": "Peacock - a vivid turquoise.",
+    "description": "Ku-jaku (peacock) is a vivid, captivating turquoise-teal with a hint of red sheen in heavy lines. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
+    "properties": {
+      "shading": 2,
       "sheen": 2,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
@@ -5894,49 +5982,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid azure with outstanding shading from deep sapphire to bright sky-blue. A golden sheen on coated papers."
+        "body": "Turquoise with a hint of red sheen."
       },
       {
         "title": "On textured paper",
-        "body": "Slightly darker on textured stock but still breathtakingly beautiful."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Silky-smooth in every nib size. One of the most universally loved fountain pen inks ever made."
-      }
-    ],
-    "image": "images/pilot-iroshizuku-kon-peki.jpg",
-    "stock": 20
-  },
-  {
-    "id": "pilot-iroshizuku-ku-jaku",
-    "sheen": false,
-    "brand": "Pilot Iroshizuku",
-    "name": "Ku-jaku",
-    "colorPrimary": "#1a7a7a",
-    "colorDark": "#0a5a5a",
-    "tagline": "Peacock - a vivid, saturated teal as spectacular as the bird itself.",
-    "description": "Ku-jaku (peacock) is a rich, vivid teal that shifts between blue and green like actual peacock plumage. Saturated, magnificent, and completely show-stopping.",
-    "properties": {
-      "shading": 4,
-      "sheen": 3,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Very well-lubricated",
-      "bestOn": "Smooth paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Vivid teal with exceptional shading and a striking copper or gold sheen at stroke edges. Spectacular."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The teal remains beautiful on all papers but the sheen shows best on coated stock."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Silky smooth in all sizes. A broad italic fully realises this ink's magnificence."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/pilot-iroshizuku-ku-jaku.jpg",
@@ -5946,14 +6000,14 @@ const INKS = [
     "id": "pilot-iroshizuku-fuyu-syogun",
     "brand": "Pilot Iroshizuku",
     "name": "Fuyu-syogun",
-    "colours": ["Grey"],
+    "colours": ["Grey", "Blue"],
     "colorPrimary": "#5a6a8a",
     "colorDark": "#3a4a6a",
-    "tagline": "Winter general - the cold, steely blue-grey of a frozen battlefield.",
-    "description": "Fuyu-syogun (winter general) is a cool, muted blue-grey that captures the austere quality of winter in Japan. Serious, dignified, and quietly beautiful.",
+    "tagline": "Old Man Winter - a cool bluish grey.",
+    "description": "Fuyu-syogun (Old Man Winter) is a cool, calming bluish dark grey. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
     "properties": {
-      "shading": 4,
-      "sheen": 1,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -5962,15 +6016,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool blue-grey with excellent Iroshizuku shading. The blue and grey elements shift across stroke widths."
+        "body": "Cool blue-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The muted, wintry quality suits all paper types."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Pilot smoothness in every size. One of those inks that rewards a fine nib."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/pilot-iroshizuku-fuyu-syogun.jpg",
@@ -5980,13 +6034,14 @@ const INKS = [
     "id": "pilot-iroshizuku-ajisai",
     "brand": "Pilot Iroshizuku",
     "name": "Ajisai",
+    "colours": ["Blue", "Purple"],
     "colorPrimary": "#6a5a8a",
     "colorDark": "#4a3a6a",
-    "tagline": "Hydrangea - the soft, complex blue-purple of rainy season flowers.",
-    "description": "Ajisai (hydrangea) is a soft, muted blue-purple that perfectly captures the colour of hydrangeas in Japan's rainy season. Complex, gentle, and genuinely beautiful.",
+    "tagline": "Hydrangea - a blue-violet.",
+    "description": "Ajisai (hydrangea) is a vivid blue-violet, inspired by raindrops on hydrangea petals in the rainy season. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
     "properties": {
-      "shading": 4,
-      "sheen": 1,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -5995,15 +6050,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft blue-purple with superb shading. The blue and purple tones shift beautifully."
+        "body": "Blue-violet with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Still beautiful on textured stock - the gentle character suits all papers."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Pilot's trademark smoothness. One of the most harmonious inks in the range."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/pilot-iroshizuku-ajisai.jpg",
@@ -6013,12 +6068,13 @@ const INKS = [
     "id": "pilot-iroshizuku-syo-ro",
     "brand": "Pilot Iroshizuku",
     "name": "Syo-ro",
+    "colours": ["Teal", "Green"],
     "colorPrimary": "#2a7a6a",
     "colorDark": "#1a5a4a",
-    "tagline": "Dew on pine needles - cool, fresh blue-green at the break of dawn.",
-    "description": "Syo-ro (dew on pine needles) is a cool, saturated blue-green - the colour of morning dew on dark evergreen branches. Fresh, clean, and deeply refreshing.",
+    "tagline": "Pine dew - a deep teal green.",
+    "description": "Syo-ro (pine dew) is a deep teal-green, like a dewdrop reflecting pine needles, with a red sheen in heavy lines. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
     "properties": {
-      "shading": 4,
+      "shading": 2,
       "sheen": 2,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
@@ -6028,15 +6084,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool blue-green with outstanding shading. A subtle gold sheen at stroke edges on coated paper."
+        "body": "Deep teal-green with red sheen in heavy lines."
       },
       {
         "title": "On textured paper",
-        "body": "The freshness carries through on any paper."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Silky smooth in all sizes - a joy to write with."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/pilot-iroshizuku-syo-ro.jpg",
@@ -6046,13 +6102,14 @@ const INKS = [
     "id": "pilot-iroshizuku-sui-gyoku",
     "brand": "Pilot Iroshizuku",
     "name": "Sui-gyoku",
+    "colours": ["Green", "Teal"],
     "colorPrimary": "#2a7a4a",
     "colorDark": "#1a5a2a",
-    "tagline": "Green jade - the cool, precious green of carved stone.",
-    "description": "Sui-gyoku (green jade) is a cool, saturated green that captures the colour of fine jade - deep, slightly blue-green, and unmistakably precious-feeling.",
+    "tagline": "Emerald - a deep, glowing green.",
+    "description": "Sui-gyoku (emerald) is a deep, glowing emerald green. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
     "properties": {
-      "shading": 4,
-      "sheen": 2,
+      "shading": 2,
+      "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6061,15 +6118,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich, cool green with excellent shading and a hint of sheen. One of the finest greens available."
+        "body": "Emerald green with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Still beautiful on textured stock."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Pilot smoothness - a broad nib shows the shading most dramatically."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/pilot-iroshizuku-sui-gyoku.jpg",
@@ -6082,11 +6139,11 @@ const INKS = [
     "colours": ["Pink"],
     "colorPrimary": "#e08a9a",
     "colorDark": "#c06a7a",
-    "tagline": "Flower raft - the delicate pink of cherry blossom petals on water.",
-    "description": "Hana-ikada (flower raft) is a warm, medium pink inspired by fallen cherry blossoms floating on a stream. Warm, vivid, and graceful - one of Iroshizuku's most beloved inks.",
+    "tagline": "Cherry blossoms on a river - a rich pink.",
+    "description": "Hana-ikada is a rich, gorgeous pink inspired by cherry blossoms drifting on a river. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
     "properties": {
-      "shading": 4,
-      "sheen": 1,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6095,15 +6152,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm pink with exceptional Iroshizuku shading from deep rose to pale blush. A very gentle sheen."
+        "body": "Rich pink with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Still beautifully pink on all papers - the warmth translates perfectly."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Pilot's legendary smoothness. One of the best pinks in any collection."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/pilot-iroshizuku-hana-ikada.jpg",
@@ -6113,14 +6170,14 @@ const INKS = [
     "id": "pilot-iroshizuku-syun-gyo",
     "brand": "Pilot Iroshizuku",
     "name": "Syun-gyo",
-    "colours": ["Purple"],
-    "colorPrimary": "#6a3a9a",
-    "colorDark": "#4a1a7a",
-    "tagline": "Spring dawn fish - a warm, glowing plum-purple at sunrise.",
-    "description": "Syun-gyo (spring dawn fish) is a warm, dusky purple that glows with the quality of spring sunrise light on water. Unique, warm, and utterly beautiful.",
+    "colours": ["Black", "Red"],
+    "colorPrimary": "#3e312f",
+    "colorDark": "#241a17",
+    "tagline": "Spring daybreak - a black with dim red light.",
+    "description": "Syun-gyo, added in 2024, is a black ink with a dim red glow, like daybreak in spring. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
     "properties": {
-      "shading": 4,
-      "sheen": 1,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6129,15 +6186,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm coral-salmon with superb shading from deep to light. One of the most distinctive colours in the Iroshizuku range."
+        "body": "Red-tinged black."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth carries through beautifully on all papers."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Pilot smoothness. Broad nibs show the full shading range."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/pilot-iroshizuku-syun-gyo.jpg",
@@ -6147,13 +6204,14 @@ const INKS = [
     "id": "pilot-iroshizuku-murasaki-shikibu",
     "brand": "Pilot Iroshizuku",
     "name": "Murasaki-shikibu",
+    "colours": ["Purple"],
     "colorPrimary": "#5a2a7a",
     "colorDark": "#3a0a5a",
-    "tagline": "Named for the world's first novelist - a rich, literary purple.",
-    "description": "Murasaki-shikibu is named for the 11th-century Japanese author of The Tale of Genji, the world's first novel. A rich, medium-dark purple - literary, considered, and completely beautiful.",
+    "tagline": "Purple beautyberry - a vivid purple.",
+    "description": "Murasaki-shikibu is named after the purple beautyberry - and the Heian-era novelist - a vivid, saturated purple. Pilot's Iroshizuku inks are named after Japanese landscapes and seasons, and are known for being smooth and well behaved.",
     "properties": {
-      "shading": 4,
-      "sheen": 2,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6162,15 +6220,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich purple with outstanding shading from deep to bright mid-violet. A blue sheen at stroke edges."
+        "body": "Vivid purple with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Still gorgeous on textured papers."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Pilot's silk-smooth flow in every nib size. An ink worthy of its illustrious name."
+        "body": "Smooth in any nib."
       }
     ],
     "image": "images/pilot-iroshizuku-murasaki-shikibu.jpg",
@@ -6215,13 +6273,14 @@ const INKS = [
     "id": "robert-oster-detox",
     "brand": "Robert Oster",
     "name": "Detox",
+    "colours": ["Green"],
     "colorPrimary": "#5a9a6a",
     "colorDark": "#3a7a4a",
-    "tagline": "A fresh, clean green with a wholesome, restorative glow.",
-    "description": "Detox is a bright, fresh green with a touch of cool blue - clean and revitalising, like the first green of spring. Robert Oster's signature smooth flow makes it a pleasure to write with.",
+    "tagline": "A dark, earthy olive green.",
+    "description": "Detox, from Robert Oster's Drinks series, is a dark olive green with strong shading. Robert Oster inks are handmade in Australia.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6230,15 +6289,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Fresh, clean green with good shading from deep to bright. A subtle sheen at stroke edges."
+        "body": "Dark olive green with strong shading."
       },
       {
         "title": "On textured paper",
-        "body": "The freshness carries through nicely on cream and white stock."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Robert Oster's famous lubrication makes this glide in all nib sizes."
+        "body": "Broad nibs show the shading best."
       }
     ],
     "image": "images/robert-oster-detox.jpg",
@@ -6251,11 +6310,11 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#5a3a2a",
     "colorDark": "#3a1a0a",
-    "tagline": "Rich, indulgent chocolate brown - dark, warm, and delicious.",
-    "description": "Choc Pudding is a deep, warm brown with the richness of dark chocolate dessert. It shades beautifully and feels indulgent on the page - comforting and completely satisfying.",
+    "tagline": "A rich chocolate-pudding brown.",
+    "description": "Choc Pudding is a rich, warm chocolate brown. Robert Oster inks are handmade in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6264,15 +6323,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep chocolate brown shading from dark to warmer milk-chocolate tones."
+        "body": "Chocolate brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on cream paper where the richness deepens beautifully."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and indulgent in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-choc-pudding.jpg",
@@ -6282,13 +6341,14 @@ const INKS = [
     "id": "robert-oster-dusty-pink",
     "brand": "Robert Oster",
     "name": "Dusty Pink",
+    "colours": ["Pink"],
     "colorPrimary": "#c88a9a",
     "colorDark": "#a86a7a",
-    "tagline": "A soft, muted rose with vintage charm and gentle warmth.",
-    "description": "Dusty Pink is a warm, muted rose - refined and grown-up rather than bright or candy-like. The dusty quality gives it real sophistication and makes it endlessly wearable.",
+    "tagline": "A soft, dusty rose pink.",
+    "description": "Dusty Pink is a soft, muted rose pink. Robert Oster inks are handmade in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6297,15 +6357,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft dusty rose with surprisingly good shading from deeper rose to pale blush."
+        "body": "Dusty rose with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The vintage quality really shines on cream paper."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes. Broad nibs show the shading best."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-dusty-pink.jpg",
@@ -6315,14 +6375,14 @@ const INKS = [
     "id": "robert-oster-sushi",
     "brand": "Robert Oster",
     "name": "Sushi",
-    "colours": ["Pink"],
+    "colours": ["Pink", "Red"],
     "colorPrimary": "#d94a7a",
     "colorDark": "#a01a5a",
-    "tagline": "A vivid coral-pink with a fresh, zesty bite.",
-    "description": "Sushi is a bright, vivid coral-pink - fresh and zesty. It's energetic and lively, one of Robert Oster's most cheerful pinks.",
+    "tagline": "A bright salmon-sushi pink.",
+    "description": "Sushi is a bright, warm salmon pink with a coral edge. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6331,15 +6391,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid coral-pink with good shading and a gold sheen at stroke edges on coated paper."
+        "body": "Bright salmon pink with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its zesty character well on all papers."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A joy in all nib sizes thanks to that Robert Oster flow."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-sushi.jpg",
@@ -6352,11 +6412,11 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#8a7ab8",
     "colorDark": "#6a5a98",
-    "tagline": "A soft, sunlit lavender - gentle as a summer afternoon in Sydney.",
-    "description": "Sydney Lavender is a warm, medium lavender-purple with a gentle, sunlit quality. It's softer and warmer than a cool lavender, with genuine charm and excellent shading.",
+    "tagline": "A dusky, deep lavender-violet.",
+    "description": "Sydney Lavender is a dusky, deep violet with a muted lavender character. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6365,15 +6425,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft warm lavender with good shading from deeper purple to gentle lilac."
+        "body": "Dusky violet with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth comes through beautifully on cream paper."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and lovely in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-sydney-lavender.jpg",
@@ -6383,13 +6443,14 @@ const INKS = [
     "id": "robert-oster-storm-summer",
     "brand": "Robert Oster",
     "name": "Storm Summer",
+    "colours": ["Blue", "Purple"],
     "colorPrimary": "#3a5a7a",
     "colorDark": "#1a3a5a",
-    "tagline": "The deep, moody blue-grey of a summer storm rolling in.",
-    "description": "Storm Summer is a deep, atmospheric blue-grey - the colour of heavy clouds before a summer downpour. Moody, sophisticated, and beautifully shaded.",
+    "tagline": "A muted blue-purple summer storm.",
+    "description": "Summer Storm is a muted, stormy blue-purple. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 4,
-      "sheen": 2,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6398,15 +6459,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep storm blue-grey with excellent shading. A subtle sheen appears at stroke edges."
+        "body": "Muted blue-purple with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The moody atmosphere suits all papers beautifully."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Outstanding in broad nibs where the dramatic shading fully shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-storm-summer.jpg",
@@ -6419,8 +6480,144 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#9a7a5a",
     "colorDark": "#7a5a3a",
-    "tagline": "The warm, creamy tan of espresso crema on a perfect shot.",
-    "description": "Caffe Crema is a warm, light-to-medium brown with a creamy, golden quality - the colour of the crema on a well-pulled espresso. Comforting, smooth, and very pleasant.",
+    "tagline": "A warm, golden coffee brown.",
+    "description": "Caffè Crema is a warm, golden coffee brown with strong shading and a slight silvery sheen where it pools. Robert Oster inks are handmade in small batches in Australia.",
+    "properties": {
+      "shading": 4,
+      "sheen": 1,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Very well-lubricated",
+      "bestOn": "Cream or white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Golden brown with strong shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Earthier on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Broad nibs show the shading and sheen best."
+      }
+    ],
+    "image": "images/robert-oster-caffe-crema.jpg",
+    "stock": 17
+  },
+  {
+    "id": "robert-oster-wind",
+    "brand": "Robert Oster",
+    "name": "Wind",
+    "colours": ["Blue"],
+    "colorPrimary": "#7a9aaa",
+    "colorDark": "#5a7a8a",
+    "tagline": "A soft, breezy cornflower blue.",
+    "description": "Wind is a soft, airy cornflower blue. Robert Oster inks are handmade in small batches in Australia.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Very well-lubricated",
+      "bestOn": "White paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Cornflower blue with gentle shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Softer on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "image": "images/robert-oster-wind.jpg",
+    "stock": 20
+  },
+  {
+    "id": "robert-oster-sydney-darling-harbour",
+    "brand": "Robert Oster",
+    "name": "Sydney Darling Harbour",
+    "colours": ["Green", "Teal"],
+    "colorPrimary": "#1a8a8a",
+    "colorDark": "#0a5a5a",
+    "tagline": "An unsaturated mint-julep green.",
+    "description": "Sydney Darling Harbour was the 2019 Sydney International Pen Show ink, now in the standard range - an unsaturated mint green, like a dark mint julep, that looks browner where it pools. Robert Oster inks are handmade in small batches in Australia.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Very well-lubricated",
+      "bestOn": "White paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Muted mint green with medium shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Browner on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "image": "images/robert-oster-sydney-darling-harbour.jpg",
+    "stock": 20
+  },
+  {
+    "id": "robert-oster-motor-oil",
+    "brand": "Robert Oster",
+    "name": "Motor Oil",
+    "colours": ["Black", "Green"],
+    "colorPrimary": "#3a3d3e",
+    "colorDark": "#1e2021",
+    "tagline": "A very dark, oily green-black.",
+    "description": "Motor Oil is a very dark, murky green-black, like used engine oil. Robert Oster inks are handmade in small batches in Australia.",
+    "properties": {
+      "shading": 2,
+      "sheen": 1,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Very well-lubricated",
+      "bestOn": "Smooth white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Dark green-black with subtle shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Near-black on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "image": "images/robert-oster-motor-oil.jpg",
+    "stock": 20
+  },
+  {
+    "id": "robert-oster-tiverton-rust",
+    "brand": "Robert Oster",
+    "name": "Tiverton Rust",
+    "colours": ["Orange", "Red"],
+    "colorPrimary": "#9a4a2a",
+    "colorDark": "#7a2a0a",
+    "tagline": "A bright red-orange rust.",
+    "description": "Tiverton Rust is a bright, warm red-orange. We've described it from our own swatch. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -6432,151 +6629,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm creamy tan with good shading from rich coffee to lighter cream."
+        "body": "Bright red-orange with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream paper where the warmth feels right at home."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and consistent in all sizes."
-      }
-    ],
-    "image": "images/robert-oster-caffe-crema.jpg",
-    "stock": 17
-  },
-  {
-    "id": "robert-oster-wind",
-    "brand": "Robert Oster",
-    "name": "Wind",
-    "colorPrimary": "#7a9aaa",
-    "colorDark": "#5a7a8a",
-    "tagline": "A cool, breezy grey-blue - light and airy as a sea breeze.",
-    "description": "Wind is a soft, cool grey-blue with a light, airy quality. It's gentle and refreshing, with the kind of muted sophistication that makes it perfect for everyday writing.",
-    "properties": {
-      "shading": 3,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Very well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Cool grey-blue with gentle shading. Light and refreshing on the page."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Holds its airy character on all papers."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Smooth and easy in all nib sizes."
-      }
-    ],
-    "image": "images/robert-oster-wind.jpg",
-    "stock": 20
-  },
-  {
-    "id": "robert-oster-sydney-darling-harbour",
-    "shimmer": false,
-    "brand": "Robert Oster",
-    "name": "Sydney Darling Harbour",
-    "colours": ["Teal"],
-    "colorPrimary": "#1a8a8a",
-    "colorDark": "#0a5a5a",
-    "tagline": "The vivid teal of sunlit water in Sydney's famous harbour.",
-    "description": "Sydney Darling Harbour is a bright, saturated teal with a hint of blue - the colour of harbour water sparkling in Australian sun. Vivid, clean, and full of energy.",
-    "properties": {
-      "shading": 4,
-      "sheen": 2,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Very well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Vivid blue with excellent shading from deep to bright, plus a subtle sheen."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Holds its vibrancy beautifully on all papers."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "A broad nib really shows off the shading. Smooth in all sizes."
-      }
-    ],
-    "image": "images/robert-oster-sydney-darling-harbour.jpg",
-    "stock": 20
-  },
-  {
-    "id": "robert-oster-motor-oil",
-    "sheen": false,
-    "brand": "Robert Oster",
-    "name": "Motor Oil",
-    "colours": ["Grey"],
-    "colorPrimary": "#3a3d3e",
-    "colorDark": "#1e2021",
-    "tagline": "A dark, murky grey the colour of used engine oil.",
-    "description": "Motor Oil is a deep, murky grey - exactly the shade its name suggests, like oil drained from an engine. Industrial and mysterious, it dries dark with a cool cast, surprising shading in lighter strokes and a subtle sheen at the edges.",
-    "properties": {
-      "shading": 4,
-      "sheen": 3,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Very well-lubricated",
-      "bestOn": "Smooth white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Vivid teal with excellent shading and a striking red-pink sheen at stroke edges on coated paper."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The teal remains vivid; the sheen shows best on smooth stock."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Spectacular in a broad nib. One of Robert Oster's most loved sheening inks."
-      }
-    ],
-    "image": "images/robert-oster-motor-oil.jpg",
-    "stock": 20
-  },
-  {
-    "id": "robert-oster-tiverton-rust",
-    "brand": "Robert Oster",
-    "name": "Tiverton Rust",
-    "colorPrimary": "#9a4a2a",
-    "colorDark": "#7a2a0a",
-    "tagline": "The warm, oxidised orange-brown of weathered iron.",
-    "description": "Tiverton Rust is a warm rust-orange with brown depth - the colour of corroded iron in the rain. Earthy, warm, and full of character, it shades beautifully.",
-    "properties": {
-      "shading": 4,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Very well-lubricated",
-      "bestOn": "Cream or white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Warm rust with excellent shading from deep brown-orange to lighter amber."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The earthy warmth deepens beautifully on cream paper."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the shading range fully shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-tiverton-rust.jpg",
@@ -6584,17 +6645,16 @@ const INKS = [
   },
   {
     "id": "robert-oster-sinners-blood",
-    "shimmer": false,
-    "sheen": false,
     "brand": "Robert Oster",
     "name": "Sinners Blood",
+    "colours": ["Red"],
     "colorPrimary": "#8a1a2a",
     "colorDark": "#5a0a1a",
-    "tagline": "A deep, dramatic red with a wicked gold-green sheen.",
-    "description": "Sinners Blood is a deep, dark red with one of the most dramatic sheens in the Robert Oster range - a gold-green shimmer that erupts at stroke edges. Wicked, gorgeous, and unforgettable.",
+    "tagline": "A deep blood red.",
+    "description": "Sinner's Blood is part of Robert Oster's Sinners family - a deep, rich blood red. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 3,
-      "sheen": 4,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6603,15 +6663,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep red with a spectacular gold-green sheen at stroke edges. On coated paper the effect is breathtaking."
+        "body": "Deep red with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "The sheen subdues but the deep red remains beautiful."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Use a wet, broad nib for maximum sheen. Allow extra dry time."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-sinners-blood.jpg",
@@ -6619,17 +6679,16 @@ const INKS = [
   },
   {
     "id": "robert-oster-sinners-heart",
-    "sheen": false,
     "brand": "Robert Oster",
     "name": "Sinners Heart",
-    "colours": ["Brown","Red"],
+    "colours": ["Purple"],
     "colorPrimary": "#7a1a4a",
     "colorDark": "#5a0a2a",
-    "tagline": "A dark magenta-red with a seductive blue-gold sheen.",
-    "description": "Sinners Heart is a deep magenta-red - darker and more purple than Sinners Blood - with a dramatic blue-gold sheen. Seductive, complex, and completely captivating.",
+    "tagline": "A dark, brooding plum.",
+    "description": "Sinner's Heart is part of Robert Oster's Sinners family - a dark, brooding plum purple. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 3,
-      "sheen": 4,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6638,15 +6697,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dark magenta-red with a vivid blue-gold sheen at stroke edges. Stunning on coated paper."
+        "body": "Dark plum with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "The deep magenta carries through; sheen shows best on smooth stock."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wet broad nib maximises the sheen. Allow extra dry time."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-sinners-heart.jpg",
@@ -6656,14 +6715,14 @@ const INKS = [
     "id": "robert-oster-melon-tea",
     "brand": "Robert Oster",
     "name": "Melon Tea",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Yellow"],
     "colorPrimary": "#8a6242",
     "colorDark": "#5a3e26",
-    "tagline": "A warm, soft melon-brown with a gentle, refreshing glow.",
-    "description": "Melon Tea is a warm, soft brown with a peachy, tea-like quality - gentle and refreshing rather than bold. It's a lovely, easy-wearing warm colour with good shading.",
+    "tagline": "A golden tea brown.",
+    "description": "Melon Tea is a golden, tea-coloured brown with plenty of shading. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6672,15 +6731,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft melon-orange with gentle shading from deeper coral to pale peach."
+        "body": "Golden brown with plenty of shading."
       },
       {
         "title": "On textured paper",
-        "body": "Warm and inviting on cream paper."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes - best in medium or broad to show the shading."
+        "body": "Broad nibs show the shading best."
       }
     ],
     "image": "images/robert-oster-melon-tea.jpg",
@@ -6690,13 +6749,14 @@ const INKS = [
     "id": "robert-oster-viola",
     "brand": "Robert Oster",
     "name": "Viola",
+    "colours": ["Purple"],
     "colorPrimary": "#6a3a9a",
     "colorDark": "#4a1a7a",
-    "tagline": "A rich, vivid violet with depth and a velvety quality.",
-    "description": "Viola is a saturated mid-purple with real depth and a velvety richness. It's vivid without being garish - a beautifully balanced purple that suits everyday writing and special occasions alike.",
+    "tagline": "A dusty purple with a pink undertone.",
+    "description": "Viola is a dusty, light purple with a soft pink undertone and a touch of blue sheen. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6705,15 +6765,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich violet with good shading and a blue sheen at stroke edges on coated paper."
+        "body": "Dusty purple with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its richness on all papers."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes - broad nibs show the shading and sheen best."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-viola.jpg",
@@ -6723,14 +6783,14 @@ const INKS = [
     "id": "robert-oster-charcoal",
     "brand": "Robert Oster",
     "name": "Charcoal",
-    "colours": ["Grey"],
+    "colours": ["Grey", "Blue"],
     "colorPrimary": "#3a3a42",
     "colorDark": "#1a1a22",
-    "tagline": "A deep, soft charcoal grey-black with subtle warmth.",
-    "description": "Charcoal is a deep grey-black with a soft, slightly warm quality. Darker than a standard grey but not quite black, it's a sophisticated everyday colour with quiet depth.",
+    "tagline": "A dark, purple-leaning charcoal grey.",
+    "description": "Charcoal is a dark grey with a blue-purple lean. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 2,
-      "sheen": 1,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6739,15 +6799,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep charcoal grey-black with subtle shading. Highly legible and sophisticated."
+        "body": "Dark blue-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Consistent and refined on all papers."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A reliable, smooth daily writer in any nib size."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-charcoal.jpg",
@@ -6755,16 +6815,16 @@ const INKS = [
   },
   {
     "id": "robert-oster-black-violet",
-    "sheen": false,
     "brand": "Robert Oster",
     "name": "Black Violet",
+    "colours": ["Purple", "Black"],
     "colorPrimary": "#2a1a4a",
     "colorDark": "#0a0a2a",
-    "tagline": "A near-black purple that reveals violet depths in the light.",
-    "description": "Black Violet is a very dark purple - almost black at first glance, revealing rich violet undertones in lighter strokes and at stroke edges. Dramatic and mysterious.",
+    "tagline": "A near-black violet.",
+    "description": "Black Violet is a very dark violet that reads almost black. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 3,
-      "sheen": 3,
+      "shading": 2,
+      "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6773,15 +6833,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Near-black purple shading to deep violet, with a vivid sheen at stroke edges on coated paper."
+        "body": "Near-black violet."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens further but remains dramatic and beautiful."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in broad nibs where the violet and sheen reveal themselves."
+        "body": "Broad nibs show more of the violet."
       }
     ],
     "image": "images/robert-oster-black-violet.jpg",
@@ -6791,13 +6851,14 @@ const INKS = [
     "id": "robert-oster-australian-opal-blue",
     "brand": "Robert Oster",
     "name": "Australian Opal Blue",
+    "colours": ["Blue"],
     "colorPrimary": "#1a5aaa",
     "colorDark": "#0a3a8a",
-    "tagline": "The deep, luminous blue of a precious Australian opal.",
-    "description": "Australian Opal Blue is a rich, luminous blue with depth and a slight purple lean. It evokes the glowing blue fire inside a black opal - vivid, beautiful, and full of life.",
+    "tagline": "A bright, opal sky blue.",
+    "description": "Australian Opal Blue is a bright, clear sky blue, like the flash of an opal. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 4,
-      "sheen": 2,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6806,15 +6867,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich luminous blue with excellent shading and a subtle sheen."
+        "body": "Bright sky blue with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its depth and luminosity on all papers."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A broad nib shows the shading beautifully. Smooth in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-australian-opal-blue.jpg",
@@ -6822,16 +6883,16 @@ const INKS = [
   },
   {
     "id": "robert-oster-midnight-sapphire",
-    "sheen": false,
     "brand": "Robert Oster",
     "name": "Midnight Sapphire",
+    "colours": ["Blue"],
     "colorPrimary": "#1a2a6a",
     "colorDark": "#0a1a4a",
-    "tagline": "A deep, jewelled blue-black with the glint of a sapphire.",
-    "description": "Midnight Sapphire is a very deep blue with subtle purple depth - the colour of a dark sapphire under low light. Rich, dramatic, and beautifully suited to elegant writing.",
+    "tagline": "A dark blue with a purple undertone.",
+    "description": "Midnight Sapphire is a dark blue with a purple undertone, medium shading and a trace of pink sheen - drying to a blue-black with grey undertones. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6840,15 +6901,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep sapphire-blue shading to navy, with a red-gold sheen at stroke edges on coated paper."
+        "body": "Dark sapphire blue with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens slightly but stays beautifully jewelled."
+        "body": "Reads blue-black on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs reveal the sheen and depth most dramatically."
+        "body": "Wet nibs show the shading best."
       }
     ],
     "image": "images/robert-oster-midnight-sapphire.jpg",
@@ -6858,13 +6919,14 @@ const INKS = [
     "id": "robert-oster-turquoise",
     "brand": "Robert Oster",
     "name": "Turquoise",
+    "colours": ["Teal"],
     "colorPrimary": "#1a9aaa",
     "colorDark": "#0a7a8a",
-    "tagline": "A bright, refreshing turquoise - clean and full of life.",
-    "description": "Robert Oster Turquoise is a vivid, clean turquoise that sits perfectly between blue and green. Bright, refreshing, and beautifully behaved - a modern classic.",
+    "tagline": "A bright, clear turquoise.",
+    "description": "Turquoise is a bright, clear turquoise. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6873,15 +6935,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid turquoise with good shading and a subtle sheen at stroke edges."
+        "body": "Bright turquoise with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its brightness beautifully on all papers."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and refreshing in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-turquoise.jpg",
@@ -6891,13 +6953,14 @@ const INKS = [
     "id": "robert-oster-frankly-blue",
     "brand": "Robert Oster",
     "name": "Frankly Blue",
+    "colours": ["Blue", "Teal"],
     "colorPrimary": "#2a4a9a",
     "colorDark": "#1a2a7a",
-    "tagline": "An honest, classic blue - straightforward and beautifully balanced.",
-    "description": "Frankly Blue is exactly what it says - a clean, honest, classic blue with no pretensions. Well-balanced and beautifully behaved, it's an everyday blue done exceptionally well.",
+    "tagline": "A smoky, shading blue with sheen.",
+    "description": "Frankly Blue was made for Federalist Pens - a smoky, shading medium blue with a hint of green and some sheen. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 2,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6906,15 +6969,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Clean, classic blue with good shading. Honest and reliable."
+        "body": "Smoky blue with shading and sheen."
       },
       {
         "title": "On textured paper",
-        "body": "Works beautifully on all papers."
+        "body": "Less sheen on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A smooth, dependable daily writer in all sizes."
+        "body": "Broad nibs show it off best."
       }
     ],
     "image": "images/robert-oster-frankly-blue.jpg",
@@ -6924,13 +6987,14 @@ const INKS = [
     "id": "robert-oster-avocado",
     "brand": "Robert Oster",
     "name": "Avocado",
+    "colours": ["Green"],
     "colorPrimary": "#6a7a3a",
     "colorDark": "#4a5a1a",
-    "tagline": "A warm, earthy olive-green - ripe, rich, and wholesome.",
-    "description": "Avocado is a warm olive-green with a yellow lean - earthy and wholesome like ripe avocado flesh. It's a grounded, natural green with excellent shading.",
+    "tagline": "A medium olive avocado green.",
+    "description": "Avocado is a medium olive green with hints of blue and yellow, shading strongly from pale green to dark olive. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 4,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6939,15 +7003,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm olive-green with excellent shading from deep to bright yellow-green."
+        "body": "Olive green with strong shading."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy warmth deepens beautifully on cream."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the shading range fully shows."
+        "body": "Broad nibs show the shading best."
       }
     ],
     "image": "images/robert-oster-avocado.jpg",
@@ -6958,13 +7022,14 @@ const INKS = [
     "sheen": true,
     "brand": "Robert Oster",
     "name": "Green At Night",
+    "colours": ["Green"],
     "colorPrimary": "#1a4a3a",
     "colorDark": "#0a2a1a",
-    "tagline": "A deep, mysterious forest green with hidden depths.",
-    "description": "Green At Night is a very dark, deep green - almost black, with rich forest depths that emerge in lighter strokes. Mysterious and dramatic, with a beautiful sheen.",
+    "tagline": "A dark green with a subtle sheen.",
+    "description": "Green at Night is a dark green with medium shading and a subtle sheen. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 2,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -6973,15 +7038,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Near-black green shading to deep forest, with a red-gold sheen at stroke edges on coated paper."
+        "body": "Dark green with subtle sheen."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens further but remains dramatic."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A broad nib reveals the sheen and depth spectacularly."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-green-at-night.jpg",
@@ -6991,12 +7056,13 @@ const INKS = [
     "id": "robert-oster-crocodile-green",
     "brand": "Robert Oster",
     "name": "Crocodile Green",
+    "colours": ["Green"],
     "colorPrimary": "#4a6a3a",
     "colorDark": "#2a4a1a",
-    "tagline": "A deep, mossy green with reptilian depth and texture.",
-    "description": "Crocodile Green is a deep, earthy mossy green - the colour of a crocodile lurking in murky water. Rich, dark, and full of character, with excellent shading.",
+    "tagline": "A khaki-olive crocodile green.",
+    "description": "Crocodile Green is a khaki-olive green with nice shading and a tiny bit of sheen. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 4,
+      "shading": 3,
       "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
@@ -7006,15 +7072,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep mossy green with excellent shading from dark to mid-green."
+        "body": "Olive green with nice shading."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy depth suits textured paper beautifully."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the shading fully shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-crocodile-green.jpg",
@@ -7024,14 +7090,14 @@ const INKS = [
     "id": "robert-oster-cherry-blossom",
     "brand": "Robert Oster",
     "name": "Cherry Blossom",
-    "colours": ["Pink"],
+    "colours": ["Pink", "Purple"],
     "colorPrimary": "#e08a9a",
     "colorDark": "#c06a7a",
-    "tagline": "A warm, delicate cherry-blossom pink with a soft glow.",
-    "description": "Cherry Blossom is a warm, medium pink that captures the soft glow of sakura petals. Delicate but readable, it's one of Robert Oster's loveliest pinks.",
+    "tagline": "A soft, dusky cherry-blossom pink.",
+    "description": "Cherry Blossom is a soft, dusky mauve-pink - one of Oster's hidden gems. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -7040,15 +7106,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm pink with good shading from deep rose to pale blush."
+        "body": "Dusky pink with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its gentle warmth on all papers."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes - medium or broad shows the shading best."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-cherry-blossom.jpg",
@@ -7058,13 +7124,14 @@ const INKS = [
     "id": "robert-oster-australian-opal-pink",
     "brand": "Robert Oster",
     "name": "Australian Opal Pink",
+    "colours": ["Pink"],
     "colorPrimary": "#d46a8a",
     "colorDark": "#b44a6a",
-    "tagline": "The luminous rose-pink fire of a pink Australian opal.",
-    "description": "Australian Opal Pink is a vivid, luminous rose-pink with the glowing quality of opal fire. Brighter and more saturated than a dusty pink - vivid, beautiful, and full of life.",
+    "tagline": "A bright opal pink.",
+    "description": "Australian Opal Pink is a bright, cheerful pink. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -7073,15 +7140,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid luminous rose-pink with good shading and a subtle sheen."
+        "body": "Bright pink with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its vibrancy beautifully on all papers."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes - broad nibs show the shading and sheen."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-australian-opal-pink.jpg",
@@ -7089,16 +7156,16 @@ const INKS = [
   },
   {
     "id": "robert-oster-river-of-fire",
-    "sheen": false,
     "brand": "Robert Oster",
     "name": "River of Fire",
+    "colours": ["Teal", "Green"],
     "colorPrimary": "#2f6b54",
     "colorDark": "#1c4033",
-    "tagline": "A blazing orange-red with a dramatic gold-green sheen.",
-    "description": "River of Fire is a vivid orange-red with an extraordinary sheen - gold-green erupting at stroke edges like molten lava cooling. One of the most spectacular inks in the range.",
+    "tagline": "A deep teal-green.",
+    "description": "River of Fire is a deep teal-green with gentle shading. We've described it from our own swatch. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 4,
+      "sheen": 1,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -7107,15 +7174,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Blazing orange-red with a dramatic gold-green sheen. On coated paper the effect is mesmerising."
+        "body": "Deep teal-green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The orange-red stays vivid; sheen shows best on smooth stock."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wet broad nib maximises the spectacular sheen. Allow extra dry time."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-river-of-fire.jpg",
@@ -7125,30 +7192,31 @@ const INKS = [
     "id": "robert-oster-lemon-grass",
     "brand": "Robert Oster",
     "name": "Lemon Grass",
+    "colours": ["Green"],
     "colorPrimary": "#9aaa4a",
     "colorDark": "#7a8a2a",
-    "tagline": "A bright, zesty yellow-green - fresh as a herb garden.",
-    "description": "Lemon Grass is a bright, warm yellow-green with a fresh, zesty quality. It's lively and energetic, a cheerful chartreuse that brightens any page.",
+    "tagline": "A soft, grassy green.",
+    "description": "Lemon Grass is a soft grass-green - well behaved, though a little dry in flow. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
-      "lubrication": "Very well-lubricated",
+      "lubrication": "Well-lubricated",
       "bestOn": "White paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright yellow-green with good shading. Fresh and energetic on the page."
+        "body": "Soft green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its brightness on white; can appear softer on cream."
+        "body": "Clean on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows fully."
+        "body": "A touch dry - wetter nibs suit it."
       }
     ],
     "image": "images/robert-oster-lemon-grass.jpg",
@@ -7156,16 +7224,16 @@ const INKS = [
   },
   {
     "id": "robert-oster-smokescreen",
-    "sheen": false,
     "brand": "Robert Oster",
     "name": "Smokescreen",
+    "colours": ["Brown", "Purple"],
     "colorPrimary": "#4a4a4a",
     "colorDark": "#2a2a2a",
-    "tagline": "A smoky grey with a hidden green-gold sheen.",
-    "description": "Smokescreen is a deep, smoky grey that hides a surprising green-gold sheen at stroke edges. Understated in colour but spectacular in the right light - a clever, sophisticated ink.",
+    "tagline": "A dark, smoky purple-brown.",
+    "description": "Smokescreen goes down as a deep burgundy and dries to a dark, greyish purple-brown - dark enough for work, with gentle shading. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 2,
-      "sheen": 3,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -7174,15 +7242,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Smoky grey with a surprising green-gold sheen at stroke edges on coated paper."
+        "body": "Dusky purple-brown with shading."
       },
       {
         "title": "On textured paper",
-        "body": "Reads as a sophisticated grey; the sheen shows best on smooth stock."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wet broad nib reveals the hidden sheen beautifully."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-smokescreen.jpg",
@@ -7192,14 +7260,14 @@ const INKS = [
     "id": "robert-oster-copper",
     "brand": "Robert Oster",
     "name": "Copper",
-    "colours": ["Pink"],
+    "colours": ["Red", "Pink"],
     "colorPrimary": "#d97a8a",
     "colorDark": "#a84a5a",
-    "tagline": "The warm, metallic glow of rose-copper pink.",
-    "description": "Copper is a warm copper-pink with a metallic quality - like a freshly polished rose-gold coin. Earthy and warm with a subtle glow, it shades beautifully.",
+    "tagline": "A dusty, unsaturated burgundy-rose.",
+    "description": "Copper is, despite the name, a dusty, unsaturated burgundy-rose with a faint sheen. It flows on the dry side. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 4,
-      "sheen": 2,
+      "shading": 2,
+      "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -7208,15 +7276,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm copper-brown with excellent shading and a copper sheen at stroke edges."
+        "body": "Dusty rose-red with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "The metallic warmth deepens beautifully on cream."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the shading and sheen show."
+        "body": "A little dry - wetter nibs suit it."
       }
     ],
     "image": "images/robert-oster-copper.jpg",
@@ -7226,14 +7294,14 @@ const INKS = [
     "id": "robert-oster-claret",
     "brand": "Robert Oster",
     "name": "Claret",
-    "colours": ["Red"],
+    "colours": ["Red", "Purple"],
     "colorPrimary": "#7a1a3a",
     "colorDark": "#5a0a1a",
-    "tagline": "A deep, elegant wine-red - refined and sophisticated.",
-    "description": "Claret is a deep, refined red-purple - the colour of fine Bordeaux wine. Elegant and sophisticated with beautiful shading, it's a grown-up red for serious writing.",
+    "tagline": "A dark claret wine.",
+    "description": "Claret is a dark, plummy wine red. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 4,
-      "sheen": 2,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -7242,15 +7310,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep claret with excellent shading from near-black to warm ruby, plus a subtle sheen."
+        "body": "Dark claret with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The wine-red richness deepens beautifully on cream."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Outstanding in broad nibs where the shading fully shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-claret.jpg",
@@ -7260,13 +7328,14 @@ const INKS = [
     "id": "robert-oster-royal-red",
     "brand": "Robert Oster",
     "name": "Royal Red",
+    "colours": ["Red", "Orange"],
     "colorPrimary": "#a01a2a",
     "colorDark": "#80000a",
-    "tagline": "A bold, regal red - confident, vivid, and commanding.",
-    "description": "Royal Red is a vivid, saturated red with regal confidence. Brighter and bolder than claret or burgundy, it's a proper statement red with excellent flow.",
+    "tagline": "A bright, regal red.",
+    "description": "Royal Red is a bright, warm red with an orange edge. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -7275,15 +7344,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid red with good shading and a hint of sheen at stroke edges."
+        "body": "Bright red with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Bold and confident on all papers."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and commanding in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-royal-red.jpg",
@@ -7293,13 +7362,14 @@ const INKS = [
     "id": "robert-oster-burgundy",
     "brand": "Robert Oster",
     "name": "Burgundy",
+    "colours": ["Red"],
     "colorPrimary": "#6a1a2a",
     "colorDark": "#4a0a1a",
-    "tagline": "A classic, deep burgundy - warm, rich, and timeless.",
-    "description": "Burgundy is a deep, warm red-brown - the classic burgundy wine colour, timeless and endlessly wearable. It shades beautifully and suits any writing occasion.",
+    "tagline": "A warm burgundy red.",
+    "description": "Burgundy is a warm, slightly deep red with gentle shading. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 4,
-      "sheen": 2,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -7308,15 +7378,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep burgundy with excellent shading and a subtle red sheen at stroke edges."
+        "body": "Warm red with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Rich and warm on cream paper."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in all sizes; broad nibs show the shading best."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-burgundy.jpg",
@@ -7326,15 +7396,15 @@ const INKS = [
     "id": "robert-oster-burgundy-chocolate-notes",
     "brand": "Robert Oster",
     "name": "Burgundy Chocolate Notes",
-    "colours": ["Purple"],
+    "colours": ["Purple", "Pink"],
     "colorPrimary": "#4a1a3a",
     "colorDark": "#2a0a20",
-    "tagline": "Burgundy meets chocolate - a rich, complex plum-purple.",
-    "description": "Burgundy Chocolate Notes is a deep, complex plum-purple with wine-red and dark chocolate undertones. It shifts with the light, with rich shading and genuine sophistication.",
+    "tagline": "A dusky mauve purple.",
+    "description": "Burgundy Chocolate Notes is a dusky mauve purple with medium shading. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 4,
-      "sheen": 2,
-      "dryTime": "Medium (10–20 sec)",
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
       "bestOn": "Cream or white paper"
@@ -7342,15 +7412,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich red-brown shading between burgundy and chocolate, with a subtle sheen."
+        "body": "Dusky mauve with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "The complex warmth deepens beautifully on cream."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the shading complexity shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-burgundy-chocolate-notes.jpg",
@@ -7360,13 +7430,14 @@ const INKS = [
     "id": "robert-oster-blood-crimson",
     "brand": "Robert Oster",
     "name": "Blood Crimson",
+    "colours": ["Red"],
     "colorPrimary": "#8a0a1a",
     "colorDark": "#5a000a",
-    "tagline": "A deep, dramatic crimson - dark, rich, and intense.",
-    "description": "Blood Crimson is a deep, intense crimson-red - darker and more dramatic than a bright red, with the richness of fresh blood. Bold, intense, and full of character.",
+    "tagline": "A bright crimson red.",
+    "description": "Blood Crimson is a bright, juicy crimson red. Robert Oster inks are handmade in small batches in Australia.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Very well-lubricated",
@@ -7375,15 +7446,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep crimson with good shading and a red sheen at stroke edges on coated paper."
+        "body": "Bright crimson with light shading."
       },
       {
         "title": "On textured paper",
-        "body": "Intense and dramatic on all papers."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in broad nibs where the depth and sheen show."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/robert-oster-blood-crimson.jpg",
@@ -7393,30 +7464,31 @@ const INKS = [
     "id": "rohrer-klingner-salix",
     "brand": "Rohrer & Klingner",
     "name": "Salix",
+    "colours": ["Blue"],
     "colorPrimary": "#3a5a7a",
     "colorDark": "#1a3a5a",
-    "tagline": "An iron gall blue-grey that darkens and endures on the page.",
-    "description": "Salix is a classic iron gall ink - it goes down as a blue-grey and darkens to a deep, permanent grey-blue as it oxidises. Water-resistant and archival, it's a beautiful, practical ink with real history.",
+    "tagline": "A dusky blue iron-gall ink.",
+    "description": "Salix is a dusky blue that darkens on the page. Well behaved even on cheap paper. It's an iron-gall ink: it darkens as it dries and becomes very water resistant. Clean your pen every week or two. Rohrer & Klingner is a German ink maker founded in 1892.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Medium–High",
+      "dryTime": "Slow (20–30 sec)",
+      "waterResistance": "High",
       "lubrication": "Well-lubricated",
       "bestOn": "Any paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Goes down blue-grey and darkens over minutes to a deep, permanent grey-blue. Excellent water resistance once dry."
+        "body": "Dusky blue that darkens as it dries."
       },
       {
         "title": "On textured paper",
-        "body": "Iron gall inks suit all papers and resist feathering even on cheaper stock."
+        "body": "No feathering even on cheaper paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Well-behaved in all nibs. Clean your pen regularly as with all iron gall inks."
+        "body": "Comfortable in any nib - clean the pen regularly."
       }
     ],
     "image": "images/rohrer-klingner-salix.jpg",
@@ -7426,30 +7498,31 @@ const INKS = [
     "id": "rohrer-klingner-verdigris",
     "brand": "Rohrer & Klingner",
     "name": "Verdigris",
+    "colours": ["Teal", "Blue"],
     "colorPrimary": "#3a7a6a",
     "colorDark": "#1a5a4a",
-    "tagline": "The soft blue-green of aged copper patina.",
-    "description": "Verdigris is a muted, sophisticated blue-green that captures the patina of weathered copper. Calm and atmospheric, it's a beautifully understated colour with subtle shading.",
+    "tagline": "A dark teal iron-gall ink.",
+    "description": "Verdigris is a dark teal-blue that's still subdued enough for the office. It's an iron-gall ink: it darkens as it dries and becomes very water resistant. Clean your pen every week or two. Rohrer & Klingner is a German ink maker founded in 1892.",
     "properties": {
       "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
+      "waterResistance": "High",
       "lubrication": "Well-lubricated",
       "bestOn": "Cream or white paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Muted blue-green with good shading. Calm and atmospheric."
+        "body": "Dark teal that darkens as it dries."
       },
       {
         "title": "On textured paper",
-        "body": "The patina quality suits textured paper beautifully."
+        "body": "Clean on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and reliable in all nib sizes."
+        "body": "Comfortable in any nib - clean the pen regularly."
       }
     ],
     "image": "images/rohrer-klingner-verdigris.jpg",
@@ -7462,8 +7535,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#6a4a2a",
     "colorDark": "#4a2a0a",
-    "tagline": "The warm, classic brown of old photographs and letters.",
-    "description": "Sepia is a warm, medium-dark brown - the timeless colour of vintage photographs and antique correspondence. Classic, warm, and beautifully nostalgic.",
+    "tagline": "A dark, classic sepia.",
+    "description": "Sepia is a dark, classic brown-black sepia. Rohrer & Klingner is a German ink maker founded in 1892.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7475,15 +7548,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm sepia brown with good shading from dark to lighter tan."
+        "body": "Dark sepia with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on aged or cream paper where the vintage quality really sings."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and pleasant in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/rohrer-klingner-sepia.jpg",
@@ -7496,28 +7569,28 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#6a3a5a",
     "colorDark": "#4a1a3a",
-    "tagline": "An iron gall purple that matures to a muted, dusky mauve.",
-    "description": "Scabiosa is a unique iron gall purple - it goes down as a muted mauve-purple and darkens as it oxidises to a deep, dusky purple-grey. Water-resistant, archival, and completely distinctive.",
+    "tagline": "A dusky purple iron-gall ink.",
+    "description": "Scabiosa is a dusky purple with high shading that dries to a purple-black. It's an iron-gall ink: it darkens as it dries and becomes very water resistant. Clean your pen every week or two. Rohrer & Klingner is a German ink maker founded in 1892.",
     "properties": {
-      "shading": 2,
+      "shading": 4,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Medium–High",
+      "waterResistance": "High",
       "lubrication": "Well-lubricated",
       "bestOn": "Any paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Goes down dusky mauve and darkens to a muted purple-grey. Excellent water resistance once dry."
+        "body": "Dusky purple with high shading."
       },
       {
         "title": "On textured paper",
-        "body": "Suits all papers and resists feathering even on cheaper stock."
+        "body": "No feathering even on cheaper paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Well-behaved in all nibs. Clean your pen regularly as with all iron gall inks."
+        "body": "Comfortable in any nib - clean the pen regularly."
       }
     ],
     "image": "images/rohrer-klingner-scabiosa.jpg",
@@ -7527,14 +7600,14 @@ const INKS = [
     "id": "sailor-kitsune-biyori",
     "brand": "Sailor",
     "name": "Kitsune Biyori",
-    "colours": ["Grey"],
+    "colours": ["Grey", "Pink"],
     "colorPrimary": "#8a8278",
     "colorDark": "#6a6258",
-    "tagline": "Fox weather - a soft, warm grey like mist in autumn light.",
-    "description": "Kitsune Biyori (fox weather) is a warm, soft grey with gentle depth, evoking misty autumn light. Rich, warm, and beautifully shaded - a distinctive Sailor seasonal colour.",
+    "tagline": "A soft taupe for a fox's wedding.",
+    "description": "Kitsune Biyori - 'fox weather', when the sun shines through rain - is from Sailor's Yurameku collection: a soft, warm taupe-grey with a pink edge. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -7543,15 +7616,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm amber-orange with good shading and a subtle gold sheen at stroke edges."
+        "body": "Soft taupe with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth deepens beautifully on cream paper."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Sailor inks are crisp and precise - lovely in fine and medium nibs."
+        "body": "Flow can be dry in some pens - a wetter nib suits it."
       }
     ],
     "image": "images/sailor-kitsune-biyori.jpg",
@@ -7559,17 +7632,16 @@ const INKS = [
   },
   {
     "id": "sailor-kyokkou",
-    "shimmer": false,
     "brand": "Sailor",
     "name": "Kyokkou",
     "colours": ["Purple"],
     "colorPrimary": "#5a1a8a",
     "colorDark": "#3a0a6a",
-    "tagline": "Aurora - a deep violet-purple with a luminous gold shimmer.",
-    "description": "Kyokkou (aurora) is a deep violet-purple with a gold/copper shimmer that dances across the page like the northern lights. Atmospheric and spectacular, it's one of Sailor's most magical inks.",
+    "tagline": "A soft lavender violet.",
+    "description": "Kyokkou is a soft lavender-violet. We've described it from our own swatch. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
-      "shading": 2,
-      "sheen": 1,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -7578,15 +7650,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep blue-teal with a luminous gold shimmer. On coated paper the aurora effect is beautiful."
+        "body": "Lavender violet with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The shimmer is subtler but the deep teal remains lovely."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Medium to broad nibs show the shimmer best. Shake before use, clean pen after."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-kyokkou.jpg",
@@ -7596,14 +7668,14 @@ const INKS = [
     "id": "sailor-kangyou",
     "brand": "Sailor",
     "name": "Kangyou",
-    "colours": ["Purple"],
+    "colours": ["Purple", "Blue"],
     "colorPrimary": "#4a2a6a",
     "colorDark": "#2a1050",
-    "tagline": "A deep, cold winter purple with quiet, frosty depth.",
-    "description": "Kangyou is a deep, cool purple with a frosty, wintry quality. Dark and serious, it has the still, cold beauty of a winter morning - refined and contemplative.",
+    "tagline": "A cool lavender with a blue edge.",
+    "description": "Kangyou is a cool lavender-purple with a blue edge. We've described it from our own swatch. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -7612,15 +7684,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep cool blue with good shading. Crisp and wintry on the page."
+        "body": "Cool lavender with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its frosty depth on all papers."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp Sailor flow - lovely in fine and medium nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-kangyou.jpg",
@@ -7630,14 +7702,14 @@ const INKS = [
     "id": "sailor-guma",
     "brand": "Sailor",
     "name": "Guma",
-    "colours": ["Brown"],
+    "colours": ["Red", "Brown"],
     "colorPrimary": "#6a4e30",
     "colorDark": "#42301c",
-    "tagline": "A warm, earthy brown with a grounded, natural feel.",
-    "description": "Guma is a warm, earthy brown with subtle depth. Natural and grounded, it's a sophisticated muted brown with lovely shading.",
+    "tagline": "A deep red-brown.",
+    "description": "Guma is a deep, warm red-brown. We've described it from our own swatch. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -7646,15 +7718,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm olive-green with good shading from deep to lighter yellow-green."
+        "body": "Red-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The earthy quality suits cream paper beautifully."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp and precise in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-guma.jpg",
@@ -7664,14 +7736,14 @@ const INKS = [
     "id": "sailor-hanagokoro",
     "brand": "Sailor",
     "name": "Hanagokoro",
-    "colours": ["Brown"],
-    "colorPrimary": "#7a5a2a",
-    "colorDark": "#5a3a10",
-    "tagline": "Flower heart - a vivid, warm rose-brown with romantic depth.",
-    "description": "Hanagokoro (flower heart) is a vivid rose-brown - warm, romantic, and beautifully saturated. It has the warmth of a flower's heart in full bloom.",
+    "colours": ["Purple", "Pink"],
+    "colorPrimary": "#574056",
+    "colorDark": "#512834",
+    "tagline": "A dusky plum-mauve.",
+    "description": "Hanagokoro is a dusky plum-mauve. We've described it from our own swatch. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -7680,15 +7752,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid rose-red with good shading and a subtle sheen at stroke edges."
+        "body": "Dusky plum with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Warm and romantic on cream paper."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp Sailor flow in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-hanagokoro.jpg",
@@ -7698,14 +7770,14 @@ const INKS = [
     "id": "sailor-faded-orange",
     "brand": "Sailor",
     "name": "Faded Orange",
-    "colours": ["Orange","Brown"],
+    "colours": ["Orange", "Brown"],
     "colorPrimary": "#c87a4a",
     "colorDark": "#a85a2a",
-    "tagline": "A soft, muted orange with a warm, sun-faded quality.",
-    "description": "Faded Orange is exactly that - a warm, muted orange that looks gently sun-bleached and vintage. Softer than a bright orange, it has a comfortable, lived-in warmth.",
+    "tagline": "A warm, faded orange.",
+    "description": "Faded Orange is a warm, muted orange-brown, inspired by an afternoon with coffee and bread. From Sailor's limited three-ink set made with the illustrator mizutama. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -7714,15 +7786,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft muted orange with good shading from deeper terracotta to pale amber."
+        "body": "Muted orange-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The faded warmth suits cream paper beautifully."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp and pleasant in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-faded-orange.jpg",
@@ -7735,10 +7807,10 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#8a6a42",
     "colorDark": "#664a28",
-    "tagline": "A warm, sophisticated beige-brown - understated and elegant.",
-    "description": "Dark Beige is a warm beige-brown - a sophisticated, understated neutral with subtle warmth. It's the kind of refined colour that elevates everyday writing without shouting.",
+    "tagline": "A cosy dark beige.",
+    "description": "Dark Beige is a cosy, dark beige-brown, inspired by a girl in a beret heading out. From Sailor's limited three-ink set made with the illustrator mizutama. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
-      "shading": 2,
+      "shading": 3,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -7748,15 +7820,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm greige with gentle shading. A very refined, sophisticated neutral."
+        "body": "Beige-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Can appear pale on cream; white paper gives better contrast."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows properly."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-dark-beige.jpg",
@@ -7766,14 +7838,14 @@ const INKS = [
     "id": "sailor-eastern-blue",
     "brand": "Sailor",
     "name": "Eastern Blue",
-    "colours": ["Blue"],
+    "colours": ["Teal", "Blue"],
     "colorPrimary": "#1a8aaa",
     "colorDark": "#0a6a8a",
-    "tagline": "A bright, vivid cyan-blue with refreshing clarity.",
-    "description": "Eastern Blue is a bright, clean cyan-blue with refreshing energy. Vivid and clear, it sits between blue and turquoise - one of Sailor's most cheerful, eye-catching blues.",
+    "tagline": "A calm teal blue.",
+    "description": "Eastern Blue is a calm teal-blue, inspired by a girl reading in a forest. From Sailor's limited three-ink set made with the illustrator mizutama. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -7782,15 +7854,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid cyan-blue with good shading and a subtle sheen at stroke edges."
+        "body": "Teal blue with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its brightness beautifully on all papers."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp and refreshing in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-eastern-blue.jpg",
@@ -7798,15 +7870,17 @@ const INKS = [
   },
   {
     "id": "sailor-shikori-tokiwamatsu",
+    "sheen": true,
     "brand": "Sailor",
     "name": "Shikiori Tokiwamatsu",
+    "colours": ["Green", "Red"],
     "colorPrimary": "#2a5a3a",
     "colorDark": "#1a3a1a",
-    "tagline": "Evergreen pine - a deep, muted forest green from the Shikiori series.",
-    "description": "Tokiwamatsu (evergreen pine) is a deep, muted forest green with the soft, painterly quality of the Shikiori series. Calm, natural, and beautifully restrained.",
+    "tagline": "Evergreen pine - a deep green with red tones.",
+    "description": "Tokiwamatsu (evergreen pine) is a deep green that pools to a red-brown, with green showing at the edges of heavy strokes. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 0,
+      "sheen": 2,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -7815,15 +7889,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep muted forest green with soft shading."
+        "body": "Deep green with red tones where it pools."
       },
       {
         "title": "On textured paper",
-        "body": "The evergreen quality suits cream paper beautifully."
+        "body": "Greener on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs."
+        "body": "Broad nibs show the colour shift best."
       }
     ],
     "image": "images/sailor-shikori-tokiwamatsu.jpg",
@@ -7833,11 +7907,11 @@ const INKS = [
     "id": "sailor-shikori-sube-rakashi",
     "brand": "Sailor",
     "name": "Shikiori Sube-rakashi",
-    "colours": ["Brown","Green"],
+    "colours": ["Brown"],
     "colorPrimary": "#8a7a5a",
     "colorDark": "#6a5a3a",
-    "tagline": "A warm, muted golden-tan with painterly softness.",
-    "description": "From the Shikiori series, Sube-rakashi is a warm, muted golden-tan - soft and earthy, with the gentle painterly quality the series is known for. Understated and lovely.",
+    "tagline": "A dark, woody brown.",
+    "description": "Sube-rakashi is a dark, woody brown. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7849,15 +7923,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm golden-tan with soft shading. Earthy and gentle."
+        "body": "Dark brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The painterly warmth suits cream paper."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-shikori-sube-rakashi.jpg",
@@ -7867,10 +7941,11 @@ const INKS = [
     "id": "sailor-shikori-yozakura",
     "brand": "Sailor",
     "name": "Shikiori Yozakura",
+    "colours": ["Pink"],
     "colorPrimary": "#b46a8a",
     "colorDark": "#945a6a",
-    "tagline": "Night cherry blossom - a soft, dusky rose-pink under moonlight.",
-    "description": "Yozakura (night cherry blossom) is a soft, dusky rose-pink with the muted, painterly quality of the Shikiori series. It evokes sakura viewed by moonlight - romantic and atmospheric.",
+    "tagline": "Night cherry blossom - a dusky rose pink.",
+    "description": "Yozakura (night cherry blossom) is a dusky rose pink - sakura by moonlight. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7882,15 +7957,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft dusky rose-pink with gentle shading. Romantic and atmospheric."
+        "body": "Dusky rose with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The muted quality suits cream paper beautifully."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-shikori-yozakura.jpg",
@@ -7900,11 +7975,11 @@ const INKS = [
     "id": "sailor-shikori-yutsubame",
     "brand": "Sailor",
     "name": "Shikiori Yutsubame",
-    "colours": ["Pink"],
+    "colours": ["Red", "Pink"],
     "colorPrimary": "#b06a8a",
     "colorDark": "#8a3a5a",
-    "tagline": "Evening swallow - a soft, dusky pink at twilight.",
-    "description": "Yutsubame (evening swallow) is a soft, muted dusky pink from the Shikiori series - the colour of the sky just after sunset. Gentle and atmospheric.",
+    "tagline": "Evening swallow - a dusky raspberry red.",
+    "description": "Yutsubame (evening swallow) is a dusky raspberry-red. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7916,15 +7991,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft dusky blue with gentle, painterly shading."
+        "body": "Dusky raspberry with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The twilight quality suits all papers."
+        "body": "Deeper on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-shikori-yutsubame.jpg",
@@ -7937,8 +8012,8 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#9a8aaa",
     "colorDark": "#7a6a8a",
-    "tagline": "A soft, muted lavender-grey with painterly delicacy.",
-    "description": "From the Shikiori series, Hara Hara is a soft, muted lavender-grey - delicate and atmospheric, like petals drifting down. One of the gentlest colours in the series.",
+    "tagline": "Drizzle - a dark autumn purple.",
+    "description": "Hara Hara (drizzle) is a dark, muted purple reflecting the colours of autumn. From the Shikiori 'Sound of Rain' set, released alongside Sailor's 2021 rain-themed pens. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -7950,15 +8025,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft lavender-grey with gentle shading. Delicate and dreamy."
+        "body": "Dark purple with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The painterly delicacy suits cream paper."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-shikori-hara-hara.jpg",
@@ -7968,14 +8043,14 @@ const INKS = [
     "id": "sailor-shikori-potsu",
     "brand": "Sailor",
     "name": "Shikiori Potsu",
-    "colours": ["Purple"],
+    "colours": ["Blue", "Purple"],
     "colorPrimary": "#6a4a8a",
     "colorDark": "#4a2a6a",
-    "tagline": "A soft, dusky purple with quiet sophistication.",
-    "description": "From the Shikiori series, Potsu is a muted, dusky purple - soft, atmospheric, and quietly sophisticated. The painterly quality gives it a gentle, watercolour feel.",
+    "tagline": "Winter rain - a violet blue.",
+    "description": "Potsupotsu (winter rain) is a violet-blue that shows red at the edges of heavy strokes. From the Shikiori 'Sound of Rain' set, released alongside Sailor's 2021 rain-themed pens. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 0,
+      "sheen": 1,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -7984,15 +8059,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft grey-purple with gentle shading. Quietly sophisticated."
+        "body": "Violet-blue with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The painterly quality suits textured paper."
+        "body": "Bluer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs."
+        "body": "Broad nibs show the red edges."
       }
     ],
     "image": "images/sailor-shikori-potsu.jpg",
@@ -8002,14 +8077,14 @@ const INKS = [
     "id": "sailor-shikori-shimoyo",
     "brand": "Sailor",
     "name": "Shikiori Shimoyo",
-    "colours": ["Blue"],
+    "colours": ["Blue", "Grey"],
     "colorPrimary": "#5a6a7a",
     "colorDark": "#3a4a5a",
-    "tagline": "Frosty night - a cool, muted blue-grey from the Shikiori series.",
-    "description": "Shimoyo (frosty night) is a cool, muted blue-grey with the painterly softness of the Shikiori series. Calm and wintry, it has the still beauty of a frost-covered evening.",
+    "tagline": "Frosty night - a solid blue-black.",
+    "description": "Shimoyo (frosty night) is a solid blue-black with a grey cast. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 0,
+      "sheen": 1,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8018,15 +8093,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool muted blue-grey with gentle shading."
+        "body": "Blue-black with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The frosty quality suits all papers."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-shikori-shimoyo.jpg",
@@ -8036,14 +8111,14 @@ const INKS = [
     "id": "sailor-shikori-okuyama",
     "brand": "Sailor",
     "name": "Shikiori Okuyama",
-    "colours": ["Purple"],
+    "colours": ["Red", "Purple"],
     "colorPrimary": "#5a3a6a",
     "colorDark": "#3a1a4a",
-    "tagline": "Deep mountains - a muted, earthy purple from the Shikiori series.",
-    "description": "Okuyama (deep mountains) is a muted, earthy purple with the soft painterly quality of the Shikiori series. It evokes the deep, quiet hush of remote mountain forests.",
+    "tagline": "Deep mountains - a maroon with green edges.",
+    "description": "Okuyama (deep mountains) is a maroon that shows green at the edges of heavy strokes. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 0,
+      "sheen": 1,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8052,15 +8127,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Muted moss-green with soft, earthy shading."
+        "body": "Maroon with green edges in pooled ink."
       },
       {
         "title": "On textured paper",
-        "body": "The deep-forest quality suits cream paper beautifully."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs."
+        "body": "Broad nibs show the colour shift best."
       }
     ],
     "image": "images/sailor-shikori-okuyama.jpg",
@@ -8070,13 +8145,13 @@ const INKS = [
     "id": "sailor-shikori-kasagi",
     "brand": "Sailor",
     "name": "Shikiori Kasagi",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Black"],
     "colorPrimary": "#7a4a3a",
     "colorDark": "#5a2a1a",
-    "tagline": "A warm, muted russet-brown with painterly softness.",
-    "description": "From the Shikiori series, Kasagi is a warm, muted russet-brown - soft and earthy, with the gentle watercolour quality the series is loved for. Comforting and natural.",
+    "tagline": "A very dark, near-black brown.",
+    "description": "Kasagi is a very dark brown that reads almost black. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
-      "shading": 3,
+      "shading": 2,
       "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -8086,15 +8161,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm russet-brown with soft shading."
+        "body": "Near-black brown with subtle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Beautiful on cream or aged paper where the warmth deepens."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-shikori-kasagi.jpg",
@@ -8104,14 +8179,14 @@ const INKS = [
     "id": "sailor-manyo-aka-mai",
     "brand": "Sailor",
     "name": "Manyo Aka-mai",
-    "colours": ["Red"],
-    "colorPrimary": "#a82a3a",
-    "colorDark": "#88101a",
-    "tagline": "A rich, classic red inspired by ancient Japanese poetry.",
-    "description": "From Sailor's Manyo series (inspired by the ancient Manyoshu poetry anthology), Aka-mai is a rich, warm classic red with traditional Japanese depth. Elegant and timeless.",
+    "colours": ["Brown", "Purple"],
+    "colorPrimary": "#805f6a",
+    "colorDark": "#684a4e",
+    "tagline": "Ancient red rice - a deep, earthy mauve-brown.",
+    "description": "Aka-mai is inspired by the ancient red rice of the Heian period - a deep, earthy mauve-brown. Manyo inks are inspired by the Manyoshu poetry anthology and are dual-shading - colours shift where the ink gathers, for a watercolour effect. Best with a bold nib on good paper. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8120,15 +8195,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich warm red with good shading and a subtle sheen at stroke edges."
+        "body": "Earthy mauve-brown with dual shading."
       },
       {
         "title": "On textured paper",
-        "body": "Warm and elegant on cream paper."
+        "body": "Browner on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp Sailor flow in all sizes."
+        "body": "Broad nibs show the dual shading best."
       }
     ],
     "image": "images/sailor-manyo-aka-mai.jpg",
@@ -8138,14 +8213,14 @@ const INKS = [
     "id": "sailor-manyo-kuri",
     "brand": "Sailor",
     "name": "Manyo Kuri",
-    "colours": ["Pink","Brown"],
-    "colorPrimary": "#5a3a2a",
-    "colorDark": "#3a1a0a",
-    "tagline": "Chestnut - a warm, deep brown from the Manyo poetry series.",
-    "description": "Kuri (chestnut) is a warm, deep brown from the Manyo series - rich and earthy like roasted chestnuts. Classic, comforting, and beautifully shaded.",
+    "colours": ["Brown", "Purple"],
+    "colorPrimary": "#938497",
+    "colorDark": "#79717e",
+    "tagline": "Chestnut - a soft taupe-mauve.",
+    "description": "Kuri (chestnut) is a soft taupe with mauve tones. Manyo inks are inspired by the Manyoshu poetry anthology and are dual-shading - colours shift where the ink gathers, for a watercolour effect. Best with a bold nib on good paper. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8154,15 +8229,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm deep brown with good shading from dark chestnut to lighter tan."
+        "body": "Soft taupe-mauve with dual shading."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on cream or aged paper."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp and pleasant in all sizes."
+        "body": "Broad nibs show the dual shading best."
       }
     ],
     "image": "images/sailor-manyo-kuri.jpg",
@@ -8172,11 +8247,113 @@ const INKS = [
     "id": "sailor-manyo-nekoyanagi",
     "brand": "Sailor",
     "name": "Manyo Nekoyanagi",
-    "colours": ["Purple"],
-    "colorPrimary": "#8a8a9a",
-    "colorDark": "#6a6a7a",
-    "tagline": "Pussy willow - a soft, silvery grey-lavender from the Manyo series.",
-    "description": "Nekoyanagi (pussy willow) is a soft, silvery grey with a faint lavender lean - the colour of pussy willow catkins. Gentle and refined, with the elegance the Manyo series is known for.",
+    "colours": ["Purple", "Blue"],
+    "colorPrimary": "#7a7bd4",
+    "colorDark": "#5a70bb",
+    "tagline": "Pussy willow - lavender with blue and pink.",
+    "description": "Nekoyanagi (pussy willow) is a soft lavender with light blue and pink tones. Manyo inks are inspired by the Manyoshu poetry anthology and are dual-shading - colours shift where the ink gathers, for a watercolour effect. Best with a bold nib on good paper. Sailor is a Japanese pen and ink maker founded in 1911.",
+    "properties": {
+      "shading": 4,
+      "sheen": 0,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "White paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Lavender with blue and pink dual shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Softer on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Bold nibs or a brush show it best."
+      }
+    ],
+    "image": "images/sailor-manyo-nekoyanagi.jpg",
+    "stock": 20
+  },
+  {
+    "id": "sailor-studio-123",
+    "brand": "Sailor",
+    "name": "Studio Ink 123",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#6a3a8a",
+    "colorDark": "#4a1a6a",
+    "tagline": "A blue-violet with green separation.",
+    "description": "Studio 123 is a blue-violet that separates into green at the edges. Sailor Ink Studio inks are numbered experimental colours (20ml) that shift and separate depending on paper and how much ink goes down. Sailor is a Japanese pen and ink maker founded in 1911.",
+    "properties": {
+      "shading": 4,
+      "sheen": 0,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "White paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Blue-violet with green edges."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Softer on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Broad nibs show the separation best."
+      }
+    ],
+    "image": "images/sailor-studio-123.jpg",
+    "stock": 8
+  },
+  {
+    "id": "sailor-studio-173",
+    "brand": "Sailor",
+    "name": "Studio Ink 173",
+    "colours": ["Orange", "Pink"],
+    "colorPrimary": "#a85a3a",
+    "colorDark": "#88401a",
+    "tagline": "A bright coral-pink orange.",
+    "description": "Studio 173 is a bright coral that sits between pink and orange. Sailor Ink Studio inks are numbered experimental colours (20ml) that shift and separate depending on paper and how much ink goes down. Sailor is a Japanese pen and ink maker founded in 1911.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "White or cream paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Bright coral with gentle shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Softer on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "image": "images/sailor-studio-173.jpg",
+    "stock": 8
+  },
+  {
+    "id": "sailor-studio-237",
+    "brand": "Sailor",
+    "name": "Studio Ink 237",
+    "colours": ["Pink", "Purple"],
+    "colorPrimary": "#5a2a7a",
+    "colorDark": "#3a1a5a",
+    "tagline": "A vivid magenta-pink.",
+    "description": "Studio 237 is a vivid magenta-pink - a fairly solid, reliable traditional pink. Sailor Ink Studio inks are numbered experimental colours (20ml) that shift and separate depending on paper and how much ink goes down. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -8188,116 +8365,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft silvery grey-lavender with gentle shading."
+        "body": "Magenta-pink with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The soft quality suits cream paper."
+        "body": "Holds its colour on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows."
-      }
-    ],
-    "image": "images/sailor-manyo-nekoyanagi.jpg",
-    "stock": 20
-  },
-  {
-    "id": "sailor-studio-123",
-    "brand": "Sailor",
-    "name": "Studio Ink 123",
-    "colours": ["Purple"],
-    "colorPrimary": "#6a3a8a",
-    "colorDark": "#4a1a6a",
-    "tagline": "A rich, warm purple from Sailor's Studio collection.",
-    "description": "Sailor Studio 123 is a rich, warm purple with sophisticated depth. The Studio series is known for complex, nuanced colours, and 123 delivers a beautifully muted yet characterful shade.",
-    "properties": {
-      "shading": 4,
-      "sheen": 2,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Warm khaki-olive with excellent shading and a subtle sheen."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The complex warmth suits cream paper."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the Studio shading shows fully."
-      }
-    ],
-    "image": "images/sailor-studio-123.jpg",
-    "stock": 8
-  },
-  {
-    "id": "sailor-studio-173",
-    "brand": "Sailor",
-    "name": "Studio Ink 173",
-    "colorPrimary": "#a85a3a",
-    "colorDark": "#88401a",
-    "tagline": "A warm, dusty orange-brown from the Studio collection.",
-    "description": "Sailor Studio 173 is a warm, dusty orange-brown with the complex shading the Studio series is famous for. Earthy and sophisticated, it shades dramatically.",
-    "properties": {
-      "shading": 4,
-      "sheen": 2,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White or cream paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Warm orange-brown with dramatic shading and a subtle sheen."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The earthy warmth deepens on cream."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Stunning in broad nibs."
-      }
-    ],
-    "image": "images/sailor-studio-173.jpg",
-    "stock": 8
-  },
-  {
-    "id": "sailor-studio-237",
-    "brand": "Sailor",
-    "name": "Studio Ink 237",
-    "colours": ["Purple"],
-    "colorPrimary": "#5a2a7a",
-    "colorDark": "#3a1a5a",
-    "tagline": "A rich violet-purple with complex Studio shading.",
-    "description": "Sailor Studio 237 is a rich purple with the nuanced, dramatic shading the Studio series is known for. Beautifully complex and deeply saturated.",
-    "properties": {
-      "shading": 4,
-      "sheen": 2,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Rich teal-green with excellent shading and a sheen at stroke edges."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Holds its richness on all papers."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-studio-237.jpg",
@@ -8307,14 +8383,14 @@ const INKS = [
     "id": "sailor-studio-273",
     "brand": "Sailor",
     "name": "Studio Ink 273",
-    "colours": ["Brown"],
-    "colorPrimary": "#7a5a3a",
-    "colorDark": "#5a3a1a",
-    "tagline": "A dusty violet-brown with sophisticated Studio depth.",
-    "description": "Sailor Studio 273 is a dusty, muted brown with complex, dramatic shading and the Studio series' signature nuance.",
+    "colours": ["Brown", "Purple"],
+    "colorPrimary": "#8f6567",
+    "colorDark": "#7b5852",
+    "tagline": "A dusky mauve-brown with green edges.",
+    "description": "Studio 273 is a dusky mauve-brown that separates into green at the edges. Sailor Ink Studio inks are numbered experimental colours (20ml) that shift and separate depending on paper and how much ink goes down. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 4,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8323,15 +8399,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dusty violet-blue with excellent shading and a sheen at stroke edges."
+        "body": "Mauve-brown with green edges."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its depth on all papers."
+        "body": "Browner on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the Studio shading shows."
+        "body": "Broad nibs show the separation best."
       }
     ],
     "image": "images/sailor-studio-273.jpg",
@@ -8342,13 +8418,13 @@ const INKS = [
     "brand": "Sailor",
     "name": "Studio Ink 252",
     "colours": ["Purple"],
-    "colorPrimary": "#a85a7a",
-    "colorDark": "#883a5a",
-    "tagline": "A dusty rose-mauve with rich Studio complexity.",
-    "description": "Sailor Studio 252 is a dusty rose-mauve with the complex shading the Studio series is loved for. Sophisticated and romantic, it shades from deep mauve to soft rose.",
+    "colorPrimary": "#6d587f",
+    "colorDark": "#4a4662",
+    "tagline": "A dusky lavender purple.",
+    "description": "Studio 252 is a dusky lavender-purple with lots of shading. Sailor Ink Studio inks are numbered experimental colours (20ml) that shift and separate depending on paper and how much ink goes down. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 4,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8357,15 +8433,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dusty rose-mauve with excellent shading and a subtle sheen."
+        "body": "Dusky lavender with lots of shading."
       },
       {
         "title": "On textured paper",
-        "body": "The romantic quality suits cream paper."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in broad nibs where the shading shows fully."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-studio-252.jpg",
@@ -8373,17 +8449,16 @@ const INKS = [
   },
   {
     "id": "sailor-studio-673",
-    "sheen": false,
     "brand": "Sailor",
     "name": "Studio Ink 673",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Red"],
     "colorPrimary": "#5a3a1a",
     "colorDark": "#3a2210",
-    "tagline": "A deep burgundy-brown with dramatic Studio shading.",
-    "description": "Sailor Studio 673 is a deep burgundy-brown with the complex, dramatic shading the Studio series is famous for. Rich and elegant, it shades from near-black to warm chestnut.",
+    "tagline": "A dark red-brown.",
+    "description": "Studio 673 is a dark, warm red-brown. Sailor Ink Studio inks are numbered experimental colours (20ml) that shift and separate depending on paper and how much ink goes down. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
-      "shading": 4,
-      "sheen": 3,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8392,15 +8467,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep burgundy with dramatic shading and a striking sheen at stroke edges."
+        "body": "Dark red-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The richness deepens beautifully on cream."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs where the shading and sheen show."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-studio-673.jpg",
@@ -8410,14 +8485,14 @@ const INKS = [
     "id": "sailor-studio-224",
     "brand": "Sailor",
     "name": "Studio Ink 224",
-    "colours": ["Purple"],
-    "colorPrimary": "#6a3a8a",
-    "colorDark": "#4a1a6a",
-    "tagline": "A rich, warm purple with complex Studio character.",
-    "description": "Sailor Studio 224 is a rich, warm purple with the complex shading the Studio series is known for. Deep and luminous, it glows with warmth on the page.",
+    "colours": ["Blue", "Teal"],
+    "colorPrimary": "#60699b",
+    "colorDark": "#3f5f73",
+    "tagline": "A blue that splits into green and violet.",
+    "description": "Studio 224 is a mid blue that separates into green and violet tones. Sailor Ink Studio inks are numbered experimental colours (20ml) that shift and separate depending on paper and how much ink goes down. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 4,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8426,15 +8501,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm golden-yellow with excellent shading from deep gold to bright yellow."
+        "body": "Blue with green and violet separation."
       },
       {
         "title": "On textured paper",
-        "body": "Best on white paper for contrast; warm and glowing."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the gold shading shows."
+        "body": "Broad nibs show the separation best."
       }
     ],
     "image": "images/sailor-studio-224.jpg",
@@ -8444,44 +8519,11 @@ const INKS = [
     "id": "sailor-studio-973",
     "brand": "Sailor",
     "name": "Studio Ink 973",
-    "colours": ["Brown"],
+    "colours": ["Brown", "Red"],
     "colorPrimary": "#2a1a10",
     "colorDark": "#140c08",
-    "tagline": "A deep, near-black brown with subtle Studio depth.",
-    "description": "Sailor Studio 973 is a deep, near-black brown with the nuanced character the Studio series is known for. Dark and serious, it reveals subtle warm depths in lighter strokes.",
-    "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Deep blue-black with subtle shading and a sheen at stroke edges on coated paper."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Dark and dependable on all papers."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Excellent in all nib sizes."
-      }
-    ],
-    "image": "images/sailor-studio-973.jpg",
-    "stock": 7
-  },
-  {
-    "id": "sailor-shikori-souten",
-    "brand": "Sailor",
-    "name": "Shikiori Souten",
-    "colorPrimary": "#4a7a9a",
-    "colorDark": "#2a5a7a",
-    "tagline": "Blue sky - a soft, muted sky-blue from the Shikiori series.",
-    "description": "Souten (blue sky) is a soft, muted sky-blue with the painterly quality of the Shikiori series. Gentle and atmospheric, like a hazy blue sky in early morning.",
+    "tagline": "A deep brick red-brown.",
+    "description": "Studio 973 is a deep, brick red-brown. Sailor Ink Studio inks are numbered experimental colours (20ml) that shift and separate depending on paper and how much ink goes down. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -8493,15 +8535,49 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft sky-blue with gentle, painterly shading."
+        "body": "Brick red-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The hazy quality suits all papers."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "image": "images/sailor-studio-973.jpg",
+    "stock": 7
+  },
+  {
+    "id": "sailor-shikori-souten",
+    "brand": "Sailor",
+    "name": "Shikiori Souten",
+    "colours": ["Blue"],
+    "colorPrimary": "#4a7a9a",
+    "colorDark": "#2a5a7a",
+    "tagline": "Azure sky - a light, bright blue.",
+    "description": "Souten (azure sky) is a light, bright blue. Shikiori - 'weaving the four seasons' - inks come in 20ml bottles and shade and change as they dry. Sailor is a Japanese pen and ink maker founded in 1911.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Fast (5–10 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "White paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Bright blue with gentle shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Holds its colour on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/sailor-shikori-souten.jpg",
@@ -8509,17 +8585,18 @@ const INKS = [
   },
   {
     "id": "sailor-dategokoro",
+    "sheen": true,
     "brand": "Sailor",
     "name": "Dategokoro",
-    "colours": ["Blue"],
-    "colorPrimary": "#3a5a8a",
-    "colorDark": "#1a3a6a",
-    "tagline": "A refined, dignified blue with a stylish, dandy spirit.",
-    "description": "Dategokoro (the spirit of a stylish dandy) is a refined, dignified blue with character and flair. It's a sophisticated everyday blue with the elegance its name implies.",
+    "colours": ["Purple", "Red"],
+    "colorPrimary": "#4a2437",
+    "colorDark": "#431925",
+    "tagline": "A nearly black purple with a gleaming red sheen.",
+    "description": "Dategokoro is from Sailor's Yurameku collection - a deep, nearly black plum-purple with a red sheen that glows on finer papers. Yurameku inks shift shade with the paper and as they develop. Sailor is a Japanese pen and ink maker founded in 1911.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
-      "dryTime": "Fast (5–10 sec)",
+      "sheen": 3,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "White or cream paper"
@@ -8527,15 +8604,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Refined dignified blue with good shading. Stylish and elegant."
+        "body": "Near-black plum with red sheen."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its character on all papers."
+        "body": "More purple on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp Sailor flow in all sizes."
+        "body": "Wetter nibs show the sheen best."
       }
     ],
     "image": "images/sailor-dategokoro.jpg",
@@ -8755,11 +8832,11 @@ const INKS = [
     "id": "tag-kyo-no-oto-sakuranezumi",
     "brand": "TAG Kyo-No-Oto",
     "name": "Sakuranezumi",
-    "colours": ["Purple"],
-    "colorPrimary": "#8a6a9a",
-    "colorDark": "#6a4a7a",
-    "tagline": "Cherry mouse - a soft, dusty mauve-purple rooted in Kyoto tradition.",
-    "description": "Sakuranezumi (cherry blossom mouse-grey) is a soft, muted grey-pink from TAG's traditional Kyoto colour range. Gentle and refined, it captures a quintessentially Japanese subtlety.",
+    "colours": ["Grey", "Purple"],
+    "colorPrimary": "#453748",
+    "colorDark": "#322836",
+    "tagline": "Cherry-blossom grey - a pink-tinged dark grey.",
+    "description": "Sakuranezumi is 'cherry blossom grey' - the colour of cherry blossom with a hint of dark ink, a muted purple-grey. From TAG Stationery's Kyo-no-oto ('Sounds of Kyoto') series, made with the Kyoto Plant Dyeing Research Institute to recreate traditional Heian-period colours. 40ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -8771,15 +8848,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft grey-pink with gentle, refined shading."
+        "body": "Muted purple-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The traditional subtlety suits cream paper beautifully."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the soft colour shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/tag-kyo-no-oto-sakuranezumi.jpg",
@@ -8789,13 +8866,14 @@ const INKS = [
     "id": "tag-kyo-no-oto-nurebairo",
     "brand": "TAG Kyo-No-Oto",
     "name": "Nurebairo",
+    "colours": ["Black"],
     "colorPrimary": "#2a2a3a",
     "colorDark": "#0a0a1a",
-    "tagline": "Wet raven - a deep, glossy blue-black with hidden depth.",
-    "description": "Nurebairo (the glossy black of wet raven feathers) is a deep blue-black with a subtle, lustrous quality. Dark and elegant, it reveals deep blue undertones in the light.",
+    "tagline": "The glossy black of crow feathers.",
+    "description": "Nurebairo is a glossy black, the colour of lustrous crow feathers. From TAG Stationery's Kyo-no-oto ('Sounds of Kyoto') series, made with the Kyoto Plant Dyeing Research Institute to recreate traditional Heian-period colours. 40ml bottles.",
     "properties": {
       "shading": 2,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8804,15 +8882,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep glossy blue-black with subtle shading. Elegant and dark."
+        "body": "Deep black with subtle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Dependable and refined on all papers."
+        "body": "Crisp on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/tag-kyo-no-oto-nurebairo.jpg",
@@ -8822,13 +8900,14 @@ const INKS = [
     "id": "tag-kyo-no-oto-adzukiiro",
     "brand": "TAG Kyo-No-Oto",
     "name": "Adzukiiro",
+    "colours": ["Red"],
     "colorPrimary": "#7a2a3a",
     "colorDark": "#5a0a1a",
-    "tagline": "Adzuki bean - a deep, warm red-brown rooted in Kyoto tradition.",
-    "description": "Adzukiiro (adzuki bean colour) is a deep, warm red-brown - the colour of cooked red beans, a staple of Japanese sweets. Rich, traditional, and beautifully muted.",
+    "tagline": "Azuki bean red.",
+    "description": "Adzukiiro is the deep red of azuki beans. From TAG Stationery's Kyo-no-oto ('Sounds of Kyoto') series, made with the Kyoto Plant Dyeing Research Institute to recreate traditional Heian-period colours. 40ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8837,15 +8916,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep warm red-brown with good shading. Traditional and rich."
+        "body": "Deep red with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth deepens beautifully on cream paper."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/tag-kyo-no-oto-adzukiiro.jpg",
@@ -8858,8 +8937,8 @@ const INKS = [
     "colours": ["Brown"],
     "colorPrimary": "#6a4a2a",
     "colorDark": "#4a2a0a",
-    "tagline": "Fallen chestnut - a warm, earthy brown from the Kyoto range.",
-    "description": "Ochiguriiro (fallen chestnut colour) is a warm, earthy brown - the colour of chestnuts on the autumn ground. Traditional, comforting, and beautifully grounded.",
+    "tagline": "The reddish brown of fallen chestnuts.",
+    "description": "Ochiguriiro is the reddish brown of fallen chestnuts. From TAG Stationery's Kyo-no-oto ('Sounds of Kyoto') series, made with the Kyoto Plant Dyeing Research Institute to recreate traditional Heian-period colours. 40ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -8871,15 +8950,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm earthy brown with good shading from deep to lighter tan."
+        "body": "Reddish brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on cream or aged paper."
+        "body": "Earthier on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and pleasant in all sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/tag-kyo-no-oto-ochiguriiro.jpg",
@@ -8889,30 +8968,31 @@ const INKS = [
     "id": "taccia-sunaoiro-akasakura",
     "brand": "Taccia",
     "name": "Akasakura",
-    "colorPrimary": "#d46a7a",
-    "colorDark": "#b44a5a",
-    "tagline": "Red cherry blossom - a warm, vivid sakura pink.",
-    "description": "Akasakura (red cherry blossom) is a warm, vivid rose-pink from Taccia's Sunao-Iro range of traditional Japanese colours. Cheerful and romantic, it captures sakura at its most vibrant.",
+    "colours": ["Red"],
+    "colorPrimary": "#c0383f",
+    "colorDark": "#a93532",
+    "tagline": "A soft cherry red with a dusty, brick-red edge.",
+    "description": "Akasakura ('red cherry') is from the Sharaku set, named after the artist famous for his kabuki actor portraits. It's a soft, slightly pink-leaning red with a muted brick tone where it pools - easy on the eye rather than loud, with lovely shading. From Taccia's Ukiyo-e series, inspired by the colours of Japanese woodblock prints. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
+      "waterResistance": "Medium",
       "lubrication": "Well-lubricated",
       "bestOn": "White or cream paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm vivid pink with good shading from deep rose to pale blush."
+        "body": "Soft cherry red with lovely shading."
       },
       {
         "title": "On textured paper",
-        "body": "Warm and romantic on cream paper."
+        "body": "Can feather on cheap or absorbent paper - best on good fountain pen paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and pleasant in all nib sizes."
+        "body": "Comfortable in any nib; medium and broad show the shading."
       }
     ],
     "image": "images/taccia-sunaoiro-akasakura.jpg",
@@ -8923,30 +9003,30 @@ const INKS = [
     "brand": "Taccia",
     "name": "Nakamurasaki",
     "colours": ["Purple"],
-    "colorPrimary": "#6a3a7a",
-    "colorDark": "#4a1a5a",
-    "tagline": "A mid-toned traditional purple with refined Japanese elegance.",
-    "description": "Nakamurasaki is a balanced mid-purple from Taccia's Sunao-Iro range. Neither too dark nor too bright, it has a refined, traditional elegance with lovely shading.",
+    "colorPrimary": "#28205f",
+    "colorDark": "#261e30",
+    "tagline": "A deep, rich red-leaning purple.",
+    "description": "Nakamurasaki ('medium purple') is from the Hiroshige set, named after the landscape artist. It's a deep, saturated violet that leans slightly red, with only gentle shading. From Taccia's Ukiyo-e series, inspired by the colours of Japanese woodblock prints. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 2,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
+      "waterResistance": "Medium",
       "lubrication": "Well-lubricated",
       "bestOn": "White paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Balanced mid-purple with good shading and a subtle sheen."
+        "body": "Deep violet with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its elegance on all papers."
+        "body": "Darker and steady on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all nib sizes."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/taccia-sunaoiro-nakamurasaki.jpg",
@@ -8956,13 +9036,14 @@ const INKS = [
     "id": "taccia-sunaoiro-fukakihanada",
     "brand": "Taccia",
     "name": "Fukakihanada",
-    "colorPrimary": "#1a3a6a",
-    "colorDark": "#0a1a4a",
-    "tagline": "Deep indigo - the rich, traditional blue of Japanese textiles.",
-    "description": "Fukakihanada (deep indigo) is a rich, dark blue from Taccia's Sunao-Iro range - the colour of traditional Japanese indigo dye. Deep, dignified, and beautifully shaded.",
+    "colours": ["Blue"],
+    "colorPrimary": "#24467d",
+    "colorDark": "#283052",
+    "tagline": "A clear mid blue that shades from sky to deep blue.",
+    "description": "Fukakihanada ('light blue') is a clean, true blue that shades from a light sky blue in thin strokes to a deep mid blue where it pools. It's from the Hokusai set, named after the artist behind 'The Great Wave'. From Taccia's Ukiyo-e series, inspired by the colours of Japanese woodblock prints. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -8971,15 +9052,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep indigo with good shading from near-black to mid-blue."
+        "body": "Clear blue with strong light-to-dark shading."
       },
       {
         "title": "On textured paper",
-        "body": "The traditional depth carries through on all papers."
+        "body": "A little deeper and flatter on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp and reliable in all sizes."
+        "body": "Medium and broad nibs show the shading best."
       }
     ],
     "image": "images/taccia-sunaoiro-fukakihanada.jpg",
@@ -8987,17 +9068,18 @@ const INKS = [
   },
   {
     "id": "taccia-sunaoiro-sabimidori",
+    "sheen": true,
     "brand": "Taccia",
     "name": "Sabimidori",
-    "colours": ["Green"],
-    "colorPrimary": "#4a6a5a",
-    "colorDark": "#2a4a3a",
-    "tagline": "Rust green - a muted, antique grey-green patina.",
-    "description": "Sabimidori (rust green) is a muted, antique grey-green from Taccia's Sunao-Iro range - the colour of weathered bronze. Sophisticated and atmospheric with lovely shading.",
+    "colours": ["Teal", "Green"],
+    "colorPrimary": "#3f6e66",
+    "colorDark": "#24413c",
+    "tagline": "A deep teal-green with a heavy rust-red sheen.",
+    "description": "Sabimidori means 'rust green'. On the page it's a deep teal that dries to a dusty, muted green, and where the ink pools it throws a strong rusty red sheen - in a heavy swatch the sheen can almost cover the green. Inspired by the greens in Hokusai's 'Barrier Town on the Sumida River'. From Taccia's Ukiyo-e series, inspired by the colours of Japanese woodblock prints. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
+      "shading": 4,
+      "sheen": 4,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "Cream or white paper"
@@ -9005,15 +9087,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Muted grey-green with good shading. Antique and sophisticated."
+        "body": "Teal to dusty green with rusty red sheen in wetter strokes."
       },
       {
         "title": "On textured paper",
-        "body": "The patina quality suits cream paper beautifully."
+        "body": "Greener and calmer on textured paper - the sheen needs smooth paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Wet, broad nibs bring out the sheen; fine nibs give a quiet green."
       }
     ],
     "image": "images/taccia-sunaoiro-sabimidori.jpg",
@@ -9021,16 +9103,18 @@ const INKS = [
   },
   {
     "id": "taccia-sunaoiro-koiai",
+    "sheen": true,
     "brand": "Taccia",
     "name": "Koiai",
+    "colours": ["Blue"],
     "colorPrimary": "#1a2a4a",
     "colorDark": "#0a1a2a",
-    "tagline": "Dark indigo - a deep, near-black traditional blue.",
-    "description": "Koiai (dark indigo) is a very deep, near-black blue from Taccia's Sunao-Iro range. Darker than Fukakihanada, it's the deepest indigo of traditional Japanese dyeing - dignified and dramatic.",
+    "tagline": "Dark indigo that shades from cerulean to navy, with a muted red sheen.",
+    "description": "Koiai ('dark indigo') is a deep indigo blue that shades dramatically from bright cerulean to near-navy, with a muted reddish sheen where it pools. It's from the Hokusai set, named after the artist behind 'The Great Wave'. From Taccia's Ukiyo-e series, inspired by the colours of Japanese woodblock prints. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
-      "dryTime": "Fast (5–10 sec)",
+      "shading": 4,
+      "sheen": 3,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "White paper"
@@ -9038,15 +9122,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Very deep indigo shading to near-black. A subtle sheen at stroke edges."
+        "body": "Dramatic shading from cerulean to dark indigo, with a hint of red sheen."
       },
       {
         "title": "On textured paper",
-        "body": "Dark and dignified on all papers."
+        "body": "Reads as a steady dark blue on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all nib sizes."
+        "body": "Wetter nibs show the sheen; any nib gives a strong dark blue."
       }
     ],
     "image": "images/taccia-sunaoiro-koiai.jpg",
@@ -9056,14 +9140,14 @@ const INKS = [
     "id": "taccia-sunaoiro-aka",
     "brand": "Taccia",
     "name": "Aka",
-    "colours": ["Red"],
-    "colorPrimary": "#c81a2a",
-    "colorDark": "#a8000a",
-    "tagline": "Red - a pure, vivid traditional Japanese red.",
-    "description": "Aka (red) is a clean, vivid traditional red from Taccia's Sunao-Iro range. Bright and confident, it's a classic Japanese red with excellent saturation.",
+    "colours": ["Red", "Orange"],
+    "colorPrimary": "#e74218",
+    "colorDark": "#d34714",
+    "tagline": "A bright tomato red.",
+    "description": "Aka is simply 'red' - a bright, warm tomato red that leans towards orange, with medium shading and a hint of gold-green sheen in heavy strokes. From Taccia's Sunao-iro range - their everyday line of traditional Japanese colours, pH neutral and gentle on pens. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
-      "shading": 2,
-      "sheen": 1,
+      "shading": 3,
+      "sheen": 2,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9072,15 +9156,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid clean red with good saturation. Bright and confident."
+        "body": "Bright orange-leaning red with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its vibrancy on all papers."
+        "body": "Holds its brightness on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Crisp and consistent in all sizes."
+        "body": "A wet ink that's comfortable in any nib."
       }
     ],
     "image": "images/taccia-sunaoiro-aka.jpg",
@@ -9093,10 +9177,10 @@ const INKS = [
     "colours": ["Purple"],
     "colorPrimary": "#5a2a8a",
     "colorDark": "#3a0a6a",
-    "tagline": "Purple - a rich, regal traditional Japanese violet.",
-    "description": "Murasaki (purple) is a rich, saturated violet from Taccia's Sunao-Iro range - the imperial purple of classical Japan. Regal and vivid with beautiful shading.",
+    "tagline": "A vivid violet purple with a touch of green sheen.",
+    "description": "Murasaki is 'purple' - a bright, saturated violet with low shading and a little green sheen where it pools. From Taccia's Sunao-iro range - their everyday line of traditional Japanese colours, pH neutral and gentle on pens. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
-      "shading": 3,
+      "shading": 2,
       "sheen": 2,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
@@ -9106,15 +9190,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich violet with good shading and a blue sheen at stroke edges."
+        "body": "Vivid violet with a hint of green sheen in heavy strokes."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its richness on all papers."
+        "body": "Stays bright on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in broad nibs where the shading and sheen show."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/taccia-sunaoiro-murasaki.jpg",
@@ -9125,13 +9209,13 @@ const INKS = [
     "brand": "Taccia",
     "name": "Momo",
     "colours": ["Pink"],
-    "colorPrimary": "#e89aaa",
-    "colorDark": "#c87a8a",
-    "tagline": "Peach - a soft, warm peach-pink with gentle charm.",
-    "description": "Momo (peach) is a soft, warm peach-pink from Taccia's Sunao-Iro range. Gentle and delicate, it captures the soft blush of ripe peach skin.",
+    "colorPrimary": "#f73667",
+    "colorDark": "#f2325b",
+    "tagline": "A vibrant bubblegum pink with a pop of gold sheen.",
+    "description": "Momo (peach blossom) is a vibrant hot bubblegum pink - far brighter than the name suggests - with a little gold sheen in heavy swabs. From Taccia's Sunao-iro range - their everyday line of traditional Japanese colours, pH neutral and gentle on pens. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
       "shading": 2,
-      "sheen": 0,
+      "sheen": 2,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9140,15 +9224,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft peach-pink with gentle shading. Delicate and warm."
+        "body": "Bright, punchy pink with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Can appear pale on cream; white gives best contrast."
+        "body": "Stays bright on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows."
+        "body": "Comfortable in any nib; wet nibs can show gold sheen."
       }
     ],
     "image": "images/taccia-sunaoiro-momo.jpg",
@@ -9156,15 +9240,17 @@ const INKS = [
   },
   {
     "id": "taccia-sunaoiro-ebi",
+    "sheen": true,
     "brand": "Taccia",
     "name": "Ebi",
+    "colours": ["Red", "Purple"],
     "colorPrimary": "#a83a4a",
     "colorDark": "#88101a",
-    "tagline": "Shrimp - a warm, pinkish red with traditional depth.",
-    "description": "Ebi (shrimp) is a warm pinkish-red from Taccia's Sunao-Iro range - the colour of cooked shrimp shells. Warm and distinctive, sitting between red and pink with lovely shading.",
+    "tagline": "A wine-red burgundy with plenty of purple and a green sheen.",
+    "description": "Ebi is a deep burgundy-maroon that leans purple - like red wine - with medium shading and a green-gold sheen where it pools. The name comes from 'ebi-iro', the traditional Japanese colour of red-purple shrimp. From Taccia's Sunao-iro range - their everyday line of traditional Japanese colours, pH neutral and gentle on pens. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 3,
       "dryTime": "Fast (5–10 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9173,15 +9259,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm pinkish-red with good shading from deep to lighter rose-red."
+        "body": "Wine-red burgundy with green-gold sheen in heavier strokes."
       },
       {
         "title": "On textured paper",
-        "body": "The warmth deepens beautifully on cream."
+        "body": "Reads as a deep maroon on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all nib sizes."
+        "body": "Comfortable in any nib; broad nibs show the sheen."
       }
     ],
     "image": "images/taccia-sunaoiro-ebi.jpg",
@@ -9191,11 +9277,11 @@ const INKS = [
     "id": "taccia-sunaoiro-cha",
     "brand": "Taccia",
     "name": "Cha",
-    "colours": ["Brown"],
-    "colorPrimary": "#6a4a2a",
-    "colorDark": "#4a2a0a",
-    "tagline": "Tea - a warm, classic brown the colour of steeped Japanese tea.",
-    "description": "Cha (tea) is a warm, medium-dark brown from Taccia's Sunao-Iro range - the colour of richly steeped tea. Comforting, traditional, and beautifully shaded.",
+    "colours": ["Brown", "Red"],
+    "colorPrimary": "#823429",
+    "colorDark": "#682b22",
+    "tagline": "A medium-dark brown with a red undertone.",
+    "description": "Cha is 'tea' - a warm, medium-dark brown with a red undertone and some nice shading. A wet, well-behaved everyday brown. From Taccia's Sunao-iro range - their everyday line of traditional Japanese colours, pH neutral and gentle on pens. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -9207,15 +9293,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm tea-brown with good shading from dark to lighter amber."
+        "body": "Warm red-brown with nice shading."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on cream or aged paper."
+        "body": "Can feather on cheap copy paper; fine on good fountain pen paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Consistent and pleasant in all sizes."
+        "body": "A wet ink that's comfortable in any nib."
       }
     ],
     "image": "images/taccia-sunaoiro-cha.jpg",
@@ -9225,31 +9311,31 @@ const INKS = [
     "id": "taccia-ukiyoe-hokusai-benitsuchi",
     "brand": "Taccia",
     "name": "Hokusai Benitsuchi",
-    "colours": ["Orange","Red"],
-    "colorPrimary": "#a84a3a",
-    "colorDark": "#882a1a",
-    "tagline": "A warm, earthy red-ochre from Taccia's Hokusai ukiyo-e collection.",
-    "description": "From Taccia's premium Ukiyo-e range honouring the artist Hokusai, Benitsuchi is a warm red-earth ochre - the colour of pigment in classic woodblock prints. Rich, artistic, and beautifully shaded.",
+    "colours": ["Red", "Brown"],
+    "colorPrimary": "#b63d31",
+    "colorDark": "#95332a",
+    "tagline": "Red soil - a rich brick red-brown.",
+    "description": "Benitsuchi means 'red soil', inspired by the red slopes of Mount Fuji in Hokusai's 'Fine Wind, Clear Morning' (the 'Red Fuji'). It's a rich brick red with a brown, earthy depth, medium shading and a little dark sheen where it pools. It's from the Hokusai set, named after the artist behind 'The Great Wave'. From Taccia's Ukiyo-e series, inspired by the colours of Japanese woodblock prints. Taccia is a Japanese stationery brand; its inks are made in Japan by Nakabayashi in 40ml bottles.",
     "properties": {
-      "shading": 4,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
+      "shading": 3,
+      "sheen": 2,
+      "dryTime": "Slow (20–30 sec)",
+      "waterResistance": "Medium",
       "lubrication": "Well-lubricated",
       "bestOn": "Cream or white paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm red-ochre with excellent shading from deep terracotta to lighter amber."
+        "body": "Brick red-brown with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "The artistic, earthy quality really shines on cream paper."
+        "body": "Earthier and darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the shading fully shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/taccia-ukiyoe-hokusai-benitsuchi.jpg",
@@ -9257,17 +9343,16 @@ const INKS = [
   },
   {
     "id": "tono-lims-miss-u",
-    "shimmer": false,
     "brand": "Tono & Lims",
     "name": "Miss U",
-    "colours": ["Pink"],
-    "colorPrimary": "#c86a8a",
-    "colorDark": "#a83a5a",
-    "tagline": "A wistful pink with a touch of longing and shimmer.",
-    "description": "Miss U is a soft, wistful pink with subtle shimmer - romantic and gently melancholy, like a letter to someone far away. A lovely, atmospheric ink from this creative Taiwanese maker.",
+    "colours": ["Pink", "Brown"],
+    "colorPrimary": "#aa6767",
+    "colorDark": "#8f5151",
+    "tagline": "A soft, dusty rose pink.",
+    "description": "Miss U is a gentle, dusty rose - a muted pink with a hint of brown that suits journaling and letters. From the Baby Color collection - soft, gentle colours with a playful feel. Tono & Lims is a Japanese-Korean ink brand, founded by pen enthusiast Takashi Ono with Korean ink maker Lim's Lab. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9276,15 +9361,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft purple with subtle shimmer and good shading."
+        "body": "Soft dusty rose with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Shimmer is gentler on textured stock; the purple stays lovely."
+        "body": "Muted and calm on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Medium to broad nibs show the shimmer best. Shake before use."
+        "body": "Medium and broad nibs keep the pale colour readable."
       }
     ],
     "image": "images/tono-lims-miss-u.jpg",
@@ -9292,16 +9377,16 @@ const INKS = [
   },
   {
     "id": "tono-lims-protect-u",
-    "shimmer": false,
     "brand": "Tono & Lims",
     "name": "Protect U",
-    "colorPrimary": "#2a6a7a",
-    "colorDark": "#0a4a5a",
-    "tagline": "A protective teal with depth and a gentle shimmer.",
-    "description": "Protect U is a deep teal with subtle shimmer - calm, grounding, and quietly protective in mood. A beautiful, atmospheric colour from Tono & Lims.",
+    "colours": ["Grey", "Blue"],
+    "colorPrimary": "#717a73",
+    "colorDark": "#576362",
+    "tagline": "A soft, cool grey with a blue edge.",
+    "description": "Protect U is a light, cool grey - a little lighter and cooler than De Atramentis Mouse Grey - with blue-grey and faint olive tones where it pools. From the Baby Color collection - soft, gentle colours with a playful feel. Tono & Lims is a Japanese-Korean ink brand, founded by pen enthusiast Takashi Ono with Korean ink maker Lim's Lab. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9310,15 +9395,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep teal with subtle shimmer and good shading."
+        "body": "Cool grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The teal stays rich; shimmer is gentler."
+        "body": "Can feather on cheap or absorbent paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Medium to broad nibs show the shimmer best. Shake before use."
+        "body": "Broader nibs keep the light grey readable."
       }
     ],
     "image": "images/tono-lims-protect-u.jpg",
@@ -9329,10 +9414,10 @@ const INKS = [
     "brand": "Tono & Lims",
     "name": "Mizumanju",
     "colours": ["Purple"],
-    "colorPrimary": "#9a7ab0",
-    "colorDark": "#7a5a90",
-    "tagline": "Water sweet - a soft, translucent lilac-purple like a summer jelly.",
-    "description": "Mizumanju (water dumpling) is a soft, translucent lilac-purple inspired by the cooling summer Japanese sweet. Light, refreshing, and delicately atmospheric.",
+    "colorPrimary": "#a485a2",
+    "colorDark": "#876585",
+    "tagline": "A soft, pale lavender like a summer sweet.",
+    "description": "Mizumanju is a pale, dusty lavender, named after the Japanese summer sweet - a translucent agar dumpling filled with red bean, served chilled. From the Baby Color collection - soft, gentle colours with a playful feel. Tono & Lims is a Japanese-Korean ink brand, founded by pen enthusiast Takashi Ono with Korean ink maker Lim's Lab. 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -9344,15 +9429,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft translucent blue-grey with gentle shading. Light and refreshing."
+        "body": "Pale lavender with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The delicate quality suits white paper best."
+        "body": "Soft and muted on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows."
+        "body": "Medium and broad nibs keep it readable."
       }
     ],
     "image": "images/tono-lims-mizumanju.jpg",
@@ -9362,13 +9447,14 @@ const INKS = [
     "id": "tono-lims-heart",
     "brand": "Tono & Lims",
     "name": "Heart",
-    "colorPrimary": "#d43a6a",
-    "colorDark": "#b41a4a",
-    "tagline": "A warm, vivid heart-red-pink with a loving glow.",
-    "description": "Heart is a vivid, warm red-pink - bright, loving, and full of energy. It sits between red and magenta, with the cheerful warmth its name promises.",
+    "colours": ["Pink", "Brown"],
+    "colorPrimary": "#b0827e",
+    "colorDark": "#9c6f6b",
+    "tagline": "A warm, dusty pink-brown.",
+    "description": "Heart is a muted, dusty rose-brown - soft and warm rather than bright, like dried rose petals. Tono & Lims is a Japanese-Korean ink brand, founded by pen enthusiast Takashi Ono with Korean ink maker Lim's Lab. 30ml bottles. We've described it from our own swatch.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9377,15 +9463,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid red-pink with good shading and a sheen at stroke edges."
+        "body": "Dusty rose-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Warm and bright on all papers."
+        "body": "Warmer and browner on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Excellent in all sizes; broad nibs show the sheen."
+        "body": "Medium and broad nibs suit the soft colour."
       }
     ],
     "image": "images/tono-lims-heart.jpg",
@@ -9393,17 +9479,16 @@ const INKS = [
   },
   {
     "id": "tono-lims-joker",
-    "shimmer": false,
     "brand": "Tono & Lims",
     "name": "Joker",
-    "colours": ["Purple"],
-    "colorPrimary": "#4a1a6a",
-    "colorDark": "#2a0a4a",
-    "tagline": "A mysterious dark purple with a mischievous, theatrical edge.",
-    "description": "Joker is a deep, mysterious purple with a theatrical edge and subtle shimmer. Dark and playful, it has the unpredictable character its name suggests.",
+    "colours": ["Purple", "Grey"],
+    "colorPrimary": "#a199ba",
+    "colorDark": "#8885a6",
+    "tagline": "A soft lavender grey.",
+    "description": "Joker is a muted lavender grey - a quiet, dusty purple with grey undertones. Tono & Lims is a Japanese-Korean ink brand, founded by pen enthusiast Takashi Ono with Korean ink maker Lim's Lab. 30ml bottles. We've described it from our own swatch.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9412,15 +9497,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep green with subtle shimmer and a sheen at stroke edges."
+        "body": "Soft lavender grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Dark and mysterious on all papers."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the shimmer and sheen best. Shake before use."
+        "body": "Medium and broad nibs keep it readable."
       }
     ],
     "image": "images/tono-lims-joker.jpg",
@@ -9428,16 +9513,16 @@ const INKS = [
   },
   {
     "id": "tono-lims-dream-purple",
-    "shimmer": false,
     "brand": "Tono & Lims",
     "name": "Dream Purple",
-    "colorPrimary": "#6a3a9a",
-    "colorDark": "#4a1a7a",
-    "tagline": "A dreamy, saturated purple with magical shimmer.",
-    "description": "Dream Purple is a vivid, saturated purple with magical multi-colour shimmer. Dreamy and enchanting, it's one of Tono & Lims' most captivating colours.",
+    "colours": ["Purple", "Blue"],
+    "colorPrimary": "#65659f",
+    "colorDark": "#4f508c",
+    "tagline": "A dreamy blue-violet.",
+    "description": "Dream Purple is a mid blue-violet with gentle shading - a calm, readable purple that leans blue. Tono & Lims is a Japanese-Korean ink brand, founded by pen enthusiast Takashi Ono with Korean ink maker Lim's Lab. 30ml bottles. We've described it from our own swatch.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9446,15 +9531,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid purple with magical shimmer and good shading."
+        "body": "Blue-violet with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The purple stays rich; shimmer is gentler on textured stock."
+        "body": "Steady and a little darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the shimmer best. Shake before use, clean pen after."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/tono-lims-dream-purple.jpg",
@@ -9534,14 +9619,15 @@ const INKS = [
     "id": "de-atramentis-document-grey",
     "brand": "De Atramentis",
     "name": "Document Grey",
-    "colorPrimary": "#5a5a5a",
-    "colorDark": "#3a3a3a",
-    "tagline": "A waterproof, archival grey for permanent documents.",
-    "description": "Document Grey is a waterproof, archival grey from De Atramentis's Document line. Once dry it's completely water-resistant and fade-resistant - perfect for important documents, art, and addressing envelopes.",
+    "colours": ["Grey", "Black"],
+    "colorPrimary": "#3c332c",
+    "colorDark": "#241f1b",
+    "tagline": "A dark, waterproof document grey.",
+    "description": "Document Grey is a dark charcoal grey that reads almost black in finer nibs. Once dry it won't budge with water - ideal for envelopes, records and line work under watercolour. From De Atramentis's Document range - pigmented inks that are waterproof, lightfast and archival once dry. Made by hand in small batches in Germany, so bottles can vary slightly. Rinse your pen regularly and don't let it dry out.",
     "properties": {
-      "shading": 1,
+      "shading": 2,
       "sheen": 0,
-      "dryTime": "Medium (10–20 sec)",
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "High",
       "lubrication": "Well-lubricated",
       "bestOn": "Any paper"
@@ -9549,15 +9635,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Clean neutral grey, minimal shading. Completely waterproof once dry."
+        "body": "Dark charcoal grey with subtle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Waterproof and reliable on all papers, including envelopes."
+        "body": "Crisp and permanent on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Allow to dry fully for waterproofing. Clean your pen regularly as with all document inks."
+        "body": "Best in a pen you use often; flush it between fills."
       }
     ],
     "image": "images/de-atramentis-document-grey.jpg",
@@ -9567,10 +9653,11 @@ const INKS = [
     "id": "de-atramentis-document-blue-grey",
     "brand": "De Atramentis",
     "name": "Document Blue Grey",
-    "colorPrimary": "#4a5a6a",
-    "colorDark": "#2a3a4a",
-    "tagline": "A waterproof, archival blue-grey for permanence and elegance.",
-    "description": "Document Blue Grey is a waterproof, archival blue-grey from De Atramentis's Document line. Elegant and permanent, it's water- and fade-resistant once dry - ideal for documents that need to last.",
+    "colours": ["Blue", "Grey"],
+    "colorPrimary": "#3c4262",
+    "colorDark": "#1f1a38",
+    "tagline": "A dark, waterproof slate blue-grey.",
+    "description": "Document Blue Grey is a deep slate blue-grey - somewhere between navy and charcoal - that's waterproof once dry. A sober, professional colour for anything that needs to last. From De Atramentis's Document range - pigmented inks that are waterproof, lightfast and archival once dry. Made by hand in small batches in Germany, so bottles can vary slightly. Rinse your pen regularly and don't let it dry out.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -9582,15 +9669,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Refined blue-grey, completely waterproof once dry."
+        "body": "Slate blue-grey with subtle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Waterproof and reliable on all papers."
+        "body": "Darker and permanent on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Allow to dry fully for waterproofing. Clean your pen regularly."
+        "body": "Best in a pen you use often; flush it between fills."
       }
     ],
     "image": "images/de-atramentis-document-blue-grey.jpg",
@@ -9635,15 +9722,15 @@ const INKS = [
     "id": "dominant-industry-evening",
     "brand": "Dominant Industry",
     "name": "Evening",
-    "colours": ["Purple"],
-    "colorPrimary": "#3a3a6a",
-    "colorDark": "#1a1a4a",
-    "tagline": "The deep blue-purple of a quiet evening sky.",
-    "description": "Evening is a deep blue-purple that captures the colour of the sky just after sunset. From Korean maker Dominant Industry, it has lovely shading and a calm, contemplative mood.",
+    "colours": ["Purple", "Blue"],
+    "colorPrimary": "#8f8cc9",
+    "colorDark": "#827ebd",
+    "tagline": "A soft lavender, like an early evening sky.",
+    "description": "Evening is a soft, pale lavender with a periwinkle lean - a gentle, light purple rather than a deep one. Now discontinued, so once it's gone it's gone. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
+      "shading": 2,
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "White paper"
@@ -9651,15 +9738,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep blue-purple with good shading and a subtle sheen."
+        "body": "Pale lavender with soft shading."
       },
       {
         "title": "On textured paper",
-        "body": "The evening-sky quality suits all papers."
+        "body": "Light and muted on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all nib sizes."
+        "body": "A drier ink - medium and broad nibs keep it readable."
       }
     ],
     "image": "images/dominant-industry-evening.jpg",
@@ -9670,10 +9757,112 @@ const INKS = [
     "brand": "Dominant Industry",
     "name": "Earl Grey Tea",
     "colours": ["Orange"],
-    "colorPrimary": "#b87a2a",
-    "colorDark": "#966010",
-    "tagline": "A warm, sophisticated amber-orange like a cup of bergamot tea.",
-    "description": "Earl Grey Tea is a warm amber-orange with a sophisticated, muted quality - the colour of a well-steeped Earl Grey. Comforting and refined, with gentle shading.",
+    "colorPrimary": "#e54b27",
+    "colorDark": "#df4522",
+    "tagline": "A bright, warm orange.",
+    "description": "Earl Grey Tea is a bright, warm orange with medium shading - think the orange in the bergamot rather than the tea itself. Cheerful and very readable. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
+    "properties": {
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Cream or white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Bright orange with medium shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Warm and steady on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "image": "images/dominant-industry-earl-grey-tea.jpg",
+    "stock": 10
+  },
+  {
+    "id": "dominant-industry-romania-red",
+    "brand": "Dominant Industry",
+    "name": "Romania Red",
+    "colours": ["Red"],
+    "colorPrimary": "#a81a2a",
+    "colorDark": "#88000a",
+    "tagline": "A deep, dark crimson with a hint of gold-green sheen.",
+    "description": "Romania Red is a deep, dark crimson red, created as an alternative to Montblanc's Alfred Hitchcock red. On good paper it can show a touch of greenish-gold sheen around the edges of heavy strokes. A good everyday writer with no problems drying or feathering. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
+    "properties": {
+      "shading": 3,
+      "sheen": 2,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "White paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Deep crimson with a hint of gold-green sheen at the edges."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Darker and well behaved on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "image": "images/dominant-industry-romania-red.jpg",
+    "stock": 10
+  },
+  {
+    "id": "dominant-industry-tsavorite",
+    "brand": "Dominant Industry",
+    "name": "Tsavorite",
+    "colours": ["Green"],
+    "colorPrimary": "#31a974",
+    "colorDark": "#258a5f",
+    "tagline": "A vivid, jewel-bright green.",
+    "description": "Tsavorite is a bright, saturated green named after the green garnet gemstone, with colour-shifting shading and a slight sheen. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
+    "properties": {
+      "shading": 3,
+      "sheen": 1,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "White paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Bright jewel green with good shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Holds its colour on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "image": "images/dominant-industry-tsavorite.jpg",
+    "stock": 10
+  },
+  {
+    "id": "dominant-industry-soleil-couchant-a-etretat",
+    "brand": "Dominant Industry",
+    "name": "Soleil Couchant a Etretat",
+    "colours": ["Teal", "Green"],
+    "colorPrimary": "#2e5a5c",
+    "colorDark": "#1c3a3c",
+    "tagline": "A dark blue-green from Monet's Normandy coast.",
+    "description": "Soleil Couchant à Étretat (Sunset at Étretat) is a dark blue-green inspired by Monet's paintings of the Étretat cliffs. Larger nibs show shading between medium and dark greens and blues. From Dominant Industry's Painter series. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -9685,116 +9874,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm grey-brown with good shading. Sophisticated and comforting."
+        "body": "Dark blue-green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Lovely on cream paper where the warmth shows."
+        "body": "Deeper and greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and pleasant in all sizes."
-      }
-    ],
-    "image": "images/dominant-industry-earl-grey-tea.jpg",
-    "stock": 10
-  },
-  {
-    "id": "dominant-industry-romania-red",
-    "brand": "Dominant Industry",
-    "name": "Romania Red",
-    "colorPrimary": "#a81a2a",
-    "colorDark": "#88000a",
-    "tagline": "A bold, vivid red with confident European flair.",
-    "description": "Romania Red is a vivid, saturated red with bold confidence. Bright and warm, it's a proper statement red from Dominant Industry with good flow and shading.",
-    "properties": {
-      "shading": 3,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Vivid red with good shading and a hint of sheen."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Bold and confident on all papers."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Smooth in all nib sizes."
-      }
-    ],
-    "image": "images/dominant-industry-romania-red.jpg",
-    "stock": 10
-  },
-  {
-    "id": "dominant-industry-tsavorite",
-    "shimmer": false,
-    "brand": "Dominant Industry",
-    "name": "Tsavorite",
-    "colorPrimary": "#1a7a4a",
-    "colorDark": "#0a5a2a",
-    "tagline": "The vivid, jewelled green of a rare tsavorite gemstone.",
-    "description": "Tsavorite is a vivid, saturated green named after the precious garnet gemstone. Bright and jewelled, with excellent shading and a touch of shimmer that catches the light.",
-    "properties": {
-      "shading": 3,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Vivid jewelled green with good shading and a subtle shimmer."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Holds its vibrancy on all papers."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Beautiful in all sizes; broad nibs show the shading best."
-      }
-    ],
-    "image": "images/dominant-industry-tsavorite.jpg",
-    "stock": 10
-  },
-  {
-    "id": "dominant-industry-soleil-couchant-a-etretat",
-    "brand": "Dominant Industry",
-    "name": "Soleil Couchant a Etretat",
-    "colours": ["Teal"],
-    "colorPrimary": "#1a7a7a",
-    "colorDark": "#0a5a5a",
-    "tagline": "Sunset at Etretat - a deep, glowing teal inspired by Monet.",
-    "description": "Soleil Couchant à Étretat (Sunset at Étretat) is a deep, glowing teal inspired by the famous Normandy coast at golden hour. Rich and luminous with beautiful shading.",
-    "properties": {
-      "shading": 4,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Cream or white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Warm glowing orange with excellent shading from deep amber to lighter gold."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The sunset warmth deepens beautifully on cream."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the shading fully shows."
+        "body": "Broad nibs show the shading between green and blue."
       }
     ],
     "image": "images/dominant-industry-soleil-couchant-a-etretat.jpg",
@@ -9804,14 +9892,14 @@ const INKS = [
     "id": "dominant-industry-unknown-land",
     "brand": "Dominant Industry",
     "name": "Unknown Land",
-    "colours": ["Brown"],
-    "colorPrimary": "#6a5238",
-    "colorDark": "#443420",
-    "tagline": "A muted, mysterious brown like uncharted territory.",
-    "description": "Unknown Land is a muted brown with an atmospheric, mysterious quality. Calm and contemplative, it evokes mist over unexplored hills - sophisticated and unusual.",
+    "colours": ["Brown", "Yellow"],
+    "colorPrimary": "#b79168",
+    "colorDark": "#a07852",
+    "tagline": "A sandy gold-brown that splits into green and pink.",
+    "description": "Unknown Land is a warm, sandy golden brown with real character - as it dries it separates into hints of green and red-pink, like an old sunlit building surrounded by greenery. Released alongside the Log of Elixir ink journal. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9820,15 +9908,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Muted grey-green with good shading. Atmospheric and mysterious."
+        "body": "Sandy gold-brown with green and pink shifts in the shading."
       },
       {
         "title": "On textured paper",
-        "body": "The misty quality suits cream paper."
+        "body": "Softer and more uniform on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Broad and wet nibs show the colour separation best."
       }
     ],
     "image": "images/dominant-industry-unknown-land.jpg",
@@ -9839,13 +9927,13 @@ const INKS = [
     "shimmer": true,
     "brand": "Dominant Industry",
     "name": "Tanzanite",
-    "colours": ["Purple"],
+    "colours": ["Purple", "Blue"],
     "colorPrimary": "#3a3a8a",
     "colorDark": "#1a1a6a",
-    "tagline": "The deep blue-violet of the rare tanzanite gemstone.",
-    "description": "Tanzanite is a deep, jewelled blue-violet named after the precious gemstone. Rich and dramatic, it shifts between blue and purple with excellent shading and a touch of shimmer.",
+    "tagline": "A deep blue-violet with blue shimmer.",
+    "description": "Tanzanite is a rich, saturated blue-violet with blue shimmer and a coppery sheen in heavy strokes, named after the gemstone. The shimmer shows best with a dip pen, brush or broad nib. From their Pearl series - shake the bottle before filling, and use a medium or broad nib so the particles flow freely. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
-      "shading": 3,
+      "shading": 2,
       "sheen": 2,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
@@ -9855,15 +9943,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep blue-violet with good shading, shimmer, and a sheen at stroke edges."
+        "body": "Deep blue-violet; shimmer catches the light in wetter strokes."
       },
       {
         "title": "On textured paper",
-        "body": "The jewelled quality stays rich on all papers."
+        "body": "Darker on textured paper, with less shimmer."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs. Shake before use for the shimmer."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/dominant-industry-tanzanite.jpg",
@@ -9874,14 +9962,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Dominant Industry",
     "name": "Sunset",
-    "colours": ["Purple"],
-    "colorPrimary": "#6a2a8a",
-    "colorDark": "#4a1a6a",
-    "tagline": "A warm, blazing purple like the sun dropping below the horizon.",
-    "description": "Sunset is a warm, vivid purple that captures the blazing colours of the setting sun. Rich and glowing, with excellent shading and a touch of shimmer.",
+    "colours": ["Purple", "Pink"],
+    "colorPrimary": "#9567b0",
+    "colorDark": "#72549f",
+    "tagline": "A soft lavender-pink with gold shimmer.",
+    "description": "Sunset is a soft, warm lavender that leans pink, with gold shimmer that catches the light like the last glow of the sun. The shimmer is generous, so it can be slower to flow in some pens. From their Pearl series - shake the bottle before filling, and use a medium or broad nib so the particles flow freely. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
-      "shading": 4,
-      "sheen": 1,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9890,15 +9978,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm orange-red with excellent shading and a subtle shimmer."
+        "body": "Lavender-pink with medium shading and gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The sunset warmth deepens beautifully on cream."
+        "body": "Softer on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs. Shake before use."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/dominant-industry-sunset.jpg",
@@ -9909,13 +9997,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Dominant Industry",
     "name": "Periwinkle Twinkle",
-    "colorPrimary": "#6a6aaa",
-    "colorDark": "#4a4a8a",
-    "tagline": "A soft periwinkle blue-purple with a sparkling shimmer.",
-    "description": "Periwinkle Twinkle is a soft blue-purple with a delightful sparkling shimmer. Gentle and dreamy, it captures the colour of periwinkle flowers with a touch of magic.",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#454293",
+    "colorDark": "#292d7b",
+    "tagline": "A periwinkle blue with violet undertones and sparkle.",
+    "description": "Periwinkle Twinkle is a periwinkle that leans more blue than lavender, with violet undertones and a pearly sparkle. Lighter in fine nibs but still very readable. From their Pearl series - shake the bottle before filling, and use a medium or broad nib so the particles flow freely. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -9924,15 +10013,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft periwinkle with sparkling shimmer and good shading."
+        "body": "Periwinkle blue with violet shading and sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Shimmer is gentler; the periwinkle stays lovely."
+        "body": "Bluer and calmer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Medium to broad nibs show the shimmer best. Shake before use."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/dominant-industry-periwinkle-twinkle.jpg",
@@ -9943,15 +10032,15 @@ const INKS = [
     "shimmer": true,
     "brand": "Dominant Industry",
     "name": "October Leaves",
-    "colours": ["Yellow"],
-    "colorPrimary": "#c8a02a",
-    "colorDark": "#a87a08",
-    "tagline": "The warm golden-yellow of leaves at the height of autumn.",
-    "description": "October Leaves is a warm golden-yellow that captures the colour of autumn foliage at its peak. Rich and luminous, with excellent shading and a touch of shimmer.",
+    "colours": ["Yellow", "Orange"],
+    "colorPrimary": "#e49d3d",
+    "colorDark": "#d6832b",
+    "tagline": "A sunny golden yellow with gold shimmer.",
+    "description": "October Leaves is a sunny golden yellow that pools towards orange, with gold shimmer - like autumn leaves catching the light. From their Pearl series - shake the bottle before filling, and use a medium or broad nib so the particles flow freely. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
-      "shading": 4,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
+      "shading": 3,
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "Cream or white paper"
@@ -9959,15 +10048,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm orange-brown with excellent shading and subtle shimmer."
+        "body": "Golden yellow with orange-edged shading and gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The autumnal warmth deepens beautifully on cream."
+        "body": "Paler on textured paper - best on smooth white paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs. Shake before use."
+        "body": "Broad nibs keep it readable; fine nibs can clog with shimmer."
       }
     ],
     "image": "images/dominant-industry-october-leaves.jpg",
@@ -9978,14 +10067,15 @@ const INKS = [
     "shimmer": true,
     "brand": "Dominant Industry",
     "name": "Natural Green",
+    "colours": ["Green"],
     "colorPrimary": "#3a7a4a",
     "colorDark": "#1a5a2a",
-    "tagline": "A fresh, true green - clean and natural as new leaves.",
-    "description": "Natural Green is a clean, fresh true green - natural and balanced, like new spring leaves. Bright and wholesome, with excellent shading.",
+    "tagline": "A dark forest green with blue shimmer.",
+    "description": "Natural Green is a dark forest green with medium shading and plenty of blue shimmer in heavier strokes. Well behaved on good paper. From their Pearl series - shake the bottle before filling, and use a medium or broad nib so the particles flow freely. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "White or cream paper"
@@ -9993,15 +10083,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Fresh true green with good shading from deep to bright."
+        "body": "Dark forest green with medium shading; blue shimmer in wetter strokes."
       },
       {
         "title": "On textured paper",
-        "body": "Natural and wholesome on all papers."
+        "body": "A little feathering on cheap copy paper; fine on fountain pen paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all nib sizes."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/dominant-industry-natural-green.jpg",
@@ -10010,17 +10100,18 @@ const INKS = [
   {
     "id": "dominant-industry-milky-way-blue",
     "shimmer": true,
+    "sheen": true,
     "brand": "Dominant Industry",
     "name": "Milky Way Blue",
-    "colours": ["Blue"],
+    "colours": ["Blue", "Purple"],
     "colorPrimary": "#2a3a7a",
     "colorDark": "#1a1a5a",
-    "tagline": "A deep cosmic blue scattered with starry shimmer.",
-    "description": "Milky Way Blue is a deep, dark blue with a beautiful silver-blue shimmer that scatters across the page like distant stars. Cosmic, dramatic, and genuinely magical.",
+    "tagline": "A deep blue with heavy red sheen and blue-pink shimmer.",
+    "description": "Milky Way Blue is a rich, deep blue with a strong red sheen and a mix of blue and pink shimmer - a lot going on, like a night sky full of stars. From their Pearl series - shake the bottle before filling, and use a medium or broad nib so the particles flow freely. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
-      "dryTime": "Medium (10–20 sec)",
+      "sheen": 4,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "Smooth white paper"
@@ -10028,15 +10119,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep blue with starry silver shimmer and good shading. Genuinely cosmic."
+        "body": "Deep blue with red sheen and blue-pink sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The blue stays deep; shimmer is gentler."
+        "body": "Darker and calmer on textured paper - the sheen needs smooth paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the starry shimmer best. Shake before use."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/dominant-industry-milky-way-blue.jpg",
@@ -10047,15 +10138,15 @@ const INKS = [
     "shimmer": true,
     "brand": "Dominant Industry",
     "name": "Goryeo Celadon",
-    "colours": ["Green"],
-    "colorPrimary": "#6a9a8a",
-    "colorDark": "#4a7a6a",
-    "tagline": "The soft jade-green glaze of ancient Korean celadon pottery.",
-    "description": "Goryeo Celadon is a soft, muted jade-green inspired by the famous celadon ceramics of the Korean Goryeo dynasty. Refined and serene, with the delicate quality of glazed porcelain.",
+    "colours": ["Teal", "Green"],
+    "colorPrimary": "#76a4a0",
+    "colorDark": "#558a8a",
+    "tagline": "A pale celadon blue-green with silver shimmer.",
+    "description": "Goryeo Celadon is a pale blue-green inspired by the famous celadon-glazed ceramics of Korea's Goryeo dynasty, with soft silver shimmer. A pale, gentle ink. From their Pearl series - shake the bottle before filling, and use a medium or broad nib so the particles flow freely. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
-      "shading": 3,
+      "shading": 2,
       "sheen": 0,
-      "dryTime": "Medium (10–20 sec)",
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "White paper"
@@ -10063,15 +10154,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft jade-green with gentle shading. Refined and serene."
+        "body": "Pale blue-green with low shading and silver sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The porcelain quality suits cream paper."
+        "body": "Very soft on textured paper - best on smooth white paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the soft colour shows."
+        "body": "Broad nibs keep it readable; a drier ink, so wetter pens suit it."
       }
     ],
     "image": "images/dominant-industry-goryeo-celadon.jpg",
@@ -10082,14 +10173,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Dominant Industry",
     "name": "Les Falaises a Etretat",
-    "colours": ["Green"],
-    "colorPrimary": "#5a7a5a",
-    "colorDark": "#3a5a3a",
-    "tagline": "The cliffs at Etretat - a soft, mossy green of sea and stone.",
-    "description": "Les Falaises à Étretat (The Cliffs at Étretat) is a soft, mossy green inspired by the famous Normandy cliffs and sea. Atmospheric and refined, with the cool quality of coastal stone.",
+    "colours": ["Teal", "Green"],
+    "colorPrimary": "#5d9a8a",
+    "colorDark": "#35756f",
+    "tagline": "A light sea-green with gold shimmer, after Monet's cliffs.",
+    "description": "Les Falaises à Étretat (The Cliffs at Étretat) is a light blue-green with gold shimmer, inspired by Monet's paintings of the chalk cliffs on the Normandy coast. From Dominant Industry's Painter series. From their Pearl series - shake the bottle before filling, and use a medium or broad nib so the particles flow freely. Clean your pen thoroughly after use. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10098,15 +10189,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft blue-grey with good shading. Coastal and atmospheric."
+        "body": "Light sea-green with gentle shading and gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The sea-stone quality suits all papers."
+        "body": "Softer on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/dominant-industry-les-falaises-a-etretat.jpg",
@@ -10117,14 +10208,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Dominant Industry",
     "name": "Autumn Forest",
-    "colours": ["Brown"],
-    "colorPrimary": "#7a5a2a",
-    "colorDark": "#4a3a0a",
-    "tagline": "A warm, golden-brown like a forest turning in autumn.",
-    "description": "Autumn Forest is a warm golden-brown that captures the transitional colours of a forest in autumn. Earthy, rich, and beautifully shaded.",
+    "colours": ["Green", "Brown"],
+    "colorPrimary": "#614d49",
+    "colorDark": "#50423d",
+    "tagline": "A dark, muted olive green with red shimmer.",
+    "description": "Autumn Forest is a dark, muted olive green that reads almost brown-grey on the page, lit up with red shimmer - the moment a green forest starts to turn. From their Pearl series - shake the bottle before filling, and use a medium or broad nib so the particles flow freely. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
-      "shading": 4,
-      "sheen": 1,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10133,15 +10224,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm olive-brown with excellent shading between green and gold."
+        "body": "Dark olive-brown with red sparkle in wetter strokes."
       },
       {
         "title": "On textured paper",
-        "body": "The autumnal quality deepens beautifully on cream."
+        "body": "Reads as a muted dark brown-green on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the shading shows."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/dominant-industry-autumn-forest.jpg",
@@ -10151,14 +10242,14 @@ const INKS = [
     "id": "dominant-industry-dusk",
     "brand": "Dominant Industry",
     "name": "Dusk",
-    "colours": ["Purple"],
-    "colorPrimary": "#5a4a7a",
-    "colorDark": "#3a2a5a",
-    "tagline": "The soft purple-grey of the sky as night falls.",
-    "description": "Dusk is a soft, muted purple-grey that captures the gentle fading light of evening. Atmospheric and calm, with lovely shading and a contemplative mood.",
+    "colours": ["Purple", "Grey"],
+    "colorPrimary": "#48486d",
+    "colorDark": "#373b5b",
+    "tagline": "A muted grey-violet, like the sky as night falls.",
+    "description": "Dusk is a soft, muted grey-violet - a dusky purple with plenty of grey in it. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles. We've described it from our own swatch.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10167,15 +10258,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft purple-grey with good shading. Atmospheric and calm."
+        "body": "Grey-violet with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The twilight quality suits all papers."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/dominant-industry-dusk.jpg",
@@ -10186,10 +10277,10 @@ const INKS = [
     "brand": "Dominant Industry",
     "name": "Dawn",
     "colours": ["Purple"],
-    "colorPrimary": "#8a6ab0",
-    "colorDark": "#6a4a90",
-    "tagline": "The soft violet glow of first light at daybreak.",
-    "description": "Dawn is a soft violet-purple that captures the gentle glow of the sky at first light. Warm and hopeful, with delicate shading and a fresh, optimistic mood.",
+    "colorPrimary": "#7b58a2",
+    "colorDark": "#5f4991",
+    "tagline": "A soft violet, like first light at daybreak.",
+    "description": "Dawn is a soft, bright violet-lilac with gentle shading. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles. We've described it from our own swatch.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -10201,15 +10292,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft pink-coral with gentle shading. Warm and hopeful."
+        "body": "Violet-lilac with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Best on white paper for contrast; warm and fresh."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the colour shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/dominant-industry-dawn.jpg",
@@ -10220,11 +10311,11 @@ const INKS = [
     "shimmer": true,
     "brand": "Troublemaker Inks",
     "name": "Gold Dust Shimmer",
-    "colours": ["Blue"],
+    "colours": ["Blue", "Black"],
     "colorPrimary": "#1a3a7a",
     "colorDark": "#0a2050",
-    "tagline": "A deep blue saturated with brilliant gold shimmer.",
-    "description": "Gold Dust Shimmer is a deep blue packed with brilliant gold shimmer particles. From Filipino maker Troublemaker, it glows like sunlight on water - genuinely dazzling.",
+    "tagline": "A dark slate blue packed with gold shimmer.",
+    "description": "Gold Dust is a dark blue-black slate with a heavy load of gold shimmer that glints as it dries. Swirl the bottle before filling, as the shimmer settles, and clean your pen regularly. Troublemaker is a small ink studio in Cebu, Philippines, founded in 2018 and known for inks with strong shading and sheen. 60ml bottles. We've described it from our own swatch.",
     "properties": {
       "shading": 2,
       "sheen": 0,
@@ -10236,15 +10327,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm golden-brown with brilliant gold shimmer. Dazzling on coated paper."
+        "body": "Dark slate blue with gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Shimmer is subtler but the warm gold stays lovely."
+        "body": "Darker on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the shimmer best. Shake before use, clean pen after."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/troublemaker-gold-dust-shimmer.jpg",
@@ -10252,17 +10343,16 @@ const INKS = [
   },
   {
     "id": "troublemaker-abalone",
-    "sheen": false,
     "brand": "Troublemaker Inks",
     "name": "Abalone",
-    "colours": ["Blue"],
-    "colorPrimary": "#1a3a7a",
-    "colorDark": "#0a2050",
-    "tagline": "A deep blue with the iridescent sheen of abalone shell.",
-    "description": "Abalone is a deep blue with a famous, dramatic multi-colour sheen that shifts like the inside of an abalone shell. One of Troublemaker's most celebrated and spectacular inks.",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#525095",
+    "colorDark": "#354278",
+    "tagline": "A shifting blue-to-purple, like the inside of an abalone shell.",
+    "description": "Abalone is Troublemaker's best-known ink - a multi-toned shader that moves from deep bluish purple to reddish purple-pink, with hints of teal, just like the inside of an abalone shell. It can be pale in fine nibs, so medium and broader suit it best. Troublemaker is a small ink studio in Cebu, Philippines, founded in 2018 and known for inks with strong shading and sheen. 60ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 4,
+      "shading": 5,
+      "sheen": 1,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10271,15 +10361,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep teal with an iridescent multi-colour sheen that shifts pink, gold, and green. Spectacular on coated paper."
+        "body": "Strong shading from blue to purple with hints of pink and teal."
       },
       {
         "title": "On textured paper",
-        "body": "The teal stays deep; the sheen shows best on smooth stock."
+        "body": "Calmer and more blue on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wet broad nib maximises the iridescent sheen. Allow extra dry time."
+        "body": "Medium and broad nibs show the colour shifts; fine nibs can look pale."
       }
     ],
     "image": "images/troublemaker-abalone.jpg",
@@ -10290,10 +10380,11 @@ const INKS = [
     "shimmer": true,
     "brand": "Troublemaker Inks",
     "name": "Starry Night Blue",
-    "colorPrimary": "#1a2a5a",
-    "colorDark": "#0a1a3a",
-    "tagline": "A deep night-sky blue scattered with silver shimmer stars.",
-    "description": "Starry Night Blue is a deep, dark blue with silver shimmer that scatters across the page like stars in a clear night sky. Romantic, dramatic, and genuinely magical.",
+    "colours": ["Blue", "Teal"],
+    "colorPrimary": "#1e4a63",
+    "colorDark": "#122c3c",
+    "tagline": "A deep blue-teal with gold shimmer.",
+    "description": "Starry Night Blue is a deep, dark blue-teal with gold shimmer scattered through it like stars. The shimmer makes it a slightly dry writer, so it suits a wetter pen. Troublemaker is a small ink studio in Cebu, Philippines, founded in 2018 and known for inks with strong shading and sheen. 60ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 1,
@@ -10305,15 +10396,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep night blue with starry silver shimmer. Genuinely magical on coated paper."
+        "body": "Deep blue-teal with gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The blue stays deep; shimmer is gentler."
+        "body": "Darker on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the stars best. Shake before use."
+        "body": "Medium or broad nibs in a wet pen - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/troublemaker-starry-night-blue.jpg",
@@ -10324,14 +10415,14 @@ const INKS = [
     "sheen": true,
     "brand": "Troublemaker Inks",
     "name": "Simoun",
-    "colours": ["Blue"],
-    "colorPrimary": "#1a3a6a",
-    "colorDark": "#0a2050",
-    "tagline": "A deep, desert-night blue with hidden depth.",
-    "description": "Simoun (named after a desert wind) is a deep blue with atmospheric depth - the colour of a desert sky after sunset. Rich and atmospheric, with good shading.",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#33309a",
+    "colorDark": "#3c1a7f",
+    "tagline": "A bright blue with a purple-pink sheen.",
+    "description": "Simoun, named after a hot desert wind, is a bright blue that shades from turquoise-blue at the edges to deeper blue, with a pink-purple sheen where it pools. In writing it mostly reads as blue. Troublemaker is a small ink studio in Cebu, Philippines, founded in 2018 and known for inks with strong shading and sheen. 60ml bottles.",
     "properties": {
       "shading": 4,
-      "sheen": 1,
+      "sheen": 3,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10340,15 +10431,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm red-brown with excellent shading from deep to lighter rust."
+        "body": "Blue with good shading and pink-purple sheen in heavy strokes."
       },
       {
         "title": "On textured paper",
-        "body": "The desert warmth deepens beautifully on cream."
+        "body": "Mostly blue on textured paper - the sheen needs smooth paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Stunning in broad nibs where the shading shows."
+        "body": "Broad and wet nibs show the shading and sheen best."
       }
     ],
     "image": "images/troublemaker-simoun.jpg",
@@ -10359,48 +10450,13 @@ const INKS = [
     "sheen": true,
     "brand": "Troublemaker Inks",
     "name": "Lam-ang",
-    "colours": ["Purple"],
-    "colorPrimary": "#5a2a6a",
-    "colorDark": "#3a0a4a",
-    "tagline": "A deep, heroic purple inspired by Filipino epic legend.",
-    "description": "Lam-ang is a deep purple named for the hero of a famous Filipino epic. Rich and dramatic, with good shading and a subtle sheen - heroic and full of character.",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#2b1769",
+    "colorDark": "#331942",
+    "tagline": "A deep violet-blue with a red sheen.",
+    "description": "Lam-ang is a deep violet-blue with plenty of shading and a red-bronze sheen where it pools. It's named after the hero of a Filipino epic poem, who could speak from birth and was brought back to life from his bones. Troublemaker is a small ink studio in Cebu, Philippines, founded in 2018 and known for inks with strong shading and sheen. 60ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 2,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Smooth white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Deep purple with good shading and a sheen at stroke edges."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Dramatic and rich on all papers."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Broad nibs show the shading and sheen best."
-      }
-    ],
-    "image": "images/troublemaker-lam-ang.jpg",
-    "stock": 25
-  },
-  {
-    "id": "vinta-blue-blood",
-    "image": "images/vinta-blue-blood.jpg",
-    "sheen": true,
-    "brand": "Vinta",
-    "name": "Blue Blood",
-    "colorPrimary": "#1a3a7a",
-    "colorDark": "#0a1a5a",
-    "tagline": "A deep, aristocratic blue with a regal sheen.",
-    "description": "Blue Blood is a deep, rich blue with an aristocratic depth and a beautiful sheen. From Filipino maker Vinta, it's a regal, sophisticated blue with excellent shading.",
-    "properties": {
-      "shading": 3,
+      "shading": 4,
       "sheen": 3,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
@@ -10410,15 +10466,51 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep blue with good shading and a striking red-gold sheen at stroke edges."
+        "body": "Violet-blue with lively shading and red sheen in wetter strokes."
       },
       {
         "title": "On textured paper",
-        "body": "The depth carries through; sheen shows best on smooth stock."
+        "body": "Deeper blue on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs where the sheen shows."
+        "body": "Broad and wet nibs show the sheen best."
+      }
+    ],
+    "image": "images/troublemaker-lam-ang.jpg",
+    "stock": 25
+  },
+  {
+    "id": "vinta-blue-blood",
+    "sheen": true,
+    "image": "images/vinta-blue-blood.jpg",
+    "brand": "Vinta",
+    "name": "Blue Blood",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#1a3a7a",
+    "colorDark": "#0a1a5a",
+    "tagline": "A deep ultramarine blue with a bold purple-red sheen.",
+    "description": "Blue Blood (Dugong Bughaw 1521) is a deep ultramarine blue with a bold metallic purple-red sheen - named for the ancient Filipino nobility. It's a slow drier. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
+    "properties": {
+      "shading": 3,
+      "sheen": 4,
+      "dryTime": "Slow (20–30 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Deep blue with strong purple-red sheen."
+      },
+      {
+        "title": "On textured paper",
+        "body": "A steady dark blue on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Wet, broad nibs show the sheen; give it time to dry."
       }
     ],
     "stock": 12
@@ -10428,14 +10520,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Vinta",
     "name": "Lakambini",
-    "colours": ["Purple"],
-    "colorPrimary": "#a83a9a",
-    "colorDark": "#7a1a7a",
-    "tagline": "A vivid, graceful magenta-purple named for a Filipino muse.",
-    "description": "Lakambini (a Tagalog word for muse or goddess) is a vivid magenta-purple with grace and energy. Bright and beautiful, with good shading and a subtle sheen.",
+    "colours": ["Pink"],
+    "colorPrimary": "#a46699",
+    "colorDark": "#8e5c8e",
+    "tagline": "A soft pink with gold shimmer.",
+    "description": "Lakambini 1950 ('The Maiden') is a soft pink with faint purple-brown undertones and gold shimmer. From Vinta's Fairytale collection, inspired by Lola Basyang's stories. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10444,15 +10536,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid magenta-pink with good shading and a sheen at stroke edges."
+        "body": "Soft pink with gentle shading and gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Bright and graceful on all papers."
+        "body": "Muted on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in all sizes; broad nibs show the sheen."
+        "body": "Medium or broad nibs keep the shimmer flowing."
       }
     ],
     "image": "images/vinta-lakambini.jpg",
@@ -10460,19 +10552,18 @@ const INKS = [
   },
   {
     "id": "vinta-sailfin-green",
-    "image": "images/vinta-sailfin-green.jpg",
     "shimmer": true,
-    "sheen": false,
+    "image": "images/vinta-sailfin-green.jpg",
     "brand": "Vinta",
     "name": "Sailfin Green",
-    "colours": ["Green"],
-    "colorPrimary": "#1a7a5a",
-    "colorDark": "#0a5a3a",
-    "tagline": "A vivid teal-green with the shimmer of tropical fish.",
-    "description": "Sailfin Green is a vivid teal-green inspired by tropical fish - bright, saturated, and full of life with a beautiful sheen. One of Vinta's most eye-catching colours.",
+    "colours": ["Green", "Teal"],
+    "colorPrimary": "#566e74",
+    "colorDark": "#3a595f",
+    "tagline": "A muted green with brown sheen and electric blue shimmer.",
+    "description": "Sailfin Green (Ibid 1829) is named after the Philippine sailfin lizard. It's a soft, slightly grey green with a subtle brown sheen, topped off with an electric blue shimmer. From Vinta's Awareness collection, which celebrates endangered Philippine wildlife. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 2,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10481,33 +10572,33 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid teal-green with good shading and a red-gold sheen at stroke edges."
+        "body": "Muted green with blue sparkle and a hint of brown sheen."
       },
       {
         "title": "On textured paper",
-        "body": "Bright and lively; sheen shows best on smooth stock."
+        "body": "Greyer on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs."
+        "body": "Medium or broad nibs keep the shimmer flowing."
       }
     ],
     "stock": 12
   },
   {
     "id": "vinta-elusive-blue",
-    "image": "images/vinta-elusive-blue.jpg",
     "shimmer": true,
-    "sheen": false,
+    "image": "images/vinta-elusive-blue.jpg",
     "brand": "Vinta",
     "name": "Elusive Blue",
-    "colorPrimary": "#2a5a8a",
-    "colorDark": "#0a3a6a",
-    "tagline": "A mysterious, shifting blue with hidden teal depths.",
-    "description": "Elusive Blue is a complex, shifting blue with hints of teal and a beautiful sheen. Mysterious and atmospheric, it changes character depending on light and paper.",
+    "colours": ["Blue", "Grey"],
+    "colorPrimary": "#626986",
+    "colorDark": "#3a455f",
+    "tagline": "A soft grey-blue with pink shimmer.",
+    "description": "Elusive Blue (Tandikan) is a soft, slightly greyed blue with pink shimmer, a tribute to the shy Palawan peacock-pheasant. From Vinta's Awareness collection, which celebrates endangered Philippine wildlife. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10516,32 +10607,33 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Complex blue with teal depths and a sheen at stroke edges."
+        "body": "Grey-blue with gentle shading and pink sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The mysterious quality carries through on all papers."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs reveal the depth and sheen beautifully."
+        "body": "Medium or broad nibs keep the shimmer flowing."
       }
     ],
     "stock": 12
   },
   {
     "id": "vinta-liquid-sepia",
+    "shimmer": true,
     "image": "images/vinta-liquid-sepia.jpg",
     "brand": "Vinta",
     "name": "Liquid Sepia",
-    "colours": ["Brown"],
-    "colorPrimary": "#6a4a2a",
-    "colorDark": "#4a2a0a",
-    "tagline": "A warm, vintage sepia-brown with antique character.",
-    "description": "Liquid Sepia is a warm sepia-brown with vintage, antique character - the colour of old letters and photographs. Rich and nostalgic, with lovely shading.",
+    "colours": ["Brown", "Pink"],
+    "colorPrimary": "#96726f",
+    "colorDark": "#765954",
+    "tagline": "A soft sepia with pink tones and gold shimmer.",
+    "description": "Liquid Sepia (Isabela 1999) is a sepia brown with subtle pink tones and gold shimmer, named after the critically endangered Philippine crocodile. From Vinta's Awareness collection, which celebrates endangered Philippine wildlife. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10550,34 +10642,33 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm sepia-brown with good shading. Vintage and nostalgic."
+        "body": "Pinkish sepia with gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on aged or cream paper."
+        "body": "Browner on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and pleasant in all sizes."
+        "body": "Medium or broad nibs keep the shimmer flowing."
       }
     ],
     "stock": 12
   },
   {
     "id": "vinta-pink-afterglow",
-    "image": "images/vinta-pink-afterglow.jpg",
     "shimmer": true,
-    "sheen": false,
+    "image": "images/vinta-pink-afterglow.jpg",
     "brand": "Vinta",
     "name": "Pink Afterglow",
-    "colours": ["Purple"],
-    "colorPrimary": "#7a4a8a",
-    "colorDark": "#5a2a6a",
-    "tagline": "A warm, glowing purple with the sheen of a sunset's last light.",
-    "description": "Pink Afterglow is a warm, glowing purple with a beautiful sheen - like the violet light lingering in the sky after sunset. Romantic and vivid with good shading.",
+    "colours": ["Purple", "Pink"],
+    "colorPrimary": "#826ea7",
+    "colorDark": "#606097",
+    "tagline": "A pink-lavender with blue undertones and pale pink shimmer.",
+    "description": "Pink Afterglow (Pusan 2000) marks the first sunrise of the new millennium at Pusan Point. It's a pink-lavender with blue undertones and a fine curtain of pale pink shimmer. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10586,15 +10677,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm glowing pink with good shading and a green-gold sheen at stroke edges."
+        "body": "Lavender with blue shading and soft pink sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Romantic and warm; sheen shows best on smooth stock."
+        "body": "Bluer and calmer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs where the sheen shows."
+        "body": "Medium or broad nibs keep the shimmer flowing."
       }
     ],
     "stock": 12
@@ -10603,14 +10694,14 @@ const INKS = [
     "id": "vinta-armada",
     "brand": "Vinta",
     "name": "Armada",
-    "colours": ["Purple"],
-    "colorPrimary": "#3a1a5a",
-    "colorDark": "#1a0a3a",
-    "tagline": "A deep, naval purple with the weight of the sea.",
-    "description": "Armada is a deep purple with naval gravitas - the colour of warships and stormy seas. Dark, dignified, and atmospheric with good shading.",
+    "colours": ["Grey", "Purple"],
+    "colorPrimary": "#5f557a",
+    "colorDark": "#474665",
+    "tagline": "A dusty blue-grey with a violet cast, like warships at sea.",
+    "description": "Armada (Aegean Armada 1944) is a muted grey with a blue-violet cast, chosen to represent the colour of warships. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10619,15 +10710,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep blue-grey with good shading and a subtle sheen."
+        "body": "Dusty violet-grey with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Dark and dignified on all papers."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in broad nibs where the depth shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/vinta-armada.jpg",
@@ -10638,10 +10729,11 @@ const INKS = [
     "sheen": true,
     "brand": "Vinta",
     "name": "Kayangan",
-    "colorPrimary": "#1a8a8a",
-    "colorDark": "#0a6a6a",
-    "tagline": "The vivid turquoise of Palawan's famous Kayangan Lake.",
-    "description": "Kayangan is a vivid turquoise inspired by the crystal-clear waters of the famous lake in Palawan, Philippines. Bright, refreshing, and tropical with a beautiful sheen.",
+    "colours": ["Green"],
+    "colorPrimary": "#1f4a3a",
+    "colorDark": "#10291f",
+    "tagline": "A deep, velvety emerald green with sheen.",
+    "description": "Kayangan (Elysium Green 1967) is named after the emerald waters of Kayangan Lake in Coron, Palawan, declared a national reserve in 1967. It's a deep, velvety green that can show a reddish sheen in heavy strokes. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 3,
@@ -10653,15 +10745,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid turquoise with good shading and a red-gold sheen at stroke edges."
+        "body": "Deep emerald green with a reddish sheen in wetter strokes."
       },
       {
         "title": "On textured paper",
-        "body": "Bright and tropical; sheen shows best on smooth stock."
+        "body": "A steady dark green on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs."
+        "body": "Wet, broad nibs show the sheen best."
       }
     ],
     "image": "images/vinta-kayangan.jpg",
@@ -10671,13 +10763,14 @@ const INKS = [
     "id": "vinta-ubi",
     "brand": "Vinta",
     "name": "Ubi",
-    "colorPrimary": "#6a3a8a",
-    "colorDark": "#4a1a6a",
-    "tagline": "A vivid purple inspired by the beloved purple yam.",
-    "description": "Ubi (purple yam) is a vivid, saturated purple inspired by the famous Filipino ingredient used in desserts. Bright and joyful, with good shading and a subtle sheen.",
+    "colours": ["Purple"],
+    "colorPrimary": "#58324a",
+    "colorDark": "#3d282c",
+    "tagline": "A deep mulberry purple.",
+    "description": "Ubi (Mulberry 1663) is a deep, dusky mulberry purple, named after ube - the purple yam that's a major Philippine food crop. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 1,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10686,15 +10779,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid purple with good shading and a sheen at stroke edges."
+        "body": "Deep mulberry purple with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Bright and joyful on all papers."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in broad nibs where the shading and sheen show."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/vinta-ubi.jpg",
@@ -10705,13 +10798,14 @@ const INKS = [
     "image": "images/vinta-london-grey.jpg",
     "brand": "Vinta",
     "name": "London Grey",
-    "colorPrimary": "#5a5a6a",
-    "colorDark": "#3a3a4a",
-    "tagline": "A cool, sophisticated grey like an overcast London sky.",
-    "description": "London Grey is a cool, refined grey with a subtle blue lean - the colour of an overcast city sky. Sophisticated and understated, with a touch of sheen.",
+    "colours": ["Grey"],
+    "colorPrimary": "#5c7382",
+    "colorDark": "#435e6b",
+    "tagline": "A steel grey with a hint of green and plenty of shading.",
+    "description": "London Grey is a cool steel grey with a little underlying green, pronounced shading and a fine dark halo around heavier strokes. In a wet swatch it builds to a deep slate. Ulap ('clouds') is sold as London Grey 1762 - a Cult Pens exclusive marking the year British forces took Manila. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
-      "shading": 2,
-      "sheen": 2,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10720,15 +10814,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool sophisticated grey with a subtle sheen at stroke edges."
+        "body": "Steel grey with strong shading from silver to slate."
       },
       {
         "title": "On textured paper",
-        "body": "Refined and reliable on all papers."
+        "body": "Darker and flatter on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes; broad nibs reveal the sheen."
+        "body": "Medium and broad nibs show the shading and dark edges best."
       }
     ],
     "stock": 12
@@ -10738,13 +10832,13 @@ const INKS = [
     "brand": "Vinta",
     "name": "Pitik Papel",
     "colours": ["Green"],
-    "colorPrimary": "#3a8a3a",
-    "colorDark": "#1a6a1a",
-    "tagline": "A warm, vivid green with playful energy.",
-    "description": "Pitik Papel is a warm, vivid green with playful energy and a beautiful sheen. Bright and cheerful, with good shading - a lively, joyful colour.",
+    "colorPrimary": "#97e09f",
+    "colorDark": "#73d293",
+    "tagline": "A fresh, bright mint green.",
+    "description": "Pitik Papel (Paper Mint) is a fresh, bright minty green - named after the paper-flicking game played in classrooms. From Vinta's Homeroom collection, inspired by school days. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10753,15 +10847,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm red-orange with good shading and a sheen at stroke edges."
+        "body": "Bright mint green with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Bright and cheerful on all papers."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in broad nibs where the shading and sheen show."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/vinta-pitik-papel.jpg",
@@ -10771,13 +10865,14 @@ const INKS = [
     "id": "vinta-unang-araw",
     "brand": "Vinta",
     "name": "Unang Araw",
-    "colorPrimary": "#3a6ab0",
-    "colorDark": "#22406a",
-    "tagline": "First day - a warm, hopeful orange like a new dawn.",
-    "description": "Unang Araw (first day) is a warm, glowing orange that captures the hope of a new beginning. Bright and optimistic, with good shading and a subtle sheen.",
+    "colours": ["Blue"],
+    "colorPrimary": "#89b2ea",
+    "colorDark": "#669de6",
+    "tagline": "A clear sky blue with periwinkle shadows.",
+    "description": "Unang Araw (First Day) is a vibrant sky blue with soft periwinkle shading - the hopeful colour of the first day of school. From Vinta's Homeroom collection, inspired by school days. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10786,15 +10881,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm glowing orange with good shading and a sheen at stroke edges."
+        "body": "Bright sky blue with periwinkle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The hopeful warmth deepens beautifully on cream."
+        "body": "Holds its brightness on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in broad nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/vinta-unang-araw.jpg",
@@ -10805,13 +10900,13 @@ const INKS = [
     "brand": "Vinta",
     "name": "Sulyap",
     "colours": ["Pink"],
-    "colorPrimary": "#d97a96",
-    "colorDark": "#b04a6a",
-    "tagline": "A glimpse - a soft, fleeting pink with quiet beauty.",
-    "description": "Sulyap (a glimpse or glance) is a soft, rosy pink with a fleeting, atmospheric quality. Gentle and contemplative, with good shading and a subtle sheen.",
+    "colorPrimary": "#f1879c",
+    "colorDark": "#ea7789",
+    "tagline": "A bright, candy pink - a flustered blush.",
+    "description": "Sulyap (Classroom Crush) is a bright candy pink with soft shading - 'sulyap' is a stolen glance. From Vinta's Homeroom collection, inspired by school days. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10820,15 +10915,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft rosy pink with good shading and a subtle sheen."
+        "body": "Candy pink with soft shading."
       },
       {
         "title": "On textured paper",
-        "body": "The fleeting quality suits all papers."
+        "body": "Stays bright on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/vinta-sulyap.jpg",
@@ -10838,14 +10933,14 @@ const INKS = [
     "id": "vinta-huling-kampana",
     "brand": "Vinta",
     "name": "Huling Kampana",
-    "colours": ["Green"],
-    "colorPrimary": "#1a5a2a",
-    "colorDark": "#0a3a18",
-    "tagline": "The last bell - a deep, resonant forest-green.",
-    "description": "Huling Kampana (the last bell) is a deep, resonant forest-green with an evocative, elegiac mood. Rich and dramatic, with good shading and a sheen.",
+    "colours": ["Teal", "Blue"],
+    "colorPrimary": "#69afad",
+    "colorDark": "#438893",
+    "tagline": "A cool teal blue - the last bell of the school day.",
+    "description": "Huling Kampana (Last Bell) is a cool teal blue with gentle shading - the relief of the final bell as the school day winds down. From Vinta's Homeroom collection, inspired by school days. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10854,15 +10949,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep burgundy-red with good shading and a sheen at stroke edges."
+        "body": "Teal blue with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The richness deepens beautifully on cream."
+        "body": "A little greener on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in broad nibs where the shading and sheen show."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/vinta-huling-kampana.jpg",
@@ -10870,17 +10965,16 @@ const INKS = [
   },
   {
     "id": "vinta-takipsilim",
-    "sheen": false,
     "brand": "Vinta",
     "name": "Takipsilim",
-    "colours": ["Purple"],
-    "colorPrimary": "#4a3a6a",
-    "colorDark": "#2a1a4a",
-    "tagline": "Twilight - a deep purple-blue as day surrenders to night.",
-    "description": "Takipsilim (twilight) is a deep purple-blue that captures the moment day turns to night. Atmospheric and romantic, with good shading and a beautiful sheen.",
+    "colours": ["Purple", "Blue"],
+    "colorPrimary": "#987fc9",
+    "colorDark": "#8a76c2",
+    "tagline": "A soft lavender with blue undertones.",
+    "description": "Takipsilim (Twilight) is a soft lavender with gentle blue undertones, for the quiet hour after the school day ends. From Vinta's Homeroom collection, inspired by school days. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10889,15 +10983,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep purple-blue with good shading and a red-gold sheen at stroke edges."
+        "body": "Lavender with blue-leaning shading."
       },
       {
         "title": "On textured paper",
-        "body": "The twilight quality carries through; sheen shows best on smooth stock."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs where the sheen shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/vinta-takipsilim.jpg",
@@ -10905,17 +10999,16 @@ const INKS = [
   },
   {
     "id": "wearingeul-resurrection",
-    "sheen": false,
     "brand": "Wearingeul",
     "name": "Resurrection",
-    "colours": ["Green"],
-    "colorPrimary": "#9a1a2a",
-    "colorDark": "#6a0a0a",
-    "tagline": "A deep, reborn crimson with a dramatic gold-green sheen.",
-    "description": "From Wearingeul's Special Collection, Resurrection is a deep crimson-red with a spectacular gold-green sheen that erupts at stroke edges. Dramatic and reborn, it's one of the brand's most striking inks.",
+    "colours": ["Teal", "Green"],
+    "colorPrimary": "#789995",
+    "colorDark": "#59817b",
+    "tagline": "A soft pastel mint-blue, cold as Siberian snow.",
+    "description": "Resurrection is a pastel mint-blue turquoise with soft shading, inspired by Tolstoy's novel - the cold wind and snow of Siberia. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 4,
+      "sheen": 0,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10924,15 +11017,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep crimson with a dramatic gold-green sheen at stroke edges. Spectacular on coated paper."
+        "body": "Soft mint-blue with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The crimson stays rich; sheen shows best on smooth stock."
+        "body": "Greyer and calmer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wet broad nib maximises the sheen. Allow extra dry time."
+        "body": "Medium and broad nibs keep the pastel colour readable."
       }
     ],
     "image": "images/wearingeul-resurrection.jpg",
@@ -10942,13 +11035,14 @@ const INKS = [
     "id": "wearingeul-geppetto",
     "brand": "Wearingeul",
     "name": "Geppetto",
-    "colorPrimary": "#7a5a2a",
-    "colorDark": "#5a3a0a",
-    "tagline": "A warm, woody brown inspired by the gentle old woodcarver.",
-    "description": "Geppetto is a warm, woody brown inspired by the kindly toymaker of Pinocchio. Earthy and comforting, the colour of well-worn workshop timber, with lovely shading.",
+    "colours": ["Red", "Pink"],
+    "colorPrimary": "#e37167",
+    "colorDark": "#c94947",
+    "tagline": "A warm coral blush red that separates into yellow.",
+    "description": "Geppetto is a clear, warm blush red - a soft coral - that dramatically separates into yellow tones as it dries. Inspired by Pinocchio's kindly, forgiving father in Carlo Collodi's story. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10957,15 +11051,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm woody brown with good shading from dark to lighter amber."
+        "body": "Coral red with yellow separating out in the shading."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on cream or aged paper where the warmth shows."
+        "body": "Warmer and more even on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth and pleasant in all sizes."
+        "body": "Broad and wet nibs show the yellow separation best."
       }
     ],
     "image": "images/wearingeul-geppetto.jpg",
@@ -10973,17 +11067,17 @@ const INKS = [
   },
   {
     "id": "wearingeul-metamorphosis",
-    "sheen": true,
+    "shimmer": true,
     "brand": "Wearingeul",
     "name": "Metamorphosis",
-    "colours": ["Red"],
-    "colorPrimary": "#3a5a3a",
-    "colorDark": "#1a3a1a",
-    "tagline": "A dark, transformative green with a hidden red sheen.",
-    "description": "From Wearingeul's Special Collection, Metamorphosis is a deep, dark green inspired by Kafka - with a dramatic red sheen that transforms the colour at stroke edges. Mysterious and unsettling in the best way.",
+    "colours": ["Red", "Purple"],
+    "colorPrimary": "#5d2727",
+    "colorDark": "#492020",
+    "tagline": "A deep burgundy with copper shimmer.",
+    "description": "Metamorphosis is a deep burgundy with copper shimmer, inspired by Kafka's story. True to its name it can transform - on Tomoe River paper it shifts towards violet. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 4,
+      "sheen": 0,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -10992,15 +11086,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dark green with a dramatic red sheen at stroke edges. Striking on coated paper."
+        "body": "Deep burgundy with copper sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The green stays deep; sheen shows best on smooth stock."
+        "body": "Darker on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wet broad nib maximises the sheen. Allow extra dry time."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-metamorphosis.jpg",
@@ -11011,13 +11105,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "A Watery Star",
-    "colorPrimary": "#2a5a8a",
-    "colorDark": "#0a3a6a",
-    "tagline": "A deep, luminous blue scattered with silver shimmer.",
-    "description": "A Watery Star is a deep blue with delicate silver shimmer that twinkles across the page like starlight on water. Atmospheric and dreamy, with good shading.",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#7b85ba",
+    "colorDark": "#5e68a5",
+    "tagline": "Light violet drying to periwinkle, with blue and silver glitter.",
+    "description": "A Watery Star goes on as a light violet and dries to a periwinkle blue filled with blue and silver glitter - stars glimpsed through tears, from Jeong Ji-yong's poem 'Windowpane'. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the series inspired by the Korean modernist poet Jeong Ji-yong. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11026,15 +11121,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep blue with silver shimmer and good shading. Dreamy on coated paper."
+        "body": "Periwinkle with violet shading and blue-silver sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The blue stays deep; shimmer is gentler."
+        "body": "Bluer and calmer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the shimmer best. Shake before use."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-a-watery-star.jpg",
@@ -11045,13 +11140,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "A Grape Coloured Night",
-    "colorPrimary": "#3a1a5a",
-    "colorDark": "#1a0a3a",
-    "tagline": "A deep, dark grape purple with the depth of midnight.",
-    "description": "A Grape Coloured Night is a very dark purple - near-black, with rich grape-purple depths and a subtle shimmer. Dramatic and mysterious, it captures the colour of a moonless night.",
+    "colours": ["Purple"],
+    "colorPrimary": "#705e8a",
+    "colorDark": "#5e4f7d",
+    "tagline": "A soft pastel violet with silver glitter.",
+    "description": "A Grape Coloured Night is a faint pastel violet with silver glitter - a night sky tinged the colour of grapes, from Jeong Ji-yong's poem 'The Dream of Wind and Waves'. Lighter or deeper depending on how much ink you lay down. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the series inspired by the Korean modernist poet Jeong Ji-yong. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11060,15 +11156,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Near-black grape-purple with subtle shimmer and a sheen at stroke edges."
+        "body": "Pastel violet with silver sparkle; heavier strokes go deeper."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens further but stays dramatic."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs reveal the purple depths and shimmer. Shake before use."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-a-grape-coloured-night.jpg",
@@ -11076,17 +11172,16 @@ const INKS = [
   },
   {
     "id": "wearingeul-floating-cloud",
-    "shimmer": false,
     "brand": "Wearingeul",
     "name": "Floating Cloud",
-    "colours": ["Pink"],
-    "colorPrimary": "#d49ab0",
-    "colorDark": "#b46a8a",
-    "tagline": "A soft, drifting pink with a gentle silver shimmer.",
-    "description": "Floating Cloud is a soft, light pink with a gentle silver shimmer - atmospheric and dreamy, like clouds drifting across a pale sky. Delicate and refined.",
+    "colours": ["Pink", "Orange"],
+    "colorPrimary": "#f37f87",
+    "colorDark": "#eb5f70",
+    "tagline": "A pastel pink that separates into sunset orange.",
+    "description": "Floating Cloud is a colour-separating ink - an orange that splits out from a pastel pink base as it dries, like clouds drifting through a sunset. From Jeong Ji-yong's poem 'Hometown'. From the series inspired by the Korean modernist poet Jeong Ji-yong. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 2,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11095,15 +11190,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft grey with gentle silver shimmer. Dreamy and atmospheric."
+        "body": "Coral pink with orange-yellow separating out."
       },
       {
         "title": "On textured paper",
-        "body": "Best on white paper for contrast; shimmer is gentler on cream."
+        "body": "More even and pink on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs. Shake before use."
+        "body": "Broad and wet nibs show the separation best."
       }
     ],
     "image": "images/wearingeul-floating-cloud.jpg",
@@ -11111,17 +11206,16 @@ const INKS = [
   },
   {
     "id": "wearingeul-exile-of-flower",
-    "sheen": false,
     "brand": "Wearingeul",
     "name": "Exile of Flower",
-    "colours": ["Orange","Pink"],
-    "colorPrimary": "#b43a6a",
-    "colorDark": "#941a4a",
-    "tagline": "A vivid, dramatic magenta-pink with a beautiful sheen.",
-    "description": "Exile of Flower is a vivid magenta-pink with a beautiful gold-green sheen. Dramatic and romantic, it's one of Wearingeul's most eye-catching pinks with excellent shading.",
+    "colours": ["Pink", "Orange"],
+    "colorPrimary": "#d95f5f",
+    "colorDark": "#c75252",
+    "tagline": "A striking coral pink with orange shading.",
+    "description": "The Exile of Flower is a striking coral pink with orange shading, pastel in light strokes and darker where it pools. Now discontinued, so once it's gone it's gone. From the series inspired by the Korean modernist poet Jeong Ji-yong. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 3,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11130,15 +11224,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid magenta-pink with good shading and a gold-green sheen at stroke edges."
+        "body": "Coral pink with strong orange shading."
       },
       {
         "title": "On textured paper",
-        "body": "Bright and dramatic; sheen shows best on smooth stock."
+        "body": "Warmer and flatter on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs where the sheen shows."
+        "body": "Comfortable in any nib; broad nibs show the darker shades."
       }
     ],
     "image": "images/wearingeul-exile-of-flower.jpg",
@@ -11148,14 +11242,14 @@ const INKS = [
     "id": "wearingeul-jane-eyre",
     "brand": "Wearingeul",
     "name": "Jane Eyre",
-    "colours": ["Purple"],
-    "colorPrimary": "#5a3a6a",
-    "colorDark": "#3a1a4a",
-    "tagline": "A muted, literary purple-grey with quiet strength.",
-    "description": "From Wearingeul's literature series, Jane Eyre is a muted purple with quiet dignity and strength - a bookish, contemplative colour befitting Brontë's resilient heroine. Lovely subtle shading.",
+    "colours": ["Purple", "Grey"],
+    "colorPrimary": "#866586",
+    "colorDark": "#765777",
+    "tagline": "A pastel violet that separates into grey.",
+    "description": "Jane Eyre is a pastel violet that divides into grey as it dries, illustrating the novel's last scene - the reunion. Inspired by Charlotte Brontë's novel. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11164,15 +11258,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Muted blue-grey with good shading. Bookish and contemplative."
+        "body": "Dusty violet with grey separating out in the shading."
       },
       {
         "title": "On textured paper",
-        "body": "The literary quality suits cream paper beautifully."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Lovely in medium and broad nibs."
+        "body": "Medium and broad nibs show the colour split."
       }
     ],
     "image": "images/wearingeul-jane-eyre.jpg",
@@ -11182,14 +11276,14 @@ const INKS = [
     "id": "wearingeul-no-longer-human",
     "brand": "Wearingeul",
     "name": "No Longer Human",
-    "colours": ["Purple"],
-    "colorPrimary": "#2a1a3a",
-    "colorDark": "#140a1e",
-    "tagline": "A dark, brooding purple-black inspired by Dazai's masterpiece.",
-    "description": "No Longer Human is a very dark purple with a brooding, melancholy depth - inspired by Osamu Dazai's haunting novel. Near-black with subtle purple undertones, it's profound and atmospheric.",
+    "colours": ["Purple", "Grey"],
+    "colorPrimary": "#474149",
+    "colorDark": "#302d33",
+    "tagline": "A dark, desaturated grey-violet.",
+    "description": "No Longer Human is a darkened pastel violet with grey coming through, leaving the whole colour drained and desaturated - Osamu Dazai's portrait of a ruined life. Reads near-black in heavier strokes. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 2,
-      "sheen": 2,
+      "shading": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11198,15 +11292,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dark blue-black with subtle shading and a sheen at stroke edges on coated paper."
+        "body": "Dark grey-violet with subtle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Brooding and dark on all papers."
+        "body": "Near-black on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs reveal the blue depths and sheen."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/wearingeul-no-longer-human.jpg",
@@ -11214,17 +11308,16 @@ const INKS = [
   },
   {
     "id": "wearingeul-purgatori",
-    "sheen": false,
     "brand": "Wearingeul",
-    "name": "Purgatori",
-    "colours": ["Pink"],
-    "colorPrimary": "#a83a5a",
-    "colorDark": "#7a1a3a",
-    "tagline": "A smouldering rose-pink with an infernal gold sheen.",
-    "description": "From Wearingeul's Special Collection, Purgatori is a smouldering rose-pink with a dramatic gold sheen - the colour of purgatorial fire. Intense and dramatic with excellent character.",
+    "name": "Purgatorio",
+    "colours": ["Pink", "Brown"],
+    "colorPrimary": "#b27f80",
+    "colorDark": "#a26c78",
+    "tagline": "A mystical pink-brown, between heaven and hell.",
+    "description": "Purgatorio is a mystical pink-brown that balances cool and warm - the realm of second chances in Dante's Divine Comedy, neither heaven nor hell. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 4,
+      "sheen": 1,
       "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11233,15 +11326,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Smouldering red-orange with a dramatic gold sheen at stroke edges. Intense on coated paper."
+        "body": "Pink-brown with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "The red-orange stays warm; sheen shows best on smooth stock."
+        "body": "Browner on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wet broad nib maximises the sheen. Allow extra dry time."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/wearingeul-purgatori.jpg",
@@ -11249,17 +11342,16 @@ const INKS = [
   },
   {
     "id": "wearingeul-white-rabbit",
-    "shimmer": false,
     "brand": "Wearingeul",
     "name": "White Rabbit",
-    "colours": ["Pink"],
-    "colorPrimary": "#d49ab0",
-    "colorDark": "#b46a8a",
-    "tagline": "A soft, hurried pink with a glint of silver shimmer.",
-    "description": "From the Alice in Wonderland series, White Rabbit is a soft pink with silver shimmer - light, quick, and a little anxious, like the perpetually late rabbit. Delicate and charming.",
+    "colours": ["Pink", "Orange"],
+    "colorPrimary": "#735352",
+    "colorDark": "#674847",
+    "tagline": "An orange-pink with lots of shading, always in a hurry.",
+    "description": "White Rabbit is an orange-pink with great shading over a pale base - the hurrying rabbit galloping into Wonderland. From the Alice's Adventures in Wonderland series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 2,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11268,15 +11360,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft grey with silver shimmer. Light and charming."
+        "body": "Orange-pink with strong shading."
       },
       {
         "title": "On textured paper",
-        "body": "Best on white paper; shimmer is gentler on cream."
+        "body": "Browner and more even on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs. Shake before use."
+        "body": "Broad and wet nibs show the shading best."
       }
     ],
     "image": "images/wearingeul-white-rabbit.jpg",
@@ -11286,14 +11378,14 @@ const INKS = [
     "id": "wearingeul-don-quixote",
     "brand": "Wearingeul",
     "name": "Don Quixote",
-    "colours": ["Purple"],
-    "colorPrimary": "#6a4a7a",
-    "colorDark": "#4a2a5a",
-    "tagline": "A warm, weathered mauve-purple - noble, faded, and dreaming.",
-    "description": "From the literature series, Don Quixote is a warm, faded purple - the colour of sun-bleached velvet and dusty roads. Noble and dreaming, with the romantic melancholy of the knight-errant.",
+    "colours": ["Brown", "Red"],
+    "colorPrimary": "#694659",
+    "colorDark": "#4c333c",
+    "tagline": "A red-brown with grey tones and a dark edge.",
+    "description": "Don Quixote is a red-brown with grey tones and a dark border line that grows more vivid as the ink dries - the dusty roads of Cervantes's knight-errant. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11302,15 +11394,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm gold-brown with good shading from deep to lighter amber."
+        "body": "Greyed red-brown with dark edges to the strokes."
       },
       {
         "title": "On textured paper",
-        "body": "Gorgeous on cream or aged paper where the warmth shows."
+        "body": "Darker on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes; broad nibs show the shading."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/wearingeul-don-quixote.jpg",
@@ -11320,13 +11412,14 @@ const INKS = [
     "id": "wearingeul-adventures-of-tom-sawyer",
     "brand": "Wearingeul",
     "name": "Adventures of Tom Sawyer",
-    "colorPrimary": "#5a7a3a",
-    "colorDark": "#3a5a1a",
-    "tagline": "A warm, sunlit green like a riverbank summer adventure.",
-    "description": "From the literature series, Adventures of Tom Sawyer is a warm, sunny yellow-green - the colour of riverbank grass on a carefree summer day. Cheerful and full of boyish energy.",
+    "colours": ["Green", "Grey"],
+    "colorPrimary": "#686c5d",
+    "colorDark": "#535d49",
+    "tagline": "A muted khaki-moss green with blue-green edges.",
+    "description": "The Adventures of Tom Sawyer is a subdued moss-khaki green with a blue-green border line and hints of blue and purple in the shading - the tension of an adventure. It writes on the light, greyish side. Inspired by Mark Twain's novel. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11335,15 +11428,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm yellow-green with good shading. Cheerful and sunny."
+        "body": "Muted grey-green with blue-green edges."
       },
       {
         "title": "On textured paper",
-        "body": "The summery warmth suits cream paper."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes."
+        "body": "Medium and broad nibs keep it readable."
       }
     ],
     "image": "images/wearingeul-adventures-of-tom-sawyer.jpg",
@@ -11352,46 +11445,12 @@ const INKS = [
   {
     "id": "wearingeul-tsukuyami",
     "brand": "Wearingeul",
-    "name": "Tsukuyami",
-    "colorPrimary": "#1a2a4a",
-    "colorDark": "#0a0a2a",
-    "tagline": "Moonless dark - a deep, profound blue-black of night.",
-    "description": "Tsukuyami (moonless darkness) is a very deep blue-black - the colour of the deepest night without moonlight. Profound and mysterious, with subtle blue depths and a touch of sheen.",
-    "properties": {
-      "shading": 2,
-      "sheen": 2,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Smooth white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Deep blue-black with subtle shading and a sheen at stroke edges."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Profound and dark on all papers."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Broad nibs reveal the blue depths and sheen."
-      }
-    ],
-    "image": "images/wearingeul-tsukuyami.jpg",
-    "stock": 12
-  },
-  {
-    "id": "wearingeul-mad-hatter",
-    "shimmer": false,
-    "brand": "Wearingeul",
-    "name": "Mad Hatter",
-    "colours": ["Grey"],
-    "colorPrimary": "#2f8a3a",
-    "colorDark": "#1c5a24",
-    "tagline": "A chaotic, vivid green with a mischievous multi-colour shimmer.",
-    "description": "From the Alice in Wonderland series, Mad Hatter is a vivid green with a chaotic, multi-colour shimmer that's as unpredictable as the character himself. Playful, dramatic, and delightfully mad.",
+    "name": "Tsukuyomi",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#8e9cbe",
+    "colorDark": "#6e7da3",
+    "tagline": "Navy blue that changes to pastel violet.",
+    "description": "Tsukuyomi is named after the Japanese god of the moon. It changes from navy blue towards pastel violet as it dries, with good shading and a little sheen. From the World Myth series. Clean your pen carefully after use. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -11403,15 +11462,49 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid purple with chaotic multi-colour shimmer and a sheen at stroke edges."
+        "body": "Blue to violet shading, with a little sheen in heavy strokes."
       },
       {
         "title": "On textured paper",
-        "body": "The purple stays vivid; shimmer is gentler."
+        "body": "Bluer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the shimmer best. Shake before use, clean pen after."
+        "body": "Comfortable in any nib."
+      }
+    ],
+    "image": "images/wearingeul-tsukuyami.jpg",
+    "stock": 12
+  },
+  {
+    "id": "wearingeul-mad-hatter",
+    "brand": "Wearingeul",
+    "name": "Mad Hatter",
+    "colours": ["Grey"],
+    "colorPrimary": "#4e5555",
+    "colorDark": "#343c3a",
+    "tagline": "A dark olive grey-green with dizzy yellow shading.",
+    "description": "Mad Hatter is a dark olive green that reads grey on the page, with dizzy yellow shading - as chaotic as the character himself. From the Alice's Adventures in Wonderland series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
+    "properties": {
+      "shading": 4,
+      "sheen": 0,
+      "dryTime": "Medium (10–20 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Dark olive grey-green with yellow in the shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "Greyer on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Broad and wet nibs show the yellow shading."
       }
     ],
     "image": "images/wearingeul-mad-hatter.jpg",
@@ -11422,14 +11515,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "Wendy Darling",
-    "colours": ["Blue"],
-    "colorPrimary": "#5a8ac8",
-    "colorDark": "#3a6aa8",
-    "tagline": "A soft, dreaming sky-blue ready to fly to Neverland.",
-    "description": "From the Peter Pan series, Wendy Darling is a soft, dreamy sky-blue with a gentle shimmer - the colour of a child's bedroom window open to the night sky. Hopeful and full of wonder.",
+    "colours": ["Blue", "Pink"],
+    "colorPrimary": "#a8b6dd",
+    "colorDark": "#8da8d4",
+    "tagline": "Sky blue that separates into baby pink, with silver and blue glitter.",
+    "description": "Wendy Darling starts as a clear, light sky blue and, as it dries, separates into a vivid baby pink - finished with silver and blue glitter, like Wendy in Neverland. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the Peter Pan series, inspired by J. M. Barrie's characters. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11438,15 +11531,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft sky-blue with gentle shimmer and good shading. Dreamy and hopeful."
+        "body": "Sky blue with pink separating out, plus sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its dreamy quality on all papers."
+        "body": "Bluer and calmer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes. Shake before use for the shimmer."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-wendy-darling.jpg",
@@ -11454,17 +11547,17 @@ const INKS = [
   },
   {
     "id": "wearingeul-human-issues",
-    "sheen": false,
+    "sheen": true,
     "brand": "Wearingeul",
-    "name": "Human Issues",
+    "name": "Human Issue",
     "colours": ["Red"],
-    "colorPrimary": "#7a1a1a",
-    "colorDark": "#5a0a0a",
-    "tagline": "A complex, contemplative red with a hidden gold sheen.",
-    "description": "Human Issues is a sophisticated red with a hidden gold sheen - understated in colour but complex in character. A thoughtful, contemplative ink that rewards close attention.",
+    "colorPrimary": "#872a25",
+    "colorDark": "#76241d",
+    "tagline": "A vivid dark red with a black sheen.",
+    "description": "Human Issue is a vivid dark red with a black sheen where it pools. From Wearingeul's series on modern Korean women writers, inspired by Kang Kyeong-ae's novel 'Human Problem'. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 2,
-      "sheen": 3,
+      "sheen": 4,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11473,15 +11566,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Sophisticated grey with a surprising green-gold sheen at stroke edges."
+        "body": "Dark red with black sheen in heavier strokes."
       },
       {
         "title": "On textured paper",
-        "body": "Reads as an elegant grey; sheen shows best on smooth stock."
+        "body": "A deep, steady red on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wet broad nib reveals the hidden sheen beautifully."
+        "body": "Wet, broad nibs show the sheen best."
       }
     ],
     "image": "images/wearingeul-human-issues.jpg",
@@ -11489,82 +11582,13 @@ const INKS = [
   },
   {
     "id": "wearingeul-crime-and-punishment",
-    "sheen": true,
     "brand": "Wearingeul",
     "name": "Crime and Punishment",
     "colours": ["Green"],
     "colorPrimary": "#3a5a3e",
     "colorDark": "#1e3a20",
-    "tagline": "A dark, guilt-laden green with a brooding sheen.",
-    "description": "From the literature series, Crime and Punishment is a dark green with a brooding intensity and a subtle sheen - inspired by Dostoevsky's tortured masterpiece. Deep, guilty, and dramatic.",
-    "properties": {
-      "shading": 3,
-      "sheen": 3,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Smooth white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Dark burgundy with good shading and a sheen at stroke edges on coated paper."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Deep and brooding on all papers."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Broad nibs reveal the depth and sheen."
-      }
-    ],
-    "image": "images/wearingeul-crime-and-punishment.jpg",
-    "stock": 12
-  },
-  {
-    "id": "wearingeul-carmilla",
-    "sheen": false,
-    "brand": "Wearingeul",
-    "name": "Carmilla",
-    "colorPrimary": "#5a1a3a",
-    "colorDark": "#3a0a1a",
-    "tagline": "A dark, seductive vampire purple-red with a wicked sheen.",
-    "description": "From Wearingeul's Special Collection, Carmilla is a dark purple-red with a dramatic sheen - seductive and dangerous, inspired by the classic gothic vampire tale. Rich, mysterious, and beautiful.",
-    "properties": {
-      "shading": 3,
-      "sheen": 4,
-      "dryTime": "Slow (20–30 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Smooth white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Dark purple-red with a dramatic gold-green sheen at stroke edges. Seductive on coated paper."
-      },
-      {
-        "title": "On textured paper",
-        "body": "The purple-red stays rich; sheen shows best on smooth stock."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "A wet broad nib maximises the sheen. Allow extra dry time."
-      }
-    ],
-    "image": "images/wearingeul-carmilla.jpg",
-    "stock": 12
-  },
-  {
-    "id": "wearingeul-valley-of-fear",
-    "brand": "Wearingeul",
-    "name": "Valley of Fear",
-    "colours": ["Blue"],
-    "colorPrimary": "#1a2a3a",
-    "colorDark": "#0a141a",
-    "tagline": "A dark, mysterious blue-black worthy of a Holmes mystery.",
-    "description": "From the literature series, Valley of Fear is a very dark blue-black with a mysterious, atmospheric depth - inspired by the Sherlock Holmes novel. Dark, intriguing, and full of shadow.",
+    "tagline": "A dark, muted green with a reddish-brown edge.",
+    "description": "Crime and Punishment is a dark, muted green with a deep reddish-brown edge - Raskolnikov's crime and the guilt that follows. Inspired by Dostoevsky's novel. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -11576,15 +11600,84 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Dark teal-black with subtle shading and a sheen at stroke edges."
+        "body": "Dark green with reddish-brown edges to heavy strokes."
       },
       {
         "title": "On textured paper",
-        "body": "Mysterious and dark on all papers."
+        "body": "Near-black green on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs reveal the teal depths and sheen."
+        "body": "Broad and wet nibs show the red-brown edge."
+      }
+    ],
+    "image": "images/wearingeul-crime-and-punishment.jpg",
+    "stock": 12
+  },
+  {
+    "id": "wearingeul-carmilla",
+    "brand": "Wearingeul",
+    "name": "Carmilla",
+    "colours": ["Red", "Pink"],
+    "colorPrimary": "#b55c56",
+    "colorDark": "#a54241",
+    "tagline": "A faded rose red with yellow shading.",
+    "description": "Carmilla is a faded rose red with subtle yellow shading, like a withered rose - the vampire of Sheridan Le Fanu's gothic novella, disguised as a sweet, innocent girl. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
+    "properties": {
+      "shading": 4,
+      "sheen": 0,
+      "dryTime": "Slow (20–30 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Faded rose red with yellow in the shading."
+      },
+      {
+        "title": "On textured paper",
+        "body": "More even and muted on textured paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Comfortable in any nib; broad nibs show the shading."
+      }
+    ],
+    "image": "images/wearingeul-carmilla.jpg",
+    "stock": 12
+  },
+  {
+    "id": "wearingeul-valley-of-fear",
+    "sheen": true,
+    "brand": "Wearingeul",
+    "name": "Valley of Fear",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#30259e",
+    "colorDark": "#35137d",
+    "tagline": "A deep blue with a striking red sheen.",
+    "description": "The Valley of Fear is a deep violet-blue with a striking red sheen that contrasts starkly against it - the valley of terror in Conan Doyle's Sherlock Holmes novel. From the Monthly World Literature series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
+    "properties": {
+      "shading": 2,
+      "sheen": 5,
+      "dryTime": "Slow (20–30 sec)",
+      "waterResistance": "Low",
+      "lubrication": "Well-lubricated",
+      "bestOn": "Smooth white paper"
+    },
+    "tastingNotes": [
+      {
+        "title": "On smooth paper",
+        "body": "Deep blue with strong red sheen."
+      },
+      {
+        "title": "On textured paper",
+        "body": "A steady dark blue on textured paper - the sheen needs smooth paper."
+      },
+      {
+        "title": "Nib behaviour",
+        "body": "Wet, broad nibs show the sheen; give it time to dry."
       }
     ],
     "image": "images/wearingeul-valley-of-fear.jpg",
@@ -11595,13 +11688,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "Tinker Bell",
-    "colorPrimary": "#3a8a5a",
-    "colorDark": "#1a6a3a",
-    "tagline": "A vivid fairy green sprinkled with golden pixie dust.",
-    "description": "From the Peter Pan series, Tinker Bell is a vivid green with sparkling gold shimmer - fairy magic in a bottle. Bright, playful, and full of pixie-dust sparkle.",
+    "colours": ["Grey", "Green"],
+    "colorPrimary": "#a8b297",
+    "colorDark": "#97a081",
+    "tagline": "A light grey with a green tint and gold-silver glitter.",
+    "description": "Tinker Bell is a light grey with a subtle green tint, sprinkled with glitter that flashes gold or silver depending on the angle - pixie dust in a bottle. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the Peter Pan series, inspired by J. M. Barrie's characters. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11610,15 +11704,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid green with sparkling gold shimmer and good shading. Magical on coated paper."
+        "body": "Soft green-grey with gold-silver sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The green stays vivid; shimmer is gentler."
+        "body": "Greyer on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the pixie-dust shimmer best. Shake before use."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-tinker-bell.jpg",
@@ -11628,10 +11722,11 @@ const INKS = [
     "id": "wearingeul-captain-hook",
     "brand": "Wearingeul",
     "name": "Captain Hook",
-    "colorPrimary": "#9a2e26",
-    "colorDark": "#5c1b16",
-    "tagline": "A deep, villainous navy with a menacing sheen.",
-    "description": "From the Peter Pan series, Captain Hook is a deep, dark navy with a menacing sheen - the colour of the villain's coat and the dark waters below his ship. Dramatic and dangerous.",
+    "colours": ["Red"],
+    "colorPrimary": "#a72e24",
+    "colorDark": "#8f2f20",
+    "tagline": "A vibrant blood red with a black edge.",
+    "description": "Captain Hook is a vibrant blood red, full of life but with a dark side - where the ink pools it shows a black border, like the captain's menacing hook. From the Peter Pan series, inspired by J. M. Barrie's characters. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 2,
@@ -11643,15 +11738,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep navy with good shading and a sheen at stroke edges on coated paper."
+        "body": "Bold blood red with dark edges to heavier strokes."
       },
       {
         "title": "On textured paper",
-        "body": "Dark and menacing on all papers."
+        "body": "A deep, steady red on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs reveal the depth and sheen."
+        "body": "Broad and wet nibs show the dark edge."
       }
     ],
     "image": "images/wearingeul-captain-hook.jpg",
@@ -11659,15 +11754,18 @@ const INKS = [
   },
   {
     "id": "wearingeul-queen-of-hearts",
+    "shimmer": true,
+    "sheen": true,
     "brand": "Wearingeul",
     "name": "Queen of Hearts",
-    "colorPrimary": "#a81a2a",
-    "colorDark": "#88000a",
-    "tagline": "A bold, commanding red - off with their heads!",
-    "description": "From the Alice in Wonderland series, Queen of Hearts is a bold, vivid red with a commanding presence and a subtle sheen. Dramatic and imperious, just like the tyrannical queen herself.",
+    "colours": ["Red", "Brown"],
+    "colorPrimary": "#4e2a20",
+    "colorDark": "#2a1410",
+    "tagline": "A red-black with gold glitter and a dark brown sheen.",
+    "description": "Queen of Hearts is a dark red-black base with gorgeous gold glitter and a dark brown sheen - charismatic, and a little mad. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the Alice's Adventures in Wonderland series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 2,
+      "sheen": 3,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11676,15 +11774,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bold vivid red with good shading and a sheen at stroke edges."
+        "body": "Dark red-brown with gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Commanding and bright on all papers."
+        "body": "Darker on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Beautiful in broad nibs where the shading and sheen show."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-queen-of-hearts.jpg",
@@ -11695,13 +11793,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "Alice",
-    "colorPrimary": "#3a6aaa",
-    "colorDark": "#1a4a8a",
-    "tagline": "A curious, dreamy blue ready to tumble down the rabbit hole.",
-    "description": "From the Alice in Wonderland series, Alice is a bright, curious blue with a dreamy quality and a subtle shimmer - the colour of a pinafore dress and wide-eyed wonder. Cheerful and inquisitive.",
+    "colours": ["Blue", "Teal"],
+    "colorPrimary": "#6594a8",
+    "colorDark": "#39658a",
+    "tagline": "A light sky blue with yellow shading and gold glitter.",
+    "description": "Alice is a light sky blue with yellow shading and shiny gold glitter - for a lively, curious heroine. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the Alice's Adventures in Wonderland series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11710,15 +11809,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright curious blue with good shading and a subtle shimmer."
+        "body": "Sky blue with yellow in the shading and gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its cheerful quality on all papers."
+        "body": "Greener and calmer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Smooth in all sizes. Shake before use for the shimmer."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-alice.jpg",
@@ -11726,17 +11825,16 @@ const INKS = [
   },
   {
     "id": "wearingeul-vayu",
-    "shimmer": false,
     "brand": "Wearingeul",
     "name": "Vayu",
     "colours": ["Green"],
-    "colorPrimary": "#4a9a5a",
-    "colorDark": "#2a7a3a",
-    "tagline": "Lord of wind - a bright, airy green with celestial shimmer.",
-    "description": "From Wearingeul's Special Collection mythology series, Vayu (the Hindu lord of wind) is a bright, airy green with celestial shimmer. Light, free, and full of movement.",
+    "colorPrimary": "#81a58d",
+    "colorDark": "#6f9d81",
+    "tagline": "A clear emerald green with pink appearing as it dries.",
+    "description": "Vayu is the Hindu god of wind and air. The ink is a crystal-clear emerald green, and a soft pink appears as it dries - the colour of air you can feel but not see. From the World Myth series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11745,15 +11843,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Bright airy sky-blue with celestial shimmer and good shading."
+        "body": "Soft emerald green with pink in the shading."
       },
       {
         "title": "On textured paper",
-        "body": "The blue stays bright; shimmer is gentler."
+        "body": "Greener and more even on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the shimmer best. Shake before use."
+        "body": "Broad and wet nibs show the pink."
       }
     ],
     "image": "images/wearingeul-vayu.jpg",
@@ -11761,18 +11859,17 @@ const INKS = [
   },
   {
     "id": "wearingeul-sedna",
-    "sheen": false,
     "brand": "Wearingeul",
     "name": "Sedna",
-    "colours": ["Teal"],
-    "colorPrimary": "#1a6a7a",
-    "colorDark": "#0a4a5a",
-    "tagline": "Goddess of the sea - a deep ocean teal with a watery sheen.",
-    "description": "From the Special Collection mythology series, Sedna (the Inuit goddess of the sea) is a deep ocean teal with a beautiful sheen - the colour of cold northern waters. Mysterious and deep.",
+    "colours": ["Blue", "Grey"],
+    "colorPrimary": "#4c80a5",
+    "colorDark": "#38658d",
+    "tagline": "A cool, dusky blue for cold northern seas.",
+    "description": "Sedna is a medium blue with a cool tone, dusty grey undertones and slight shading - named after the Inuit goddess of the sea and its creatures. From the World Myth series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 3,
-      "dryTime": "Medium (10–20 sec)",
+      "shading": 2,
+      "sheen": 1,
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "Smooth white paper"
@@ -11780,15 +11877,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Deep ocean teal with good shading and a sheen at stroke edges."
+        "body": "Dusky blue with slight shading."
       },
       {
         "title": "On textured paper",
-        "body": "The teal stays deep; sheen shows best on smooth stock."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs where the sheen shows."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/wearingeul-sedna.jpg",
@@ -11797,17 +11894,16 @@ const INKS = [
   {
     "id": "wearingeul-persephone",
     "shimmer": true,
-    "sheen": false,
     "brand": "Wearingeul",
     "name": "Persephone",
     "colours": ["Purple"],
-    "colorPrimary": "#7a3a6a",
-    "colorDark": "#5a1a4a",
-    "tagline": "Queen of spring and the underworld - a rich purple-pink with a sheen.",
-    "description": "From the Special Collection mythology series, Persephone is a rich purple-pink with a beautiful sheen - capturing the dual nature of the goddess who is both spring's bloom and the underworld's queen.",
+    "colorPrimary": "#3c2f40",
+    "colorDark": "#2e2431",
+    "tagline": "A dark violet with red glitter, like pomegranate seeds.",
+    "description": "Persephone is a dark violet with a heavy, underworld atmosphere, scattered with red glitter for the pomegranate seeds that bound her to Hades. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the World Myth series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 3,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11816,15 +11912,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Rich purple-pink with good shading and a gold-green sheen at stroke edges."
+        "body": "Dark violet with red sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "The colour stays rich; sheen shows best on smooth stock."
+        "body": "Darker on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs where the sheen shows."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-persephone.jpg",
@@ -11832,16 +11928,16 @@ const INKS = [
   },
   {
     "id": "wearingeul-heimdall",
-    "shimmer": false,
     "brand": "Wearingeul",
     "name": "Heimdall",
-    "colorPrimary": "#a87a2a",
-    "colorDark": "#885a0a",
-    "tagline": "Guardian of the rainbow bridge - a warm gold-amber with radiant shimmer.",
-    "description": "From the Special Collection mythology series, Heimdall (the Norse guardian of Bifrost) is a warm gold-amber with radiant shimmer - the colour of the rainbow bridge gleaming in the sun. Warm and luminous.",
+    "colours": ["Orange", "Yellow"],
+    "colorPrimary": "#fb6a33",
+    "colorDark": "#f54f28",
+    "tagline": "Sunny yellow running into orange and red.",
+    "description": "Heimdall is the Norse god of light. The ink moves naturally from a bright sunny yellow to orange, and shows a reddish hue where it's laid down generously - a really wide colour range. From the World Myth series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 1,
+      "shading": 4,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11850,15 +11946,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Warm gold-amber with radiant shimmer and good shading."
+        "body": "Bright orange with yellow-to-red shading."
       },
       {
         "title": "On textured paper",
-        "body": "The warm gold deepens on cream; shimmer is gentler."
+        "body": "Warmer and more even on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the shimmer best. Shake before use."
+        "body": "Broad and wet nibs show the full yellow-to-red range."
       }
     ],
     "image": "images/wearingeul-heimdall.jpg",
@@ -11869,14 +11965,14 @@ const INKS = [
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "The Great Sage Heaven's Equal",
-    "colours": ["Red"],
+    "colours": ["Red", "Yellow"],
     "colorPrimary": "#a81a1a",
     "colorDark": "#7a0a0a",
-    "tagline": "The Monkey King - a blazing red with rebellious shimmer.",
-    "description": "From the Special Collection, The Great Sage Heaven's Equal (Sun Wukong, the Monkey King) is a blazing red with brilliant gold shimmer - bold, rebellious, and powerful, like the legendary trickster hero.",
+    "tagline": "Gold shimmer with a rich red border.",
+    "description": "The Great Sage Heaven's Equal is Sun Wukong, the Monkey King of 'Journey to the West'. The ink is inspired by his yellow dragon robe and golden headband - golden shimmer over a warm base, forming a rich red border where it's applied generously. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the World Myth series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11885,15 +11981,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Blazing gold-orange with brilliant shimmer and good shading."
+        "body": "Warm red-gold with gold sparkle and red edges."
       },
       {
         "title": "On textured paper",
-        "body": "The gold-orange stays warm; shimmer is gentler."
+        "body": "Redder and calmer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Broad nibs show the shimmer best. Shake before use."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-the-great-sage-heavens-equal.jpg",
@@ -11902,17 +11998,16 @@ const INKS = [
   {
     "id": "wearingeul-enki",
     "shimmer": true,
-    "sheen": false,
     "brand": "Wearingeul",
     "name": "Enki",
-    "colours": ["Teal"],
-    "colorPrimary": "#1a7a8a",
-    "colorDark": "#0a5a6a",
-    "tagline": "God of fresh water - a vivid teal with a flowing, watery sheen.",
-    "description": "From the Special Collection mythology series, Enki (the Sumerian god of water and wisdom) is a vivid teal with a beautiful flowing sheen - the colour of life-giving fresh water. Bright and wise.",
+    "colours": ["Blue", "Purple"],
+    "colorPrimary": "#969fd3",
+    "colorDark": "#7089c6",
+    "tagline": "A blue that separates into violet, with gold glitter.",
+    "description": "Enki is the Sumerian god of water and wisdom. The ink shows dramatic colour separation - a mystical violet rises out of an enigmatic blue, with gold glitter gleaming on top like sunlight on flowing water. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the World Myth series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 3,
+      "shading": 4,
+      "sheen": 2,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11921,15 +12016,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Vivid teal with good shading and a sheen at stroke edges."
+        "body": "Blue with violet separating out and gold sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Bright and flowing; sheen shows best on smooth stock."
+        "body": "Bluer on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "Spectacular in broad nibs where the sheen shows."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-enki.jpg",
@@ -11938,17 +12033,16 @@ const INKS = [
   {
     "id": "wearingeul-hades",
     "shimmer": true,
-    "sheen": false,
     "brand": "Wearingeul",
     "name": "Hades",
-    "colours": ["Grey"],
+    "colours": ["Black"],
     "colorPrimary": "#222226",
     "colorDark": "#101012",
-    "tagline": "Lord of the underworld - a near-black grey with an infernal sheen.",
-    "description": "From the Special Collection mythology series, Hades (the Greek lord of the underworld) is a near-black grey with a dramatic sheen - dark, powerful, and regal as the ruler of the dead. The darkest ink in the series.",
+    "tagline": "A deep black with icy blue glitter.",
+    "description": "Hades is a deep, restrained black, like the underworld itself, littered with frozen blue glitter that gives it an ethereal look. Shake gently before filling and use a medium or broad nib so the glitter flows freely. From the World Myth series. Wearingeul is a Korean ink maker whose 'Colour of Literature' project turns stories, poems and myths into ink colours. 30ml bottles.",
     "properties": {
-      "shading": 3,
-      "sheen": 3,
+      "shading": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
@@ -11957,15 +12051,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Near-black purple with a dramatic sheen at stroke edges. Powerful on coated paper."
+        "body": "Deep black with blue sparkle."
       },
       {
         "title": "On textured paper",
-        "body": "Darkens further but stays regal and dramatic."
+        "body": "Plain black on textured paper, with less shimmer showing."
       },
       {
         "title": "Nib behaviour",
-        "body": "A wet broad nib reveals the purple depths and sheen."
+        "body": "Medium or broad nibs only - fine nibs can clog with shimmer."
       }
     ],
     "image": "images/wearingeul-hades.jpg",
@@ -12222,30 +12316,31 @@ const INKS = [
     "id": "monteverde-purple-mist",
     "brand": "Monteverde",
     "name": "Purple Mist",
-    "colorPrimary": "#7a5a9a",
-    "colorDark": "#5a3a7a",
-    "tagline": "A soft, hazy purple with a gentle, misty quality.",
-    "description": "Monteverde Purple Mist is a soft, medium purple with a gentle, hazy quality. Smooth-flowing thanks to Monteverde's ITF formula, it's an easy-wearing, pleasant everyday purple.",
+    "colours": ["Purple"],
+    "colorPrimary": "#7d6ae4",
+    "colorDark": "#604bd5",
+    "tagline": "A light, bright violet with gentle shading.",
+    "description": "Purple Mist is a light, spring-like violet with medium shading - a little lighter than Iroshizuku Jurojin. Monteverde's ITF formula helps it flow smoothly. It can look light in fine nibs, but a broad nib gives a wet, saturated line. Monteverde is an American pen and ink brand.",
     "properties": {
       "shading": 3,
-      "sheen": 1,
+      "sheen": 0,
       "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
+      "waterResistance": "Medium",
       "lubrication": "Very well-lubricated",
       "bestOn": "White or cream paper"
     },
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft hazy purple with good shading. Smooth and easy to write with."
+        "body": "Light violet with medium shading."
       },
       {
         "title": "On textured paper",
-        "body": "Holds its gentle quality on all papers."
+        "body": "Can feather a little on cheap copy paper; fine on good paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Monteverde's ITF formula makes this glide in all nib sizes."
+        "body": "Broad nibs give the richest colour; fine nibs run light."
       }
     ],
     "image": "images/monteverde-purple-mist.jpg",
@@ -12255,14 +12350,15 @@ const INKS = [
     "id": "inkebara-pale-violet",
     "brand": "Inkebara",
     "name": "Pale Violet",
-    "colorPrimary": "#9a7aaa",
-    "colorDark": "#7a5a8a",
-    "tagline": "A soft, delicate pale violet with refined Czech craftsmanship.",
-    "description": "Inkebara Pale Violet is a soft, light violet with a delicate, refined quality. From this small Czech maker, it's a gentle everyday purple with surprising shading for such a pale colour.",
+    "colours": ["Purple", "Pink"],
+    "colorPrimary": "#9e6685",
+    "colorDark": "#7b5b7a",
+    "tagline": "A pale lilac purple.",
+    "description": "Pale Violet is a soft, dusty lilac purple from Inkebara's standard collection - close to Tono & Lims Kyoto. Well behaved, with no feathering on good paper. It can look pale in fine nibs, so medium and broad suit it best.",
     "properties": {
       "shading": 3,
       "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
+      "dryTime": "Slow (20–30 sec)",
       "waterResistance": "Low",
       "lubrication": "Well-lubricated",
       "bestOn": "White paper"
@@ -12270,15 +12366,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft pale violet with surprisingly good shading from deeper to lighter lilac."
+        "body": "Dusty lilac with gentle shading."
       },
       {
         "title": "On textured paper",
-        "body": "Best on white paper for contrast; delicate and refined."
+        "body": "Softer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Best in medium or broad nibs where the soft colour shows."
+        "body": "Medium and broad nibs keep it readable."
       }
     ],
     "image": "images/inkebara-pale-violet.jpg",
@@ -12288,11 +12384,11 @@ const INKS = [
     "id": "birmingham-oil-rag",
     "brand": "The Birmingham Pen Company",
     "name": "Oil Rag",
-    "colours": ["Brown"],
-    "colorPrimary": "#3a2622",
-    "colorDark": "#241512",
-    "tagline": "A dark, worn brown-maroon with the grit of the workshop.",
-    "description": "Oil Rag is a deep, smoky brown-maroon - the colour of a well-used cloth on a garage bench. Almost black at full saturation, it warms to a rich oxblood-brown where the ink thins, giving it real character on the page without ever feeling loud.",
+    "colours": ["Brown", "Red"],
+    "colorPrimary": "#493335",
+    "colorDark": "#342626",
+    "tagline": "A very dark, smoky maroon-brown.",
+    "description": "Oil Rag is a very dark maroon-brown - the colour of a well-used cloth on the workshop bench. It reads almost black-brown in finer nibs and warms to oxblood where the ink thins. From Birmingham's Keystone Formula line of traditional dye inks. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city. We've described the colour from our own swatch.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -12304,15 +12400,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Lovely shading - light strokes pull a warm reddish-brown while heavier strokes settle into a near-black espresso. Clean lines with no feathering."
+        "body": "Dark maroon-brown with oxblood shading."
       },
       {
         "title": "On textured paper",
-        "body": "The maroon undertone shows more on toothier stock, deepening the worn, industrial feel. Behaves well with no bleed on quality paper."
+        "body": "Near-black brown on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A versatile everyday dark - reads as a sophisticated near-black in a fine nib, and reveals its full brown-maroon range in a broad."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/birmingham-oil-rag.jpg",
@@ -12749,10 +12845,10 @@ const INKS = [
     "brand": "Robert Oster",
     "name": "Coffee Monster",
     "colours": ["Brown"],
-    "colorPrimary": "#6a4a2e",
-    "colorDark": "#43301c",
-    "tagline": "A Robert Oster x The Coffee Monster Co. collaboration - slate and coffee in a single, extraordinary ink.",
-    "description": "Coffee Monster is a special collaboration between Robert Oster and the beloved ink artist The Coffee Monster Co. It's a remarkable chromatic-shading ink that splits across the page between cool slate-blue and warm, roasted coffee-brown - cool in the shadows, rich and toasty where it pools. Genuinely one of a kind, and a proper collector's favourite.",
+    "colorPrimary": "#563a27",
+    "colorDark": "#3f2d21",
+    "tagline": "A soft coffee-bean brown with lots of shading.",
+    "description": "Coffee Monster is a soft, coffee-bean brown with a whole range of brown hues in its shading, cooling to grey-brown at the edges of heavier strokes. A collaboration between Robert Oster, who makes his inks by hand in Australia, and The Coffee Monsterz Co.",
     "properties": {
       "shading": 4,
       "sheen": 0,
@@ -12764,15 +12860,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "The magic shows best here - watch it separate from slate-grey into warm coffee-brown across a single stroke. High shading, clean lines, no feathering."
+        "body": "Coffee brown with lots of light-to-dark shading."
       },
       {
         "title": "On textured paper",
-        "body": "The two-tone split deepens and the brown reads richer. Still well behaved with no bleed on quality stock."
+        "body": "Warmer and more even on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Wetter, broader nibs reward you with the fullest colour separation. Even a fine nib hints at the slate-to-coffee shift."
+        "body": "Broad and wet nibs show the shading best."
       }
     ],
     "image": "images/robert-oster-coffee-monster.jpg",
@@ -12782,11 +12878,11 @@ const INKS = [
     "id": "robert-oster-murky-pond-water",
     "brand": "Robert Oster",
     "name": "Murky Pond Water",
-    "colours": ["Grey"],
-    "colorPrimary": "#494853",
-    "colorDark": "#2e2d36",
-    "tagline": "A Robert Oster x The Coffee Monster Co. collaboration - moody, murky and beautifully grey.",
-    "description": "Part of the Robert Oster x The Coffee Monster Co. collaboration, Murky Pond Water is a brooding, desaturated grey with hints of green and violet stirred through it - exactly like the still, silty water it's named for. Subtle, atmospheric and full of quiet character.",
+    "colours": ["Grey", "Teal"],
+    "colorPrimary": "#51525e",
+    "colorDark": "#39434d",
+    "tagline": "A dark grey with notes of green, turquoise and lavender.",
+    "description": "Murky Pond Water is a dark grey stirred through with green, turquoise and lavender notes - exactly like still, silty pond water. The third Robert Oster x The Coffee Monsterz Co. ink. A collaboration between Robert Oster, who makes his inks by hand in Australia, and The Coffee Monsterz Co.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -12798,15 +12894,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Soft grey shading with murky green-violet undertones surfacing in the pooling. Understated and moody."
+        "body": "Dark grey with green-teal and lavender in the shading."
       },
       {
         "title": "On textured paper",
-        "body": "The murk deepens on toothier paper, leaning more slate. Clean with no feathering on quality stock."
+        "body": "Greyer on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Reads as a refined muted grey in fine nibs; broader nibs draw out the green and violet hidden in the murk."
+        "body": "Broad and wet nibs show the colour notes best."
       }
     ],
     "image": "images/robert-oster-murky-pond-water.jpg",
@@ -12817,10 +12913,10 @@ const INKS = [
     "brand": "Robert Oster",
     "name": "Day to Night",
     "colours": ["Purple"],
-    "colorPrimary": "#c89a3a",
-    "colorDark": "#1a2a4a",
-    "tagline": "A Robert Oster x The Coffee Monster Co. collaboration - a chromatic shift from golden day to deep midnight blue.",
-    "description": "Day to Night is a special collaboration between Robert Oster and The Coffee Monster Co. A dramatic chromatic-shading ink that splits across the page between warm, golden daylight and deep, indigo night - bright where it's thin, and plunging into midnight blue where it pools. A proper collector's favourite alongside its Coffee Monster and Murky Pond Water siblings.",
+    "colorPrimary": "#592238",
+    "colorDark": "#381b2d",
+    "tagline": "A deep plum purple that leans magenta, with slate-blue tones.",
+    "description": "Day to Night is a deep plum purple that leans magenta, with slate-blue tones where the ink thins - the sky sliding from evening into night. A collaboration between Robert Oster, who makes his inks by hand in Australia, and The Coffee Monsterz Co. We've described the colour from our own swatch.",
     "properties": {
       "shading": 4,
       "sheen": 0,
@@ -12832,15 +12928,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Watch it separate from warm gold into deep indigo-blue across a single stroke. High shading, clean lines, no feathering."
+        "body": "Plum-magenta with slate-blue shading."
       },
       {
         "title": "On textured paper",
-        "body": "The day-to-night split deepens and the blue reads richer. Still well behaved with no bleed on quality stock."
+        "body": "Darker and more purple on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "Wetter, broader nibs reward you with the fullest colour separation from gold to indigo."
+        "body": "Broad and wet nibs show the shading best."
       }
     ],
     "image": "images/robert-oster-day-to-night.jpg",
@@ -13589,11 +13685,11 @@ const INKS = [
     "id": "dominant-industry-allegory",
     "brand": "Dominant Industry",
     "name": "Allegory",
-    "colours": ["Grey"],
-    "colorPrimary": "#5a5f68",
-    "colorDark": "#34383f",
-    "tagline": "A deep, contemplative slate grey.",
-    "description": "Allegory is a dark, desaturated grey from Dominant Industry - the colour of storm clouds at dusk. Near-black at full saturation with a cool cast, it's a sophisticated everyday dark with quiet depth and gentle shading.",
+    "colours": ["Grey", "Blue"],
+    "colorPrimary": "#43484d",
+    "colorDark": "#2c2e36",
+    "tagline": "A charcoal grey with hints of blue and purple.",
+    "description": "Allegory is a dark charcoal grey that looks almost black at first, with a little blue and purple in its shading. It was released with Dominant Industry's Log of Elixir ink journal, inspired by a unicorn (a cool grey, for the soul) and a stag (a warm grey, for the body). Water-based, so it can be diluted for painting. Dominant Industry is a South Korean ink maker based in Paju, making inks in small batches. 25ml bottles.",
     "properties": {
       "shading": 3,
       "sheen": 0,
@@ -13605,15 +13701,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Cool slate-blue shading that settles into a deep charcoal in heavier strokes. Elegant and calm."
+        "body": "Charcoal grey with blue-purple shading."
       },
       {
         "title": "On textured paper",
-        "body": "The blue cast shows a touch more on toothier stock. Well behaved with no bleed on quality paper."
+        "body": "Near-black on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A clean near-black in fine nibs; broader nibs reveal the blue-grey character and soft shading range."
+        "body": "Comfortable in any nib."
       }
     ],
     "image": "images/dominant-industry-allegory.jpg",
@@ -13623,13 +13719,13 @@ const INKS = [
     "id": "vinta-ulap",
     "brand": "Vinta",
     "name": "Ulap",
-    "colours": ["Grey","Teal"],
-    "colorPrimary": "#5a6a68",
-    "colorDark": "#3a4a48",
-    "tagline": "A soft, cloudy grey-teal named for the sky.",
-    "description": "Ulap (Filipino for 'cloud') is a gentle grey-teal with a whisper of green, like overcast skies drifting over the sea. Calm and atmospheric, with lovely soft shading that moves from pale mist to deeper slate.",
+    "colours": ["Grey"],
+    "colorPrimary": "#878c92",
+    "colorDark": "#647274",
+    "tagline": "A silvery steel grey with a little green.",
+    "description": "Ulap means 'clouds' in Tagalog. It dries to a fairly straight silvery steel grey with a little underlying green, pronounced shading and a fine dark halo. Vinta sells it as London Grey 1762, a Cult Pens exclusive. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture. 30ml bottles.",
     "properties": {
-      "shading": 3,
+      "shading": 4,
       "sheen": 0,
       "dryTime": "Medium (10–15 sec)",
       "waterResistance": "Low",
@@ -13639,15 +13735,15 @@ const INKS = [
     "tastingNotes": [
       {
         "title": "On smooth paper",
-        "body": "Misty grey-teal with soft, even shading. Light strokes read almost silver; heavier ones cool into slate."
+        "body": "Silvery grey with pronounced shading."
       },
       {
         "title": "On textured paper",
-        "body": "The green-teal undertone comes through a little more. Gentle and clean with no feathering."
+        "body": "Darker and flatter on textured paper."
       },
       {
         "title": "Nib behaviour",
-        "body": "A soft, easy grey-teal in any nib; broader nibs bring out the most of its cloudy shading."
+        "body": "Medium and broad nibs show the shading and dark edges best."
       }
     ],
     "image": "images/vinta-ulap.jpg",
