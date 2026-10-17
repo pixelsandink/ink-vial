@@ -77,8 +77,10 @@ function getInkPrice(ink) {
   // ── Robert Oster x The Coffee Monster Co. collab £4.00 ──
   if (id.includes('coffee-monster') || id.includes('murky-pond-water') || id.includes('day-to-night')) return 4.00;
 
-  // ── Taccia Ukiyoe £3.75 ───────────────────────────────
+  // ── Taccia Ukiyoe £3.75 (some carry legacy 'sunaoiro' ids) ──
   if (id.includes('taccia') && id.includes('ukiyoe')) return 3.75;
+  if (['taccia-sunaoiro-fukakihanada', 'taccia-sunaoiro-sabimidori', 'taccia-sunaoiro-koiai',
+       'taccia-sunaoiro-akasakura', 'taccia-sunaoiro-nakamurasaki'].indexOf(id) !== -1) return 3.75;
 
   // ── Sailor Mizutama £3.75 ─────────────────────────────
   if (id.includes('sailor-mizutama')) return 3.75;

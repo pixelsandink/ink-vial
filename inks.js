@@ -10794,40 +10794,6 @@ const INKS = [
     "stock": 12
   },
   {
-    "id": "vinta-london-grey",
-    "image": "images/vinta-london-grey.jpg",
-    "brand": "Vinta",
-    "name": "London Grey",
-    "colours": ["Grey"],
-    "colorPrimary": "#5c7382",
-    "colorDark": "#435e6b",
-    "tagline": "A steel grey with a hint of green and plenty of shading.",
-    "description": "London Grey is a cool steel grey with a little underlying green, pronounced shading and a fine dark halo around heavier strokes. In a wet swatch it builds to a deep slate. Ulap ('clouds') is sold as London Grey 1762 - a Cult Pens exclusive marking the year British forces took Manila. Vinta is a Filipino ink maker that names each colour after a piece of Philippine history, language or culture, and donates to Teach for the Philippines for every bottle sold. 30ml bottles.",
-    "properties": {
-      "shading": 4,
-      "sheen": 0,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "White paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Steel grey with strong shading from silver to slate."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Darker and flatter on textured paper."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Medium and broad nibs show the shading and dark edges best."
-      }
-    ],
-    "stock": 12
-  },
-  {
     "id": "vinta-pitik-papel",
     "brand": "Vinta",
     "name": "Pitik Papel",

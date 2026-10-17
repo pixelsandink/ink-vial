@@ -1072,27 +1072,27 @@
   "taccia-sunaoiro-akasakura": {
     "name": "Akasakura",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 3.75
   },
   "taccia-sunaoiro-nakamurasaki": {
     "name": "Nakamurasaki",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 3.75
   },
   "taccia-sunaoiro-fukakihanada": {
     "name": "Fukakihanada",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 3.75
   },
   "taccia-sunaoiro-sabimidori": {
     "name": "Sabimidori",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 3.75
   },
   "taccia-sunaoiro-koiai": {
     "name": "Koiai",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 3.75
   },
   "taccia-sunaoiro-aka": {
     "name": "Aka",
@@ -1316,11 +1316,6 @@
   },
   "vinta-ubi": {
     "name": "Ubi",
-    "brand": "Vinta",
-    "price": 3.25
-  },
-  "vinta-london-grey": {
-    "name": "London Grey",
     "brand": "Vinta",
     "price": 3.25
   },
