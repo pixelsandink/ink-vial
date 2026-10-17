@@ -1063,6 +1063,7 @@ const INKS = [
   },
   {
     "id": "diamine-lady-grey",
+    "chroma": true,
     "brand": "Diamine",
     "name": "Lady Grey",
     "colours": ["Grey", "Purple"],
@@ -1543,6 +1544,7 @@ const INKS = [
   },
   {
     "id": "diamine-aurora-borealis",
+    "chroma": true,
     "sheen": true,
     "brand": "Diamine",
     "name": "Aurora Borealis",
@@ -5415,6 +5417,7 @@ const INKS = [
   },
   {
     "id": "lennon-tool-bar-tortoise-and-serpent",
+    "chroma": true,
     "brand": "Lennon Tool Bar",
     "name": "Tortoise and Serpent",
     "colours": ["Blue", "Teal"],
@@ -6543,6 +6546,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-sydney-darling-harbour",
+    "chroma": true,
     "brand": "Robert Oster",
     "name": "Sydney Darling Harbour",
     "colours": ["Green", "Teal"],
@@ -7598,6 +7602,7 @@ const INKS = [
   },
   {
     "id": "sailor-kitsune-biyori",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Kitsune Biyori",
     "colours": ["Grey", "Pink"],
@@ -7870,6 +7875,7 @@ const INKS = [
   },
   {
     "id": "sailor-shikori-tokiwamatsu",
+    "chroma": true,
     "sheen": true,
     "brand": "Sailor",
     "name": "Shikiori Tokiwamatsu",
@@ -8041,6 +8047,7 @@ const INKS = [
   },
   {
     "id": "sailor-shikori-potsu",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Shikiori Potsu",
     "colours": ["Blue", "Purple"],
@@ -8109,6 +8116,7 @@ const INKS = [
   },
   {
     "id": "sailor-shikori-okuyama",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Shikiori Okuyama",
     "colours": ["Red", "Purple"],
@@ -8177,6 +8185,7 @@ const INKS = [
   },
   {
     "id": "sailor-manyo-aka-mai",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Manyo Aka-mai",
     "colours": ["Brown", "Purple"],
@@ -8211,6 +8220,7 @@ const INKS = [
   },
   {
     "id": "sailor-manyo-kuri",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Manyo Kuri",
     "colours": ["Brown", "Purple"],
@@ -8245,6 +8255,7 @@ const INKS = [
   },
   {
     "id": "sailor-manyo-nekoyanagi",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Manyo Nekoyanagi",
     "colours": ["Purple", "Blue"],
@@ -8279,6 +8290,7 @@ const INKS = [
   },
   {
     "id": "sailor-studio-123",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Studio Ink 123",
     "colours": ["Blue", "Purple"],
@@ -8381,6 +8393,7 @@ const INKS = [
   },
   {
     "id": "sailor-studio-273",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Studio Ink 273",
     "colours": ["Brown", "Purple"],
@@ -8483,6 +8496,7 @@ const INKS = [
   },
   {
     "id": "sailor-studio-224",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Studio Ink 224",
     "colours": ["Blue", "Teal"],
@@ -8620,6 +8634,7 @@ const INKS = [
   },
   {
     "id": "sailor-manyo-kikyou",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Manyo Kikyou",
     "added": "2026-10-17",
@@ -8655,6 +8670,7 @@ const INKS = [
   },
   {
     "id": "sailor-manyo-shirakashi",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Manyo Shirakashi",
     "added": "2026-10-17",
@@ -8690,6 +8706,7 @@ const INKS = [
   },
   {
     "id": "sailor-manyo-ume",
+    "chroma": true,
     "brand": "Sailor",
     "name": "Manyo Ume",
     "added": "2026-10-17",
@@ -9822,6 +9839,7 @@ const INKS = [
   },
   {
     "id": "dominant-industry-tsavorite",
+    "chroma": true,
     "brand": "Dominant Industry",
     "name": "Tsavorite",
     "colours": ["Green"],
@@ -9890,6 +9908,7 @@ const INKS = [
   },
   {
     "id": "dominant-industry-unknown-land",
+    "chroma": true,
     "brand": "Dominant Industry",
     "name": "Unknown Land",
     "colours": ["Brown", "Yellow"],
@@ -10343,6 +10362,7 @@ const INKS = [
   },
   {
     "id": "troublemaker-abalone",
+    "chroma": true,
     "brand": "Troublemaker Inks",
     "name": "Abalone",
     "colours": ["Blue", "Purple"],
@@ -10999,6 +11019,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-geppetto",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Geppetto",
     "colours": ["Red", "Pink"],
@@ -11068,6 +11089,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-a-watery-star",
+    "chroma": true,
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "A Watery Star",
@@ -11138,6 +11160,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-floating-cloud",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Floating Cloud",
     "colours": ["Pink", "Orange"],
@@ -11172,6 +11195,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-exile-of-flower",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Exile of Flower",
     "colours": ["Pink", "Orange"],
@@ -11206,6 +11230,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-jane-eyre",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Jane Eyre",
     "colours": ["Purple", "Grey"],
@@ -11376,6 +11401,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-adventures-of-tom-sawyer",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Adventures of Tom Sawyer",
     "colours": ["Green", "Grey"],
@@ -11410,6 +11436,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-tsukuyami",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Tsukuyomi",
     "colours": ["Blue", "Purple"],
@@ -11444,6 +11471,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-mad-hatter",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Mad Hatter",
     "colours": ["Grey"],
@@ -11478,6 +11506,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-wendy-darling",
+    "chroma": true,
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "Wendy Darling",
@@ -11548,6 +11577,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-crime-and-punishment",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Crime and Punishment",
     "colours": ["Green"],
@@ -11582,6 +11612,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-carmilla",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Carmilla",
     "colours": ["Red", "Pink"],
@@ -11756,6 +11787,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-alice",
+    "chroma": true,
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "Alice",
@@ -11791,6 +11823,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-vayu",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Vayu",
     "colours": ["Green"],
@@ -11894,6 +11927,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-heimdall",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Heimdall",
     "colours": ["Orange", "Yellow"],
@@ -11963,6 +11997,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-enki",
+    "chroma": true,
     "shimmer": true,
     "brand": "Wearingeul",
     "name": "Enki",
@@ -12175,6 +12210,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-therese-raquin",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Therese Raquin",
     "added": "2026-10-17",
@@ -12210,6 +12246,7 @@ const INKS = [
   },
   {
     "id": "wearingeul-tick-tock-croc",
+    "chroma": true,
     "brand": "Wearingeul",
     "name": "Tick Tock Croc",
     "added": "2026-10-17",
@@ -12595,6 +12632,7 @@ const INKS = [
   },
   {
     "id": "birmingham-moonfish-jelly",
+    "chroma": true,
     "brand": "The Birmingham Pen Company",
     "name": "Moonfish Jelly",
     "added": "2026-10-17",
@@ -12808,6 +12846,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-coffee-monster",
+    "chroma": true,
     "brand": "Robert Oster",
     "name": "Coffee Monster",
     "colours": ["Brown"],
@@ -12842,6 +12881,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-murky-pond-water",
+    "chroma": true,
     "brand": "Robert Oster",
     "name": "Murky Pond Water",
     "colours": ["Grey", "Teal"],
@@ -12876,6 +12916,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-day-to-night",
+    "chroma": true,
     "brand": "Robert Oster",
     "name": "Day to Night",
     "colours": ["Purple"],
@@ -13333,6 +13374,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-kelp-forest",
+    "chroma": true,
     "sheen": true,
     "brand": "Robert Oster",
     "name": "Kelp Forest",
@@ -13474,6 +13516,7 @@ const INKS = [
   },
   {
     "id": "robert-oster-romeo-and-juliet",
+    "chroma": true,
     "brand": "Robert Oster",
     "name": "Romeo and Juliet",
     "added": "2026-10-17",
@@ -14073,6 +14116,7 @@ const INKS = [
   },
   {
     "id": "esterbrook-sakura-dragon-morning-skies",
+    "chroma": true,
     "brand": "Esterbrook x Sakura Dragon",
     "name": "Morning Skies",
     "added": "2026-10-17",
@@ -14179,6 +14223,7 @@ const INKS = [
   },
   {
     "id": "kitty-inkpot-a-certain-forest",
+    "chroma": true,
     "brand": "Kitty Inkpot",
     "name": "A Certain Forest",
     "added": "2026-10-17",
@@ -14214,6 +14259,7 @@ const INKS = [
   },
   {
     "id": "kitty-inkpot-a-certain-letter",
+    "chroma": true,
     "brand": "Kitty Inkpot",
     "name": "A Certain Letter",
     "added": "2026-10-17",
@@ -14249,6 +14295,7 @@ const INKS = [
   },
   {
     "id": "kitty-inkpot-elegy-of-the-fallen",
+    "chroma": true,
     "brand": "Kitty Inkpot",
     "name": "Elegy of the Fallen",
     "added": "2026-10-17",
@@ -14389,6 +14436,7 @@ const INKS = [
   },
   {
     "id": "kitty-inkpot-no-pendant-braiding",
+    "chroma": true,
     "brand": "Kitty Inkpot",
     "name": "No Pendant Braiding",
     "added": "2026-10-17",

@@ -323,6 +323,18 @@
         </div>
       </div>
 
+      <div class="filter-row">
+        <span class="filter-label">Features</span>
+        <div class="filter-pills" id="feature-filters">
+          <button class="pill active" data-feature="">All</button>
+          <button class="pill" data-feature="sheen">Sheen</button>
+          <button class="pill" data-feature="shimmer">Shimmer</button>
+          <button class="pill" data-feature="chroma">Chromashading</button>
+          <button class="pill" data-feature="waterproof">Waterproof</button>
+          <button class="pill" data-feature="new">New in</button>
+        </div>
+      </div>
+
       <button class="drawer-done" id="filters-done" type="button">Done · <span id="drawer-count"></span></button>
     </div>
 
@@ -368,7 +380,7 @@
     <span class="footer-legal"><a href="privacy" style="color:rgba(240,232,216,0.6);text-decoration:none;">Privacy</a> &middot; <a href="terms" style="color:rgba(240,232,216,0.6);text-decoration:none;">Terms</a> &middot; <a href="returns" style="color:rgba(240,232,216,0.6);text-decoration:none;">Returns</a></span>
   </div>
 </footer>
-<script src="inks.js?v=6"></script>
+<script src="inks.js?v=7"></script>
 <script src="prices.js?v=5"></script>
 <script src="cart.js?v=2"></script>
 <script>
@@ -378,13 +390,16 @@
   let activeBrand    = '';
   let activeSearch   = '';
   let activeSort     = 'brand';
+  const NEW_IN_DAYS  = 60;   // how long an ink counts as "New in" after its added date
 
   // ── Feature detection ──────────────────────────────────
   function hasFeature(ink, feature) {
     const p = ink.properties || {};
-    if (feature === 'sheen')   return ink.sheen === true || (ink.sheen !== false && (p.sheen || 0) >= 3);
-    if (feature === 'shimmer') return ink.shimmer === true || (ink.shimmer !== false && /shimmer|shimmering|sparkl|glitter/i.test((ink.description||'') + (ink.tagline||'')));
-    if (feature === 'water')   return /medium|high/i.test(p.waterResistance || '');
+    if (feature === 'sheen')      return ink.sheen === true || (ink.sheen !== false && (p.sheen || 0) >= 3);
+    if (feature === 'shimmer')    return ink.shimmer === true;
+    if (feature === 'chroma')     return ink.chroma === true;
+    if (feature === 'waterproof') return /high/i.test(p.waterResistance || '');
+    if (feature === 'new')        return !!ink.added && (Date.now() - new Date(ink.added)) < NEW_IN_DAYS * 864e5;
     return true;
   }
 
@@ -513,6 +528,15 @@
       renderGrid();
     });
   });
+
+  // ?feature=shimmer etc. opens the shop with that feature selected
+  const featureParam = new URLSearchParams(location.search).get('feature');
+  const featureBtn = featureParam && document.querySelector(`#feature-filters .pill[data-feature="${CSS.escape(featureParam)}"]`);
+  if (featureBtn) {
+    document.querySelectorAll('#feature-filters .pill').forEach(p => p.classList.remove('active'));
+    featureBtn.classList.add('active');
+    activeFeature = featureParam;
+  }
 
   // ── Live stock (from /api/stock) - falls back to built-in if unavailable ──
   function loadLiveStock() {

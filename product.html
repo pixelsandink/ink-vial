@@ -335,7 +335,7 @@
   </div>
 </footer>
 
-<script src="inks.js?v=6"></script>
+<script src="inks.js?v=7"></script>
 <script src="prices.js?v=5"></script>
 <script src="cart.js?v=2"></script>
 <script>
@@ -394,8 +394,11 @@
     const chips = [];
     if (p.shading >= 3) chips.push('High Shading');
     else if (p.shading === 2) chips.push('Low Shading');
-    if (p.sheen >= 3) chips.push('Strong Sheen');
+    if (ink.sheen === true || p.sheen >= 3) chips.push('Strong Sheen');
     else if (p.sheen >= 1) chips.push('Subtle Sheen');
+    if (ink.shimmer === true) chips.push('Shimmer');
+    if (ink.chroma === true) chips.push('Chromashading');
+    if (/high/i.test(p.waterResistance || '')) chips.push('Waterproof');
     if (p.lubrication && p.lubrication.toLowerCase().includes('well')) chips.push('Smooth Flow');
 
     document.getElementById('product-root').innerHTML = `
