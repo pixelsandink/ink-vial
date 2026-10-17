@@ -39,10 +39,7 @@
     @keyframes float{0%,100%{transform:translateY(0) rotate(-1.5deg);}50%{transform:translateY(-10px) rotate(1.5deg);}}
     /* ORIGIN */
     .origin{padding:80px 24px;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
-    .origin-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
-    .ink-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-    .ink-swatch{border-radius:var(--radius);aspect-ratio:1/1.4;box-shadow:0 4px 16px rgba(61,36,88,0.12);position:relative;overflow:hidden;}
-    .ink-swatch::after{content:'';position:absolute;top:5%;left:10%;width:18%;height:50%;background:rgba(255,255,255,0.16);border-radius:50%;filter:blur(6px);}
+    .origin-inner{max-width:720px;margin:0 auto;}
     .section-tag{font-size:0.72rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:var(--lavender);margin-bottom:14px;}
     .origin-text h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--purple-deep);line-height:1.2;margin-bottom:20px;}
     .origin-text h2 em{font-style:italic;}
@@ -81,7 +78,7 @@
     .footer-col a{font-size:0.88rem;color:rgba(240,232,216,0.55);text-decoration:none;transition:color 0.2s;}
     .footer-col a:hover{color:#d4c4ee;}
     .footer-bottom{max-width:1080px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(240,232,216,0.08);display:flex;justify-content:space-between;font-size:0.75rem;color:rgba(240,232,216,0.25);flex-wrap:wrap;gap:12px;}
-    @media(max-width:768px){.origin-inner{grid-template-columns:1fr;gap:40px;}.values-grid{grid-template-columns:1fr;}.nav-links{display:none;}.footer-inner{grid-template-columns:1fr 1fr;}}
+    @media(max-width:768px){.values-grid{grid-template-columns:1fr;}.nav-links{display:none;}.footer-inner{grid-template-columns:1fr 1fr;}}
     @media(max-width:480px){.footer-inner{grid-template-columns:1fr;}}
     .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
   .nav-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
@@ -173,20 +170,6 @@
 
 <section class="origin">
   <div class="origin-inner container">
-    <div>
-      <div class="ink-grid">
-        <div class="ink-swatch" style="background:linear-gradient(180deg,#8a1a24,#5c0e16)"></div>
-        <div class="ink-swatch" style="background:linear-gradient(180deg,#1e3d8f,#0f2260)"></div>
-        <div class="ink-swatch" style="background:linear-gradient(180deg,#c26a2a,#8a3e10)"></div>
-        <div class="ink-swatch" style="background:linear-gradient(180deg,#9b7ec8,#6b4fa0)"></div>
-        <div class="ink-swatch" style="background:linear-gradient(180deg,#2d7a3a,#1a4d24)"></div>
-        <div class="ink-swatch" style="background:linear-gradient(180deg,#2d8a82,#1a5c56)"></div>
-        <div class="ink-swatch" style="background:linear-gradient(180deg,#c8305a,#8a1535)"></div>
-        <div class="ink-swatch" style="background:linear-gradient(180deg,#1a6a8a,#0d3d52)"></div>
-        <div class="ink-swatch" style="background:linear-gradient(180deg,#8a6a1a,#5c420d)"></div>
-      </div>
-      <p style="text-align:center;margin-top:14px;font-size:0.75rem;font-weight:700;color:var(--muted);letter-spacing:0.06em;">A small selection from our collection</p>
-    </div>
     <div class="origin-text">
       <div class="section-tag">How it started</div>
       <h2>Tired of the<br/><em>full-bottle gamble.</em></h2>

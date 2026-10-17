@@ -59,12 +59,7 @@
     /* VIALS */
     .vials-section{padding:80px 24px;position:relative;z-index:1;}
     .vials-inner{max-width:1100px;margin:0 auto;}
-    .vials-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
-    .vials-visual{background:var(--surface);border-radius:var(--radius-lg);padding:40px;border:1px solid var(--border);display:flex;flex-direction:column;gap:16px;}
-    .vial-row{display:flex;align-items:center;gap:16px;}
-    .vial-colour{width:48px;height:64px;border-radius:var(--radius-sm);flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,0.10);}
-    .vial-info strong{font-size:0.88rem;color:var(--text);display:block;margin-bottom:2px;}
-    .vial-info span{font-size:0.75rem;color:var(--muted);}
+    .vials-grid{max-width:720px;margin:0 auto;}
     .vials-text h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:700;color:var(--purple-deep);margin-bottom:20px;}
     .vials-text p{font-size:0.95rem;color:var(--muted);line-height:1.82;margin-bottom:16px;}
     .feature-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
@@ -103,7 +98,7 @@
     .footer-col a{font-size:0.88rem;color:rgba(240,232,216,0.55);text-decoration:none;transition:color 0.2s;}
     .footer-col a:hover{color:#d4c4ee;}
     .footer-bottom{max-width:1100px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(240,232,216,0.08);display:flex;justify-content:space-between;font-size:0.75rem;color:rgba(240,232,216,0.25);flex-wrap:wrap;gap:12px;}
-    @media(max-width:768px){.steps{grid-template-columns:1fr 1fr;}.steps::before{display:none;}.why-inner,.vials-grid{grid-template-columns:1fr;gap:40px;}.pricing-grid{grid-template-columns:1fr 1fr;}.nav-links{display:none;}.footer-inner{grid-template-columns:1fr 1fr;}}
+    @media(max-width:768px){.steps{grid-template-columns:1fr 1fr;}.steps::before{display:none;}.why-inner{grid-template-columns:1fr;gap:40px;}.pricing-grid{grid-template-columns:1fr 1fr;}.nav-links{display:none;}.footer-inner{grid-template-columns:1fr 1fr;}}
     @media(max-width:480px){.pricing-grid,.why-cards{grid-template-columns:1fr;}.footer-inner{grid-template-columns:1fr;}}
     .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
   .nav-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
@@ -236,7 +231,7 @@
       <p>A 2ml sample costs a fraction of the full bottle and gives you enough ink to fill your pen and genuinely try it. That's the whole idea.</p>
     </div>
     <div class="why-cards">
-      <div class="why-card"><div class="why-card-icon">💰</div><h4>Save Money</h4><p>A sample costs £1.75–£3.00. A bottle is £10–£35. Try before you buy.</p></div>
+      <div class="why-card"><div class="why-card-icon">💰</div><h4>Save Money</h4><p>A sample costs from 50p to £5. A bottle is £3–£35. Try before you buy.</p></div>
       <div class="why-card"><div class="why-card-icon">🎨</div><h4>Discover Shading</h4><p>Swatches don't show shading or sheen. Real ink on real paper does.</p></div>
       <div class="why-card"><div class="why-card-icon">📄</div><h4>Test on Your Paper</h4><p>Ink behaves differently on different paper. Try it on yours before committing.</p></div>
       <div class="why-card"><div class="why-card-icon">✨</div><h4>Try the Pricey Ones</h4><p>Pilot Iroshizuku, Sailor, Wearingeul - sample the expensive bottles before you commit.</p></div>
@@ -248,13 +243,6 @@
 <section class="vials-section">
   <div class="vials-inner">
     <div class="vials-grid">
-      <div class="vials-visual">
-        <div class="vial-row"><div class="vial-colour" style="background:linear-gradient(160deg,#9a9aaa,#7a7a8a)"></div><div class="vial-info"><strong>Diamine Lady Grey</strong><span>£1.75 · 2ml</span></div></div>
-        <div class="vial-row"><div class="vial-colour" style="background:linear-gradient(160deg,#1a5a9a,#0a3a7a)"></div><div class="vial-info"><strong>Pilot Iroshizuku Kon-peki</strong><span>£3.75 · 2ml</span></div></div>
-        <div class="vial-row"><div class="vial-colour" style="background:linear-gradient(160deg,#d46a7a,#b04a5a)"></div><div class="vial-info"><strong>Ferris Wheel Press Spadina Rose</strong><span>£2.50 · 2ml</span></div></div>
-        <div class="vial-row"><div class="vial-colour" style="background:linear-gradient(160deg,#4a5a9a,#2a3a7a)"></div><div class="vial-info"><strong>Colorverse Mystic Mountain</strong><span>£2.00 · 2ml</span></div></div>
-        <div class="vial-row"><div class="vial-colour" style="background:linear-gradient(160deg,#7a3a6a,#5a1a4a)"></div><div class="vial-info"><strong>Wearingeul Persephone</strong><span>£3.50 · 2ml</span></div></div>
-      </div>
       <div class="vials-text">
         <div class="section-tag">About the vials</div>
         <h2>2ml, Fresh, and Ready to Write</h2>
@@ -279,18 +267,18 @@
     <div class="section-header">
       <div class="section-tag">Pricing</div>
       <h2>Honest, Bottle-Based Pricing</h2>
-      <p>Every ink is priced individually on what its full bottle costs us - so a £9 bottle of Diamine is never charged at the same rate as a £35 bottle of Pilot Iroshizuku. You only ever pay for what's in the vial.</p>
+      <p>Every ink is priced individually on what its full bottle costs us - so a £3 bottle of Diamine is never charged at the same rate as a £35 bottle of Pilot Iroshizuku. You only ever pay for what's in the vial.</p>
     </div>
     <div class="pricing-grid">
       <div class="price-card">
-        <div class="price-amount">£1.75</div>
+        <div class="price-amount">from 50p</div>
         <p class="price-desc">Everyday favourites and workhorse inks.</p>
-        <div class="price-brands">Diamine · Kaweco · Rohrer &amp; Klingner</div>
+        <div class="price-brands">Diamine · Pelikan · Rohrer &amp; Klingner</div>
       </div>
       <div class="price-card featured">
         <div class="price-amount">from £2.00</div>
         <p class="price-desc">Boutique and specialty inks from creative makers.</p>
-        <div class="price-brands">Robert Oster · Ferris Wheel Press · Vinta</div>
+        <div class="price-brands">Colorverse · Robert Oster · Vinta</div>
       </div>
       <div class="price-card">
         <div class="price-amount">from £3.25</div>
@@ -300,7 +288,7 @@
       <div class="price-card">
         <div class="price-amount">up to £5.00</div>
         <p class="price-desc">Rare, small-batch inks from premium bottles.</p>
-        <div class="price-brands">Nagasawa Kobe · Sailor Studio</div>
+        <div class="price-brands">Nagasawa Kobe · Kitty Inkpot · TAG Kyo-no-oto</div>
       </div>
     </div>
   </div>
