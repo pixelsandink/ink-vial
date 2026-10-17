@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ink Vial - Discovery Packs | Fountain Pen Ink Samples</title>
-  <meta name="description" content="Ink Vial - a UK fountain pen ink sampling shop. Curated Discovery Packs of 2ml samples, plus over 400 inks to browse individually. Try before you commit to a bottle. Free UK delivery over £40." />
+  <title>Ink Vial | Fountain Pen Ink Samples - Try Before You Buy a Bottle</title>
+  <meta name="description" content="Ink Vial - a UK fountain pen ink sampling shop. Over 400 inks to sample individually in 2ml vials, plus curated Discovery Packs. Try before you commit to a bottle. Free UK delivery over £40." />
   <link rel="canonical" href="https://www.inkvial.co.uk/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Ink Vial" />
-  <meta property="og:title" content="Ink Vial - Discovery Packs" />
-  <meta property="og:description" content="Curated Discovery Packs of 2ml fountain pen ink samples. Try before you commit to a bottle." />
+  <meta property="og:title" content="Ink Vial - Fountain Pen Ink Samples" />
+  <meta property="og:description" content="Over 400 fountain pen inks as 2ml samples, plus curated Discovery Packs. Try before you commit to a bottle." />
   <meta property="og:url" content="https://www.inkvial.co.uk/" />
   <meta property="og:image" content="https://www.inkvial.co.uk/inkvial-logo-icon.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -68,40 +68,53 @@
     .site-header .nav { position: static; }
     .site-header.compact .announce-bar { max-height: 0; }
 
-    /* HERO */
-    .hero { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 56px 24px 40px; text-align: center; }
-    .hero-word { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.4rem, 6vw, 3.6rem); font-weight: 700; color: var(--purple-dark); margin-bottom: 10px; }
-    .hero-tag { font-family: 'Playfair Display', Georgia, serif; font-style: italic; color: var(--purple-mid); font-size: clamp(1rem, 2.5vw, 1.25rem); margin-bottom: 18px; }
-    .hero p.lede { color: var(--muted); font-size: 1rem; max-width: 560px; margin: 0 auto; }
-    .hero .browse-link { display: inline-block; margin-top: 20px; font-size: 0.85rem; font-weight: 700; color: var(--purple-dark); text-decoration: none; border-bottom: 1.5px solid var(--lavender-light); padding-bottom: 2px; }
-    .hero .browse-link:hover { border-color: var(--purple-dark); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .home-wrap { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
-    /* PACK GRID */
-    .packs-wrap { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 12px 24px 80px; }
-    .pk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
+    /* NEW INKS CAROUSEL */
+    .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin: 44px 0 16px; }
+    .section-kicker { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--purple-mid); margin-bottom: 4px; }
+    .section-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.7rem, 4vw, 2.3rem); font-weight: 700; color: var(--purple-dark); line-height: 1.15; }
+    .section-sub { color: var(--muted); font-size: 0.92rem; margin-top: 4px; }
+    .car-nav { display: flex; gap: 8px; flex-shrink: 0; }
+    .car-btn { width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid var(--lavender-light); background: var(--surface); color: var(--purple-dark); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s, border-color 0.2s, opacity 0.2s; }
+    .car-btn:hover:not(:disabled) { background: var(--lavender-pale); border-color: var(--lavender); }
+    .car-btn:disabled { opacity: 0.35; cursor: default; }
+    .car-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+    .car-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 4 * 16px) / 5); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 6px 2px 20px; scrollbar-width: none; }
+    .car-track::-webkit-scrollbar { display: none; }
+    .car-track > * { scroll-snap-align: start; }
+    @media (prefers-reduced-motion: reduce) { .car-track { scroll-behavior: auto; } }
 
-    .pk-card { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px 22px 20px; box-shadow: 0 2px 14px rgba(140,100,210,0.07); transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; }
-    .pk-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(140,100,210,0.15); }
-    .pk-flag { position: absolute; top: -11px; left: 20px; background: var(--purple-dark); color: #fff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; box-shadow: 0 3px 10px rgba(92,58,154,0.35); }
-    .pk-swatches { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+    .ink-card { position: relative; background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 2px 12px rgba(140,100,210,0.06); transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; text-decoration: none; color: inherit; }
+    .ink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(140,100,210,0.14); }
+    .card-swatch { aspect-ratio: 1 / 1; position: relative; overflow: hidden; flex-shrink: 0; }
+    .card-swatch img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .card-new { position: absolute; top: 10px; left: 10px; background: var(--purple-dark); color: #fff; font-size: 0.6rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; box-shadow: 0 3px 10px rgba(92,58,154,0.3); }
+    .card-body { padding: 12px 13px 13px; display: flex; flex-direction: column; flex: 1; }
+    .card-brand { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+    .card-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 8px; line-height: 1.25; flex: 1; }
+    .card-foot { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+    .card-price { font-size: 0.88rem; font-weight: 800; color: var(--purple-dark); }
+    .card-price small { font-size: 0.62rem; font-weight: 600; color: var(--muted); }
+    .card-stat { display: inline-flex; align-items: center; gap: 5px; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+    .card-stat::before { content: ''; width: 7px; height: 7px; border-radius: 50%; }
+    .card-stat.in  { color: #2d7a3a; } .card-stat.in::before  { background: #2d7a3a; }
+    .card-stat.low { color: #c08a1a; } .card-stat.low::before { background: #d49a2a; }
+    .car-more { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; padding: 24px; background: var(--lavender-pale); border: 1.5px dashed var(--lavender-light); border-radius: var(--radius); color: var(--purple-dark); text-decoration: none; font-weight: 800; font-size: 0.9rem; transition: background 0.2s; }
+    .car-more:hover { background: var(--lavender-light); }
+    .car-more span { font-family: 'Playfair Display', serif; font-size: 1.15rem; }
+
+    /* INDIVIDUAL / DISCOVERY PACKS TILES */
+    .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 34px 0 80px; }
+    .tile { position: relative; display: flex; flex-direction: column; min-height: 280px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 30px 28px 28px; text-decoration: none; color: var(--text); box-shadow: 0 2px 14px rgba(140,100,210,0.07); transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; }
+    .tile:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(140,100,210,0.15); }
+    .tile-dots { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; min-height: 26px; }
     .pk-dot { width: 22px; height: 22px; border-radius: 50%; display: inline-block; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--border); flex-shrink: 0; }
-    .pk-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 6px; }
-    .pk-story { font-style: italic; color: var(--text); opacity: 0.75; font-size: 0.86rem; line-height: 1.5; margin-bottom: 10px; }
-    .pk-contents { font-size: 0.72rem; color: var(--muted); line-height: 1.5; margin-bottom: 16px; flex: 1; }
-    .pk-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; }
-    .pk-price { font-size: 1.05rem; font-weight: 800; color: var(--purple-dark); }
-    .pk-price-wrap { display: flex; flex-direction: column; line-height: 1.15; }
-    .pk-was { font-size: 0.68rem; font-weight: 700; color: var(--muted); }
-    .pk-stat { display: inline-flex; align-items: center; gap: 5px; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
-    .pk-stat::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
-    .pk-stat-in { color: #2d7a3a; } .pk-stat-in::before { background: #2d7a3a; }
-    .pk-stat-low { color: #c08a1a; } .pk-stat-low::before { background: #d49a2a; }
-    .pk-stat-out { color: var(--muted); } .pk-stat-out::before { background: rgba(61,36,88,0.35); }
-    .pk-stat-loading { color: var(--muted); }
-    .pk-add { width: 100%; padding: 13px; background: var(--purple-dark); color: #fff; border: none; border-radius: var(--radius-sm); font-family: 'Nunito', sans-serif; font-size: 0.85rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; transition: background .2s, transform .1s; }
-    .pk-add:hover:not(:disabled) { background: var(--purple-mid); transform: translateY(-1px); }
-    .pk-add:disabled { background: var(--lavender-light); cursor: not-allowed; color: rgba(61,36,88,0.5); }
-    .pk-add.pk-soldout { background: transparent; border: 1.5px solid var(--border); color: var(--muted); }
+    .tile-kicker { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--purple-mid); margin-bottom: 6px; }
+    .tile-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.6rem, 3.4vw, 2.1rem); font-weight: 700; color: var(--purple-deep); line-height: 1.15; }
+    .tile-text { color: var(--muted); font-size: 0.95rem; margin: 10px 0 24px; flex: 1; max-width: 440px; }
+    .tile .btn-primary { align-self: flex-start; }
 
     /* FOOTER (matches shop.html) */
     footer { background: #2a1840; padding: 48px 24px 32px; color: rgba(240,232,216,0.55); position: relative; z-index: 1; }
@@ -122,16 +135,22 @@
       .nav-links a { display: block; padding: 14px 24px; font-size: 0.95rem; }
       .nav-toggle { display: inline-flex; }
       .footer-inner { grid-template-columns: 1fr 1fr; }
+      .car-track { grid-auto-columns: calc((100% - 2 * 16px) / 2.6); }
+      .car-nav { display: none; }
+      .tiles { grid-template-columns: 1fr; }
+      .tile { min-height: 0; }
     }
     @media (max-width: 480px) {
       .footer-inner { grid-template-columns: 1fr; }
+      .car-track { grid-auto-columns: 62%; }
       .nav-logo img { height: 38px !important; }
     }
     @media (max-width: 600px) {
       .nav-inner { gap: 10px; padding: 0 16px; }
       .nav-actions { gap: 6px; }
       .nav-actions .btn-primary { padding: 9px 12px; font-size: 0.72rem; letter-spacing: 0.02em; white-space: nowrap; }
-      .hero { padding: 40px 20px 28px; }
+      .home-wrap { padding: 0 16px; }
+      .section-head { margin-top: 32px; }
     }
   </style>
 <script>
@@ -177,206 +196,41 @@
   <div class="blob blob-2"></div>
 </div>
 
-<div class="hero">
-  <h1 class="hero-word">Discovery Packs</h1>
-  <p class="hero-tag">Curated sets of 2ml samples, freshly filled to order</p>
-  <p class="lede">Eight ways into the shop - a gateway set of easy, well-behaved colours, and seven built around what makes our 400+ inks unusual: real places, real creatures, real novels, real gods.</p>
-  <a class="browse-link" href="shop">Or browse all 400+ inks individually &rarr;</a>
-</div>
+<main class="home-wrap">
+  <h1 class="sr-only">Ink Vial - fountain pen ink samples</h1>
 
-<div class="packs-wrap">
-  <div class="pk-grid" id="pk-grid">
-      <article class="pk-card" data-pack-id="discovery-pack">
-        <span class="pk-flag">THE GATEWAY SET</span>
-        <div class="pk-swatches"><span class="pk-dot" style="background:#1a5a9a" title="Kon-peki"></span><span class="pk-dot" style="background:#3a8a9a" title="Toe in the Ocean"></span><span class="pk-dot" style="background:#2a7a3a" title="Hera Green"></span><span class="pk-dot" style="background:#c8a04a" title="Raise a Glass"></span><span class="pk-dot" style="background:#9a6a2a" title="Caramel Brown"></span><span class="pk-dot" style="background:#a01a2a" title="Royal Red"></span><span class="pk-dot" style="background:#e08a9a" title="Hana-ikada"></span><span class="pk-dot" style="background:#4a1a6a" title="Zeus Purple"></span></div>
-        <h3 class="pk-name">Discovery Pack</h3>
-        <p class="pk-story">One ink from every shelf - eight easy, well-behaved colours across five brands. Start here if you’re not sure where to start.</p>
-        <p class="pk-contents">8 vials: Pilot Iroshizuku Kon-peki, Diamine Toe in the Ocean, Laban Hera Green, Diamine Raise a Glass, Kaweco Caramel Brown, Robert Oster Royal Red, Pilot Iroshizuku Hana-ikada, Laban Zeus Purple</p>
-        <div class="pk-foot">
-          <span class="pk-price">£16.00</span>
-          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
-        </div>
-        <button
-          class="snipcart-add-item pk-add"
-          data-item-id="discovery-pack"
-          data-item-price="16.00"
-          data-item-name="Ink Vial Discovery Pack"
-          data-item-description="8-vial discovery pack - Pilot Iroshizuku Kon-peki, Diamine Toe in the Ocean, Laban Hera Green, Diamine Raise a Glass, Kaweco Caramel Brown, Robert Oster Royal Red, Pilot Iroshizuku Hana-ikada, Laban Zeus Purple"
-          data-item-categories="Ink Vial"
-          data-item-quantity="1"
-          disabled
-        >Checking availability&hellip;</button>
-      </article>
-      <article class="pk-card" data-pack-id="first-fill">
-        
-        <div class="pk-swatches"><span class="pk-dot" style="background:#1a2a5a" title="Midnight Blue"></span><span class="pk-dot" style="background:#1a1a2a" title="Perle Noire"></span><span class="pk-dot" style="background:#3a5a7a" title="Salix"></span><span class="pk-dot" style="background:#2a5a2a" title="Vert Empire"></span><span class="pk-dot" style="background:#6a4a2a" title="Sepia"></span><span class="pk-dot" style="background:#9a1a1a" title="Ares Red"></span></div>
-        <h3 class="pk-name">First Fill</h3>
-        <p class="pk-story">Six honest, no-fuss colours for the very first vial in a new pen. No shimmer, no sheen - nothing to manage.</p>
-        <p class="pk-contents">6 vials: Kaweco Midnight Blue, J.Herbin Perle Noire, Rohrer & Klingner Salix, J.Herbin Vert Empire, Rohrer & Klingner Sepia, Laban Ares Red</p>
-        <div class="pk-foot">
-          <span class="pk-price">£10.00</span>
-          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
-        </div>
-        <button
-          class="snipcart-add-item pk-add"
-          data-item-id="first-fill"
-          data-item-price="10.00"
-          data-item-name="Ink Vial First Fill"
-          data-item-description="6-vial discovery pack - Kaweco Midnight Blue, J.Herbin Perle Noire, Rohrer & Klingner Salix, J.Herbin Vert Empire, Rohrer & Klingner Sepia, Laban Ares Red"
-          data-item-categories="Ink Vial"
-          data-item-quantity="1"
-          disabled
-        >Checking availability&hellip;</button>
-      </article>
-      <article class="pk-card" data-pack-id="tcmc-duo">
+  <section aria-labelledby="new-inks-title">
+    <div class="section-head">
+      <div>
+        <p class="section-kicker">Just arrived</p>
+        <h2 class="section-title" id="new-inks-title">New inks</h2>
+        <p class="section-sub">The latest additions to the shelves, freshly filled to order.</p>
+      </div>
+      <div class="car-nav">
+        <button class="car-btn" id="car-prev" aria-label="Previous inks"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="car-btn" id="car-next" aria-label="More inks"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+    <div class="car-track" id="car-track" tabindex="0" aria-label="New inks"></div>
+  </section>
 
-        <div class="pk-swatches"><span class="pk-dot" style="background:#6a4a2e" title="Coffee Monster"></span><span class="pk-dot" style="background:#494853" title="Murky Pond Water"></span><span class="pk-dot" style="background:#c89a3a" title="Day to Night"></span></div>
-        <h3 class="pk-name">Robert Oster x TCMC</h3>
-        <p class="pk-story">All three chromatic-shading collaborations between Robert Oster and The Coffee Monster Co. - collector favourites, together at last.</p>
-        <p class="pk-contents">3 vials: Robert Oster Coffee Monster, Robert Oster Murky Pond Water, Robert Oster Day to Night</p>
-        <div class="pk-foot">
-          <div class="pk-price-wrap"><span class="pk-price">£10.00</span><span class="pk-was">Individually £12.00 &middot; save £2.00</span></div>
-          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
-        </div>
-        <button
-          class="snipcart-add-item pk-add"
-          data-item-id="tcmc-duo"
-          data-item-price="10.00"
-          data-item-name="Ink Vial Robert Oster x TCMC"
-          data-item-description="3-vial discovery pack - Robert Oster Coffee Monster, Robert Oster Murky Pond Water, Robert Oster Day to Night"
-          data-item-categories="Ink Vial"
-          data-item-quantity="1"
-          disabled
-        >Checking availability&hellip;</button>
-      </article>
-      <article class="pk-card" data-pack-id="gods-and-goddesses">
-
-        <div class="pk-swatches"><span class="pk-dot" style="background:#e07a9a" title="Aphrodite Pink"></span><span class="pk-dot" style="background:#2a7a3a" title="Hera Green"></span><span class="pk-dot" style="background:#1a2a5a" title="Artemis Navy"></span><span class="pk-dot" style="background:#7a7a8a" title="Athena Grey"></span><span class="pk-dot" style="background:#c86a1a" title="Apollo Orange"></span><span class="pk-dot" style="background:#7a5a2a" title="Demeter Brown"></span><span class="pk-dot" style="background:#5a9ac8" title="Hermes Sky Blue"></span><span class="pk-dot" style="background:#9a1a1a" title="Ares Red"></span><span class="pk-dot" style="background:#4a1a6a" title="Zeus Purple"></span><span class="pk-dot" style="background:#2d9998" title="Poseidon Green"></span></div>
-        <h3 class="pk-name">Laban Greek Mythology</h3>
-        <p class="pk-story">The full Laban pantheon - all ten gods and goddesses in one set, from Aphrodite's pink to Poseidon's sea green.</p>
-        <p class="pk-contents">10 vials: Laban Aphrodite Pink, Laban Hera Green, Laban Artemis Navy, Laban Athena Grey, Laban Apollo Orange, Laban Demeter Brown, Laban Hermes Sky Blue, Laban Ares Red, Laban Zeus Purple, Laban Poseidon Green</p>
-        <div class="pk-foot">
-          <div class="pk-price-wrap"><span class="pk-price">£16.00</span><span class="pk-was">Individually £22.50 &middot; save £6.50</span></div>
-          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
-        </div>
-        <button
-          class="snipcart-add-item pk-add"
-          data-item-id="gods-and-goddesses"
-          data-item-price="16.00"
-          data-item-name="Ink Vial Laban Greek Mythology"
-          data-item-description="10-vial discovery pack - Laban Aphrodite Pink, Laban Hera Green, Laban Artemis Navy, Laban Athena Grey, Laban Apollo Orange, Laban Demeter Brown, Laban Hermes Sky Blue, Laban Ares Red, Laban Zeus Purple, Laban Poseidon Green"
-          data-item-categories="Ink Vial"
-          data-item-quantity="1"
-          disabled
-        >Checking availability&hellip;</button>
-      </article>
-      <article class="pk-card" data-pack-id="alice-in-wonderland">
-
-        <div class="pk-swatches"><span class="pk-dot" style="background:#3a6aaa" title="Alice"></span><span class="pk-dot" style="background:#d49ab0" title="White Rabbit"></span><span class="pk-dot" style="background:#2f8a3a" title="Mad Hatter"></span><span class="pk-dot" style="background:#a81a2a" title="Queen of Hearts"></span><span class="pk-dot" style="background:#a04a9a" title="Cheshire Cat"></span></div>
-        <h3 class="pk-name">Wearingeul Alice in Wonderland</h3>
-        <p class="pk-story">Down the rabbit hole with Wearingeul's whole Wonderland cast - curious, chaotic, and never quite what they seem.</p>
-        <p class="pk-contents">5 vials: Wearingeul Alice, Wearingeul White Rabbit, Wearingeul Mad Hatter, Wearingeul Queen of Hearts, Wearingeul Cheshire Cat</p>
-        <div class="pk-foot">
-          <div class="pk-price-wrap"><span class="pk-price">£16.00</span><span class="pk-was">Individually £20.00 &middot; save £4.00</span></div>
-          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
-        </div>
-        <button
-          class="snipcart-add-item pk-add"
-          data-item-id="alice-in-wonderland"
-          data-item-price="16.00"
-          data-item-name="Ink Vial Wearingeul Alice in Wonderland"
-          data-item-description="5-vial collection - Wearingeul Alice, Wearingeul White Rabbit, Wearingeul Mad Hatter, Wearingeul Queen of Hearts, Wearingeul Cheshire Cat"
-          data-item-categories="Ink Vial"
-          data-item-quantity="1"
-          disabled
-        >Checking availability&hellip;</button>
-      </article>
-      <article class="pk-card" data-pack-id="peter-pan-pack">
-
-        <div class="pk-swatches"><span class="pk-dot" style="background:#5a8ac8" title="Wendy Darling"></span><span class="pk-dot" style="background:#3a8a5a" title="Tinker Bell"></span><span class="pk-dot" style="background:#9a2e26" title="Captain Hook"></span><span class="pk-dot" style="background:#2a7a3a" title="Peter Pan"></span><span class="pk-dot" style="background:#3a6a2a" title="Tick Tock Croc"></span></div>
-        <h3 class="pk-name">Wearingeul Peter Pan</h3>
-        <p class="pk-story">Second star to the right, straight on till morning - the whole of Wearingeul's Neverland in one set.</p>
-        <p class="pk-contents">5 vials: Wearingeul Wendy Darling, Wearingeul Tinker Bell, Wearingeul Captain Hook, Wearingeul Peter Pan, Wearingeul Tick Tock Croc</p>
-        <div class="pk-foot">
-          <div class="pk-price-wrap"><span class="pk-price">£16.00</span><span class="pk-was">Individually £20.00 &middot; save £4.00</span></div>
-          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
-        </div>
-        <button
-          class="snipcart-add-item pk-add"
-          data-item-id="peter-pan-pack"
-          data-item-price="16.00"
-          data-item-name="Ink Vial Wearingeul Peter Pan"
-          data-item-description="5-vial collection - Wearingeul Wendy Darling, Wearingeul Tinker Bell, Wearingeul Captain Hook, Wearingeul Peter Pan, Wearingeul Tick Tock Croc"
-          data-item-categories="Ink Vial"
-          data-item-quantity="1"
-          disabled
-        >Checking availability&hellip;</button>
-      </article>
-      <article class="pk-card" data-pack-id="pilot-favourites">
-
-        <div class="pk-swatches"><span class="pk-dot" style="background:#5a1a5a" title="Yama-Budo"></span><span class="pk-dot" style="background:#1a5a9a" title="Kon-peki"></span><span class="pk-dot" style="background:#5a6a8a" title="Fuyu-syogun"></span><span class="pk-dot" style="background:#2a7a4a" title="Sui-gyoku"></span><span class="pk-dot" style="background:#e08a9a" title="Hana-ikada"></span><span class="pk-dot" style="background:#a83a1a" title="Momiji"></span><span class="pk-dot" style="background:#1a7a7a" title="Ku-jaku"></span><span class="pk-dot" style="background:#6a5a8a" title="Ajisai"></span></div>
-        <h3 class="pk-name">Pilot Favourites</h3>
-        <p class="pk-story">The community's most-loved Iroshizuku shades, from mountain-grape purple to maple-leaf red.</p>
-        <p class="pk-contents">8 vials: Pilot Iroshizuku Yama-Budo, Pilot Iroshizuku Kon-peki, Pilot Iroshizuku Fuyu-syogun, Pilot Iroshizuku Sui-gyoku, Pilot Iroshizuku Hana-ikada, Pilot Iroshizuku Momiji, Pilot Iroshizuku Ku-jaku, Pilot Iroshizuku Ajisai</p>
-        <div class="pk-foot">
-          <span class="pk-price">£25.00</span>
-          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
-        </div>
-        <button
-          class="snipcart-add-item pk-add"
-          data-item-id="pilot-favourites"
-          data-item-price="25.00"
-          data-item-name="Ink Vial Pilot Favourites"
-          data-item-description="8-vial discovery pack - Pilot Iroshizuku Yama-Budo, Pilot Iroshizuku Kon-peki, Pilot Iroshizuku Fuyu-syogun, Pilot Iroshizuku Sui-gyoku, Pilot Iroshizuku Hana-ikada, Pilot Iroshizuku Momiji, Pilot Iroshizuku Ku-jaku, Pilot Iroshizuku Ajisai"
-          data-item-categories="Ink Vial"
-          data-item-quantity="1"
-          disabled
-        >Checking availability&hellip;</button>
-      </article>
-      <article class="pk-card" data-pack-id="diamine-7-deadly-sins">
-
-        <div class="pk-swatches"><span class="pk-dot" style="background:#1a5a1a" title="7 Sinners Envy"></span><span class="pk-dot" style="background:#a85a1a" title="7 Sinners Gluttony"></span><span class="pk-dot" style="background:#a88a1a" title="7 Sinners Greed"></span><span class="pk-dot" style="background:#2a3a8f" title="7 Sinners Lust"></span><span class="pk-dot" style="background:#6a1a8a" title="7 Sinners Pride"></span><span class="pk-dot" style="background:#3a5a7a" title="7 Sinners Sloth"></span><span class="pk-dot" style="background:#c83a1a" title="7 Sinners Wrath"></span></div>
-        <h3 class="pk-name">Diamine 7 Deadly Sins</h3>
-        <p class="pk-story">The complete set of seven - Envy to Wrath, every sin in its own bottle-worthy colour.</p>
-        <p class="pk-contents">7 vials: Diamine 7 Sinners Envy, Gluttony, Greed, Lust, Pride, Sloth, Wrath</p>
-        <div class="pk-foot">
-          <div class="pk-price-wrap"><span class="pk-price">£10.00</span><span class="pk-was">Individually £12.25 &middot; save £2.25</span></div>
-          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
-        </div>
-        <button
-          class="snipcart-add-item pk-add"
-          data-item-id="diamine-7-deadly-sins"
-          data-item-price="10.00"
-          data-item-name="Ink Vial Diamine 7 Deadly Sins"
-          data-item-description="7-vial collection - Diamine 7 Sinners Envy, Gluttony, Greed, Lust, Pride, Sloth, Wrath"
-          data-item-categories="Ink Vial"
-          data-item-quantity="1"
-          disabled
-        >Checking availability&hellip;</button>
-      </article>
-      <article class="pk-card" data-pack-id="deep-dark-collection">
-
-        <div class="pk-swatches"><span class="pk-dot" style="background:#1a3a7a" title="Deep Dark Blue"></span><span class="pk-dot" style="background:#5a3a1a" title="Deep Dark Brown"></span><span class="pk-dot" style="background:#1a4a2a" title="Deep Dark Green"></span><span class="pk-dot" style="background:#a85a1a" title="Deep Dark Orange"></span><span class="pk-dot" style="background:#4a1a6a" title="Deep Dark Purple"></span></div>
-        <h3 class="pk-name">Diamine x Cult Pens Deep Dark</h3>
-        <p class="pk-story">Five saturated, moody darks made by Diamine exclusively for Cult Pens - the whole line in one set.</p>
-        <p class="pk-contents">5 vials: Deep Dark Blue, Deep Dark Brown, Deep Dark Green, Deep Dark Orange, Deep Dark Purple</p>
-        <div class="pk-foot">
-          <div class="pk-price-wrap"><span class="pk-price">£8.00</span><span class="pk-was">Individually £10.00 &middot; save £2.00</span></div>
-          <span class="pk-stat pk-stat-loading" data-stat>Checking stock&hellip;</span>
-        </div>
-        <button
-          class="snipcart-add-item pk-add"
-          data-item-id="deep-dark-collection"
-          data-item-price="8.00"
-          data-item-name="Ink Vial Diamine x Cult Pens Deep Dark"
-          data-item-description="5-vial collection - Cult Pens x Diamine Deep Dark Blue, Brown, Green, Orange, Purple"
-          data-item-categories="Ink Vial"
-          data-item-quantity="1"
-          disabled
-        >Checking availability&hellip;</button>
-      </article>
-  </div>
-</div>
+  <section class="tiles" aria-label="Ways to shop">
+    <a class="tile" href="shop">
+      <div class="tile-dots" id="tile-dots-individual" aria-hidden="true"></div>
+      <p class="tile-kicker">Pick and mix</p>
+      <h2 class="tile-title">Individual inks</h2>
+      <p class="tile-text">Over 400 inks from more than 30 brands, each in a 2ml vial. Choose exactly the colours you want to try.</p>
+      <span class="btn-primary">Shop all inks &rarr;</span>
+    </a>
+    <a class="tile" href="packs">
+      <div class="tile-dots" aria-hidden="true"><span class="pk-dot" style="background:#1a5a9a" title="Kon-peki"></span><span class="pk-dot" style="background:#3a8a9a" title="Toe in the Ocean"></span><span class="pk-dot" style="background:#2a7a3a" title="Hera Green"></span><span class="pk-dot" style="background:#c8a04a" title="Raise a Glass"></span><span class="pk-dot" style="background:#9a6a2a" title="Caramel Brown"></span><span class="pk-dot" style="background:#a01a2a" title="Royal Red"></span><span class="pk-dot" style="background:#e08a9a" title="Hana-ikada"></span><span class="pk-dot" style="background:#4a1a6a" title="Zeus Purple"></span></div>
+      <p class="tile-kicker">Ready-made sets</p>
+      <h2 class="tile-title">Discovery packs</h2>
+      <p class="tile-text">Curated sets that make choosing easy - start with our gateway set of well-behaved colours, or try a complete collection.</p>
+      <span class="btn-primary">Browse the packs &rarr;</span>
+    </a>
+  </section>
+</main>
 
 <footer>
   <div class="footer-inner">
@@ -386,6 +240,7 @@
     </div>
     <div class="footer-col"><h4>Shop</h4><ul>
       <li><a href="shop">All Inks</a></li>
+      <li><a href="packs">Discovery Packs</a></li>
     </ul></div>
     <div class="footer-col"><h4>Info</h4><ul>
       <li><a href="how-it-works">How It Works</a></li>
@@ -406,40 +261,81 @@
 <script src="prices.js?v=3"></script>
 <script src="cart.js"></script>
 <script>
-  // Live stock -> per-pack Available/Low/Sold out + enable the right Add button
-  fetch('/api/stock', { headers: { 'Accept': 'application/json' } })
-    .then(r => r.json())
-    .then(d => {
-      const statuses = (d && d.statuses) || {};
-      document.querySelectorAll('.pk-card').forEach(card => {
-        const id = card.getAttribute('data-pack-id');
-        const stat = statuses[id] || 'in'; // fail-open to "in" if the API is unreachable
-        const statEl = card.querySelector('[data-stat]');
-        const btn = card.querySelector('.pk-add');
-        statEl.className = 'pk-stat pk-stat-' + stat;
-        statEl.textContent = stat === 'out' ? 'Sold out' : (stat === 'low' ? 'Low stock' : 'Available');
-        if (stat === 'out') {
-          btn.disabled = true;
-          btn.classList.add('pk-soldout');
-          btn.textContent = 'Sold Out';
-        } else {
-          btn.disabled = false;
-          btn.textContent = 'Add to Basket';
+  // ── New inks carousel ──────────────────────────────────
+  (function () {
+    var track = document.getElementById('car-track');
+    var prev = document.getElementById('car-prev'), next = document.getElementById('car-next');
+    var MAX = 24;
+
+    // Newest "added" date first; within a batch, take one ink per brand in turn
+    // so the carousel shows the full range rather than one brand at a time.
+    function pickNew() {
+      var fresh = INKS.filter(function (i) { return i.added && getStockStatus(i) !== 'out'; });
+      var batches = {}; fresh.forEach(function (i) { (batches[i.added] = batches[i.added] || []).push(i); });
+      var dates = Object.keys(batches).sort().reverse(), out = [];
+      dates.forEach(function (d) {
+        var byBrand = {}; batches[d].forEach(function (i) { (byBrand[i.brand] = byBrand[i.brand] || []).push(i); });
+        // Shuffle brand order so the carousel opens on a different mix each visit
+        var brands = Object.keys(byBrand).sort(function () { return Math.random() - 0.5; }), round = 0, added = true;
+        while (added && out.length < MAX) {
+          added = false;
+          brands.forEach(function (b) { var i = byBrand[b][round]; if (i && out.length < MAX) { out.push(i); added = true; } });
+          round++;
         }
       });
-    })
-    .catch(() => {
-      // Live stock unreachable - fail open so customers can still buy;
-      // the server-side check at checkout is the real backstop.
-      document.querySelectorAll('.pk-card').forEach(card => {
-        const statEl = card.querySelector('[data-stat]');
-        const btn = card.querySelector('.pk-add');
-        statEl.className = 'pk-stat pk-stat-in';
-        statEl.textContent = 'Available';
-        btn.disabled = false;
-        btn.textContent = 'Add to Basket';
-      });
-    });
+      return out;
+    }
+
+    function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+
+    function render() {
+      var inks = pickNew();
+      track.innerHTML = inks.map(function (ink) {
+        var stat = getStockStatus(ink);
+        return '<a class="ink-card" href="product?id=' + ink.id + '">' +
+          '<div class="card-swatch" style="background:linear-gradient(160deg,' + ink.colorPrimary + ',' + ink.colorDark + ')">' +
+            (ink.image ? '<img src="' + ink.image + '" alt="' + esc(ink.brand + ' ' + ink.name) + ' ink swatch" loading="lazy" />' : '') +
+            '<span class="card-new">New</span>' +
+          '</div>' +
+          '<div class="card-body">' +
+            '<div class="card-brand">' + esc(ink.brand) + '</div>' +
+            '<div class="card-name">' + esc(ink.name) + '</div>' +
+            '<div class="card-foot">' +
+              '<span class="card-price">£' + getInkPrice(ink).toFixed(2) + ' <small>/ 2ml</small></span>' +
+              '<span class="card-stat ' + stat + '">' + (stat === 'low' ? 'Low stock' : 'Available') + '</span>' +
+            '</div>' +
+          '</div>' +
+        '</a>';
+      }).join('') +
+      '<a class="car-more" href="shop"><span>See all 400+ inks</span>Browse the shop &rarr;</a>';
+      updateButtons();
+    }
+
+    function step() { var c = track.querySelector('.ink-card'); return c ? (c.getBoundingClientRect().width + 16) * 2 : 400; }
+    function updateButtons() {
+      prev.disabled = track.scrollLeft <= 4;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+    }
+    prev.addEventListener('click', function () { track.scrollBy({ left: -step() }); });
+    next.addEventListener('click', function () { track.scrollBy({ left: step() }); });
+    track.addEventListener('scroll', updateButtons, { passive: true });
+    window.addEventListener('resize', updateButtons);
+
+    // Colour dots on the "Individual inks" tile - one ink from each colour family
+    var fams = ['Red', 'Orange', 'Yellow', 'Green', 'Teal', 'Blue', 'Purple', 'Pink', 'Brown', 'Grey', 'Black'];
+    document.getElementById('tile-dots-individual').innerHTML = fams.map(function (f) {
+      var pool = INKS.filter(function (i) { return (i.colours || []).indexOf(f) === 0; });
+      var ink = pool[Math.floor(Math.random() * pool.length)];
+      return ink ? '<span class="pk-dot" style="background:' + ink.colorPrimary + '" title="' + esc(ink.brand + ' ' + ink.name) + '"></span>' : '';
+    }).join('');
+
+    render();
+    // Live stock - hide anything that has just sold out, show low stock
+    fetch('/api/stock', { headers: { 'Accept': 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (d) { if (d && d.statuses) { window.LIVE_STOCK = d.statuses; render(); } })
+      .catch(function () {});
+  })();
 </script>
 <script>
   var t = document.getElementById('nav-toggle'), links = document.getElementById('nav-links');
