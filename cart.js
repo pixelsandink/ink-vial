@@ -115,8 +115,9 @@
     }
     body.innerHTML = cart.map((it, idx) => {
       const ink = inkById[it.id];
-      const thumb = (ink && ink.image)
-        ? `<img src="${ink.image}" alt="${it.name}" />`
+      const img = (ink && ink.image) || it.image;
+      const thumb = img
+        ? `<img src="${img}" alt="${it.name}" />`
         : `<div style="width:100%;height:100%;background:linear-gradient(160deg,${(ink&&ink.colorPrimary)||'#8b68cc'},${(ink&&ink.colorDark)||'#5c3a9a'})"></div>`;
       return `
         <div class="iv-line">
@@ -191,7 +192,9 @@
       const ink = inkById[id] || {};
       // Defensive: never add a sold-out ink
       if (typeof getStockStatus === 'function' && getStockStatus(ink) === 'out') return;
-      addItem({ id, name: ink.name || name, brand: ink.brand || '', price, qty });
+      const item = { id, name: ink.name || name, brand: ink.brand || add.getAttribute('data-item-brand') || '', price, qty };
+      if (!ink.image && add.getAttribute('data-item-image')) item.image = add.getAttribute('data-item-image');   // accessories
+      addItem(item);
       return;
     }
     const checkoutBtn = e.target.closest('.snipcart-checkout');

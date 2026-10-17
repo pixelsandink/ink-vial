@@ -2323,5 +2323,29 @@
     "name": "Undine",
     "brand": "Wearingeul",
     "price": 4
+  },
+  "felicitys-attic-ink-swatching-stamp-set-1": {
+    "name": "Ink Swatching Stamp Set 1",
+    "brand": "Felicity's Attic",
+    "price": 20.95,
+    "type": "accessory"
+  },
+  "felicitys-attic-ink-swatching-stamp-set-2": {
+    "name": "Ink Swatching Stamp Set 2",
+    "brand": "Felicity's Attic",
+    "price": 20.95,
+    "type": "accessory"
+  },
+  "felicitys-attic-mini-kitty-stamp-set": {
+    "name": "Mini Kitty Stamp Set",
+    "brand": "Felicity's Attic",
+    "price": 4.95,
+    "type": "accessory"
+  },
+  "felicitys-attic-mini-dog-stamp-set": {
+    "name": "Mini Dog Stamp Set",
+    "brand": "Felicity's Attic",
+    "price": 4.95,
+    "type": "accessory"
   }
 }

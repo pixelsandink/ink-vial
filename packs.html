@@ -159,6 +159,7 @@
       </a>
       <ul class="nav-links" id="nav-links">
         <li><a href="shop">Shop</a></li>
+        <li><a href="accessories">Accessories</a></li>
         <li><a href="how-it-works">How It Works</a></li>
         <li><a href="about">About</a></li>
         <li><a href="faq">FAQ</a></li>
@@ -386,7 +387,7 @@
     </div>
     <div class="footer-col"><h4>Shop</h4><ul>
       <li><a href="shop">All Inks</a></li>
-      <li><a href="packs">Discovery Packs</a></li>
+      <li><a href="packs">Discovery Packs</a></li><li><a href="accessories">Accessories</a></li>
     </ul></div>
     <div class="footer-col"><h4>Info</h4><ul>
       <li><a href="how-it-works">How It Works</a></li>
@@ -405,7 +406,7 @@
 
 <script src="inks.js?v=4"></script>
 <script src="prices.js?v=3"></script>
-<script src="cart.js"></script>
+<script src="cart.js?v=2"></script>
 <script>
   // Live stock -> per-pack Available/Low/Sold out + enable the right Add button
   fetch('/api/stock', { headers: { 'Accept': 'application/json' } })

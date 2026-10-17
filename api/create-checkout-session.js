@@ -67,7 +67,7 @@ module.exports = async (req, res) => {
         price_data: {
           currency: 'gbp',
           unit_amount: unit,
-          product_data: { name: `${entry.brand} ${entry.name} - 2ml sample` }
+          product_data: { name: `${entry.brand} ${entry.name}` + (entry.type === 'accessory' ? '' : ' - 2ml sample') }
         }
       });
     }
@@ -89,7 +89,7 @@ module.exports = async (req, res) => {
         price_data: {
           currency: 'gbp',
           unit_amount: subtotalPence,
-          product_data: { name: `Ink Vial order - ${totalQty} x 2ml samples (${line_items.length} inks)` }
+          product_data: { name: `Ink Vial order - ${totalQty} items (${line_items.length} products)` }
         }
       }];
     }
