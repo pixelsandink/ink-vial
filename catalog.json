@@ -47,352 +47,352 @@
   "colorverse-brunch-date": {
     "name": "Brunch Date",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-walk-the-dog": {
     "name": "Walk the Dog",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-delicious-sleep": {
     "name": "Delicious Sleep",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-under-the-shade": {
     "name": "Under the Shade",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-rainy-day": {
     "name": "Rainy Day",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-mystic-mountain": {
     "name": "Mystic Mountain",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-pillars-of-creation": {
     "name": "Pillars of Creation",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-sea-europa": {
     "name": "Sea Europa",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-and": {
     "name": "And",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-dirty-red": {
     "name": "Dirty Red",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "colorverse-deep-purple": {
     "name": "Deep Purple",
     "brand": "Colorverse",
-    "price": 2
+    "price": 0.7
   },
   "diamine-petra": {
     "name": "Petra",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-chichen-itza": {
     "name": "Chichen Itza",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-7-sinners-lust": {
     "name": "7 Sinners Lust",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-7-sinners-wrath": {
     "name": "7 Sinners Wrath",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-7-sinners-greed": {
     "name": "7 Sinners Greed",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.6
   },
   "diamine-7-sinners-sloth": {
     "name": "7 Sinners Sloth",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-7-sinners-gluttony": {
     "name": "7 Sinners Gluttony",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.6
   },
   "diamine-7-sinners-envy": {
     "name": "7 Sinners Envy",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.6
   },
   "diamine-7-sinners-pride": {
     "name": "7 Sinners Pride",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.6
   },
   "diamine-tariff-teal": {
     "name": "Tariff Teal",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-canalside": {
     "name": "Canalside",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-lady-grey": {
     "name": "Lady Grey",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-a-jug-of-sangria": {
     "name": "A Jug of Sangria",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-summer-sunset": {
     "name": "Summer Sunset",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-cashmere-rose": {
     "name": "Cashmere Rose",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-rosewood": {
     "name": "Rosewood",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-raise-a-glass": {
     "name": "Raise a Glass",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.6
   },
   "diamine-oh-betty": {
     "name": "Oh Betty",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-blue-monday": {
     "name": "Blue Monday",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-lavender-frost": {
     "name": "Lavender Frost",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.6
   },
   "diamine-toe-in-the-ocean": {
     "name": "Toe in the Ocean",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-the-great-wall-of-china": {
     "name": "The Great Wall of China",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-colosseum": {
     "name": "Colosseum",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "ferris-wheel-press-blushing-mushrooms": {
     "name": "Blushing Mushrooms",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-terracotta-canyon": {
     "name": "Terracotta Canyon",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-chidori-cherry-blossom": {
     "name": "Chidori Cherry Blossom",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-pink-eraser": {
     "name": "Pink Eraser",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-blue-grass-velvet": {
     "name": "Blue Grass Velvet",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-queen-allium": {
     "name": "Queen Allium",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-spadina-rose": {
     "name": "Spadina Rose",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-peter-moss": {
     "name": "Peter Moss",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-unfettered-flight": {
     "name": "Unfettered Flight",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-storied-blue": {
     "name": "Storied Blue",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-oyster-hour": {
     "name": "Oyster Hour",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-dancing-thyme": {
     "name": "Dancing Thyme",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-candy-marsala": {
     "name": "Candy Marsala",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-madam-mulberry": {
     "name": "Madam Mulberry",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-royal-rhubarb": {
     "name": "Royal Rhubarb",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-bayou-berry-mist": {
     "name": "Bayou Berry Mist",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-dusk-in-bloom": {
     "name": "Dusk in Bloom",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-moonbeam-meadows": {
     "name": "Moonbeam Meadows",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-beaver-dam-brown": {
     "name": "Beaver Dam Brown",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-highland-smoke": {
     "name": "Highland Smoke",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-leadcase-letters": {
     "name": "Leadcase Letters",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "jherbin-vert-empire": {
     "name": "Vert Empire",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-gris-nuage": {
     "name": "Gris Nuage",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-cafe-des-iles": {
     "name": "Cafe des Iles",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-poussiere-de-lune": {
     "name": "Poussiere de Lune",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-rouille-dancre": {
     "name": "Rouille d'Ancre",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-cacao-du-bresil": {
     "name": "Cacao du Bresil",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-vert-de-gris": {
     "name": "Vert de Gris",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-rouge-opera": {
     "name": "Rouge Opera",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-vert-cactus": {
     "name": "Vert Cactus",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-corail-des-tropiques": {
     "name": "Corail des Tropiques",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-larmes-de-cassis": {
     "name": "Larmes de Cassis",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-bouquet-dantan": {
     "name": "Bouquet d'Antan",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-vert-olive": {
     "name": "Vert Olive",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-bleu-nuit": {
     "name": "Bleu Nuit",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-perle-noire": {
     "name": "Perle Noire",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-vert-atlantide": {
     "name": "Vert Atlantide",
@@ -422,12 +422,12 @@
   "jherbin-lie-de-the": {
     "name": "Lie De The",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "jherbin-rouge-grenat": {
     "name": "Rouge Grenat",
     "brand": "J.Herbin",
-    "price": 2.75
+    "price": 1.05
   },
   "kaweco-midnight-blue": {
     "name": "Midnight Blue",
@@ -447,182 +447,182 @@
   "kwz-brown-pink": {
     "name": "Brown Pink",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kwz-grey-plum": {
     "name": "Grey Plum",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kwz-cherry": {
     "name": "Cherry",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kwz-gummiberry": {
     "name": "Gummiberry",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kwz-brown-3": {
     "name": "Brown 3",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kwz-warsaw-dreaming": {
     "name": "Warsaw Dreaming",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kwz-grey-lux": {
     "name": "Grey Lux",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kwz-maroon": {
     "name": "Maroon",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kwz-cappuccino": {
     "name": "Cappuccino",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kwz-berry": {
     "name": "Berry",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "laban-aphrodite-pink": {
     "name": "Aphrodite Pink",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "laban-hera-green": {
     "name": "Hera Green",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "laban-artemis-navy": {
     "name": "Artemis Navy",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "laban-athena-grey": {
     "name": "Athena Grey",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "laban-apollo-orange": {
     "name": "Apollo Orange",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "laban-demeter-brown": {
     "name": "Demeter Brown",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "laban-hermes-sky-blue": {
     "name": "Hermes Sky Blue",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "laban-ares-red": {
     "name": "Ares Red",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "laban-zeus-purple": {
     "name": "Zeus Purple",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "lennon-tool-bar-sesame-oil": {
     "name": "Sesame Oil",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-dried-longan": {
     "name": "Dried Longan",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-misona-tea": {
     "name": "Misona Tea",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-purple-rice": {
     "name": "Purple Rice",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-red-beans": {
     "name": "Red Beans",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-jujube": {
     "name": "Jujube",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-island-wood": {
     "name": "Island Wood",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-catfish-spirit": {
     "name": "Catfish Spirit",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-pen-fairy": {
     "name": "Pen Fairy",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-fortune-teller-168-light": {
     "name": "Fortune Teller 168 Light",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-tortoise-and-serpent": {
     "name": "Tortoise and Serpent",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-firament": {
     "name": "Firament",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-black-hound": {
     "name": "Black Hound",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "lennon-tool-bar-outback-forest": {
     "name": "Outback Forest",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "nagasawa-strawberry-chocolate": {
     "name": "Strawberry Chocolate",
     "brand": "Nagasawa Kobe",
-    "price": 5
+    "price": 3.25
   },
   "nagasawa-milk-chocolate": {
     "name": "Milk Chocolate",
     "brand": "Nagasawa Kobe",
-    "price": 5
+    "price": 3.25
   },
   "nagasawa-bitter-chocolate": {
     "name": "Bitter Chocolate",
     "brand": "Nagasawa Kobe",
-    "price": 5
+    "price": 3.25
   },
   "octopus-fluids-unicorn": {
     "name": "Unicorn",
@@ -642,12 +642,12 @@
   "pelikan-brilliant-brown": {
     "name": "Brilliant Brown",
     "brand": "Pelikan",
-    "price": 1.75
+    "price": 0.5
   },
   "pelikan-blue-black": {
     "name": "Blue Black",
     "brand": "Pelikan",
-    "price": 1.75
+    "price": 0.5
   },
   "pentonote-susuki-milk": {
     "name": "Susuki Milk",
@@ -657,52 +657,52 @@
   "pilot-iroshizuku-yama-budo": {
     "name": "Yama-Budo",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "pilot-iroshizuku-kon-peki": {
     "name": "Kon-peki",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "pilot-iroshizuku-ku-jaku": {
     "name": "Ku-jaku",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "pilot-iroshizuku-fuyu-syogun": {
     "name": "Fuyu-syogun",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "pilot-iroshizuku-ajisai": {
     "name": "Ajisai",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "pilot-iroshizuku-syo-ro": {
     "name": "Syo-ro",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "pilot-iroshizuku-sui-gyoku": {
     "name": "Sui-gyoku",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "pilot-iroshizuku-hana-ikada": {
     "name": "Hana-ikada",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "pilot-iroshizuku-syun-gyo": {
     "name": "Syun-gyo",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "pilot-iroshizuku-murasaki-shikibu": {
     "name": "Murasaki-shikibu",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "robert-oster-detox": {
     "name": "Detox",
@@ -882,22 +882,22 @@
   "rohrer-klingner-salix": {
     "name": "Salix",
     "brand": "Rohrer & Klingner",
-    "price": 1.75
+    "price": 0.5
   },
   "rohrer-klingner-verdigris": {
     "name": "Verdigris",
     "brand": "Rohrer & Klingner",
-    "price": 1.75
+    "price": 0.5
   },
   "rohrer-klingner-sepia": {
     "name": "Sepia",
     "brand": "Rohrer & Klingner",
-    "price": 1.75
+    "price": 0.5
   },
   "rohrer-klingner-scabiosa": {
     "name": "Scabiosa",
     "brand": "Rohrer & Klingner",
-    "price": 1.75
+    "price": 0.5
   },
   "sailor-kitsune-biyori": {
     "name": "Kitsune Biyori",
@@ -942,62 +942,62 @@
   "sailor-shikori-tokiwamatsu": {
     "name": "Shikiori Tokiwamatsu",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-sube-rakashi": {
     "name": "Shikiori Sube-rakashi",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-yozakura": {
     "name": "Shikiori Yozakura",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-yutsubame": {
     "name": "Shikiori Yutsubame",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-hara-hara": {
     "name": "Shikiori Hara Hara",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-potsu": {
     "name": "Shikiori Potsu",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-shimoyo": {
     "name": "Shikiori Shimoyo",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-okuyama": {
     "name": "Shikiori Okuyama",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-kasagi": {
     "name": "Shikiori Kasagi",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-manyo-aka-mai": {
     "name": "Manyo Aka-mai",
     "brand": "Sailor",
-    "price": 4
+    "price": 1.4
   },
   "sailor-manyo-kuri": {
     "name": "Manyo Kuri",
     "brand": "Sailor",
-    "price": 4
+    "price": 1.4
   },
   "sailor-manyo-nekoyanagi": {
     "name": "Manyo Nekoyanagi",
     "brand": "Sailor",
-    "price": 4
+    "price": 1.4
   },
   "sailor-studio-123": {
     "name": "Studio Ink 123",
@@ -1042,7 +1042,7 @@
   "sailor-shikori-souten": {
     "name": "Shikiori Souten",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-dategokoro": {
     "name": "Dategokoro",
@@ -1072,57 +1072,57 @@
   "taccia-sunaoiro-akasakura": {
     "name": "Akasakura",
     "brand": "Taccia",
-    "price": 3.75
+    "price": 2.5
   },
   "taccia-sunaoiro-nakamurasaki": {
     "name": "Nakamurasaki",
     "brand": "Taccia",
-    "price": 3.75
+    "price": 2.5
   },
   "taccia-sunaoiro-fukakihanada": {
     "name": "Fukakihanada",
     "brand": "Taccia",
-    "price": 3.75
+    "price": 2.5
   },
   "taccia-sunaoiro-sabimidori": {
     "name": "Sabimidori",
     "brand": "Taccia",
-    "price": 3.75
+    "price": 2.5
   },
   "taccia-sunaoiro-koiai": {
     "name": "Koiai",
     "brand": "Taccia",
-    "price": 3.75
+    "price": 2.5
   },
   "taccia-sunaoiro-aka": {
     "name": "Aka",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 2.25
   },
   "taccia-sunaoiro-murasaki": {
     "name": "Murasaki",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 2.25
   },
   "taccia-sunaoiro-momo": {
     "name": "Momo",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 2.25
   },
   "taccia-sunaoiro-ebi": {
     "name": "Ebi",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 2.25
   },
   "taccia-sunaoiro-cha": {
     "name": "Cha",
     "brand": "Taccia",
-    "price": 2.75
+    "price": 2.25
   },
   "taccia-ukiyoe-hokusai-benitsuchi": {
     "name": "Hokusai Benitsuchi",
     "brand": "Taccia",
-    "price": 3.75
+    "price": 2.5
   },
   "tono-lims-miss-u": {
     "name": "Miss U",
@@ -1167,342 +1167,342 @@
   "dominant-industry-evening": {
     "name": "Evening",
     "brand": "Dominant Industry",
-    "price": 2.75
+    "price": 1.5
   },
   "dominant-industry-earl-grey-tea": {
     "name": "Earl Grey Tea",
     "brand": "Dominant Industry",
-    "price": 2.75
+    "price": 1.5
   },
   "dominant-industry-romania-red": {
     "name": "Romania Red",
     "brand": "Dominant Industry",
-    "price": 2.75
+    "price": 1.5
   },
   "dominant-industry-tsavorite": {
     "name": "Tsavorite",
     "brand": "Dominant Industry",
-    "price": 2.75
+    "price": 1.5
   },
   "dominant-industry-soleil-couchant-a-etretat": {
     "name": "Soleil Couchant a Etretat",
     "brand": "Dominant Industry",
-    "price": 2.75
+    "price": 1.5
   },
   "dominant-industry-unknown-land": {
     "name": "Unknown Land",
     "brand": "Dominant Industry",
-    "price": 2.75
+    "price": 1.5
   },
   "dominant-industry-tanzanite": {
     "name": "Tanzanite",
     "brand": "Dominant Industry",
-    "price": 3.25
+    "price": 1.6
   },
   "dominant-industry-sunset": {
     "name": "Sunset",
     "brand": "Dominant Industry",
-    "price": 3.25
+    "price": 1.6
   },
   "dominant-industry-periwinkle-twinkle": {
     "name": "Periwinkle Twinkle",
     "brand": "Dominant Industry",
-    "price": 3.25
+    "price": 1.6
   },
   "dominant-industry-october-leaves": {
     "name": "October Leaves",
     "brand": "Dominant Industry",
-    "price": 3.25
+    "price": 1.6
   },
   "dominant-industry-natural-green": {
     "name": "Natural Green",
     "brand": "Dominant Industry",
-    "price": 3.25
+    "price": 1.6
   },
   "dominant-industry-milky-way-blue": {
     "name": "Milky Way Blue",
     "brand": "Dominant Industry",
-    "price": 3.25
+    "price": 1.6
   },
   "dominant-industry-goryeo-celadon": {
     "name": "Goryeo Celadon",
     "brand": "Dominant Industry",
-    "price": 3.25
+    "price": 1.6
   },
   "dominant-industry-les-falaises-a-etretat": {
     "name": "Les Falaises a Etretat",
     "brand": "Dominant Industry",
-    "price": 3.25
+    "price": 1.6
   },
   "dominant-industry-autumn-forest": {
     "name": "Autumn Forest",
     "brand": "Dominant Industry",
-    "price": 3.25
+    "price": 1.6
   },
   "dominant-industry-dusk": {
     "name": "Dusk",
     "brand": "Dominant Industry",
-    "price": 2.75
+    "price": 1.5
   },
   "dominant-industry-dawn": {
     "name": "Dawn",
     "brand": "Dominant Industry",
-    "price": 2.75
+    "price": 1.5
   },
   "troublemaker-gold-dust-shimmer": {
     "name": "Gold Dust Shimmer",
     "brand": "Troublemaker Inks",
-    "price": 2.25
+    "price": 0.8
   },
   "troublemaker-abalone": {
     "name": "Abalone",
     "brand": "Troublemaker Inks",
-    "price": 2.25
+    "price": 0.7
   },
   "troublemaker-starry-night-blue": {
     "name": "Starry Night Blue",
     "brand": "Troublemaker Inks",
-    "price": 2.25
+    "price": 0.8
   },
   "troublemaker-simoun": {
     "name": "Simoun",
     "brand": "Troublemaker Inks",
-    "price": 2.25
+    "price": 0.7
   },
   "troublemaker-lam-ang": {
     "name": "Lam-ang",
     "brand": "Troublemaker Inks",
-    "price": 2.25
+    "price": 0.7
   },
   "vinta-blue-blood": {
     "name": "Blue Blood",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-lakambini": {
     "name": "Lakambini",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-sailfin-green": {
     "name": "Sailfin Green",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-elusive-blue": {
     "name": "Elusive Blue",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-liquid-sepia": {
     "name": "Liquid Sepia",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-pink-afterglow": {
     "name": "Pink Afterglow",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-armada": {
     "name": "Armada",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-kayangan": {
     "name": "Kayangan",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-ubi": {
     "name": "Ubi",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-pitik-papel": {
     "name": "Pitik Papel",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-unang-araw": {
     "name": "Unang Araw",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-sulyap": {
     "name": "Sulyap",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-huling-kampana": {
     "name": "Huling Kampana",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "vinta-takipsilim": {
     "name": "Takipsilim",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "wearingeul-resurrection": {
     "name": "Resurrection",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-geppetto": {
     "name": "Geppetto",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-metamorphosis": {
     "name": "Metamorphosis",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-a-watery-star": {
     "name": "A Watery Star",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-a-grape-coloured-night": {
     "name": "A Grape Coloured Night",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-floating-cloud": {
     "name": "Floating Cloud",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-exile-of-flower": {
     "name": "Exile of Flower",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-jane-eyre": {
     "name": "Jane Eyre",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-no-longer-human": {
     "name": "No Longer Human",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-purgatori": {
     "name": "Purgatori",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-white-rabbit": {
     "name": "White Rabbit",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-don-quixote": {
     "name": "Don Quixote",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-adventures-of-tom-sawyer": {
     "name": "Adventures of Tom Sawyer",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-tsukuyami": {
     "name": "Tsukuyami",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-mad-hatter": {
     "name": "Mad Hatter",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-wendy-darling": {
     "name": "Wendy Darling",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-human-issues": {
     "name": "Human Issues",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-crime-and-punishment": {
     "name": "Crime and Punishment",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-carmilla": {
     "name": "Carmilla",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-valley-of-fear": {
     "name": "Valley of Fear",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-tinker-bell": {
     "name": "Tinker Bell",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-captain-hook": {
     "name": "Captain Hook",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-queen-of-hearts": {
     "name": "Queen of Hearts",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-alice": {
     "name": "Alice",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-vayu": {
     "name": "Vayu",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-sedna": {
     "name": "Sedna",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-persephone": {
     "name": "Persephone",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-heimdall": {
     "name": "Heimdall",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-the-great-sage-heavens-equal": {
     "name": "The Great Sage Heaven's Equal",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-enki": {
     "name": "Enki",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-hades": {
     "name": "Hades",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "monteverde-purple-mist": {
     "name": "Purple Mist",
     "brand": "Monteverde",
-    "price": 3
+    "price": 1.1
   },
   "inkebara-pale-violet": {
     "name": "Pale Violet",
@@ -1527,17 +1527,17 @@
   "dominant-industry-allegory": {
     "name": "Allegory",
     "brand": "Dominant Industry",
-    "price": 2.75
+    "price": 1.5
   },
   "vinta-ulap": {
     "name": "Ulap",
     "brand": "Vinta",
-    "price": 3.25
+    "price": 3
   },
   "discovery-pack": {
     "name": "Discovery Pack",
     "brand": "Ink Vial",
-    "price": 16,
+    "price": 13,
     "components": [
       "pilot-iroshizuku-kon-peki",
       "robert-oster-fire-and-ice",
@@ -1552,7 +1552,7 @@
   "first-fill": {
     "name": "First Fill",
     "brand": "Ink Vial",
-    "price": 10,
+    "price": 6.5,
     "components": [
       "kaweco-midnight-blue",
       "jherbin-perle-noire",
@@ -1592,7 +1592,7 @@
   "alice-in-wonderland": {
     "name": "Wearingeul Alice in Wonderland",
     "brand": "Ink Vial",
-    "price": 16,
+    "price": 13.5,
     "components": [
       "wearingeul-alice",
       "wearingeul-white-rabbit",
@@ -1604,7 +1604,7 @@
   "peter-pan-pack": {
     "name": "Wearingeul Peter Pan",
     "brand": "Ink Vial",
-    "price": 16,
+    "price": 13.5,
     "components": [
       "wearingeul-wendy-darling",
       "wearingeul-tinker-bell",
@@ -1621,7 +1621,7 @@
   "pilot-favourites": {
     "name": "Pilot Favourites",
     "brand": "Ink Vial",
-    "price": 25,
+    "price": 13.5,
     "components": [
       "pilot-iroshizuku-yama-budo",
       "pilot-iroshizuku-kon-peki",
@@ -1636,72 +1636,72 @@
   "pilot-iroshizuku-momiji": {
     "name": "Momiji",
     "brand": "Pilot Iroshizuku",
-    "price": 4
+    "price": 1.8
   },
   "cult-pens-diamine-deep-dark-blue": {
     "name": "Deep Dark Blue",
     "brand": "Cult Pens x Diamine",
-    "price": 2
+    "price": 0.5
   },
   "cult-pens-diamine-deep-dark-brown": {
     "name": "Deep Dark Brown",
     "brand": "Cult Pens x Diamine",
-    "price": 2
+    "price": 0.5
   },
   "cult-pens-diamine-deep-dark-green": {
     "name": "Deep Dark Green",
     "brand": "Cult Pens x Diamine",
-    "price": 2
+    "price": 0.5
   },
   "cult-pens-diamine-deep-dark-orange": {
     "name": "Deep Dark Orange",
     "brand": "Cult Pens x Diamine",
-    "price": 2
+    "price": 0.5
   },
   "cult-pens-diamine-deep-dark-purple": {
     "name": "Deep Dark Purple",
     "brand": "Cult Pens x Diamine",
-    "price": 2
+    "price": 0.5
   },
   "kitty-inkpot-a-certain-forest": {
     "name": "A Certain Forest",
     "brand": "Kitty Inkpot",
-    "price": 4.5
+    "price": 3
   },
   "kitty-inkpot-a-certain-letter": {
     "name": "A Certain Letter",
     "brand": "Kitty Inkpot",
-    "price": 4.5
+    "price": 3
   },
   "kitty-inkpot-elegy-of-the-fallen": {
     "name": "Elegy of the Fallen",
     "brand": "Kitty Inkpot",
-    "price": 4.5
+    "price": 3
   },
   "kitty-inkpot-letter-from-platycodon": {
     "name": "Letter from Platycodon",
     "brand": "Kitty Inkpot",
-    "price": 4.5
+    "price": 3
   },
   "kitty-inkpot-long-whiskered-cat-projection": {
     "name": "Long Whiskered Cat Projection",
     "brand": "Kitty Inkpot",
-    "price": 4.5
+    "price": 3
   },
   "kitty-inkpot-lost-rose": {
     "name": "Lost Rose",
     "brand": "Kitty Inkpot",
-    "price": 4.5
+    "price": 3
   },
   "kitty-inkpot-no-pendant-braiding": {
     "name": "No Pendant Braiding",
     "brand": "Kitty Inkpot",
-    "price": 4.5
+    "price": 3
   },
   "kitty-inkpot-sailing-to-greet-the-moon": {
     "name": "Sailing to Greet the Moon",
     "brand": "Kitty Inkpot",
-    "price": 4.5
+    "price": 3
   },
   "esterbrook-sakura-dragon-dark-cherrywood": {
     "name": "Dark Cherrywood",
@@ -1721,22 +1721,22 @@
   "wearingeul-cheshire-cat": {
     "name": "Cheshire Cat",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-peter-pan": {
     "name": "Peter Pan",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-tick-tock-croc": {
     "name": "Tick Tock Croc",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "diamine-7-deadly-sins": {
     "name": "Diamine 7 Deadly Sins",
     "brand": "Ink Vial",
-    "price": 10,
+    "price": 3.5,
     "components": [
       "diamine-7-sinners-envy",
       "diamine-7-sinners-gluttony",
@@ -1750,7 +1750,7 @@
   "deep-dark-collection": {
     "name": "Diamine x Cult Pens Deep Dark",
     "brand": "Ink Vial",
-    "price": 8,
+    "price": 2.25,
     "components": [
       "cult-pens-diamine-deep-dark-blue",
       "cult-pens-diamine-deep-dark-brown",
@@ -1772,17 +1772,17 @@
   "cult-pens-diamine-maple-leaf": {
     "name": "Maple Leaf",
     "brand": "Cult Pens x Diamine",
-    "price": 2
+    "price": 0.5
   },
   "cult-pens-diamine-muddy-puddle": {
     "name": "Muddy Puddle",
     "brand": "Cult Pens x Diamine",
-    "price": 2
+    "price": 0.5
   },
   "cult-pens-diamine-murky-bucket": {
     "name": "Murky Bucket",
     "brand": "Cult Pens x Diamine",
-    "price": 2
+    "price": 0.5
   },
   "de-atramentis-archival-black": {
     "name": "Archival Black",
@@ -1817,7 +1817,7 @@
   "diamine-cherry-sunburst": {
     "name": "Cherry Sunburst",
     "brand": "Diamine",
-    "price": 1.75
+    "price": 0.5
   },
   "diamine-classic-green": {
     "name": "Classic Green",
@@ -1847,7 +1847,7 @@
   "cult-pens-diamine-maureen": {
     "name": "Maureen",
     "brand": "Cult Pens x Diamine",
-    "price": 2
+    "price": 0.5
   },
   "diamine-merlot": {
     "name": "Merlot",
@@ -1922,62 +1922,62 @@
   "ferris-wheel-press-astral-blue-odyssey": {
     "name": "Astral Blue Odyssey",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-aurorealis": {
     "name": "Aurorealis",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-brilliant-beanstalk": {
     "name": "Brilliant Beanstalk",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-embers-of-time": {
     "name": "Embers of Time",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-freshly-squeezed-sunshine": {
     "name": "Freshly Squeezed Sunshine",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-furry-frostbites": {
     "name": "Furry Frostbites",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-oinking-embers": {
     "name": "Oinking Embers",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-starlit-stories": {
     "name": "Starlit Stories",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-the-copperleaf-guild": {
     "name": "The Copperleaf Guild",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-the-sad-charade": {
     "name": "The Sad Charade",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-tunes-of-tinseltown": {
     "name": "Tunes of Tinseltown",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "ferris-wheel-press-wonderland-in-coral": {
     "name": "Wonderland in Coral",
     "brand": "Ferris Wheel Press",
-    "price": 4
+    "price": 2.5
   },
   "journalize-carnival-fireworks": {
     "name": "Carnival Fireworks",
@@ -1987,7 +1987,7 @@
   "kwz-sheen-machine": {
     "name": "Sheen Machine",
     "brand": "KWZ Ink",
-    "price": 2
+    "price": 0.65
   },
   "kolour-cafe-barako": {
     "name": "Barako",
@@ -2007,17 +2007,17 @@
   "laban-poseidon-green": {
     "name": "Poseidon Green",
     "brand": "Laban",
-    "price": 2.25
+    "price": 2
   },
   "lennon-tool-bar-brown-sugar": {
     "name": "Brown Sugar",
     "brand": "Lennon Tool Bar",
-    "price": 3.5
+    "price": 3
   },
   "platinum-carbon-black": {
     "name": "Carbon Black",
     "brand": "Platinum",
-    "price": 2.25
+    "price": 2
   },
   "robert-oster-aqua": {
     "name": "Aqua",
@@ -2127,32 +2127,32 @@
   "sailor-manyo-kikyou": {
     "name": "Manyo Kikyou",
     "brand": "Sailor",
-    "price": 4
+    "price": 1.4
   },
   "sailor-manyo-shirakashi": {
     "name": "Manyo Shirakashi",
     "brand": "Sailor",
-    "price": 4
+    "price": 1.4
   },
   "sailor-manyo-ume": {
     "name": "Manyo Ume",
     "brand": "Sailor",
-    "price": 4
+    "price": 1.4
   },
   "sailor-shikori-chushu": {
     "name": "Shikiori Chushu",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-kamoshika": {
     "name": "Shikiori Kamoshika",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "sailor-shikori-yodaki": {
     "name": "Shikiori Yodaki",
     "brand": "Sailor",
-    "price": 3.5
+    "price": 1.7
   },
   "shanghai-stationary-fireworks": {
     "name": "Fireworks",
@@ -2302,22 +2302,22 @@
   "wearingeul-a-dream-within-a-dream": {
     "name": "A Dream Within a Dream",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-the-nightingale-and-the-rose": {
     "name": "The Nightingale and the Rose",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-therese-raquin": {
     "name": "Therese Raquin",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "wearingeul-undine": {
     "name": "Undine",
     "brand": "Wearingeul",
-    "price": 4
+    "price": 3
   },
   "felicitys-attic-ink-swatching-stamp-set-1": {
     "name": "Ink Swatching Stamp Set 1",
