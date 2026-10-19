@@ -1,7 +1,7 @@
 // Ink Vial - Price lookup
 // Brands that are widely sold as samples elsewhere are priced to compete, with a
 // 30% minimum gross margin after ink (Cult Pens price less 15%), vial & label.
-// Everything else keeps a ≥50% margin.
+// Boutique brands match The Ink Library's per-ml price where that keeps ≥50%.
 
 function getInkPrice(ink) {
   const id    = (ink.id    || '').toLowerCase();
@@ -28,8 +28,8 @@ function getInkPrice(ink) {
   // ── Teranishi Taisho Roman Haikara £2.25 ──────────────
   if (brand.includes('teranishi')) return 2.25;
 
-  // ── Platinum Carbon Black £2.25 (provisional) ─────────
-  if (brand.includes('platinum')) return 2.25;
+  // ── Platinum Carbon Black £2.00 ───────────────────────
+  if (brand.includes('platinum')) return 2.00;
 
   // ── Cult Pens x Diamine exclusives 50p ────────────────
   if (brand.includes('cult pens')) return 0.50;
@@ -57,11 +57,11 @@ function getInkPrice(ink) {
   // ── Esterbrook x Sakura Dragon £4.00 ──────────────────
   if (brand.includes('sakura dragon') || id.startsWith('esterbrook-sakura-dragon')) return 4.00;
 
-  // ── Ferris Wheel Press £4.00 ──────────────────────────
-  if (brand.includes('ferris wheel press')) return 4.00;
+  // ── Ferris Wheel Press £2.50 ──────────────────────────
+  if (brand.includes('ferris wheel press')) return 2.50;
 
-  // ── Wearingeul (standard & special) £4.00 ─────────────
-  if (brand.includes('wearingeul')) return 4.00;
+  // ── Wearingeul (standard & special) £3.00 ─────────────
+  if (brand.includes('wearingeul')) return 3.00;
 
   // ── Sailor Manyo £1.40 ────────────────────────────────
   if (id.includes('sailor-manyo')) return 1.40;
@@ -86,14 +86,14 @@ function getInkPrice(ink) {
   // ── Sailor (standard & Dategokoro) £3.50 ──────────────
   if (brand.includes('sailor')) return 3.50;
 
-  // ── Lennon Tool Bar £3.50 ─────────────────────────────
-  if (brand.includes('lennon tool bar') || id.startsWith('lennon-tool-bar')) return 3.50;
+  // ── Lennon Tool Bar £3.00 ─────────────────────────────
+  if (brand.includes('lennon tool bar') || id.startsWith('lennon-tool-bar')) return 3.00;
 
   // ── Dominant Industry: Pearl/shimmer £1.60, standard £1.50 ──
   if (brand.includes('dominant industry')) return ink.shimmer === true ? 1.60 : 1.50;
 
-  // ── Vinta £3.25 ───────────────────────────────────────
-  if (brand.includes('vinta')) return 3.25;
+  // ── Vinta £3.00 ───────────────────────────────────────
+  if (brand.includes('vinta')) return 3.00;
 
   // ── Octopus Fluids £3.00 ──────────────────────────────
   if (brand.includes('octopus')) return 3.00;
@@ -123,8 +123,8 @@ function getInkPrice(ink) {
   // ── De Atramentis £2.25 ───────────────────────────────
   if (brand.includes('de atramentis') || id.startsWith('de-atramentis') || id.startsWith('deatramentis')) return 2.25;
 
-  // ── Laban £2.25 ───────────────────────────────────────
-  if (brand.includes('laban')) return 2.25;
+  // ── Laban £2.00 ───────────────────────────────────────
+  if (brand.includes('laban')) return 2.00;
 
   // ── Cult Pens x Diamine Deep Dark 50p ─────────────────
   if (brand.includes('cult pens') || id.startsWith('cult-pens-diamine')) return 0.50;
