@@ -1,15 +1,7 @@
-// Ink Vial - Price lookup (updated: 50% minimum margin on all brands)
-// All prices ensure ≥50% gross margin after ink, vial, label & labour costs.
-
-// Standard-range Diamine 30ml bottles (£3.00) - sold at 50p a vial
-var DIAMINE_STANDARD_50P = [
-  'diamine-amazing-amethyst', 'diamine-ancient-copper', 'diamine-aurora-borealis', 'diamine-autumn-oak',
-  'diamine-celadon-cat', 'diamine-classic-green', 'diamine-damson', 'diamine-earl-grey',
-  'diamine-golden-brown', 'diamine-grape', 'diamine-merlot', 'diamine-monaco-red',
-  'diamine-ochre', 'diamine-onyx-black', 'diamine-oxblood', 'diamine-raw-sienna',
-  'diamine-red-dragon', 'diamine-saddle-brown', 'diamine-salamander', 'diamine-twilight',
-  'diamine-tyrian-purple', 'diamine-violet', 'diamine-warm-brown', 'diamine-writers-blood'
-];
+// Ink Vial - Price lookup
+// Brands that are widely sold as samples elsewhere are priced to compete, with a
+// 30% minimum gross margin after ink (Cult Pens price less 15%), vial & label.
+// Everything else keeps a ≥50% margin.
 
 function getInkPrice(ink) {
   const id    = (ink.id    || '').toLowerCase();
@@ -39,11 +31,11 @@ function getInkPrice(ink) {
   // ── Platinum Carbon Black £2.25 (provisional) ─────────
   if (brand.includes('platinum')) return 2.25;
 
-  // ── Cult Pens x Diamine exclusives £2.00 ──────────────
-  if (brand.includes('cult pens')) return 2.00;
+  // ── Cult Pens x Diamine exclusives 50p ────────────────
+  if (brand.includes('cult pens')) return 0.50;
 
-  // ── Diamine standard range 50p ────────────────────────
-  if (DIAMINE_STANDARD_50P.indexOf(id) !== -1) return 0.50;
+  // ── Diamine: shimmer 60p, everything else 50p ─────────
+  if (brand === 'diamine') return ink.shimmer === true ? 0.60 : 0.50;
 
   // ── TAG Kyo-No-Oto £4.50 ──────────────────────────────
   if (brand.includes('tag') && brand.includes('kyo')) return 4.50;
@@ -59,8 +51,8 @@ function getInkPrice(ink) {
   if ((id.includes('jherbin') || brand.includes('j.herbin') || brand.includes('jherbin')) &&
       (ink.shimmer === true || id.includes('1670') || id.includes('emerald-of-chivor') || id.includes('stormy-grey') || id.includes('hematite-red'))) return 4.00;
 
-  // ── Pilot Iroshizuku £4.00 ────────────────────────────
-  if (brand.includes('pilot iroshizuku') || id.startsWith('pilot-iroshizuku')) return 4.00;
+  // ── Pilot Iroshizuku £1.80 ────────────────────────────
+  if (brand.includes('pilot iroshizuku') || id.startsWith('pilot-iroshizuku')) return 1.80;
 
   // ── Esterbrook x Sakura Dragon £4.00 ──────────────────
   if (brand.includes('sakura dragon') || id.startsWith('esterbrook-sakura-dragon')) return 4.00;
@@ -71,8 +63,8 @@ function getInkPrice(ink) {
   // ── Wearingeul (standard & special) £4.00 ─────────────
   if (brand.includes('wearingeul')) return 4.00;
 
-  // ── Sailor Manyo £4.00 ────────────────────────────────
-  if (id.includes('sailor-manyo')) return 4.00;
+  // ── Sailor Manyo £1.40 ────────────────────────────────
+  if (id.includes('sailor-manyo')) return 1.40;
 
   // ── Robert Oster x The Coffee Monster Co. collab £4.00 ──
   if (id.includes('coffee-monster') || id.includes('murky-pond-water') || id.includes('day-to-night')) return 4.00;
@@ -88,8 +80,8 @@ function getInkPrice(ink) {
   // ── Sailor Ink Studio £3.50 ───────────────────────────
   if (id.includes('sailor-studio')) return 3.50;
 
-  // ── Sailor Shikiori £3.50 (ids keep the legacy 'shikori' spelling) ─────────────────────────────
-  if (id.includes('sailor-shikori')) return 3.50;
+  // ── Sailor Shikiori £1.70 (ids keep the legacy 'shikori' spelling) ─────────────────────────────
+  if (id.includes('sailor-shikori')) return 1.70;
 
   // ── Sailor (standard & Dategokoro) £3.50 ──────────────
   if (brand.includes('sailor')) return 3.50;
@@ -97,8 +89,8 @@ function getInkPrice(ink) {
   // ── Lennon Tool Bar £3.50 ─────────────────────────────
   if (brand.includes('lennon tool bar') || id.startsWith('lennon-tool-bar')) return 3.50;
 
-  // ── Dominant Industry: Pearl/shimmer £3.25, standard £2.75 ──
-  if (brand.includes('dominant industry')) return ink.shimmer === true ? 3.25 : 2.75;
+  // ── Dominant Industry: Pearl/shimmer £1.60, standard £1.50 ──
+  if (brand.includes('dominant industry')) return ink.shimmer === true ? 1.60 : 1.50;
 
   // ── Vinta £3.25 ───────────────────────────────────────
   if (brand.includes('vinta')) return 3.25;
@@ -112,9 +104,9 @@ function getInkPrice(ink) {
   // ── Robert Oster £2.75 ────────────────────────────────
   if (brand.includes('robert oster')) return 2.75;
 
-  // ── J.Herbin (standard) £2.75 ─────────────────────────
+  // ── J.Herbin (standard) £1.05 ─────────────────────────
   if (brand.includes('j.herbin') || brand.includes('jherbin') ||
-      id.startsWith('jherbin')) return 2.75;
+      id.startsWith('jherbin')) return 1.05;
 
   // ── Taccia Sunaoiro £2.75 ─────────────────────────────
   if (brand.includes('taccia')) return 2.75;
@@ -125,8 +117,8 @@ function getInkPrice(ink) {
   // ── Pelikan Edelstein £2.50 ───────────────────────────
   if (id.includes('pelikan') && id.includes('edelstein')) return 2.50;
 
-  // ── Troublemaker £2.25 ────────────────────────────────
-  if (brand.includes('troublemaker')) return 2.25;
+  // ── Troublemaker: shimmer 80p, standard 70p ───────────
+  if (brand.includes('troublemaker')) return ink.shimmer === true ? 0.80 : 0.70;
 
   // ── De Atramentis £2.25 ───────────────────────────────
   if (brand.includes('de atramentis') || id.startsWith('de-atramentis') || id.startsWith('deatramentis')) return 2.25;
@@ -134,17 +126,17 @@ function getInkPrice(ink) {
   // ── Laban £2.25 ───────────────────────────────────────
   if (brand.includes('laban')) return 2.25;
 
-  // ── Cult Pens x Diamine Deep Dark £2.00 ───────────────
-  if (brand.includes('cult pens') || id.startsWith('cult-pens-diamine')) return 2.00;
+  // ── Cult Pens x Diamine Deep Dark 50p ─────────────────
+  if (brand.includes('cult pens') || id.startsWith('cult-pens-diamine')) return 0.50;
 
-  // ── Colorverse £2.00 ──────────────────────────────────
-  if (brand.includes('colorverse')) return 2.00;
+  // ── Colorverse 70p ────────────────────────────────────
+  if (brand.includes('colorverse')) return 0.70;
 
-  // ── KWZ Ink £2.00 ─────────────────────────────────────
-  if (brand.includes('kwz')) return 2.00;
+  // ── KWZ Ink 65p ───────────────────────────────────────
+  if (brand.includes('kwz')) return 0.65;
 
-  // ── Monteverde £3.00 ──────────────────────────────────
-  if (brand.includes('monteverde')) return 3.00;
+  // ── Monteverde £1.10 ──────────────────────────────────
+  if (brand.includes('monteverde')) return 1.10;
 
   // ── Kaweco £2.00 ──────────────────────────────────────
   if (brand.includes('kaweco')) return 2.00;
@@ -152,7 +144,10 @@ function getInkPrice(ink) {
   // ── Inkebara £2.00 ────────────────────────────────────
   if (brand.includes('inkebara')) return 2.00;
 
-  // ── Standard £1.75 (Diamine, Pelikan 4001, Rohrer & Klingner) ──
+  // ── Pelikan 4001 and Rohrer & Klingner 50p ────────────
+  if (brand === 'pelikan' || brand.includes('rohrer')) return 0.50;
+
+  // ── Anything else £1.75 ───────────────────────────────
   return 1.75;
 }
 
