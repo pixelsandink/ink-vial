@@ -8,7 +8,10 @@
    ────────────────────────────────────────────────────────────── */
 (function () {
   const STORAGE_KEY = 'inkvial_cart_v1';
-  const SHIPPING = 3.50;
+  // Royal Mail Tracked 48: £2.90 for up to 20 vials, £3.50 above that
+  const SHIPPING = 2.90;
+  const SHIPPING_LARGE = 3.50;
+  const SMALL_ORDER_VIALS = 20;
   const FREE_SHIP_OVER = 40;   // free UK shipping once subtotal reaches this
   const EMAIL = 'hello@inkvial.co.uk';
 
@@ -27,6 +30,24 @@
   const money = n => '£' + n.toFixed(2);
   const itemCount = () => cart.reduce((s, i) => s + i.qty, 0);
   const subtotal = () => cart.reduce((s, i) => s + i.price * i.qty, 0);
+
+  // Packs count as the vials inside them and accessories don't count, so look
+  // both up from the catalogue (checkout uses the same file to charge postage).
+  const packVials = {};
+  const accessories = {};
+  fetch('/catalog.json').then(r => r.json()).then(cat => {
+    Object.keys(cat).forEach(id => {
+      if (cat[id].components) packVials[id] = cat[id].components.length;
+      if (cat[id].type === 'accessory') accessories[id] = true;
+    });
+    if (drawer.classList.contains('open')) render();
+  }).catch(() => {});
+  const vialCount = () => cart.reduce((s, i) => {
+    if (accessories[i.id] || (!inkById[i.id] && i.image)) return s;
+    return s + i.qty * (packVials[i.id] || 1);
+  }, 0);
+  const shippingCost = () => subtotal() >= FREE_SHIP_OVER ? 0
+    : (vialCount() <= SMALL_ORDER_VIALS ? SHIPPING : SHIPPING_LARGE);
 
   // ── Inject styles ──────────────────────────────────────────
   const style = document.createElement('style');
@@ -140,7 +161,7 @@
 
     const sub = subtotal();
     const freeShip = sub >= FREE_SHIP_OVER;
-    const ship = freeShip ? 0 : SHIPPING;
+    const ship = shippingCost();
     const total = sub + ship;
 
     let nudge;
@@ -157,7 +178,7 @@
     foot.innerHTML = `
       ${nudge}
       <div class="iv-row"><span>Subtotal (${itemCount()} item${itemCount()!==1?'s':''})</span><span>${money(sub)}</span></div>
-      <div class="iv-row"><span>Shipping</span><span>${freeShip ? '<strong style="color:#2d7a3a">FREE</strong>' : money(SHIPPING)}</span></div>
+      <div class="iv-row"><span>Royal Mail Tracked 48</span><span>${freeShip ? '<strong style="color:#2d7a3a">FREE</strong>' : money(ship)}</span></div>
       <div class="iv-row total"><span>Total</span><span>${money(total)}</span></div>
       <button class="iv-checkout" id="iv-checkout">Checkout - ${money(total)}</button>
       <button class="iv-empty-btn" id="iv-empty">Empty basket</button>
@@ -268,11 +289,11 @@
 
   function emailOrder() {
     const sub = subtotal();
-    const ship = sub >= FREE_SHIP_OVER ? 0 : SHIPPING;
+    const ship = shippingCost();
     const lines = cart.map(i => `${i.qty} x ${i.brand} ${i.name} (${money(i.price)} each) = ${money(i.price*i.qty)}`);
     lines.push('');
     lines.push(`Subtotal: ${money(sub)}`);
-    lines.push(`Shipping: ${ship === 0 ? 'FREE' : money(ship)}`);
+    lines.push(`Royal Mail Tracked 48: ${ship === 0 ? 'FREE' : money(ship)}`);
     lines.push(`Total: ${money(sub + ship)}`);
     const body = encodeURIComponent(
       "Hi Ink Vial,\n\nI'd like to order the following:\n\n" + lines.join('\n') +

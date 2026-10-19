@@ -55,13 +55,13 @@ function orderConfirmationEmail({ name, amount, lines, ship }) {
        <p style="margin:0 0 6px;"><strong>Your inks${amount ? ' (' + esc(amount) + ')' : ''}:</strong></p>
        ${itemsUl(lines)}
        ${ship ? `<p style="margin:0 0 12px;"><strong>Shipping to:</strong><br>${esc(ship)}</p>` : ''}
-       <p>Every vial is hand-filled fresh to order, so please allow <strong>3-5 working days</strong> for us to fill and pack before it's posted via Royal Mail tracked. We'll email you again the moment it's on its way.</p>
+       <p>Every vial is hand-filled fresh to order, so please allow <strong>3-5 working days</strong> for us to fill and pack before it's posted via Royal Mail Tracked 48. We'll email you again the moment it's on its way.</p>
        <p>Happy writing,<br>Rupal</p>`),
     text:
       `${name ? 'Hi ' + name.split(' ')[0] + ',' : 'Hi there,'}\n\n` +
       `Thank you for your order!${amount ? ' (' + amount + ')' : ''}\n\n` +
       itemsTxt(lines) + (ship ? `\n\nShipping to: ${ship}` : '') +
-      `\n\nEvery vial is hand-filled fresh to order, so please allow 3-5 working days for us to fill and pack before it's posted via Royal Mail tracked. We'll email you when it ships.\n\nHappy writing,\nRupal - Ink Vial`
+      `\n\nEvery vial is hand-filled fresh to order, so please allow 3-5 working days for us to fill and pack before it's posted via Royal Mail Tracked 48. We'll email you when it ships.\n\nHappy writing,\nRupal - Ink Vial`
   };
 }
 
@@ -71,7 +71,7 @@ function shippedEmail({ name, lines, tracking }) {
   const trackBlock = tracking
     ? `<p style="margin:0 0 12px;"><strong>Royal Mail tracking:</strong> ${esc(tracking)}<br>
         <a href="https://www.royalmail.com/track-your-item#/tracking-results/${encodeURIComponent(tracking)}" style="color:#8b68cc;">Track your parcel</a></p>`
-    : `<p style="margin:0 0 12px;">Sent via Royal Mail tracked.</p>`;
+    : `<p style="margin:0 0 12px;">Sent via Royal Mail Tracked 48.</p>`;
   return {
     subject: 'Your Ink Vial order is on its way!',
     html: wrap(
@@ -85,7 +85,7 @@ function shippedEmail({ name, lines, tracking }) {
       `${name ? 'Hi ' + name.split(' ')[0] + ',' : 'Hi there,'}\n\n` +
       `Your inks are packed and on their way via Royal Mail!\n\n` +
       (lines && lines.length ? itemsTxt(lines) + '\n\n' : '') +
-      (tracking ? `Royal Mail tracking: ${tracking}\nhttps://www.royalmail.com/track-your-item#/tracking-results/${encodeURIComponent(tracking)}\n\n` : 'Sent via Royal Mail tracked.\n\n') +
+      (tracking ? `Royal Mail tracking: ${tracking}\nhttps://www.royalmail.com/track-your-item#/tracking-results/${encodeURIComponent(tracking)}\n\n` : 'Sent via Royal Mail Tracked 48.\n\n') +
       `It should arrive within a few working days. I'd love to hear what you think once you've tried them!\n\nHappy writing,\nRupal - Ink Vial`
   };
 }

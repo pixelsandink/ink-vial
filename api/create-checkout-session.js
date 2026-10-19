@@ -7,7 +7,11 @@ const catalog = require('../catalog.json');
 const seed = require('../stock-seed.json');
 const redis = require('./_redis');
 
-const SHIPPING_PENCE = 350;     // £3.50 flat UK shipping
+// Royal Mail Tracked 48: £2.90 for up to 20 vials, £3.50 above that.
+// A pack counts as the vials inside it; accessories don't count.
+const SHIPPING_PENCE = 290;
+const SHIPPING_LARGE_PENCE = 350;
+const SMALL_ORDER_VIALS = 20;
 const FREE_SHIP_OVER = 40;      // free over £40 subtotal
 
 // crypto for a short order token (used to hand the order to the webhook)
@@ -47,6 +51,7 @@ module.exports = async (req, res) => {
     const orderItems = [];          // {id, qty} handed to the webhook to decrement
     const unavailable = [];
     let subtotalPence = 0;
+    let vials = 0;
 
     for (const it of items) {
       const entry = catalog[it.id];
@@ -61,6 +66,7 @@ module.exports = async (req, res) => {
       if (have < qty) { unavailable.push(`${entry.brand} ${entry.name}`); continue; }
       const unit = Math.round(entry.price * 100);
       subtotalPence += unit * qty;
+      if (entry.type !== 'accessory') vials += qty * (entry.components ? entry.components.length : 1);
       orderItems.push({ id: it.id, qty });
       line_items.push({
         quantity: qty,
@@ -101,7 +107,8 @@ module.exports = async (req, res) => {
     }
 
     const freeShip = subtotalPence >= FREE_SHIP_OVER * 100;
-    const shipPence = freeShip ? 0 : SHIPPING_PENCE;
+    const shipPence = freeShip ? 0
+      : (vials <= SMALL_ORDER_VIALS ? SHIPPING_PENCE : SHIPPING_LARGE_PENCE);
 
     const origin = req.headers.origin || `https://${req.headers.host}`;
 
@@ -115,9 +122,9 @@ module.exports = async (req, res) => {
         shipping_rate_data: {
           type: 'fixed_amount',
           fixed_amount: { amount: shipPence, currency: 'gbp' },
-          display_name: freeShip ? 'Free UK delivery' : 'Royal Mail Tracked',
+          display_name: freeShip ? 'Free UK delivery - Royal Mail Tracked 48' : 'Royal Mail Tracked 48',
           delivery_estimate: {
-            minimum: { unit: 'business_day', value: 1 },
+            minimum: { unit: 'business_day', value: 2 },
             maximum: { unit: 'business_day', value: 3 }
           }
         }
