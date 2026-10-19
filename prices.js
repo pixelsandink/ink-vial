@@ -7,11 +7,11 @@ function getInkPrice(ink) {
   const id    = (ink.id    || '').toLowerCase();
   const brand = (ink.brand || '').toLowerCase();
 
-  // ── Nagasawa Kobe £5.00 ────────────────────────────────
-  if (brand.includes('kobe') || brand.includes('nagasawa')) return 5.00;
+  // ── Nagasawa Kobe £3.25 ────────────────────────────────
+  if (brand.includes('kobe') || brand.includes('nagasawa')) return 3.25;
 
-  // ── Kitty Inkpot £4.50 ────────────────────────────────
-  if (brand.includes('kitty inkpot')) return 4.50;
+  // ── Kitty Inkpot £3.00 ────────────────────────────────
+  if (brand.includes('kitty inkpot')) return 3.00;
 
   // ── Esterbrook x Sakura Dragon £4.00 ──────────────────
   if (brand.includes('esterbrook')) return 4.00;
@@ -40,8 +40,8 @@ function getInkPrice(ink) {
   // ── TAG Kyo-No-Oto £4.50 ──────────────────────────────
   if (brand.includes('tag') && brand.includes('kyo')) return 4.50;
 
-  // ── Kitty Inkpot £4.50 (rare, small-batch) ───────────
-  if (brand.includes('kitty inkpot') || id.startsWith('kitty-inkpot')) return 4.50;
+  // ── Kitty Inkpot £3.00 (rare, small-batch) ───────────
+  if (brand.includes('kitty inkpot') || id.startsWith('kitty-inkpot')) return 3.00;
 
   // ── Tono & Lims £4.25 ─────────────────────────────────
   if (brand.includes('tono & lims') || brand.includes('lims') ||
