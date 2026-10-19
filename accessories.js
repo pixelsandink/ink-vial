@@ -84,9 +84,6 @@ const ACCESSORIES = [
       "MUJI High Quality Paper - smooth, horizontal ruling, vertical dots",
       "Yamamoto Bank Paper - 66.3gsm, cotton blend, watermarked"
     ],
-    images: [
-      "images/accessories/ink-vial-paper-discovery-set-1.jpg",
-      "images/accessories/ink-vial-paper-discovery-set-2.jpg"
-    ]
+    images: ["images/accessories/ink-vial-paper-discovery-set.jpg"]
   }
 ];
