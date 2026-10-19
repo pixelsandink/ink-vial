@@ -66,5 +66,24 @@ const ACCESSORIES = [
       "images/accessories/felicitys-attic-mini-dog-stamp-set-1.jpg",
       "images/accessories/felicitys-attic-mini-dog-stamp-set-2.jpg"
     ]
+  },
+  {
+    id: "ink-vial-paper-discovery-set",
+    brand: "Ink Vial",
+    name: "Paper Discovery Set",
+    price: 6.00,
+    tagline: "Eight papers. Find your favourite.",
+    description: "Eight sheets of popular fountain pen papers to compare colour, shading, sheen and feel with your inks. Each sheet is cut by hand to roughly A6, so edges vary a little and some keep their original notebook ruling or page numbers. A small erasable mark on the back of each sheet identifies the paper.",
+    includes: [
+      "Tomoe River Sanzen - 52gsm, white, lightweight",
+      "Maruman Mnemosyne - 80gsm, smooth writing paper",
+      "Rhodia Classic - 80gsm, white, smooth finish",
+      "Clairefontaine Triomphe - 90gsm, white, smooth finish",
+      "Midori MD - cream, a little feedback under the nib",
+      "Cosmo Air Light - 75gsm, white, 4mm grid",
+      "MUJI High Quality Paper - smooth, horizontal ruling, vertical dots",
+      "Yamamoto Bank Paper - 66.3gsm, cotton blend, watermarked"
+    ],
+    images: ["images/accessories/ink-vial-paper-discovery-set.jpg"]
   }
 ];

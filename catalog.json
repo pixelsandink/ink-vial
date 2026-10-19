@@ -2342,5 +2342,11 @@
     "brand": "Felicity's Attic",
     "price": 4.95,
     "type": "accessory"
+  },
+  "ink-vial-paper-discovery-set": {
+    "name": "Paper Discovery Set",
+    "brand": "Ink Vial",
+    "price": 6,
+    "type": "accessory"
   }
 }
