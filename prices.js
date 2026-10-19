@@ -69,10 +69,10 @@ function getInkPrice(ink) {
   // ── Robert Oster x The Coffee Monster Co. collab £4.00 ──
   if (id.includes('coffee-monster') || id.includes('murky-pond-water') || id.includes('day-to-night')) return 4.00;
 
-  // ── Taccia Ukiyoe £3.75 (some carry legacy 'sunaoiro' ids) ──
-  if (id.includes('taccia') && id.includes('ukiyoe')) return 3.75;
+  // ── Taccia Ukiyoe £2.50 (some carry legacy 'sunaoiro' ids) ──
+  if (id.includes('taccia') && id.includes('ukiyoe')) return 2.50;
   if (['taccia-sunaoiro-fukakihanada', 'taccia-sunaoiro-sabimidori', 'taccia-sunaoiro-koiai',
-       'taccia-sunaoiro-akasakura', 'taccia-sunaoiro-nakamurasaki'].indexOf(id) !== -1) return 3.75;
+       'taccia-sunaoiro-akasakura', 'taccia-sunaoiro-nakamurasaki'].indexOf(id) !== -1) return 2.50;
 
   // ── Sailor Mizutama £3.75 ─────────────────────────────
   if (id.includes('sailor-mizutama')) return 3.75;
@@ -108,8 +108,8 @@ function getInkPrice(ink) {
   if (brand.includes('j.herbin') || brand.includes('jherbin') ||
       id.startsWith('jherbin')) return 1.05;
 
-  // ── Taccia Sunaoiro £2.75 ─────────────────────────────
-  if (brand.includes('taccia')) return 2.75;
+  // ── Taccia Sunaoiro £2.25 ─────────────────────────────
+  if (brand.includes('taccia')) return 2.25;
 
   // ── Pentonote £2.50 ───────────────────────────────────
   if (brand.includes('pentonote')) return 2.50;
