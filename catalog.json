@@ -322,77 +322,77 @@
   "jherbin-vert-empire": {
     "name": "Vert Empire",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-gris-nuage": {
     "name": "Gris Nuage",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-cafe-des-iles": {
     "name": "Cafe des Iles",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-poussiere-de-lune": {
     "name": "Poussiere de Lune",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-rouille-dancre": {
     "name": "Rouille d'Ancre",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-cacao-du-bresil": {
     "name": "Cacao du Bresil",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-vert-de-gris": {
     "name": "Vert de Gris",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-rouge-opera": {
     "name": "Rouge Opera",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-vert-cactus": {
     "name": "Vert Cactus",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-corail-des-tropiques": {
     "name": "Corail des Tropiques",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-larmes-de-cassis": {
     "name": "Larmes de Cassis",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-bouquet-dantan": {
     "name": "Bouquet d'Antan",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-vert-olive": {
     "name": "Vert Olive",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-bleu-nuit": {
     "name": "Bleu Nuit",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-perle-noire": {
     "name": "Perle Noire",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-vert-atlantide": {
     "name": "Vert Atlantide",
@@ -422,12 +422,12 @@
   "jherbin-lie-de-the": {
     "name": "Lie De The",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "jherbin-rouge-grenat": {
     "name": "Rouge Grenat",
     "brand": "J.Herbin",
-    "price": 1.05
+    "price": 2.5
   },
   "kaweco-midnight-blue": {
     "name": "Midnight Blue",
@@ -1552,7 +1552,7 @@
   "first-fill": {
     "name": "First Fill",
     "brand": "Ink Vial",
-    "price": 6.5,
+    "price": 8.5,
     "components": [
       "kaweco-midnight-blue",
       "jherbin-perle-noire",

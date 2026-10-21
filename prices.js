@@ -104,9 +104,9 @@ function getInkPrice(ink) {
   // ── Robert Oster £2.75 ────────────────────────────────
   if (brand.includes('robert oster')) return 2.75;
 
-  // ── J.Herbin (standard) £1.05 ─────────────────────────
+  // ── J.Herbin (standard) £2.50 ─────────────────────────
   if (brand.includes('j.herbin') || brand.includes('jherbin') ||
-      id.startsWith('jherbin')) return 1.05;
+      id.startsWith('jherbin')) return 2.50;
 
   // ── Taccia Sunaoiro £2.25 ─────────────────────────────
   if (brand.includes('taccia')) return 2.25;
