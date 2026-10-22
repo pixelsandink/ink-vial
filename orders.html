@@ -38,6 +38,8 @@
   .ship-row button{background:var(--purple-dark);color:#fff;border:none;border-radius:8px;padding:10px 16px;font-weight:800;font-size:0.82rem;cursor:pointer;font-family:'Nunito',sans-serif;white-space:nowrap;}
   .ship-row button:hover{background:var(--purple-mid);}
   .ship-row button:disabled{opacity:.5;cursor:default;}
+  .ship-row button.quiet{background:none;color:var(--purple-dark);border:1.5px solid var(--lavender-light);}
+  .ship-row button.quiet:hover{background:var(--lavender-pale);}
   .shipped-info{font-size:0.82rem;color:var(--done);font-weight:700;margin-top:8px;}
   .shipped-info a{color:var(--purple-dark);}
   .resend{font-size:0.75rem;color:var(--muted);text-decoration:underline;cursor:pointer;background:none;border:none;margin-left:8px;}
@@ -82,7 +84,7 @@ function render(){
   if(hideShipped) list=list.filter(o=>!o.shipped);
   const toShip=orders.filter(o=>!o.shipped).length;
 
-  root.innerHTML='<h1>Orders</h1><p class="sub">'+orders.length+' total · '+toShip+' to ship · marking shipped emails the customer automatically</p>'
+  root.innerHTML='<h1>Orders</h1><p class="sub">'+orders.length+' total · '+toShip+' to ship · “Mark shipped & email” notifies the customer; “no email” just updates the status</p>'
     +'<div class="chips"><div class="chip"><b>'+orders.length+'</b>Total orders</div><div class="chip"><b style="color:var(--new)">'+toShip+'</b>To ship</div></div>'
     +'<label class="toggle"><input type="checkbox" id="hideShipped"'+(hideShipped?' checked':'')+' /> Hide shipped</label>'
     +'<div id="list"></div>';
@@ -99,32 +101,36 @@ function render(){
       +'<ul class="o-items">'+(o.items||[]).map(i=>'<li>'+esc(i)+'</li>').join('')+'</ul>';
     if(o.shipped){
       html+='<div class="shipped-info">✓ Shipped '+fmtDate(o.shippedAt)+(o.tracking?' · '+esc(o.tracking):'')
-        +'<button class="resend" data-s="'+esc(o.session)+'">resend email</button></div>';
+        +(o.emailed===false?' · not emailed':'')
+        +'<button class="resend" data-s="'+esc(o.session)+'">'+(o.emailed===false?'send email':'resend email')+'</button></div>';
     }else{
       html+='<div class="ship-row"><input type="text" placeholder="Tracking number (optional)" data-track="'+esc(o.session)+'" />'
-        +'<button data-ship="'+esc(o.session)+'">Mark shipped & email</button></div>';
+        +'<button data-ship="'+esc(o.session)+'">Mark shipped & email</button>'
+        +'<button class="quiet" data-ship-quiet="'+esc(o.session)+'">Mark shipped (no email)</button></div>';
     }
     wrap.appendChild(div); div.innerHTML=html;
   });
 
   document.getElementById('hideShipped').addEventListener('change',render);
   wrap.querySelectorAll('[data-ship]').forEach(b=>b.addEventListener('click',()=>ship(b.getAttribute('data-ship'),false)));
+  wrap.querySelectorAll('[data-ship-quiet]').forEach(b=>b.addEventListener('click',()=>ship(b.getAttribute('data-ship-quiet'),false,true)));
   wrap.querySelectorAll('.resend').forEach(b=>b.addEventListener('click',()=>ship(b.getAttribute('data-s'),true)));
 }
 
-async function ship(session, resend){
+async function ship(session, resend, noEmail){
   const order=orders.find(o=>o.session===session); if(!order)return;
   let url='/api/ship?key='+encodeURIComponent(KEY)+'&session='+encodeURIComponent(session);
   if(!resend){
     const t=(document.querySelector('[data-track="'+CSS.escape(session)+'"]')||{}).value||'';
     if(t.trim()) url+='&tracking='+encodeURIComponent(t.trim());
+    if(noEmail) url+='&noemail=1';
   } else { url+='&resend=1'; if(order.tracking) url+='&tracking='+encodeURIComponent(order.tracking); }
-  const btn=event&&event.target; if(btn){btn.disabled=true;btn.textContent='Sending…';}
+  const btn=event&&event.target, label=btn?btn.textContent:''; if(btn){btn.disabled=true;btn.textContent=noEmail?'Saving…':'Sending…';}
   try{
     const r=await fetch(url); const d=await r.json();
-    if(d.ok){ order.shipped=true; order.shippedAt=new Date().toISOString(); if(d.tracking)order.tracking=d.tracking; render(); }
-    else { alert(d.error||'Error'); if(btn){btn.disabled=false;btn.textContent='Mark shipped & email';} }
-  }catch(e){ alert('Failed: '+e.message); if(btn){btn.disabled=false;btn.textContent='Mark shipped & email';} }
+    if(d.ok){ order.shipped=true; order.shippedAt=new Date().toISOString(); if(d.tracking)order.tracking=d.tracking; if(!d.alreadyShipped)order.emailed=d.emailed; render(); }
+    else { alert(d.error||'Error'); if(btn){btn.disabled=false;btn.textContent=label;} }
+  }catch(e){ alert('Failed: '+e.message); if(btn){btn.disabled=false;btn.textContent=label;} }
 }
 load();
 </script>
