@@ -6,7 +6,7 @@
   <title>Ink Vial</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Pacifico&display=swap" rel="stylesheet" />
   <style>
     /* ── Snipcart brand overrides ── */
     :root {
@@ -25,16 +25,16 @@
       --color-link: #5c3a9a;
     }
     #snipcart .snipcart-modal__container { font-family: 'Nunito', sans-serif; }
-    #snipcart .snipcart__font--secondary { font-family: 'Playfair Display', serif; }
-    #snipcart .snipcart-checkout-step__title { font-family: 'Playfair Display', serif; }
+    #snipcart .snipcart__font--secondary { font-family: 'Pacifico', cursive; font-weight: 400; }
+    #snipcart .snipcart-checkout-step__title { font-family: 'Pacifico', cursive; font-weight: 400; }
     .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
-  .nav-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
+  .nav-brand{font-family:'Pacifico', cursive;font-size:1.35rem;font-weight:400;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
   @media(max-width:480px){.nav-brand{font-size:1.1rem;}}
   .nav-actions{display:flex;align-items:center;gap:10px;}
   .btn-suggest{display:inline-flex;align-items:center;gap:6px;padding:9px 15px;border-radius:8px;background:var(--lavender-pale);color:var(--purple-dark);font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;border:1px solid var(--lavender-light);transition:background .2s,transform .1s;white-space:nowrap;cursor:pointer;}
   .btn-suggest:hover{background:var(--lavender-light);transform:translateY(-1px);}
   @media(max-width:600px){.btn-suggest .lbl{display:none;}.btn-suggest{padding:9px 11px;}}
-  .footer-wordmark{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;font-weight:700;color:#f0e8d8;letter-spacing:0.01em;line-height:1;}
+  .footer-wordmark{font-family:'Pacifico', cursive;font-size:1.6rem;font-weight:400;color:#f0e8d8;letter-spacing:0.01em;line-height:1.35;}
 </style>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -105,7 +105,7 @@
     .zoom-lightbox.open { opacity: 1; visibility: visible; }
     .zoom-lightbox figure { max-width: 90vw; max-height: 90vh; display: flex; flex-direction: column; align-items: center; gap: 14px; }
     .zoom-lightbox img { max-width: 90vw; max-height: 78vh; border-radius: 14px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); object-fit: contain; }
-    .zoom-lightbox figcaption { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #f0e8d8; }
+    .zoom-lightbox figcaption { font-family: 'Pacifico', cursive; font-size: 1.1rem; font-weight: 400; color: #f0e8d8; }
     .zoom-close { position: absolute; top: 22px; right: 26px; width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #fff; font-size: 1.5rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
     .zoom-close:hover { background: rgba(255,255,255,0.28); }
     .swatch-shine { position: absolute; top: 5%; left: 5%; width: 22%; height: 60%; background: rgba(255,255,255,0.12); border-radius: 50%; filter: blur(12px); }
@@ -130,7 +130,7 @@
     .btn-add-basket.disabled, .btn-add-basket:disabled { background: var(--lavender-light); cursor: not-allowed; }
     .soldout-note { font-size: 0.82rem; color: var(--muted); margin-top: 10px; line-height: 1.6; }
     .soldout-note a { color: var(--purple-dark); font-weight: 700; }
-    .product-name { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 700; color: var(--purple-deep); line-height: 1.15; margin-bottom: 6px; }
+    .product-name { font-family: 'Pacifico', cursive; font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 400; color: var(--purple-deep); line-height: 1.35; margin-bottom: 10px; }
     .product-tagline { font-size: 0.95rem; color: var(--muted); margin-bottom: 20px; font-style: italic; font-family: 'Playfair Display', serif; }
     .product-props { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
     .prop-chip { display: flex; align-items: center; gap: 5px; padding: 5px 12px; border-radius: 20px; background: var(--lavender-pale); border: 1px solid var(--lavender-light); font-size: 0.75rem; font-weight: 700; color: var(--purple-dark); }
@@ -172,17 +172,17 @@
     /* TASTING NOTES */
     .tasting-section { padding: 64px 24px; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); position: relative; z-index: 1; }
     .tasting-inner { max-width: 1080px; margin: 0 auto; }
-    .tasting-inner h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 8px; }
+    .tasting-inner h2 { font-family: 'Pacifico', cursive; font-size: 1.5rem; font-weight: 400; color: var(--purple-deep); margin-bottom: 8px; }
     .tasting-inner > p { font-size: 0.9rem; color: var(--muted); margin-bottom: 36px; }
     .tasting-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
     .tasting-card { background: var(--bg); border-radius: var(--radius); padding: 20px; border: 1px solid var(--border); }
-    .tasting-card h4 { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 6px; }
+    .tasting-card h4 { font-family: 'Pacifico', cursive; font-size: 0.95rem; font-weight: 400; color: var(--purple-deep); margin-bottom: 6px; }
     .tasting-card p { font-size: 0.84rem; color: var(--muted); line-height: 1.65; }
 
     /* RELATED */
     .related-section { padding: 64px 24px 80px; position: relative; z-index: 1; }
     .related-inner { max-width: 1080px; margin: 0 auto; }
-    .related-inner h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 28px; }
+    .related-inner h2 { font-family: 'Pacifico', cursive; font-size: 1.5rem; font-weight: 400; color: var(--purple-deep); margin-bottom: 28px; }
     .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
     .ink-card-sm { background: var(--surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); box-shadow: 0 2px 10px rgba(140,100,210,0.06); transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; text-decoration: none; color: inherit; display: block; }
     .ink-card-sm:hover { transform: translateY(-3px); box-shadow: 0 6px 24px rgba(140,100,210,0.13); }
@@ -191,12 +191,12 @@
     .swatch-sm-shine { position: absolute; top: 5px; left: 8px; width: 18px; height: 32px; background: rgba(255,255,255,0.15); border-radius: 9px; transform: rotate(-15deg); }
     .card-sm-body { padding: 12px 14px 14px; }
     .card-sm-brand { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
-    .card-sm-name { font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 8px; }
+    .card-sm-name { font-family: 'Pacifico', cursive; font-size: 0.9rem; font-weight: 400; color: var(--purple-deep); margin-bottom: 8px; }
     .card-sm-price { font-size: 0.82rem; font-weight: 700; color: var(--purple-dark); }
 
     /* NOT FOUND */
     .not-found { text-align: center; padding: 120px 24px; position: relative; z-index: 1; }
-    .not-found h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--purple-deep); margin-bottom: 12px; }
+    .not-found h2 { font-family: 'Pacifico', cursive; font-weight: 400; font-size: 2rem; color: var(--purple-deep); margin-bottom: 12px; }
     .not-found p { color: var(--muted); margin-bottom: 24px; }
 
     /* FOOTER */

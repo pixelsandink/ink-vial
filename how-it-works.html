@@ -6,7 +6,7 @@
   <title>How It Works - Ink Vial</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Pacifico&display=swap" rel="stylesheet" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     :root{--bg:#faf3e8;--surface:#ffffff;--purple-deep:#3d2458;--purple-dark:#5c3a9a;--purple-mid:#8b68cc;--lavender:#b09ad8;--lavender-light:#d4c4ee;--lavender-pale:#ede6f8;--pink:#f5a0b0;--text:#3d2458;--muted:rgba(61,36,88,0.50);--border:rgba(176,154,216,0.25);--radius-sm:8px;--radius:14px;--radius-lg:20px;}
@@ -27,14 +27,14 @@
     .btn-primary:hover{background:var(--purple-mid);transform:translateY(-1px);}
     /* HERO */
     .hero{background:linear-gradient(135deg,var(--purple-deep) 0%,var(--purple-dark) 60%,var(--purple-mid) 100%);color:white;text-align:center;padding:72px 24px 60px;position:relative;z-index:1;}
-    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;margin-bottom:12px;}
+    .hero h1{font-family:'Pacifico', cursive;font-size:clamp(2rem,5vw,3.2rem);font-weight:400;margin-bottom:12px;}
     .hero p{opacity:0.88;font-size:1.05rem;max-width:540px;margin:0 auto;}
     /* STEPS */
     .steps-section{padding:80px 24px;position:relative;z-index:1;}
     .steps-inner{max-width:1100px;margin:0 auto;}
     .section-header{text-align:center;margin-bottom:64px;}
     .section-tag{font-size:0.72rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:var(--purple-mid);margin-bottom:12px;}
-    .section-header h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;color:var(--purple-deep);margin-bottom:10px;}
+    .section-header h2{font-family:'Pacifico', cursive;font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;color:var(--purple-deep);margin-bottom:10px;}
     .section-header p{font-size:0.95rem;color:var(--muted);max-width:500px;margin:0 auto;}
     .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;position:relative;}
     .steps::before{content:'';position:absolute;top:38px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--lavender-pale),var(--lavender),var(--lavender-pale));border-radius:2px;z-index:0;}
@@ -43,24 +43,24 @@
     .step:hover .step-num{transform:scale(1.08);box-shadow:0 8px 28px rgba(140,100,210,0.20);}
     .step-num svg{width:28px;height:28px;stroke:var(--purple-dark);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
     .step-label{font-size:0.68rem;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:var(--purple-mid);margin-bottom:8px;}
-    .step h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--purple-deep);margin-bottom:8px;}
+    .step h3{font-family:'Pacifico', cursive;font-size:1.1rem;font-weight:400;color:var(--purple-deep);margin-bottom:8px;}
     .step p{font-size:0.86rem;color:var(--muted);line-height:1.7;}
     /* WHY */
     .why-section{padding:80px 24px;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);position:relative;z-index:1;}
     .why-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
-    .why-text h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:700;color:var(--purple-deep);margin-bottom:20px;}
+    .why-text h2{font-family:'Pacifico', cursive;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:400;color:var(--purple-deep);margin-bottom:20px;}
     .why-text h2 em{font-style:italic;color:var(--purple-dark);}
     .why-text p{font-size:0.95rem;color:var(--muted);line-height:1.82;margin-bottom:16px;}
     .why-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
     .why-card{background:var(--bg);border-radius:var(--radius);padding:20px;border:1px solid var(--border);}
     .why-card-icon{font-size:1.4rem;margin-bottom:8px;}
-    .why-card h4{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;color:var(--purple-deep);margin-bottom:6px;}
+    .why-card h4{font-family:'Pacifico', cursive;font-size:0.95rem;font-weight:400;color:var(--purple-deep);margin-bottom:6px;}
     .why-card p{font-size:0.82rem;color:var(--muted);line-height:1.6;}
     /* VIALS */
     .vials-section{padding:80px 24px;position:relative;z-index:1;}
     .vials-inner{max-width:1100px;margin:0 auto;}
     .vials-grid{max-width:720px;margin:0 auto;}
-    .vials-text h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:700;color:var(--purple-deep);margin-bottom:20px;}
+    .vials-text h2{font-family:'Pacifico', cursive;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:400;color:var(--purple-deep);margin-bottom:20px;}
     .vials-text p{font-size:0.95rem;color:var(--muted);line-height:1.82;margin-bottom:16px;}
     .feature-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
     .chip{padding:6px 14px;border-radius:20px;background:var(--lavender-pale);border:1px solid var(--lavender-light);font-size:0.78rem;font-weight:700;color:var(--purple-dark);}
@@ -84,7 +84,7 @@
     .price-card.featured .price-brands{color:rgba(255,255,255,0.60);}
     /* CTA */
     .cta{padding:72px 24px;text-align:center;position:relative;z-index:1;}
-    .cta h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:700;color:var(--purple-deep);margin-bottom:12px;}
+    .cta h2{font-family:'Pacifico', cursive;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:400;color:var(--purple-deep);margin-bottom:12px;}
     .cta p{font-size:1rem;color:var(--muted);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;}
     .cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
     .btn-outline{display:inline-flex;padding:11px 24px;border:1.5px solid var(--purple-dark);color:var(--purple-dark);font-family:'Nunito',sans-serif;font-size:0.85rem;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;border-radius:var(--radius-sm);text-decoration:none;transition:all 0.2s;}
@@ -101,13 +101,13 @@
     @media(max-width:768px){.steps{grid-template-columns:1fr 1fr;}.steps::before{display:none;}.why-inner{grid-template-columns:1fr;gap:40px;}.pricing-grid{grid-template-columns:1fr 1fr;}.nav-links{display:none;}.footer-inner{grid-template-columns:1fr 1fr;}}
     @media(max-width:480px){.pricing-grid,.why-cards{grid-template-columns:1fr;}.footer-inner{grid-template-columns:1fr;}}
     .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
-  .nav-brand{font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
+  .nav-brand{font-family:'Pacifico', cursive;font-size:1.35rem;font-weight:400;color:var(--purple-dark);letter-spacing:0.01em;white-space:nowrap;}
   @media(max-width:480px){.nav-brand{font-size:1.1rem;}}
   .nav-actions{display:flex;align-items:center;gap:10px;}
   .btn-suggest{display:inline-flex;align-items:center;gap:6px;padding:9px 15px;border-radius:8px;background:var(--lavender-pale);color:var(--purple-dark);font-family:'Nunito',sans-serif;font-size:0.76rem;font-weight:800;letter-spacing:0.04em;text-transform:uppercase;text-decoration:none;border:1px solid var(--lavender-light);transition:background .2s,transform .1s;white-space:nowrap;cursor:pointer;}
   .btn-suggest:hover{background:var(--lavender-light);transform:translateY(-1px);}
   @media(max-width:600px){.btn-suggest .lbl{display:none;}.btn-suggest{padding:9px 11px;}}
-  .footer-wordmark{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;font-weight:700;color:#f0e8d8;letter-spacing:0.01em;line-height:1;}
+  .footer-wordmark{font-family:'Pacifico', cursive;font-size:1.6rem;font-weight:400;color:#f0e8d8;letter-spacing:0.01em;line-height:1.35;}
 </style>
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };

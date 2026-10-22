@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Pacifico&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -48,7 +48,7 @@
     .nav { position: sticky; top: 0; z-index: 100; background: rgba(250,243,232,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
     .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 24px; position: relative; }
     .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .nav-brand { font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; font-weight: 700; color: var(--purple-dark); letter-spacing: 0.01em; white-space: nowrap; }
+    .nav-brand { font-family: 'Pacifico', cursive; font-size: 1.35rem; font-weight: 400; color: var(--purple-dark); letter-spacing: 0.01em; white-space: nowrap; }
     .nav-links { display: flex; gap: 32px; list-style: none; }
     .nav-links a { font-size: 0.85rem; font-weight: 700; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
     .nav-links a:hover, .nav-links a.active { color: var(--purple-dark); }
@@ -74,7 +74,7 @@
     /* NEW INKS CAROUSEL */
     .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin: 44px 0 16px; }
     .section-kicker { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--purple-mid); margin-bottom: 4px; }
-    .section-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.7rem, 4vw, 2.3rem); font-weight: 700; color: var(--purple-dark); line-height: 1.15; }
+    .section-title { font-family: 'Pacifico', cursive; font-size: clamp(1.7rem, 4vw, 2.3rem); font-weight: 400; color: var(--purple-dark); line-height: 1.35; }
     .section-sub { color: var(--muted); font-size: 0.92rem; margin-top: 4px; }
     .car-nav { display: flex; gap: 8px; flex-shrink: 0; }
     .car-btn { width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid var(--lavender-light); background: var(--surface); color: var(--purple-dark); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s, border-color 0.2s, opacity 0.2s; }
@@ -93,7 +93,7 @@
     .card-new { position: absolute; top: 10px; left: 10px; background: var(--purple-dark); color: #fff; font-size: 0.6rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; box-shadow: 0 3px 10px rgba(92,58,154,0.3); }
     .card-body { padding: 12px 13px 13px; display: flex; flex-direction: column; flex: 1; }
     .card-brand { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
-    .card-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--purple-deep); margin-bottom: 8px; line-height: 1.25; flex: 1; }
+    .card-name { font-family: 'Pacifico', cursive; font-size: 0.95rem; font-weight: 400; color: var(--purple-deep); margin-bottom: 8px; line-height: 1.35; flex: 1; }
     .card-foot { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
     .card-price { font-size: 0.88rem; font-weight: 800; color: var(--purple-dark); }
     .card-price small { font-size: 0.62rem; font-weight: 600; color: var(--muted); }
@@ -103,14 +103,14 @@
     .card-stat.low { color: #c08a1a; } .card-stat.low::before { background: #d49a2a; }
     .car-more { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; padding: 24px; background: var(--lavender-pale); border: 1.5px dashed var(--lavender-light); border-radius: var(--radius); color: var(--purple-dark); text-decoration: none; font-weight: 800; font-size: 0.9rem; transition: background 0.2s; }
     .car-more:hover { background: var(--lavender-light); }
-    .car-more span { font-family: 'Playfair Display', serif; font-size: 1.15rem; }
+    .car-more span { font-family: 'Pacifico', cursive; font-weight: 400; font-size: 1.15rem; }
 
     /* INDIVIDUAL / DISCOVERY PACKS TILES */
     .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 34px 0 80px; }
     .tile { position: relative; display: flex; flex-direction: column; min-height: 280px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 30px 28px 28px; text-decoration: none; color: var(--text); box-shadow: 0 2px 14px rgba(140,100,210,0.07); transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; }
     .tile:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(140,100,210,0.15); }
     .tile-kicker { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--purple-mid); margin-bottom: 6px; }
-    .tile-title { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(1.5rem, 2.6vw, 1.9rem); font-weight: 700; color: var(--purple-deep); line-height: 1.15; }
+    .tile-title { font-family: 'Pacifico', cursive; font-size: clamp(1.5rem, 2.6vw, 1.9rem); font-weight: 400; color: var(--purple-deep); line-height: 1.35; }
     .tile-text { color: var(--muted); font-size: 0.95rem; margin: 10px 0 24px; flex: 1; max-width: 440px; }
     .tile .btn-primary { align-self: flex-start; }
 
@@ -118,7 +118,7 @@
     footer { background: #2a1840; padding: 48px 24px 32px; color: rgba(240,232,216,0.55); position: relative; z-index: 1; }
     .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
     .footer-brand { display: flex; flex-direction: column; gap: 12px; }
-    .footer-wordmark { font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; font-weight: 700; color: #f0e8d8; letter-spacing: 0.01em; line-height: 1; }
+    .footer-wordmark { font-family: 'Pacifico', cursive; font-size: 1.6rem; font-weight: 400; color: #f0e8d8; letter-spacing: 0.01em; line-height: 1.35; }
     .footer-tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 0.85rem; color: rgba(240,232,216,0.38); }
     .footer-col h4 { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(240,232,216,0.32); margin-bottom: 16px; }
     .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
