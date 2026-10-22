@@ -1,6 +1,6 @@
-// Mark an order as shipped and email the customer. Protected by ADMIN_KEY.
+// Mark an order as shipped and (unless noemail=1) email the customer. Protected by ADMIN_KEY.
 //   /api/ship?key=ADMIN_KEY&session=cs_...&tracking=AB123456789GB
-//   (tracking is optional)
+//   (tracking is optional; add &noemail=1 to mark shipped without emailing)
 
 const redis = require('./_redis');
 const { sendEmail, shippedEmail } = require('./_email');
@@ -18,6 +18,7 @@ module.exports = async (req, res) => {
   const session = (q.session || '').toString();
   const tracking = (q.tracking || '').toString().trim().slice(0, 60);
   const resend = q.resend === '1';
+  const noEmail = q.noemail === '1';
   if (!session) return res.status(400).json({ error: 'Missing order session.' });
 
   try {
@@ -36,7 +37,7 @@ module.exports = async (req, res) => {
     });
 
     let emailed = false;
-    if (order.email) {
+    if (order.email && !noEmail) {
       const e = shippedEmail({ name: order.name, lines, tracking: tracking || order.tracking });
       emailed = await sendEmail({ to: order.email, subject: e.subject, html: e.html, text: e.text, replyTo: TO });
     }
@@ -44,6 +45,7 @@ module.exports = async (req, res) => {
     order.shipped = true;
     order.shippedAt = new Date().toISOString();
     if (tracking) order.tracking = tracking;
+    order.emailed = emailed;
     await redis.cmd(['HSET', 'inkvial:orderbook', session, JSON.stringify(order)]);
 
     return res.status(200).json({ ok: true, emailed, tracking: order.tracking || '' });
