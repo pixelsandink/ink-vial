@@ -28,8 +28,8 @@ module.exports = async (req, res) => {
   const stripe = new Stripe(key);
 
   try {
-    let { items } = req.body || {};
-    if (typeof req.body === 'string') { items = (JSON.parse(req.body) || {}).items; }
+    let { items, code } = req.body || {};
+    if (typeof req.body === 'string') { ({ items, code } = JSON.parse(req.body) || {}); }
     if (!Array.isArray(items) || !items.length) {
       return res.status(400).json({ error: 'Your basket is empty.' });
     }
@@ -106,7 +106,23 @@ module.exports = async (req, res) => {
       try { await redis.set('order:' + token, JSON.stringify(orderItems), 172800); } catch (e) {}
     }
 
-    const freeShip = subtotalPence >= FREE_SHIP_OVER * 100;
+    // Gift certificate / promo code typed into the basket. Stripe stays the source
+    // of truth (validity, expiry, one-time use); a code whose promotion code or
+    // coupon has metadata free_shipping=true also zeroes the postage.
+    let promo = null;
+    code = (code || '').toString().trim().slice(0, 50);
+    if (code) {
+      const found = await stripe.promotionCodes.list({ code, active: true, limit: 1, expand: ['data.coupon'] });
+      promo = found.data[0];
+      const used = promo && promo.max_redemptions && promo.times_redeemed >= promo.max_redemptions;
+      if (!promo || used || !promo.coupon.valid) {
+        return res.status(400).json({ error: 'Sorry, that code isn\'t valid or has already been used.' });
+      }
+    }
+    const isTrue = v => String(v || '').toLowerCase() === 'true';
+    const giftShip = !!promo && (isTrue(promo.metadata.free_shipping) || isTrue(promo.coupon.metadata.free_shipping));
+
+    const freeShip = giftShip || subtotalPence >= FREE_SHIP_OVER * 100;
     const shipPence = freeShip ? 0
       : (vials <= SMALL_ORDER_VIALS ? SHIPPING_PENCE : SHIPPING_LARGE_PENCE);
 
@@ -115,7 +131,9 @@ module.exports = async (req, res) => {
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
       line_items: checkoutLineItems,
-      allow_promotion_codes: true,
+      // Stripe won't take both: a code from the basket is applied up front,
+      // otherwise customers can still type one on the Stripe page.
+      ...(promo ? { discounts: [{ promotion_code: promo.id }] } : { allow_promotion_codes: true }),
       phone_number_collection: { enabled: false },
       shipping_address_collection: { allowed_countries: ['GB'] },
       shipping_options: [{
