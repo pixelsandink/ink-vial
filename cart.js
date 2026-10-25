@@ -20,6 +20,7 @@
   inks.forEach(i => { inkById[i.id] = i; });
 
   let cart = load();
+  let giftCode = '';   // typed into the basket, kept across re-renders
 
   function load() {
     try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
@@ -88,6 +89,8 @@
     .iv-ship-fill{height:100%;background:linear-gradient(90deg,#b09ad8,#8b68cc);border-radius:3px;transition:width .35s ease;}
     .iv-empty-btn{width:100%;margin-top:10px;padding:8px;background:none;border:none;cursor:pointer;font-family:'Nunito',sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:rgba(61,36,88,0.4);}
     .iv-empty-btn:hover{color:#c0405a;}
+    .iv-gift{width:100%;margin:4px 0 10px;padding:10px 12px;border:1.5px solid #e2d8f2;border-radius:9px;font-family:'Nunito',sans-serif;font-size:.85rem;color:#3d2458;background:#fff;outline:none;}
+    .iv-gift:focus{border-color:#8b68cc;}
     .iv-checkout{width:100%;padding:15px;background:#5c3a9a;color:#fff;border:none;border-radius:9px;font-family:'Nunito',sans-serif;font-size:.92rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:background .2s,transform .1s;}
     .iv-checkout:hover{background:#8b68cc;transform:translateY(-1px);}
     .iv-checkout:disabled{background:#c4b0e4;cursor:not-allowed;transform:none;}
@@ -180,9 +183,13 @@
       <div class="iv-row"><span>Subtotal (${itemCount()} item${itemCount()!==1?'s':''})</span><span>${money(sub)}</span></div>
       <div class="iv-row"><span>Royal Mail Tracked 48</span><span>${freeShip ? '<strong style="color:#2d7a3a">FREE</strong>' : money(ship)}</span></div>
       <div class="iv-row total"><span>Total</span><span>${money(total)}</span></div>
+      <input class="iv-gift" id="iv-gift" type="text" placeholder="Gift certificate or promo code" autocomplete="off" />
       <button class="iv-checkout" id="iv-checkout">Checkout - ${money(total)}</button>
       <button class="iv-empty-btn" id="iv-empty">Empty basket</button>
     `;
+    const gift = foot.querySelector('#iv-gift');
+    gift.value = giftCode;
+    gift.addEventListener('input', () => { giftCode = gift.value; });
     foot.querySelector('#iv-checkout').addEventListener('click', checkout);
     foot.querySelector('#iv-empty').addEventListener('click', () => {
       cart = []; save(); render(); updateBadges();
@@ -249,7 +256,7 @@
         res = await fetch('/api/create-checkout-session', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ items: cart.map(i => ({ id: i.id, qty: i.qty })) })
+          body: JSON.stringify({ items: cart.map(i => ({ id: i.id, qty: i.qty })), code: giftCode.trim() })
         });
       } catch (netErr) {
         // No endpoint reachable at all (e.g. running locally): email the order
