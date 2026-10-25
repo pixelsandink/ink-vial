@@ -71,6 +71,29 @@
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     .home-wrap { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
+    /* SEARCH */
+    .home-search { position: relative; margin: 36px 0 0; }
+    .home-search form { position: relative; }
+    .home-search svg.mag { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; stroke: var(--purple-mid); fill: none; stroke-width: 2.2; stroke-linecap: round; pointer-events: none; }
+    .home-search input { width: 100%; padding: 17px 130px 17px 52px; border: 1.5px solid var(--lavender-light); border-radius: 999px; background: var(--surface); font-family: 'Nunito', sans-serif; font-size: 1rem; color: var(--text); outline: none; box-shadow: 0 6px 24px rgba(92,58,154,0.08); transition: border-color 0.2s, box-shadow 0.2s; }
+    .home-search input:focus { border-color: var(--purple-mid); box-shadow: 0 6px 28px rgba(92,58,154,0.16); }
+    .home-search input::placeholder { color: var(--muted); }
+    .home-search button { position: absolute; right: 7px; top: 50%; transform: translateY(-50%); background: var(--purple-dark); color: #fff; border: none; border-radius: 999px; padding: 11px 22px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; }
+    .home-search button:hover { background: var(--purple-mid); }
+    .search-results { position: absolute; left: 0; right: 0; top: calc(100% + 8px); z-index: 20; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 14px 40px rgba(61,36,88,0.16); padding: 6px; display: none; }
+    .search-results.open { display: block; }
+    .sr-item { display: flex; align-items: center; gap: 12px; padding: 8px 10px; border-radius: var(--radius-sm); text-decoration: none; color: var(--text); }
+    .sr-item:hover, .sr-item.active { background: var(--lavender-pale); }
+    .sr-swatch { width: 40px; height: 40px; border-radius: 8px; flex-shrink: 0; overflow: hidden; }
+    .sr-swatch img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .sr-text { flex: 1; min-width: 0; }
+    .sr-brand { font-size: 0.66rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+    .sr-name { font-family: 'Pacifico', cursive; font-size: 1rem; color: var(--purple-deep); line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sr-price { font-weight: 800; font-size: 0.85rem; color: var(--purple-dark); }
+    .sr-all { display: block; text-align: center; padding: 10px; margin-top: 4px; border-top: 1px solid var(--border); font-weight: 800; font-size: 0.82rem; color: var(--purple-dark); text-decoration: none; }
+    .sr-all:hover { color: var(--purple-mid); }
+    .sr-none { padding: 14px; text-align: center; color: var(--muted); font-size: 0.9rem; }
+
     /* NEW INKS CAROUSEL */
     .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; margin: 44px 0 16px; }
     .section-kicker { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--purple-mid); margin-bottom: 4px; }
@@ -153,6 +176,9 @@
       .nav-actions .btn-primary { padding: 9px 12px; font-size: 0.72rem; letter-spacing: 0.02em; white-space: nowrap; }
       .home-wrap { padding: 0 16px; }
       .section-head { margin-top: 32px; }
+      .home-search { margin-top: 24px; }
+      .home-search input { padding: 15px 16px 15px 48px; }
+      .home-search button { display: none; }
     }
   </style>
 <script>
@@ -201,6 +227,16 @@
 
 <main class="home-wrap">
   <h1 class="sr-only">Ink Vial - fountain pen ink samples</h1>
+
+  <div class="home-search" role="search">
+    <form action="shop" method="get" id="home-search-form">
+      <svg class="mag" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <label for="home-search" class="sr-only">Search inks</label>
+      <input type="search" id="home-search" name="q" placeholder="Search 400+ inks by name or brand…" autocomplete="off" aria-controls="search-results" aria-expanded="false" />
+      <button type="submit">Search</button>
+    </form>
+    <div class="search-results" id="search-results"></div>
+  </div>
 
   <section aria-labelledby="new-inks-title">
     <div class="section-head">
@@ -267,6 +303,53 @@
 <script src="inks.js?v=7"></script>
 <script src="prices.js?v=5"></script>
 <script src="cart.js?v=2"></script>
+<script>
+  // ── Home search: live suggestions, Enter opens the shop filtered ──
+  (function () {
+    var input = document.getElementById('home-search');
+    var box = document.getElementById('search-results');
+    var MAX = 6, active = -1;
+    function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); }
+    // Same matching as the shop's search box (name or brand), so "see all" agrees
+    function matches(q) {
+      q = q.toLowerCase();
+      return INKS.filter(function (i) { return i.name.toLowerCase().includes(q) || i.brand.toLowerCase().includes(q); });
+    }
+    function close() { box.classList.remove('open'); input.setAttribute('aria-expanded', 'false'); active = -1; }
+    function render() {
+      var q = input.value.trim();
+      if (!q) { close(); return; }
+      var all = matches(q);
+      if (!all.length) {
+        box.innerHTML = '<div class="sr-none">No inks match \u201c' + esc(q) + '\u201d</div>';
+      } else {
+        box.innerHTML = all.slice(0, MAX).map(function (ink) {
+          return '<a class="sr-item" href="product?id=' + ink.id + '">' +
+            '<span class="sr-swatch" style="background:linear-gradient(160deg,' + ink.colorPrimary + ',' + ink.colorDark + ')">' +
+              (ink.image ? '<img src="' + ink.image + '" alt="" loading="lazy" />' : '') + '</span>' +
+            '<span class="sr-text"><span class="sr-brand">' + esc(ink.brand) + '</span><span class="sr-name" style="display:block">' + esc(ink.name) + '</span></span>' +
+            '<span class="sr-price">\u00a3' + getInkPrice(ink).toFixed(2) + '</span></a>';
+        }).join('') +
+        '<a class="sr-all" href="shop?q=' + encodeURIComponent(q) + '">See all ' + all.length + ' result' + (all.length !== 1 ? 's' : '') + ' in the shop &rarr;</a>';
+      }
+      box.classList.add('open'); input.setAttribute('aria-expanded', 'true'); active = -1;
+    }
+    input.addEventListener('input', render);
+    input.addEventListener('focus', render);
+    input.addEventListener('keydown', function (e) {
+      var items = box.querySelectorAll('.sr-item');
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        if (!items.length) return;
+        e.preventDefault();
+        active = (active + (e.key === 'ArrowDown' ? 1 : -1) + items.length) % items.length;
+        items.forEach(function (el, i) { el.classList.toggle('active', i === active); });
+      } else if (e.key === 'Enter' && active >= 0 && items[active]) {
+        e.preventDefault(); location.href = items[active].href;
+      } else if (e.key === 'Escape') { close(); }
+    });
+    document.addEventListener('click', function (e) { if (!e.target.closest('.home-search')) close(); });
+  })();
+</script>
 <script>
   // ── New inks carousel ──────────────────────────────────
   (function () {

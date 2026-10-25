@@ -528,6 +528,10 @@
     });
   });
 
+  // ?q=... (from the home page search) opens the shop with that search filled in
+  const qParam = new URLSearchParams(location.search).get('q');
+  if (qParam) { document.getElementById('search').value = qParam; activeSearch = qParam; }
+
   // ?feature=shimmer etc. opens the shop with that feature selected
   const featureParam = new URLSearchParams(location.search).get('feature');
   const featureBtn = featureParam && document.querySelector(`#feature-filters .pill[data-feature="${CSS.escape(featureParam)}"]`);
