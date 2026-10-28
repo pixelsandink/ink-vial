@@ -38,6 +38,14 @@ function getInkPrice(ink) {
   // ── Diamine 7 Deadly Sins (Cult Pens exclusive, £10 per 50ml) £1.00 ──
   if (id.startsWith('diamine-7-sinners')) return 1.00;
 
+  // ── Diamine special editions: priced for at least 45% on their dearer bottles ──
+  // 160th Anniversary (£10.50 per 75ml) 60p; Inkvent 50ml: Cashmere Rose (£9.50) 75p,
+  // Lavender Frost (£13) £1.00, Raise a Glass (£14.50) £1.10
+  if (['diamine-tariff-teal', 'diamine-canalside', 'diamine-rosewood'].indexOf(id) !== -1) return 0.60;
+  if (id === 'diamine-cashmere-rose') return 0.75;
+  if (id === 'diamine-lavender-frost') return 1.00;
+  if (id === 'diamine-raise-a-glass') return 1.10;
+
   // ── Diamine: shimmer 60p, everything else 50p ─────────
   if (brand === 'diamine') return ink.shimmer === true ? 0.60 : 0.50;
 

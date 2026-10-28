@@ -147,12 +147,12 @@
   "diamine-tariff-teal": {
     "name": "Tariff Teal",
     "brand": "Diamine",
-    "price": 0.5
+    "price": 0.6
   },
   "diamine-canalside": {
     "name": "Canalside",
     "brand": "Diamine",
-    "price": 0.5
+    "price": 0.6
   },
   "diamine-lady-grey": {
     "name": "Lady Grey",
@@ -172,17 +172,17 @@
   "diamine-cashmere-rose": {
     "name": "Cashmere Rose",
     "brand": "Diamine",
-    "price": 0.5
+    "price": 0.75
   },
   "diamine-rosewood": {
     "name": "Rosewood",
     "brand": "Diamine",
-    "price": 0.5
+    "price": 0.6
   },
   "diamine-raise-a-glass": {
     "name": "Raise a Glass",
     "brand": "Diamine",
-    "price": 0.6
+    "price": 1.1
   },
   "diamine-oh-betty": {
     "name": "Oh Betty",
@@ -197,7 +197,7 @@
   "diamine-lavender-frost": {
     "name": "Lavender Frost",
     "brand": "Diamine",
-    "price": 0.6
+    "price": 1
   },
   "diamine-toe-in-the-ocean": {
     "name": "Toe in the Ocean",
