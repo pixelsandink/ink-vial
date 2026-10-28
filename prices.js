@@ -32,8 +32,11 @@ function getInkPrice(ink) {
   // ── Platinum Carbon Black £2.00 ───────────────────────
   if (brand.includes('platinum')) return 2.00;
 
-  // ── Cult Pens x Diamine exclusives 75p ────────────────
-  if (brand.includes('cult pens')) return 0.75;
+  // ── Cult Pens x Diamine exclusives: Autumn Tones shimmer (50ml) £1.00, others 75p ──
+  if (brand.includes('cult pens')) return ink.shimmer === true ? 1.00 : 0.75;
+
+  // ── Diamine 7 Deadly Sins (Cult Pens exclusive, £10 per 50ml) £1.00 ──
+  if (id.startsWith('diamine-7-sinners')) return 1.00;
 
   // ── Diamine: shimmer 60p, everything else 50p ─────────
   if (brand === 'diamine') return ink.shimmer === true ? 0.60 : 0.50;

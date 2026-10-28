@@ -112,37 +112,37 @@
   "diamine-7-sinners-lust": {
     "name": "7 Sinners Lust",
     "brand": "Diamine",
-    "price": 0.5
+    "price": 1
   },
   "diamine-7-sinners-wrath": {
     "name": "7 Sinners Wrath",
     "brand": "Diamine",
-    "price": 0.5
+    "price": 1
   },
   "diamine-7-sinners-greed": {
     "name": "7 Sinners Greed",
     "brand": "Diamine",
-    "price": 0.6
+    "price": 1
   },
   "diamine-7-sinners-sloth": {
     "name": "7 Sinners Sloth",
     "brand": "Diamine",
-    "price": 0.5
+    "price": 1
   },
   "diamine-7-sinners-gluttony": {
     "name": "7 Sinners Gluttony",
     "brand": "Diamine",
-    "price": 0.6
+    "price": 1
   },
   "diamine-7-sinners-envy": {
     "name": "7 Sinners Envy",
     "brand": "Diamine",
-    "price": 0.6
+    "price": 1
   },
   "diamine-7-sinners-pride": {
     "name": "7 Sinners Pride",
     "brand": "Diamine",
-    "price": 0.6
+    "price": 1
   },
   "diamine-tariff-teal": {
     "name": "Tariff Teal",
@@ -1736,7 +1736,7 @@
   "diamine-7-deadly-sins": {
     "name": "Diamine 7 Deadly Sins",
     "brand": "Ink Vial",
-    "price": 3.5,
+    "price": 6,
     "components": [
       "diamine-7-sinners-envy",
       "diamine-7-sinners-gluttony",
@@ -1772,17 +1772,17 @@
   "cult-pens-diamine-maple-leaf": {
     "name": "Maple Leaf",
     "brand": "Cult Pens x Diamine",
-    "price": 0.75
+    "price": 1
   },
   "cult-pens-diamine-muddy-puddle": {
     "name": "Muddy Puddle",
     "brand": "Cult Pens x Diamine",
-    "price": 0.75
+    "price": 1
   },
   "cult-pens-diamine-murky-bucket": {
     "name": "Murky Bucket",
     "brand": "Cult Pens x Diamine",
-    "price": 0.75
+    "price": 1
   },
   "de-atramentis-archival-black": {
     "name": "Archival Black",
