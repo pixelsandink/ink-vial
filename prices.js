@@ -45,6 +45,9 @@ function getInkPrice(ink) {
   if (id === 'diamine-cashmere-rose') return 0.75;
   if (id === 'diamine-lavender-frost') return 1.00;
   if (id === 'diamine-raise-a-glass') return 1.10;
+  // Oh Betty (Art From The Heart's "Ooh Bet-Tea", £10.99 per 80ml) 65p; Blue Monday (£10 per 50ml) 90p
+  if (id === 'diamine-oh-betty') return 0.65;
+  if (id === 'diamine-blue-monday') return 0.90;
 
   // ── Diamine: shimmer 60p, everything else 50p ─────────
   if (brand === 'diamine') return ink.shimmer === true ? 0.60 : 0.50;
