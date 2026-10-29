@@ -50,6 +50,9 @@
   .top td.n,.top th.n{text-align:right;font-variant-numeric:tabular-nums;}
   .top .rank{color:var(--muted);width:2.2em;}
   .top .note{font-size:0.78rem;color:var(--muted);margin-bottom:12px;}
+  .exports{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:0 0 18px;font-size:0.8rem;font-weight:700;color:var(--muted);}
+  .exports button{background:var(--surface);color:var(--purple-dark);border:1.5px solid var(--lavender-light);border-radius:8px;padding:8px 12px;font-weight:800;font-size:0.8rem;cursor:pointer;font-family:'Nunito',sans-serif;}
+  .exports button:hover{background:var(--lavender-pale);}
   .resend{font-size:0.75rem;color:var(--muted);text-decoration:underline;cursor:pointer;background:none;border:none;margin-left:8px;}
   .gate{max-width:380px;margin:60px auto;text-align:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px;}
   .gate input{width:100%;margin:14px 0;border:1.5px solid var(--lavender-light);border-radius:8px;padding:10px;font-family:'Nunito',sans-serif;}
@@ -79,22 +82,59 @@ function go(){const v=document.getElementById('k').value.trim();if(v)location.se
 let CATALOG={}, topOpen=false;
 fetch('/catalog.json').then(r=>r.json()).then(c=>{CATALOG=c; if(orders.length) render();}).catch(()=>{});
 
-// Units sold per ink across every order. Order lines are stored as
-// "2 x Brand Name"; a pack counts once for each ink inside it, and
-// accessories are left out.
-function topSellers(n){
+// Split an order into what was actually sent. Order lines are stored as
+// "2 x Brand Name"; a pack becomes one line per ink inside it, and
+// accessories are kept but marked so they can be left out of vial counts.
+function orderLines(o){
   const byLabel={};
   for(const id in CATALOG){ const c=CATALOG[id]; byLabel[(c.brand?c.brand+' ':'')+c.name]=c; }
-  const label=id=>{ const c=CATALOG[id]; return c ? (c.brand?c.brand+' ':'')+c.name : id; };
+  const out=[];
+  (o.items||[]).forEach(s=>{
+    const m=String(s).match(/^(\d+)\s*[x×]\s*(.+)$/i); const qty=m?parseInt(m[1]):1; const label=(m?m[2]:String(s)).trim();
+    const c=byLabel[label];
+    if(c && c.components) c.components.forEach(id=>{ const k=CATALOG[id]||{};
+      out.push({label:(k.brand?k.brand+' ':'')+(k.name||id),brand:k.brand||'',name:k.name||id,qty,pack:c.name,accessory:false}); });
+    else out.push({label,brand:c?c.brand:'',name:c?c.name:label,qty,pack:'',accessory:!!(c&&c.type==='accessory')});
+  });
+  return out;
+}
+
+// Units sold per ink across every order; packs count once for each ink
+// inside them, and accessories are left out.
+function topSellers(n){
   const tally={};
-  const add=(name,qty,orderNo)=>{ const t=tally[name]=tally[name]||{name,qty:0,orders:new Set()}; t.qty+=qty; t.orders.add(orderNo); };
-  orders.forEach((o,orderNo)=>(o.items||[]).forEach(s=>{
-    const m=String(s).match(/^(\d+)\s*[x×]\s*(.+)$/i); const qty=m?parseInt(m[1]):1; const name=(m?m[2]:String(s)).trim();
-    const c=byLabel[name];
-    if(c && c.components) c.components.forEach(id=>add(label(id),qty,orderNo));
-    else if(!(c && c.type==='accessory')) add(name,qty,orderNo);
-  }));
+  orders.forEach((o,orderNo)=>orderLines(o).forEach(l=>{ if(l.accessory) return;
+    const t=tally[l.label]=tally[l.label]||{name:l.label,qty:0,orders:new Set()}; t.qty+=l.qty; t.orders.add(orderNo); }));
   return Object.values(tally).sort((a,b)=>b.qty-a.qty||b.orders.size-a.orders.size||a.name.localeCompare(b.name)).slice(0,n);
+}
+
+// ── CSV exports ──────────────────────────────────────────
+const isoDay=iso=>String(iso||'').slice(0,10), isoMonth=iso=>String(iso||'').slice(0,7);
+const vialsIn=o=>orderLines(o).reduce((n,l)=>n+(l.accessory?0:l.qty),0);
+function download(name,rows){
+  const cell=v=>{ const s=String(v==null?'':v); return /[",\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s; };
+  const blob=new Blob(['﻿'+rows.map(r=>r.map(cell).join(',')).join('\r\n')],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name+'-'+isoDay(new Date().toISOString())+'.csv';
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+function exportOrders(){
+  download('ink-vial-orders',[['Date','Order','Customer','Email','Ship to','Total','Vials','Items','Shipped','Shipped on','Tracking']]
+    .concat(orders.map(o=>[isoDay(o.at),o.session,o.name,o.email,o.ship,o.amount,vialsIn(o),(o.items||[]).join('; '),
+      o.shipped?'Yes':'No',isoDay(o.shippedAt),o.tracking])));
+}
+function exportItems(){
+  const rows=[['Date','Month','Order','Brand','Ink','Vials','From pack','Type']];
+  orders.forEach(o=>orderLines(o).forEach(l=>rows.push([isoDay(o.at),isoMonth(o.at),o.session,l.brand,l.name,l.qty,l.pack,
+    l.accessory?'Accessory':(l.pack?'Pack ink':'Ink')])));
+  download('ink-vial-items-sold',rows);
+}
+function exportBrands(){
+  const t={};
+  orders.forEach(o=>{ const mo=isoMonth(o.at); const seen=new Set();
+    orderLines(o).forEach(l=>{ if(l.accessory) return; const b=l.brand||'(unknown)'; const k=mo+'|'+b;
+      const r=t[k]=t[k]||{mo,b,v:0,o:0}; r.v+=l.qty; if(!seen.has(k)){seen.add(k);r.o++;} }); });
+  const rows=Object.values(t).sort((x,y)=>x.mo.localeCompare(y.mo)||y.v-x.v);
+  download('ink-vial-vials-by-brand',[['Month','Brand','Vials','Orders']].concat(rows.map(r=>[r.mo,r.b,r.v,r.o])));
 }
 
 async function load(){
@@ -116,6 +156,7 @@ function render(){
 
   root.innerHTML='<h1>Orders</h1><p class="sub">'+orders.length+' total · '+toShip+' to ship · “Mark shipped & email” notifies the customer; “no email” just updates the status</p>'
     +'<div class="chips"><div class="chip"><b>'+orders.length+'</b>Total orders</div><div class="chip"><b style="color:var(--new)">'+toShip+'</b>To ship</div></div>'
+    +(orders.length?'<div class="exports"><span>Export (CSV):</span><button id="exOrders">All orders</button><button id="exItems">Everything sold</button><button id="exBrands">Vials by brand &amp; month</button></div>':'')
     +(()=>{ const top=topSellers(20); if(!top.length) return '';
         return '<details class="top"'+(topOpen?' open':'')+'><summary>Top 20 inks sold</summary>'
           +'<p class="note">Vials sold across all '+orders.length+' orders. Packs count towards each ink inside them; accessories are left out.</p>'
@@ -148,6 +189,7 @@ function render(){
   });
 
   document.getElementById('hideShipped').addEventListener('change',render);
+  [['exOrders',exportOrders],['exItems',exportItems],['exBrands',exportBrands]].forEach(([id,fn])=>{ const b=document.getElementById(id); if(b) b.addEventListener('click',fn); });
   const topEl=document.querySelector('.top'); if(topEl) topEl.addEventListener('toggle',()=>{topOpen=topEl.open;});
   wrap.querySelectorAll('[data-ship]').forEach(b=>b.addEventListener('click',()=>ship(b.getAttribute('data-ship'),false)));
   wrap.querySelectorAll('[data-ship-quiet]').forEach(b=>b.addEventListener('click',()=>ship(b.getAttribute('data-ship-quiet'),false,true)));
