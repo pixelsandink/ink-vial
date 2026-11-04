@@ -110,8 +110,8 @@ function getInkPrice(ink) {
   // ── Vinta £3.00 ───────────────────────────────────────
   if (brand.includes('vinta')) return 3.00;
 
-  // ── Octopus Fluids £3.00 ──────────────────────────────
-  if (brand.includes('octopus')) return 3.00;
+  // ── Octopus Fluids £2.00 ──────────────────────────────
+  if (brand.includes('octopus')) return 2.00;
 
   // ── Birmingham Pen Company £3.00 ──────────────────────
   if (brand.includes('birmingham')) return 3.00;
