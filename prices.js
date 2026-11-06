@@ -58,9 +58,9 @@ function getInkPrice(ink) {
   // ── Kitty Inkpot £3.00 (rare, small-batch) ───────────
   if (brand.includes('kitty inkpot') || id.startsWith('kitty-inkpot')) return 3.00;
 
-  // ── Tono & Lims £3.75 ─────────────────────────────────
+  // ── Tono & Lims £2.50 (AFTH £18.99 per 30ml) ──────────
   if (brand.includes('tono & lims') || brand.includes('lims') ||
-      id.startsWith('tono-lims') || id.startsWith('tono-and-lims')) return 3.75;
+      id.startsWith('tono-lims') || id.startsWith('tono-and-lims')) return 2.50;
 
   // ── J.Herbin 1670 / 350 Anniversary (shimmer) £4.00 ───
   if ((id.includes('jherbin') || brand.includes('j.herbin') || brand.includes('jherbin')) &&
