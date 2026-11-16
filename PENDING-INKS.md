@@ -54,6 +54,26 @@ Vials per bottle use the usual rule of about 0.4 vials per ml.
 | Dominant Industry Dusk, Dawn | 25ml | +10 each |
 | Sailor Shikiori Yozakura | 20ml | +8 |
 
+## Art From The Heart order (November 2026)
+
+New inks waiting for swatches. Art From The Heart lists the Teranishi inks as
+"Taccia Ink - Taisho Roman Hikara (Guitar)". They're the same Guitar Taisho Roman
+Haikara range as the 9 Teranishi inks already on the shop, so they go under
+**Teranishi**. Prices follow the existing brand prices in `prices.js`. The cost
+per bottle hasn't been recorded yet, so margins are still to check.
+
+Vials per bottle use the usual rule of about 0.4 vials per ml.
+
+| Ink | Bottle | Vials | Price per 2ml | Status |
+|---|---|---|---|---|
+| Teranishi Taisho Roman Haikara: Lady Emerald | 40ml | ~16 | **£2.25** | Pending: swatch |
+| Teranishi Taisho Roman Haikara: Modern Red | 40ml | ~16 | **£2.25** | Pending: swatch |
+| Teranishi Taisho Roman Haikara: Salon de Violet | 40ml | ~16 | **£2.25** | Pending: swatch |
+| Lennon Tool Bar Magic Fortune Teller Shop: #808 Good Spirits | 30ml | ~12 | **£3.00** | Pending: swatch |
+| Lennon Tool Bar Taiwan Tea #1: Sun Moon Lake Ruby Black Tea | 30ml | ~12 | **£3.00** | Pending: swatch |
+
+The same order had a Sailor Hocoro dip pen nib (Fine). It isn't an ink, so it's not listed here.
+
 ## Nagasawa Kobe order (November 2026)
 
 Order cost £231.00: £192.00 for 11 bottles plus £39.00 shipping. Shipping is
