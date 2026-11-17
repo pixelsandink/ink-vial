@@ -81,6 +81,7 @@
     .pk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 22px; }
 
     .pk-card { position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px 22px 20px; box-shadow: 0 2px 14px rgba(140,100,210,0.07); transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; }
+    .pk-card[hidden] { display: none; }
     .pk-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(140,100,210,0.15); }
     .pk-flag { position: absolute; top: -11px; left: 20px; background: var(--purple-dark); color: #fff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; box-shadow: 0 3px 10px rgba(92,58,154,0.35); }
     .pk-flag + .pk-name { margin-top: 8px; }
@@ -213,7 +214,7 @@
 <div class="hero">
   <h1 class="hero-word">Discovery Packs</h1>
   <p class="hero-tag">Curated sets of 2ml samples, freshly filled to order</p>
-  <p class="lede">Ready-made sets to make choosing easy - start with a gateway set of well-behaved colours, or try a complete collection from Laban, Wearingeul, Diamine, Robert Oster or Pilot.</p>
+  <p class="lede">Ready-made sets to make choosing easy - start with a gateway set of well-behaved colours, or try a complete collection from Wearingeul, Diamine, Robert Oster or Pilot.</p>
   <a class="browse-link" href="shop">Or browse all 400+ inks individually &rarr;</a>
 </div>
 
@@ -279,7 +280,8 @@
           disabled
         >Checking availability&hellip;</button>
       </article>
-      <article class="pk-card" data-pack-id="gods-and-goddesses">
+      <!-- Laban pack hidden while Laban stock is low; remove "hidden" to bring it back -->
+      <article class="pk-card" data-pack-id="gods-and-goddesses" hidden>
 
         <h3 class="pk-name">Laban Greek Mythology</h3>
         <p class="pk-story">The full Laban pantheon - all ten gods and goddesses in one set, from Aphrodite's pink to Poseidon's sea green.</p>
@@ -496,7 +498,7 @@
     const grid = document.getElementById('pk-modal-grid');
     const addBtn = document.getElementById('pk-modal-add');
     const inkById = {};
-    INKS.forEach(i => { inkById[i.id] = i; });
+    ALL_INKS.forEach(i => { inkById[i.id] = i; });
     const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     let catalog = null, card = null, lastFocus = null;
 
@@ -508,7 +510,7 @@
       document.getElementById('pk-modal-kicker').textContent = inks.length + ' vials in this pack';
       document.getElementById('pk-modal-title').textContent = c.querySelector('.pk-name').textContent;
       grid.innerHTML = inks.map(ink => `
-        <a class="pk-ink" href="product?id=${ink.id}">
+        <a class="pk-ink"${ink.hidden ? '' : ` href="product?id=${ink.id}"`}>
           <img src="${ink.image}" alt="${esc(ink.brand + ' ' + ink.name)} swatch" loading="lazy" />
           <span class="pk-ink-body">
             <span class="pk-ink-brand">${esc(ink.brand)}</span>

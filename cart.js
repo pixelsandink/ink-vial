@@ -15,7 +15,7 @@
   const FREE_SHIP_OVER = 40;   // free UK shipping once subtotal reaches this
   const EMAIL = 'hello@inkvial.co.uk';
 
-  const inks = (typeof INKS !== 'undefined') ? INKS : [];
+  const inks = (typeof ALL_INKS !== 'undefined') ? ALL_INKS : (typeof INKS !== 'undefined') ? INKS : [];
   const inkById = {};
   inks.forEach(i => { inkById[i.id] = i; });
 

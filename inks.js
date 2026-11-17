@@ -1,4 +1,6 @@
-const INKS = [
+// Inks with "hidden": true stay in ALL_INKS (so old baskets, pack pop-ups and
+// direct links keep working) but are left out of INKS, which the shop lists.
+const ALL_INKS = [
   {
     "id": "birmingham-iron-ore",
     "brand": "The Birmingham Pen Company",
@@ -4734,6 +4736,7 @@ const INKS = [
   },
   {
     "id": "laban-aphrodite-pink",
+    "hidden": true,
     "image": "images/laban-aphrodite-pink.jpg",
     "brand": "Laban",
     "name": "Aphrodite Pink",
@@ -4768,6 +4771,7 @@ const INKS = [
   },
   {
     "id": "laban-hera-green",
+    "hidden": true,
     "image": "images/laban-hera-green.jpg",
     "brand": "Laban",
     "name": "Hera Green",
@@ -4802,6 +4806,7 @@ const INKS = [
   },
   {
     "id": "laban-artemis-navy",
+    "hidden": true,
     "sheen": true,
     "image": "images/laban-artemis-navy.jpg",
     "brand": "Laban",
@@ -4837,6 +4842,7 @@ const INKS = [
   },
   {
     "id": "laban-athena-grey",
+    "hidden": true,
     "image": "images/laban-athena-grey.jpg",
     "brand": "Laban",
     "name": "Athena Grey",
@@ -4871,6 +4877,7 @@ const INKS = [
   },
   {
     "id": "laban-apollo-orange",
+    "hidden": true,
     "brand": "Laban",
     "name": "Apollo Orange",
     "colours": ["Orange"],
@@ -4905,6 +4912,7 @@ const INKS = [
   },
   {
     "id": "laban-demeter-brown",
+    "hidden": true,
     "brand": "Laban",
     "name": "Demeter Brown",
     "colours": ["Brown", "Green"],
@@ -4939,6 +4947,7 @@ const INKS = [
   },
   {
     "id": "laban-hermes-sky-blue",
+    "hidden": true,
     "brand": "Laban",
     "name": "Hermes Sky Blue",
     "colours": ["Blue"],
@@ -4973,6 +4982,7 @@ const INKS = [
   },
   {
     "id": "laban-ares-red",
+    "hidden": true,
     "brand": "Laban",
     "name": "Ares Red",
     "colours": ["Red"],
@@ -5007,6 +5017,7 @@ const INKS = [
   },
   {
     "id": "laban-zeus-purple",
+    "hidden": true,
     "sheen": true,
     "brand": "Laban",
     "name": "Zeus Purple",
@@ -5042,6 +5053,7 @@ const INKS = [
   },
   {
     "id": "laban-poseidon-green",
+    "hidden": true,
     "brand": "Laban",
     "name": "Poseidon Green",
     "added": "2026-10-17",
@@ -15241,3 +15253,5 @@ const INKS = [
     "stock": 16
   }
 ];
+
+const INKS = ALL_INKS.filter(i => !i.hidden);
