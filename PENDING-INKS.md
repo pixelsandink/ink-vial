@@ -77,22 +77,23 @@ The same order had a Sailor Hocoro dip pen nib (Fine). It isn't an ink, so it's 
 ## Nagasawa Kobe order (November 2026)
 
 Order cost £285.08: £192.00 for 11 bottles, £39.00 shipping, plus an extra £54.08
-(added 17 November 2026). Shipping and the extra charge are split evenly, about
-£8.46 per bottle.
+(added 17 November 2026). Shipping is split evenly over all 11 bottles (about £3.55
+each). The extra £54.08 is split over the 7 new-ink bottles only (about £7.73 each);
+the chocolate restocks don't carry it.
 
 Kobe INK Monogatari bottles are 50ml, so about 22 vials each (see `STOCK-SETUP.md`).
 The vial-and-label cost below is an estimate of 20p a vial.
 
 | Ink | Bottles | Bottle price | Landed cost per bottle | Ink cost per vial | Price per 2ml | Margin* | Status |
 |---|---|---|---|---|---|---|---|
-| #1 Rokko Green | 1 | £16.00 | £24.46 | £1.11 | **£3.25** | ~60% | Pending: new ink |
-| #18 Sannomiya Pansy | 1 | £16.00 | £24.46 | £1.11 | **£3.25** | ~60% | Pending: new ink |
-| #62 Nunobiki Lavender | 1 | £16.00 | £24.46 | £1.11 | **£3.25** | ~60% | Pending: new ink |
-| Special colour: Yuhobika Blue | 1 | £18.00 | £26.46 | £1.20 | **£3.25** | ~57% | Pending: new ink |
-| Special colour: Akane-gumo "Anohi-no-yuuyake" | 1 | £18.00 | £26.46 | £1.20 | **£3.25** | ~57% | Pending: new ink |
-| Special colour: "Chinbotsu-sen Wine Sauce" | 2 | £18.00 | £26.46 | £1.20 | **£3.25** | ~57% | Pending: new ink |
-| Felissimo Chocolate Museum: Milk Chocolate | 2 | £18.00 | £26.46 | £1.20 | £3.25 (already listed) | ~57% | Pending: restock (+44 vials) |
-| Felissimo Chocolate Museum: Strawberry Chocolate | 2 | £18.00 | £26.46 | £1.20 | £3.25 (already listed) | ~57% | Pending: restock (+44 vials) |
+| #1 Rokko Green | 1 | £16.00 | £27.27 | £1.24 | **£3.25** | ~56% | Pending: new ink |
+| #18 Sannomiya Pansy | 1 | £16.00 | £27.27 | £1.24 | **£3.25** | ~56% | Pending: new ink |
+| #62 Nunobiki Lavender | 1 | £16.00 | £27.27 | £1.24 | **£3.25** | ~56% | Pending: new ink |
+| Special colour: Yuhobika Blue | 1 | £18.00 | £29.27 | £1.33 | **£3.25** | ~53% | Pending: new ink |
+| Special colour: Akane-gumo "Anohi-no-yuuyake" | 1 | £18.00 | £29.27 | £1.33 | **£3.25** | ~53% | Pending: new ink |
+| Special colour: "Chinbotsu-sen Wine Sauce" | 2 | £18.00 | £29.27 | £1.33 | **£3.25** | ~53% | Pending: new ink |
+| Felissimo Chocolate Museum: Milk Chocolate | 2 | £18.00 | £21.55 | £0.98 | £3.25 (already listed) | ~64% | Pending: restock (+44 vials) |
+| Felissimo Chocolate Museum: Strawberry Chocolate | 2 | £18.00 | £21.55 | £0.98 | £3.25 (already listed) | ~64% | Pending: restock (+44 vials) |
 
 \* Margin = (price − ink cost − 20p vial and label) ÷ price, before Stripe fees and postage.
 
