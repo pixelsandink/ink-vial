@@ -24,6 +24,27 @@ file so nothing else needs to change.
 | Diamine 7 Deadly Sins Sloth | `images/diamine-7-sinners-sloth.jpg` | Pending: new swatch |
 | Diamine 7 Deadly Sins Wrath | `images/diamine-7-sinners-wrath.jpg` | Pending: new swatch |
 
+Other names fixed on 19 November 2026. Ids and image filenames stay the same here too.
+The first three have the wrong words on the swatch, so they need redoing. The rest only
+differ by an accent, an apostrophe or the brand spelling, so redo them when convenient.
+
+| Ink | Was | Image file | Status |
+|---|---|---|---|
+| Lennon Tool Bar Firmament | Firament | `images/lennon-tool-bar-firament.jpg` | Pending: new swatch |
+| Diamine A Toe in the Ocean | Toe in the Ocean | `images/diamine-toe-in-the-ocean.jpg` | Pending: new swatch |
+| Diamine Great Wall of China | The Great Wall of China | `images/diamine-the-great-wall-of-china.jpg` | Pending: new swatch |
+| Robert Oster Caffè Crema | Caffe Crema | `images/robert-oster-caffe-crema.jpg` | Optional: accent missing |
+| J.Herbin Poussière de Lune | Poussiere de Lune | `images/jherbin-poussiere-de-lune.jpg` | Optional: accent missing |
+| J.Herbin Rouge Opéra | Rouge Opera | `images/jherbin-rouge-opera.jpg` | Optional: accent missing |
+| J.Herbin Lie de Thé | Lie De The | `images/jherbin-lie-de-the.jpg` | Optional: accent missing |
+| Shanghai Stationery (all 8 inks) | Shanghai Stationary | `images/shanghai-stationary-*.jpg` | Optional: brand spelt "Stationary" |
+
+Sinner's Blood, Sinner's Heart, Café des Îles and Cacao du Brésil were renamed too,
+but their swatches already had the right spelling.
+
+Still to check: Colorverse "And". The swatch looks like "A And", so the name may be
+cut short. Check the bottle before changing it.
+
 ## Cult Pens order (November 2026)
 
 Agreed 7 November 2026. Prices and margins use what was paid after the 15% Cult Pens

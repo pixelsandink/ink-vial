@@ -195,12 +195,12 @@
     "price": 1
   },
   "diamine-toe-in-the-ocean": {
-    "name": "Toe in the Ocean",
+    "name": "A Toe in the Ocean",
     "brand": "Diamine",
     "price": 0.5
   },
   "diamine-the-great-wall-of-china": {
-    "name": "The Great Wall of China",
+    "name": "Great Wall of China",
     "brand": "Diamine",
     "price": 0.5
   },
@@ -320,12 +320,12 @@
     "price": 2.5
   },
   "jherbin-cafe-des-iles": {
-    "name": "Cafe des Iles",
+    "name": "Café des Îles",
     "brand": "J.Herbin",
     "price": 2.5
   },
   "jherbin-poussiere-de-lune": {
-    "name": "Poussiere de Lune",
+    "name": "Poussière de Lune",
     "brand": "J.Herbin",
     "price": 2.5
   },
@@ -335,7 +335,7 @@
     "price": 2.5
   },
   "jherbin-cacao-du-bresil": {
-    "name": "Cacao du Bresil",
+    "name": "Cacao du Brésil",
     "brand": "J.Herbin",
     "price": 2.5
   },
@@ -345,7 +345,7 @@
     "price": 2.5
   },
   "jherbin-rouge-opera": {
-    "name": "Rouge Opera",
+    "name": "Rouge Opéra",
     "brand": "J.Herbin",
     "price": 2.5
   },
@@ -410,7 +410,7 @@
     "price": 4
   },
   "jherbin-lie-de-the": {
-    "name": "Lie De The",
+    "name": "Lie de Thé",
     "brand": "J.Herbin",
     "price": 2.5
   },
@@ -585,7 +585,7 @@
     "price": 3
   },
   "lennon-tool-bar-firament": {
-    "name": "Firament",
+    "name": "Firmament",
     "brand": "Lennon Tool Bar",
     "price": 3
   },
@@ -725,7 +725,7 @@
     "price": 2.75
   },
   "robert-oster-caffe-crema": {
-    "name": "Caffe Crema",
+    "name": "Caffè Crema",
     "brand": "Robert Oster",
     "price": 2.75
   },
@@ -750,12 +750,12 @@
     "price": 2.75
   },
   "robert-oster-sinners-blood": {
-    "name": "Sinners Blood",
+    "name": "Sinner's Blood",
     "brand": "Robert Oster",
     "price": 2.75
   },
   "robert-oster-sinners-heart": {
-    "name": "Sinners Heart",
+    "name": "Sinner's Heart",
     "brand": "Robert Oster",
     "price": 2.75
   },
@@ -2146,42 +2146,42 @@
   },
   "shanghai-stationary-fireworks": {
     "name": "Fireworks",
-    "brand": "Shanghai Stationary",
+    "brand": "Shanghai Stationery",
     "price": 2.5
   },
   "shanghai-stationary-gui-zu": {
     "name": "Gui Zu",
-    "brand": "Shanghai Stationary",
+    "brand": "Shanghai Stationery",
     "price": 2.5
   },
   "shanghai-stationary-imperial-post": {
     "name": "Imperial Post",
-    "brand": "Shanghai Stationary",
+    "brand": "Shanghai Stationery",
     "price": 2.5
   },
   "shanghai-stationary-meadow-in-the-sun": {
     "name": "Meadow in the Sun",
-    "brand": "Shanghai Stationary",
+    "brand": "Shanghai Stationery",
     "price": 2.5
   },
   "shanghai-stationary-mudan": {
     "name": "Mudan",
-    "brand": "Shanghai Stationary",
+    "brand": "Shanghai Stationery",
     "price": 2.5
   },
   "shanghai-stationary-sky-in-the-pond-at-rice-terrace": {
     "name": "Sky in the Pond at Rice Terrace",
-    "brand": "Shanghai Stationary",
+    "brand": "Shanghai Stationery",
     "price": 2.5
   },
   "shanghai-stationary-white-cedar": {
     "name": "White Cedar",
-    "brand": "Shanghai Stationary",
+    "brand": "Shanghai Stationery",
     "price": 2.5
   },
   "shanghai-stationary-youlu": {
     "name": "Youlu",
-    "brand": "Shanghai Stationary",
+    "brand": "Shanghai Stationery",
     "price": 2.5
   },
   "teranishi-antique-black": {

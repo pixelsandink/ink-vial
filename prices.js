@@ -23,8 +23,8 @@ function getInkPrice(ink) {
   // ── Kolour Cafe (Arcus Artisan Inks) £3.25 ────────────
   if (brand.includes('kolour cafe')) return 3.25;
 
-  // ── Shanghai Stationary £2.50 ─────────────────────────
-  if (brand.includes('shanghai stationary')) return 2.50;
+  // ── Shanghai Stationery £2.50 ─────────────────────────
+  if (brand.includes('shanghai stationery')) return 2.50;
 
   // ── Teranishi Taisho Roman Haikara £2.25 ──────────────
   if (brand.includes('teranishi')) return 2.25;

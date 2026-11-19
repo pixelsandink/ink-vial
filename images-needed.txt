@@ -6,7 +6,7 @@ Diamine (2):
 
 J.Herbin (3):
   [ ] Vert Cactus
-  [ ] Lie De The
+  [ ] Lie de Thé
   [ ] Rouge Grenat
 
 KWZ Ink (5):
