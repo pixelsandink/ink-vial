@@ -4,6 +4,26 @@ Bottles that are bought but not yet on the website. When a bottle arrives,
 add it to the shop (`inks.js`, `catalog.json`, `stock-seed.json`, plus an image)
 and move it off this list.
 
+## Swatches to redo
+
+The Diamine 7 Deadly Sins inks were listed as "7 Sinners" by mistake. The names on
+the shop were fixed on 19 November 2026, but the swatch photos still have
+"7 Sinners" handwritten on them. Each one needs a new swatch.
+
+The ids and image filenames still say `diamine-7-sinners-*`. That's on purpose:
+stock counts, carts and past orders use the ids. Save each new swatch over the old
+file so nothing else needs to change.
+
+| Ink | Image file | Status |
+|---|---|---|
+| Diamine 7 Deadly Sins Envy | `images/diamine-7-sinners-envy.jpg` | Pending: new swatch |
+| Diamine 7 Deadly Sins Gluttony | `images/diamine-7-sinners-gluttony.jpg` | Pending: new swatch |
+| Diamine 7 Deadly Sins Greed | `images/diamine-7-sinners-greed.jpg` | Pending: new swatch |
+| Diamine 7 Deadly Sins Lust | `images/diamine-7-sinners-lust.jpg` | Pending: new swatch |
+| Diamine 7 Deadly Sins Pride | `images/diamine-7-sinners-pride.jpg` | Pending: new swatch |
+| Diamine 7 Deadly Sins Sloth | `images/diamine-7-sinners-sloth.jpg` | Pending: new swatch |
+| Diamine 7 Deadly Sins Wrath | `images/diamine-7-sinners-wrath.jpg` | Pending: new swatch |
+
 ## Cult Pens order (November 2026)
 
 Agreed 7 November 2026. Prices and margins use what was paid after the 15% Cult Pens
