@@ -29,11 +29,6 @@
     "brand": "The Birmingham Pen Company",
     "price": 3
   },
-  "birmingham-washed-lavender": {
-    "name": "Washed Lavender",
-    "brand": "The Birmingham Pen Company",
-    "price": 3
-  },
   "birmingham-firebox": {
     "name": "Firebox",
     "brand": "The Birmingham Pen Company",
@@ -266,11 +261,6 @@
   },
   "ferris-wheel-press-oyster-hour": {
     "name": "Oyster Hour",
-    "brand": "Ferris Wheel Press",
-    "price": 2.5
-  },
-  "ferris-wheel-press-dancing-thyme": {
-    "name": "Dancing Thyme",
     "brand": "Ferris Wheel Press",
     "price": 2.5
   },

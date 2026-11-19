@@ -204,40 +204,6 @@ const INKS = [
     "stock": 20
   },
   {
-    "id": "birmingham-washed-lavender",
-    "brand": "The Birmingham Pen Company",
-    "name": "Washed Lavender",
-    "colours": ["Purple"],
-    "colorPrimary": "#9a8abf",
-    "colorDark": "#7a6a9a",
-    "tagline": "A soft lavender-violet, gently faded.",
-    "description": "Washed Lavender is a soft, slightly muted violet - like lavender that has been through the wash a few times. Gentle and calming, with nice shading. Made in small batches by Birmingham Pen Co. in Pittsburgh, whose inks are named after people, places and stories from their home city.",
-    "properties": {
-      "shading": 3,
-      "sheen": 0,
-      "dryTime": "Fast (5–10 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Well-lubricated",
-      "bestOn": "Cream or white paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Soft lavender-violet with gentle shading."
-      },
-      {
-        "title": "On textured paper",
-        "body": "A little greyer and quieter on textured paper."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Medium and broad nibs give the richest colour."
-      }
-    ],
-    "image": "images/birmingham-washed-lavender.jpg",
-    "stock": 19
-  },
-  {
     "id": "birmingham-firebox",
     "brand": "The Birmingham Pen Company",
     "name": "Firebox",
@@ -2726,40 +2692,6 @@ const INKS = [
       }
     ],
     "image": "images/ferris-wheel-press-oyster-hour.jpg",
-    "stock": 15
-  },
-  {
-    "id": "ferris-wheel-press-dancing-thyme",
-    "brand": "Ferris Wheel Press",
-    "name": "Dancing Thyme",
-    "colours": ["Green", "Teal"],
-    "colorPrimary": "#5a8a5a",
-    "colorDark": "#3a6a3a",
-    "tagline": "A serene, earthy thyme green.",
-    "description": "Dancing Thyme is from Ferris Wheel Press's Southern Charm collection, with a New Orleans jazz theme - a muted, earthy sage-thyme green. Ferris Wheel Press is a stationery company from Ontario, Canada.",
-    "properties": {
-      "shading": 3,
-      "sheen": 0,
-      "dryTime": "Medium (10–20 sec)",
-      "waterResistance": "Low",
-      "lubrication": "Very well-lubricated",
-      "bestOn": "White or cream paper"
-    },
-    "tastingNotes": [
-      {
-        "title": "On smooth paper",
-        "body": "Muted sage green with gentle shading."
-      },
-      {
-        "title": "On textured paper",
-        "body": "Earthier on textured paper."
-      },
-      {
-        "title": "Nib behaviour",
-        "body": "Comfortable in any nib."
-      }
-    ],
-    "image": "images/ferris-wheel-press-dancing-thyme.jpg",
     "stock": 15
   },
   {
