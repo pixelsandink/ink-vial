@@ -92,8 +92,8 @@ function getInkPrice(ink) {
   // ── Sailor Mizutama £3.75 ─────────────────────────────
   if (id.includes('sailor-mizutama')) return 3.75;
 
-  // ── Sailor Ink Studio £3.50 ───────────────────────────
-  if (id.includes('sailor-studio')) return 3.50;
+  // ── Sailor Ink Studio £2.75 ───────────────────────────
+  if (id.includes('sailor-studio')) return 2.75;
 
   // ── Sailor Shikiori £2.50 (ids keep the legacy 'shikori' spelling) ─────────────────────────────
   if (id.includes('sailor-shikori')) return 2.50;
