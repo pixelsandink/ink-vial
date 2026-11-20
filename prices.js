@@ -52,8 +52,8 @@ function getInkPrice(ink) {
   // ── Diamine: shimmer 60p, everything else 50p ─────────
   if (brand === 'diamine') return ink.shimmer === true ? 0.60 : 0.50;
 
-  // ── TAG Kyo-No-Oto £4.50 ──────────────────────────────
-  if (brand.includes('tag') && brand.includes('kyo')) return 4.50;
+  // ── TAG Kyo-No-Oto £3.50 (Cult Pens £24 per 40ml) ─────
+  if (brand.includes('tag') && brand.includes('kyo')) return 3.50;
 
   // ── Kitty Inkpot £3.00 (rare, small-batch) ───────────
   if (brand.includes('kitty inkpot') || id.startsWith('kitty-inkpot')) return 3.00;
