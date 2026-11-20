@@ -31,3 +31,6 @@ shimmer-sheen-sources.md
 
 # Print artwork (not for the website)
 print/
+
+# Python
+__pycache__/
