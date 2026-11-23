@@ -9,7 +9,7 @@ and move it off this list.
 Agreed 7 November 2026. Prices and margins use what was paid after the 15% Cult Pens
 discount. The new inks wait for swatch photos before they go on the shop.
 
-### New inks, waiting for swatches (21)
+### New inks, waiting for swatches (28)
 
 | Ink | Bottle (Cult Pens) | Price per 2ml | Margin | Status |
 |---|---|---|---|---|
@@ -34,10 +34,23 @@ discount. The new inks wait for swatch photos before they go on the shop.
 | J.Herbin Pebble Grey | £10.50 / 30ml | **£2.50** | ~74% | Pending: swatch |
 | J.Herbin Terre de Feu | £10.50 / 30ml | **£2.50** | ~74% | Pending: swatch |
 | Dominant Industry Midnight (Cult Pens limited edition) | £14.00 / 25ml | **£2.00** | ~49% | Pending: swatch |
+| Kaweco Ruby Red | £9.50 / 50ml | **£2.00** | ~70% | Pending: swatch |
+| Kaweco Summer Purple | £9.50 / 50ml | **£2.00** | ~70% | Pending: swatch |
+| Kaweco Sunrise Orange | £9.50 / 50ml | **£2.00** | ~70% | Pending: swatch |
+| Kaweco Royal Blue | £9.50 / 50ml | **£2.00** | ~70% | Pending: swatch |
+| Kaweco Pearl Black | £9.50 / 50ml | **£2.00** | ~70% | Pending: swatch |
+| Kaweco Paradise Blue | £9.50 / 50ml | **£2.00** | ~70% | Pending: swatch |
+| Kaweco Palm Green | £9.50 / 50ml | **£2.00** | ~70% | Pending: swatch |
 
 The Forever inks are permanent pigment inks, the only waterproof Diamine in the range.
 
-### Restocks of inks already on the shop (25)
+The 7 Kaweco inks were added on 23 November 2026 after checking order #615112;
+they'd been missed from the first list. They fit the existing Kaweco price of £2.00
+in `prices.js`. Their margin is ink cost after the 15% discount plus about 20p for the
+vial and label. The same order also had Traveler's Company and Kaweco converter
+items, which aren't inks.
+
+### Restocks of inks already on the shop (27)
 
 Add these to the current count on `/stock` (the page sets an exact number, so add first).
 Vials per bottle use the usual rule of about 0.4 vials per ml.
@@ -53,6 +66,7 @@ Vials per bottle use the usual rule of about 0.4 vials per ml.
 | J.Herbin Bouquet d'Antan | 30ml | +12 |
 | Dominant Industry Dusk, Dawn | 25ml | +10 each |
 | Sailor Shikiori Yozakura | 20ml | +8 |
+| Kaweco Midnight Blue, Smokey Grey | 50ml | +20 each |
 
 ## Art From The Heart order (November 2026)
 
