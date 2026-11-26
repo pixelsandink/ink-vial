@@ -1,15 +1,148 @@
 # Pending inks
 
-Bottles that are bought but not yet on the website. When a bottle arrives,
-add it to the shop (`inks.js`, `catalog.json`, `stock-seed.json`, plus an image)
-and move it off this list.
+Bottles that are bought but not yet on the website.
 
-## Cult Pens order (November 2026)
+**Nothing goes live until its swatch is done.** When an ink's swatch photo is ready,
+tick it here, then add it to the shop (`inks.js`, `catalog.json` with its price,
+`stock-seed.json`, plus the image) and take it off this list.
+
+## Swatch queue (62 inks, about 1068 vials)
+
+Grouped by brand. Cost and margin details for each order are in the order records
+further down.
+
+### Diamine (18)
+
+`prices.js` doesn't have the £1.00 Shimmering/Deadly Nightshade or £1.25 Forever prices
+yet (it would give 60p and 50p). Add rules for them when these go live.
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Deadly Nightshade (Cult Pens shimmer) | ~20 | £1.00 | Cult Pens, 7 Nov |
+| ☐ | Forever (pigment): Amazonia | ~20 | £1.25 | Cult Pens, 7 Nov |
+| ☐ | Forever (pigment): Blue Indigo | ~20 | £1.25 | Cult Pens, 7 Nov |
+| ☐ | Forever (pigment): Butterscotch | ~20 | £1.25 | Cult Pens, 7 Nov |
+| ☐ | Forever (pigment): Honey Pot | ~20 | £1.25 | Cult Pens, 7 Nov |
+| ☐ | Forever (pigment): Raven | ~20 | £1.25 | Cult Pens, 7 Nov |
+| ☐ | Forever (pigment): Red Ochre | ~20 | £1.25 | Cult Pens, 7 Nov |
+| ☐ | Forever (pigment): Smoky Mauve | ~20 | £1.25 | Cult Pens, 7 Nov |
+| ☐ | Machu Picchu (Wonders of the World) | ~32 | 50p | Cult Pens, 7 Nov |
+| ☐ | Sand Between Your Toes (summer range) | ~12 | 50p | Cult Pens, 7 Nov |
+| ☐ | Scribble Purple | ~32 | 50p | Cult Pens, 7 Nov |
+| ☐ | Shimmering: Caramel Sparkle | ~20 | £1.00 | Cult Pens, 7 Nov |
+| ☐ | Shimmering: Cocoa Shimmer | ~20 | £1.00 | Cult Pens, 7 Nov |
+| ☐ | Shimmering: Peacock Flare | ~20 | £1.00 | Cult Pens, 7 Nov |
+| ☐ | Shimmering: Pink Champagne | ~20 | £1.00 | Cult Pens, 7 Nov |
+| ☐ | Shimmering: Spearmint Diva | ~20 | £1.00 | Cult Pens, 7 Nov |
+| ☐ | Taj Mahal (Wonders of the World) | ~32 | 50p | Cult Pens, 7 Nov |
+| ☐ | Wild Strawberry | ~32 | 50p | Cult Pens #626531, 25 Nov |
+
+### Dominant Industry (1)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Midnight (Cult Pens limited edition) | ~10 | £2.00 | Cult Pens, 7 Nov |
+
+### J.Herbin (2)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Pebble Grey | ~12 | £2.50 | Cult Pens, 7 Nov |
+| ☐ | Terre de Feu | ~12 | £2.50 | Cult Pens, 7 Nov |
+
+### Kaweco (7)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Palm Green | ~20 | £2.00 | Cult Pens, 7 Nov |
+| ☐ | Paradise Blue | ~20 | £2.00 | Cult Pens, 7 Nov |
+| ☐ | Pearl Black | ~20 | £2.00 | Cult Pens, 7 Nov |
+| ☐ | Royal Blue | ~20 | £2.00 | Cult Pens, 7 Nov |
+| ☐ | Ruby Red | ~20 | £2.00 | Cult Pens, 7 Nov |
+| ☐ | Summer Purple | ~20 | £2.00 | Cult Pens, 7 Nov |
+| ☐ | Sunrise Orange | ~20 | £2.00 | Cult Pens, 7 Nov |
+
+### Lennon Tool Bar (7)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Guardian Beasts: Feng Shi Ye | ~12 | £3.00 | Art From The Heart, 20 Nov |
+| ☐ | Magic Fortune Teller Shop: #1 Want | ~12 | £3.00 | Art From The Heart, 20 Nov |
+| ☐ | Magic Fortune Teller Shop: #808 Good Spirits | ~12 | £3.00 | Art From The Heart, Nov |
+| ☐ | Taiwan Tea #1: Sun Moon Lake Ruby Black Tea | ~12 | £3.00 | Art From The Heart, Nov |
+| ☐ | Taiwan Tea #2: Bitter Orange Tea | ~12 | £3.00 | Art From The Heart, 20 Nov |
+| ☐ | Winter Tonics in Taiwan #4: Mulled Wine | ~12 | £3.00 | Art From The Heart, 20 Nov |
+| ☐ | Winter Tonics in Taiwan #4: Peeled Chilli Pepper | ~12 | £3.00 | Art From The Heart, 20 Nov |
+
+### Nagasawa Kobe (6)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | #1 Rokko Green | ~22 | £3.25 | Nagasawa Kobe, Nov |
+| ☐ | #18 Sannomiya Pansy | ~22 | £3.25 | Nagasawa Kobe, Nov |
+| ☐ | #62 Nunobiki Lavender | ~22 | £3.25 | Nagasawa Kobe, Nov |
+| ☐ | Special colour: "Chinbotsu-sen Wine Sauce" | ~44 | £3.25 | Nagasawa Kobe, Nov |
+| ☐ | Special colour: Akane-gumo "Anohi-no-yuuyake" | ~22 | £3.25 | Nagasawa Kobe, Nov |
+| ☐ | Special colour: Yuhobika Blue | ~22 | £3.25 | Nagasawa Kobe, Nov |
+
+### Robert Oster (1)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Ten (10th Anniversary) | ~20 | £2.75 | Cult Pens, 7 Nov |
+
+### Sailor Shikiori (6)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Doyou (brown) | ~8 | £2.50 | Cult Pens #626531, 25 Nov |
+| ☐ | Sakuramori (pink) | ~8 | £2.50 | Cult Pens #626531, 25 Nov |
+| ☐ | Sasabune | ~8 | £2.50 | Pure Pens, 20 Nov |
+| ☐ | Shigure (purple) | ~8 | £2.50 | Cult Pens #626531, 25 Nov |
+| ☐ | Waka-uguisu (light green), 2 bottles | ~16 | £2.50 | Cult Pens #626531, 25 Nov |
+| ☐ | Yamadori (teal) | ~8 | £2.50 | Cult Pens #626531, 25 Nov |
+
+### Teranishi (3)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Taisho Roman Haikara: Lady Emerald | ~16 | £2.25 | Art From The Heart, Nov |
+| ☐ | Taisho Roman Haikara: Modern Red | ~16 | £2.25 | Art From The Heart, Nov |
+| ☐ | Taisho Roman Haikara: Salon de Violet | ~16 | £2.25 | Art From The Heart, Nov |
+
+### Van Dieman's (10)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Encore: Madam Butterfly | ~12 | £4.00 | Pure Pens, 20 Nov |
+| ☐ | Encore: Standing Ovation | ~12 | £4.00 | Pure Pens, 20 Nov |
+| ☐ | Night: Bonfire Night | ~12 | £2.25 | Pure Pens, 20 Nov |
+| ☐ | Night: Cherry Blossom Dream | ~12 | £2.25 | Pure Pens, 20 Nov |
+| ☐ | Night: Dawn | ~12 | £2.25 | Pure Pens, 20 Nov |
+| ☐ | Night: Twilight Mist | ~12 | £2.25 | Pure Pens, 20 Nov |
+| ☐ | Tasmania: Bass Strait | ~12 | £2.25 | Pure Pens, 20 Nov |
+| ☐ | Tasmania: Tamar Wine Red | ~12 | £2.25 | Pure Pens, 20 Nov |
+| ☐ | Underwater: Bioluminescence | ~12 | £2.25 | Pure Pens, 20 Nov |
+| ☐ | Underwater: Royal Starfish | ~12 | £2.25 | Pure Pens, 20 Nov |
+
+### Vinta (1)
+
+| Swatch | Ink | Vials | Price per 2ml | Order |
+|---|---|---|---|---|
+| ☐ | Sirena 1952 (Mermaid Green) | ~12 | £3.00 | Pure Pens, 20 Nov |
+
+---
+
+## Order records
+
+Cost, margin and restock details for each order, kept for reference.
+
+### Cult Pens order (November 2026)
 
 Agreed 7 November 2026. Prices and margins use what was paid after the 15% Cult Pens
 discount. The new inks wait for swatch photos before they go on the shop.
 
-### New inks, waiting for swatches (28)
+#### New inks (28)
 
 | Ink | Bottle (Cult Pens) | Price per 2ml | Margin | Status |
 |---|---|---|---|---|
@@ -50,7 +183,7 @@ in `prices.js`. Their margin is ink cost after the 15% discount plus about 20p f
 vial and label. The same order also had Traveler's Company and Kaweco converter
 items, which aren't inks.
 
-### Restocks of inks already on the shop (27)
+#### Restocks of inks already on the shop (27)
 
 Add these to the current count on `/stock` (the page sets an exact number, so add first).
 Vials per bottle use the usual rule of about 0.4 vials per ml.
@@ -68,9 +201,9 @@ Vials per bottle use the usual rule of about 0.4 vials per ml.
 | Sailor Shikiori Yozakura | 20ml | +8 |
 | Kaweco Midnight Blue, Smokey Grey | 50ml | +20 each |
 
-## Art From The Heart order (November 2026)
+### Art From The Heart order (November 2026)
 
-New inks waiting for swatches. Art From The Heart lists the Teranishi inks as
+New inks new inks. Art From The Heart lists the Teranishi inks as
 "Taccia Ink - Taisho Roman Hikara (Guitar)". They're the same Guitar Taisho Roman
 Haikara range as the 9 Teranishi inks already on the shop, so they go under
 **Teranishi**. Prices follow the existing brand prices in `prices.js`. The cost
@@ -88,7 +221,7 @@ Vials per bottle use the usual rule of about 0.4 vials per ml.
 
 The same order had a Sailor Hocoro dip pen nib (Fine). It isn't an ink, so it's not listed here.
 
-## Nagasawa Kobe order (November 2026)
+### Nagasawa Kobe order (November 2026)
 
 Order cost £285.08: £192.00 for 11 bottles, £39.00 shipping, plus an extra £54.08
 (added 17 November 2026). Shipping is split evenly over all 11 bottles (about £3.55
@@ -114,20 +247,20 @@ The vial-and-label cost below is an estimate of 20p a vial.
 **Totals:** 11 bottles, about 242 vials. At £3.25 each that's about £786.50 in
 sales and roughly £453 gross profit after the ink, vials and labels.
 
-### Notes
+#### Notes
 - All six new inks fit the existing Nagasawa Kobe price of £3.25 in `prices.js`,
   so no pricing code needs to change when they go live.
 - Restocks: when the chocolate bottles are opened, use
   `/api/admin-stock?...&action=add&id=nagasawa-milk-chocolate&count=44` (and the
   same for `nagasawa-strawberry-chocolate`), or 22 at a time as each bottle is opened.
 
-## Latest orders (late November 2026)
+### Latest orders (late November 2026)
 
 Three orders: Pure Pens, Art From The Heart and Cult Pens (#626531). Vials per
 bottle use the usual rule of about 0.4 vials per ml. Margin here is
 (price − ink cost per vial − 20p vial and label) ÷ price, the same as the Nagasawa table.
 
-### Pure Pens order: new inks, waiting for swatches (12)
+#### Pure Pens order: new inks (12)
 
 Pure Pens prices are shown before VAT (invoice INV-GB-19491). The order had the FPUK 10% discount, then
 20% VAT on top, so the real cost is list price × 0.9 × 1.2 (a £10 bottle cost £10.80).
@@ -157,7 +290,7 @@ Pure Pens prices are shown before VAT (invoice INV-GB-19491). The order had the 
   already on the shop. Give it an id like `van-diemans-dawn`.
 - Sasabune's margin is low because Shikiori is priced at £2.50 for every Shikiori ink.
 
-### Art From The Heart order: new inks, waiting for swatches (5)
+#### Art From The Heart order: new inks (5)
 
 All Lennon Tool Bar, 30ml bottles, so about 12 vials each at the existing **£3.00** price.
 Art From The Heart took 10% off the inks, so the real cost is the bottle price × 0.9.
@@ -175,7 +308,7 @@ Checked against the order (142805/201126/81). Miscanthus Hills (Let's Go on a Tr
 was refunded, so it isn't coming. The rest of the order was pens, an ink pad and tape,
 not inks. The 10% FPUK discount applied to the inks only.
 
-### Cult Pens order #626531: new inks, waiting for swatches (6)
+#### Cult Pens order #626531: new inks (6)
 
 The order took an additional 15% off the prices shown, so the real cost is the shown price × 0.85.
 
@@ -190,7 +323,7 @@ The order took an additional 15% off the prices shown, so the real cost is the s
 
 Shikiori ids on the shop keep the legacy `sailor-shikori-` spelling.
 
-### Cult Pens order #626531: restocks of inks already on the shop (9)
+#### Cult Pens order #626531: restocks of inks already on the shop (9)
 
 Add these to the current count on `/stock` (the page sets an exact number, so add first).
 
