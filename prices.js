@@ -162,6 +162,9 @@ function getInkPrice(ink) {
   // ── Pelikan 4001 and Rohrer & Klingner 50p ────────────
   if (brand === 'pelikan' || brand.includes('rohrer')) return 0.50;
 
+  // ── Van Dieman's £2.25 (Pure Pens £10 per 30ml, less 10%, plus VAT) ──
+  if (brand.includes('van dieman') || id.startsWith('van-diemans')) return 2.25;
+
   // ── Anything else £1.75 ───────────────────────────────
   return 1.75;
 }

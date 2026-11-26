@@ -136,22 +136,22 @@ Pure Pens prices are shown before VAT (invoice INV-GB-19491). The order had the 
 |---|---|---|---|---|---|---|---|
 | Vinta Sirena 1952 (Mermaid Green) | 30ml | £11.25 | £12.15 | ~12 | **£3.00** | ~60% | Pending: swatch |
 | Sailor Shikiori Sasabune | 20ml | £10.83 | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
-| Van Dieman's Night: Cherry Blossom Dream | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
-| Van Dieman's Night: Bonfire Night | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
-| Van Dieman's Night: Twilight Mist | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
-| Van Dieman's Night: Dawn | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
-| Van Dieman's Tasmania: Bass Strait | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
-| Van Dieman's Tasmania: Tamar Wine Red | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
-| Van Dieman's Underwater: Bioluminescence | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
-| Van Dieman's Underwater: Royal Starfish | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
-| Van Dieman's Encore: Madam Butterfly | 30ml? | £20.00 | £21.60 | ~12 | **£4.00?** | ~50% | Pending: swatch, price |
-| Van Dieman's Encore: Standing Ovation | 30ml? | £20.00 | £21.60 | ~12 | **£4.00?** | ~50% | Pending: swatch, price |
+| Van Dieman's Night: Cherry Blossom Dream | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
+| Van Dieman's Night: Bonfire Night | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
+| Van Dieman's Night: Twilight Mist | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
+| Van Dieman's Night: Dawn | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
+| Van Dieman's Tasmania: Bass Strait | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
+| Van Dieman's Tasmania: Tamar Wine Red | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
+| Van Dieman's Underwater: Bioluminescence | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
+| Van Dieman's Underwater: Royal Starfish | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
+| Van Dieman's Encore: Madam Butterfly | 30ml | £20.00 | £21.60 | ~12 | **£2.25** | ~11% | Pending: swatch, price to confirm |
+| Van Dieman's Encore: Standing Ovation | 30ml | £20.00 | £21.60 | ~12 | **£2.25** | ~11% | Pending: swatch, price to confirm |
 
-- **Van Dieman's is a new brand.** `prices.js` has no rule for it yet, so it would fall to
-  the £1.75 default (about 37% margin). The prices with a "?" are suggestions that keep
-  about 50%. Add a Van Dieman's rule to `prices.js` before these go live.
-- **Bottle sizes for Van Dieman's need checking.** 30ml is assumed; if the Encore
-  bottles are a different size, the vial count and price change.
+- **Van Dieman's is a new brand.** `prices.js` now prices it at £2.25 (added late
+  November 2026). Bottles are 30ml.
+  Checkout reads prices from `catalog.json`, so give each one `"price": 2.25` there too.
+- **Encore bottles cost twice as much** (£20 list), so at £2.25 they make only about 11%.
+  About £4.00 would keep 50%; that needs a separate rule in `prices.js` if wanted.
 - Van Dieman's Night "Dawn" is a different ink from Dominant Industry Dawn, which is
   already on the shop. Give it an id like `van-diemans-dawn`.
 - Sasabune's margin is low because Shikiori is priced at £2.50 for every Shikiori ink.
