@@ -129,7 +129,7 @@ bottle use the usual rule of about 0.4 vials per ml. Margin here is
 
 ### Pure Pens order: new inks, waiting for swatches (12)
 
-Pure Pens prices are shown before VAT. The order had the FPUK 10% discount, then
+Pure Pens prices are shown before VAT (invoice INV-GB-19491). The order had the FPUK 10% discount, then
 20% VAT on top, so the real cost is list price × 0.9 × 1.2 (a £10 bottle cost £10.80).
 
 | Ink | Bottle | List price | Real cost | Vials | Price per 2ml | Margin | Status |
@@ -168,10 +168,11 @@ That puts the margin at about 46–48%, just under the usual 50%.
 | Lennon Tool Bar Winter Tonics in Taiwan #4: Mulled Wine | £18.00 | £16.20 | ~12 | **£3.00** | ~48% | Pending: swatch |
 | Lennon Tool Bar Winter Tonics in Taiwan #4: Peeled Chilli Pepper | £18.00 | £16.20 | ~12 | **£3.00** | ~48% | Pending: swatch |
 | Lennon Tool Bar Taiwan Tea #2: Bitter Orange Tea | £18.99 | £17.09 | ~12 | **£3.00** | ~46% | Pending: swatch |
-| Lennon Tool Bar Guardian Beasts: Feng Shi Ye | not recorded | not recorded | ~12 | **£3.00** | to check | Pending: swatch |
+| Lennon Tool Bar Guardian Beasts: Feng Shi Ye | £18.00 | £16.20 | ~12 | **£3.00** | ~48% | Pending: swatch |
 
-The order list was cut off after Feng Shi Ye, so its price (and any items after it)
-still need adding.
+Checked against the order (142805/201126/81). Miscanthus Hills (Let's Go on a Trip vol 2)
+was refunded, so it isn't coming. The rest of the order was pens, an ink pad and tape,
+not inks. The 10% FPUK discount applied to the inks only.
 
 ### Cult Pens order #626531: new inks, waiting for swatches (6)
 
@@ -199,4 +200,4 @@ Add these to the current count on `/stock` (the page sets an exact number, so ad
 | Diamine Tyrian Purple, Oxblood, Autumn Oak | 80ml | +32 each |
 | Laban Athena Grey, Aphrodite Pink | 50ml | +20 each |
 
-The order list was cut off at Aphrodite Pink, so check the order for anything after it.
+Checked against the order: Aphrodite Pink is the last item, so nothing is missing.
