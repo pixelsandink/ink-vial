@@ -120,3 +120,82 @@ sales and roughly £453 gross profit after the ink, vials and labels.
 - Restocks: when the chocolate bottles are opened, use
   `/api/admin-stock?...&action=add&id=nagasawa-milk-chocolate&count=44` (and the
   same for `nagasawa-strawberry-chocolate`), or 22 at a time as each bottle is opened.
+
+## Latest orders (late November 2026)
+
+Three orders: Pure Pens, Art From The Heart and Cult Pens (#626531). Vials per
+bottle use the usual rule of about 0.4 vials per ml. Margin here is
+(price − ink cost per vial − 20p vial and label) ÷ price, the same as the Nagasawa table.
+
+### Pure Pens order: new inks, waiting for swatches (12)
+
+Pure Pens prices are shown before VAT. The order had the FPUK 10% discount, then
+20% VAT on top, so the real cost is list price × 0.9 × 1.2 (a £10 bottle cost £10.80).
+
+| Ink | Bottle | List price | Real cost | Vials | Price per 2ml | Margin | Status |
+|---|---|---|---|---|---|---|---|
+| Vinta Sirena 1952 (Mermaid Green) | 30ml | £11.25 | £12.15 | ~12 | **£3.00** | ~60% | Pending: swatch |
+| Sailor Shikiori Sasabune | 20ml | £10.83 | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
+| Van Dieman's Night: Cherry Blossom Dream | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
+| Van Dieman's Night: Bonfire Night | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
+| Van Dieman's Night: Twilight Mist | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
+| Van Dieman's Night: Dawn | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
+| Van Dieman's Tasmania: Bass Strait | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
+| Van Dieman's Tasmania: Tamar Wine Red | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
+| Van Dieman's Underwater: Bioluminescence | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
+| Van Dieman's Underwater: Royal Starfish | 30ml? | £10.00 | £10.80 | ~12 | **£2.25?** | ~51% | Pending: swatch, price |
+| Van Dieman's Encore: Madam Butterfly | 30ml? | £20.00 | £21.60 | ~12 | **£4.00?** | ~50% | Pending: swatch, price |
+| Van Dieman's Encore: Standing Ovation | 30ml? | £20.00 | £21.60 | ~12 | **£4.00?** | ~50% | Pending: swatch, price |
+
+- **Van Dieman's is a new brand.** `prices.js` has no rule for it yet, so it would fall to
+  the £1.75 default (about 37% margin). The prices with a "?" are suggestions that keep
+  about 50%. Add a Van Dieman's rule to `prices.js` before these go live.
+- **Bottle sizes for Van Dieman's need checking.** 30ml is assumed; if the Encore
+  bottles are a different size, the vial count and price change.
+- Van Dieman's Night "Dawn" is a different ink from Dominant Industry Dawn, which is
+  already on the shop. Give it an id like `van-diemans-dawn`.
+- Sasabune's margin is low because Shikiori is priced at £2.50 for every Shikiori ink.
+
+### Art From The Heart order: new inks, waiting for swatches (5)
+
+All Lennon Tool Bar, 30ml bottles, so about 12 vials each at the existing **£3.00** price.
+At these bottle prices the margin is about 41–43%, below the usual 50%.
+
+| Ink | Bottle price | Vials | Price per 2ml | Margin | Status |
+|---|---|---|---|---|---|
+| Lennon Tool Bar Magic Fortune Teller Shop: #1 Want | £18.00 | ~12 | **£3.00** | ~43% | Pending: swatch |
+| Lennon Tool Bar Winter Tonics in Taiwan #4: Mulled Wine | £18.00 | ~12 | **£3.00** | ~43% | Pending: swatch |
+| Lennon Tool Bar Winter Tonics in Taiwan #4: Peeled Chilli Pepper | £18.00 | ~12 | **£3.00** | ~43% | Pending: swatch |
+| Lennon Tool Bar Taiwan Tea #2: Bitter Orange Tea | £18.99 | ~12 | **£3.00** | ~41% | Pending: swatch |
+| Lennon Tool Bar Guardian Beasts: Feng Shi Ye | not recorded | ~12 | **£3.00** | to check | Pending: swatch |
+
+The order list was cut off after Feng Shi Ye, so its price (and any items after it)
+still need adding.
+
+### Cult Pens order #626531: new inks, waiting for swatches (6)
+
+Prices are what was paid after the 15% Cult Pens discount.
+
+| Ink | Bottle | Paid | Vials | Price per 2ml | Margin | Status |
+|---|---|---|---|---|---|---|
+| Diamine Wild Strawberry | 80ml | £6.98 | ~32 | **50p** | ~16% | Pending: swatch |
+| Sailor Shikiori Doyou (brown) | 20ml | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
+| Sailor Shikiori Sakuramori (pink) | 20ml | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
+| Sailor Shikiori Yamadori (teal) | 20ml | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
+| Sailor Shikiori Waka-uguisu (light green), 2 bottles | 2 × 20ml | £23.40 | ~16 | **£2.50** | ~34% | Pending: swatch |
+| Sailor Shikiori Shigure (purple) | 20ml | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
+
+Shikiori ids on the shop keep the legacy `sailor-shikori-` spelling.
+
+### Cult Pens order #626531: restocks of inks already on the shop (9)
+
+Add these to the current count on `/stock` (the page sets an exact number, so add first).
+
+| Ink | Bottle | Add |
+|---|---|---|
+| Dominant Industry October Leaves, Autumn Forest (Pearl) | 25ml | +10 each |
+| Dominant Industry Unknown Land, Earl Grey Tea | 25ml | +10 each |
+| Diamine Tyrian Purple, Oxblood, Autumn Oak | 80ml | +32 each |
+| Laban Athena Grey, Aphrodite Pink | 50ml | +20 each |
+
+The order list was cut off at Aphrodite Pink, so check the order for anything after it.
