@@ -159,31 +159,32 @@ Pure Pens prices are shown before VAT. The order had the FPUK 10% discount, then
 ### Art From The Heart order: new inks, waiting for swatches (5)
 
 All Lennon Tool Bar, 30ml bottles, so about 12 vials each at the existing **£3.00** price.
-At these bottle prices the margin is about 41–43%, below the usual 50%.
+Art From The Heart took 10% off the inks, so the real cost is the bottle price × 0.9.
+That puts the margin at about 46–48%, just under the usual 50%.
 
-| Ink | Bottle price | Vials | Price per 2ml | Margin | Status |
-|---|---|---|---|---|---|
-| Lennon Tool Bar Magic Fortune Teller Shop: #1 Want | £18.00 | ~12 | **£3.00** | ~43% | Pending: swatch |
-| Lennon Tool Bar Winter Tonics in Taiwan #4: Mulled Wine | £18.00 | ~12 | **£3.00** | ~43% | Pending: swatch |
-| Lennon Tool Bar Winter Tonics in Taiwan #4: Peeled Chilli Pepper | £18.00 | ~12 | **£3.00** | ~43% | Pending: swatch |
-| Lennon Tool Bar Taiwan Tea #2: Bitter Orange Tea | £18.99 | ~12 | **£3.00** | ~41% | Pending: swatch |
-| Lennon Tool Bar Guardian Beasts: Feng Shi Ye | not recorded | ~12 | **£3.00** | to check | Pending: swatch |
+| Ink | Bottle price | Paid (−10%) | Vials | Price per 2ml | Margin | Status |
+|---|---|---|---|---|---|---|
+| Lennon Tool Bar Magic Fortune Teller Shop: #1 Want | £18.00 | £16.20 | ~12 | **£3.00** | ~48% | Pending: swatch |
+| Lennon Tool Bar Winter Tonics in Taiwan #4: Mulled Wine | £18.00 | £16.20 | ~12 | **£3.00** | ~48% | Pending: swatch |
+| Lennon Tool Bar Winter Tonics in Taiwan #4: Peeled Chilli Pepper | £18.00 | £16.20 | ~12 | **£3.00** | ~48% | Pending: swatch |
+| Lennon Tool Bar Taiwan Tea #2: Bitter Orange Tea | £18.99 | £17.09 | ~12 | **£3.00** | ~46% | Pending: swatch |
+| Lennon Tool Bar Guardian Beasts: Feng Shi Ye | not recorded | not recorded | ~12 | **£3.00** | to check | Pending: swatch |
 
 The order list was cut off after Feng Shi Ye, so its price (and any items after it)
 still need adding.
 
 ### Cult Pens order #626531: new inks, waiting for swatches (6)
 
-Prices are what was paid after the 15% Cult Pens discount.
+The order took an additional 15% off the prices shown, so the real cost is the shown price × 0.85.
 
-| Ink | Bottle | Paid | Vials | Price per 2ml | Margin | Status |
-|---|---|---|---|---|---|---|
-| Diamine Wild Strawberry | 80ml | £6.98 | ~32 | **50p** | ~16% | Pending: swatch |
-| Sailor Shikiori Doyou (brown) | 20ml | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
-| Sailor Shikiori Sakuramori (pink) | 20ml | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
-| Sailor Shikiori Yamadori (teal) | 20ml | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
-| Sailor Shikiori Waka-uguisu (light green), 2 bottles | 2 × 20ml | £23.40 | ~16 | **£2.50** | ~34% | Pending: swatch |
-| Sailor Shikiori Shigure (purple) | 20ml | £11.70 | ~8 | **£2.50** | ~34% | Pending: swatch |
+| Ink | Bottle | Shown | Paid (−15%) | Vials | Price per 2ml | Margin | Status |
+|---|---|---|---|---|---|---|---|
+| Diamine Wild Strawberry | 80ml | £6.98 | £5.93 | ~32 | **50p** | ~23% | Pending: swatch |
+| Sailor Shikiori Doyou (brown) | 20ml | £11.70 | £9.95 | ~8 | **£2.50** | ~42% | Pending: swatch |
+| Sailor Shikiori Sakuramori (pink) | 20ml | £11.70 | £9.95 | ~8 | **£2.50** | ~42% | Pending: swatch |
+| Sailor Shikiori Yamadori (teal) | 20ml | £11.70 | £9.95 | ~8 | **£2.50** | ~42% | Pending: swatch |
+| Sailor Shikiori Waka-uguisu (light green), 2 bottles | 2 × 20ml | £23.40 | £19.89 | ~16 | **£2.50** | ~42% | Pending: swatch |
+| Sailor Shikiori Shigure (purple) | 20ml | £11.70 | £9.95 | ~8 | **£2.50** | ~42% | Pending: swatch |
 
 Shikiori ids on the shop keep the legacy `sailor-shikori-` spelling.
 
