@@ -144,14 +144,15 @@ Pure Pens prices are shown before VAT (invoice INV-GB-19491). The order had the 
 | Van Dieman's Tasmania: Tamar Wine Red | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
 | Van Dieman's Underwater: Bioluminescence | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
 | Van Dieman's Underwater: Royal Starfish | 30ml | £10.00 | £10.80 | ~12 | **£2.25** | ~51% | Pending: swatch |
-| Van Dieman's Encore: Madam Butterfly | 30ml | £20.00 | £21.60 | ~12 | **£2.25** | ~11% | Pending: swatch, price to confirm |
-| Van Dieman's Encore: Standing Ovation | 30ml | £20.00 | £21.60 | ~12 | **£2.25** | ~11% | Pending: swatch, price to confirm |
+| Van Dieman's Encore: Madam Butterfly | 30ml | £20.00 | £21.60 | ~12 | **£4.00** | ~50% | Pending: swatch |
+| Van Dieman's Encore: Standing Ovation | 30ml | £20.00 | £21.60 | ~12 | **£4.00** | ~50% | Pending: swatch |
 
-- **Van Dieman's is a new brand.** `prices.js` now prices it at £2.25 (added late
+- **Van Dieman's is a new brand.** `prices.js` now prices the standard inks at £2.25 (added late
   November 2026). Bottles are 30ml.
   Checkout reads prices from `catalog.json`, so give each one `"price": 2.25` there too.
-- **Encore bottles cost twice as much** (£20 list), so at £2.25 they make only about 11%.
-  About £4.00 would keep 50%; that needs a separate rule in `prices.js` if wanted.
+- **Encore inks are £4.00** because the bottles cost twice as much (£20 list). The
+  `prices.js` rule matches on `encore` in the id, so give them ids like
+  `van-diemans-encore-madam-butterfly`, and `"price": 4.00` in `catalog.json`.
 - Van Dieman's Night "Dawn" is a different ink from Dominant Industry Dawn, which is
   already on the shop. Give it an id like `van-diemans-dawn`.
 - Sasabune's margin is low because Shikiori is priced at £2.50 for every Shikiori ink.
