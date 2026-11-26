@@ -107,7 +107,7 @@ The vial-and-label cost below is an estimate of 20p a vial.
 | Special colour: Akane-gumo "Anohi-no-yuuyake" | 1 | £18.00 | £29.27 | £1.33 | **£3.25** | ~53% | Pending: new ink |
 | Special colour: "Chinbotsu-sen Wine Sauce" | 2 | £18.00 | £29.27 | £1.33 | **£3.25** | ~53% | Pending: new ink |
 | Felissimo Chocolate Museum: Milk Chocolate | 2 | £18.00 | £21.55 | £0.98 | £3.25 (already listed) | ~64% | Done: opened |
-| Felissimo Chocolate Museum: Strawberry Chocolate | 2 | £18.00 | £21.55 | £0.98 | £3.25 (already listed) | ~64% | Pending: restock (+44 vials) |
+| Felissimo Chocolate Museum: Strawberry Chocolate | 2 | £18.00 | £21.55 | £0.98 | £3.25 (already listed) | ~64% | Done: opened |
 
 \* Margin = (price − ink cost − 20p vial and label) ÷ price, before Stripe fees and postage.
 
